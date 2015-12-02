@@ -1,0 +1,150 @@
+<xupdate:modifications>
+<xupdate:update select="/UI[UI,1]/widget[QWidget,factalma_general]/property[geometry]/rect[rect,1]/height[height,1]/text()[1]" >490</xupdate:update>
+<xupdate:insert-after select="/UI[UI,1]/widget[QWidget,factalma_general]/vbox[vbox,1]/widget[QTabWidget,tbwDatosGenerales]/widget[QWidget,datosgenerales]/vbox[vbox,1]/widget[QGroupBox,gbxDatosGenerales]" >
+<widget class="QGroupBox" >
+<property name="name" >
+<cstring>gbxArtesGraficas</cstring>
+</property>
+<property name="title" >
+<string>Artes gráficas</string>
+</property>
+<vbox>
+<property name="name" >
+<cstring>unnamed</cstring>
+</property>
+<widget class="QGroupBox" >
+<property name="name" >
+<cstring>gbxSangria</cstring>
+</property>
+<property name="font" >
+<font>
+<bold>0</bold>
+</font>
+</property>
+<property name="title" >
+<string>Sangrías por defecto</string>
+</property>
+<hbox>
+<property name="name" >
+<cstring>unnamed</cstring>
+</property>
+<widget class="FLFieldDB" >
+<property name="name" >
+<cstring>fdbSangriaIpticos</cstring>
+</property>
+<property name="font" >
+<font/>
+</property>
+<property name="fieldName" >
+<string>sangriaipticos</string>
+</property>
+</widget>
+<widget class="FLFieldDB" >
+<property name="name" >
+<cstring>fdbSangriaLibros</cstring>
+</property>
+<property name="font" >
+<font/>
+</property>
+<property name="fieldName" >
+<string>sangrialibros</string>
+</property>
+</widget>
+<spacer>
+<property name="name" >
+<cstring>spacerSangria</cstring>
+</property>
+<property name="orientation" >
+<enum>Horizontal</enum>
+</property>
+<property name="sizeType" >
+<enum>Expanding</enum>
+</property>
+<property name="sizeHint" >
+<size>
+<width>71</width>
+<height>20</height>
+</size>
+</property>
+</spacer>
+</hbox>
+</widget>
+<widget class="QGroupBox" >
+<property name="name" >
+<cstring>gbxValores</cstring>
+</property>
+<property name="font" >
+<font>
+<bold>0</bold>
+</font>
+</property>
+<property name="title" >
+<string>Otros valores</string>
+</property>
+<hbox>
+<property name="name" >
+<cstring>unnamed</cstring>
+</property>
+<widget class="FLFieldDB" >
+<property name="name" >
+<cstring>fdbCodCalidad</cstring>
+</property>
+<property name="minimumSize" >
+<size>
+<width>200</width>
+<height>25</height>
+</size>
+</property>
+<property name="maximumSize" >
+<size>
+<width>300</width>
+<height>32767</height>
+</size>
+</property>
+<property name="font" >
+<font/>
+</property>
+<property name="fieldName" >
+<string>codcalidad</string>
+</property>
+</widget>
+<spacer>
+<property name="name" >
+<cstring>spacerOV</cstring>
+</property>
+<property name="orientation" >
+<enum>Horizontal</enum>
+</property>
+<property name="sizeType" >
+<enum>Expanding</enum>
+</property>
+<property name="sizeHint" >
+<size>
+<width>71</width>
+<height>20</height>
+</size>
+</property>
+</spacer>
+</hbox>
+</widget>
+<spacer>
+<property name="name" >
+<cstring>spacerAG</cstring>
+</property>
+<property name="orientation" >
+<enum>Vertical</enum>
+</property>
+<property name="sizeType" >
+<enum>Expanding</enum>
+</property>
+<property name="sizeHint" >
+<size>
+<width>20</width>
+<height>20</height>
+</size>
+</property>
+</spacer>
+</vbox>
+</widget>
+</xupdate:insert-after>
+</xupdate:modifications>

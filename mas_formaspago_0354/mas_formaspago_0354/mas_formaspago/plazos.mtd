@@ -1,0 +1,53 @@
+<xupdate:modifications>
+<xupdate:insert-after select="/TMD[TMD,1]/field[aplazado]" >
+<field>
+<name>tipoplazo</name>
+<!-- Define si será 0: porcentual, 1: un número de plazos o 2: un importe fijo --><alias>QT_TRANSLATE_NOOP(&quot;MetaData&quot;,&quot;Tipo de plazo&quot;)</alias>
+<null>false</null>
+<pk>false</pk>
+<type>uint</type>
+<default>0</default>
+</field>
+</xupdate:insert-after>
+<xupdate:insert-after select="/TMD[TMD,1]/field[tipoplazo]" >
+<field>
+<name>nplazos</name>
+<alias>QT_TRANSLATE_NOOP(&quot;MetaData&quot;,&quot;Número de plazos&quot;)</alias>
+<null>true</null>
+<pk>false</pk>
+<type>uint</type>
+<default>1</default>
+</field>
+</xupdate:insert-after>
+<xupdate:insert-after select="/TMD[TMD,1]/field[nplazos]" >
+<field>
+<name>cadencia</name>
+<alias>QT_TRANSLATE_NOOP(&quot;MetaData&quot;,&quot;Cadencia en días&quot;)</alias>
+<null>true</null>
+<pk>false</pk>
+<type>uint</type>
+</field>
+</xupdate:insert-after>
+<xupdate:insert-after select="/TMD[TMD,1]/field[cadencia]" >
+<field>
+<name>importefijo</name>
+<alias>QT_TRANSLATE_NOOP(&quot;MetaData&quot;,&quot;Importe fijo&quot;)</alias>
+<null>true</null>
+<pk>false</pk>
+<type>double</type>
+<partI>8</partI>
+<partD>2</partD>
+</field>
+</xupdate:insert-after>
+<xupdate:insert-after select="/TMD[TMD,1]/field[importefijo]" >
+<field>
+<name>importeminimo</name>
+<alias>QT_TRANSLATE_NOOP(&quot;MetaData&quot;,&quot;Importe mínimo&quot;)</alias>
+<null>true</null>
+<pk>false</pk>
+<type>double</type>
+<partI>8</partI>
+<partD>2</partD>
+</field>
+</xupdate:insert-after>
+</xupdate:modifications>

@@ -1,0 +1,73 @@
+<xupdate:modifications>
+<xupdate:insert-after select="/UI[UI,1]/widget[QWidget,formProveedores]/vbox[vbox,1]/widget[QTabWidget,tbwProveedor]/widget[QWidget,contabilidad]/vbox[vbox,1]/property[name]" >
+<widget class="QGroupBox" >
+<property name="name" >
+<cstring>gbxContabilidad</cstring>
+</property>
+<property name="font" >
+<font>
+<bold>0</bold>
+</font>
+</property>
+<property name="title" >
+<string/>
+</property>
+<hbox>
+<property name="name" >
+<cstring>unnamed</cstring>
+</property>
+<widget class="FLFieldDB" >
+<property name="name" >
+<cstring>fdbCodGrupoIvaNeg</cstring>
+</property>
+<property name="sizePolicy" >
+<sizepolicy>
+<hsizetype>1</hsizetype>
+<vsizetype>0</vsizetype>
+<horstretch>0</horstretch>
+<verstretch>0</verstretch>
+</sizepolicy>
+</property>
+<property name="minimumSize" >
+<size>
+<width>26</width>
+<height>22</height>
+</size>
+</property>
+<property name="maximumSize" >
+<size>
+<width>200</width>
+<height>32767</height>
+</size>
+</property>
+<property name="fieldName" >
+<string>codgrupoivaneg</string>
+</property>
+<property name="whatsThis" stdset="0" >
+<string>El grupo contable define la subcuenta de cliente a usar en la generación de asientos de factura automáticos.&#xa;&#xa;No se usará (se desactivará) la generación de subcuentas de cliente para cada nuevo cliente de forma automática. Se desactivarán los controles inferiores.</string>
+</property>
+</widget>
+<spacer>
+<property name="name" >
+<cstring>spacerConta</cstring>
+</property>
+<property name="orientation" >
+<enum>Horizontal</enum>
+</property>
+<property name="sizeType" >
+<enum>Expanding</enum>
+</property>
+<property name="sizeHint" >
+<size>
+<width>61</width>
+<height>20</height>
+</size>
+</property>
+</spacer>
+</hbox>
+</widget>
+</xupdate:insert-after>
+<xupdate:insert-after select="/UI[UI,1]/includehints[includehints,1]/includehint[flfielddb.h]" >
+<includehint>flfielddb.h</includehint>
+</xupdate:insert-after>
+</xupdate:modifications>

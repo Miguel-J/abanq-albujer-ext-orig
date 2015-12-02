@@ -1,0 +1,16 @@
+<xupdate:modifications>
+<xupdate:insert-after select="/ACTIONS[ACTIONS,1]/action[i_resreciboscli]" >
+<action>
+<name>i_pegasunidadesstock</name>
+<table>i_pegasunidadesstock</table>
+<form>i_master</form>
+</action>
+</xupdate:insert-after>
+<xupdate:insert-after select="/ACTIONS[ACTIONS,1]/action[i_pegasunidadesstock]" >
+<action>
+<name>i_pegaslotesstock</name>
+<table>i_pegaslotesstock</table>
+<form>i_master</form>
+</action>
+</xupdate:insert-after>
+</xupdate:modifications>

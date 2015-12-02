@@ -1,0 +1,14 @@
+<flpatch:modifications name="wg_agenda" >
+    <flpatch:patchXml path="facturacion/principal/" name="flfactppal.xml" />
+    <flpatch:addFile path="facturacion/principal/scripts/" name="wg_agenda.qs" />
+    <flpatch:addFile path="facturacion/principal/tables/" name="wg_agenda.mtd" />
+    <flpatch:patchXml path="facturacion/principal/tables/" name="usuarios.mtd" />
+    <flpatch:patchXml path="facturacion/principal/forms/" name="flfactppal.ui" />
+    <flpatch:addFile path="facturacion/principal/forms/" name="wg_agenda.ui" />
+    <flpatch:addFile path="facturacion/principal/tables/" name="wg_agendaconfig.mtd" />
+    <flpatch:patchXml path="facturacion/principal/forms/" name="usuarios.ui" />
+    <flpatch:addFile path="facturacion/principal/forms/" name="wg_agendaconfig.ui" />
+    <flpatch:patchScript path="facturacion/principal/scripts/" name="wg_masterwidget.qs" />
+    <flpatch:patchScript path="facturacion/principal/scripts/" name="usuarios.qs" />
+    <flpatch:addFile path="facturacion/principal/tables/" name="wg_lineasagenda.mtd" />
+</flpatch:modifications>

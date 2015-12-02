@@ -1,0 +1,234 @@
+<!DOCTYPE UI><UI version="3.3" stdsetdef="1">
+<class>formWidgetMensajes</class>
+<widget class="QWidget">
+    <property name="name">
+        <cstring>formWidgetMensajes</cstring>
+    </property>
+    <property name="geometry">
+        <rect>
+            <x>0</x>
+            <y>0</y>
+            <width>211</width>
+            <height>141</height>
+        </rect>
+    </property>
+    <property name="paletteForegroundColor">
+        <color>
+            <red>0</red>
+            <green>0</green>
+            <blue>0</blue>
+        </color>
+    </property>
+    <property name="paletteBackgroundColor">
+        <color>
+            <red>255</red>
+            <green>255</green>
+            <blue>255</blue>
+        </color>
+    </property>
+    <property name="caption">
+        <string>Enviar mensaje</string>
+    </property>
+    <vbox>
+        <property name="name">
+            <cstring>unnamed</cstring>
+        </property>
+        <widget class="QFrame">
+            <property name="name">
+                <cstring>frame3</cstring>
+            </property>
+            <property name="sizePolicy">
+                <sizepolicy>
+                    <hsizetype>7</hsizetype>
+                    <vsizetype>7</vsizetype>
+                    <horstretch>0</horstretch>
+                    <verstretch>0</verstretch>
+                </sizepolicy>
+            </property>
+            <property name="frameShape">
+                <enum>GroupBoxPanel</enum>
+            </property>
+            <property name="frameShadow">
+                <enum>Sunken</enum>
+            </property>
+            <vbox>
+                <property name="name">
+                    <cstring>unnamed</cstring>
+                </property>
+                <property name="spacing">
+                    <number>7</number>
+                </property>
+                <widget class="QLayoutWidget">
+                    <property name="name">
+                        <cstring>layout12</cstring>
+                    </property>
+                    <hbox>
+                        <property name="name">
+                            <cstring>unnamed</cstring>
+                        </property>
+                        <widget class="QLabel">
+                            <property name="name">
+                                <cstring>txtPara</cstring>
+                            </property>
+                            <property name="text">
+                                <string>Para:</string>
+                            </property>
+                        </widget>
+                        <widget class="QLineEdit">
+                            <property name="name">
+                                <cstring>ldUsuario</cstring>
+                            </property>
+                            <property name="text">
+                                <string></string>
+                            </property>
+                        </widget>
+                        <widget class="QToolButton">
+                            <property name="name">
+                                <cstring>tbnBuscarUsuario</cstring>
+                            </property>
+                            <property name="minimumSize">
+                                <size>
+                                    <width>32</width>
+                                    <height>32</height>
+                                </size>
+                            </property>
+                            <property name="maximumSize">
+                                <size>
+                                    <width>32</width>
+                                    <height>32</height>
+                                </size>
+                            </property>
+                            <property name="paletteBackgroundColor">
+                                <color>
+                                    <red>255</red>
+                                    <green>255</green>
+                                    <blue>255</blue>
+                                </color>
+                            </property>
+                            <property name="text">
+                                <string></string>
+                            </property>
+                            <property name="accel">
+                                <string>F2</string>
+                            </property>
+                            <property name="iconSet">
+                                <iconset>image56880</iconset>
+                            </property>
+                            <property name="toolTip" stdset="0">
+                                <string>Buscar usuario</string>
+                            </property>
+                        </widget>
+                        <spacer>
+                            <property name="name">
+                                <cstring>spacer11</cstring>
+                            </property>
+                            <property name="orientation">
+                                <enum>Horizontal</enum>
+                            </property>
+                            <property name="sizeType">
+                                <enum>Fixed</enum>
+                            </property>
+                            <property name="sizeHint">
+                                <size>
+                                    <width>31</width>
+                                    <height>20</height>
+                                </size>
+                            </property>
+                        </spacer>
+                        <widget class="QToolButton">
+                            <property name="name">
+                                <cstring>tbnEnviarMensaje</cstring>
+                            </property>
+                            <property name="minimumSize">
+                                <size>
+                                    <width>32</width>
+                                    <height>32</height>
+                                </size>
+                            </property>
+                            <property name="maximumSize">
+                                <size>
+                                    <width>32</width>
+                                    <height>32</height>
+                                </size>
+                            </property>
+                            <property name="paletteBackgroundColor">
+                                <color>
+                                    <red>255</red>
+                                    <green>255</green>
+                                    <blue>255</blue>
+                                </color>
+                            </property>
+                            <property name="text">
+                                <string></string>
+                            </property>
+                            <property name="iconSet">
+                                <iconset>image42310</iconset>
+                            </property>
+                            <property name="toolTip" stdset="0">
+                                <string>Enviar mensaje</string>
+                            </property>
+                        </widget>
+                    </hbox>
+                </widget>
+                <widget class="QGroupBox">
+                    <property name="name">
+                        <cstring>gbxMensaje</cstring>
+                    </property>
+                    <property name="maximumSize">
+                        <size>
+                            <width>32767</width>
+                            <height>100</height>
+                        </size>
+                    </property>
+                    <property name="font">
+                        <font>
+                            <bold>1</bold>
+                            <italic>1</italic>
+                        </font>
+                    </property>
+                    <property name="title">
+                        <string>Mensaje</string>
+                    </property>
+                    <property name="alignment">
+                        <set>AlignCenter</set>
+                    </property>
+                    <vbox>
+                        <property name="name">
+                            <cstring>unnamed</cstring>
+                        </property>
+                        <widget class="QTextEdit">
+                            <property name="name">
+                                <cstring>txtTexto</cstring>
+                            </property>
+                            <property name="font">
+                                <font>
+                                    <bold>0</bold>
+                                    <italic>0</italic>
+                                </font>
+                            </property>
+                            <property name="frameShape">
+                                <enum>GroupBoxPanel</enum>
+                            </property>
+                            <property name="text">
+                                <string></string>
+                            </property>
+                        </widget>
+                    </vbox>
+                </widget>
+            </vbox>
+        </widget>
+    </vbox>
+</widget>
+<images>
+    <image name="image56880">
+        <data format="PNG" length="1552">89504e470d0a1a0a0000000d4948445200000020000000200806000000737a7af4000005d749444154789cbd96514c1bf71dc73f301299ce48670d343ba2923d5164bbc902349186f7826f4f3d5a2d22cd4bdc0752f612a552a99a3c4c59d4755a34556caaa285874d9948a4589302b8a8839b04e28c52e5d8d6daa411d828898c155080c4c21e38e080b3df1ece6d3a9568b80bfbbdfcee7ff7bffb7cee7b777f1d6c53177b0794d4e87af7a53f0c47ef5f17114344ee898ceb3159bf25d9e14fa44f12d2b6ddb9e594887c7367cf8757bb672eac64072237446e5b5049890c1b2991fb22b17fa4441e888c1b3191db121d1f8d353d37819ef357fb52a3eb32706d5ceec7e55f724bb644a4209bf248441e89c8ba8814620929ca0311898b484ab2e3a3b1ceff59e0ecb94b7df7af885cbc30202bf7642bb62aeb22f228b56ec15736ffb3a756654356e4492c9eb21ecf68aced5b0b9cfdf9a5eed8b515e9f9f0aaa4eec96379604162aba53bdfdcbec756655d56e589dcfa2a09a55c81caf7debda8a845f57d635e8760a86816286ed481f1105a6a20be06ec81c486d5e74a3dbe062d358891e7317624919f535477cb47e5a6501974073be38aa9f8940ea92eb2a5d6833e076a1d907d2ae1af06d6c053fd151cb2a0ba90c11c5b7eb70716e89494949542a53eabff942a956861ee49ab1b89cc42c009837380e36912e61a50ea2d35d67e1cd6bcc07e8a831389c71c8291d9f891b20454b7d696cbebc4edfebf47a67914ac077d1602f5d6c5d53a6011022568a0c61ab7d695e0f5a04f434b83bf904843bbbbe56059029399286a51233ab131f3bb7e3e3ed3cfa4af966c64da4a227c07b22e0be653580e2759ceba2072c73a1e9986d67a08dfcd56f99d3072d72c6b5da818ef4d89be60d26b0ffd51590247132819e83accde641e87e60573019a1596f534a86e8824a1ab9917e319bc9a97ef4766415390963cdfddb033f1c20f2b823b818b0895e19b8350684659dad8eb502cb84b017391cda09b6523cd320d2c4fe5a1eb102473e0390c83b3cc27e7183bff57c6720acb91a9c52c0da0cf1ab9b21e81ea0ce42846f179abf72976083583e280d0610bd675085c39e8fa1124f34fc7a143e07080f612cbc92863c75f727dc79c4ea0bad52fca12d0efea43418238a6c38d0e3b980f21b41fe2190b12cf41d7014b26e483781e8e1f86a90c284d602e81bb969aa905d31570fad1ef1813e525e0d6ae44f2113aea7d6e05f61d3f006606424d96c4510f24b64a5fc316b4bb60ea21bcd50c8ed23ccf1e5e093505087f36927e33f493f2047ef69b1f4f140a8509236d609b9d6b9d5c606f87d7bab3f6172db87f0f2c82b51262c94c3e848efd307537db1872d318fecc402db65f28070e5009409177556720672b0e7eaf793efbfae4027b8f7a20be61c1015ca5133ca5aed6817993460d5bc0b8039a4f255e67be53ae40c5971b1dc7ce76da6cb63ec56e832a6db3e555ccae57fdb717bf0607c8020ea8098fc55f09ccf91a8d2a03b5a862da2609e45b3ff8c1a9177eb953b8883c1500387eec6c9bead53e4ee6a614cd1b444f4f6e9e7abd2bbd68632de0053e87453bfbc29f0eba8e1ed0d0933aadae00c6bcc9e99347f9edefc368b5ae097f26d4c401862ab4a51365099492506c36db47b62a3a43b5210c9b014515aa0c3aec1d1855d638978fa4b52aed83482e721082ffdc28e8ef9f6ed0c816dea0e54c07d9fe088e4cf672c53bcf96d856e0cbba7aee86622c1847b406eda091369a34af46341dcd695eed0b23ad0f9def79fbe6d7e70f9c1b88daf2a7dbdacffd091c2a9080fe37c09ebdfcac24b6fd27fcb675f19892955e45e4ba262233227243447a6425ec13b9e0ecdb75819923cebee1933691eb8ac8f58e928458fd9a4f44ffa6c473150098794de91b3e89c8959d25f1dc05a0bc24764500769ec4ae09c07f49e28a5be41367b7889496e25da89787964e78e66d9747fe9c8339033e3d0324607e0a32d59885530ab07b02002f0fe74e78169d9747fe56004cf8cbdb306682af074fed7b00cf5e889e67cdbca6f4255d85ce4051c168fa059e8c868ee1f9f5afbad2ff1701809923ceeede6240f1579dc2d8630c45facfdf14112a76f54ddc41fd1b8284aff45225360d0000000049454e44ae426082</data>
+    </image>
+    <image name="image42310">
+        <data format="PNG" length="847">89504e470d0a1a0a0000000d4948445200000020000000200806000000737a7af40000031649444154789cc5974f68147714c73f6946780babfc96ee61967ac862a12e14ba3b0474f1646e6aa92439b9410f620b125a1083ad273d7a0ca260c1937810f14f3dd44be2a687e2de3296064668e92cf4904b607e90a5f3838efc7a18dd4ac1ee2fd98d7930878179bff77ddff77d6fde6fcc5acbae9ab5f69dcf90e60147feef7c6bed8e02b80c2cef16804b8005dabb01e08a88585554d685810f8649f33f56021ee171b53a51c5609c9cbc1105ff10b82f2253b54f6b880874dd1c47c1800f3c514535d5a83768369b0018e3c6c0b0003e037e544a1d694c3698999e61eaf0147a43239eec388063c04f4aa9a0516f303b3dcbc2d70bc4dd98b497eeb8064e8a277795af8ac1c180e3d3c799ff729eb81bd3e97440403cc16483416c878106705b95f3e0cda34dce9e3e0b7be0e1e38724bd840205a7e0db01700878ec97fd7250cf33bf78fe2285bd05da4b6de26e4ca958222575d6c0564a700eb8aecaaa104c06b44eb5983b33077f437ba9cdf3ce73f0c064664b0cb802f8463c5954653516d4035aa75bccb5e64837533a3f77580d5721830205c413d22c75d6800b806fc5936bfe7e9fa01ed03ad362767a96643de1e9ca53e26e0c197dd5bf093a2a06be00ae4951a8ecaf50ad5629154bb457da445144b291e49962104f4848fa8e8238b5e22000cbc06dadf5b9e865843186e8d708555128a5a8a84a3fb8361a80344b019ce7c0a02ef80bf80a58d41b9af8f7984427984d0319fda00683207d1d98ecf5bb83b968c0021700a3b5fe2e7c19e65e7bc0c7074015555ef30c12939761d45d00f986f38be999efa3b5681fd0cf521044e4dfcc33f749b8d5517c0f30baa71f846be1381e54a80039f5f0fa2f98b933b09d51fc03b0607a86682d62fdcf75b4d660c8f700e80bd3c5b6fb335a24d7c48df045380e4006aaacf213b7c0c0301bd12d60dd1873337c117e449697a3a44a90b91f32ec42f20438618cf9235c0b897f8b0190a21bfdc0c8b6e21a10e1616b076b76e2e3094bdebeeff55e70005805aceffb16effd0300d80bdcc1c38a27bb0200609c5ca016783608c0a8ee056fdb2be03cb9c03f19f8f50e5e4e0bc0e78318f8077dc1c37e910e1c510000000049454e44ae426082</data>
+    </image>
+</images>
+<tabstops>
+    <tabstop>ldUsuario</tabstop>
+</tabstops>
+<layoutdefaults spacing="0" margin="3"/>
+</UI>

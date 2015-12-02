@@ -1,0 +1,167 @@
+<!DOCTYPE TMD>
+<TMD>
+	<name>comunicacionescli</name>
+	<alias>QT_TRANSLATE_NOOP("MetaData","Comunicaciones de cliente")</alias>
+
+	<field>
+		<name>id</name>
+		<!-- Identificador interno-->
+		<alias>QT_TRANSLATE_NOOP("MetaData","Id")</alias>
+		<null>false</null>
+		<pk>true</pk>
+		<type>serial</type>numero
+		<visiblegrid>false</visiblegrid>
+	</field>
+
+	<field>
+		<name>fecha</name>
+		<!-- Fecha -->
+		<alias>QT_TRANSLATE_NOOP("MetaData","Fecha")</alias>
+		<null>false</null>
+		<pk>false</pk>
+		<type>date</type>
+	</field>
+	
+	<field>
+		<name>hora</name>
+		<!-- Hora -->
+		<alias>QT_TRANSLATE_NOOP("MetaData","Hora")</alias>
+		<null>false</null>
+		<pk>false</pk>
+		<type>string</type>
+		<length>15</length>
+		<regexp>(0[0-9]|1[0-9]|2[0-3]):[0-5][0-9]</regexp>
+	</field>
+	
+	<field>
+		<name>asunto</name>
+		<!-- Asunto del mensaje -->
+		<alias>QT_TRANSLATE_NOOP("MetaData","Asunto")</alias>
+		<null>true</null>
+		<pk>false</pk>
+		<type>string</type>
+		<length>150</length>
+	</field>
+		
+	<field>
+		<name>enviadopor</name>
+		<!-- Persona que envio el mensaje -->
+		<alias>QT_TRANSLATE_NOOP("MetaData","De")</alias>
+		<null>true</null>
+		<pk>false</pk>
+		<type>string</type>
+		<length>150</length>
+	</field>
+		
+	<field>
+		<name>para</name>
+		<!-- Destinatario -->
+		<alias>QT_TRANSLATE_NOOP("MetaData","Para")</alias>
+		<null>true</null>
+		<pk>false</pk>
+		<type>string</type>
+		<length>250</length>
+	</field>
+		
+	<field>
+		<name>cc</name>
+		<!-- Campo CC del mail -->
+		<alias>QT_TRANSLATE_NOOP("MetaData","CC")</alias>
+		<null>true</null>
+		<pk>false</pk>
+		<type>string</type>
+		<length>250</length>
+	</field>
+	
+	<field>
+		<name>bcc</name>
+		<!-- Campo BCC del mail -->
+		<alias>QT_TRANSLATE_NOOP("MetaData","BCC")</alias>
+		<null>true</null>
+		<pk>false</pk>
+		<type>string</type>
+		<length>250</length>
+	</field>
+	
+	<field>
+		<name>adjuntos</name>
+		<!-- Ficheros adicionales -->
+		<alias>QT_TRANSLATE_NOOP("MetaData","Adjuntos")</alias>
+		<null>true</null>
+		<pk>false</pk>
+		<type>stringlist</type>
+	</field>
+	
+	<field>
+		<name>modo</name>
+		<!-- Indica el modo en que se envia el documento -->
+		<alias>QT_TRANSLATE_NOOP("MetaData","Modo")</alias>
+		<null>false</null>
+		<pk>false</pk>
+		<type>string</type>
+		<length>15</length>
+		<optionslist>QT_TRANSLATE_NOOP("MetaData","En e-mail");QT_TRANSLATE_NOOP("MetaData","PDF Adjunto")</optionslist>
+		<default>QT_TRANSLATE_NOOP("MetaData","PDF Adjunto")</default>
+	</field>
+	
+	<field>
+		<name>texto</name>
+		<!-- Texto del mensaje -->
+		<alias>QT_TRANSLATE_NOOP("MetaData","Texto")</alias>
+		<null>false</null>
+		<pk>false</pk>
+		<type>stringlist</type>
+		<visiblegrid>false</visiblegrid>
+	</field>
+		
+	<field>
+		<name>codcliente</name>
+		<!-- Código del cliente relacionado con el proyecto -->
+		<alias>QT_TRANSLATE_NOOP("MetaData","Cliente")</alias>
+		<null>false</null>
+		<pk>false</pk>
+		<type>string</type>
+		<length>6</length>
+		<visiblegrid>false</visiblegrid>
+		
+		<relation>
+			<table>clientes</table>
+			<field>codcliente</field>
+			<card>M1</card>
+		</relation>
+	</field>
+	
+	<field>
+		<name>tipodoc</name>
+		<!--Tipo del documento que se envía-->
+		<alias>QT_TRANSLATE_NOOP("MetaData","Documento")</alias>
+		<null>true</null>
+		<pk>false</pk>
+		<type>string</type>
+		<length>50</length>
+		<editable>false</editable>
+	</field>
+	
+	<field>
+		<name>codigo</name>
+		<!--Código del documento que se envía-->
+		<alias>QT_TRANSLATE_NOOP("MetaData","Código")</alias>
+		<null>true</null>
+		<pk>false</pk>
+		<type>string</type>
+		<length>12</length>
+		<editable>false</editable>
+	</field>
+	
+	<field>
+		<name>estado</name>
+		<alias>QT_TRANSLATE_NOOP(&quot;MetaData&quot;,&quot;Estado&quot;)</alias>
+		<null>true</null>
+		<pk>false</pk>
+		<type>string</type>
+		<length>50</length>
+		<optionslist>QT_TRANSLATE_NOOP(&quot;MetaData&quot;,&quot;Pendiente&quot;);QT_TRANSLATE_NOOP(&quot;MetaData&quot;,&quot;Enviado&quot;)</optionslist>
+		<default>QT_TRANSLATE_NOOP(&quot;MetaData&quot;,&quot;Pendiente&quot;)</default>
+	</field>
+</TMD>
+

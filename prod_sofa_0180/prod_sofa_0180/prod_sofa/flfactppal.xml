@@ -1,0 +1,21 @@
+<xupdate:modifications>
+<xupdate:insert-after select="/ACTIONS[ACTIONS,1]/action[contactos]" >
+<action>
+<name>selectdirclientes</name>
+<table>dirclientes</table>
+<formrecord>master</formrecord>
+<form>master</form>
+</action>
+</xupdate:insert-after>
+<xupdate:insert-after select="/ACTIONS[ACTIONS,1]/action[selectdirclientes]" >
+<action>
+<name>rutas</name>
+<alias>QT_TRANSLATE_NOOP(&quot;MetaData&quot;,&quot;Rutas de reparto&quot;)</alias>
+<description>QT_TRANSLATE_NOOP(&quot;MetaData&quot;,&quot;Las rutas definen los recorridos de reparto con arreglo a los cuales se generan las órdenes de produccion. Las rutas están formadas por un conjunto de direcciones&quot;)</description>
+<table>rutas</table>
+<form>FLWidgetMasterTable</form>
+<formrecord>rutas</formrecord>
+<scriptformrecord>rutas</scriptformrecord>
+</action>
+</xupdate:insert-after>
+</xupdate:modifications>

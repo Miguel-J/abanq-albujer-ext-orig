@@ -1,0 +1,11 @@
+<flpatch:modifications name="num_serv_acomp" >
+    <flpatch:patchXml path="facturacion/facturacion/" name="flfacturac.xml" />
+    <flpatch:patchXml path="facturacion/facturacion/forms/" name="lineasservicioscli.ui" />
+    <flpatch:addFile path="facturacion/facturacion/forms/" name="lineasserviciosclins.ui" />
+    <flpatch:patchScript path="facturacion/facturacion/scripts/" name="lineasservicioscli.qs" />
+    <flpatch:addFile path="facturacion/facturacion/scripts/" name="lineasserviciosclins.qs" />
+    <flpatch:patchXml path="facturacion/facturacion/tables/" name="lineasservicioscli.mtd" />
+    <flpatch:addFile path="facturacion/facturacion/tables/" name="lineasserviciosclins.mtd" />
+    <flpatch:patchScript path="facturacion/facturacion/scripts/" name="masterservicioscli.qs" />
+    <flpatch:patchScript path="facturacion/facturacion/scripts/" name="flfacturac.qs" />
+</flpatch:modifications>

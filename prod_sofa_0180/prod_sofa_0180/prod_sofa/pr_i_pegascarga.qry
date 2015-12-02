@@ -1,0 +1,28 @@
+<!DOCTYPE QRY>
+<QRY>
+		<name>pr_i_pegascarga</name>
+		<tables>pr_ordenesproduccion,pedidoscli,lineaspedidoscli,lotesstock,movistock</tables>
+
+	<select>
+		lotesstock.codlote,articulos.configuracion,
+		pedidoscli.nombrecliente,pedidoscli.direccion,pedidoscli.observaciones,
+		pedidoscli.ciudad,pedidoscli.provincia,pedidoscli.codpostal,
+		lineaspedidoscli.configuracion,lineaspedidoscli.descripcion
+	</select>
+
+	<from>
+		pr_ordenesproduccion
+		INNER JOIN pr_procesos ON pr_procesos.codordenproduccion = pr_ordenesproduccion.codorden
+		INNER JOIN lotesstock ON pr_procesos.idobjeto = lotesstock.codlote 
+		INNER JOIN articulos ON lotesstock.referencia = articulos.referencia
+		INNER JOIN lineaspedidoscli ON pr_procesos.idlineapedidocli = lineaspedidoscli.idlinea
+		LEFT OUTER JOIN pedidoscli ON pedidoscli.idpedido = lineaspedidoscli.idpedido
+	</from> 
+
+	<where>
+	</where>
+	
+	<order>
+		pedidoscli.provincia,pedidoscli.ciudad,pedidoscli.nombrecliente,lotesstock.codlote
+	</order>
+</QRY>

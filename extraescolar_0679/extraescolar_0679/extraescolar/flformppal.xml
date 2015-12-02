@@ -1,0 +1,58 @@
+<xupdate:modifications>
+<xupdate:insert-after select="/ACTIONS[ACTIONS,1]/action[fo_alumnosgrupocurso]" >
+<action>
+<name>fo_actividades</name>
+<alias>QT_TRANSLATE_NOOP(&quot;MetaData&quot;,&quot;Actividades extraescolares&quot;)</alias>
+<description>QT_TRANSLATE_NOOP(&quot;MetaData&quot;,&quot;Avtividades extraescolares&quot;)</description>
+<table>fo_actividades</table>
+<form>master</form>
+<formrecord>fo_actividades</formrecord>
+<scriptformrecord>fo_actividades</scriptformrecord>
+</action>
+</xupdate:insert-after>
+<xupdate:insert-after select="/ACTIONS[ACTIONS,1]/action[fo_actividades]" >
+<action>
+<name>fo_alumnosactividad</name>
+<alias>QT_TRANSLATE_NOOP(&quot;MetaData&quot;,&quot;Alumnos por actividad&quot;)</alias>
+<description>QT_TRANSLATE_NOOP(&quot;MetaData&quot;,&quot;Alumnos por actividad&quot;)</description>
+<table>fo_alumnosactividad</table>
+<form>master</form>
+<formrecord>fo_alumnosactividad</formrecord>
+<scriptformrecord>fo_alumnosactividad</scriptformrecord>
+</action>
+</xupdate:insert-after>
+<xupdate:insert-after select="/ACTIONS[ACTIONS,1]/action[fo_alumnosactividad]" >
+<action>
+<name>fo_asistenciaact</name>
+<alias>QT_TRANSLATE_NOOP(&quot;MetaData&quot;,&quot;Asistencia a actividad&quot;)</alias>
+<description>QT_TRANSLATE_NOOP(&quot;MetaData&quot;,&quot;Asistencia a actividad&quot;)</description>
+<table>fo_asistenciaact</table>
+<form>master</form>
+<formrecord>fo_asistenciaact</formrecord>
+<scriptformrecord>fo_asistenciaact</scriptformrecord>
+</action>
+</xupdate:insert-after>
+<xupdate:insert-after select="/ACTIONS[ACTIONS,1]/action[fo_asistenciaact]" >
+<action>
+<name>fo_asistenciamensual</name>
+<alias>QT_TRANSLATE_NOOP(&quot;MetaData&quot;,&quot;Asistencia Mensual&quot;)</alias>
+<description>QT_TRANSLATE_NOOP(&quot;MetaData&quot;,&quot;Asistencia a actividad&quot;)</description>
+<table>fo_asistenciamensual</table>
+<form>fo_asistenciamensual</form>
+<formrecord>fo_asistenciamensual</formrecord>
+<scriptform>fo_asistenciamensual</scriptform>
+<scriptformrecord>fo_asistenciamensual</scriptformrecord>
+</action>
+</xupdate:insert-after>
+<xupdate:insert-after select="/ACTIONS[ACTIONS,1]/action[fo_selecciongruposcurso]" >
+<action>
+<name>fo_saldotiquetactcli</name>
+<description>QT_TRANSLATE_NOOP(&quot;MetaData&quot;,&quot;Saldo tiques actividades&quot;)</description>
+<alias>QT_TRANSLATE_NOOP(&quot;MetaData&quot;,&quot;Saldo tiques actividades&quot;)</alias>
+<table>fo_saldotiquetactcli</table>
+<form>master</form>
+<formrecord>fo_saldotiquetactcli</formrecord>
+<scriptformrecord>fo_saldotiquetactcli</scriptformrecord>
+</action>
+</xupdate:insert-after>
+</xupdate:modifications>

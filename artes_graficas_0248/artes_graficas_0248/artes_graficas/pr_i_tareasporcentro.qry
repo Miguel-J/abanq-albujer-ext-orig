@@ -1,0 +1,23 @@
+<!DOCTYPE QRY>
+<QRY>
+	<name>pr_i_tareasporcentro</name>
+
+	<tables>pr_tareas,pr_procesos,lineaspedidoscli,pedidoscli</tables>
+
+	<select>
+		t.codcentro, t.idtarea, t.prioridad, t.diainicio, pe.nombrecliente, t.descripcion, lp.descripcion, t.observaciones
+	</select>
+
+	<from>
+		pr_tareas t
+		INNER JOIN pr_procesos p ON t.idproceso = p.idproceso
+		INNER JOIN lineaspedidoscli lp ON p.idlineapedidocli = lp.idlinea
+		INNER JOIN pedidoscli pe ON lp.idpedido = pe.idpedido
+	</from>
+
+	<where>
+	</where>
+	
+	<order>
+	</order>
+</QRY>

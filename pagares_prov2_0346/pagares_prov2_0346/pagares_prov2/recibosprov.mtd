@@ -1,0 +1,23 @@
+<xupdate:modifications>
+<xupdate:update select="/TMD[TMD,1]/field[codigo]/length[length,1]/text()[1]" >20</xupdate:update>
+<xupdate:insert-after select="/TMD[TMD,1]/field[numero]" >
+<field>
+<name>espagare</name>
+<alias>QT_TRANSLATE_NOOP(&quot;MetaData&quot;,&quot;Es pagaré&quot;)</alias>
+<null>true</null>
+<pk>false</pk>
+<type>bool</type>
+<default>false</default>
+</field>
+</xupdate:insert-after>
+<xupdate:insert-after select="/TMD[TMD,1]/field[espagare]" >
+<field>
+<!-- Identifica al pagaré principal en caso de que sean varios generados en una forma de pago con plazos--><name>idpagareppal</name>
+<alias>QT_TRANSLATE_NOOP(&quot;MetaData&quot;,&quot;Identificador del pagaré&quot;)</alias>
+<null>true</null>
+<pk>false</pk>
+<type>uint</type>
+<visiblegrid>false</visiblegrid>
+</field>
+</xupdate:insert-after>
+</xupdate:modifications>

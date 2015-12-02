@@ -1,0 +1,68 @@
+<!DOCTYPE TMD>
+<TMD>
+	<name>pedidospicking</name>
+<!--Pedido de Picking-->   
+	<alias>QT_TRANSLATE_NOOP("MetaData","Pedidos de Picking")</alias>
+    <field>
+        <name>codpedidopicking</name>
+        <alias>QT_TRANSLATE_NOOP("MetaData","Código")</alias>
+        <null>false</null>
+        <pk>true</pk>
+        <type>string</type>
+		<length>8</length>
+		
+		<relation>
+			<table>lineaspedidospicking</table>
+			<field>codpedidopicking</field>
+			<card>1M</card>
+		</relation>
+		
+		<relation>
+			<table>pedidoscli</table>
+			<field>codpedidopicking</field>
+			<card>1M</card>
+		</relation>
+</field>
+ 
+	<field>
+        <name>idusuario</name>
+        <alias>QT_TRANSLATE_NOOP("MetaData","Usuario")</alias>
+        <null>true</null>
+        <pk>false</pk>
+        <type>string</type>
+        <length>30</length>
+		
+		<relation>
+			<table>usuarios</table>
+			<field>idusuario</field>
+			<card>M1</card>
+		</relation>
+    </field>
+    
+	<field>
+		<name>fecha</name>
+        <alias>QT_TRANSLATE_NOOP("MetaData","Fecha")</alias>
+        <null>false</null>
+        <pk>false</pk>
+        <type>date</type>
+    </field>
+    
+	<field>
+        <name>hora</name>
+		<alias>QT_TRANSLATE_NOOP("MetaData","Hora")</alias>
+        <null>false</null>
+        <pk>false</pk>
+		<type>time</type>
+    </field>
+    
+	<field>
+        <name>estado</name>
+        <alias>QT_TRANSLATE_NOOP("MetaData","Estado")</alias>
+        <null>true</null>
+        <pk>false</pk>
+		<type>string</type>
+		<length>10</length>
+		<optionslist>PTE CESTAS,ACTIVO,EN CESTA,TERMINADO</optionslist>
+		<default>PTE CESTAS</default>
+    </field>
+</TMD>

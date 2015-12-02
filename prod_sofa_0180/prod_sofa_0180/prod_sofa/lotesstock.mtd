@@ -1,0 +1,23 @@
+<xupdate:modifications>
+<xupdate:delete select="/TMD[TMD,1]/field[codlote]/counter[counter,1]" />
+<xupdate:insert-after select="/TMD[TMD,1]/field[fechafabricacion]" >
+<field>
+<name>observacionescorte</name>
+<alias>QT_TRANSLATE_NOOP(&quot;MetaData&quot;,&quot;Corte&quot;)</alias>
+<null>true</null>
+<pk>false</pk>
+<type>string</type>
+<length>300</length>
+</field>
+</xupdate:insert-after>
+<xupdate:insert-after select="/TMD[TMD,1]/field[observacionescorte]" >
+<field>
+<name>observacionesmontaje</name>
+<alias>QT_TRANSLATE_NOOP(&quot;MetaData&quot;,&quot;Montaje&quot;)</alias>
+<null>true</null>
+<pk>false</pk>
+<type>string</type>
+<length>300</length>
+</field>
+</xupdate:insert-after>
+</xupdate:modifications>

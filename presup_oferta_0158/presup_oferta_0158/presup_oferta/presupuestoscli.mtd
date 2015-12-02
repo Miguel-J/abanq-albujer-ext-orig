@@ -1,0 +1,34 @@
+<xupdate:modifications>
+<xupdate:insert-after select="/TMD[TMD,1]/field[idpresupuesto]/relation[lineaspresupuestoscli,idpresupuesto]" >
+<relation>
+<table>parampresupuesto</table>
+<field>idpresupuesto</field>
+<card>1M</card>
+</relation>
+</xupdate:insert-after>
+<xupdate:insert-after select="/TMD[TMD,1]/field[estado]" >
+<field>
+<name>codplantilla</name>
+<alias>QT_TRANSLATE_NOOP(&quot;MetaData&quot;,&quot;Plantilla&quot;)</alias>
+<null>true</null>
+<pk>false</pk>
+<type>string</type>
+<length>10</length>
+<relation>
+<table>plantillasinforme</table>
+<field>codigo</field>
+<card>M1</card>
+</relation>
+</field>
+</xupdate:insert-after>
+<xupdate:insert-after select="/TMD[TMD,1]/field[codplantilla]" >
+<field>
+<name>fichplantilla</name>
+<alias>QT_TRANSLATE_NOOP(&quot;MetaData&quot;,&quot;Fichero odt&quot;)</alias>
+<null>true</null>
+<pk>false</pk>
+<type>string</type>
+<length>100</length>
+</field>
+</xupdate:insert-after>
+</xupdate:modifications>

@@ -1,0 +1,64 @@
+<!DOCTYPE TMD>
+<TMD>
+	<name>co_codcuentaexp</name>
+	<!--Datos de la clasificación para el informe de cuentas de explotación-->
+	
+	<alias>QT_TRANSLATE_NOOP("MetaData","Códigos de Cuenta de Explotación")</alias>
+
+	<field>
+		<name>id</name>
+		<!-- Identificador interno -->
+		<alias>QT_TRANSLATE_NOOP("MetaData","ID")</alias>
+		<null>false</null>
+		<pk>true</pk>
+		<type>serial</type>
+		<visiblegrid>false</visiblegrid>
+		
+		<relation>
+			<table>co_subcuentas</table>
+			<field>idcodcuentaexp</field>
+			<card>1M</card>
+		</relation>
+	</field>
+	
+	<field>
+		<name>nivel1</name>
+		<!-- Código identificativo del nivel 1 del código -->
+		<alias>QT_TRANSLATE_NOOP("MetaData","Nivel1")</alias>
+		<null>false</null>
+		<pk>false</pk>
+		<ck>true</ck>
+		<type>string</type>
+		<length>15</length>
+	</field>
+	
+	<field>	
+		<name>descripcion1</name>
+		<alias>QT_TRANSLATE_NOOP("MetaData","Descripción")</alias>
+		<null>true</null>
+		<pk>false</pk>
+		<type>string</type>
+		<length>255</length>	
+	</field>
+	
+	<field>
+		<name>nivel2</name>
+		<!-- Código identificativo del nivel 1 del código -->
+		<alias>QT_TRANSLATE_NOOP("MetaData","Nivel2")</alias>
+		<null>false</null>
+		<pk>false</pk>
+		<ck>true</ck>
+		<type>string</type>
+		<length>15</length>
+	</field>
+	
+	<field>	
+		<name>descripcion2</name>
+		<alias>QT_TRANSLATE_NOOP("MetaData","Descripción")</alias>
+		<null>true</null>
+		<pk>false</pk>
+		<type>string</type>
+		<length>255</length>	
+	</field>
+	
+</TMD>

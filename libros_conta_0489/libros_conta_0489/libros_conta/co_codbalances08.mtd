@@ -1,0 +1,42 @@
+<xupdate:modifications>
+<xupdate:insert-after select="/TMD[TMD,1]/field[descripcion4ba]" >
+<field>
+<name>codcompleto1</name>
+<!-- Codigo completo nivel 1 --><alias>QT_TRANSLATE_NOOP(&quot;MetaData&quot;,&quot;Código completo 1&quot;)</alias>
+<null>true</null>
+<pk>false</pk>
+<type>string</type>
+<length>15</length>
+</field>
+</xupdate:insert-after>
+<xupdate:insert-after select="/TMD[TMD,1]/field[codcompleto1]" >
+<field>
+<name>codcompleto2</name>
+<!-- Codigo completo nivel 2 --><alias>QT_TRANSLATE_NOOP(&quot;MetaData&quot;,&quot;Código completo 2&quot;)</alias>
+<null>true</null>
+<pk>false</pk>
+<type>string</type>
+<length>15</length>
+</field>
+</xupdate:insert-after>
+<xupdate:insert-after select="/TMD[TMD,1]/field[codcompleto2]" >
+<field>
+<name>codcompleto3</name>
+<!-- Codigo completo nivel 1 --><alias>QT_TRANSLATE_NOOP(&quot;MetaData&quot;,&quot;Código completo 3&quot;)</alias>
+<null>true</null>
+<pk>false</pk>
+<type>string</type>
+<length>15</length>
+</field>
+</xupdate:insert-after>
+<xupdate:insert-after select="/TMD[TMD,1]/field[codcompleto3]" >
+<field>
+<name>xbrlnivel4</name>
+<!-- Nodo XBRL nivel 4 --><alias>QT_TRANSLATE_NOOP(&quot;MetaData&quot;,&quot;XBRL nivel 4&quot;)</alias>
+<null>true</null>
+<pk>false</pk>
+<type>string</type>
+<length>50</length>
+</field>
+</xupdate:insert-after>
+</xupdate:modifications>

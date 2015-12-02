@@ -1,0 +1,61 @@
+<xupdate:modifications>
+<xupdate:insert-after select="/ACTIONS[ACTIONS,1]/action[marcas]" >
+<action>
+<name>mg_importexport</name>
+<description>QT_TRANSLATE_NOOP(&quot;MetaData&quot;,&quot;Magento&quot;)</description>
+<alias>QT_TRANSLATE_NOOP(&quot;MetaData&quot;,&quot;Magento&quot;)</alias>
+<table>mg_importexport</table>
+<form>mg_importexport</form>
+<scriptform>mg_importexport</scriptform>
+</action>
+</xupdate:insert-after>
+<xupdate:insert-after select="/ACTIONS[ACTIONS,1]/action[mg_importexport]" >
+<action>
+<name>mg_websites</name>
+<description>QT_TRANSLATE_NOOP(&quot;MetaData&quot;,&quot;Websites&quot;)</description>
+<alias>QT_TRANSLATE_NOOP(&quot;MetaData&quot;,&quot;Websites&quot;)</alias>
+<table>mg_websites</table>
+<form>master</form>
+<formrecord>mg_websites</formrecord>
+<scriptformrecord>mg_websites</scriptformrecord>
+</action>
+</xupdate:insert-after>
+<xupdate:insert-after select="/ACTIONS[ACTIONS,1]/action[mg_websites]" >
+<action>
+<name>mg_storeviews</name>
+<description>QT_TRANSLATE_NOOP(&quot;MetaData&quot;,&quot;Storeviews&quot;)</description>
+<alias>QT_TRANSLATE_NOOP(&quot;MetaData&quot;,&quot;Storeviews&quot;)</alias>
+<table>mg_storeviews</table>
+<formrecord>mg_storeviews</formrecord>
+<scriptformrecord>mg_storeviews</scriptformrecord>
+</action>
+</xupdate:insert-after>
+<xupdate:insert-after select="/ACTIONS[ACTIONS,1]/action[mg_storeviews]" >
+<action>
+<name>mg_importfiles</name>
+<description>QT_TRANSLATE_NOOP(&quot;MetaData&quot;,&quot;Ficheros importados desde Magento&quot;)</description>
+<alias>QT_TRANSLATE_NOOP(&quot;MetaData&quot;,&quot;Ficheros importados desde Magento&quot;)</alias>
+<table>mg_importfiles</table>
+<formrecord>mg_importfiles</formrecord>
+</action>
+</xupdate:insert-after>
+<xupdate:insert-after select="/ACTIONS[ACTIONS,1]/action[mg_importfiles]" >
+<action>
+<name>mg_customers</name>
+<description>QT_TRANSLATE_NOOP(&quot;MetaData&quot;,&quot;Clientes Magento&quot;)</description>
+<alias>QT_TRANSLATE_NOOP(&quot;MetaData&quot;,&quot;Clientes Magento&quot;)</alias>
+<table>mg_customers</table>
+<form>master</form>
+</action>
+</xupdate:insert-after>
+<xupdate:insert-after select="/ACTIONS[ACTIONS,1]/action[mg_customers]" >
+<action>
+<name>mg_formaspago</name>
+<description>QT_TRANSLATE_NOOP(&quot;MetaData&quot;,&quot;Formas Pago Magento->AbanQ&quot;)</description>
+<alias>QT_TRANSLATE_NOOP(&quot;MetaData&quot;,&quot;Formas Pago Magento->AbanQ&quot;)</alias>
+<table>mg_formaspago</table>
+<form>master</form>
+<formrecord>mg_formaspago</formrecord>
+</action>
+</xupdate:insert-after>
+</xupdate:modifications>

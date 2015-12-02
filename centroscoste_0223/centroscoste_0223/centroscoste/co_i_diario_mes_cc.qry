@@ -1,0 +1,35 @@
+<!DOCTYPE QRY>
+<QRY>
+	<name>co_i_diario_mes_cc</name>
+
+	<tables>co_subcuentas,co_partidas,co_asientos</tables>
+
+	<group>
+		<level>0</level>
+		<field>extract(month from co_asientos.fecha)</field>
+	</group>
+	
+	<select>
+		co_asientos.numero, co_asientos.fecha, extract(month from co_asientos.fecha), 
+		co_subcuentas.idsubcuenta, co_subcuentas.codsubcuenta, co_subcuentas.descripcion,
+		co_partidas.concepto, co_partidas.documento, co_partidas.debe, co_partidas.haber,
+		co_partidas.debeme, co_partidas.haberme, 
+		co_partidas.baseimponible, co_partidas.codserie, co_partidas.factura,
+		co_partidas.iva, co_partidas.recargo,
+		CASE co_partidas.debe WHEN 0 THEN 0 ELSE co_partidascc.importe END,
+		CASE co_partidas.haber WHEN 0 THEN 0 ELSE co_partidascc.importe END
+	</select>
+
+	<from>
+		co_subcuentas
+		INNER JOIN co_partidas ON co_subcuentas.idsubcuenta = co_partidas.idsubcuenta
+		INNER JOIN co_asientos ON co_partidas.idasiento = co_asientos.idasiento
+		INNER JOIN co_partidascc ON co_partidas.idpartida = co_partidascc.idpartida
+	</from>
+
+	<where>
+	</where>
+	
+	<order>
+	</order>
+</QRY>

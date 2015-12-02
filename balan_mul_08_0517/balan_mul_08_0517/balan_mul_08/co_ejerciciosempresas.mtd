@@ -1,0 +1,20 @@
+<xupdate:modifications>
+<xupdate:insert-after select="/TMD[TMD,1]/field[codejercicio]" >
+<field>
+<name>fechadesde</name>
+<alias>QT_TRANSLATE_NOOP(&quot;MetaData&quot;,&quot;Inicio&quot;)</alias>
+<null>false</null>
+<pk>false</pk>
+<type>date</type>
+</field>
+</xupdate:insert-after>
+<xupdate:insert-after select="/TMD[TMD,1]/field[fechadesde]" >
+<field>
+<name>fechahasta</name>
+<alias>QT_TRANSLATE_NOOP(&quot;MetaData&quot;,&quot;Fin&quot;)</alias>
+<null>false</null>
+<pk>false</pk>
+<type>date</type>
+</field>
+</xupdate:insert-after>
+</xupdate:modifications>

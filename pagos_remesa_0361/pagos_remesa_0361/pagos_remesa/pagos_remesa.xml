@@ -1,0 +1,12 @@
+<flpatch:modifications name="pagos_remesa" >
+    <flpatch:patchScript path="facturacion/tesoreria/scripts/" name="remesas.qs" />
+    <flpatch:patchScript path="facturacion/tesoreria/scripts/" name="flfactteso.qs" />
+    <flpatch:patchScript path="facturacion/tesoreria/scripts/" name="reciboscli.qs" />
+    <flpatch:patchScript path="facturacion/tesoreria/scripts/" name="masterreciboscli.qs" />
+    <flpatch:patchXml path="facturacion/tesoreria/forms/" name="masterreciboscli.ui" />
+    <flpatch:addFile path="facturacion/tesoreria/tables/" name="pagorecibosremesados.mtd" />
+    <flpatch:addFile path="facturacion/tesoreria/forms/" name="pagorecibosremesados.ui" />
+    <flpatch:patchXml path="facturacion/tesoreria/" name="flfactteso.xml" />
+    <flpatch:addFile path="facturacion/tesoreria/scripts/" name="pagorecibosremesados.qs" />
+    <flpatch:patchXml path="facturacion/tesoreria/tables/" name="reciboscli.mtd" />
+</flpatch:modifications>

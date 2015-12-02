@@ -1,0 +1,25 @@
+<flpatch:modifications name="incoterms" >
+    <flpatch:patchXml path="facturacion/facturacion/" name="flfacturac.xml" />
+    <flpatch:patchXml path="facturacion/facturacion/forms/" name="flfacturac.ui" />
+    <flpatch:addFile path="facturacion/facturacion/forms/" name="incoterms.ui" />
+    <flpatch:patchXml path="facturacion/facturacion/tables/" name="albaranescli.mtd" />
+    <flpatch:patchXml path="facturacion/facturacion/tables/" name="albaranesprov.mtd" />
+    <flpatch:patchXml path="facturacion/facturacion/tables/" name="facturascli.mtd" />
+    <flpatch:patchXml path="facturacion/facturacion/tables/" name="facturasprov.mtd" />
+    <flpatch:addFile path="facturacion/facturacion/tables/" name="incoterms.mtd" />
+    <flpatch:patchXml path="facturacion/facturacion/tables/" name="pedidoscli.mtd" />
+    <flpatch:patchXml path="facturacion/facturacion/tables/" name="pedidosprov.mtd" />
+    <flpatch:patchXml path="facturacion/facturacion/tables/" name="presupuestoscli.mtd" />
+    <flpatch:patchXml path="facturacion/facturacion/forms/" name="albaranescli.ui" />
+    <flpatch:patchXml path="facturacion/facturacion/forms/" name="pedidoscli.ui" />
+    <flpatch:patchXml path="facturacion/facturacion/forms/" name="albaranesprov.ui" />
+    <flpatch:patchXml path="facturacion/facturacion/forms/" name="facturascli.ui" />
+    <flpatch:patchXml path="facturacion/facturacion/forms/" name="facturasprov.ui" />
+    <flpatch:patchXml path="facturacion/facturacion/forms/" name="pedidosprov.ui" />
+    <flpatch:patchXml path="facturacion/facturacion/forms/" name="presupuestoscli.ui" />
+    <flpatch:patchScript path="facturacion/facturacion/scripts/" name="masterpresupuestoscli.qs" />
+    <flpatch:patchScript path="facturacion/facturacion/scripts/" name="masteralbaranescli.qs" />
+    <flpatch:patchScript path="facturacion/facturacion/scripts/" name="masterpedidosprov.qs" />
+    <flpatch:patchScript path="facturacion/facturacion/scripts/" name="masteralbaranesprov.qs" />
+    <flpatch:patchScript path="facturacion/facturacion/scripts/" name="masterpedidoscli.qs" />
+</flpatch:modifications>

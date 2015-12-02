@@ -1,0 +1,17 @@
+<flpatch:modifications name="envio_fax" >
+    <flpatch:patchScript path="facturacion/facturacion/scripts/" name="flfacturac.qs" />
+    <flpatch:patchScript path="facturacion/facturacion/scripts/" name="masterpresupuestoscli.qs" />
+    <flpatch:patchScript path="facturacion/informes/scripts/" name="customviewer.qs" />
+    <flpatch:patchScript path="facturacion/informes/scripts/" name="flfactinfo.qs" />
+    <flpatch:patchScript path="facturacion/principal/scripts/" name="flfactppal.qs" />
+    <flpatch:patchScript path="facturacion/facturacion/scripts/" name="masterfacturascli.qs" />
+    <flpatch:patchScript path="facturacion/facturacion/scripts/" name="masterpedidoscli.qs" />
+    <flpatch:patchScript path="facturacion/facturacion/scripts/" name="masteralbaranescli.qs" />
+    <flpatch:patchScript path="facturacion/facturacion/scripts/" name="masterpedidosprov.qs" />
+    <flpatch:patchScript path="facturacion/facturacion/scripts/" name="masteralbaranesprov.qs" />
+    <flpatch:patchScript path="facturacion/facturacion/scripts/" name="masterfacturasprov.qs" />
+    <flpatch:patchScript path="facturacion/tesoreria/scripts/" name="masterreciboscli.qs" />
+    <flpatch:patchScript path="facturacion/principal/scripts/" name="clientes.qs" />
+    <flpatch:patchXml path="facturacion/principal/forms/" name="proveedores.ui" />
+    <flpatch:patchXml path="facturacion/informes/forms/" name="customviewer.ui" />
+</flpatch:modifications>

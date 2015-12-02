@@ -1,0 +1,91 @@
+<xupdate:modifications>
+<xupdate:update select="/UI[UI,1]/widget[QWidget,movilote]/property[geometry]/rect[rect,1]/height[height,1]/text()[1]" >430</xupdate:update>
+<xupdate:update select="/UI[UI,1]/widget[QWidget,movilote]/vbox[vbox,1]/widget[QFrame,fdmIdentificacion]/vbox[vbox,1]/widget[QLayoutWidget,layoutCodigoCantidad]/hbox[hbox,1]/widget[FLFieldDB,fdbCantidad]/property[minimumSize]/size[size,1]/height[height,1]/text()[1]" >24</xupdate:update>
+<xupdate:update select="/UI[UI,1]/widget[QWidget,movilote]/vbox[vbox,1]/widget[QFrame,fdmIdentificacion]/vbox[vbox,1]/widget[QLayoutWidget,layoutCodigoCantidad]/hbox[hbox,1]/widget[FLFieldDB,fdbCantidad]/property[minimumSize]/size[size,1]/width[width,1]/text()[1]" >109</xupdate:update>
+<xupdate:update select="/UI[UI,1]/widget[QWidget,movilote]/vbox[vbox,1]/widget[QFrame,fdmIdentificacion]/vbox[vbox,1]/widget[QLayoutWidget,layoutCodigoCantidad]/hbox[hbox,1]/widget[FLFieldDB,fdbCodLote]/property[minimumSize]/size[size,1]/height[height,1]/text()[1]" >24</xupdate:update>
+<xupdate:update select="/UI[UI,1]/widget[QWidget,movilote]/vbox[vbox,1]/widget[QFrame,fdmIdentificacion]/vbox[vbox,1]/widget[QLayoutWidget,layoutCodigoCantidad]/hbox[hbox,1]/widget[FLFieldDB,fdbCodLote]/property[minimumSize]/size[size,1]/width[width,1]/text()[1]" >101</xupdate:update>
+<xupdate:update select="/UI[UI,1]/widget[QWidget,movilote]/vbox[vbox,1]/widget[QFrame,fdmIdentificacion]/vbox[vbox,1]/widget[QLayoutWidget,layoutDocumento]/hbox[hbox,1]/widget[FLFieldDB,fdbDocOrigen]/property[minimumSize]/size[size,1]/height[height,1]/text()[1]" >24</xupdate:update>
+<xupdate:update select="/UI[UI,1]/widget[QWidget,movilote]/vbox[vbox,1]/widget[QFrame,fdmIdentificacion]/vbox[vbox,1]/widget[QLayoutWidget,layoutDocumento]/hbox[hbox,1]/widget[FLFieldDB,fdbDocOrigen]/property[minimumSize]/size[size,1]/width[width,1]/text()[1]" >117</xupdate:update>
+<xupdate:update select="/UI[UI,1]/widget[QWidget,movilote]/vbox[vbox,1]/widget[QFrame,fdmIdentificacion]/vbox[vbox,1]/widget[QLayoutWidget,layoutDocumento]/hbox[hbox,1]/widget[FLFieldDB,fdbTipo]/property[minimumSize]/size[size,1]/height[height,1]/text()[1]" >24</xupdate:update>
+<xupdate:update select="/UI[UI,1]/widget[QWidget,movilote]/vbox[vbox,1]/widget[QFrame,fdmIdentificacion]/vbox[vbox,1]/widget[QLayoutWidget,layoutDocumento]/hbox[hbox,1]/widget[FLFieldDB,fdbTipo]/property[minimumSize]/size[size,1]/width[width,1]/text()[1]" >78</xupdate:update>
+<xupdate:update select="/UI[UI,1]/widget[QWidget,movilote]/vbox[vbox,1]/widget[QFrame,fdmIdentificacion]/vbox[vbox,1]/widget[QLayoutWidget,layoutFechaMov]/hbox[hbox,1]/widget[FLFieldDB,fdbFecha]/property[minimumSize]/size[size,1]/height[height,1]/text()[1]" >24</xupdate:update>
+<xupdate:update select="/UI[UI,1]/widget[QWidget,movilote]/vbox[vbox,1]/widget[QFrame,fdmIdentificacion]/vbox[vbox,1]/widget[QLayoutWidget,layoutFechaMov]/hbox[hbox,1]/widget[FLFieldDB,fdbFecha]/property[minimumSize]/size[size,1]/width[width,1]/text()[1]" >89</xupdate:update>
+<xupdate:insert-after select="/UI[UI,1]/widget[QWidget,movilote]/vbox[vbox,1]/widget[QFrame,fdmIdentificacion]/vbox[vbox,1]/widget[FLFieldDB,fdbDescripcion]" >
+<widget class="QLayoutWidget" >
+<property name="name" >
+<cstring>layoutEnvase</cstring>
+</property>
+<hbox>
+<property name="name" >
+<cstring>unnamed</cstring>
+</property>
+<widget class="FLFieldDB" >
+<property name="name" >
+<cstring>fdbCanEnvases</cstring>
+</property>
+<property name="sizePolicy" >
+<sizepolicy>
+<hsizetype>1</hsizetype>
+<vsizetype>0</vsizetype>
+<horstretch>0</horstretch>
+<verstretch>0</verstretch>
+</sizepolicy>
+</property>
+<property name="minimumSize" >
+<size>
+<width>130</width>
+<height>24</height>
+</size>
+</property>
+<property name="fieldName" >
+<string>canenvases</string>
+</property>
+<property name="tableName" >
+<string/>
+</property>
+<property name="foreignField" >
+<string/>
+</property>
+<property name="fieldRelation" >
+<string/>
+</property>
+</widget>
+<widget class="FLFieldDB" >
+<property name="name" >
+<cstring>fdbValorMetrico</cstring>
+</property>
+<property name="sizePolicy" >
+<sizepolicy>
+<hsizetype>1</hsizetype>
+<vsizetype>0</vsizetype>
+<horstretch>0</horstretch>
+<verstretch>0</verstretch>
+</sizepolicy>
+</property>
+<property name="minimumSize" >
+<size>
+<width>136</width>
+<height>24</height>
+</size>
+</property>
+<property name="maximumSize" >
+<size>
+<width>230</width>
+<height>32767</height>
+</size>
+</property>
+<property name="fieldName" >
+<string>valormetrico</string>
+</property>
+</widget>
+</hbox>
+</widget>
+</xupdate:insert-after>
+<xupdate:update select="/UI[UI,1]/widget[QWidget,movilote]/vbox[vbox,1]/widget[QGroupBox,gbxStock]/hbox[hbox,1]/widget[FLFieldDB,fdbCodAlmacen]/property[minimumSize]/size[size,1]/height[height,1]/text()[1]" >24</xupdate:update>
+<xupdate:update select="/UI[UI,1]/widget[QWidget,movilote]/vbox[vbox,1]/widget[QGroupBox,gbxStock]/hbox[hbox,1]/widget[FLFieldDB,fdbCodAlmacen]/property[minimumSize]/size[size,1]/width[width,1]/text()[1]" >110</xupdate:update>
+<xupdate:update select="/UI[UI,1]/widget[QWidget,movilote]/vbox[vbox,1]/widget[QGroupBox,gbxStock]/hbox[hbox,1]/widget[FLFieldDB,fdbIdStock]/property[minimumSize]/size[size,1]/height[height,1]/text()[1]" >22</xupdate:update>
+<xupdate:update select="/UI[UI,1]/widget[QWidget,movilote]/vbox[vbox,1]/widget[QGroupBox,gbxStock]/hbox[hbox,1]/widget[FLFieldDB,fdbIdStock]/property[minimumSize]/size[size,1]/width[width,1]/text()[1]" >72</xupdate:update>
+<xupdate:update select="/UI[UI,1]/widget[QWidget,movilote]/vbox[vbox,1]/widget[QGroupBox,gbxStock]/hbox[hbox,1]/widget[FLFieldDB,fdbReferencia]/property[minimumSize]/size[size,1]/height[height,1]/text()[1]" >24</xupdate:update>
+<xupdate:update select="/UI[UI,1]/widget[QWidget,movilote]/vbox[vbox,1]/widget[QGroupBox,gbxStock]/hbox[hbox,1]/widget[FLFieldDB,fdbReferencia]/property[minimumSize]/size[size,1]/width[width,1]/text()[1]" >97</xupdate:update>
+<xupdate:delete select="/UI[UI,1]/includehints[includehints,1]" />
+</xupdate:modifications>

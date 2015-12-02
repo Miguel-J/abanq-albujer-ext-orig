@@ -1,0 +1,41 @@
+<!DOCTYPE TMD>
+<TMD>
+	<name>tareasmanuales</name>
+	<!--Tareas manuales-->
+	<alias>QT_TRANSLATE_NOOP("MetaData","Tareas manuales")</alias>
+
+	<field>
+		<name>codtarea</name>
+		<!--Código de la tarea manual-->
+		<alias>QT_TRANSLATE_NOOP("MetaData","Código")</alias>
+		<null>false</null>
+		<pk>true</pk>
+		<type>string</type>
+		<length>6</length>
+
+		<relation>
+			<table>paramtareamanual</table>
+			<field>codtarea</field>
+			<card>1M</card>
+		</relation>
+	</field>
+	
+	<field>
+        <name>descripcion</name>
+		<alias>QT_TRANSLATE_NOOP("MetaData","Descripción")</alias>
+        <null>true</null>
+        <pk>false</pk>
+        <type>string</type>
+		<length>200</length>
+    </field>
+	
+	<field>
+        <name>costeunidad</name>
+		<alias>QT_TRANSLATE_NOOP("MetaData","Coste/Ud.")</alias>
+        <null>true</null>
+        <pk>false</pk>
+        <type>double</type>
+        <partI>6</partI>
+        <partD>4</partD>
+    </field>
+</TMD>

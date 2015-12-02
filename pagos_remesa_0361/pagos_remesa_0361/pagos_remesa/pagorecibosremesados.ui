@@ -1,0 +1,234 @@
+<!DOCTYPE UI><UI version="3.3" stdsetdef="1">
+<class>pagorecibosremesados</class>
+<widget class="QWidget">
+    <property name="name">
+        <cstring>pagorecibosremesados</cstring>
+    </property>
+    <property name="geometry">
+        <rect>
+            <x>0</x>
+            <y>0</y>
+            <width>628</width>
+            <height>485</height>
+        </rect>
+    </property>
+    <property name="caption">
+        <string>Pagar Recibos Remesados</string>
+    </property>
+    <vbox>
+        <property name="name">
+            <cstring>unnamed</cstring>
+        </property>
+        <property name="margin">
+            <number>6</number>
+        </property>
+        <property name="spacing">
+            <number>12</number>
+        </property>
+        <widget class="QGroupBox">
+            <property name="name">
+                <cstring>gbxRecibos</cstring>
+            </property>
+            <property name="title">
+                <string></string>
+            </property>
+            <vbox>
+                <property name="name">
+                    <cstring>unnamed</cstring>
+                </property>
+                <widget class="QLayoutWidget">
+                    <property name="name">
+                        <cstring>layoutBuscar</cstring>
+                    </property>
+                    <hbox>
+                        <property name="name">
+                            <cstring>unnamed</cstring>
+                        </property>
+                        <widget class="QToolButton">
+                            <property name="name">
+                                <cstring>tbnIncluirQuitar</cstring>
+                            </property>
+                            <property name="minimumSize">
+                                <size>
+                                    <width>120</width>
+                                    <height>0</height>
+                                </size>
+                            </property>
+                            <property name="maximumSize">
+                                <size>
+                                    <width>120</width>
+                                    <height>3767</height>
+                                </size>
+                            </property>
+                            <property name="font">
+                                <font>
+                                    <bold>1</bold>
+                                    <italic>1</italic>
+                                </font>
+                            </property>
+                            <property name="text">
+                                <string>Incluir &amp;todos</string>
+                            </property>
+                            <property name="accel">
+                                <string>Alt+T</string>
+                            </property>
+                            <property name="toggleButton">
+                                <bool>true</bool>
+                            </property>
+                        </widget>
+                        <widget class="QToolButton">
+                            <property name="name">
+                                <cstring>tbnIncluirQuitarUno</cstring>
+                            </property>
+                            <property name="minimumSize">
+                                <size>
+                                    <width>120</width>
+                                    <height>0</height>
+                                </size>
+                            </property>
+                            <property name="maximumSize">
+                                <size>
+                                    <width>120</width>
+                                    <height>3767</height>
+                                </size>
+                            </property>
+                            <property name="font">
+                                <font>
+                                    <bold>1</bold>
+                                    <italic>1</italic>
+                                </font>
+                            </property>
+                            <property name="text">
+                                <string>Incluir &amp;uno</string>
+                            </property>
+                            <property name="accel">
+                                <string>Alt+U</string>
+                            </property>
+                            <property name="toggleButton">
+                                <bool>true</bool>
+                            </property>
+                        </widget>
+                        <spacer>
+                            <property name="name">
+                                <cstring>spacer5</cstring>
+                            </property>
+                            <property name="orientation">
+                                <enum>Horizontal</enum>
+                            </property>
+                            <property name="sizeType">
+                                <enum>Expanding</enum>
+                            </property>
+                            <property name="sizeHint">
+                                <size>
+                                    <width>20</width>
+                                    <height>20</height>
+                                </size>
+                            </property>
+                        </spacer>
+                        <widget class="QLabel">
+                            <property name="name">
+                                <cstring>tlbBuscar</cstring>
+                            </property>
+                            <property name="text">
+                                <string>Buscar desde vencimiento:</string>
+                            </property>
+                            <property name="alignment">
+                                <set>AlignVCenter|AlignRight</set>
+                            </property>
+                        </widget>
+                        <widget class="QDateEdit">
+                            <property name="name">
+                                <cstring>date</cstring>
+                            </property>
+                        </widget>
+                        <widget class="QToolButton">
+                            <property name="name">
+                                <cstring>tbnActualizar</cstring>
+                            </property>
+                            <property name="minimumSize">
+                                <size>
+                                    <width>32</width>
+                                    <height>32</height>
+                                </size>
+                            </property>
+                            <property name="maximumSize">
+                                <size>
+                                    <width>32</width>
+                                    <height>32</height>
+                                </size>
+                            </property>
+                            <property name="text">
+                                <string></string>
+                            </property>
+                            <property name="iconSet">
+                                <iconset>image0</iconset>
+                            </property>
+                        </widget>
+                    </hbox>
+                </widget>
+                <widget class="FLTableDB">
+                    <property name="name">
+                        <cstring>tdbRecibos</cstring>
+                    </property>
+                    <property name="tableName">
+                        <string>reciboscli</string>
+                    </property>
+                </widget>
+            </vbox>
+        </widget>
+        <widget class="QLayoutWidget">
+            <property name="name">
+                <cstring>layoutGP</cstring>
+            </property>
+            <hbox>
+                <property name="name">
+                    <cstring>unnamed</cstring>
+                </property>
+                <spacer>
+                    <property name="name">
+                        <cstring>spacerGP</cstring>
+                    </property>
+                    <property name="orientation">
+                        <enum>Horizontal</enum>
+                    </property>
+                    <property name="sizeType">
+                        <enum>Expanding</enum>
+                    </property>
+                    <property name="sizeHint">
+                        <size>
+                            <width>311</width>
+                            <height>20</height>
+                        </size>
+                    </property>
+                </spacer>
+                <widget class="QToolButton">
+                    <property name="name">
+                        <cstring>tbnGenerarPagos</cstring>
+                    </property>
+                    <property name="font">
+                        <font>
+                            <bold>1</bold>
+                            <italic>1</italic>
+                        </font>
+                    </property>
+                    <property name="text">
+                        <string>&amp;Generar Pagos</string>
+                    </property>
+                    <property name="accel">
+                        <string>Alt+G</string>
+                    </property>
+                </widget>
+            </hbox>
+        </widget>
+    </vbox>
+</widget>
+<images>
+    <image name="image0">
+        <data format="PNG" length="2439">89504e470d0a1a0a0000000d4948445200000020000000200806000000737a7af40000094e49444154789cc5977f6c1be519c7bf67bf4e1ea74e734713f0b15acb81ba711181395bcb12605aa3b5dad20db654edb446fbd56e622c439310db98a8a6492bdad03a4dfc0102896e63830ea8081a88c02aad68ad709852622028579ac279d8ab8fd6d42fc9c57e7c7e6def8f3869e92fd8f6c71ee9743ae9bdfb7edee779ef7d9f2ff07f0eedbf7c2704200c8110000d8234280604e18c7b0340030a3500f5e6d5f85f01340884014488f4080422441466402340e3a5518a1b00d559718d1457993980823a1fc47f02a0010883a8856e1d5c802c020a60c120d0f220c6fb9ff19c7b397c2e314b8642b509b11ce2430a6b1008415084749dfaaf261cd89ec293eea33074136ec185dd69c1952eec4e7bf1396ee347cfdf87a949a35d225523455556accefef8c500166bbd28ac4140504c6f21a215d25f1cb0d91a41b13a83412389d4fc1e242d0713c514ecf810bef3e7df403e2fd783f22d24282cc1e7cdf6850042200a03d048502bebfa2abd7bb00b700514379897aa5d86113130853da076c099079234843bfe348ea46f6f9d10131a093424d02081069f47e86c00ad291e02214c570fdaf686e4f514a312982bc0400dcad15839cb2fb8988209205574611b84bbf71e80b32ffd0cfa1950a833730d0a35e6e65ff101002122122012c97b1eba97d85d18e8ed9b333bad395c35ce3bb71e08a8cb86d97d5ade82857cd5816df4c1994f61283904d7f33ee73ce59c344cfd8f103680144810589d5b86d039692788e44f1f7ada10eea57dfd039799f1721cbde397de319c5a0530e8e4847b7a911b70e1802236bc79172611247b48f60f468d1bcdedaeeb7e0fc225222216688180384b13e1e5d40b12684174ed6f1f39645ee2457ef8859ba30ad988fe716ef9c1970eb692ea7ad54af07e239164b532377acb752300140cd8d874ff5efcfc8621bc563a06fba304cd6f877da505afce57178ecb3e12d1bf0a25eaac50431d75d4d5723942cbb31710fa27ac0dec392beddea43ee5cd74ccacc9748d4d4f7492f466eddefc73606ec863138a84be9c81cdfbee065e777e6dfdec0e983c8c7c398db81e473446b8ebdbdb606fb0d649e25dd419edd0755a0181d6e6c4b5d3000221220a9bfdeb6fb7e3e62a3d965fc9bd999583d5ee0e78f14be1bbef802c513c5984558c2b10218fdd18b87f04fdf3d656b3db3a8c09be6fd32fefc6a6e82e48bc806e3d0e8f3d8c6e1986d56fddc4aabc19bad141ba1e05516449bb094021162cf4b8b58ebb8a6d56a7d9ee14a7566e8e6c5a599c4507911ee35cba05ccda944cd74c8b30b2d701bd82cf8ebf34fe6efe88fb8ed165ee9393ee539bf7edc48879173cf502baf56e482531faf5618d571b5bd1499fa618c52846ad4beb61710d0815a1b64e32af1fb873ddb5b696694987135d5de233d58188dfd05bf6ff7d7f7160cdbac3d98c5353ccb5ecb3997bfdd7bb1ea8f86ed597be7ff278c167d9558ab5a954fa0d6f7dfeb2dcaa9dd78ee2907c02abdb06c0750f7acc5825c3bc5acc89e77ddfaf0a25aa2ae05a13802242a0c5bcf19b3f96da34d65cd51bca9fca85cc8e44b84ba8f0d88cd7234fcd4e4598f3f25431508152eccf2ae533cb5305e639c5ecbb1594b41a9178d391fce5c19e7e0c247ab549f928ecb842fa5fd99a1fd02affb87c4c95b8a24a32504aa8c512283420a89ecf4c1cd4e74d1805600823d89b1f87691adaf096a4c8cf5b3f01511bc5fa5aa1580323903e3318012bae42a1ca5c64f2adc37272e6b174c665a3da17d80953b905aef57527eb005afbac6484281a01e96180434b7f419d996bdea1d4eeb1df8fa5c12632d2c57a0c614f761cbbd70f63709bb5265fe03b29968f1119048108098a24efd9f5ced0de674f801081a0ba94532548bcb227bd770e11ccb94567de8af52fa432e91a8092233368f60f1a0435f781bad248500875bf80126356f1c68d9fbc51f34a11f4b659f81d3f8c9d6b6fc6c3af793deae8aca478ec4d6ae911d66d236f7ef55b0aa9bfe5a08e8907a00a102d911acf15ae18fc867dcdc6d5089828704fc8203bab2197cb1d15a27bdccf1c2b714995952f83a58d08aace9a10224424dcc2db329115aa67e3b56b90f37348b60ce041b11bbfeabf134f4bef067e7dfa8d75a3b73cbe7ffb8ec83aacc39e8983887847fea042504a719d2f69dfb0718b11ef4a9cac1c7ccd08724a069387b325ffa8bb47bdebbb52fa0baae0955420aa4b000dd401550710129a4eda8bde5b27d74ecfc9d5f69a246a2a8a98c998acefc78eeb36c2f1acf57fb97d1b4d631a264cdc377100fded894772a7b23529125b5542acddfddd91207db4bdd2d3794d65fc1fa98aa244a04ea80713278c72f6845b5625555681bf0cd04c8382520a2204a0a5b6df9b71576794ba8a3e6ae272bf1dee471c28cce3a6cfaf09cfc2411f7a10453b1e7c318b63479e4be7357f88dbd5952f3fb2393834c395d9523e78fac55465bec00132f2fbd2f32b6ece61ff945f66df0f102875e6c1d000508342454ab9804259ea84bbdc67c61e4f4f1e5848c66d601eb0a2165c6460c38681e696cc0ecaf1ee411075bcbc7773e98569f2f305f85393f9f78a30e7e0d1a8c166a59ccf97d92f9798e5528fd8787f068006eaaa81ba6ab0e2868040ec92f6a9cc4be9157e3c918c7d2a8a6c711a46340901898fc10210c183870ee08ad5fc6ae2f2f6ca13879ccaf4dbd9c07d2b1bccbe927d325a508ff1f142dd999daef95eb12a0b5e004680806b001ae7eb88ea5050a410304b26d5c7fdb70d6edfb6c5c2d8fc186cc30290411f863103173de80104a1983366f29994c631eb3d38e92386deff4f23227df324d5a70a79c5b2a8b820153102665e6ad52fd892355831083aec5b079dd1aff563cc1f038c32300fec68df0689fca23800221b964acf926e9df03c4f96495f2816d2653057f3fe8c82cf55e94b0586c219e21703d088481bbc7fd7895f7c71188ee760873e0ad705ac4e60cc4dc3d26da47c1723090bd03d586c961ccfa994f3c5b294b204bfcccc5c85e22afbbce809ce12072eec0bc22022faca361fe734d2e706c50cd8ca5d2fb3f953f95c5eb2cf0beccb0a141414d7cf70471fda198589a8153ac5f4ce019df46247b433b982da33ad76dc0ebbd2d5a8d3060a6ec38a592aeda6cb2ccb7379cf7d8f25cfb394652c9e0fb5a6e839c21f04105ab45d3a21466d14a33650b495965bf5451b46408315ea600ed82f97d99725f6b90ce6005816bf685c0860c99408226a61411112140638044140d37e3521965a6fc5cc01c0ea8c997f605ccc1b6a38ed8417afa63870f61d0d28d4cf98f5871207807f036900f228b4dae2b60000000049454e44ae426082</data>
+    </image>
+</images>
+<layoutdefaults spacing="6" margin="11"/>
+<includehints>
+    <includehint>fltabledb.h</includehint>
+</includehints>
+</UI>

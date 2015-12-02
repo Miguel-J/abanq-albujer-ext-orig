@@ -1,0 +1,12 @@
+<xupdate:modifications>
+<xupdate:insert-after select="/TMD[TMD,1]/field[domiciliado]" >
+<field>
+<name>mesescompletos</name>
+<!--Si el plazo es múltiplo de 30, cambia el mes/año pero no el día del mes--><alias>QT_TRANSLATE_NOOP(&quot;MetaData&quot;,&quot;Ajuste a meses completos&quot;)</alias>
+<null>true</null>
+<pk>false</pk>
+<type>bool</type>
+<default>false</default>
+</field>
+</xupdate:insert-after>
+</xupdate:modifications>

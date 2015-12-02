@@ -1,0 +1,209 @@
+<!DOCTYPE UI><UI version="3.3" stdsetdef="1">
+<class>tpv_almacenestienda</class>
+<widget class="QWidget">
+    <property name="name">
+        <cstring>tpv_almacenestienda</cstring>
+    </property>
+    <property name="geometry">
+        <rect>
+            <x>0</x>
+            <y>0</y>
+            <width>499</width>
+            <height>92</height>
+        </rect>
+    </property>
+    <property name="caption">
+        <string>tpv_almacenestienda</string>
+    </property>
+    <vbox>
+        <property name="name">
+            <cstring>unnamed</cstring>
+        </property>
+        <property name="margin">
+            <number>6</number>
+        </property>
+        <property name="spacing">
+            <number>6</number>
+        </property>
+        <widget class="QFrame">
+            <property name="name">
+                <cstring>frame5</cstring>
+            </property>
+            <property name="frameShape">
+                <enum>GroupBoxPanel</enum>
+            </property>
+            <property name="frameShadow">
+                <enum>Sunken</enum>
+            </property>
+            <vbox>
+                <property name="name">
+                    <cstring>unnamed</cstring>
+                </property>
+                <widget class="QLayoutWidget">
+                    <property name="name">
+                        <cstring>layoutTienda</cstring>
+                    </property>
+                    <hbox>
+                        <property name="name">
+                            <cstring>unnamed</cstring>
+                        </property>
+                        <widget class="FLFieldDB">
+                            <property name="name">
+                                <cstring>fdbTienda</cstring>
+                            </property>
+                            <property name="sizePolicy">
+                                <sizepolicy>
+                                    <hsizetype>1</hsizetype>
+                                    <vsizetype>0</vsizetype>
+                                    <horstretch>0</horstretch>
+                                    <verstretch>0</verstretch>
+                                </sizepolicy>
+                            </property>
+                            <property name="minimumSize">
+                                <size>
+                                    <width>38</width>
+                                    <height>24</height>
+                                </size>
+                            </property>
+                            <property name="fieldName">
+                                <string>codtienda</string>
+                            </property>
+                            <property name="tableName">
+                                <string></string>
+                            </property>
+                            <property name="foreignField">
+                                <string></string>
+                            </property>
+                            <property name="fieldRelation">
+                                <string></string>
+                            </property>
+                            <property name="showAlias">
+                                <bool>true</bool>
+                            </property>
+                        </widget>
+                        <widget class="FLFieldDB">
+                            <property name="name">
+                                <cstring>fdbDescripcion</cstring>
+                            </property>
+                            <property name="sizePolicy">
+                                <sizepolicy>
+                                    <hsizetype>1</hsizetype>
+                                    <vsizetype>0</vsizetype>
+                                    <horstretch>0</horstretch>
+                                    <verstretch>0</verstretch>
+                                </sizepolicy>
+                            </property>
+                            <property name="minimumSize">
+                                <size>
+                                    <width>16</width>
+                                    <height>23</height>
+                                </size>
+                            </property>
+                            <property name="fieldName">
+                                <string>descripcion</string>
+                            </property>
+                            <property name="tableName">
+                                <string>tpv_tiendas</string>
+                            </property>
+                            <property name="foreignField">
+                                <string>codtienda</string>
+                            </property>
+                            <property name="fieldRelation">
+                                <string>codtienda</string>
+                            </property>
+                            <property name="showAlias">
+                                <bool>true</bool>
+                            </property>
+                        </widget>
+                    </hbox>
+                </widget>
+                <widget class="QLayoutWidget">
+                    <property name="name">
+                        <cstring>layoutAlmacen</cstring>
+                    </property>
+                    <hbox>
+                        <property name="name">
+                            <cstring>unnamed</cstring>
+                        </property>
+                        <widget class="FLFieldDB">
+                            <property name="name">
+                                <cstring>fdbCodAlmacen</cstring>
+                            </property>
+                            <property name="sizePolicy">
+                                <sizepolicy>
+                                    <hsizetype>1</hsizetype>
+                                    <vsizetype>0</vsizetype>
+                                    <horstretch>0</horstretch>
+                                    <verstretch>0</verstretch>
+                                </sizepolicy>
+                            </property>
+                            <property name="minimumSize">
+                                <size>
+                                    <width>38</width>
+                                    <height>24</height>
+                                </size>
+                            </property>
+                            <property name="fieldName">
+                                <string>codalmacen</string>
+                            </property>
+                            <property name="tableName">
+                                <string></string>
+                            </property>
+                            <property name="foreignField">
+                                <string></string>
+                            </property>
+                            <property name="fieldRelation">
+                                <string></string>
+                            </property>
+                            <property name="showAlias">
+                                <bool>true</bool>
+                            </property>
+                        </widget>
+                        <widget class="FLFieldDB">
+                            <property name="name">
+                                <cstring>fdbDescripcion_2</cstring>
+                            </property>
+                            <property name="sizePolicy">
+                                <sizepolicy>
+                                    <hsizetype>1</hsizetype>
+                                    <vsizetype>0</vsizetype>
+                                    <horstretch>0</horstretch>
+                                    <verstretch>0</verstretch>
+                                </sizepolicy>
+                            </property>
+                            <property name="minimumSize">
+                                <size>
+                                    <width>16</width>
+                                    <height>23</height>
+                                </size>
+                            </property>
+                            <property name="fieldName">
+                                <string>nombre</string>
+                            </property>
+                            <property name="tableName">
+                                <string></string>
+                            </property>
+                            <property name="foreignField">
+                                <string>nombre</string>
+                            </property>
+                            <property name="fieldRelation">
+                                <string>codalmacen</string>
+                            </property>
+                            <property name="showAlias">
+                                <bool>true</bool>
+                            </property>
+                        </widget>
+                    </hbox>
+                </widget>
+            </vbox>
+        </widget>
+    </vbox>
+</widget>
+<layoutdefaults spacing="6" margin="11"/>
+<includehints>
+    <includehint>flfielddb.h</includehint>
+    <includehint>flfielddb.h</includehint>
+    <includehint>flfielddb.h</includehint>
+    <includehint>flfielddb.h</includehint>
+</includehints>
+</UI>

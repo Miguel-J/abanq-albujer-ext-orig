@@ -1,0 +1,24 @@
+<flpatch:modifications name="canarias" >
+    <flpatch:patchXml path="facturacion/facturacion/forms/" name="facturascli.ui" />
+    <flpatch:patchXml path="facturacion/facturacion/forms/" name="facturasprov.ui" />
+    <flpatch:patchXml path="facturacion/facturacion/tables/" name="albaranescli.mtd" />
+    <flpatch:patchXml path="facturacion/facturacion/tables/" name="albaranesprov.mtd" />
+    <flpatch:patchXml path="facturacion/facturacion/tables/" name="facturascli.mtd" />
+    <flpatch:patchXml path="facturacion/facturacion/tables/" name="facturasprov.mtd" />
+    <flpatch:patchXml path="facturacion/facturacion/tables/" name="pedidoscli.mtd" />
+    <flpatch:patchXml path="facturacion/facturacion/tables/" name="pedidosprov.mtd" />
+    <flpatch:patchXml path="facturacion/facturacion/tables/" name="presupuestoscli.mtd" />
+    <flpatch:patchXml path="facturacion/almacen/tables/" name="articulos.mtd" />
+    <flpatch:replaceFile path="facturacion/informes/reports/" name="i_facturascli.kut" />
+    <flpatch:patchScript path="facturacion/informes/scripts/" name="flfactinfo.qs" />
+    <flpatch:patchXml path="facturacion/facturacion/tables/" name="lineaspedidosprov.mtd" />
+    <flpatch:patchXml path="facturacion/facturacion/tables/" name="lineasfacturascli.mtd" />
+    <flpatch:patchXml path="facturacion/facturacion/tables/" name="lineaspedidoscli.mtd" />
+    <flpatch:patchXml path="facturacion/facturacion/tables/" name="lineasalbaranesprov.mtd" />
+    <flpatch:patchXml path="facturacion/facturacion/tables/" name="lineasivafactprov.mtd" />
+    <flpatch:patchXml path="facturacion/facturacion/tables/" name="lineasivafactcli.mtd" />
+    <flpatch:patchXml path="facturacion/facturacion/tables/" name="lineasfacturasprov.mtd" />
+    <flpatch:patchXml path="facturacion/facturacion/tables/" name="lineasalbaranescli.mtd" />
+    <flpatch:patchXml path="facturacion/facturacion/tables/" name="lineaspresupuestoscli.mtd" />
+    <flpatch:replaceFile path="facturacion/informes/reports/" name="i_facturasprov.kut" />
+</flpatch:modifications>

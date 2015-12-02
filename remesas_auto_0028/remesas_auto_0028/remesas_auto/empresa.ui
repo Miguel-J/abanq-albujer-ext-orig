@@ -1,0 +1,67 @@
+<xupdate:modifications>
+<xupdate:insert-after select="/UI[UI,1]/widget[QWidget,formEmpresa]/vbox[vbox,1]/widget[QTabWidget,tbwEmpresa]/widget[QWidget,valoresdefecto]/vbox[vbox,1]/widget[QFrame,fdmValoresDefecto]" >
+<widget class="QGroupBox" >
+<property name="name" >
+<cstring>gbxRemesas</cstring>
+</property>
+<property name="font" >
+<font>
+<italic>1</italic>
+</font>
+</property>
+<property name="title" >
+<string>Remesas</string>
+</property>
+<hbox>
+<property name="name" >
+<cstring>unnamed</cstring>
+</property>
+<widget class="FLFieldDB" >
+<property name="name" >
+<cstring>fdbMinimoRemesa</cstring>
+</property>
+<property name="sizePolicy" >
+<sizepolicy>
+<hsizetype>1</hsizetype>
+<vsizetype>0</vsizetype>
+<horstretch>0</horstretch>
+<verstretch>0</verstretch>
+</sizepolicy>
+</property>
+<property name="minimumSize" >
+<size>
+<width>270</width>
+<height>25</height>
+</size>
+</property>
+<property name="font" >
+<font>
+<bold>0</bold>
+<italic>0</italic>
+</font>
+</property>
+<property name="fieldName" >
+<string>minimoremesa</string>
+</property>
+</widget>
+<spacer>
+<property name="name" >
+<cstring>spacer10</cstring>
+</property>
+<property name="orientation" >
+<enum>Horizontal</enum>
+</property>
+<property name="sizeType" >
+<enum>Expanding</enum>
+</property>
+<property name="sizeHint" >
+<size>
+<width>61</width>
+<height>20</height>
+</size>
+</property>
+</spacer>
+</hbox>
+</widget>
+</xupdate:insert-after>
+</xupdate:modifications>

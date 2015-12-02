@@ -1,0 +1,45 @@
+<xupdate:modifications>
+<xupdate:update select="/TMD[TMD,1]/alias[alias,1]/text()[1]" >QT_TRANSLATE_NOOP(&quot;MetaData&quot;,&quot;Órdenes&quot;)</xupdate:update>
+<xupdate:insert-after select="/TMD[TMD,1]/field[planificacion]" >
+<field>
+<name>tipoorden</name>
+<!-- Tipo de orden (corte o producción)--><alias>QT_TRANSLATE_NOOP(&quot;MetaData&quot;,&quot;&quot;)</alias>
+<null>false</null>
+<pk>false</pk>
+<type>string</type>
+<length>1</length>
+<default>P</default>
+<visiblegrid>false</visiblegrid>
+</field>
+</xupdate:insert-after>
+<xupdate:insert-after select="/TMD[TMD,1]/field[fechahasta]" >
+<field>
+<name>codruta</name>
+<alias>QT_TRANSLATE_NOOP(&quot;MetaData&quot;,&quot;Ruta&quot;)</alias>
+<null>true</null>
+<pk>false</pk>
+<type>string</type>
+<length>15</length>
+<relation>
+<table>rutas</table>
+<field>codruta</field>
+<card>M1</card>
+</relation>
+</field>
+</xupdate:insert-after>
+<xupdate:insert-after select="/TMD[TMD,1]/field[codruta]" >
+<field>
+<name>codordencorte</name>
+<!--Identificador de la orden de corte relacionada--><alias>QT_TRANSLATE_NOOP(&quot;MetaData&quot;,&quot;Orden de Corte&quot;)</alias>
+<null>true</null>
+<pk>false</pk>
+<type>string</type>
+<length>10</length>
+<relation>
+<table>pr_ordenesproduccion</table>
+<field>codorden</field>
+<card>M1</card>
+</relation>
+</field>
+</xupdate:insert-after>
+</xupdate:modifications>

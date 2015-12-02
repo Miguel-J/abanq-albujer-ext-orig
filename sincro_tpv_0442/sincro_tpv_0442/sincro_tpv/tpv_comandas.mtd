@@ -1,0 +1,81 @@
+<xupdate:modifications>
+<xupdate:insert-after select="/TMD[TMD,1]/field[idtpv_comanda]/relation[tpv_vales,idtpv_comanda]" >
+<relation>
+<table>tpv_sincrodevoltienda</table>
+<field>idtpv_comanda</field>
+<card>1M</card>
+</relation>
+</xupdate:insert-after>
+<xupdate:insert-after select="/TMD[TMD,1]/field[tipodoc]" >
+<field>
+<name>ptesincrofactura</name>
+<!--Pendiente de sincronización con facturación--><alias>QT_TRANSLATE_NOOP(&quot;MetaData&quot;,&quot;Pendiente de sincronización con facturación&quot;)</alias>
+<null>false</null>
+<pk>false</pk>
+<type>bool</type>
+<default>true</default>
+<visiblegrid>false</visiblegrid>
+</field>
+</xupdate:insert-after>
+<xupdate:insert-after select="/TMD[TMD,1]/field[ptesincrofactura]" >
+<field>
+<name>fechasincro</name>
+<!--Fecha de la última sincronización con la central--><alias>QT_TRANSLATE_NOOP(&quot;MetaData&quot;,&quot;Fecha sincronización&quot;)</alias>
+<null>true</null>
+<pk>false</pk>
+<type>date</type>
+</field>
+</xupdate:insert-after>
+<xupdate:insert-after select="/TMD[TMD,1]/field[fechasincro]" >
+<field>
+<name>sincronizada</name>
+<!--Verdadero si la comanda está sincronizada con la central--><alias>QT_TRANSLATE_NOOP(&quot;MetaData&quot;,&quot;Sincronizada&quot;)</alias>
+<null>false</null>
+<pk>false</pk>
+<type>bool</type>
+<default>false</default>
+</field>
+</xupdate:insert-after>
+<xupdate:insert-after select="/TMD[TMD,1]/field[anulada]" >
+<field>
+<name>ptepuntos</name>
+<!--Usado en la extensión de puntos_tvp--><alias>QT_TRANSLATE_NOOP(&quot;MetaData&quot;,&quot;Pte.Puntos&quot;)</alias>
+<null>false</null>
+<pk>false</pk>
+<type>bool</type>
+<default>true</default>
+</field>
+</xupdate:insert-after>
+<xupdate:insert-after select="/TMD[TMD,1]/field[ptepuntos]" >
+<field>
+<name>ptesaldo</name>
+<!--Usado en la extensión de puntos_tvp--><alias>QT_TRANSLATE_NOOP(&quot;MetaData&quot;,&quot;Pte.Saldo&quot;)</alias>
+<null>false</null>
+<pk>false</pk>
+<type>bool</type>
+<default>false</default>
+</field>
+</xupdate:insert-after>
+<xupdate:insert-after select="/TMD[TMD,1]/field[ptesaldo]" >
+<field>
+<name>saldonosincro</name>
+<alias>QT_TRANSLATE_NOOP(&quot;MetaData&quot;,&quot;Saldo no sincro&quot;)</alias>
+<null>false</null>
+<pk>false</pk>
+<type>double</type>
+<partI>8</partI>
+<partD>2</partD>
+<default>0</default>
+</field>
+</xupdate:insert-after>
+<xupdate:insert-after select="/TMD[TMD,1]/field[codtienda]" >
+<field>
+<name>ptesincrocli</name>
+<alias>QT_TRANSLATE_NOOP(&quot;MetaData&quot;,&quot;Cliente nuevo o modificado&quot;)</alias>
+<null>true</null>
+<pk>false</pk>
+<type>bool</type>
+<default>false</default>
+</field>
+</xupdate:insert-after>
+</xupdate:modifications>

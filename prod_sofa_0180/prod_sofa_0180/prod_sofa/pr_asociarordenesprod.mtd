@@ -1,0 +1,83 @@
+<!DOCTYPE TMD>
+<TMD>
+	<name>pr_asociarordenesprod</name>
+	<alias>QT_TRANSLATE_NOOP("MetaData","Asociar Órdenes de Producción")</alias>
+
+	<field>
+		<name>id</name>
+		<!--Identificador interno de la tabla-->
+		<alias>QT_TRANSLATE_NOOP("MetaData","ID")</alias>
+		<null>false</null>
+		<pk>true</pk>
+		<type>serial</type>
+		<visiblegrid>false</visiblegrid>
+	</field>
+
+	<field>
+		<name>idordendesde</name>
+		<!--Código de la órden de producción inicial-->
+		<alias>QT_TRANSLATE_NOOP("MetaData","Desde órden")</alias>
+		<pk>false</pk>
+		<type>string</type>
+		<length>18</length>
+
+		<relation>
+			<table>pr_ordenesproduccion</table>
+			<field>codorden</field>
+			<card>M1</card>
+		</relation>
+	</field>
+	
+	<field>
+		<name>idordenhasta</name>
+		<!--Código de la órden de producción final-->
+		<alias>QT_TRANSLATE_NOOP("MetaData","Hasta")</alias>
+		<pk>false</pk>
+		<type>string</type>
+		<length>18</length>
+
+		<relation>
+			<table>pr_ordenesproduccion</table>
+			<field>codorden</field>
+			<card>M1</card>
+		</relation>
+	</field>
+	
+	<field>
+		<name>fechadesde</name>
+		<!--Fecha inicial-->
+		<alias>QT_TRANSLATE_NOOP("MetaData","Desde")</alias>
+		<pk>false</pk>
+		<type>date</type>
+	</field>
+	<field>
+		<name>fechahasta</name>
+		<!--Fecha final-->
+		<alias>QT_TRANSLATE_NOOP("MetaData","Hasta")</alias>
+		<pk>false</pk>
+		<type>date</type>
+	</field>
+	<field>
+		<name>codruta</name>
+		<!--Código de la ruta-->
+		<alias>QT_TRANSLATE_NOOP("MetaData","Ruta")</alias>
+		<pk>false</pk>
+		<type>string</type>
+		<length>15</length>
+
+		<relation>
+			<table>rutas</table>
+			<field>codruta</field>
+			<card>M1</card>
+		</relation>
+	</field>
+	
+	<field>
+		<name>idordencorte</name>
+		<!--Código de la órden de producción final-->
+		<alias>QT_TRANSLATE_NOOP("MetaData","Hasta")</alias>
+		<pk>false</pk>
+		<type>string</type>
+		<length>18</length>
+	</field>
+</TMD>

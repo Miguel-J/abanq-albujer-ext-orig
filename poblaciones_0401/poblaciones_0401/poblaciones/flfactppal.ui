@@ -1,0 +1,27 @@
+<xupdate:modifications>
+<xupdate:insert-after select="/UI[UI,1]/actions[actions,1]/action[provincias]" >
+<action>
+<property name="name" >
+<cstring>poblaciones</cstring>
+</property>
+<property name="text" >
+<string>Poblaciones</string>
+</property>
+<property name="menuText" >
+<string>Pob&amp;laciones</string>
+</property>
+</action>
+</xupdate:insert-after>
+<xupdate:insert-after select="/UI[UI,1]/connections[connections,1]/connection[provincias,activated(),FLWidgetApplication,openDefaultForm()]" >
+<connection>
+<sender>poblaciones</sender>
+<signal>activated()</signal>
+<receiver>FLWidgetApplication</receiver>
+<slot>openDefaultForm()</slot>
+</connection>
+</xupdate:insert-after>
+<xupdate:insert-after select="/UI[UI,1]/menubar[menubar,1]/item[Tablas_Generales]/action[provincias]" >
+<action name="poblaciones" />
+</xupdate:insert-after>
+<xupdate:update select="/UI[UI,1]/menubar[menubar,1]/property[geometry]/rect[rect,1]/height[height,1]/text()[1]" >26</xupdate:update>
+</xupdate:modifications>

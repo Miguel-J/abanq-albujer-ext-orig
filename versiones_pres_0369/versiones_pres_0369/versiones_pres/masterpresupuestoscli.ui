@@ -1,0 +1,183 @@
+<xupdate:modifications>
+<xupdate:update select="/UI[UI,1]/widget[QWidget,FLWidgetMasterTable]/property[property,2]/rect[rect,1]/height[height,1]/text()[1]" >371</xupdate:update>
+<xupdate:update select="/UI[UI,1]/widget[QWidget,FLWidgetMasterTable]/vbox[vbox,1]/widget[QFrame,barraBotones]/hbox[hbox,1]/spacer[Spacer2]/property[property,4]/size[size,1]/width[width,1]/text()[1]" >50</xupdate:update>
+<xupdate:update select="/UI[UI,1]/widget[QWidget,FLWidgetMasterTable]/vbox[vbox,1]/widget[QFrame,barraBotones]/hbox[hbox,1]/spacer[spacer4]/property[property,3]/enum[enum,1]/text()[1]" >Fixed</xupdate:update>
+<xupdate:insert-after select="/UI[UI,1]/widget[QWidget,FLWidgetMasterTable]/vbox[vbox,1]/widget[QFrame,barraBotones]/hbox[hbox,1]/widget[QPushButton,toolButtonPrint]" >
+<spacer>
+<property name="name" >
+<cstring>spcVersionesPres</cstring>
+</property>
+<property name="orientation" >
+<enum>Horizontal</enum>
+</property>
+<property name="sizeType" >
+<enum>Fixed</enum>
+</property>
+<property name="sizeHint" >
+<size>
+<width>40</width>
+<height>20</height>
+</size>
+</property>
+</spacer>
+</xupdate:insert-after>
+<xupdate:append-first select="/UI[UI,1]/images[images,1]" >
+<image name="versiones_presimage6" >
+<data format="PNG" length="1299" >89504e470d0a1a0a0000000d4948445200000020000000200806000000737a7af4000004da49444154789cad96c18b25571587bfd7dec529a864eed516ea4206bac085adabd120641b976e246836d140220ac6ad0b217f8059f827084a202282b3733601b3c82411c1e9853ab530e47650722fcca3eb4a2ea913ad99e7e256bfeece645ab4df85c7ef7d55afea9d3af53be79ed5332fbcfc20dc0b2bc1a2643c963867c002094b472621d2a32560b1a828aa0264bc74c4728cc801b91cd3b71da1245efefe4b07cf3dff8df7f92f6bf5d4b75f7ca093aeb64766050450007486c3c3a7504d304f609a1a9cc94c65a23120d233e681460480f8b763acb75f7fe39db73fa06ddedb0c77fff5a800f6a4f500786c3d623a40b1740088e9c0648813e3a874b623fefd8883b6a7013adb33ae07880aa661bc073a4f0c437e09e527aca7cf5d9601a325d6a8c94b06122064aaea9c18d7e0ae3b2447c2f140dff70cffb803c0108ec8eb0c4cf46a513d5e6e1dc19c66f492006e7ce1f0415aa7cfd8d6924aa6134b2a91aef555c5933462013542d73a5219f1ad279788ff7c4f6e22561cb98c1c5e3f249791711836cc2caff39275727292371f6d362727279b5daafde28d5fd11dfc92fd03bfd96c78d467b5f96893a7c2b5a6050ad0c254a069615a4fdcfac33be429621bff3fa9663e8c256efafdfedea8f9be6f2db1645c6b19e7fce18f7ff0bd27014ccc112b9e53cde7588ce5e69bb7100438023a94a387d8da0e4cac0f60028d0863c98f89f48c293c8e2ac18ca00da10da0fae0f40dec59f16899f8348d45f16dad0ad776407a887bdbd34883a301a3f4dd21932afd138760aa571a119c3434fbe04c03b05af92fbdb2f2fd2b7b29076ebdfe7b8edebd03022987ad3a03634940472cb52a3ec9b144acb18cf304464825e1970c3606620e8c19420af5ba140007f3d401dd9e950e7bbda1dfefd1ac58e9888b6a79f4936f592c613de04c83e68ce844d448a330e64c330bccf5f7531e96eb4730b5ffacfe74f7afd9b7fedab8182496886f3d5b5e475ceb18cbb83315d37cfce5a79ffe3506561fbc779255f59a881035e2c5a3aa5486af1cb8da954fbbf30e745c4fd367bff6d5dfc0c45ec8b563851c71c6719195584630ec5c99a75a055e5c4dbb38a6a25c64b0e298cab4e86e3816dd7a602f9488358e5096273fcf022947424aa41c41a645b9123b01e6ba07ed75e2b8f9c62d5096deefd025d2542216e1e6ebb51969062b7607aacbb64ef5c08dfe9069ce5863170f4cb5331a47d4cc8fbefb22a3665494981308c49caec45b0f38b1d00abeed88059cd49eedc512cbb470ad77b6e7afcaf1cc0331279c082127dc12e1960de73a5af5c82ed81a77e60127969897c872e6029784130745714b75ec82b570e681b8b8b2aa70814d4dd76420968818b713c64c671eb04b6455472e724dd7f0ee1dacf150146b1cb9c42b712cf9cc03294715e33e4e39de179afb17d4b8fb21478efe3c10d6036a6aa98a71a412fe6f76225b0fac369b4dfde2fb9f336330be9e34d0edfbe677afbef62c6582b6d96e5457e5b01ea76f3dff9dba179c1b0fdfc2709b39deaeca6d67e58f31d7c8630ed5133b60776e2f30a7ffbe89e1179f1c587ffbe6ddce197e164b5afa842e7a350eebb078205ec8c043cbcd5a2316bbf40776c217fac06501448db865bcaa37d90da712cffac06501584ea765b75bfdb77bd8039fb68e4bf8e741eb7f3884e1daf097f8cdaccbe87e454d39cca71ed896e1656be57bcfcc4feb24b384bd23fd0ff40b31f4dfc62db00000000049454e44ae426082</data>
+</image>
+</xupdate:append-first>
+<xupdate:append-first select="/UI[UI,1]/images[images,1]" >
+<image name="versiones_presimage7" >
+<data format="PNG" length="1168" >89504e470d0a1a0a0000000d4948445200000020000000200806000000737a7af40000045749444154789ced96bf6f1c4514c73f090b9a451b98418ed84196b88d946249c349a1484a4b50a4e24f4088065153d023917f02149a88829802c9a9f07576417447116e11893c06accc4a5e790779949ba04d8e6237960f9f7fa0584a93d77cf5d97977f3de9bb76f079eb39dd90fdf7ffbd3b46c2c69a4f93f4ac5ae6dec5426d936b8c72a92d48d8348026ef7f3cf3eb97c5800d17e58b9b3824a52867e74a8668b39e330443531630c3ac930953997494de9cc6b8218834135317564d0c44f8eaac0d9594cb1be0404b52f0fb01019b6a9c107eaa66e3777056aa17d2e234dcd044220244088b1c19e21ed5d67a177fd040194e82405022a490f70682c3ad1900874a27138329941689fdb6051018277a4494af0062d749b5914a7c71ec17f331773d86c15884853f80211096a2120086a5f4003b609404ab1350204d6dbf6af9bc9dc239869c28de1832909d4be46278ae0e15979128547973e58fa0e3494eb1fcd8de2a94d1f4ea73b3b3bd3d3d48d8d070f497b3758e8dd98b7e74c0f4c3c28a1a0d3d360296477d8f1dca4679b3002eb2c934e4f857d79640fcc0410fc84ba0a043f410a7d2aaaba0aa4e93baf1c1f00819bb76f119a40e90c089e59adb3f47ad9ab5f7ef1f1bbf30298790b7efd7d67aa1341f0019108ac0f3c2b2b78b4facbda1f4b97afbef9d68537e491155002ac2b418071e6d939823ad868e9f2d5b7bffee1e6c6097a20a084c47a8b167a8f4d6550913a74fd003bdbfa3b8712eaa5b5bb6b3bebb7877f1e1b001198eec7a6eb62e32ca2110c7f1b3269c2dcf559368826c696a63d0667a72bb707f757eeaefe7d6c006d268a890f68a1f65810239a98f5d11a92f8c0fa1e3b8bf060ca3122edc670231e2f0f56b7209e1e1b808c146bf7876d26de222385f116048468425d5a063fafe27c3dbb1ec1b834842a5054059be926ab6195e0c1faf2b173f53f279a03c64db0f74a4c6549453bcba55094de92a51971a2909160548cc0b77343468a626b4cb03566bbc02c1a860cc9ab1ceb2d2a49dbfb40a4e70630f335d402782f470b8971162d24d6b95683a3273346d5101602c5bd404fe794bb967acbc2028c2e8e18f911d79a6b94d6915fecb76f0540638faf80f5dd669eaebb67399c072d34b6b18ccf8f1914abd49b0e271c233d62b95ce64ab8426a32b2f3197528f726e161df82990a282130ae44275de6893cc06564d05b9ae5c5658414f4a33e852818fc352017396a5ba1a3943a0a6d25aba3ef03b315705de6ce757a90f3ac4f0881beeb53f882e56699c1d600d948f22a270b1941b1e72f85ea529ddf037326a14509d1e91cf616b9d887fb90858c72b30407b9cfe9577dea0852a9f7fc4bf7b40227ea018b140aebeb4ee7b352902519bad248243d7af47d1fdb38fa598e0bb3fe6d054ed00322529f16a6787dfdcef0c3b9defbacde76e7e297b9a017742c23c966593e2492e69b1f6fedeef70b21346d054e70270420cd354cbe020d582006261c64cef6a4ea2fbddfbf5456e593f16832dcacccb8cd749eff09ee842fec853d0ffb17b2ab9876883167e80000000049454e44ae426082</data>
+</image>
+</xupdate:append-first>
+<xupdate:insert-after select="/UI[UI,1]/widget[QWidget,FLWidgetMasterTable]/vbox[vbox,1]/widget[QFrame,barraBotones]/hbox[hbox,1]/spacer[spcVersionesPres]" >
+<widget class="QGroupBox" >
+<property name="name" >
+<cstring>groupBox1</cstring>
+</property>
+<property name="lineWidth" >
+<number>0</number>
+</property>
+<property name="title" >
+<string/>
+</property>
+<hbox>
+<property name="name" >
+<cstring>unnamed</cstring>
+</property>
+<property name="margin" >
+<number>0</number>
+</property>
+<property name="spacing" >
+<number>9</number>
+</property>
+<widget class="QPushButton" >
+<property name="name" >
+<cstring>pbnCopiarPresupuesto</cstring>
+</property>
+<property name="sizePolicy" >
+<sizepolicy>
+<hsizetype>1</hsizetype>
+<vsizetype>1</vsizetype>
+<horstretch>0</horstretch>
+<verstretch>0</verstretch>
+</sizepolicy>
+</property>
+<property name="minimumSize" >
+<size>
+<width>32</width>
+<height>32</height>
+</size>
+</property>
+<property name="maximumSize" >
+<size>
+<width>32</width>
+<height>32</height>
+</size>
+</property>
+<property name="focusPolicy" >
+<enum>NoFocus</enum>
+</property>
+<property name="text" >
+<string/>
+</property>
+<property name="accel" >
+<string>I</string>
+</property>
+<property name="iconSet" >
+<iconset>versiones_presimage6</iconset>
+</property>
+<property name="toolTip" stdset="0" >
+<string>Generar nueva versión del presupuesto</string>
+</property>
+<property name="whatsThis" stdset="0" >
+<string/>
+</property>
+</widget>
+<widget class="QPushButton" >
+<property name="name" >
+<cstring>pbnActivarVersion</cstring>
+</property>
+<property name="sizePolicy" >
+<sizepolicy>
+<hsizetype>1</hsizetype>
+<vsizetype>1</vsizetype>
+<horstretch>0</horstretch>
+<verstretch>0</verstretch>
+</sizepolicy>
+</property>
+<property name="minimumSize" >
+<size>
+<width>32</width>
+<height>32</height>
+</size>
+</property>
+<property name="maximumSize" >
+<size>
+<width>32</width>
+<height>32</height>
+</size>
+</property>
+<property name="focusPolicy" >
+<enum>NoFocus</enum>
+</property>
+<property name="text" >
+<string/>
+</property>
+<property name="accel" >
+<string>I</string>
+</property>
+<property name="iconSet" >
+<iconset>versiones_presimage7</iconset>
+</property>
+<property name="toolTip" stdset="0" >
+<string>Marca la versión seleccionada como activa</string>
+</property>
+<property name="whatsThis" stdset="0" >
+<string/>
+</property>
+</widget>
+<widget class="QLayoutWidget" >
+<property name="name" >
+<cstring>lytVersionesPres</cstring>
+</property>
+<vbox>
+<property name="name" >
+<cstring>unnamed</cstring>
+</property>
+<property name="margin" >
+<number>1</number>
+</property>
+<property name="spacing" >
+<number>0</number>
+</property>
+<widget class="QCheckBox" >
+<property name="name" >
+<cstring>chkOcultarInactivas</cstring>
+</property>
+<property name="text" >
+<string>Ocultar versiones inactivas</string>
+</property>
+</widget>
+<widget class="QCheckBox" >
+<property name="name" >
+<cstring>chkSoloPresupuesto</cstring>
+</property>
+<property name="text" >
+<string>Ver sólo este prespupuesto</string>
+</property>
+</widget>
+</vbox>
+</widget>
+</hbox>
+</widget>
+</xupdate:insert-after>
+<xupdate:delete select="/UI[UI,1]/includehints[includehints,1]/includehint[FLTableDB.h]" />
+<xupdate:append-first select="/UI[UI,1]/includehints[includehints,1]" >
+<includehint>fltabledb.h</includehint>
+</xupdate:append-first>
+<xupdate:insert-after select="/UI[UI,1]/widget[QWidget,FLWidgetMasterTable]" >
+<customwidgets/>
+</xupdate:insert-after>
+</xupdate:modifications>

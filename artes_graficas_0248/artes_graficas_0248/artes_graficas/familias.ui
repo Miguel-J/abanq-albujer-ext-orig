@@ -1,0 +1,72 @@
+<xupdate:modifications>
+<xupdate:update select="/UI[UI,1]/widget[QWidget,formFamilias]/property[geometry]/rect[rect,1]/height[height,1]/text()[1]" >333</xupdate:update>
+<xupdate:insert-after select="/UI[UI,1]/widget[QWidget,formFamilias]/vbox[vbox,1]/widget[QTabWidget,tbwArticulos]/widget[QWidget,imagen]/vbox[vbox,1]/widget[QGroupBox,gbxImagen]" >
+<widget class="QGroupBox" >
+<property name="name" >
+<cstring>gbxAG</cstring>
+</property>
+<property name="font" >
+<font>
+<bold>1</bold>
+<italic>1</italic>
+</font>
+</property>
+<property name="title" >
+<string>Artes &amp;gráficas</string>
+</property>
+<hbox>
+<property name="name" >
+<cstring>unnamed</cstring>
+</property>
+<widget class="FLFieldDB" >
+<property name="name" >
+<cstring>fdbPorBeneficio</cstring>
+</property>
+<property name="sizePolicy" >
+<sizepolicy>
+<hsizetype>1</hsizetype>
+<vsizetype>5</vsizetype>
+<horstretch>0</horstretch>
+<verstretch>0</verstretch>
+</sizepolicy>
+</property>
+<property name="minimumSize" >
+<size>
+<width>150</width>
+<height>0</height>
+</size>
+</property>
+<property name="font" >
+<font>
+<bold>0</bold>
+<italic>0</italic>
+</font>
+</property>
+<property name="fieldName" >
+<string>porbeneficio</string>
+</property>
+</widget>
+<spacer>
+<property name="name" >
+<cstring>spacerAG</cstring>
+</property>
+<property name="orientation" >
+<enum>Horizontal</enum>
+</property>
+<property name="sizeType" >
+<enum>Expanding</enum>
+</property>
+<property name="sizeHint" >
+<size>
+<width>420</width>
+<height>20</height>
+</size>
+</property>
+</spacer>
+</hbox>
+</widget>
+</xupdate:insert-after>
+<xupdate:insert-after select="/UI[UI,1]/includehints[includehints,1]/includehint[flfielddb.h]" >
+<includehint>FLFieldDB.h</includehint>
+</xupdate:insert-after>
+</xupdate:modifications>

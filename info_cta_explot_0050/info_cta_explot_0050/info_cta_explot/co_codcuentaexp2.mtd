@@ -1,0 +1,49 @@
+<!DOCTYPE TMD>
+<TMD>
+	<name>co_codcuentaexp2</name>
+	<!--Datos de la clasificación para el informe de cuentas de explotación de nivel 2-->
+	
+	<alias>QT_TRANSLATE_NOOP("MetaData","Códigos de Cuenta de Explotación - Nivel 2")</alias>
+
+	<field>
+		<name>codigo</name>
+		<!-- Código -->
+		<alias>QT_TRANSLATE_NOOP("MetaData","Código")</alias>
+		<null>false</null>
+		<pk>true</pk>
+		<type>string</type>
+		<length>15</length>
+		
+		<relation>
+			<table>co_subcuentas</table>
+			<field>codcuentaexp</field>
+			<card>1M</card>
+		</relation>
+	</field>
+	
+	<field>	
+		<name>descripcion</name>
+		<alias>QT_TRANSLATE_NOOP("MetaData","Descripción")</alias>
+		<null>false</null>
+		<pk>false</pk>
+		<type>string</type>
+		<length>255</length>	
+	</field>
+	
+	<field>
+		<name>codpadre</name>
+		<!-- Código de cuenta de explotación superior -->
+		<alias>QT_TRANSLATE_NOOP("MetaData","Cod padre")</alias>
+		<null>false</null>
+		<pk>false</pk>
+		<type>string</type>
+		<length>15</length>
+		
+		<relation>
+			<table>co_codcuentaexp1</table>
+			<field>codigo</field>
+			<card>M1</card>
+		</relation>
+	</field>
+	
+</TMD>

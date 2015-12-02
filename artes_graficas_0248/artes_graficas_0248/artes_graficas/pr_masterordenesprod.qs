@@ -1,0 +1,35 @@
+
+/** @class_declaration artesG */
+/////////////////////////////////////////////////////////////////
+//// ARTES GRÁFICAS /////////////////////////////////////////////
+class artesG extends prod
+{
+  function artesG(context)
+  {
+    prod(context);
+  }
+  function init()
+  {
+    this.ctx.artesG_init();
+  }
+}
+//// ARTES GRÁFICAS /////////////////////////////////////////////
+/////////////////////////////////////////////////////////////////
+
+/** @class_definition artesG */
+/////////////////////////////////////////////////////////////////
+//// ARTES GRÁFICAS /////////////////////////////////////////////
+function artesG_init()
+{
+  this.iface.__init();
+
+  var campos: Array = ["estado", "codorden", "nombrecliente", "fecha", "fechaentrega", "descripcion"];
+  this.iface.tdbRecords.setOrderCols(campos);
+
+  var cmbBoxSearch = this.child("comboBoxFieldToSearch");
+  cmbBoxSearch.currentItem = cmbBoxSearch.count - 1;
+
+  this.iface.tdbRecords.refresh();
+}
+//// ARTES GRÁFICAS /////////////////////////////////////////////
+/////////////////////////////////////////////////////////////////

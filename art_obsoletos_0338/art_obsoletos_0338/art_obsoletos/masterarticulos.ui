@@ -1,0 +1,23 @@
+<xupdate:modifications>
+<xupdate:update select="/UI[UI,1]/widget[QWidget,masterarticulos]/vbox[vbox,1]/widget[QFrame,barraBotones]/hbox[hbox,1]/spacer[Spacer2]/property[property,4]/size[size,1]/height[height,1]/text()[1]" >16</xupdate:update>
+<xupdate:insert-after select="/UI[UI,1]/widget[QWidget,masterarticulos]/vbox[vbox,1]/widget[QFrame,barraBotones]/hbox[hbox,1]/spacer[Spacer2]" >
+<widget class="QCheckBox" >
+<property name="name" >
+<cstring>chkObsoletos</cstring>
+</property>
+<property name="text" >
+<string>Ocultar obsoletos</string>
+</property>
+<property name="checked" >
+<bool>true</bool>
+</property>
+</widget>
+</xupdate:insert-after>
+<xupdate:delete select="/UI[UI,1]/includehints[includehints,1]/includehint[FLTableDB.h]" />
+<xupdate:append-first select="/UI[UI,1]/includehints[includehints,1]" >
+<includehint>fltabledb.h</includehint>
+</xupdate:append-first>
+<xupdate:insert-after select="/UI[UI,1]/widget[QWidget,masterarticulos]" >
+<customwidgets/>
+</xupdate:insert-after>
+</xupdate:modifications>

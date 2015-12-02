@@ -1,0 +1,8 @@
+<flpatch:modifications name="alb_multi_ped" >
+    <flpatch:patchXml path="facturacion/facturacion/" name="flfacturac.xml" />
+    <flpatch:patchXml path="facturacion/facturacion/forms/" name="albaranesprov.ui" />
+    <flpatch:addFile path="facturacion/facturacion/forms/" name="asociarlineaspedido.ui" />
+    <flpatch:addFile path="facturacion/facturacion/scripts/" name="asociarlineaspedido.qs" />
+    <flpatch:addFile path="facturacion/facturacion/tables/" name="asociarlineaspedido.mtd" />
+    <flpatch:patchScript path="facturacion/facturacion/scripts/" name="albaranesprov.qs" />
+</flpatch:modifications>

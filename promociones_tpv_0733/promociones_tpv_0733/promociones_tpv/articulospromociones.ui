@@ -1,0 +1,122 @@
+<!DOCTYPE UI><UI version="3.3" stdsetdef="1">
+<class>articulospromociones</class>
+<widget class="QWidget">
+    <property name="name">
+        <cstring>articulospromociones</cstring>
+    </property>
+    <property name="geometry">
+        <rect>
+            <x>0</x>
+            <y>0</y>
+            <width>550</width>
+            <height>77</height>
+        </rect>
+    </property>
+    <property name="caption">
+        <string>Artículo Promoción</string>
+    </property>
+    <vbox>
+        <property name="name">
+            <cstring>unnamed</cstring>
+        </property>
+        <property name="spacing">
+            <number>15</number>
+        </property>
+        <widget class="QGroupBox">
+            <property name="name">
+                <cstring>gbxArticulo</cstring>
+            </property>
+            <property name="font">
+                <font>
+                    <bold>1</bold>
+                    <italic>1</italic>
+                </font>
+            </property>
+            <property name="title">
+                <string></string>
+            </property>
+            <hbox>
+                <property name="name">
+                    <cstring>unnamed</cstring>
+                </property>
+                <widget class="FLFieldDB">
+                    <property name="name">
+                        <cstring>fdbReferencia</cstring>
+                    </property>
+                    <property name="sizePolicy">
+                        <sizepolicy>
+                            <hsizetype>0</hsizetype>
+                            <vsizetype>0</vsizetype>
+                            <horstretch>0</horstretch>
+                            <verstretch>0</verstretch>
+                        </sizepolicy>
+                    </property>
+                    <property name="minimumSize">
+                        <size>
+                            <width>26</width>
+                            <height>22</height>
+                        </size>
+                    </property>
+                    <property name="font">
+                        <font>
+                            <bold>0</bold>
+                            <italic>0</italic>
+                        </font>
+                    </property>
+                    <property name="fieldName">
+                        <string>referencia</string>
+                    </property>
+                    <property name="showAlias">
+                        <bool>true</bool>
+                    </property>
+                </widget>
+                <widget class="FLFieldDB">
+                    <property name="name">
+                        <cstring>fdbDescripcion</cstring>
+                    </property>
+                    <property name="sizePolicy">
+                        <sizepolicy>
+                            <hsizetype>7</hsizetype>
+                            <vsizetype>0</vsizetype>
+                            <horstretch>0</horstretch>
+                            <verstretch>0</verstretch>
+                        </sizepolicy>
+                    </property>
+                    <property name="minimumSize">
+                        <size>
+                            <width>9</width>
+                            <height>23</height>
+                        </size>
+                    </property>
+                    <property name="font">
+                        <font>
+                            <bold>0</bold>
+                            <italic>0</italic>
+                        </font>
+                    </property>
+                    <property name="fieldName">
+                        <string>descripcion</string>
+                    </property>
+                    <property name="tableName">
+                        <string></string>
+                    </property>
+                    <property name="foreignField">
+                        <string>descripcion</string>
+                    </property>
+                    <property name="fieldRelation">
+                        <string>referencia</string>
+                    </property>
+                    <property name="showAlias">
+                        <bool>false</bool>
+                    </property>
+                </widget>
+            </hbox>
+        </widget>
+    </vbox>
+</widget>
+<layoutdefaults spacing="6" margin="11"/>
+<includehints>
+    <includehint>flfielddb.h</includehint>
+    <includehint>flfielddb.h</includehint>
+</includehints>
+</UI>

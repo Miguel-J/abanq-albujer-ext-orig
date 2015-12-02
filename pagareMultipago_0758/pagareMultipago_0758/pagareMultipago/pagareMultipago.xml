@@ -1,0 +1,10 @@
+<flpatch:modifications name="pagareMultipago" >
+    <flpatch:patchXml path="facturacion/tesoreria/forms/" name="pagospagareprov.ui" />
+    <flpatch:patchScript path="facturacion/tesoreria/scripts/" name="flfactteso.qs" />
+    <flpatch:patchScript path="facturacion/tesoreria/scripts/" name="pagaresprov.qs" />
+    <flpatch:patchScript path="facturacion/tesoreria/scripts/" name="pagospagareprov.qs" />
+    <flpatch:patchXml path="facturacion/tesoreria/tables/" name="pagospagareprov.mtd" />
+    <flpatch:patchXml path="facturacion/tesoreria/tables/" name="pagaresprov.mtd" />
+    <flpatch:patchXml path="facturacion/tesoreria/forms/" name="pagaresprov.ui" />
+    <flpatch:patchScript path="facturacion/tesoreria/scripts/" name="masterpagaresprov.qs" />
+</flpatch:modifications>

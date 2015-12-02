@@ -1,0 +1,33 @@
+<xupdate:modifications>
+<xupdate:insert-after select="/TMD[TMD,1]/field[mgcategorias]" >
+<field>
+<name>mgguiatallas</name>
+<alias>QT_TRANSLATE_NOOP(&quot;MetaData&quot;,&quot;Guía de tallas&quot;)</alias>
+<null>true</null>
+<pk>false</pk>
+<type>string</type>
+<length>25</length>
+<optionslist>Hombre,Mujer,Niño,Calzado,Accesorios,Trajes</optionslist>
+</field>
+</xupdate:insert-after>
+<xupdate:insert-after select="/TMD[TMD,1]/field[mgguiatallas]" >
+<field>
+<name>mgcomposicion</name>
+<alias>QT_TRANSLATE_NOOP(&quot;MetaData&quot;,&quot;Composición&quot;)</alias>
+<null>true</null>
+<pk>false</pk>
+<type>string</type>
+<length>200</length>
+</field>
+</xupdate:insert-after>
+<xupdate:insert-after select="/TMD[TMD,1]/field[mgcomposicion]" >
+<field>
+<name>mgcuidado</name>
+<alias>QT_TRANSLATE_NOOP(&quot;MetaData&quot;,&quot;Cuidado&quot;)</alias>
+<null>true</null>
+<pk>false</pk>
+<type>string</type>
+<length>200</length>
+</field>
+</xupdate:insert-after>
+</xupdate:modifications>

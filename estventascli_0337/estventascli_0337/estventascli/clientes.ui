@@ -1,0 +1,211 @@
+<xupdate:modifications>
+<xupdate:update select="/UI[UI,1]/widget[QWidget,formClientes]/vbox[vbox,1]/widget[QTabWidget,tbwCliente]/widget[QWidget,contabilidad]/vbox[vbox,1]/widget[QLayoutWidget,layout43]/hbox[hbox,1]/widget[FLFieldDB,fdbIdSubcuenta]/property[property,6]/enum[enum,1]/text()[1]" >StrongFocus</xupdate:update>
+<xupdate:append-first select="/UI[UI,1]/images[images,1]" >
+<image name="estventascliimage13" >
+<data format="PNG" length="1072" >89504e470d0a1a0a0000000d4948445200000016000000160806000000c4b46c3b000003f749444154789cad945f6c53551cc73fae77f1969479b794d08e125b530c1d4cd98cc62522cc3f2855491c19249b686024c6c42731317b98bef022e01b3331ca83988d28a60fa02306e80cc1356ec0aaebe82273bd6e4d77c4dadeb1a63bce6ec787de9985c0c394efcbf7e4fcf9e4fb3be7e4e7600532746a0f6d360eae36d8a4954a8b59491e585809e38e6ad9ac1f52135f2b355f54b9e8d1994c57d3d5709037ee05f803a59452f36a9972ea6257d34f2d2e1efb3fe02e95b958e6dd1cb5b965cf7c75c06a70d3fc1fc174a9e2a852b9a252aaa854e607a5e6734a65724aa9a21aed0e4f7b74fc008e958043356cdb351f69ae9c3803b74620f8024c0e408d0e99186bb6b6b99cbf44827d89c22987dfe0d1e3fbfc9f86abd8f88794f7670bfc5682c53b82dd3cd3fe78613b1369c80d417a10ea77831806230037933c11aaf77f72eafc1947c0e0b9eecfda3a1b77eedad6b177c36bed8fb80ebcbe4ebe58aa28ac9345f259490e5000298b6c740c6d30cb6c7525b5ebadb4834a0b1eda019397ca7099700cc78627b5102c104fc29361284802af867d81a698ef8411d841a2ef30b386e8f9beef8a3562fdd83d26bfe93779b3df84de04e163dbf9b863ebc083a443e00e41ba1f7c21021e3d789fdfc58ed487feefa80f831b108007c8021e275873e0034c019a5cb8164bfd3a7d793afaf269eb2d5de3e9ab9dfad9bafd6d55a401b70ec2a4e748b4a74248c6ae0b2b8fe105d302c30b69617b0a5c5e1817e06900cd7034bee279381094ad3aac92252e395d868965813b00e9246803244b5269b244c69996bf6346ab713b211d2d2714d172f2e5ae0bf82289739c3909c5e6202d9efaea3a5c79307b414b8190005400a5bebc1468c97242b71784056e0bb21678bc6059a025e17492bcc54cc710278f3ea5bf1d3d627ceedc18d23087c1484241821ba62d663480eb8231a6c4763401a9140474fbae7510d376620b76eaa486e442b453df4f035edc12cc88bd4eb9d27e480a463480a420c11a6016f0ca72393efb0197dcaf832569dca7d720241836cc6f7b1088415e908b09bead00100552732960fd3258c1766bc9a59dcc766bd9ba1f88030938788e53944857d81fff86d345e1df4d02980286edc3d29e2fdce6d2fe9ae780141c1e623092e07db07b456991d9faf5eca97b96b54c0023306dc2ea0cccc5a17211a8046a819c0dcb94c7735f4265068e0d31d279815616c90068761bf85b9f629c11eab1e09a404662f41a3eb6bcdb4423713bdd101028df254ebb2290edfd9ce9bdc27b80b9d45796c04404932f8d435470abe32cef988213c4a9fae832bbdbb7b0a7214d5dd8c503c9388e5089bffa0afcd97783c1489c93b2c479eea6061f7b8fb7f2b3e1e2f9bb6c590b6c021a810d40d55d61b76915e5a7ba27fa0727c9e80fc9eb27a60000000049454e44ae426082</data>
+</image>
+</xupdate:append-first>
+<xupdate:insert-after select="/UI[UI,1]/widget[QWidget,formClientes]/vbox[vbox,1]/widget[QTabWidget,tbwCliente]/widget[QWidget,contabilidad]" >
+<widget class="QWidget" >
+<property name="name" >
+<cstring>ventas</cstring>
+</property>
+<attribute name="title" >
+<string>&amp;Ventas</string>
+</attribute>
+<vbox>
+<property name="name" >
+<cstring>unnamed</cstring>
+</property>
+<widget class="QGroupBox" >
+<property name="name" >
+<cstring>groupBox25</cstring>
+</property>
+<property name="title" >
+<string/>
+</property>
+<vbox>
+<property name="name" >
+<cstring>unnamed</cstring>
+</property>
+<widget class="QLayoutWidget" >
+<property name="name" >
+<cstring>lytVentas</cstring>
+</property>
+<hbox>
+<property name="name" >
+<cstring>unnamed</cstring>
+</property>
+<spacer>
+<property name="name" >
+<cstring>spcVentas</cstring>
+</property>
+<property name="orientation" >
+<enum>Horizontal</enum>
+</property>
+<property name="sizeType" >
+<enum>Expanding</enum>
+</property>
+<property name="sizeHint" >
+<size>
+<width>21</width>
+<height>20</height>
+</size>
+</property>
+</spacer>
+<widget class="QPushButton" >
+<property name="name" >
+<cstring>pbnRecalcularVentas</cstring>
+</property>
+<property name="maximumSize" >
+<size>
+<width>300</width>
+<height>27</height>
+</size>
+</property>
+<property name="font" >
+<font/>
+</property>
+<property name="focusPolicy" >
+<enum>NoFocus</enum>
+</property>
+<property name="text" >
+<string>  Actualizar</string>
+</property>
+<property name="accel" >
+<string/>
+</property>
+<property name="iconSet" >
+<iconset>estventascliimage13</iconset>
+</property>
+<property name="toolTip" stdset="0" >
+<string>Generar barcodes y precios</string>
+</property>
+</widget>
+</hbox>
+</widget>
+<widget class="FLTableDB" >
+<property name="name" >
+<cstring>tdbVentasCliente</cstring>
+</property>
+<property name="sizePolicy" >
+<sizepolicy>
+<hsizetype>5</hsizetype>
+<vsizetype>5</vsizetype>
+<horstretch>0</horstretch>
+<verstretch>0</verstretch>
+</sizepolicy>
+</property>
+<property name="font" >
+<font>
+<bold>0</bold>
+</font>
+</property>
+<property name="tableName" >
+<string>ventasclientes</string>
+</property>
+<property name="foreignField" >
+<string>codcliente</string>
+</property>
+<property name="fieldRelation" >
+<string>codcliente</string>
+</property>
+</widget>
+</vbox>
+</widget>
+</vbox>
+</widget>
+</xupdate:insert-after>
+<xupdate:delete select="/UI[UI,1]/includehints[includehints,1]/includehint[FLFieldDB.h]" />
+<xupdate:delete select="/UI[UI,1]/includehints[includehints,1]/includehint[FLFieldDB.h]" />
+<xupdate:delete select="/UI[UI,1]/includehints[includehints,1]/includehint[FLFieldDB.h]" />
+<xupdate:delete select="/UI[UI,1]/includehints[includehints,1]/includehint[FLFieldDB.h]" />
+<xupdate:delete select="/UI[UI,1]/includehints[includehints,1]/includehint[FLFieldDB.h]" />
+<xupdate:delete select="/UI[UI,1]/includehints[includehints,1]/includehint[FLFieldDB.h]" />
+<xupdate:delete select="/UI[UI,1]/includehints[includehints,1]/includehint[FLFieldDB.h]" />
+<xupdate:delete select="/UI[UI,1]/includehints[includehints,1]/includehint[FLFieldDB.h]" />
+<xupdate:delete select="/UI[UI,1]/includehints[includehints,1]/includehint[FLFieldDB.h]" />
+<xupdate:delete select="/UI[UI,1]/includehints[includehints,1]/includehint[FLFieldDB.h]" />
+<xupdate:delete select="/UI[UI,1]/includehints[includehints,1]/includehint[FLFieldDB.h]" />
+<xupdate:delete select="/UI[UI,1]/includehints[includehints,1]/includehint[FLFieldDB.h]" />
+<xupdate:delete select="/UI[UI,1]/includehints[includehints,1]/includehint[FLFieldDB.h]" />
+<xupdate:delete select="/UI[UI,1]/includehints[includehints,1]/includehint[FLFieldDB.h]" />
+<xupdate:delete select="/UI[UI,1]/includehints[includehints,1]/includehint[FLFieldDB.h]" />
+<xupdate:delete select="/UI[UI,1]/includehints[includehints,1]/includehint[FLFieldDB.h]" />
+<xupdate:delete select="/UI[UI,1]/includehints[includehints,1]/includehint[FLFieldDB.h]" />
+<xupdate:delete select="/UI[UI,1]/includehints[includehints,1]/includehint[FLFieldDB.h]" />
+<xupdate:delete select="/UI[UI,1]/includehints[includehints,1]/includehint[FLFieldDB.h]" />
+<xupdate:delete select="/UI[UI,1]/includehints[includehints,1]/includehint[FLFieldDB.h]" />
+<xupdate:delete select="/UI[UI,1]/includehints[includehints,1]/includehint[FLFieldDB.h]" />
+<xupdate:delete select="/UI[UI,1]/includehints[includehints,1]/includehint[FLFieldDB.h]" />
+<xupdate:delete select="/UI[UI,1]/includehints[includehints,1]/includehint[FLFieldDB.h]" />
+<xupdate:delete select="/UI[UI,1]/includehints[includehints,1]/includehint[FLFieldDB.h]" />
+<xupdate:delete select="/UI[UI,1]/includehints[includehints,1]/includehint[FLFieldDB.h]" />
+<xupdate:delete select="/UI[UI,1]/includehints[includehints,1]/includehint[FLFieldDB.h]" />
+<xupdate:delete select="/UI[UI,1]/includehints[includehints,1]/includehint[FLFieldDB.h]" />
+<xupdate:delete select="/UI[UI,1]/includehints[includehints,1]/includehint[FLFieldDB.h]" />
+<xupdate:delete select="/UI[UI,1]/includehints[includehints,1]/includehint[FLFieldDB.h]" />
+<xupdate:delete select="/UI[UI,1]/includehints[includehints,1]/includehint[FLFieldDB.h]" />
+<xupdate:delete select="/UI[UI,1]/includehints[includehints,1]/includehint[FLFieldDB.h]" />
+<xupdate:delete select="/UI[UI,1]/includehints[includehints,1]/includehint[FLFieldDB.h]" />
+<xupdate:delete select="/UI[UI,1]/includehints[includehints,1]/includehint[FLFieldDB.h]" />
+<xupdate:delete select="/UI[UI,1]/includehints[includehints,1]/includehint[FLFieldDB.h]" />
+<xupdate:delete select="/UI[UI,1]/includehints[includehints,1]/includehint[FLFieldDB.h]" />
+<xupdate:delete select="/UI[UI,1]/includehints[includehints,1]/includehint[FLFieldDB.h]" />
+<xupdate:delete select="/UI[UI,1]/includehints[includehints,1]/includehint[FLFieldDB.h]" />
+<xupdate:delete select="/UI[UI,1]/includehints[includehints,1]/includehint[FLFieldDB.h]" />
+<xupdate:delete select="/UI[UI,1]/includehints[includehints,1]/includehint[FLFieldDB.h]" />
+<xupdate:delete select="/UI[UI,1]/includehints[includehints,1]/includehint[FLFieldDB.h]" />
+<xupdate:delete select="/UI[UI,1]/includehints[includehints,1]/includehint[FLFieldDB.h]" />
+<xupdate:delete select="/UI[UI,1]/includehints[includehints,1]/includehint[FLFieldDB.h]" />
+<xupdate:delete select="/UI[UI,1]/includehints[includehints,1]/includehint[FLTableDB.h]" />
+<xupdate:delete select="/UI[UI,1]/includehints[includehints,1]/includehint[FLTableDB.h]" />
+<xupdate:delete select="/UI[UI,1]/includehints[includehints,1]/includehint[FLTableDB.h]" />
+<xupdate:delete select="/UI[UI,1]/includehints[includehints,1]/includehint[FLTableDB.h]" />
+<xupdate:delete select="/UI[UI,1]/includehints[includehints,1]/includehint[FLTableDB.h]" />
+<xupdate:delete select="/UI[UI,1]/includehints[includehints,1]/includehint[FLTableDB.h]" />
+<xupdate:delete select="/UI[UI,1]/includehints[includehints,1]/includehint[FLTableDB.h]" />
+<xupdate:delete select="/UI[UI,1]/includehints[includehints,1]/includehint[FLTableDB.h]" />
+<xupdate:delete select="/UI[UI,1]/includehints[includehints,1]/includehint[FLTableDB.h]" />
+<xupdate:delete select="/UI[UI,1]/includehints[includehints,1]/includehint[FLTableDB.h]" />
+<xupdate:delete select="/UI[UI,1]/includehints[includehints,1]/includehint[FLTableDB.h]" />
+<xupdate:append-first select="/UI[UI,1]/includehints[includehints,1]" >
+<includehint>fltabledb.h</includehint>
+</xupdate:append-first>
+<xupdate:insert-after select="/UI[UI,1]/includehints[includehints,1]/includehint[fltabledb.h]" >
+<includehint>fltabledb.h</includehint>
+</xupdate:insert-after>
+<xupdate:insert-after select="/UI[UI,1]/includehints[includehints,1]/includehint[fltabledb.h]" >
+<includehint>fltabledb.h</includehint>
+</xupdate:insert-after>
+<xupdate:insert-after select="/UI[UI,1]/includehints[includehints,1]/includehint[fltabledb.h]" >
+<includehint>fltabledb.h</includehint>
+</xupdate:insert-after>
+<xupdate:insert-after select="/UI[UI,1]/includehints[includehints,1]/includehint[fltabledb.h]" >
+<includehint>fltabledb.h</includehint>
+</xupdate:insert-after>
+<xupdate:insert-after select="/UI[UI,1]/includehints[includehints,1]/includehint[fltabledb.h]" >
+<includehint>fltabledb.h</includehint>
+</xupdate:insert-after>
+<xupdate:insert-after select="/UI[UI,1]/includehints[includehints,1]/includehint[fltabledb.h]" >
+<includehint>fltabledb.h</includehint>
+</xupdate:insert-after>
+<xupdate:insert-after select="/UI[UI,1]/includehints[includehints,1]/includehint[fltabledb.h]" >
+<includehint>fltabledb.h</includehint>
+</xupdate:insert-after>
+<xupdate:insert-after select="/UI[UI,1]/includehints[includehints,1]/includehint[fltabledb.h]" >
+<includehint>fltabledb.h</includehint>
+</xupdate:insert-after>
+<xupdate:insert-after select="/UI[UI,1]/includehints[includehints,1]/includehint[fltabledb.h]" >
+<includehint>fltabledb.h</includehint>
+</xupdate:insert-after>
+<xupdate:insert-after select="/UI[UI,1]/includehints[includehints,1]/includehint[fltabledb.h]" >
+<includehint>fltabledb.h</includehint>
+</xupdate:insert-after>
+<xupdate:insert-after select="/UI[UI,1]/includehints[includehints,1]/includehint[fltabledb.h]" >
+<includehint>fltabledb.h</includehint>
+</xupdate:insert-after>
+<xupdate:insert-after select="/UI[UI,1]/widget[QWidget,formClientes]" >
+<customwidgets/>
+</xupdate:insert-after>
+</xupdate:modifications>

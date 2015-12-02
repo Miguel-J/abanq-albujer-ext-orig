@@ -1,0 +1,193 @@
+<!DOCTYPE TMD>
+<TMD>
+	<name>cl_maquinas</name>
+	<!--Maquinas-->
+	<alias>QT_TRANSLATE_NOOP("MetaData","Máquinas")</alias>
+
+	<field>
+		<name>codmaquina</name>
+		<!--Identificador interno-->
+		<alias>QT_TRANSLATE_NOOP("MetaData","Código")</alias>
+		<null>false</null>
+		<pk>true</pk>
+		<type>string</type>
+		<length>25</length>
+		<relation>
+			<table>cl_tiposrevisionmaquina</table>
+			<field>codmaquina</field>
+			<card>1M</card>
+		</relation>
+		
+		<relation>
+			<table>cl_averiasrevisionmaquina</table>
+			<field>codmaquina</field>
+			<card>1M</card>
+		</relation>
+		
+		<relation>
+			<table>cl_empleadomaquina</table>
+			<field>codmaquina</field>
+			<card>1M</card>
+		</relation>
+		
+		<relation>
+			<table>albaranesprov</table>
+			<field>codmaquina</field>
+			<card>1M</card>
+		</relation>
+		
+		<relation>
+			<table>lineasalbaranesprov</table>
+			<field>codmaquina</field>
+			<card>1M</card>
+		</relation>
+		
+	</field>
+	
+	<field>
+		<name>nomalias</name>
+		<alias>QT_TRANSLATE_NOOP("MetaData","Alias")</alias>
+		<null>true</null>
+		<pk>false</pk>
+		<type>string</type>
+		<length>200</length>
+	</field>
+
+	<field>
+		<name>descripcion</name>
+		<alias>QT_TRANSLATE_NOOP("MetaData","Descripción")</alias>
+		<null>false</null>
+		<pk>false</pk>
+		<type>string</type>
+		<length>200</length>
+	</field>
+	
+	<field>
+		<name>matricula</name>
+		<alias>QT_TRANSLATE_NOOP("MetaData","Matrícula")</alias>
+		<null>true</null>
+		<pk>false</pk>
+		<type>string</type>
+		<length>25</length>
+	</field>
+	
+	<field>
+		<name>codtipomaquina</name>
+		<!--Tipo de _Máquina-->
+		<alias>QT_TRANSLATE_NOOP("MetaData","Tipo de Máquina")</alias>
+		<null>false</null>
+		<pk>false</pk>
+		<type>string</type>
+		<length>20</length>
+		<relation>
+			<table>cl_tiposmaquina</table>
+			<field>codtipomaquina</field>
+			<card>M1</card>
+		</relation>
+	</field>
+	
+	<field>
+		<name>estado</name>
+		<!--Estado de la Maquina-->
+		<alias>QT_TRANSLATE_NOOP("MetaData","Estado")</alias>
+		<null>false</null>
+		<pk>false</pk>
+		<type>string</type>
+		<length>200</length>
+		<optionslist>QT_TRANSLATE_NOOP("MetaData","En funcionamiento");QT_TRANSLATE_NOOP("MetaData","Averiada")</optionslist>
+		<default>QT_TRANSLATE_NOOP("MetaData","En funcionamiento")</default>
+	</field>
+	
+	<field>
+		<name>tacografo</name>
+		<!--Medida Tacografo-->
+		<alias>QT_TRANSLATE_NOOP("MetaData","Medida Tacógrafo")</alias>
+		<null>true</null>
+		<pk>false</pk>
+		<type>bool</type>
+		<optionslist>QT_TRANSLATE_NOOP("MetaData","Si");QT_TRANSLATE_NOOP("MetaData","No")</optionslist>
+	</field>
+	
+	<field>
+		<name>codempleado</name>
+		<!--conductor de la maquina-->
+		<alias>QT_TRANSLATE_NOOP("MetaData","Conductor habitual")</alias>
+		<null>true</null>
+		<pk>false</pk>
+		<type>string</type>
+		<length>8</length>
+		<relation>
+			<table>rh_empleados</table>
+			<field>codempleado</field>
+			<card>M1</card>
+		</relation>
+	</field>
+	
+	<field>
+		<name>aseguradora</name>
+		<alias>QT_TRANSLATE_NOOP("MetaData","Compañia Aseguradora")</alias>
+		<null>false</null>
+		<pk>false</pk>
+		<type>string</type>
+		<length>10</length>
+		<relation>
+			<table>cl_empresaseguros</table>
+			<field>codseguros</field>
+			<card>M1</card>
+		</relation>
+	</field>
+	
+	<field>
+		<name>vencimiento</name>
+		<!--Vencimiento del seguro-->
+		<alias>QT_TRANSLATE_NOOP("MetaData","Vencimiento del Seguro")</alias>
+		<null>false</null>
+		<pk>false</pk>
+		<type>date</type>
+	</field>
+
+	<field>
+		<name>referencia</name>
+		<!-- Código de referencia del artículo	-->
+		<alias>QT_TRANSLATE_NOOP("MetaData","Referencia")</alias>
+		<null>true</null>
+		<pk>false</pk>
+		<type>string</type>
+		<length>18</length>
+		<visible>true</visible>
+
+		<relation>
+			<table>articulos</table>
+			<field>referencia</field>
+			<card>M1</card>
+		</relation>
+	</field>
+
+    <field>
+        <name>internaexterna</name>
+        <alias>QT_TRANSLATE_NOOP("MetaData","Interna o externa")</alias>
+        <null>false</null>
+        <pk>false</pk>
+        <type>string</type>
+        <length>20</length>
+        <optionslist>Interna,Externa</optionslist>
+        <default>Interna</default>
+    </field>
+
+     <field>
+        <name>debaja</name>
+		<alias>QT_TRANSLATE_NOOP("MetaData","De baja")</alias>
+        <null>true</null>
+        <pk>false</pk>
+        <type>bool</type>
+        <default>false</default>
+    </field>
+    <field>
+        <name>fechabaja</name>
+		<alias>QT_TRANSLATE_NOOP("MetaData","Desde")</alias>
+        <null>true</null>
+        <pk>false</pk>
+        <type>date</type>
+        <default>null</default>
+    </field>
+</TMD>

@@ -1,0 +1,12 @@
+<xupdate:modifications>
+<xupdate:insert-after select="/TMD[TMD,1]/field[idalbaran]" >
+<field>
+<name>valorirpf</name>
+<!--Indica si esta linea cuenta en el IRPF --><alias>QT_TRANSLATE_NOOP(&quot;MetaData&quot;,&quot;Incluir para IRPF&quot;)</alias>
+<null>true</null>
+<pk>false</pk>
+<type>bool</type>
+<default>true</default>
+</field>
+</xupdate:insert-after>
+</xupdate:modifications>

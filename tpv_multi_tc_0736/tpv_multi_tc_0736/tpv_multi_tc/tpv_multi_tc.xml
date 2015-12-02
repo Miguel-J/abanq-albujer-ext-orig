@@ -1,0 +1,12 @@
+<flpatch:modifications name="tpv_multi_tc" >
+    <flpatch:patchXml path="facturacion/tpv/forms/" name="tpv_multitransstock.ui" />
+    <flpatch:patchScript path="facturacion/tpv/scripts/" name="tpv_multitransstock.qs" />
+    <flpatch:addFile path="facturacion/tpv/tables/" name="tpv_barcodemultitransstock.mtd" />
+    <flpatch:patchXml path="facturacion/tpv/tables/" name="tpv_multitransstock.mtd" />
+    <flpatch:patchXml path="facturacion/tpv/tables/" name="tpv_lineasmultitransstock.mtd" />
+    <flpatch:patchXml path="facturacion/tpv/forms/" name="tpv_selectart.ui" />
+    <flpatch:patchScript path="facturacion/tpv/scripts/" name="tpv_selectalm.qs" />
+    <flpatch:patchScript path="facturacion/tpv/scripts/" name="tpv_selectart.qs" />
+    <flpatch:patchXml path="facturacion/almacen/tables/" name="gruposmoda.mtd" />
+    <flpatch:patchScript path="facturacion/tpv/scripts/" name="flfact_tpv.qs" />
+</flpatch:modifications>

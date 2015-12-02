@@ -1,0 +1,25 @@
+<!DOCTYPE QRY>
+<QRY>
+	<name>i_prevcobros_fp</name>
+
+	<tables>empresa,reciboscli,facturascli,formaspago</tables>
+
+	<group>
+		<level>0</level>
+		<field>formaspago.codpago</field>
+	</group>
+
+	<select>
+		max(formaspago.descripcion),
+		sum(reciboscli.importe)
+	</select>
+
+	<from>
+		empresa, reciboscli 
+		INNER JOIN facturascli ON reciboscli.idfactura = facturascli.idfactura
+		INNER JOIN formaspago ON facturascli.codpago = formaspago.codpago
+	</from>
+
+	<where>
+	</where>
+</QRY>

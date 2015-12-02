@@ -1,0 +1,55 @@
+<!DOCTYPE TMD>
+<TMD>
+	<name>t1_iconos</name>
+	<alias>QT_TRANSLATE_NOOP("MetaData","Iconos")</alias>
+
+	<field>
+		<name>nombre</name>
+		<alias>QT_TRANSLATE_NOOP("MetaData","Nombre")</alias>
+		<null>false</null>
+		<pk>true</pk>
+		<type>string</type>
+		<length>60</length>
+	</field>
+
+	<field>
+		<name>i16x16</name>
+		<alias>QT_TRANSLATE_NOOP("MetaData","16x16")</alias>
+		<null>true</null>
+		<pk>false</pk>
+		<type>pixmap</type>
+	</field>
+
+	<field>
+		<name>i32x32</name>
+		<alias>QT_TRANSLATE_NOOP("MetaData","32x32")</alias>
+		<null>true</null>
+		<pk>false</pk>
+		<type>pixmap</type>
+	</field>
+
+	<field>
+		<name>i48x48</name>
+		<alias>QT_TRANSLATE_NOOP("MetaData","48x48")</alias>
+		<null>true</null>
+		<pk>false</pk>
+		<type>pixmap</type>
+	</field>
+
+	<field>
+		<name>i64x64</name>
+		<alias>QT_TRANSLATE_NOOP("MetaData","64x64")</alias>
+		<null>true</null>
+		<pk>false</pk>
+		<type>pixmap</type>
+	</field>
+
+	<field>
+		<name>i128x128</name>
+		<alias>QT_TRANSLATE_NOOP("MetaData","128x128")</alias>
+		<null>true</null>
+		<pk>false</pk>
+		<type>pixmap</type>
+	</field>
+		
+</TMD>

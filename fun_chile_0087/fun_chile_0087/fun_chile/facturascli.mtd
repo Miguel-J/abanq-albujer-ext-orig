@@ -1,0 +1,21 @@
+<xupdate:modifications>
+<xupdate:update select="/TMD[TMD,1]/alias[alias,1]/text()[1]" >QT_TRANSLATE_NOOP(&quot;MetaData&quot;,&quot;Facturas/Boletas de Clientes&quot;)</xupdate:update>
+<xupdate:insert-after select="/TMD[TMD,1]/field[irpf]/default[default,1]" >
+<visible>false</visible>
+</xupdate:insert-after>
+<xupdate:insert-after select="/TMD[TMD,1]/field[irpf]/visible[visible,1]" >
+<visiblegrid>false</visiblegrid>
+</xupdate:insert-after>
+<xupdate:insert-after select="/TMD[TMD,1]/field[totalirpf]/default[default,2]" >
+<visible>false</visible>
+</xupdate:insert-after>
+<xupdate:insert-after select="/TMD[TMD,1]/field[totalirpf]/visible[visible,1]" >
+<visiblegrid>false</visiblegrid>
+</xupdate:insert-after>
+<xupdate:insert-after select="/TMD[TMD,1]/field[totalrecargo]/editable[editable,1]" >
+<visible>false</visible>
+</xupdate:insert-after>
+<xupdate:insert-after select="/TMD[TMD,1]/field[totalrecargo]/visible[visible,1]" >
+<visiblegrid>false</visiblegrid>
+</xupdate:insert-after>
+</xupdate:modifications>

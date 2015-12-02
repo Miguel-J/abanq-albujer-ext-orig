@@ -1,0 +1,53 @@
+<!DOCTYPE TMD>
+<TMD>
+	<name>mg_importfiles</name>
+	<alias>QT_TRANSLATE_NOOP("MetaData","Ficheros importados desde Magento")</alias>
+	
+	<field>
+		<name>nombre</name>
+		<alias>QT_TRANSLATE_NOOP("MetaData","Nombre")</alias>
+		<null>false</null>
+		<pk>true</pk>
+		<type>string</type>
+		<length>100</length>
+		<editable>false</editable>
+	</field>
+	
+	<field>
+		<name>estado</name>
+		<alias>QT_TRANSLATE_NOOP("MetaData","Estado")</alias>
+		<null>false</null>
+		<pk>false</pk>
+		<type>string</type>
+		<length>10</length>
+		<editable>false</editable>
+	</field>
+	
+	<field>
+		<name>log</name>
+		<alias>QT_TRANSLATE_NOOP("MetaData","Log")</alias>
+		<null>true</null>
+		<pk>false</pk>
+		<type>stringlist</type>
+		<editable>false</editable>
+	</field>
+	
+	<field>
+		<name>contenido</name>
+		<alias>QT_TRANSLATE_NOOP("MetaData","Contenido")</alias>
+		<null>false</null>
+		<pk>false</pk>
+		<type>stringlist</type>
+		<editable>false</editable>
+	</field>
+
+	<field>
+		<name>sha</name>
+		<alias>QT_TRANSLATE_NOOP("MetaData","SHA1")</alias>
+		<null>false</null>
+		<pk>false</pk>
+		<type>string</type>
+		<length>255</length>
+		<editable>false</editable>
+	</field>
+</TMD>

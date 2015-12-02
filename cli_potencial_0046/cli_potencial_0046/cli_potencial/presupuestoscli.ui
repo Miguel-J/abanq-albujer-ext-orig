@@ -1,0 +1,244 @@
+<xupdate:modifications>
+<xupdate:update select="/UI[UI,1]/widget[QWidget,formPresupuestosCli]/property[property,2]/rect[rect,1]/height[height,1]/text()[1]" >640</xupdate:update>
+<xupdate:delete select="/UI[UI,1]/widget[QWidget,formPresupuestosCli]/vbox[vbox,1]/widget[QTabWidget,tbwPresupuesto]/widget[QWidget,cliente]/vbox[vbox,1]/widget[QGroupBox,groupBox30_2]/hbox[hbox,1]" />
+<xupdate:insert-after select="/UI[UI,1]/widget[QWidget,formPresupuestosCli]/vbox[vbox,1]/widget[QTabWidget,tbwPresupuesto]/widget[QWidget,cliente]/vbox[vbox,1]/widget[QGroupBox,groupBox30_2]/property[property,3]" >
+<vbox>
+<property name="name" >
+<cstring>unnamed</cstring>
+</property>
+<widget class="QLayoutWidget" >
+<property name="name" >
+<cstring>lytClientePot</cstring>
+</property>
+<hbox>
+<property name="name" >
+<cstring>unnamed</cstring>
+</property>
+<widget class="FLFieldDB" >
+<property name="name" >
+<cstring>fdbCodCliente</cstring>
+</property>
+<property name="sizePolicy" >
+<sizepolicy>
+<hsizetype>1</hsizetype>
+<vsizetype>0</vsizetype>
+<horstretch>0</horstretch>
+<verstretch>0</verstretch>
+</sizepolicy>
+</property>
+<property name="minimumSize" >
+<size>
+<width>220</width>
+<height>25</height>
+</size>
+</property>
+<property name="font" >
+<font/>
+</property>
+<property name="fieldName" >
+<string>codcliente</string>
+</property>
+</widget>
+<spacer>
+<property name="name" >
+<cstring>spcClientesPot</cstring>
+</property>
+<property name="orientation" >
+<enum>Horizontal</enum>
+</property>
+<property name="sizeType" >
+<enum>Expanding</enum>
+</property>
+<property name="sizeHint" >
+<size>
+<width>110</width>
+<height>20</height>
+</size>
+</property>
+</spacer>
+<widget class="QGroupBox" >
+<property name="name" >
+<cstring>gbxClientePot</cstring>
+</property>
+<property name="paletteBackgroundColor" >
+<color>
+<red>190</red>
+<green>190</green>
+<blue>190</blue>
+</color>
+</property>
+<property name="lineWidth" >
+<number>0</number>
+</property>
+<property name="title" >
+<string/>
+</property>
+<hbox>
+<property name="name" >
+<cstring>unnamed</cstring>
+</property>
+<property name="margin" >
+<number>4</number>
+</property>
+<property name="spacing" >
+<number>1</number>
+</property>
+<widget class="FLFieldDB" >
+<property name="name" >
+<cstring>fdbClientePot</cstring>
+</property>
+<property name="minimumSize" >
+<size>
+<width>180</width>
+<height>0</height>
+</size>
+</property>
+<property name="fieldName" >
+<string>clientepot</string>
+</property>
+</widget>
+<spacer>
+<property name="name" >
+<cstring>spcClientesPot2</cstring>
+</property>
+<property name="orientation" >
+<enum>Horizontal</enum>
+</property>
+<property name="sizeType" >
+<enum>Fixed</enum>
+</property>
+<property name="sizeHint" >
+<size>
+<width>16</width>
+<height>20</height>
+</size>
+</property>
+</spacer>
+<widget class="FLFieldDB" >
+<property name="name" >
+<cstring>fdbCodClientePot</cstring>
+</property>
+<property name="sizePolicy" >
+<sizepolicy>
+<hsizetype>1</hsizetype>
+<vsizetype>0</vsizetype>
+<horstretch>0</horstretch>
+<verstretch>0</verstretch>
+</sizepolicy>
+</property>
+<property name="minimumSize" >
+<size>
+<width>230</width>
+<height>25</height>
+</size>
+</property>
+<property name="font" >
+<font/>
+</property>
+<property name="fieldName" >
+<string>codclientepot</string>
+</property>
+</widget>
+</hbox>
+</widget>
+</hbox>
+</widget>
+<widget class="QLayoutWidget" >
+<property name="name" >
+<cstring>layout19</cstring>
+</property>
+<hbox>
+<property name="name" >
+<cstring>unnamed</cstring>
+</property>
+<widget class="FLFieldDB" >
+<property name="name" >
+<cstring>fdbNombreCliente</cstring>
+</property>
+<property name="sizePolicy" >
+<sizepolicy>
+<hsizetype>1</hsizetype>
+<vsizetype>0</vsizetype>
+<horstretch>0</horstretch>
+<verstretch>0</verstretch>
+</sizepolicy>
+</property>
+<property name="minimumSize" >
+<size>
+<width>350</width>
+<height>0</height>
+</size>
+</property>
+<property name="font" >
+<font/>
+</property>
+<property name="fieldName" >
+<string>nombrecliente</string>
+</property>
+<property name="foreignField" >
+<string>nombre</string>
+</property>
+<property name="fieldRelation" >
+<string>codcliente</string>
+</property>
+</widget>
+<spacer>
+<property name="name" >
+<cstring>spacer41</cstring>
+</property>
+<property name="orientation" >
+<enum>Horizontal</enum>
+</property>
+<property name="sizeType" >
+<enum>Fixed</enum>
+</property>
+<property name="sizeHint" >
+<size>
+<width>16</width>
+<height>20</height>
+</size>
+</property>
+</spacer>
+<widget class="FLFieldDB" >
+<property name="name" >
+<cstring>fdbCifNif</cstring>
+</property>
+<property name="sizePolicy" >
+<sizepolicy>
+<hsizetype>1</hsizetype>
+<vsizetype>0</vsizetype>
+<horstretch>0</horstretch>
+<verstretch>0</verstretch>
+</sizepolicy>
+</property>
+<property name="minimumSize" >
+<size>
+<width>150</width>
+<height>0</height>
+</size>
+</property>
+<property name="maximumSize" >
+<size>
+<width>170</width>
+<height>32767</height>
+</size>
+</property>
+<property name="font" >
+<font/>
+</property>
+<property name="fieldName" >
+<string>cifnif</string>
+</property>
+<property name="foreignField" >
+<string>cifnif</string>
+</property>
+<property name="fieldRelation" >
+<string>codcliente</string>
+</property>
+</widget>
+</hbox>
+</widget>
+</vbox>
+</xupdate:insert-after>
+<xupdate:delete select="/UI[UI,1]/widget[QWidget,formPresupuestosCli]/vbox[vbox,1]/widget[QTabWidget,tbwPresupuesto]/widget[QWidget,cliente]/vbox[vbox,1]/property[property,2]" />
+</xupdate:modifications>

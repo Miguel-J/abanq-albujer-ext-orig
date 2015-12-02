@@ -1,0 +1,32 @@
+<!DOCTYPE QRY>
+<QRY>
+	<name>i_movistock</name>
+
+	<tables>empresa,i_movistock</tables>
+
+	<select>
+		movistock.cantidad, movistock.fechareal,
+		movistock.horareal, movistock.concepto,
+		stocks.cantidad,
+		empresa.nombre, empresa.cifnif,
+		empresa.direccion,
+		empresa.codpostal, empresa.ciudad,
+		empresa.provincia, empresa.apartado,
+		empresa.codpais,
+		almacenes.codalmacen, almacenes.nombre,
+		articulos.referencia, articulos.descripcion
+	</select>
+
+	<from>
+		empresa, movistock INNER JOIN stocks ON movistock.idstock = stocks.idstock
+		LEFT OUTER JOIN almacenes ON stocks.codalmacen = almacenes.codalmacen
+		LEFT OUTER JOIN articulos ON stocks.referencia = articulos.referencia
+	</from>
+
+	<where>
+	</where>
+
+	<order>
+		movistock.fechareal, movistock.horareal
+	</order>
+</QRY>

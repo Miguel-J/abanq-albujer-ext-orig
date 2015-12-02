@@ -1,0 +1,27 @@
+<!DOCTYPE QRY>
+<QRY>
+	<name>co_i_balancesys_multi</name>
+
+	<group>
+		<level>0</level>
+		<field>b.codcuenta</field>
+	</group>
+	
+	<tables>co_i_balancesis_bmulti_buffer</tables>
+
+	<select>
+		b.codcuenta, b.desccuenta, b.codsubcuenta, b.descsubcuenta,
+		sum(b.debe), sum(b.haber), sum(b.saldo)
+	</select>
+
+	<from>
+		co_i_balancesis_bmulti_buffer b
+	</from>
+
+	<where>
+	</where>
+
+	<order>
+		b.codsubcuenta
+	</order>
+</QRY>

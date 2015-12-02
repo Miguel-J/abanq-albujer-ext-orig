@@ -1,0 +1,93 @@
+<xupdate:modifications>
+<xupdate:update select="/UI[UI,1]/widget[QWidget,formEmpresa]/property[property,2]/rect[rect,1]/height[height,1]/text()[1]" >481</xupdate:update>
+<xupdate:insert-after select="/UI[UI,1]/widget[QWidget,formEmpresa]/vbox[vbox,1]/widget[QTabWidget,tbwEmpresa]/widget[QWidget,valoresdefecto]/vbox[vbox,1]/widget[QFrame,fdmValoresDefecto]/vbox[vbox,1]/widget[QLayoutWidget,layout13]" >
+<widget class="QLayoutWidget" >
+<property name="name" >
+<cstring>layoutBS</cstring>
+</property>
+<hbox>
+<property name="name" >
+<cstring>unnamed</cstring>
+</property>
+<widget class="FLFieldDB" >
+<property name="name" >
+<cstring>codBSConfirming</cstring>
+</property>
+<property name="sizePolicy" >
+<sizepolicy>
+<hsizetype>1</hsizetype>
+<vsizetype>0</vsizetype>
+<horstretch>0</horstretch>
+<verstretch>0</verstretch>
+</sizepolicy>
+</property>
+<property name="minimumSize" >
+<size>
+<width>270</width>
+<height>25</height>
+</size>
+</property>
+<property name="maximumSize" >
+<size>
+<width>270</width>
+<height>32767</height>
+</size>
+</property>
+<property name="fieldName" >
+<string>codbsconfirming</string>
+</property>
+</widget>
+<spacer>
+<property name="name" >
+<cstring>spacerBS</cstring>
+</property>
+<property name="orientation" >
+<enum>Horizontal</enum>
+</property>
+<property name="sizeType" >
+<enum>Expanding</enum>
+</property>
+<property name="sizeHint" >
+<size>
+<width>414</width>
+<height>20</height>
+</size>
+</property>
+</spacer>
+</hbox>
+</widget>
+</xupdate:insert-after>
+<xupdate:insert-after select="/UI[UI,1]/layoutdefaults[layoutdefaults,1]" >
+<includehints>
+<includehint>FLFieldDB.h</includehint>
+<includehint>FLFieldDB.h</includehint>
+<includehint>FLFieldDB.h</includehint>
+<includehint>FLFieldDB.h</includehint>
+<includehint>FLFieldDB.h</includehint>
+<includehint>FLFieldDB.h</includehint>
+<includehint>FLFieldDB.h</includehint>
+<includehint>FLFieldDB.h</includehint>
+<includehint>FLFieldDB.h</includehint>
+<includehint>FLFieldDB.h</includehint>
+<includehint>FLFieldDB.h</includehint>
+<includehint>FLFieldDB.h</includehint>
+<includehint>FLFieldDB.h</includehint>
+<includehint>FLFieldDB.h</includehint>
+<includehint>FLFieldDB.h</includehint>
+<includehint>FLFieldDB.h</includehint>
+<includehint>FLFieldDB.h</includehint>
+<includehint>FLFieldDB.h</includehint>
+<includehint>FLFieldDB.h</includehint>
+<includehint>FLFieldDB.h</includehint>
+<includehint>FLFieldDB.h</includehint>
+<includehint>FLFieldDB.h</includehint>
+<includehint>FLFieldDB.h</includehint>
+<includehint>FLFieldDB.h</includehint>
+<includehint>FLFieldDB.h</includehint>
+<includehint>FLFieldDB.h</includehint>
+<includehint>FLFieldDB.h</includehint>
+<includehint>FLFieldDB.h</includehint>
+<includehint>FLFieldDB.h</includehint>
+</includehints>
+</xupdate:insert-after>
+</xupdate:modifications>

@@ -1,0 +1,22 @@
+<!DOCTYPE TMD>
+<TMD>
+	<name>in_dimsubcatincidencias</name>
+	<!--Dimensión de subcategoría-->
+	<alias>QT_TRANSLATE_NOOP("MetaData","Dimensión de subcategorías")</alias>
+
+	<field>
+		<name>codsubcategoria</name>
+		<!--Código de la Subcategoría-->
+		<alias>QT_TRANSLATE_NOOP("MetaData","Subcategoría")</alias>
+		<null>false</null>
+		<pk>true</pk>
+		<type>string</type>
+		<length>25</length>
+		
+		<relation>
+			<table>in_h_incidencias</table>
+			<field>codsubcategoria</field>
+			<card>1M</card>
+		</relation>
+	</field>
+</TMD>

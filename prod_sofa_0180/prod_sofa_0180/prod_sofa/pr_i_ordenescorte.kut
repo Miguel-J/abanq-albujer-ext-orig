@@ -1,0 +1,84 @@
+<?xml version = '1.0' encoding = 'UTF-8'?>
+<!DOCTYPE KugarTemplate SYSTEM "kugartemplate.dtd">
+<KugarTemplate BottomMargin="20" TopMargin="35" RightMargin="20" LeftMargin="50" PageOrientation="0" PageSize="0" >
+
+ <DetailHeader Height="90" Level="0" >
+	 
+  <Field WordWrap="0" Width="250" X="300" Y="0" BorderStyle="0" NegValueColor="0,0,0" Height="19" HAlignment="0" DataType="0" Field="empresa.nombre" DateFormat="11" Currency="32" BorderColor="0,0,0" BackgroundColor="255,255,255" FontItalic="0" VAlignment="1" ForegroundColor="0,0,0" CommaSeparator="44" Text="[empresa.nombre]" FontWeight="50" FontSize="12" BorderWidth="1" Precision="2" FontFamily="Arial" />
+   
+  <Label WordWrap="0" Width="550" X="0" Y="30" BorderStyle="0" Height="19" HAlignment="1" BorderColor="0,0,0" BackgroundColor="255,255,255" FontItalic="0" VAlignment="1" ForegroundColor="0,0,0" Text="ORDEN DE CORTE" FontWeight="65" FontSize="16" BorderWidth="1" FontFamily="Arial" />
+   
+   <Line Width="1" Y1="50" Y2="50" X1="20" X2="550" Style="1" Color="100,100,100" />
+   
+  <Label WordWrap="0" Width="90" X="20" Y="60" BorderStyle="0" Height="19" HAlignment="0" BorderColor="0,0,0" BackgroundColor="255,255,255" FontItalic="0" VAlignment="1" ForegroundColor="0,0,0" Text="Código:" FontWeight="50" FontSize="14" BorderWidth="1" FontFamily="Arial" />
+  <Field WordWrap="0" Width="100" X="110" Y="60" BorderStyle="0" NegValueColor="0,0,0" Height="19" HAlignment="0" DataType="0" Field="pr_ordenesproduccion.codorden" DateFormat="11" Currency="32" BorderColor="0,0,0" BackgroundColor="255,255,255" FontItalic="0" VAlignment="1" ForegroundColor="0,0,0" CommaSeparator="44" Text="[pr_ordenesproduccion.codorden]" FontWeight="50" FontSize="14" BorderWidth="1" Precision="2" FontFamily="Arial" />
+  <Label WordWrap="0" Width="50" X="240" Y="60" BorderStyle="0" Height="19" HAlignment="0" BorderColor="0,0,0" BackgroundColor="255,255,255" FontItalic="0" VAlignment="1" ForegroundColor="0,0,0" Text="Fecha:" FontWeight="50" FontSize="14" BorderWidth="1" FontFamily="Arial" />
+  <Field WordWrap="0" Width="100" X="290" Y="60" BorderStyle="0" NegValueColor="0,0,0" Height="19" HAlignment="0" DataType="3" Field="pr_ordenesproduccion.fecha" DateFormat="19" Currency="32" BorderColor="0,0,0" BackgroundColor="255,255,255" FontItalic="0" VAlignment="1" ForegroundColor="0,0,0" CommaSeparator="44" Text="[pr_ordenesproduccion.fecha]" FontWeight="50" FontSize="14" BorderWidth="1" Precision="2" FontFamily="Arial" />
+
+</DetailHeader>
+
+<Detail  Height="75" Level="0">
+  
+	 <Field WordWrap="0" Width="150" X="0" Y="5" BorderStyle="0" NegValueColor="0,0,0" Height="40" HAlignment="0" DataType="6" CodBarType="Code128" Field="pr_tareas.idtarea" DateFormat="11" Currency="32" BorderColor="0,0,0" BackgroundColor="255,255,255" FontItalic="0" VAlignment="0" ForegroundColor="0,0,0" CommaSeparator="44" Text="[pr_tareas.idtarea]" FontWeight="50" FontSize="12" BorderWidth="1" Precision="2" FontFamily="Arial" />
+  
+	 <Field WordWrap="0" Width="100" X="160" Y="10" BorderStyle="0" NegValueColor="0,0,0" Height="15" HAlignment="1" DataType="0" Field="lotesstock.codlote" DateFormat="18" Currency="32" BorderColor="0,0,0" BackgroundColor="255,255,255" FontItalic="0" VAlignment="0" ForegroundColor="0,0,0" CommaSeparator="44" Text="[lotesstock.codlote]" FontWeight="50" FontSize="12" BorderWidth="1" Precision="2" FontFamily="Arial" />
+	 
+	 <CalculatedField CalculationType="6" FunctionName="formpr_i_ordenescorte.iface.pub_rutaCorte" WordWrap="0" Width="200" X="280" Y="10" BorderStyle="0" NegValueColor="0,0,0" Height="15" HAlignment="0" DataType="0" Field="" DateFormat="18" Currency="32" BorderColor="0,0,0" BackgroundColor="255,255,255" FontItalic="0" VAlignment="0" ForegroundColor="0,0,0" CommaSeparator="44" Text="" FontWeight="50" FontSize="12" BorderWidth="1" Precision="2" FontFamily="Arial" />
+	 
+	 <Field WordWrap="0" Width="350" X="160" Y="30" BorderStyle="0" NegValueColor="0,0,0" Height="15" HAlignment="0" DataType="0" Field="articulos.descripcion" DateFormat="18" Currency="32" BorderColor="0,0,0" BackgroundColor="255,255,255" FontItalic="0" VAlignment="0" ForegroundColor="0,0,0" CommaSeparator="44" Text="[articulos.descripcion]" FontWeight="50" FontSize="12" BorderWidth="1" Precision="2" FontFamily="Arial" />
+
+	  <Field WordWrap="1" ChangeHeight="1" Width="440" X="0" Y="50" BorderStyle="0" NegValueColor="0,0,0" Height="0" HAlignment="0" DataType="0" Field="lotesstock.observacionescorte" DateFormat="18" Currency="32" BorderColor="0,0,0" BackgroundColor="255,255,255" FontItalic="0" VAlignment="0" ForegroundColor="0,0,0" CommaSeparator="44" Text="[lotesstock.observacionescorte]" FontWeight="50" FontSize="12" BorderWidth="1" Precision="2" FontFamily="Arial" />
+	 
+  <!--<Line Width="1" Y1="36" Y2="36" X1="5" X2="615" Style="1" Color="0,0,0" />-->
+ </Detail>
+ 
+ <!--DetailHeader Height="26" Level="1" >	
+	<Label WordWrap="0" Width="90" X="10" Y="0" BorderStyle="0" Height="20" HAlignment="0" BorderColor="0,0,0" BackgroundColor="255,255,255" FontItalic="0" VAlignment="1" ForegroundColor="0,0,0" Text="Metros totales:" FontWeight="50" FontSize="12" BorderWidth="1" FontFamily="Arial" />
+	<CalculatedField CalculationType="6" FunctionName="flprodinfo.iface.pub_totalMetrosOC" WordWrap="0" Width="50" X="100" Y="0" BorderStyle="0" NegValueColor="0,0,0" Height="20" HAlignment="1" DataType="2" Field="" DateFormat="11" Currency="32" BorderColor="0,0,0" BackgroundColor="255,255,255" FontItalic="0" VAlignment="1" ForegroundColor="0,0,0" CommaSeparator="44" Text="" FontWeight="50" FontSize="12" BorderWidth="2" Precision="2" FontFamily="Arial" />
+	<Label WordWrap="0" Width="70" X="210" Y="0" BorderStyle="0" Height="20" HAlignment="0" BorderColor="0,0,0" BackgroundColor="255,255,255" FontItalic="0" VAlignment="1" ForegroundColor="0,0,0" Text="Total capas:" FontWeight="50" FontSize="12" BorderWidth="1" FontFamily="Arial" />
+
+	<Label WordWrap="0" Width="70" X="410" Y="0" BorderStyle="0" Height="20" HAlignment="0" BorderColor="0,0,0" BackgroundColor="255,255,255" FontItalic="0" VAlignment="1" ForegroundColor="0,0,0" Text="Total tipos:" FontWeight="50" FontSize="12" BorderWidth="1" FontFamily="Arial" />
+ </DetailHeader>
+	
+ <!Detail Height="29" Level="1" >
+	 <Line Width="2" Y1="0" Y2="0" X1="5" X2="615" Style="1" Color="0,0,0" />
+   <Label WordWrap="0" Width="100" X="10" Y="3" BorderStyle="0" Height="20" HAlignment="0" BorderColor="0,0,0" BackgroundColor="255,255,255" FontItalic="0" VAlignment="1" ForegroundColor="0,0,0" Text="Cortes de tipo:" FontWeight="50" FontSize="12" BorderWidth="1" FontFamily="Arial Narrow" />
+  <Field WordWrap="0" Width="100" X="110" Y="3" BorderStyle="0" NegValueColor="0,0,0" Height="20" HAlignment="0" DataType="0" Field="articulos.referencia" DateFormat="11" Currency="32" BorderColor="0,0,0" BackgroundColor="255,255,255" FontItalic="0" VAlignment="1" ForegroundColor="0,0,0" CommaSeparator="44" Text="articulos.referencia" FontWeight="50" FontSize="12" BorderWidth="1" Precision="2" FontFamily="Arial Narrow" />
+   <Field WordWrap="0" Width="300" X="210" Y="3" BorderStyle="0" NegValueColor="0,0,0" Height="20" HAlignment="0" DataType="0" Field="articulos.descripcion" DateFormat="11" Currency="32" BorderColor="0,0,0" BackgroundColor="255,255,255" FontItalic="0" VAlignment="1" ForegroundColor="0,0,0" CommaSeparator="44" Text="articulos.descripcion" FontWeight="50" FontSize="12" BorderWidth="1" Precision="2" FontFamily="Arial Narrow" />
+   <Line Width="2" Y1="25" Y2="25" X1="5" X2="615" Style="1" Color="0,0,0" />
+ </Detail>
+ <DetailHeader Height="22" Level="2" >
+  <Label WordWrap="0" Width="139" X="10" Y="0" BorderStyle="0" Height="20" HAlignment="1" BorderColor="0,0,0" BackgroundColor="220,220,220" FontItalic="0" VAlignment="1" ForegroundColor="0,0,0" Text="Tela" FontWeight="50" FontSize="12" BorderWidth="1" FontFamily="Arial Narrow" />
+  <Label WordWrap="0" Width="124" X="150" Y="0" BorderStyle="0" Height="20" HAlignment="1" BorderColor="0,0,0" BackgroundColor="220,220,220" FontItalic="0" VAlignment="1" ForegroundColor="0,0,0" Text="Rollo" FontWeight="50" FontSize="12" BorderWidth="1" FontFamily="Arial Narrow" />
+  <Label WordWrap="0" Width="49" X="275" Y="0" BorderStyle="0" Height="20" HAlignment="1" BorderColor="0,0,0" BackgroundColor="220,220,220" FontItalic="0" VAlignment="1" ForegroundColor="0,0,0" Text="Cant." FontWeight="50" FontSize="12" BorderWidth="1" FontFamily="Arial Narrow" />
+  <Label WordWrap="0" Width="49" X="325" Y="0" BorderStyle="0" Height="20" HAlignment="1" BorderColor="0,0,0" BackgroundColor="220,220,220" FontItalic="0" VAlignment="1" ForegroundColor="0,0,0" Text="Long." FontWeight="50" FontSize="12" BorderWidth="1" FontFamily="Arial Narrow" />
+  <Label WordWrap="0" Width="239" X="375" Y="0" BorderStyle="0" Height="20" HAlignment="1" BorderColor="0,0,0" BackgroundColor="220,220,220" FontItalic="0" VAlignment="1" ForegroundColor="0,0,0" Text="Observaciones" FontWeight="50" FontSize="12" BorderWidth="1" FontFamily="Arial Narrow" />
+ </DetailHeader>
+ <Detail Height="40" Level="2" >
+  <Field WordWrap="0" Width="140" X="10" Y="0" BorderStyle="0" NegValueColor="0,0,0" Height="20" HAlignment="0" DataType="0" Field="rollos.referencia" DateFormat="11" Currency="32" BorderColor="0,0,0" BackgroundColor="255,255,255" FontItalic="0" VAlignment="1" ForegroundColor="0,0,0" CommaSeparator="44" Text="[rollos.referencia]" FontWeight="50" FontSize="12" BorderWidth="2" Precision="2" FontFamily="Arial Narrow" />
+  <Field WordWrap="0" Width="126" X="150" Y="0" BorderStyle="0" NegValueColor="0,0,0" Height="20" HAlignment="0" DataType="0" Field="movistock.codlote" DateFormat="11" Currency="32" BorderColor="0,0,0" BackgroundColor="255,255,255" FontItalic="0" VAlignment="1" ForegroundColor="0,0,0" CommaSeparator="44" Text="[movistock.codlote]" FontWeight="50" FontSize="12" BorderWidth="1" Precision="2" FontFamily="Arial Narrow" />
+ <Field WordWrap="0" Width="50" X="275" Y="0" BorderStyle="0" NegValueColor="0,0,0" Height="20" HAlignment="1" DataType="0" Field="SUM(lineaspedidoscli.cantidad)" DateFormat="11" Currency="32" BorderColor="0,0,0" BackgroundColor="255,255,255" FontItalic="0" VAlignment="1" ForegroundColor="0,0,0" CommaSeparator="44" Text="[SUM(lineaspedidoscli.cantidad)]" FontWeight="50" FontSize="12" BorderWidth="2" Precision="2" FontFamily="Arial Narrow" />
+   <Field WordWrap="0" Width="50" X="325" Y="0" BorderStyle="0" NegValueColor="0,0,0" Height="20" HAlignment="1" DataType="2" Field="telascorte.longitud" DateFormat="11" Currency="32" BorderColor="0,0,0" BackgroundColor="255,255,255" FontItalic="0" VAlignment="1" ForegroundColor="0,0,0" CommaSeparator="44" Text="[telascorte.longitud]" FontWeight="50" FontSize="12" BorderWidth="2" Precision="2" FontFamily="Arial Narrow" />
+  <Field WordWrap="1" ChangeHeight="1" Width="240" X="375" Y="0" BorderStyle="0" NegValueColor="0,0,0" Height="20" HAlignment="0" DataType="0" Field="pedidoscli.observaciones" DateFormat="11" Currency="32" BorderColor="0,0,0" BackgroundColor="255,255,255" FontItalic="0" VAlignment="1" ForegroundColor="0,0,0" CommaSeparator="44" Text="[pedidoscli.observaciones]" FontWeight="50" FontSize="12" BorderWidth="2" Precision="2" FontFamily="Arial Narrow" />
+ 
+	<Field WordWrap="0" Width="100" X="160" Y="15" BorderStyle="0" NegValueColor="0,0,0" Height="15" HAlignment="1" DataType="0" Field="opcionesarticulocomp.opcion" DateFormat="11" Currency="32" BorderColor="0,0,0" BackgroundColor="255,255,255" FontItalic="0" VAlignment="1" ForegroundColor="0,0,0" CommaSeparator="44" Text="" FontWeight="50" FontSize="12" BorderWidth="1" Precision="2" FontFamily="Arial" />
+
+  	<Field WordWrap="1" Width="250" X="280" Y="0" BorderStyle="0" NegValueColor="0,0,0" Height="30" HAlignment="0" DataType="0" Field="articulos.descripcion" DateFormat="18" Currency="32" BorderColor="0,0,0" BackgroundColor="255,255,255" FontItalic="0" VAlignment="0" ForegroundColor="0,0,0" CommaSeparator="44" Text="[articulos.descripcion]" FontWeight="50" FontSize="12" BorderWidth="1" Precision="2" FontFamily="Arial" />
+	
+</Detail-->
+
+
+ <Detail  Height="18" Level="1">
+
+   	<Field WordWrap="0" Width="100" X="20" Y="0" BorderStyle="0" NegValueColor="0,0,0" Height="15" HAlignment="0" DataType="0" Field="articuloscomp.desccomponente" DateFormat="11" Currency="32" BorderColor="0,0,0" BackgroundColor="255,255,255" FontItalic="0" VAlignment="0" ForegroundColor="0,0,0" CommaSeparator="44" Text="[articuloscomp.desccomponente]" FontWeight="50" FontSize="12" BorderWidth="2" Precision="2" FontFamily="Arial" />
+<!--   	<Field WordWrap="0" Width="150" X="120" Y="0" BorderStyle="0" NegValueColor="0,0,0" Height="15" HAlignment="0" DataType="0" Field="movistock.referencia" DateFormat="11" Currency="32" BorderColor="0,0,0" BackgroundColor="255,255,255" FontItalic="0" VAlignment="0" ForegroundColor="0,0,0" CommaSeparator="44" Text="[movistock.referencia]" FontWeight="50" FontSize="12" BorderWidth="2" Precision="2" FontFamily="Arial" />-->
+	 <CalculatedField CalculationType="6" FunctionName="flprodinfo.iface.pub_desTela" WordWrap="0" Width="150" X="120" Y="0" BorderStyle="0" NegValueColor="0,0,0" Height="15" HAlignment="0" DataType="0" Field="" DateFormat="18" Currency="32" BorderColor="0,0,0" BackgroundColor="255,255,255" FontItalic="0" VAlignment="0" ForegroundColor="0,0,0" CommaSeparator="44" Text="" FontWeight="50" FontSize="12" BorderWidth="1" Precision="2" FontFamily="Arial" />
+   	<Field WordWrap="0" Width="100" X="270" Y="0" BorderStyle="0" NegValueColor="0,0,0" Height="15" HAlignment="0" DataType="0" Field="movistock.codlote" DateFormat="11" Currency="32" BorderColor="0,0,0" BackgroundColor="255,255,255" FontItalic="0" VAlignment="0" ForegroundColor="0,0,0" CommaSeparator="44" Text="[movistock.codlote]" FontWeight="50" FontSize="12" BorderWidth="2" Precision="2" FontFamily="Arial" />
+   	<Field WordWrap="0" Width="50" X="370" Y="0" BorderStyle="0" NegValueColor="0,0,0" Height="15" HAlignment="2" DataType="2" Field="movistock.cantidad" DateFormat="11" Currency="32" BorderColor="0,0,0" BackgroundColor="255,255,255" FontItalic="0" VAlignment="0" ForegroundColor="0,0,0" CommaSeparator="44" Text="[movistock.cantidad]" FontWeight="50" FontSize="12" BorderWidth="2" Precision="2" FontFamily="Arial" />
+  <Label WordWrap="0" Width="20" X="420" Y="0" BorderStyle="0" Height="15" HAlignment="0" BorderColor="0,0,0" BackgroundColor="255,255,255" FontItalic="0" VAlignment="0" ForegroundColor="0,0,0" Text=" m" FontWeight="50" FontSize="12" BorderWidth="1" FontFamily="Arial" />
+  <Line Width="1" Y1="17" Y2="17" X1="20" X2="440" Style="1" Color="100,100,100" />
+
+ </Detail>
+
+
+</KugarTemplate>

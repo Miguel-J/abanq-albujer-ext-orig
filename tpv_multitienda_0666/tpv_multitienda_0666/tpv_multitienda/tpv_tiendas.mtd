@@ -1,0 +1,248 @@
+<xupdate:modifications>
+<xupdate:update select="/TMD[TMD,1]/field[codtienda]/length[length,1]/text()[1]" >10</xupdate:update>
+<xupdate:insert-after select="/TMD[TMD,1]/field[codtienda]/length[length,1]" >
+<relation>
+<table>tpv_comandas</table>
+<field>codtienda</field>
+<card>1M</card>
+</relation>
+</xupdate:insert-after>
+<xupdate:insert-after select="/TMD[TMD,1]/field[codtienda]/relation[tpv_comandas,codtienda]" >
+<relation>
+<table>tpv_arqueos</table>
+<field>codtienda</field>
+<card>1M</card>
+</relation>
+</xupdate:insert-after>
+<xupdate:insert-after select="/TMD[TMD,1]/field[codtienda]/relation[tpv_arqueos,codtienda]" >
+<relation>
+<table>tpv_puntosventa</table>
+<field>codtienda</field>
+<card>1M</card>
+</relation>
+</xupdate:insert-after>
+<xupdate:insert-after select="/TMD[TMD,1]/field[codtienda]/relation[tpv_puntosventa,codtienda]" >
+<relation>
+<table>tpv_agentes</table>
+<field>codtienda</field>
+<card>1M</card>
+</relation>
+</xupdate:insert-after>
+<xupdate:insert-after select="/TMD[TMD,1]/field[codtienda]/relation[tpv_agentes,codtienda]" >
+<relation>
+<table>tpv_almacenestienda</table>
+<field>codtienda</field>
+<card>1M</card>
+</relation>
+</xupdate:insert-after>
+<xupdate:insert-after select="/TMD[TMD,1]/field[codtienda]/relation[tpv_almacenestienda,codtienda]" >
+<relation>
+<table>almacenes</table>
+<field>codtienda</field>
+<card>1M</card>
+</relation>
+</xupdate:insert-after>
+<xupdate:insert-after select="/TMD[TMD,1]/field[descripcion]" >
+<field>
+<name>codcliente</name>
+<alias>QT_TRANSLATE_NOOP(&quot;MetaData&quot;,&quot;Cliente&quot;)</alias>
+<null>true</null>
+<pk>false</pk>
+<type>string</type>
+<length>6</length>
+<relation>
+<table>clientes</table>
+<field>codcliente</field>
+<card>M1</card>
+</relation>
+</field>
+</xupdate:insert-after>
+<xupdate:insert-after select="/TMD[TMD,1]/field[codcliente]" >
+<field>
+<name>codproveedor</name>
+<!--Código identificativo del proveedor relacionado--><alias>QT_TRANSLATE_NOOP(&quot;MetaData&quot;,&quot;Proveedor relacionado&quot;)</alias>
+<null>true</null>
+<pk>false</pk>
+<type>string</type>
+<length>6</length>
+<relation>
+<table>proveedores</table>
+<field>codproveedor</field>
+<card>M1</card>
+</relation>
+</field>
+</xupdate:insert-after>
+<xupdate:insert-after select="/TMD[TMD,1]/field[codproveedor]" >
+<field>
+<name>fecha</name>
+<alias>QT_TRANSLATE_NOOP(&quot;MetaData&quot;,&quot;Fecha de apertura&quot;)</alias>
+<null>true</null>
+<pk>false</pk>
+<type>date</type>
+</field>
+</xupdate:insert-after>
+<xupdate:insert-after select="/TMD[TMD,1]/field[fecha]" >
+<field>
+<name>direccion</name>
+<alias>QT_TRANSLATE_NOOP(&quot;MetaData&quot;,&quot;Dirección&quot;)</alias>
+<null>true</null>
+<pk>false</pk>
+<type>string</type>
+<length>100</length>
+</field>
+</xupdate:insert-after>
+<xupdate:insert-after select="/TMD[TMD,1]/field[direccion]" >
+<field>
+<name>codpostal</name>
+<alias>QT_TRANSLATE_NOOP(&quot;MetaData&quot;,&quot;Código postal&quot;)</alias>
+<null>true</null>
+<pk>false</pk>
+<type>string</type>
+<length>10</length>
+</field>
+</xupdate:insert-after>
+<xupdate:insert-after select="/TMD[TMD,1]/field[codpostal]" >
+<field>
+<name>apartado</name>
+<alias>QT_TRANSLATE_NOOP(&quot;MetaData&quot;,&quot;Apdo. de correos&quot;)</alias>
+<null>true</null>
+<pk>false</pk>
+<type>string</type>
+<length>10</length>
+</field>
+</xupdate:insert-after>
+<xupdate:insert-after select="/TMD[TMD,1]/field[apartado]" >
+<field>
+<name>ciudad</name>
+<alias>QT_TRANSLATE_NOOP(&quot;MetaData&quot;,&quot;Ciudad&quot;)</alias>
+<null>true</null>
+<pk>false</pk>
+<type>string</type>
+<length>100</length>
+</field>
+</xupdate:insert-after>
+<xupdate:insert-after select="/TMD[TMD,1]/field[ciudad]" >
+<field>
+<name>idprovincia</name>
+<alias>QT_TRANSLATE_NOOP(&quot;MetaData&quot;,&quot;&quot;)</alias>
+<null>true</null>
+<pk>false</pk>
+<type>uint</type>
+<visiblegrid>false</visiblegrid>
+<relation>
+<table>provincias</table>
+<field>idprovincia</field>
+<card>M1</card>
+</relation>
+</field>
+</xupdate:insert-after>
+<xupdate:insert-after select="/TMD[TMD,1]/field[idprovincia]" >
+<field>
+<name>provincia</name>
+<alias>QT_TRANSLATE_NOOP(&quot;MetaData&quot;,&quot;Provincia&quot;)</alias>
+<null>true</null>
+<pk>false</pk>
+<type>string</type>
+<length>100</length>
+</field>
+</xupdate:insert-after>
+<xupdate:insert-after select="/TMD[TMD,1]/field[provincia]" >
+<field>
+<name>codpais</name>
+<alias>QT_TRANSLATE_NOOP(&quot;MetaData&quot;,&quot;País&quot;)</alias>
+<null>true</null>
+<pk>false</pk>
+<type>string</type>
+<length>20</length>
+<relation>
+<table>paises</table>
+<field>codpais</field>
+<card>M1</card>
+</relation>
+</field>
+</xupdate:insert-after>
+<xupdate:insert-after select="/TMD[TMD,1]/field[codpais]" >
+<field>
+<name>telefono</name>
+<alias>QT_TRANSLATE_NOOP(&quot;MetaData&quot;,&quot;Teléfono&quot;)</alias>
+<null>true</null>
+<pk>false</pk>
+<type>string</type>
+<length>50</length>
+</field>
+</xupdate:insert-after>
+<xupdate:insert-after select="/TMD[TMD,1]/field[telefono]" >
+<field>
+<name>fax</name>
+<alias>QT_TRANSLATE_NOOP(&quot;MetaData&quot;,&quot;Fax&quot;)</alias>
+<null>true</null>
+<pk>false</pk>
+<type>string</type>
+<length>50</length>
+</field>
+</xupdate:insert-after>
+<xupdate:insert-after select="/TMD[TMD,1]/field[fax]" >
+<field>
+<name>contacto</name>
+<!-- Persona de contacto del almacén	--><alias>QT_TRANSLATE_NOOP(&quot;MetaData&quot;,&quot;Encargado&quot;)</alias>
+<null>true</null>
+<pk>false</pk>
+<type>string</type>
+<length>100</length>
+</field>
+</xupdate:insert-after>
+<xupdate:insert-after select="/TMD[TMD,1]/field[contacto]" >
+<field>
+<name>observaciones</name>
+<alias>QT_TRANSLATE_NOOP(&quot;MetaData&quot;,&quot;Observaciones&quot;)</alias>
+<null>true</null>
+<pk>false</pk>
+<type>stringlist</type>
+</field>
+</xupdate:insert-after>
+<xupdate:insert-after select="/TMD[TMD,1]/field[observaciones]" >
+<field>
+<name>codserie</name>
+<!-- Código de cliente al que se asociarán las facturas correspondientes a las ventas --><alias>QT_TRANSLATE_NOOP(&quot;MetaData&quot;,&quot;Serie facturación&quot;)</alias>
+<null>true</null>
+<pk>false</pk>
+<type>string</type>
+<length>2</length>
+<relation>
+<table>series</table>
+<field>codserie</field>
+<card>M1</card>
+</relation>
+</field>
+</xupdate:insert-after>
+<xupdate:insert-after select="/TMD[TMD,1]/field[codserie]" >
+<field>
+<name>idempresa</name>
+<alias>QT_TRANSLATE_NOOP(&quot;MetaData&quot;,&quot;Empresa&quot;)</alias>
+<null>true</null>
+<pk>false</pk>
+<type>uint</type>
+<visiblegrid>false</visiblegrid>
+<relation>
+<table>empresa</table>
+<field>id</field>
+<card>M1</card>
+</relation>
+</field>
+</xupdate:insert-after>
+<xupdate:insert-after select="/TMD[TMD,1]/field[idempresa]" >
+<field>
+<name>codalmacen</name>
+<alias>QT_TRANSLATE_NOOP(&quot;MetaData&quot;,&quot;Almacén Ppal.&quot;)</alias>
+<null>false</null>
+<pk>false</pk>
+<type>string</type>
+<length>4</length>
+<relation>
+<table>almacenes</table>
+<field>codalmacen</field>
+<card>M1</card>
+</relation>
+</field>
+</xupdate:insert-after>
+</xupdate:modifications>

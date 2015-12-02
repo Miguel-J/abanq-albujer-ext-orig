@@ -1,0 +1,20 @@
+<xupdate:modifications>
+<xupdate:insert-after select="/ACTIONS[ACTIONS,1]/action[tpv_causasmovimiento]" >
+<action>
+<name>tpv_buscarreferencia</name>
+<alias>QT_TRANSLATE_NOOP(&quot;MetaData&quot;,&quot;Buscar Articulo&quot;)</alias>
+<description>QT_TRANSLATE_NOOP(&quot;MetaData&quot;,&quot;Este formulario permite buscar un articulo&quot;)</description>
+<table>articulos</table>
+<form>master</form>
+</action>
+</xupdate:insert-after>
+<xupdate:insert-after select="/ACTIONS[ACTIONS,1]/action[tpv_buscarreferencia]" >
+<action>
+<name>tpv_buscarbarcode</name>
+<alias>QT_TRANSLATE_NOOP(&quot;MetaData&quot;,&quot;Buscar Barcode&quot;)</alias>
+<description>QT_TRANSLATE_NOOP(&quot;MetaData&quot;,&quot;Este formulario permite buscar un barcode&quot;)</description>
+<table>atributosarticulos</table>
+<form>master</form>
+</action>
+</xupdate:insert-after>
+</xupdate:modifications>

@@ -1,0 +1,158 @@
+<xupdate:modifications>
+<xupdate:update select="/UI[UI,1]/widget[QWidget,facturac_general]/property[geometry]/rect[rect,1]/height[height,1]/text()[1]" >297</xupdate:update>
+<xupdate:update select="/UI[UI,1]/widget[QWidget,facturac_general]/vbox[vbox,1]/widget[QTabWidget,tbwDatosGenerales]/widget[QWidget,datosgenerales]/vbox[vbox,1]/widget[QGroupBox,gbxDatosGenerales]/vbox[vbox,1]/widget[QLayoutWidget,layout22_2]/hbox[hbox,1]/widget[FLFieldDB,fdbAvisoCliente]/property[minimumSize]/size[size,1]/height[height,1]/text()[1]" >22</xupdate:update>
+<xupdate:update select="/UI[UI,1]/widget[QWidget,facturac_general]/vbox[vbox,1]/widget[QTabWidget,tbwDatosGenerales]/widget[QWidget,datosgenerales]/vbox[vbox,1]/widget[QGroupBox,gbxDatosGenerales]/vbox[vbox,1]/widget[QLayoutWidget,layout22_2]/hbox[hbox,1]/widget[FLFieldDB,fdbAvisoCliente]/property[minimumSize]/size[size,1]/width[width,1]/text()[1]" >26</xupdate:update>
+<xupdate:insert-after select="/UI[UI,1]/widget[QWidget,facturac_general]/vbox[vbox,1]/widget[QTabWidget,tbwDatosGenerales]/widget[QWidget,datosgenerales]/vbox[vbox,1]/widget[QGroupBox,gbxDatosGenerales]/vbox[vbox,1]/widget[QLayoutWidget,layout22_2]" >
+<widget class="QLayoutWidget" >
+<property name="name" >
+<cstring>layoutHosting</cstring>
+</property>
+<hbox>
+<property name="name" >
+<cstring>unnamed</cstring>
+</property>
+<widget class="FLFieldDB" >
+<property name="name" >
+<cstring>fdbHostEmail</cstring>
+</property>
+<property name="font" >
+<font>
+<bold>0</bold>
+</font>
+</property>
+<property name="fieldName" >
+<string>hostcorreosaliente</string>
+</property>
+</widget>
+<spacer>
+<property name="name" >
+<cstring>spacerHosting</cstring>
+</property>
+<property name="orientation" >
+<enum>Horizontal</enum>
+</property>
+<property name="sizeType" >
+<enum>Expanding</enum>
+</property>
+<property name="sizeHint" >
+<size>
+<width>221</width>
+<height>20</height>
+</size>
+</property>
+</spacer>
+</hbox>
+</widget>
+</xupdate:insert-after>
+<xupdate:insert-after select="/UI[UI,1]/widget[QWidget,facturac_general]/vbox[vbox,1]/widget[QTabWidget,tbwDatosGenerales]/widget[QWidget,datosgenerales]/vbox[vbox,1]/widget[QGroupBox,gbxDatosGenerales]" >
+<widget class="QGroupBox" >
+<property name="name" >
+<cstring>gbxCodificacion</cstring>
+</property>
+<property name="font" >
+<font>
+<bold>0</bold>
+</font>
+</property>
+<property name="title" >
+<string>Tipo de codificación local</string>
+</property>
+<hbox>
+<property name="name" >
+<cstring>unnamed</cstring>
+</property>
+<widget class="QLineEdit" >
+<property name="name" >
+<cstring>lineEditCodificacion</cstring>
+</property>
+<property name="minimumSize" >
+<size>
+<width>100</width>
+<height>0</height>
+</size>
+</property>
+<property name="text" >
+<string/>
+</property>
+</widget>
+<widget class="QLabel" >
+<property name="name" >
+<cstring>lblEjemplosCodificacion</cstring>
+</property>
+<property name="minimumSize" >
+<size>
+<width>100</width>
+<height>0</height>
+</size>
+</property>
+<property name="font" >
+<font/>
+</property>
+<property name="text" >
+<string>(UTF-8, ISO8859-15 ...)</string>
+</property>
+</widget>
+</hbox>
+</widget>
+</xupdate:insert-after>
+<xupdate:insert-after select="/UI[UI,1]/widget[QWidget,facturac_general]/vbox[vbox,1]/widget[QTabWidget,tbwDatosGenerales]/widget[QWidget,datosgenerales]/vbox[vbox,1]/widget[QGroupBox,gbxCodificacion]" >
+<widget class="QGroupBox" >
+<property name="name" >
+<cstring>gbxRutaAdjuntos</cstring>
+</property>
+<property name="font" >
+<font>
+<bold>0</bold>
+</font>
+</property>
+<property name="title" >
+<string>Ruta de ficheros adjuntos</string>
+</property>
+<hbox>
+<property name="name" >
+<cstring>unnamed</cstring>
+</property>
+<widget class="QLineEdit" >
+<property name="name" >
+<cstring>lineEditRutaAdjuntos</cstring>
+</property>
+<property name="minimumSize" >
+<size>
+<width>100</width>
+<height>0</height>
+</size>
+</property>
+<property name="text" >
+<string/>
+</property>
+</widget>
+<widget class="QPushButton" >
+<property name="name" >
+<cstring>pbnCambiarRutaAdjunto</cstring>
+</property>
+<property name="maximumSize" >
+<size>
+<width>100</width>
+<height>32767</height>
+</size>
+</property>
+<property name="font" >
+<font/>
+</property>
+<property name="text" >
+<string>Cambiar</string>
+</property>
+<property name="toolTip" stdset="0" >
+<string>Modulo Servicios</string>
+</property>
+<property name="whatsThis" stdset="0" >
+<string>Cambiar el directorio del modulo de Servicios</string>
+</property>
+</widget>
+</hbox>
+</widget>
+</xupdate:insert-after>
+<xupdate:insert-after select="/UI[UI,1]/includehints[includehints,1]/includehint[flfielddb.h]" >
+<includehint>flfielddb.h</includehint>
+</xupdate:insert-after>
+</xupdate:modifications>

@@ -1,0 +1,65 @@
+<xupdate:modifications>
+<xupdate:update select="/UI[UI,1]/widget[QWidget,formLineasFacturasCli]/property[property,2]/rect[rect,1]/height[height,1]/text()[1]" >323</xupdate:update>
+<xupdate:update select="/UI[UI,1]/widget[QWidget,formLineasFacturasCli]/property[property,2]/rect[rect,1]/width[width,1]/text()[1]" >612</xupdate:update>
+<xupdate:update select="/UI[UI,1]/widget[QWidget,formLineasFacturasCli]/vbox[vbox,1]/widget[QGroupBox,groupBox7]/hbox[hbox,1]/widget[FLFieldDB,fdbDescripcion]/property[property,2]/sizepolicy[sizepolicy,1]/hsizetype[hsizetype,1]/text()[1]" >7</xupdate:update>
+<xupdate:update select="/UI[UI,1]/widget[QWidget,formLineasFacturasCli]/vbox[vbox,1]/widget[QGroupBox,groupBox7]/hbox[hbox,1]/widget[FLFieldDB,fdbDescripcion]/property[property,3]/size[size,1]/height[height,1]/text()[1]" >60</xupdate:update>
+<xupdate:update select="/UI[UI,1]/widget[QWidget,formLineasFacturasCli]/vbox[vbox,1]/widget[QGroupBox,groupBox7]/hbox[hbox,1]/widget[FLFieldDB,fdbDescripcion]/property[property,3]/size[size,1]/width[width,1]/text()[1]" >400</xupdate:update>
+<xupdate:delete select="/UI[UI,1]/widget[QWidget,formLineasFacturasCli]/vbox[vbox,1]/widget[QGroupBox,groupBox7]/hbox[hbox,1]/widget[FLFieldDB,fdbReferencia]" />
+<xupdate:insert-after select="/UI[UI,1]/widget[QWidget,formLineasFacturasCli]/vbox[vbox,1]/widget[QGroupBox,groupBox7]/hbox[hbox,1]/property[property,1]" >
+<widget class="QLayoutWidget" >
+<property name="name" >
+<cstring>lytLineasLargas</cstring>
+</property>
+<property name="font" >
+<font>
+<bold>0</bold>
+<italic>0</italic>
+</font>
+</property>
+<vbox>
+<property name="name" >
+<cstring>unnamed</cstring>
+</property>
+<widget class="FLFieldDB" >
+<property name="name" >
+<cstring>fdbReferencia</cstring>
+</property>
+<property name="sizePolicy" >
+<sizepolicy>
+<hsizetype>1</hsizetype>
+<vsizetype>0</vsizetype>
+<horstretch>0</horstretch>
+<verstretch>0</verstretch>
+</sizepolicy>
+</property>
+<property name="minimumSize" >
+<size>
+<width>180</width>
+<height>25</height>
+</size>
+</property>
+<property name="fieldName" >
+<string>referencia</string>
+</property>
+</widget>
+<spacer>
+<property name="name" >
+<cstring>spcLineasLargas</cstring>
+</property>
+<property name="orientation" >
+<enum>Vertical</enum>
+</property>
+<property name="sizeType" >
+<enum>Expanding</enum>
+</property>
+<property name="sizeHint" >
+<size>
+<width>20</width>
+<height>31</height>
+</size>
+</property>
+</spacer>
+</vbox>
+</widget>
+</xupdate:insert-after>
+</xupdate:modifications>

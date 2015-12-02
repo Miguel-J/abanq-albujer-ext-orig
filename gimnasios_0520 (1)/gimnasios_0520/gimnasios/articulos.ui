@@ -1,0 +1,114 @@
+<xupdate:modifications>
+<xupdate:insert-after select="/UI[UI,1]/widget[QWidget,formArticulos]/vbox[vbox,1]/widget[QTabWidget,tbwArticulo]/widget[QWidget,general]/vbox[vbox,1]/widget[QLayoutWidget,layout37]" >
+<widget class="QGroupBox" >
+<property name="name" >
+<cstring>gbxSesiones</cstring>
+</property>
+<property name="font" >
+<font>
+<bold>0</bold>
+</font>
+</property>
+<property name="title" >
+<string>Sesiones</string>
+</property>
+<vbox>
+<property name="name" >
+<cstring>unnamed</cstring>
+</property>
+<widget class="QLabel" >
+<property name="name" >
+<cstring>lblSesiones</cstring>
+</property>
+<property name="paletteForegroundColor" >
+<color>
+<red>0</red>
+<green>85</green>
+<blue>0</blue>
+</color>
+</property>
+<property name="font" >
+<font>
+<pointsize>9</pointsize>
+<italic>1</italic>
+</font>
+</property>
+<property name="text" >
+<string>El valor 0 indica sesiones ilimitadas / sin caducidad</string>
+</property>
+</widget>
+<widget class="QLayoutWidget" >
+<property name="name" >
+<cstring>layout6</cstring>
+</property>
+<hbox>
+<property name="name" >
+<cstring>unnamed</cstring>
+</property>
+<widget class="FLFieldDB" >
+<property name="name" >
+<cstring>fdbCanSesiones</cstring>
+</property>
+<property name="sizePolicy" >
+<sizepolicy>
+<hsizetype>1</hsizetype>
+<vsizetype>0</vsizetype>
+<horstretch>0</horstretch>
+<verstretch>0</verstretch>
+</sizepolicy>
+</property>
+<property name="minimumSize" >
+<size>
+<width>153</width>
+<height>31</height>
+</size>
+</property>
+<property name="fieldName" >
+<string>cansesiones</string>
+</property>
+</widget>
+<widget class="FLFieldDB" >
+<property name="name" >
+<cstring>fdbMesesCaducidad</cstring>
+</property>
+<property name="sizePolicy" >
+<sizepolicy>
+<hsizetype>1</hsizetype>
+<vsizetype>0</vsizetype>
+<horstretch>0</horstretch>
+<verstretch>0</verstretch>
+</sizepolicy>
+</property>
+<property name="minimumSize" >
+<size>
+<width>173</width>
+<height>29</height>
+</size>
+</property>
+<property name="fieldName" >
+<string>mesescaducidad</string>
+</property>
+</widget>
+<spacer>
+<property name="name" >
+<cstring>spcSesiones</cstring>
+</property>
+<property name="orientation" >
+<enum>Horizontal</enum>
+</property>
+<property name="sizeType" >
+<enum>Expanding</enum>
+</property>
+<property name="sizeHint" >
+<size>
+<width>110</width>
+<height>20</height>
+</size>
+</property>
+</spacer>
+</hbox>
+</widget>
+</vbox>
+</widget>
+</xupdate:insert-after>
+</xupdate:modifications>

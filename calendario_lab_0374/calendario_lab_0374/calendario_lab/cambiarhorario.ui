@@ -1,0 +1,226 @@
+<!DOCTYPE UI><UI version="3.3" stdsetdef="1">
+<class>cambiarhorario</class>
+<widget class="QWidget">
+    <property name="name">
+        <cstring>cambiarhorario</cstring>
+    </property>
+    <property name="geometry">
+        <rect>
+            <x>0</x>
+            <y>0</y>
+            <width>557</width>
+            <height>120</height>
+        </rect>
+    </property>
+    <property name="caption">
+        <string>Cambiarhorario</string>
+    </property>
+    <vbox>
+        <property name="name">
+            <cstring>unnamed</cstring>
+        </property>
+        <property name="margin">
+            <number>0</number>
+        </property>
+        <property name="spacing">
+            <number>2</number>
+        </property>
+        <widget class="QGroupBox">
+            <property name="name">
+                <cstring>gbxBNF1</cstring>
+            </property>
+            <property name="title">
+                <string></string>
+            </property>
+            <vbox>
+                <property name="name">
+                    <cstring>unnamed</cstring>
+                </property>
+                <widget class="QLayoutWidget">
+                    <property name="name">
+                        <cstring>lytBNF1</cstring>
+                    </property>
+                    <hbox>
+                        <property name="name">
+                            <cstring>unnamed</cstring>
+                        </property>
+                        <widget class="FLFieldDB">
+                            <property name="name">
+                                <cstring>fdbCodHorarioDl</cstring>
+                            </property>
+                            <property name="minimumSize">
+                                <size>
+                                    <width>134</width>
+                                    <height>24</height>
+                                </size>
+                            </property>
+                            <property name="font">
+                                <font>
+                                </font>
+                            </property>
+                            <property name="fieldName">
+                                <string>codhorariodl</string>
+                            </property>
+                            <property name="tableName">
+                                <string></string>
+                            </property>
+                            <property name="foreignField">
+                                <string></string>
+                            </property>
+                            <property name="fieldRelation">
+                                <string></string>
+                            </property>
+                        </widget>
+                        <widget class="FLFieldDB">
+                            <property name="name">
+                                <cstring>fdbDescripcion1</cstring>
+                            </property>
+                            <property name="minimumSize">
+                                <size>
+                                    <width>300</width>
+                                    <height>26</height>
+                                </size>
+                            </property>
+                            <property name="font">
+                                <font>
+                                </font>
+                            </property>
+                            <property name="fieldName">
+                                <string>descripcion</string>
+                            </property>
+                            <property name="tableName">
+                                <string>horarioslab</string>
+                            </property>
+                            <property name="foreignField">
+                                <string>codhorariodl</string>
+                            </property>
+                            <property name="fieldRelation">
+                                <string>codhorario</string>
+                            </property>
+                        </widget>
+                    </hbox>
+                </widget>
+                <widget class="QLayoutWidget">
+                    <property name="name">
+                        <cstring>lytBNF2</cstring>
+                    </property>
+                    <hbox>
+                        <property name="name">
+                            <cstring>unnamed</cstring>
+                        </property>
+                        <widget class="FLFieldDB">
+                            <property name="name">
+                                <cstring>fdbCodHorarioSab</cstring>
+                            </property>
+                            <property name="minimumSize">
+                                <size>
+                                    <width>145</width>
+                                    <height>24</height>
+                                </size>
+                            </property>
+                            <property name="font">
+                                <font>
+                                </font>
+                            </property>
+                            <property name="fieldName">
+                                <string>codhorariosab</string>
+                            </property>
+                        </widget>
+                        <widget class="FLFieldDB">
+                            <property name="name">
+                                <cstring>fdbDescripcion2</cstring>
+                            </property>
+                            <property name="minimumSize">
+                                <size>
+                                    <width>300</width>
+                                    <height>26</height>
+                                </size>
+                            </property>
+                            <property name="font">
+                                <font>
+                                </font>
+                            </property>
+                            <property name="fieldName">
+                                <string>descripcion</string>
+                            </property>
+                            <property name="tableName">
+                                <string>horarioslab</string>
+                            </property>
+                            <property name="foreignField">
+                                <string>codhorariosab</string>
+                            </property>
+                            <property name="fieldRelation">
+                                <string>codhorario</string>
+                            </property>
+                        </widget>
+                    </hbox>
+                </widget>
+                <widget class="QLayoutWidget">
+                    <property name="name">
+                        <cstring>lytBNF3</cstring>
+                    </property>
+                    <hbox>
+                        <property name="name">
+                            <cstring>unnamed</cstring>
+                        </property>
+                        <widget class="FLFieldDB">
+                            <property name="name">
+                                <cstring>fdbCodHorarioDom</cstring>
+                            </property>
+                            <property name="minimumSize">
+                                <size>
+                                    <width>151</width>
+                                    <height>24</height>
+                                </size>
+                            </property>
+                            <property name="font">
+                                <font>
+                                </font>
+                            </property>
+                            <property name="fieldName">
+                                <string>codhorariodom</string>
+                            </property>
+                        </widget>
+                        <widget class="FLFieldDB">
+                            <property name="name">
+                                <cstring>fdbDescripcion3</cstring>
+                            </property>
+                            <property name="minimumSize">
+                                <size>
+                                    <width>300</width>
+                                    <height>26</height>
+                                </size>
+                            </property>
+                            <property name="font">
+                                <font>
+                                </font>
+                            </property>
+                            <property name="fieldName">
+                                <string>descripcion</string>
+                            </property>
+                            <property name="tableName">
+                                <string>horarioslab</string>
+                            </property>
+                            <property name="foreignField">
+                                <string>codhorariodom</string>
+                            </property>
+                            <property name="fieldRelation">
+                                <string>codhorario</string>
+                            </property>
+                        </widget>
+                    </hbox>
+                </widget>
+            </vbox>
+        </widget>
+    </vbox>
+</widget>
+<layoutdefaults spacing="6" margin="11"/>
+<includehints>
+    <includehint>flfielddb.h</includehint>
+    <includehint>flfielddb.h</includehint>
+    <includehint>flfielddb.h</includehint>
+    <includehint>flfielddb.h</includehint>
+    <includehint>flfielddb.h</includehint>
+    <includehint>flfielddb.h</includehint>
+</includehints>
+</UI>

@@ -1,0 +1,113 @@
+<xupdate:modifications>
+<xupdate:insert-after select="/ACTIONS[ACTIONS,1]/action[tpv_i_rentabilidad]" >
+<action>
+<name>tpv_multitransstock</name>
+<description>QT_TRANSLATE_NOOP(&quot;MetaData&quot;,&quot;Esta acción realizar multiples transferencias de stock entre distintas tiendas&quot;)</description>
+<alias>QT_TRANSLATE_NOOP(&quot;MetaData&quot;,&quot;Multitransferencias de stock&quot;)</alias>
+<table>tpv_multitransstock</table>
+<form>master</form>
+<formrecord>tpv_multitransstock</formrecord>
+<scriptformrecord>tpv_multitransstock</scriptformrecord>
+<scriptform>tpv_mastermultitransstock</scriptform>
+</action>
+</xupdate:insert-after>
+<xupdate:insert-after select="/ACTIONS[ACTIONS,1]/action[tpv_multitransstock]" >
+<action>
+<name>tpv_enviostx</name>
+<description>QT_TRANSLATE_NOOP(&quot;MetaData&quot;,&quot;Envíos de mutitransferencia&quot;)</description>
+<alias>QT_TRANSLATE_NOOP(&quot;MetaData&quot;,&quot;Envíos de mutitransferencia&quot;)</alias>
+<table>tpv_qryenvios</table>
+<form>tpv_masterenviostx</form>
+<formrecord>tpv_enviostx</formrecord>
+<scriptform>tpv_masterenviostx</scriptform>
+<scriptformrecord>tpv_enviostx</scriptformrecord>
+</action>
+</xupdate:insert-after>
+<xupdate:insert-after select="/ACTIONS[ACTIONS,1]/action[tpv_enviostx]" >
+<action>
+<name>tpv_recepcionestx</name>
+<description>QT_TRANSLATE_NOOP(&quot;MetaData&quot;,&quot;Recepciones de mutitransferencia&quot;)</description>
+<alias>QT_TRANSLATE_NOOP(&quot;MetaData&quot;,&quot;Recepciones de mutitransferencia&quot;)</alias>
+<table>tpv_qryrecepciones</table>
+<form>tpv_masterrecepcionestx</form>
+<formrecord>tpv_recepcionestx</formrecord>
+<scriptform>tpv_masterrecepcionestx</scriptform>
+<scriptformrecord>tpv_recepcionestx</scriptformrecord>
+</action>
+</xupdate:insert-after>
+<xupdate:insert-after select="/ACTIONS[ACTIONS,1]/action[tpv_recepcionestx]" >
+<action>
+<name>tpv_selectart</name>
+<description>QT_TRANSLATE_NOOP(&quot;MetaData&quot;,&quot;Selección múltiple de artículos&quot;)</description>
+<alias>QT_TRANSLATE_NOOP(&quot;MetaData&quot;,&quot;Selección de Artículos por Filtro&quot;)</alias>
+<scriptformrecord>tpv_selectart</scriptformrecord>
+<table>articulos</table>
+<formrecord>tpv_selectart</formrecord>
+<form>tpv_selectart</form>
+<scriptform>tpv_selectart</scriptform>
+</action>
+</xupdate:insert-after>
+<xupdate:insert-after select="/ACTIONS[ACTIONS,1]/action[tpv_selectart]" >
+<action>
+<name>tpv_selectalm</name>
+<description>QT_TRANSLATE_NOOP(&quot;MetaData&quot;,&quot;Selección múltiple de almacenes&quot;)</description>
+<alias>QT_TRANSLATE_NOOP(&quot;MetaData&quot;,&quot;Selección de Almacenes por Filtro&quot;)</alias>
+<scriptformrecord>tpv_selectart</scriptformrecord>
+<table>almacenes</table>
+<formrecord>tpv_selectalm</formrecord>
+<form>tpv_selectalm</form>
+<scriptform>tpv_selectalm</scriptform>
+</action>
+</xupdate:insert-after>
+<xupdate:insert-after select="/ACTIONS[ACTIONS,1]/action[tpv_selectalm]" >
+<action>
+<name>tpv_almamultitransstock</name>
+<description>QT_TRANSLATE_NOOP(&quot;MetaData&quot;,&quot;Almacenes de multitransferencias de stock&quot;)</description>
+<alias>QT_TRANSLATE_NOOP(&quot;MetaData&quot;,&quot;Almacenes de multitransferencias de stock&quot;)</alias>
+<table>tpv_almamultitransstock</table>
+<formrecord>tpv_almamultitransstock</formrecord>
+<scriptformrecord>tpv_almamultitransstock</scriptformrecord>
+</action>
+</xupdate:insert-after>
+<xupdate:insert-after select="/ACTIONS[ACTIONS,1]/action[tpv_almamultitransstock]" >
+<action>
+<name>tpv_artmultitransstock</name>
+<description>QT_TRANSLATE_NOOP(&quot;MetaData&quot;,&quot;Artículos de multitransferencias de stock&quot;)</description>
+<alias>QT_TRANSLATE_NOOP(&quot;MetaData&quot;,&quot;Artículos de multitransferencias de stock&quot;)</alias>
+<table>tpv_artmultitransstock</table>
+<formrecord>tpv_artmultitransstock</formrecord>
+<scriptformrecord>tpv_artmultitransstock</scriptformrecord>
+</action>
+</xupdate:insert-after>
+<xupdate:insert-after select="/ACTIONS[ACTIONS,1]/action[tpv_artmultitransstock]" >
+<action>
+<name>tpv_lineasmultitransstock</name>
+<description>QT_TRANSLATE_NOOP(&quot;MetaData&quot;,&quot;Líneas de multitransferencias de stock&quot;)</description>
+<alias>QT_TRANSLATE_NOOP(&quot;MetaData&quot;,&quot;Líneas de multitransferencias de stock&quot;)</alias>
+<scriptformrecord>tpv_lineasmultitransstock</scriptformrecord>
+<table>tpv_lineasmultitransstock</table>
+</action>
+</xupdate:insert-after>
+<xupdate:insert-after select="/ACTIONS[ACTIONS,1]/action[tpv_lineasmultitransstock]" >
+<action>
+<name>tpv_viajesmultitransstock</name>
+<description>QT_TRANSLATE_NOOP(&quot;MetaData&quot;,&quot;Viajes de multipedido&quot;)</description>
+<alias>QT_TRANSLATE_NOOP(&quot;MetaData&quot;,&quot;Viajes de multipedido&quot;)</alias>
+<table>tpv_viajesmultitransstock</table>
+<form>tpv_masterviajesmultitransstock</form>
+<formrecord>tpv_viajesmultitransstock</formrecord>
+<scriptform>tpv_masterviajesmultitransstock</scriptform>
+<scriptformrecord>tpv_viajesmultitransstock</scriptformrecord>
+</action>
+</xupdate:insert-after>
+<xupdate:insert-after select="/ACTIONS[ACTIONS,1]/action[tpv_tiendas]" >
+<action>
+<name>tpv_almacenestienda</name>
+<description>QT_TRANSLATE_NOOP(&quot;MetaData&quot;,&quot;Almacenes por tienda&quot;)</description>
+<alias>QT_TRANSLATE_NOOP(&quot;MetaData&quot;,&quot;Almacenes por tienda&quot;)</alias>
+<table>tpv_almacenestienda</table>
+<form>master</form>
+<formrecord>tpv_almacenestienda</formrecord>
+</action>
+</xupdate:insert-after>
+</xupdate:modifications>

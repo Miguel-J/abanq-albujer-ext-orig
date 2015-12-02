@@ -1,0 +1,27 @@
+<flpatch:modifications name="pesos_medidas" >
+    <flpatch:patchXml path="facturacion/almacen/" name="flfactalma.xml" />
+    <flpatch:patchXml path="facturacion/almacen/forms/" name="articulos.ui" />
+    <flpatch:patchXml path="facturacion/almacen/forms/" name="familias.ui" />
+    <flpatch:patchXml path="facturacion/almacen/forms/" name="flfactalma.ui" />
+    <flpatch:addFile path="facturacion/almacen/forms/" name="pesosmedidas.ui" />
+    <flpatch:patchXml path="facturacion/almacen/tables/" name="articulos.mtd" />
+    <flpatch:patchXml path="facturacion/almacen/tables/" name="familias.mtd" />
+    <flpatch:addFile path="facturacion/almacen/tables/" name="pesosmedidas.mtd" />
+    <flpatch:replaceFile path="facturacion/informes/queries/" name="i_albaranescli.qry" />
+    <flpatch:replaceFile path="facturacion/informes/queries/" name="i_albaranesprov.qry" />
+    <flpatch:replaceFile path="facturacion/informes/queries/" name="i_facturascli.qry" />
+    <flpatch:replaceFile path="facturacion/informes/queries/" name="i_facturasprov.qry" />
+    <flpatch:replaceFile path="facturacion/informes/queries/" name="i_pedidoscli.qry" />
+    <flpatch:replaceFile path="facturacion/informes/queries/" name="i_pedidosprov.qry" />
+    <flpatch:replaceFile path="facturacion/informes/queries/" name="i_presupuestoscli.qry" />
+    <flpatch:replaceFile path="facturacion/informes/reports/" name="i_albaranescli.kut" />
+    <flpatch:replaceFile path="facturacion/informes/reports/" name="i_albaranesprov.kut" />
+    <flpatch:replaceFile path="facturacion/informes/reports/" name="i_facturascli.kut" />
+    <flpatch:replaceFile path="facturacion/informes/reports/" name="i_facturasprov.kut" />
+    <flpatch:replaceFile path="facturacion/informes/reports/" name="i_pedidoscli.kut" />
+    <flpatch:replaceFile path="facturacion/informes/reports/" name="i_pedidosprov.kut" />
+    <flpatch:replaceFile path="facturacion/informes/reports/" name="i_presupuestoscli.kut" />
+    <flpatch:patchScript path="facturacion/almacen/scripts/" name="masterarticulos.qs" />
+    <flpatch:addFile path="facturacion/almacen/scripts/" name="pesosmedidas.qs" />
+    <flpatch:patchScript path="facturacion/almacen/scripts/" name="flfactalma.qs" />
+</flpatch:modifications>

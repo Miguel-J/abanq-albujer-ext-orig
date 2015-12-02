@@ -1,0 +1,15 @@
+<flpatch:modifications name="ag_transporte" >
+    <flpatch:patchXml path="facturacion/principal/" name="flfactppal.xml" />
+    <flpatch:patchXml path="facturacion/principal/forms/" name="flfactppal.ui" />
+    <flpatch:addFile path="facturacion/principal/forms/" name="zonaspesoagencia.ui" />
+    <flpatch:addFile path="facturacion/principal/forms/" name="zonastrans.ui" />
+    <flpatch:addFile path="facturacion/principal/tables/" name="zonaspesoagencia.mtd" />
+    <flpatch:addFile path="facturacion/principal/tables/" name="zonastrans.mtd" />
+    <flpatch:addFile path="facturacion/principal/scripts/" name="zonasgeo.qs" />
+    <flpatch:addFile path="facturacion/principal/tables/" name="zonasgeo.mtd" />
+    <flpatch:addFile path="facturacion/principal/forms/" name="zonasgeo.ui" />
+    <flpatch:patchScript path="facturacion/principal/scripts/" name="flfactppal.qs" />
+    <flpatch:patchXml path="facturacion/principal/tables/" name="agenciastrans.mtd" />
+    <flpatch:patchXml path="facturacion/principal/forms/" name="agenciastrans.ui" />
+    <flpatch:patchScript path="facturacion/principal/scripts/" name="sedesagencia.qs" />
+</flpatch:modifications>

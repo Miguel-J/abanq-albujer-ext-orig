@@ -1,0 +1,13 @@
+<xupdate:modifications>
+<xupdate:insert-after select="/ACTIONS[ACTIONS,1]/action[customviewer]" >
+<action>
+<name>cl_i_averiasrevisionmaquinas</name>
+<alias>QT_TRANSLATE_NOOP(&quot;MetaData&quot;,&quot;Ofertas de proveedores&quot;)</alias>
+<description>QT_TRANSLATE_NOOP(&quot;MetaData&quot;,&quot;Informe que contiene una página por cada oferta de proveedor. Se muestran los datos de las líneas de la oferta&quot;)</description>
+<table>i_averiasrevisionmaquinas</table>
+<form>i_master</form>
+<formrecord>i_averiasrevisionmaquinas</formrecord>
+<scriptform>i_masteraveriasrevisionmaquinas</scriptform>
+</action>
+</xupdate:insert-after>
+</xupdate:modifications>

@@ -1,0 +1,37 @@
+<xupdate:modifications>
+<xupdate:update select="/UI[UI,1]/widget[QWidget,FLWidgetMasterTable]/vbox[vbox,1]/widget[QFrame,barraBotones]/hbox[hbox,1]/spacer[Spacer2]/property[property,4]/size[size,1]/width[width,1]/text()[1]" >130</xupdate:update>
+<xupdate:update select="/UI[UI,1]/widget[QWidget,FLWidgetMasterTable]/vbox[vbox,1]/widget[QFrame,barraBotones]/hbox[hbox,1]/spacer[spacer5]/property[property,4]/size[size,1]/width[width,1]/text()[1]" >16</xupdate:update>
+<xupdate:insert-after select="/UI[UI,1]/widget[QWidget,FLWidgetMasterTable]/vbox[vbox,1]/widget[QFrame,barraBotones]/hbox[hbox,1]/widget[QPushButton,pbnAsociarAAlbaran]" >
+<widget class="QPushButton" >
+<property name="name" >
+<cstring>pbnBatchPedidos</cstring>
+</property>
+<property name="sizePolicy" >
+<sizepolicy>
+<hsizetype>0</hsizetype>
+<vsizetype>0</vsizetype>
+<horstretch>0</horstretch>
+<verstretch>0</verstretch>
+</sizepolicy>
+</property>
+<property name="font" >
+<font>
+<bold>1</bold>
+<italic>1</italic>
+</font>
+</property>
+<property name="text" >
+<string>&amp;Batch</string>
+</property>
+<property name="accel" >
+<string>Alt+B</string>
+</property>
+<property name="toolTip" stdset="0" >
+<string>Batch de albaranes</string>
+</property>
+<property name="whatsThis" stdset="0" >
+<string>Seleccionar un grupo de pedidos y generar un albaran por pedido</string>
+</property>
+</widget>
+</xupdate:insert-after>
+</xupdate:modifications>

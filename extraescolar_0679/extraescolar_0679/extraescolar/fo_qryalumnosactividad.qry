@@ -1,0 +1,19 @@
+<!DOCTYPE QRY>
+<QRY>
+	<name>fo_qryalumnosactividad</name>
+	
+	<tables>fo_alumnosactividad,fo_alumnos,tarifas</tables>
+	
+	<select>
+		fo_alumnosactividad.id, fo_alumnosactividad.codcontrato, fo_alumnosactividad.codactividad, fo_alumnosactividad.codalumno, fo_alumnos.nombre, fo_alumnosactividad.codtarifa, tarifas.nombre as tnombre, fo_alumnosactividad.codbecador, clientes.nombre as cnombre
+	</select>
+	
+	<from>
+		fo_alumnosactividad INNER JOIN fo_alumnos ON fo_alumnosactividad.codalumno = fo_alumnos.codalumno
+		LEFT OUTER JOIN tarifas ON fo_alumnosactividad.codtarifa = tarifas.codtarifa
+		LEFT OUTER JOIN clientes ON fo_alumnosactividad.codbecador = clientes.codcliente
+	</from>
+	
+	<where>
+	</where>
+</QRY>

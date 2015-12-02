@@ -1,0 +1,231 @@
+<xupdate:modifications>
+<xupdate:update select="/UI[UI,1]/widget[QWidget,formEmpresa]/property[property,2]/rect[rect,1]/height[height,1]/text()[1]" >495</xupdate:update>
+<xupdate:delete select="/UI[UI,1]/widget[QWidget,formEmpresa]/vbox[vbox,1]/widget[QTabWidget,tbwEmpresa]/widget[QWidget,TabPageProduccion]/vbox[vbox,1]/widget[QGroupBox,gbxHorarios]/property[property,3]/font[font,1]/bold[bold,1]" />
+<xupdate:update select="/UI[UI,1]/widget[QWidget,formEmpresa]/vbox[vbox,1]/widget[QTabWidget,tbwEmpresa]/widget[QWidget,TabPageProduccion]/vbox[vbox,1]/widget[QGroupBox,gbxHorarios]/vbox[vbox,1]/spacer[spacerProduccion]/property[property,4]/size[size,1]/height[height,1]/text()[1]" >160</xupdate:update>
+<xupdate:insert-after select="/UI[UI,1]/widget[QWidget,formEmpresa]/vbox[vbox,1]/widget[QTabWidget,tbwEmpresa]/widget[QWidget,TabPageProduccion]/vbox[vbox,1]/widget[QGroupBox,gbxHorarios]/vbox[vbox,1]/widget[QLayoutWidget,layoutDomingo]" >
+<spacer>
+<property name="name" >
+<cstring>spacerMetrajever</cstring>
+</property>
+<property name="orientation" >
+<enum>Vertical</enum>
+</property>
+<property name="sizeType" >
+<enum>Fixed</enum>
+</property>
+<property name="sizeHint" >
+<size>
+<width>20</width>
+<height>15</height>
+</size>
+</property>
+</spacer>
+</xupdate:insert-after>
+<xupdate:insert-after select="/UI[UI,1]/widget[QWidget,formEmpresa]/vbox[vbox,1]/widget[QTabWidget,tbwEmpresa]/widget[QWidget,TabPageProduccion]/vbox[vbox,1]/widget[QGroupBox,gbxHorarios]/vbox[vbox,1]/spacer[spacerMetrajever]" >
+<widget class="QLayoutWidget" >
+<property name="name" >
+<cstring>layoutDomingo_2</cstring>
+</property>
+<hbox>
+<property name="name" >
+<cstring>unnamed</cstring>
+</property>
+<widget class="FLFieldDB" >
+<property name="name" >
+<cstring>fdbMetraje</cstring>
+</property>
+<property name="minimumSize" >
+<size>
+<width>150</width>
+<height>0</height>
+</size>
+</property>
+<property name="maximumSize" >
+<size>
+<width>200</width>
+<height>3277</height>
+</size>
+</property>
+<property name="fieldName" >
+<string>articulometraje</string>
+</property>
+</widget>
+<widget class="FLFieldDB" >
+<property name="name" >
+<cstring>fdbDescMetraje</cstring>
+</property>
+<property name="minimumSize" >
+<size>
+<width>350</width>
+<height>0</height>
+</size>
+</property>
+<property name="fieldName" >
+<string>descripcion</string>
+</property>
+<property name="tableName" >
+<string>articulos</string>
+</property>
+<property name="foreignField" >
+<string>articulometraje</string>
+</property>
+<property name="fieldRelation" >
+<string>referencia</string>
+</property>
+</widget>
+<spacer>
+<property name="name" >
+<cstring>spacerMetraje</cstring>
+</property>
+<property name="orientation" >
+<enum>Horizontal</enum>
+</property>
+<property name="sizeType" >
+<enum>Preferred</enum>
+</property>
+<property name="sizeHint" >
+<size>
+<width>161</width>
+<height>20</height>
+</size>
+</property>
+</spacer>
+</hbox>
+</widget>
+</xupdate:insert-after>
+<xupdate:delete select="/UI[UI,1]/widget[QWidget,formEmpresa]/vbox[vbox,1]/widget[QTabWidget,tbwEmpresa]/widget[QWidget,general]/vbox[vbox,1]/widget[QGroupBox,gbxAdministrador]/property[property,2]/font[font,1]/bold[bold,1]" />
+<xupdate:delete select="/UI[UI,1]/widget[QWidget,formEmpresa]/vbox[vbox,1]/widget[QTabWidget,tbwEmpresa]/widget[QWidget,general]/vbox[vbox,1]/widget[QLayoutWidget,layout92]/hbox[hbox,1]/widget[FLFieldDB,fdbLogo]/property[property,4]/font[font,1]/bold[bold,1]" />
+<xupdate:delete select="/UI[UI,1]/widget[QWidget,formEmpresa]/vbox[vbox,1]/widget[QTabWidget,tbwEmpresa]/widget[QWidget,general]/vbox[vbox,1]/widget[QLayoutWidget,layout92]/hbox[hbox,1]/widget[QFrame,frmDireccion]/property[property,2]/font[font,1]/bold[bold,1]" />
+<xupdate:update select="/UI[UI,1]/widget[QWidget,formEmpresa]/vbox[vbox,1]/widget[QTabWidget,tbwEmpresa]/widget[QWidget,general]/vbox[vbox,1]/widget[QLayoutWidget,layout92]/hbox[hbox,1]/widget[QFrame,frmDireccion]/vbox[vbox,1]/widget[QLayoutWidget,layoutProvincia]/hbox[hbox,1]/widget[FLFieldDB,fdbIdProvincia]/property[property,6]/enum[enum,1]/text()[1]" >StrongFocus</xupdate:update>
+<xupdate:delete select="/UI[UI,1]/widget[QWidget,formEmpresa]/vbox[vbox,1]/widget[QTabWidget,tbwEmpresa]/widget[QWidget,valoresdefecto]/vbox[vbox,1]/widget[QFrame,fdmValoresDefecto]/property[property,2]/font[font,1]/bold[bold,1]" />
+<xupdate:insert-after select="/UI[UI,1]/widget[QWidget,formEmpresa]/vbox[vbox,1]/widget[QTabWidget,tbwEmpresa]/widget[QWidget,valoresdefecto]/vbox[vbox,1]/widget[QFrame,fdmValoresDefecto]/vbox[vbox,1]/widget[QLayoutWidget,layout13_2]" >
+<widget class="QLayoutWidget" >
+<property name="name" >
+<cstring>layoutIva</cstring>
+</property>
+<hbox>
+<property name="name" >
+<cstring>unnamed</cstring>
+</property>
+<widget class="FLFieldDB" >
+<property name="name" >
+<cstring>fdbCodImpuesto</cstring>
+</property>
+<property name="sizePolicy" >
+<sizepolicy>
+<hsizetype>1</hsizetype>
+<vsizetype>0</vsizetype>
+<horstretch>0</horstretch>
+<verstretch>0</verstretch>
+</sizepolicy>
+</property>
+<property name="minimumSize" >
+<size>
+<width>270</width>
+<height>25</height>
+</size>
+</property>
+<property name="maximumSize" >
+<size>
+<width>270</width>
+<height>32767</height>
+</size>
+</property>
+<property name="fieldName" >
+<string>codimpuesto</string>
+</property>
+</widget>
+<widget class="FLFieldDB" >
+<property name="name" >
+<cstring>fdbDesImpuesto</cstring>
+</property>
+<property name="sizePolicy" >
+<sizepolicy>
+<hsizetype>7</hsizetype>
+<vsizetype>0</vsizetype>
+<horstretch>0</horstretch>
+<verstretch>0</verstretch>
+</sizepolicy>
+</property>
+<property name="minimumSize" >
+<size>
+<width>280</width>
+<height>25</height>
+</size>
+</property>
+<property name="fieldName" >
+<string>descripcion</string>
+</property>
+<property name="tableName" >
+<string>impuestos</string>
+</property>
+<property name="foreignField" >
+<string>codimpuesto</string>
+</property>
+<property name="fieldRelation" >
+<string>codimpuesto</string>
+</property>
+<property name="showAlias" >
+<bool>false</bool>
+</property>
+</widget>
+</hbox>
+</widget>
+</xupdate:insert-after>
+<xupdate:delete select="/UI[UI,1]/widget[QWidget,formEmpresa]/vbox[vbox,1]/widget[QTabWidget,tbwEmpresa]/property[property,2]/sizepolicy[sizepolicy,1]" />
+<xupdate:append-first select="/UI[UI,1]/widget[QWidget,formEmpresa]/vbox[vbox,1]/widget[QTabWidget,tbwEmpresa]/property[property,2]" >
+<font>
+<family>NoFocus</family>
+</font>
+</xupdate:append-first>
+<xupdate:delete select="/UI[UI,1]/widget[QWidget,formEmpresa]/vbox[vbox,1]/widget[QTabWidget,tbwEmpresa]/property[property,3]/font[font,1]" />
+<xupdate:append-first select="/UI[UI,1]/widget[QWidget,formEmpresa]/vbox[vbox,1]/widget[QTabWidget,tbwEmpresa]/property[property,3]" >
+<enum>NoFocus</enum>
+</xupdate:append-first>
+<xupdate:delete select="/UI[UI,1]/widget[QWidget,formEmpresa]/vbox[vbox,1]/widget[QTabWidget,tbwEmpresa]/property[property,4]" />
+<xupdate:insert-after select="/UI[UI,1]/layoutdefaults[layoutdefaults,1]" >
+<includehints>
+<includehint>flfielddb.h</includehint>
+<includehint>flfielddb.h</includehint>
+<includehint>flfielddb.h</includehint>
+<includehint>flfielddb.h</includehint>
+<includehint>flfielddb.h</includehint>
+<includehint>flfielddb.h</includehint>
+<includehint>flfielddb.h</includehint>
+<includehint>flfielddb.h</includehint>
+<includehint>flfielddb.h</includehint>
+<includehint>flfielddb.h</includehint>
+<includehint>flfielddb.h</includehint>
+<includehint>flfielddb.h</includehint>
+<includehint>flfielddb.h</includehint>
+<includehint>flfielddb.h</includehint>
+<includehint>flfielddb.h</includehint>
+<includehint>flfielddb.h</includehint>
+<includehint>flfielddb.h</includehint>
+<includehint>flfielddb.h</includehint>
+<includehint>flfielddb.h</includehint>
+<includehint>flfielddb.h</includehint>
+<includehint>flfielddb.h</includehint>
+<includehint>flfielddb.h</includehint>
+<includehint>flfielddb.h</includehint>
+<includehint>flfielddb.h</includehint>
+<includehint>flfielddb.h</includehint>
+<includehint>flfielddb.h</includehint>
+<includehint>flfielddb.h</includehint>
+<includehint>flfielddb.h</includehint>
+<includehint>flfielddb.h</includehint>
+<includehint>flfielddb.h</includehint>
+<includehint>flfielddb.h</includehint>
+<includehint>flfielddb.h</includehint>
+<includehint>flfielddb.h</includehint>
+<includehint>flfielddb.h</includehint>
+<includehint>flfielddb.h</includehint>
+<includehint>flfielddb.h</includehint>
+<includehint>flfielddb.h</includehint>
+<includehint>flfielddb.h</includehint>
+<includehint>flfielddb.h</includehint>
+<includehint>flfielddb.h</includehint>
+<includehint>flfielddb.h</includehint>
+</includehints>
+</xupdate:insert-after>
+</xupdate:modifications>

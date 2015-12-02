@@ -1,0 +1,9 @@
+<flpatch:modifications name="comision_pagos" >
+    <flpatch:patchXml path="facturacion/tesoreria/forms/" name="pagosdevolcli.ui" />
+    <flpatch:patchXml path="facturacion/tesoreria/forms/" name="pagosdevolprov.ui" />
+    <flpatch:patchXml path="facturacion/tesoreria/tables/" name="pagosdevolcli.mtd" />
+    <flpatch:patchXml path="facturacion/tesoreria/tables/" name="pagosdevolprov.mtd" />
+    <flpatch:patchScript path="facturacion/tesoreria/scripts/" name="pagosdevolcli.qs" />
+    <flpatch:patchScript path="facturacion/tesoreria/scripts/" name="flfactteso.qs" />
+    <flpatch:patchScript path="facturacion/tesoreria/scripts/" name="pagosdevolprov.qs" />
+</flpatch:modifications>

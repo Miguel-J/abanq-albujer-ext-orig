@@ -1,0 +1,12 @@
+<flpatch:modifications name="vencim_perso_cp" >
+    <flpatch:patchXml path="facturacion/facturacion/" name="flfacturac.xml" />
+    <flpatch:patchXml path="facturacion/facturacion/forms/" name="facturasprov.ui" />
+    <flpatch:addFile path="facturacion/facturacion/forms/" name="venfacturasprov.ui" />
+    <flpatch:patchScript path="facturacion/facturacion/scripts/" name="facturasprov.qs" />
+    <flpatch:patchScript path="facturacion/facturacion/scripts/" name="flfacturac.qs" />
+    <flpatch:addFile path="facturacion/facturacion/scripts/" name="venfacturasprov.qs" />
+    <flpatch:patchXml path="facturacion/facturacion/tables/" name="facturasprov.mtd" />
+    <flpatch:addFile path="facturacion/facturacion/tables/" name="venfacturasprov.mtd" />
+    <flpatch:patchScript path="facturacion/tesoreria/scripts/" name="flfactteso.qs" />
+    <flpatch:patchScript path="facturacion/tesoreria/scripts/" name="pagosdevolprov.qs" />
+</flpatch:modifications>

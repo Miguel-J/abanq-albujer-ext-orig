@@ -1,0 +1,64 @@
+<xupdate:modifications>
+<xupdate:update select="/UI[UI,1]/widget[QWidget,factalma_general]/property[geometry]/rect[rect,1]/height[height,1]/text()[1]" >231</xupdate:update>
+<xupdate:update select="/UI[UI,1]/widget[QWidget,factalma_general]/vbox[vbox,1]/widget[QTabWidget,tbwDatosGenerales]/widget[QWidget,datosgenerales]/vbox[vbox,1]/widget[QGroupBox,gbxDatosGenerales]/vbox[vbox,1]/spacer[spacerPG]/property[sizeHint]/size[size,1]/height[height,1]/text()[1]" >30</xupdate:update>
+<xupdate:insert-after select="/UI[UI,1]/widget[QWidget,factalma_general]/vbox[vbox,1]/widget[QTabWidget,tbwDatosGenerales]/widget[QWidget,datosgenerales]/vbox[vbox,1]/widget[QGroupBox,gbxDatosGenerales]" >
+<widget class="QGroupBox" >
+<property name="name" >
+<cstring>gbxBarcode</cstring>
+</property>
+<property name="title" >
+<string>&amp;Tallas y colores</string>
+</property>
+<hbox>
+<property name="name" >
+<cstring>unnamed</cstring>
+</property>
+<widget class="FLFieldDB" >
+<property name="name" >
+<cstring>fdbCalculoBarcode</cstring>
+</property>
+<property name="minimumSize" >
+<size>
+<width>38</width>
+<height>24</height>
+</size>
+</property>
+<property name="font" >
+<font>
+<bold>0</bold>
+</font>
+</property>
+<property name="fieldName" >
+<string>calculobarcode</string>
+</property>
+</widget>
+<widget class="FLFieldDB" >
+<property name="name" >
+<cstring>fdbDigitosBarcode</cstring>
+</property>
+<property name="font" >
+<font>
+<bold>0</bold>
+</font>
+</property>
+<property name="fieldName" >
+<string>digitosbarcode</string>
+</property>
+</widget>
+<widget class="FLFieldDB" >
+<property name="name" >
+<cstring>fdbPrefijoBarcode</cstring>
+</property>
+<property name="font" >
+<font>
+<bold>0</bold>
+</font>
+</property>
+<property name="fieldName" >
+<string>prefijobarcode</string>
+</property>
+</widget>
+</hbox>
+</widget>
+</xupdate:insert-after>
+</xupdate:modifications>

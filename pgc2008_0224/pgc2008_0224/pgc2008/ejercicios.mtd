@@ -1,0 +1,35 @@
+<xupdate:modifications>
+<xupdate:insert-after select="/TMD[TMD,1]/field[codejercicio]/relation[co_i_facturasrec,i_co__cuentas_codejercicio]" >
+<relation>
+<table>co_i_patrimonio</table>
+<field>codejercicio</field>
+<card>1M</card>
+</relation>
+</xupdate:insert-after>
+<xupdate:insert-after select="/TMD[TMD,1]/field[codejercicio]/relation[co_i_patrimonio,codejercicio]" >
+<relation>
+<table>co_i_patrimonio</table>
+<field>codejercicioant</field>
+<card>1M</card>
+</relation>
+</xupdate:insert-after>
+<xupdate:insert-after select="/TMD[TMD,1]/field[codejercicio]/relation[co_i_patrimonio,codejercicioant]" >
+<relation>
+<table>co_i_patrimonio</table>
+<field>codejercicioantant</field>
+<card>1M</card>
+</relation>
+</xupdate:insert-after>
+<xupdate:insert-after select="/TMD[TMD,1]/field[longsubcuenta]" >
+<field>
+<name>plancontable</name>
+<alias>QT_TRANSLATE_NOOP(&quot;MetaData&quot;,&quot;Plan contable&quot;)</alias>
+<null>true</null>
+<pk>false</pk>
+<type>string</type>
+<length>2</length>
+<optionslist>08,90</optionslist>
+<default>08</default>
+</field>
+</xupdate:insert-after>
+</xupdate:modifications>

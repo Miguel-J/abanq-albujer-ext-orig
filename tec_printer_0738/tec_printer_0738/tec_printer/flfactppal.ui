@@ -1,0 +1,31 @@
+<xupdate:modifications>
+<xupdate:append-first select="/UI[UI,1]/images[images,1]" >
+<image name="tec_printerimage17756" >
+<data format="PNG" length="700" >89504e470d0a1a0a0000000d49484452000000100000001008060000001ff3ff610000028349444154789c85934b4894511480bff3fbd72f2159624a14b42b31e985b3511ac1e885309544144160428b0ada486d6a510bf72e7221b40b6a55d626da54e0a24d4545393863d040d113c7d1f967fed7bda7c5984c0fea83cb3de7c2773807ce15eae8efef3f3d323272a3fe6d7272727c6262e222e0f33f8686866e681dbeef6b2e97d32b972fdf0456ffcd71eb93280acb4b3720542a154af325ae5ebb765221191d1d3d6fad2dd73b0d3f83eddb771ed8dad5756cdfbebd9b92244115ac5af2f93cd96c96542ab5c35adbd1dcdcd2d4d9d9d59ecfcfcc2e77e0799edbe0348cad5dd3b23949121263001011dadbdb78fcf809d9ec347d7de9c1d2fce2e0fb4221e7798d5bc330481c00c771dc858552140401aa8a4d4ced184b6beb3ad2e934dddddd747474d0d6d646a9588c1c47dce50eaad56a1246a1f5fd3285f705c23044556bc5ac4544685ebd16cf5b0902956ac556abd504408687cf5c3a94399cf9f4f9dbb6a9a9474da95437aa16006b156b155583b58a88f0fcd90bfafaf694376c5cfffadebdc9fb6e6fcfee818181833d00af5e3f239b9da1d1f3104750ab44714c1004044115dff74185e1e1d34d40cfb7afdf8d5b9c5f083f7c2802f0f6cd5bac555cd745045415632c8949b0c610c73122c2972f25004a0b8ba16b4c4c1c47004c4fbf599edf1a833106632da8a2d4c6f1bc9594cb8b001893e03a4e83830800bdbd69a238421040407429aea10ade8a55e4ec83da1249a3e3cecee6fda74fa728cecd91c91c4544809aa868ad504d0704b55098face9ad655ccbe7be9cbae5d2905b87be721c74f6408c370a9c89fa82a9ee771fbd67d8e0ceefff32f9c387e8a2d9b3bff2aff642637fd4b2e4023d032367efde33fcddfb870f6dc0660ee07ec1a575b24d1f7400000000049454e44ae426082</data>
+</image>
+</xupdate:append-first>
+<xupdate:insert-after select="/UI[UI,1]/actions[actions,1]/action[factppal_general]" >
+<action>
+<property name="name" >
+<cstring>tec_printer</cstring>
+</property>
+<property name="iconSet" >
+<iconset>tec_printerimage17756</iconset>
+</property>
+<property name="text" >
+<string>Test TEC Printer</string>
+</property>
+</action>
+</xupdate:insert-after>
+<xupdate:insert-after select="/UI[UI,1]/connections[connections,1]/connection[factppal_general,activated(),FLWidgetApplication,execDefaultScript()]" >
+<connection>
+<sender>tec_printer</sender>
+<signal>activated()</signal>
+<receiver>FLWidgetApplication</receiver>
+<slot>execDefaultScript()</slot>
+</connection>
+</xupdate:insert-after>
+<xupdate:insert-after select="/UI[UI,1]/menubar[menubar,1]/item[generalMenu]/action[factppal_general]" >
+<action name="tec_printer" />
+</xupdate:insert-after>
+</xupdate:modifications>

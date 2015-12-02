@@ -1,0 +1,114 @@
+<!DOCTYPE TMD>
+<TMD>
+	<name>edi_esquemas</name>
+	<alias>QT_TRANSLATE_NOOP("MetaData","Esquemas de exportación EDI")</alias>
+
+	<field>
+		<name>codesquema</name>
+		<alias>QT_TRANSLATE_NOOP("MetaData","Código")</alias>
+		<null>false</null>
+		<pk>true</pk>
+		<type>string</type>
+		<length>128</length>
+
+		<relation>
+			<table>edi_funciones</table>
+			<field>codesquema</field>
+			<card>1M</card>
+		</relation>
+
+		<relation>
+			<table>edi_campos</table>
+			<field>codesquema</field>
+			<card>1M</card>
+		</relation>
+	</field>
+
+	<field>
+		<name>descripcion</name>
+		<alias>QT_TRANSLATE_NOOP("MetaData","Descripción")</alias>
+		<null>false</null>
+		<pk>false</pk>
+		<type>string</type>
+		<length>255</length>
+	</field>
+	
+	<field>
+		<name>numfields</name>
+		<alias>QT_TRANSLATE_NOOP("MetaData","Nº de campos por registro")</alias>
+		<null>false</null>
+		<pk>false</pk>
+		<type>uint</type>
+	</field>
+	
+	<field>
+		<name>separator</name>
+		<alias>QT_TRANSLATE_NOOP("MetaData","Separador de campos")</alias>
+		<null>true</null>
+		<pk>false</pk>
+		<type>string</type>
+		<length>1</length>
+	</field>
+	
+	<field>
+		<name>decimal</name>
+		<alias>QT_TRANSLATE_NOOP("MetaData","Separador decimal")</alias>
+		<null>true</null>
+		<pk>false</pk>
+		<type>string</type>
+		<optionslist>.,;</optionslist>
+		<length>1</length>
+	</field>
+	
+	<field>
+		<name>partdecimal</name>
+		<alias>QT_TRANSLATE_NOOP("MetaData","Dígitos decimales por defecto")</alias>
+		<null>true</null>
+		<pk>false</pk>
+		<type>uint</type>
+		<default>3</default>
+	</field>
+	
+	<field>
+		<name>plus</name>
+		<alias>QT_TRANSLATE_NOOP("MetaData","Símbolo signo positivo")</alias>
+		<null>false</null>
+		<pk>false</pk>
+		<type>string</type>
+		<length>1</length>
+		<optionslist>+,0</optionslist>
+		<default>+</default>
+	</field>
+	
+	<field>
+		<name>sqlselect</name>
+		<alias>QT_TRANSLATE_NOOP("MetaData","SELECT")</alias>
+		<null>false</null>
+		<pk>false</pk>
+		<type>stringlist</type>
+	</field>
+	
+	<field>
+		<name>sqlfrom</name>
+		<alias>QT_TRANSLATE_NOOP("MetaData","FROM")</alias>
+		<null>false</null>
+		<pk>false</pk>
+		<type>stringlist</type>
+	</field>
+
+	<field>
+		<name>sqlwhere</name>
+		<alias>QT_TRANSLATE_NOOP("MetaData","WHERE")</alias>
+		<null>true</null>
+		<pk>false</pk>
+		<type>stringlist</type>
+	</field>
+
+	<field>
+		<name>sqlorderby</name>
+		<alias>QT_TRANSLATE_NOOP("MetaData","ORDER BY")</alias>
+		<null>true</null>
+		<pk>false</pk>
+		<type>stringlist</type>
+	</field>
+</TMD>

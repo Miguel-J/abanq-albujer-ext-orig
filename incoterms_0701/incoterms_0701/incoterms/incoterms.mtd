@@ -1,0 +1,68 @@
+<!DOCTYPE TMD>
+<TMD>
+	<name>incoterms</name>
+	<!--Incoterms-->
+	<alias>QT_TRANSLATE_NOOP("MetaData","Incoterms")</alias>
+
+	<field>
+		<name>incoterm</name>
+		<alias>QT_TRANSLATE_NOOP("MetaData","Código")</alias>
+		<null>false</null>
+		<pk>true</pk>
+		<type>string</type>
+		<length>3</length>
+
+		<relation>
+			<table>presupuestoscli</table>
+			<field>incoterm</field>
+			<card>1M</card>
+		</relation>
+		<relation>
+			<table>pedidoscli</table>
+			<field>incoterm</field>
+			<card>1M</card>
+		</relation>
+		<relation>
+			<table>albaranescli</table>
+			<field>incoterm</field>
+			<card>1M</card>
+		</relation>
+		<relation>
+			<table>facturascli</table>
+			<field>incoterm</field>
+			<card>1M</card>
+		</relation>
+		<relation>
+			<table>pedidosprov</table>
+			<field>incoterm</field>
+			<card>1M</card>
+		</relation>
+		<relation>
+			<table>albaranesprov</table>
+			<field>incoterm</field>
+			<card>1M</card>
+		</relation>
+		<relation>
+			<table>facturasprov</table>
+			<field>incoterm</field>
+			<card>1M</card>
+		</relation>
+	</field>
+
+	<field>
+		<name>descripcion</name>
+		<alias>QT_TRANSLATE_NOOP("MetaData","Descripción")</alias>
+		<null>false</null>
+		<pk>false</pk>
+		<type>string</type>
+		<length>200</length>
+	</field>
+
+	<field>
+		<name>observaciones</name>
+		<alias>QT_TRANSLATE_NOOP("MetaData","Observaciones")</alias>
+		<null>true</null>
+		<pk>false</pk>
+		<type>stringlist</type>
+	</field>
+</TMD>

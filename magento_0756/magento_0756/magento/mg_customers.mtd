@@ -1,0 +1,194 @@
+<!DOCTYPE TMD>
+<TMD>
+	<name>mg_customers</name>
+	<alias>QT_TRANSLATE_NOOP("MetaData","Clientes Magento")</alias>
+
+	<field>
+		<name>email</name>
+		<alias>QT_TRANSLATE_NOOP("MetaData","E-mail")</alias>
+		<null>false</null>
+		<pk>true</pk>
+		<type>string</type>
+		<length>100</length>
+	</field>
+
+  <field>
+		<name>codwebsite</name>
+		<alias>QT_TRANSLATE_NOOP("MetaData","Website")</alias>
+		<null>false</null>
+		<pk>false</pk>
+		<type>string</type>
+		<length>30</length>
+  </field>
+  
+	<field>
+		<name>nombre</name>
+		<alias>QT_TRANSLATE_NOOP("MetaData","Nombre")</alias>
+		<null>true</null>
+		<pk>false</pk>
+		<type>string</type>
+		<length>100</length>
+	</field>
+
+  <field>
+    <name>apellidos</name>
+    <alias>QT_TRANSLATE_NOOP("MetaData","Apellidos")</alias>
+    <null>true</null>
+    <pk>false</pk>
+    <type>string</type>
+    <length>200</length>
+  </field>
+  
+	<field>
+		<name>cifnif</name>
+		<alias>QT_TRANSLATE_NOOP("MetaData","C.I.F./N.I.F")</alias>
+		<null>true</null>
+		<pk>false</pk>
+		<type>string</type>
+		<length>20</length>
+	</field>
+
+	<field>
+		<name>nombreenv</name>
+		<alias>QT_TRANSLATE_NOOP("MetaData","Nombre Envío")</alias>
+		<null>true</null>
+		<pk>false</pk>
+		<type>string</type>
+		<length>100</length>
+	</field>
+	
+  <field>
+    <name>apellidosenv</name>
+    <alias>QT_TRANSLATE_NOOP("MetaData","Apellidos Envío")</alias>
+    <null>true</null>
+    <pk>false</pk>
+    <type>string</type>
+    <length>200</length>
+  </field>
+
+  <field>
+    <name>direccionenv</name>
+    <alias>QT_TRANSLATE_NOOP("MetaData","Dirección Envío")</alias>
+    <null>true</null>
+    <pk>false</pk>
+    <type>string</type>
+    <length>200</length>
+  </field>
+
+  <field>
+    <name>ciudadenv</name>
+    <alias>QT_TRANSLATE_NOOP("MetaData","Ciudad Envío")</alias>
+    <null>true</null>
+    <pk>false</pk>
+    <type>string</type>
+    <length>100</length>
+  </field>
+
+  <field>
+    <name>codpostalenv</name>
+    <alias>QT_TRANSLATE_NOOP("MetaData","Cod. Postal Envío")</alias>
+    <null>true</null>
+    <pk>false</pk>
+    <type>string</type>
+    <length>10</length>
+  </field>
+  
+  <field>
+    <name>provinciaenv</name>
+    <alias>QT_TRANSLATE_NOOP("MetaData","Provincia Envío")</alias>
+    <null>true</null>
+    <pk>false</pk>
+    <type>string</type>
+    <length>100</length>
+  </field>
+  
+  <field>
+    <name>paisenv</name>
+    <alias>QT_TRANSLATE_NOOP("MetaData","País Envío")</alias>
+    <null>true</null>
+    <pk>false</pk>
+    <type>string</type>
+    <length>100</length>
+  </field>
+  
+  <field>
+    <name>telefonoenv</name>
+    <alias>QT_TRANSLATE_NOOP("MetaData","Teléfono Envío")</alias>
+    <null>true</null>
+    <pk>false</pk>
+    <type>string</type>
+    <length>30</length>
+  </field>
+  
+  <field>
+		<name>nombrefac</name>
+		<alias>QT_TRANSLATE_NOOP("MetaData","Nombre Facturación")</alias>
+		<null>true</null>
+		<pk>false</pk>
+		<type>string</type>
+		<length>100</length>
+	</field>
+	
+  <field>
+    <name>apellidosfac</name>
+    <alias>QT_TRANSLATE_NOOP("MetaData","Apellidos Facturación")</alias>
+    <null>true</null>
+    <pk>false</pk>
+    <type>string</type>
+    <length>200</length>
+  </field>
+
+  <field>
+    <name>direccionfac</name>
+    <alias>QT_TRANSLATE_NOOP("MetaData","Dirección Facturación")</alias>
+    <null>true</null>
+    <pk>false</pk>
+    <type>string</type>
+    <length>200</length>
+  </field>
+
+  <field>
+    <name>ciudadfac</name>
+    <alias>QT_TRANSLATE_NOOP("MetaData","Ciudad Facturación")</alias>
+    <null>true</null>
+    <pk>false</pk>
+    <type>string</type>
+    <length>100</length>
+  </field>
+
+  <field>
+    <name>codpostalfac</name>
+    <alias>QT_TRANSLATE_NOOP("MetaData","Cod. Postal Facturación")</alias>
+    <null>true</null>
+    <pk>false</pk>
+    <type>string</type>
+    <length>10</length>
+  </field>
+  
+  <field>
+    <name>provinciafac</name>
+    <alias>QT_TRANSLATE_NOOP("MetaData","Provincia Facturación")</alias>
+    <null>true</null>
+    <pk>false</pk>
+    <type>string</type>
+    <length>100</length>
+  </field>
+  
+  <field>
+    <name>paisfac</name>
+    <alias>QT_TRANSLATE_NOOP("MetaData","País Facturación")</alias>
+    <null>true</null>
+    <pk>false</pk>
+    <type>string</type>
+    <length>100</length>
+  </field>
+  
+  <field>
+    <name>telefonofac</name>
+    <alias>QT_TRANSLATE_NOOP("MetaData","Teléfono Facturación")</alias>
+    <null>true</null>
+    <pk>false</pk>
+    <type>string</type>
+    <length>30</length>
+  </field>
+</TMD>

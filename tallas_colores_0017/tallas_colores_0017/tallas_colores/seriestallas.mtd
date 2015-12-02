@@ -1,0 +1,30 @@
+<!DOCTYPE TMD>
+<TMD>
+	<name>seriestallas</name>
+		<!-- Listado de series de tallas de artículos -->
+	<alias>QT_TRANSLATE_NOOP("MetaData","Series de tallas")</alias>
+
+	<field>
+		<name>codigo</name>
+		<alias>QT_TRANSLATE_NOOP("MetaData","Código")</alias>
+		<null>false</null>
+		<pk>true</pk>
+		<type>string</type>
+		<length>6</length>
+	
+		<relation>
+			<table>tallas</table>
+			<field>codserie</field>
+			<card>1M</card>
+		</relation>
+	</field>
+	
+	<field>
+		<name>descripcion</name>
+		<alias>QT_TRANSLATE_NOOP("MetaData","Descripción")</alias>
+		<null>false</null>
+		<pk>false</pk>
+		<type>string</type>
+		<length>100</length>
+	</field>
+</TMD>

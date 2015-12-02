@@ -1,0 +1,32 @@
+<xupdate:modifications>
+<xupdate:insert-after select="/TMD[TMD,1]/field[idpago]/visiblegrid[visiblegrid,1]" >
+<relation>
+<table>tpv_movpuntos</table>
+<field>idpago</field>
+<card>1M</card>
+</relation>
+</xupdate:insert-after>
+<xupdate:insert-after select="/TMD[TMD,1]/field[idpago]/relation[tpv_movpuntos,idpago]" >
+<relation>
+<table>tpv_movpuntosnosinc</table>
+<field>idpago</field>
+<card>1M</card>
+</relation>
+</xupdate:insert-after>
+<xupdate:insert-after select="/TMD[TMD,1]/field[refvale]" >
+<field>
+<name>codtarjetapuntos</name>
+<alias>QT_TRANSLATE_NOOP(&quot;MetaData&quot;,&quot;Tarjeta puntos&quot;)</alias>
+<null>true</null>
+<pk>false</pk>
+<type>string</type>
+<length>15</length>
+<relation>
+<table>tpv_tarjetaspuntos</table>
+<field>codtarjetapuntos</field>
+<card>M1</card>
+<delC>true</delC>
+</relation>
+</field>
+</xupdate:insert-after>
+</xupdate:modifications>

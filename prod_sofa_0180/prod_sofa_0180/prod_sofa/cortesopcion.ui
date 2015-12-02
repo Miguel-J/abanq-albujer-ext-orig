@@ -1,0 +1,109 @@
+<!DOCTYPE UI><UI version="3.3" stdsetdef="1">
+<class>cortesopcion</class>
+<widget class="QWidget">
+    <property name="name">
+        <cstring>cortesopcion</cstring>
+    </property>
+    <property name="geometry">
+        <rect>
+            <x>0</x>
+            <y>0</y>
+            <width>744</width>
+            <height>71</height>
+        </rect>
+    </property>
+    <property name="caption">
+        <string>cortesopcion</string>
+    </property>
+    <vbox>
+        <property name="name">
+            <cstring>unnamed</cstring>
+        </property>
+        <widget class="QGroupBox">
+            <property name="name">
+                <cstring>gbxTipoCorte</cstring>
+            </property>
+            <property name="title">
+                <string></string>
+            </property>
+            <hbox>
+                <property name="name">
+                    <cstring>unnamed</cstring>
+                </property>
+                <widget class="FLFieldDB">
+                    <property name="name">
+                        <cstring>fdbIdOpcion</cstring>
+                    </property>
+                    <property name="minimumSize">
+                        <size>
+                            <width>200</width>
+                            <height>0</height>
+                        </size>
+                    </property>
+                    <property name="maximumSize">
+                        <size>
+                            <width>200</width>
+                            <height>32767</height>
+                        </size>
+                    </property>
+                    <property name="fieldName">
+                        <string>idopcion</string>
+                    </property>
+                </widget>
+                <widget class="FLFieldDB">
+                    <property name="name">
+                        <cstring>fdbIdOpcion_2</cstring>
+                    </property>
+                    <property name="minimumSize">
+                        <size>
+                            <width>200</width>
+                            <height>0</height>
+                        </size>
+                    </property>
+                    <property name="maximumSize">
+                        <size>
+                            <width>200</width>
+                            <height>32767</height>
+                        </size>
+                    </property>
+                    <property name="fieldName">
+                        <string>opcion</string>
+                    </property>
+                    <property name="tableName">
+                        <string>opcionescomp</string>
+                    </property>
+                    <property name="foreignField">
+                        <string>idopcion</string>
+                    </property>
+                    <property name="fieldRelation">
+                        <string>idopcion</string>
+                    </property>
+                    <property name="showAlias">
+                        <bool>false</bool>
+                    </property>
+                </widget>
+                <widget class="FLFieldDB">
+                    <property name="name">
+                        <cstring>fdbParte</cstring>
+                    </property>
+                    <property name="minimumSize">
+                        <size>
+                            <width>250</width>
+                            <height>0</height>
+                        </size>
+                    </property>
+                    <property name="fieldName">
+                        <string>parte</string>
+                    </property>
+                </widget>
+            </hbox>
+        </widget>
+    </vbox>
+</widget>
+<layoutdefaults spacing="6" margin="11"/>
+<includehints>
+    <includehint>FLFieldDB.h</includehint>
+    <includehint>FLFieldDB.h</includehint>
+    <includehint>FLFieldDB.h</includehint>
+</includehints>
+</UI>

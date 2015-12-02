@@ -1,0 +1,14 @@
+<flpatch:modifications name="dtos_completosp" >
+    <flpatch:patchXml path="facturacion/almacen/tables/" name="articulos.mtd" />
+    <flpatch:patchXml path="facturacion/almacen/tables/" name="familias.mtd" />
+    <flpatch:patchXml path="facturacion/almacen/tables/" name="subfamilias.mtd" />
+    <flpatch:patchScript path="facturacion/facturacion/scripts/" name="lineasalbaranesprov.qs" />
+    <flpatch:patchScript path="facturacion/facturacion/scripts/" name="lineasfacturasprov.qs" />
+    <flpatch:patchScript path="facturacion/facturacion/scripts/" name="lineaspedidosprov.qs" />
+    <flpatch:patchXml path="facturacion/principal/" name="flfactppal.xml" />
+    <flpatch:addFile path="facturacion/principal/forms/" name="dtoscompletosprov.ui" />
+    <flpatch:patchXml path="facturacion/principal/forms/" name="flfactppal.ui" />
+    <flpatch:addFile path="facturacion/principal/scripts/" name="dtoscompletosprov.qs" />
+    <flpatch:addFile path="facturacion/principal/tables/" name="dtoscompletosprov.mtd" />
+    <flpatch:patchXml path="facturacion/principal/tables/" name="proveedores.mtd" />
+</flpatch:modifications>

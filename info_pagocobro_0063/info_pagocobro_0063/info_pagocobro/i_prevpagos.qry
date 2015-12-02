@@ -1,0 +1,34 @@
+<!DOCTYPE QRY>
+<QRY>
+	<name>i_prevpagos</name>
+
+	<tables>empresa,recibosprov,facturasprov,formaspago</tables>
+
+	<group>
+		<level>0</level>
+		<field>facturasprov.codproveedor</field>
+	</group>
+
+	<select>
+		facturasprov.codproveedor,
+		facturasprov.nombre, facturasprov.codigo,
+		facturasprov.fecha, facturasprov.codpago,
+		recibosprov.fechav, recibosprov.numero,
+		recibosprov.importe, recibosprov.estado,
+		formaspago.descripcion,
+		empresa.nombre, empresa.cifnif,
+		empresa.direccion, empresa.logo,
+		empresa.codpostal, empresa.ciudad,
+		empresa.provincia, empresa.apartado,
+		empresa.codpais
+	</select>
+
+	<from>
+		empresa, recibosprov 
+		INNER JOIN facturasprov ON recibosprov.idfactura = facturasprov.idfactura
+		INNER JOIN formaspago ON facturasprov.codpago = formaspago.codpago
+	</from>
+
+	<where>
+	</where>
+</QRY>

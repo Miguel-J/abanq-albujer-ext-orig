@@ -1,0 +1,32 @@
+<xupdate:modifications>
+<xupdate:insert-after select="/TMD[TMD,1]/field[referencia]" >
+<field>
+<name>talla</name>
+<!-- Talla--><alias>QT_TRANSLATE_NOOP(&quot;MetaData&quot;,&quot;Talla&quot;)</alias>
+<null>true</null>
+<pk>false</pk>
+<type>string</type>
+<length>5</length>
+<relation>
+<table>tallas</table>
+<field>codtalla</field>
+<card>M1</card>
+</relation>
+</field>
+</xupdate:insert-after>
+<xupdate:insert-after select="/TMD[TMD,1]/field[talla]" >
+<field>
+<name>color</name>
+<!-- Código de color--><alias>QT_TRANSLATE_NOOP(&quot;MetaData&quot;,&quot;Color&quot;)</alias>
+<null>true</null>
+<pk>false</pk>
+<type>string</type>
+<length>15</length>
+<relation>
+<table>colores</table>
+<field>codcolor</field>
+<card>M1</card>
+</relation>
+</field>
+</xupdate:insert-after>
+</xupdate:modifications>

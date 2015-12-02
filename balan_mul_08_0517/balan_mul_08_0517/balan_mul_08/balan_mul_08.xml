@@ -1,0 +1,13 @@
+<flpatch:modifications name="balan_mul_08" >
+    <flpatch:patchXml path="contabilidad/informes/" name="flcontinfo.xml" />
+    <flpatch:patchXml path="contabilidad/informes/forms/" name="co_i_cuentasanuales.ui" />
+    <flpatch:addFile path="contabilidad/informes/tables/" name="co_ejerciciosempresas_08.mtd" />
+    <flpatch:patchXml path="contabilidad/informes/tables/" name="co_i_cuentasanuales.mtd" />
+    <flpatch:patchScript path="contabilidad/informes/scripts/" name="flcontinfo.qs" />
+    <flpatch:patchScript path="contabilidad/informes/scripts/" name="co_empresas.qs" />
+    <flpatch:patchXml path="contabilidad/informes/tables/" name="co_ejerciciosempresas.mtd" />
+    <flpatch:patchXml path="contabilidad/informes/forms/" name="co_ejerciciosempresas.ui" />
+    <flpatch:patchXml path="contabilidad/informes/forms/" name="co_ejerciciosempresas_bal.ui" />
+    <flpatch:patchXml path="contabilidad/informes/tables/" name="co_ejerciciosempresas_sis.mtd" />
+    <flpatch:addFile path="contabilidad/informes/tables/" name="co_ejerciciosempresas_08_ant.mtd" />
+</flpatch:modifications>

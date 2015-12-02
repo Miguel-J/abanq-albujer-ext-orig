@@ -1,0 +1,286 @@
+<xupdate:modifications>
+<xupdate:insert-after select="/UI[UI,1]/widget[QWidget,facturac_general]/vbox[vbox,1]/widget[QTabWidget,tbwDatosGenerales]/widget[QWidget,datosgenerales]/vbox[vbox,1]/widget[QGroupBox,gbxDatosGenerales]/vbox[vbox,1]/widget[QLayoutWidget,layout22]/hbox[hbox,1]/widget[FLFieldDB,fdbActualizarArtProv]/property[minimumSize]" >
+<property name="maximumSize" >
+<size>
+<width>32767</width>
+<height>32767</height>
+</size>
+</property>
+</xupdate:insert-after>
+<xupdate:insert-after select="/UI[UI,1]/widget[QWidget,facturac_general]/vbox[vbox,1]/widget[QTabWidget,tbwDatosGenerales]/widget[QWidget,datosgenerales]/vbox[vbox,1]/widget[QGroupBox,gbxDatosGenerales]/vbox[vbox,1]/widget[QLayoutWidget,layout22]/hbox[hbox,1]/widget[FLFieldDB,fdbActualizarArtProv]/property[fieldName]" >
+<property name="fieldAlias" >
+<string>actualizarartprov</string>
+</property>
+</xupdate:insert-after>
+<xupdate:insert-after select="/UI[UI,1]/widget[QWidget,facturac_general]/vbox[vbox,1]/widget[QTabWidget,tbwDatosGenerales]/widget[QWidget,datosgenerales]/vbox[vbox,1]/widget[QGroupBox,gbxDatosGenerales]/vbox[vbox,1]/widget[QLayoutWidget,layout22_2]/hbox[hbox,1]/widget[FLFieldDB,fdbAvisoCliente]/property[minimumSize]" >
+<property name="maximumSize" >
+<size>
+<width>32767</width>
+<height>32767</height>
+</size>
+</property>
+</xupdate:insert-after>
+<xupdate:insert-after select="/UI[UI,1]/widget[QWidget,facturac_general]/vbox[vbox,1]/widget[QTabWidget,tbwDatosGenerales]/widget[QWidget,datosgenerales]/vbox[vbox,1]/widget[QGroupBox,gbxDatosGenerales]/vbox[vbox,1]/widget[QLayoutWidget,layout22_2]/hbox[hbox,1]/widget[FLFieldDB,fdbAvisoCliente]/property[fieldName]" >
+<property name="fieldAlias" >
+<string>avisocliente</string>
+</property>
+</xupdate:insert-after>
+<xupdate:insert-after select="/UI[UI,1]/widget[QWidget,facturac_general]/vbox[vbox,1]/widget[QTabWidget,tbwDatosGenerales]/widget[QWidget,datosgenerales]" >
+<widget class="QWidget" >
+<property name="name" >
+<cstring>distrialbaranes</cstring>
+</property>
+<attribute name="title" >
+<string>Distribución albaranes</string>
+</attribute>
+<vbox>
+<property name="name" >
+<cstring>unnamed</cstring>
+</property>
+<widget class="QGroupBox" >
+<property name="name" >
+<cstring>gbxConexionDA</cstring>
+</property>
+<property name="font" >
+<font>
+<bold>0</bold>
+</font>
+</property>
+<property name="title" >
+<string/>
+</property>
+<hbox>
+<property name="name" >
+<cstring>unnamed</cstring>
+</property>
+<widget class="FLFieldDB" >
+<property name="name" >
+<cstring>fdbBaseDatos</cstring>
+</property>
+<property name="minimumSize" >
+<size>
+<width>26</width>
+<height>22</height>
+</size>
+</property>
+<property name="maximumSize" >
+<size>
+<width>32767</width>
+<height>32767</height>
+</size>
+</property>
+<property name="font" >
+<font/>
+</property>
+<property name="fieldName" >
+<string>basedatosda</string>
+</property>
+<property name="fieldAlias" >
+<string>basedatosda</string>
+</property>
+</widget>
+<widget class="FLFieldDB" >
+<property name="name" >
+<cstring>fdbDriver</cstring>
+</property>
+<property name="minimumSize" >
+<size>
+<width>26</width>
+<height>22</height>
+</size>
+</property>
+<property name="font" >
+<font/>
+</property>
+<property name="fieldName" >
+<string>driverda</string>
+</property>
+<property name="fieldAlias" >
+<string>driverda</string>
+</property>
+</widget>
+<widget class="FLFieldDB" >
+<property name="name" >
+<cstring>fdbServidor</cstring>
+</property>
+<property name="minimumSize" >
+<size>
+<width>26</width>
+<height>22</height>
+</size>
+</property>
+<property name="font" >
+<font/>
+</property>
+<property name="fieldName" >
+<string>servidorda</string>
+</property>
+<property name="fieldAlias" >
+<string>servidorda</string>
+</property>
+</widget>
+<widget class="FLFieldDB" >
+<property name="name" >
+<cstring>fdbPuerto</cstring>
+</property>
+<property name="minimumSize" >
+<size>
+<width>26</width>
+<height>22</height>
+</size>
+</property>
+<property name="font" >
+<font/>
+</property>
+<property name="fieldName" >
+<string>puertoda</string>
+</property>
+<property name="fieldAlias" >
+<string>puertoda</string>
+</property>
+</widget>
+<widget class="FLFieldDB" >
+<property name="name" >
+<cstring>fdbUsuario</cstring>
+</property>
+<property name="maximumSize" >
+<size>
+<width>300</width>
+<height>32767</height>
+</size>
+</property>
+<property name="font" >
+<font/>
+</property>
+<property name="fieldName" >
+<string>usuarioda</string>
+</property>
+<property name="fieldAlias" >
+<string>usuarioda</string>
+</property>
+</widget>
+<widget class="FLFieldDB" >
+<property name="name" >
+<cstring>fdbContrasena</cstring>
+</property>
+<property name="maximumSize" >
+<size>
+<width>300</width>
+<height>32767</height>
+</size>
+</property>
+<property name="font" >
+<font/>
+</property>
+<property name="fieldName" >
+<string>contrasenada</string>
+</property>
+<property name="fieldAlias" >
+<string>contrasenada</string>
+</property>
+</widget>
+</hbox>
+</widget>
+<widget class="QGroupBox" >
+<property name="name" >
+<cstring>gbxPorcentaje</cstring>
+</property>
+<property name="font" >
+<font>
+<bold>0</bold>
+</font>
+</property>
+<property name="title" >
+<string/>
+</property>
+<hbox>
+<property name="name" >
+<cstring>unnamed</cstring>
+</property>
+<widget class="FLFieldDB" >
+<property name="name" >
+<cstring>fdbPorDistribuir</cstring>
+</property>
+<property name="minimumSize" >
+<size>
+<width>38</width>
+<height>24</height>
+</size>
+</property>
+<property name="maximumSize" >
+<size>
+<width>300</width>
+<height>32767</height>
+</size>
+</property>
+<property name="font" >
+<font/>
+</property>
+<property name="fieldName" >
+<string>pordistribuir</string>
+</property>
+<property name="fieldAlias" >
+<string>pordistribuir</string>
+</property>
+</widget>
+<spacer>
+<property name="name" >
+<cstring>spacer110</cstring>
+</property>
+<property name="orientation" >
+<enum>Horizontal</enum>
+</property>
+<property name="sizeType" >
+<enum>Expanding</enum>
+</property>
+<property name="sizeHint" >
+<size>
+<width>20</width>
+<height>20</height>
+</size>
+</property>
+</spacer>
+</hbox>
+</widget>
+<spacer>
+<property name="name" >
+<cstring>spacer11</cstring>
+</property>
+<property name="orientation" >
+<enum>Vertical</enum>
+</property>
+<property name="sizeType" >
+<enum>Expanding</enum>
+</property>
+<property name="sizeHint" >
+<size>
+<width>20</width>
+<height>21</height>
+</size>
+</property>
+</spacer>
+</vbox>
+</widget>
+</xupdate:insert-after>
+<xupdate:insert-after select="/UI[UI,1]/includehints[includehints,1]/includehint[flfielddb.h]" >
+<includehint>flfielddb.h</includehint>
+</xupdate:insert-after>
+<xupdate:insert-after select="/UI[UI,1]/includehints[includehints,1]/includehint[flfielddb.h]" >
+<includehint>flfielddb.h</includehint>
+</xupdate:insert-after>
+<xupdate:insert-after select="/UI[UI,1]/includehints[includehints,1]/includehint[flfielddb.h]" >
+<includehint>flfielddb.h</includehint>
+</xupdate:insert-after>
+<xupdate:insert-after select="/UI[UI,1]/includehints[includehints,1]/includehint[flfielddb.h]" >
+<includehint>flfielddb.h</includehint>
+</xupdate:insert-after>
+<xupdate:insert-after select="/UI[UI,1]/includehints[includehints,1]/includehint[flfielddb.h]" >
+<includehint>flfielddb.h</includehint>
+</xupdate:insert-after>
+<xupdate:insert-after select="/UI[UI,1]/includehints[includehints,1]/includehint[flfielddb.h]" >
+<includehint>flfielddb.h</includehint>
+</xupdate:insert-after>
+<xupdate:insert-after select="/UI[UI,1]/includehints[includehints,1]/includehint[flfielddb.h]" >
+<includehint>flfielddb.h</includehint>
+</xupdate:insert-after>
+</xupdate:modifications>

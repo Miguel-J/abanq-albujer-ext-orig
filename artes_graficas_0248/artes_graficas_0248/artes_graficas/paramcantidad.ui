@@ -1,0 +1,456 @@
+<!DOCTYPE UI><UI version="3.3" stdsetdef="1">
+<class>paramcantidad</class>
+<widget class="QWidget">
+    <property name="name">
+        <cstring>paramcantidad</cstring>
+    </property>
+    <property name="geometry">
+        <rect>
+            <x>0</x>
+            <y>0</y>
+            <width>707</width>
+            <height>190</height>
+        </rect>
+    </property>
+    <property name="sizePolicy">
+        <sizepolicy>
+            <hsizetype>1</hsizetype>
+            <vsizetype>1</vsizetype>
+            <horstretch>0</horstretch>
+            <verstretch>0</verstretch>
+        </sizepolicy>
+    </property>
+    <property name="caption">
+        <string>paramcantidad</string>
+    </property>
+    <vbox>
+        <property name="name">
+            <cstring>unnamed</cstring>
+        </property>
+        <widget class="QGroupBox">
+            <property name="name">
+                <cstring>gbxParam</cstring>
+            </property>
+            <property name="sizePolicy">
+                <sizepolicy>
+                    <hsizetype>1</hsizetype>
+                    <vsizetype>1</vsizetype>
+                    <horstretch>0</horstretch>
+                    <verstretch>0</verstretch>
+                </sizepolicy>
+            </property>
+            <property name="font">
+                <font>
+                    <bold>1</bold>
+                    <italic>1</italic>
+                </font>
+            </property>
+            <property name="title">
+                <string></string>
+            </property>
+            <vbox>
+                <property name="name">
+                    <cstring>unnamed</cstring>
+                </property>
+                <widget class="QGroupBox">
+                    <property name="name">
+                        <cstring>gbxGeneral</cstring>
+                    </property>
+                    <property name="sizePolicy">
+                        <sizepolicy>
+                            <hsizetype>1</hsizetype>
+                            <vsizetype>1</vsizetype>
+                            <horstretch>0</horstretch>
+                            <verstretch>0</verstretch>
+                        </sizepolicy>
+                    </property>
+                    <property name="font">
+                        <font>
+                        </font>
+                    </property>
+                    <property name="title">
+                        <string></string>
+                    </property>
+                    <hbox>
+                        <property name="name">
+                            <cstring>unnamed</cstring>
+                        </property>
+                        <widget class="FLFieldDB">
+                            <property name="name">
+                                <cstring>fdbNumPaginas</cstring>
+                            </property>
+                            <property name="minimumSize">
+                                <size>
+                                    <width>138</width>
+                                    <height>27</height>
+                                </size>
+                            </property>
+                            <property name="maximumSize">
+                                <size>
+                                    <width>150</width>
+                                    <height>32767</height>
+                                </size>
+                            </property>
+                            <property name="font">
+                                <font>
+                                    <bold>0</bold>
+                                    <italic>0</italic>
+                                </font>
+                            </property>
+                            <property name="fieldName">
+                                <string>numpaginas</string>
+                            </property>
+                        </widget>
+                        <widget class="FLFieldDB">
+                            <property name="name">
+                                <cstring>fdbCantidadesPorModelo</cstring>
+                            </property>
+                            <property name="minimumSize">
+                                <size>
+                                    <width>300</width>
+                                    <height>29</height>
+                                </size>
+                            </property>
+                            <property name="maximumSize">
+                                <size>
+                                    <width>350</width>
+                                    <height>32767</height>
+                                </size>
+                            </property>
+                            <property name="font">
+                                <font>
+                                    <bold>0</bold>
+                                    <italic>0</italic>
+                                </font>
+                            </property>
+                            <property name="fieldName">
+                                <string>cantidadespormodelo</string>
+                            </property>
+                        </widget>
+                        <widget class="FLFieldDB">
+                            <property name="name">
+                                <cstring>fdbNumCopias</cstring>
+                            </property>
+                            <property name="minimumSize">
+                                <size>
+                                    <width>129</width>
+                                    <height>27</height>
+                                </size>
+                            </property>
+                            <property name="maximumSize">
+                                <size>
+                                    <width>250</width>
+                                    <height>32767</height>
+                                </size>
+                            </property>
+                            <property name="font">
+                                <font>
+                                    <bold>0</bold>
+                                    <italic>0</italic>
+                                </font>
+                            </property>
+                            <property name="fieldName">
+                                <string>numcopias</string>
+                            </property>
+                        </widget>
+                        <widget class="FLFieldDB">
+                            <property name="name">
+                                <cstring>fdbTotal</cstring>
+                            </property>
+                            <property name="minimumSize">
+                                <size>
+                                    <width>80</width>
+                                    <height>27</height>
+                                </size>
+                            </property>
+                            <property name="maximumSize">
+                                <size>
+                                    <width>150</width>
+                                    <height>32767</height>
+                                </size>
+                            </property>
+                            <property name="font">
+                                <font>
+                                    <bold>0</bold>
+                                    <italic>0</italic>
+                                </font>
+                            </property>
+                            <property name="fieldName">
+                                <string>total</string>
+                            </property>
+                        </widget>
+                    </hbox>
+                </widget>
+                <widget class="QGroupBox">
+                    <property name="name">
+                        <cstring>gbxCantidades</cstring>
+                    </property>
+                    <property name="sizePolicy">
+                        <sizepolicy>
+                            <hsizetype>1</hsizetype>
+                            <vsizetype>1</vsizetype>
+                            <horstretch>0</horstretch>
+                            <verstretch>0</verstretch>
+                        </sizepolicy>
+                    </property>
+                    <property name="font">
+                        <font>
+                        </font>
+                    </property>
+                    <property name="frameShadow">
+                        <enum>Plain</enum>
+                    </property>
+                    <property name="lineWidth">
+                        <number>1</number>
+                    </property>
+                    <property name="title">
+                        <string>&amp;Cantidades por modelo</string>
+                    </property>
+                    <vbox>
+                        <property name="name">
+                            <cstring>unnamed</cstring>
+                        </property>
+                        <widget class="QLayoutWidget">
+                            <property name="name">
+                                <cstring>layoutF1</cstring>
+                            </property>
+                            <hbox>
+                                <property name="name">
+                                    <cstring>unnamed</cstring>
+                                </property>
+                                <widget class="FLFieldDB">
+                                    <property name="name">
+                                        <cstring>fdbCantidadA</cstring>
+                                    </property>
+                                    <property name="minimumSize">
+                                        <size>
+                                            <width>120</width>
+                                            <height>27</height>
+                                        </size>
+                                    </property>
+                                    <property name="font">
+                                        <font>
+                                            <bold>0</bold>
+                                            <italic>0</italic>
+                                        </font>
+                                    </property>
+                                    <property name="fieldName">
+                                        <string>cantidada</string>
+                                    </property>
+                                </widget>
+                                <widget class="FLFieldDB">
+                                    <property name="name">
+                                        <cstring>fdbCantidadB</cstring>
+                                    </property>
+                                    <property name="minimumSize">
+                                        <size>
+                                            <width>120</width>
+                                            <height>27</height>
+                                        </size>
+                                    </property>
+                                    <property name="font">
+                                        <font>
+                                            <bold>0</bold>
+                                            <italic>0</italic>
+                                        </font>
+                                    </property>
+                                    <property name="fieldName">
+                                        <string>cantidadb</string>
+                                    </property>
+                                </widget>
+                                <widget class="FLFieldDB">
+                                    <property name="name">
+                                        <cstring>fdbCantidadC</cstring>
+                                    </property>
+                                    <property name="minimumSize">
+                                        <size>
+                                            <width>120</width>
+                                            <height>27</height>
+                                        </size>
+                                    </property>
+                                    <property name="font">
+                                        <font>
+                                            <bold>0</bold>
+                                            <italic>0</italic>
+                                        </font>
+                                    </property>
+                                    <property name="fieldName">
+                                        <string>cantidadc</string>
+                                    </property>
+                                </widget>
+                                <widget class="FLFieldDB">
+                                    <property name="name">
+                                        <cstring>fdbCantidadD</cstring>
+                                    </property>
+                                    <property name="minimumSize">
+                                        <size>
+                                            <width>120</width>
+                                            <height>27</height>
+                                        </size>
+                                    </property>
+                                    <property name="font">
+                                        <font>
+                                            <bold>0</bold>
+                                            <italic>0</italic>
+                                        </font>
+                                    </property>
+                                    <property name="fieldName">
+                                        <string>cantidadd</string>
+                                    </property>
+                                </widget>
+                                <widget class="FLFieldDB">
+                                    <property name="name">
+                                        <cstring>fdbCantidadE</cstring>
+                                    </property>
+                                    <property name="minimumSize">
+                                        <size>
+                                            <width>120</width>
+                                            <height>27</height>
+                                        </size>
+                                    </property>
+                                    <property name="font">
+                                        <font>
+                                            <bold>0</bold>
+                                            <italic>0</italic>
+                                        </font>
+                                    </property>
+                                    <property name="fieldName">
+                                        <string>cantidade</string>
+                                    </property>
+                                </widget>
+                            </hbox>
+                        </widget>
+                        <widget class="QLayoutWidget">
+                            <property name="name">
+                                <cstring>layoutF2</cstring>
+                            </property>
+                            <hbox>
+                                <property name="name">
+                                    <cstring>unnamed</cstring>
+                                </property>
+                                <widget class="FLFieldDB">
+                                    <property name="name">
+                                        <cstring>fdbCantidadF</cstring>
+                                    </property>
+                                    <property name="minimumSize">
+                                        <size>
+                                            <width>116</width>
+                                            <height>27</height>
+                                        </size>
+                                    </property>
+                                    <property name="font">
+                                        <font>
+                                            <bold>0</bold>
+                                            <italic>0</italic>
+                                        </font>
+                                    </property>
+                                    <property name="fieldName">
+                                        <string>cantidadf</string>
+                                    </property>
+                                </widget>
+                                <widget class="FLFieldDB">
+                                    <property name="name">
+                                        <cstring>fdbCantidadG</cstring>
+                                    </property>
+                                    <property name="minimumSize">
+                                        <size>
+                                            <width>120</width>
+                                            <height>27</height>
+                                        </size>
+                                    </property>
+                                    <property name="font">
+                                        <font>
+                                            <bold>0</bold>
+                                            <italic>0</italic>
+                                        </font>
+                                    </property>
+                                    <property name="fieldName">
+                                        <string>cantidadg</string>
+                                    </property>
+                                </widget>
+                                <widget class="FLFieldDB">
+                                    <property name="name">
+                                        <cstring>fdbCantidadH</cstring>
+                                    </property>
+                                    <property name="minimumSize">
+                                        <size>
+                                            <width>120</width>
+                                            <height>27</height>
+                                        </size>
+                                    </property>
+                                    <property name="font">
+                                        <font>
+                                            <bold>0</bold>
+                                            <italic>0</italic>
+                                        </font>
+                                    </property>
+                                    <property name="fieldName">
+                                        <string>cantidadh</string>
+                                    </property>
+                                </widget>
+                                <widget class="FLFieldDB">
+                                    <property name="name">
+                                        <cstring>fdbCantidadI</cstring>
+                                    </property>
+                                    <property name="minimumSize">
+                                        <size>
+                                            <width>115</width>
+                                            <height>27</height>
+                                        </size>
+                                    </property>
+                                    <property name="font">
+                                        <font>
+                                            <bold>0</bold>
+                                            <italic>0</italic>
+                                        </font>
+                                    </property>
+                                    <property name="fieldName">
+                                        <string>cantidadi</string>
+                                    </property>
+                                </widget>
+                                <widget class="FLFieldDB">
+                                    <property name="name">
+                                        <cstring>fdbCantidadJ</cstring>
+                                    </property>
+                                    <property name="minimumSize">
+                                        <size>
+                                            <width>115</width>
+                                            <height>27</height>
+                                        </size>
+                                    </property>
+                                    <property name="font">
+                                        <font>
+                                            <bold>0</bold>
+                                            <italic>0</italic>
+                                        </font>
+                                    </property>
+                                    <property name="fieldName">
+                                        <string>cantidadj</string>
+                                    </property>
+                                </widget>
+                            </hbox>
+                        </widget>
+                    </vbox>
+                </widget>
+            </vbox>
+        </widget>
+    </vbox>
+</widget>
+<layoutdefaults spacing="6" margin="11"/>
+<includehints>
+    <includehint>flfielddb.h</includehint>
+    <includehint>flfielddb.h</includehint>
+    <includehint>flfielddb.h</includehint>
+    <includehint>flfielddb.h</includehint>
+    <includehint>flfielddb.h</includehint>
+    <includehint>flfielddb.h</includehint>
+    <includehint>flfielddb.h</includehint>
+    <includehint>flfielddb.h</includehint>
+    <includehint>flfielddb.h</includehint>
+    <includehint>flfielddb.h</includehint>
+    <includehint>flfielddb.h</includehint>
+    <includehint>flfielddb.h</includehint>
+    <includehint>flfielddb.h</includehint>
+    <includehint>flfielddb.h</includehint>
+</includehints>
+</UI>

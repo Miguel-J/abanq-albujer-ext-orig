@@ -1,0 +1,32 @@
+<!DOCTYPE TMD>
+<TMD>
+	<name>agenciastrans</name>
+	<!--Listado de agencias de transporte-->
+	<alias>QT_TRANSLATE_NOOP("MetaData","Agencias de transporte")</alias>
+
+	<field>
+		<name>codagencia</name>
+		<!--Código del agencia-->
+		<alias>QT_TRANSLATE_NOOP("MetaData","Código")</alias>
+		<null>false</null>
+		<pk>true</pk>
+		<type>string</type>
+		<length>40</length>
+
+		<relation>
+			<table>sedesagencia</table>
+			<field>codagencia</field>
+			<card>1M</card>
+		</relation>
+
+	</field>
+
+	<field>
+		<name>descripcion</name>
+		<alias>QT_TRANSLATE_NOOP("MetaData","Descripción")</alias>
+		<null>false</null>
+		<pk>false</pk>
+		<type>string</type>
+		<length>100</length>
+	</field>
+</TMD>

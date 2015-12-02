@@ -1,0 +1,56 @@
+<xupdate:modifications>
+<xupdate:insert-after select="/TMD[TMD,1]/field[datosvales]" >
+<field>
+<name>importepuntos</name>
+<!-- Importe puntos --><alias>QT_TRANSLATE_NOOP(&quot;MetaData&quot;,&quot;Importe puntos&quot;)</alias>
+<null>true</null>
+<pk>false</pk>
+<type>double</type>
+<partI>8</partI>
+<partD>2</partD>
+</field>
+</xupdate:insert-after>
+<xupdate:insert-after select="/TMD[TMD,1]/field[importepuntos]" >
+<field>
+<name>saldopuntos</name>
+<alias>QT_TRANSLATE_NOOP(&quot;MetaData&quot;,&quot;Saldo de puntos&quot;)</alias>
+<null>true</null>
+<pk>false</pk>
+<type>double</type>
+<partI>8</partI>
+<partD>2</partD>
+<editable>false</editable>
+</field>
+</xupdate:insert-after>
+<xupdate:insert-after select="/TMD[TMD,1]/field[saldopuntos]" >
+<field>
+<name>ctdadpuntos</name>
+<alias>QT_TRANSLATE_NOOP(&quot;MetaData&quot;,&quot;Puntos&quot;)</alias>
+<null>true</null>
+<pk>false</pk>
+<type>uint</type>
+</field>
+</xupdate:insert-after>
+<xupdate:insert-after select="/TMD[TMD,1]/field[ctdadpuntos]" >
+<field>
+<name>puntosventa</name>
+<alias>QT_TRANSLATE_NOOP(&quot;MetaData&quot;,&quot;Puntos venta&quot;)</alias>
+<null>true</null>
+<pk>false</pk>
+<type>double</type>
+<partI>8</partI>
+<partD>2</partD>
+<editable>false</editable>
+</field>
+</xupdate:insert-after>
+<xupdate:insert-after select="/TMD[TMD,1]/field[puntosventa]" >
+<field>
+<name>tipopago</name>
+<!-- Tipo de pago: Efectivo, Tarjeta, Vale o Puntos --><alias>QT_TRANSLATE_NOOP(&quot;MetaData&quot;,&quot;Tipo de Pago&quot;)</alias>
+<null>true</null>
+<pk>false</pk>
+<type>string</type>
+<length>10</length>
+</field>
+</xupdate:insert-after>
+</xupdate:modifications>

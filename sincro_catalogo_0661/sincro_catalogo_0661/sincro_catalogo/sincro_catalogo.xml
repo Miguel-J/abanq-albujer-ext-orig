@@ -1,0 +1,16 @@
+<flpatch:modifications name="sincro_catalogo" >
+    <flpatch:patchXml path="facturacion/almacen/" name="flfactalma.xml" />
+    <flpatch:patchXml path="facturacion/almacen/forms/" name="flfactalma.ui" />
+    <flpatch:addFile path="facturacion/almacen/forms/" name="sincrocatalogo.ui" />
+    <flpatch:addFile path="facturacion/almacen/tables/" name="sincrocatalogo.mtd" />
+    <flpatch:addFile path="facturacion/almacen/scripts/" name="sincrocatalogo.qs" />
+    <flpatch:addFile path="facturacion/almacen/forms/" name="pedirpasswordsincro.ui" />
+    <flpatch:patchXml path="facturacion/almacen/forms/" name="factalma_general.ui" />
+    <flpatch:addFile path="facturacion/almacen/tables/" name="pedirpasswordsincro.mtd" />
+    <flpatch:patchXml path="facturacion/almacen/tables/" name="factalma_general.mtd" />
+    <flpatch:addFile path="facturacion/almacen/scripts/" name="pedirpasswordsincro.qs" />
+    <flpatch:addFile path="facturacion/almacen/scripts/" name="mastersincrocatalogo.qs" />
+    <flpatch:patchScript path="facturacion/almacen/scripts/" name="flfactalma.qs" />
+    <flpatch:patchXml path="facturacion/almacen/tables/" name="stocks.mtd" />
+    <flpatch:patchXml path="facturacion/almacen/tables/" name="lineasregstocks.mtd" />
+</flpatch:modifications>

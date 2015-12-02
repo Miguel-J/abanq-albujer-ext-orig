@@ -1,0 +1,18 @@
+<xupdate:modifications>
+<xupdate:insert-after select="/TMD[TMD,1]/field[idlineafc]" >
+<field>
+<name>idlineavc</name>
+<!-- Identificador de la línea de venta de cliente (TPV) relacionada --><alias>QT_TRANSLATE_NOOP(&quot;MetaData&quot;,&quot;Id. línea venta TPV cliente&quot;)</alias>
+<null>true</null>
+<pk>false</pk>
+<type>uint</type>
+<visiblegrid>false</visiblegrid>
+<relation>
+<field>idtpv_linea</field>
+<table>tpv_lineascomanda</table>
+<card>M1</card>
+<delC>true</delC>
+</relation>
+</field>
+</xupdate:insert-after>
+</xupdate:modifications>

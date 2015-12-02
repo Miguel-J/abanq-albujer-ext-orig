@@ -1,0 +1,200 @@
+<xupdate:modifications>
+<xupdate:insert-after select="/UI[UI,1]/widget[QWidget,Comandas]/vbox[vbox,1]/widget[QGroupBox,gbxDatosPago]/hbox[hbox,1]/property[name]" >
+<widget class="FLFieldDB" >
+<property name="name" >
+<cstring>fdbCodCentroEsc</cstring>
+</property>
+<property name="sizePolicy" >
+<sizepolicy>
+<hsizetype>1</hsizetype>
+<vsizetype>0</vsizetype>
+<horstretch>0</horstretch>
+<verstretch>0</verstretch>
+</sizepolicy>
+</property>
+<property name="minimumSize" >
+<size>
+<width>32</width>
+<height>24</height>
+</size>
+</property>
+<property name="maximumSize" >
+<size>
+<width>200</width>
+<height>32767</height>
+</size>
+</property>
+<property name="font" >
+<font/>
+</property>
+<property name="fieldName" >
+<string>codcentroesc</string>
+</property>
+</widget>
+</xupdate:insert-after>
+<xupdate:insert-after select="/UI[UI,1]/widget[QWidget,Comandas]/vbox[vbox,1]/widget[QLayoutWidget,layout11]/hbox[hbox,1]/widget[QFrame,gbxDatosVenta]/vbox[vbox,1]/widget[QLayoutWidget,layout16]/hbox[hbox,1]/widget[FLFieldDB,fdbCodigo]/property[name]" >
+<property name="sizePolicy" >
+<sizepolicy>
+<hsizetype>5</hsizetype>
+<vsizetype>5</vsizetype>
+<horstretch>0</horstretch>
+<verstretch>0</verstretch>
+</sizepolicy>
+</property>
+</xupdate:insert-after>
+<xupdate:insert-after select="/UI[UI,1]/widget[QWidget,Comandas]/vbox[vbox,1]/widget[QLayoutWidget,layout11]/hbox[hbox,1]/widget[QFrame,gbxDatosVenta]/vbox[vbox,1]/widget[QLayoutWidget,layout16]/hbox[hbox,1]/widget[FLFieldDB,fdbCodigo]/property[sizePolicy]" >
+<property name="minimumSize" >
+<size>
+<width>26</width>
+<height>22</height>
+</size>
+</property>
+</xupdate:insert-after>
+<xupdate:insert-after select="/UI[UI,1]/widget[QWidget,Comandas]/vbox[vbox,1]/widget[QLayoutWidget,layout11]/hbox[hbox,1]/widget[QFrame,gbxDatosVenta]/vbox[vbox,1]/widget[QLayoutWidget,layout16]/hbox[hbox,1]/widget[FLFieldDB,fdbCodigo]/property[fieldName]" >
+<property name="fieldRelation" >
+<string/>
+</property>
+</xupdate:insert-after>
+<xupdate:insert-after select="/UI[UI,1]/widget[QWidget,Comandas]/vbox[vbox,1]/widget[QLayoutWidget,layout11]/hbox[hbox,1]/widget[QFrame,gbxDatosVenta]/vbox[vbox,1]/widget[QLayoutWidget,layout16]/hbox[hbox,1]/widget[FLFieldDB,fdbCodigo]/property[fieldRelation]" >
+<property name="showAlias" >
+<bool>true</bool>
+</property>
+</xupdate:insert-after>
+<xupdate:insert-after select="/UI[UI,1]/widget[QWidget,Comandas]/vbox[vbox,1]/widget[QTabWidget,tbwComanda]/widget[QWidget,lineas]/vbox[vbox,1]/property[name]" >
+<widget class="QGroupBox" >
+<property name="name" >
+<cstring>gbxAlumnoCliente</cstring>
+</property>
+<property name="font" >
+<font>
+<bold>0</bold>
+<italic>0</italic>
+</font>
+</property>
+<property name="title" >
+<string/>
+</property>
+<hbox>
+<property name="name" >
+<cstring>unnamed</cstring>
+</property>
+<widget class="FLFieldDB" >
+<property name="name" >
+<cstring>fdbCodCliente2</cstring>
+</property>
+<property name="sizePolicy" >
+<sizepolicy>
+<hsizetype>1</hsizetype>
+<vsizetype>0</vsizetype>
+<horstretch>0</horstretch>
+<verstretch>0</verstretch>
+</sizepolicy>
+</property>
+<property name="minimumSize" >
+<size>
+<width>26</width>
+<height>22</height>
+</size>
+</property>
+<property name="font" >
+<font/>
+</property>
+<property name="fieldName" >
+<string>codcliente</string>
+</property>
+</widget>
+<widget class="FLFieldDB" >
+<property name="name" >
+<cstring>fdbNombreCliente2</cstring>
+</property>
+<property name="sizePolicy" >
+<sizepolicy>
+<hsizetype>1</hsizetype>
+<vsizetype>0</vsizetype>
+<horstretch>0</horstretch>
+<verstretch>0</verstretch>
+</sizepolicy>
+</property>
+<property name="minimumSize" >
+<size>
+<width>24</width>
+<height>22</height>
+</size>
+</property>
+<property name="font" >
+<font/>
+</property>
+<property name="fieldName" >
+<string>nombrecliente</string>
+</property>
+<property name="showAlias" >
+<bool>false</bool>
+</property>
+</widget>
+<widget class="FLFieldDB" >
+<property name="name" >
+<cstring>fdbCodAlumno</cstring>
+</property>
+<property name="sizePolicy" >
+<sizepolicy>
+<hsizetype>1</hsizetype>
+<vsizetype>0</vsizetype>
+<horstretch>0</horstretch>
+<verstretch>0</verstretch>
+</sizepolicy>
+</property>
+<property name="minimumSize" >
+<size>
+<width>26</width>
+<height>22</height>
+</size>
+</property>
+<property name="font" >
+<font/>
+</property>
+<property name="fieldName" >
+<string>codalumno</string>
+</property>
+</widget>
+<widget class="QLabel" >
+<property name="name" >
+<cstring>lblNombreAlumno</cstring>
+</property>
+<property name="minimumSize" >
+<size>
+<width>250</width>
+<height>0</height>
+</size>
+</property>
+<property name="text" >
+<string>textLabel1</string>
+</property>
+</widget>
+</hbox>
+</widget>
+</xupdate:insert-after>
+<xupdate:update select="/UI[UI,1]/widget[QWidget,Comandas]/vbox[vbox,1]/widget[QTabWidget,tbwComanda]/widget[QWidget,recibos]/vbox[vbox,1]/widget[QGroupBox,gbxFactura]/vbox[vbox,1]/widget[QLayoutWidget,layoutCliente]/hbox[hbox,1]/widget[FLFieldDB,fdbCifNif]/property[minimumSize]/size[size,1]/width[width,1]/text()[1]" >25</xupdate:update>
+<xupdate:update select="/UI[UI,1]/widget[QWidget,Comandas]/vbox[vbox,1]/widget[QTabWidget,tbwComanda]/widget[QWidget,recibos]/vbox[vbox,1]/widget[QGroupBox,gbxFactura]/vbox[vbox,1]/widget[QLayoutWidget,layoutCliente]/hbox[hbox,1]/widget[FLFieldDB,fdbCodCliente]/property[minimumSize]/size[size,1]/width[width,1]/text()[1]" >25</xupdate:update>
+<xupdate:delete select="/UI[UI,1]/widget[QWidget,Comandas]/vbox[vbox,1]/widget[QTabWidget,tbwComanda]/widget[QWidget,recibos]/vbox[vbox,1]/widget[QGroupBox,gbxFactura]/vbox[vbox,1]/widget[QLayoutWidget,layoutCliente]/hbox[hbox,1]/widget[FLFieldDB,fdbNombreCliente]/property[fieldRelation]" />
+<xupdate:delete select="/UI[UI,1]/widget[QWidget,Comandas]/vbox[vbox,1]/widget[QTabWidget,tbwComanda]/widget[QWidget,recibos]/vbox[vbox,1]/widget[QGroupBox,gbxFactura]/vbox[vbox,1]/widget[QLayoutWidget,layoutCliente]/hbox[hbox,1]/widget[FLFieldDB,fdbNombreCliente]/property[foreignField]" />
+<xupdate:update select="/UI[UI,1]/widget[QWidget,Comandas]/vbox[vbox,1]/widget[QTabWidget,tbwComanda]/widget[QWidget,recibos]/vbox[vbox,1]/widget[QGroupBox,gbxFactura]/vbox[vbox,1]/widget[QLayoutWidget,layoutCliente]/hbox[hbox,1]/widget[FLFieldDB,fdbNombreCliente]/property[minimumSize]/size[size,1]/width[width,1]/text()[1]" >25</xupdate:update>
+<xupdate:update select="/UI[UI,1]/widget[QWidget,Comandas]/vbox[vbox,1]/widget[QTabWidget,tbwComanda]/widget[QWidget,recibos]/vbox[vbox,1]/widget[QGroupBox,gbxFactura]/vbox[vbox,1]/widget[QLayoutWidget,layoutDir1]/hbox[hbox,1]/widget[FLFieldDB,fdbCodDir]/property[minimumSize]/size[size,1]/width[width,1]/text()[1]" >25</xupdate:update>
+<xupdate:update select="/UI[UI,1]/widget[QWidget,Comandas]/vbox[vbox,1]/widget[QTabWidget,tbwComanda]/widget[QWidget,recibos]/vbox[vbox,1]/widget[QGroupBox,gbxFactura]/vbox[vbox,1]/widget[QLayoutWidget,layoutDir1]/hbox[hbox,1]/widget[FLFieldDB,fdbDireccion]/property[minimumSize]/size[size,1]/width[width,1]/text()[1]" >25</xupdate:update>
+<xupdate:update select="/UI[UI,1]/widget[QWidget,Comandas]/vbox[vbox,1]/widget[QTabWidget,tbwComanda]/widget[QWidget,recibos]/vbox[vbox,1]/widget[QGroupBox,gbxFactura]/vbox[vbox,1]/widget[QLayoutWidget,layoutDir2]/hbox[hbox,1]/widget[FLFieldDB,fdbCiudad]/property[minimumSize]/size[size,1]/width[width,1]/text()[1]" >25</xupdate:update>
+<xupdate:update select="/UI[UI,1]/widget[QWidget,Comandas]/vbox[vbox,1]/widget[QTabWidget,tbwComanda]/widget[QWidget,recibos]/vbox[vbox,1]/widget[QGroupBox,gbxFactura]/vbox[vbox,1]/widget[QLayoutWidget,layoutDir2]/hbox[hbox,1]/widget[FLFieldDB,fdbProvincia]/property[minimumSize]/size[size,1]/width[width,1]/text()[1]" >25</xupdate:update>
+<xupdate:update select="/UI[UI,1]/widget[QWidget,Comandas]/vbox[vbox,1]/widget[QTabWidget,tbwComanda]/widget[QWidget,recibos]/vbox[vbox,1]/widget[QGroupBox,gbxFactura]/vbox[vbox,1]/widget[QLayoutWidget,layoutDir3]/hbox[hbox,1]/widget[FLFieldDB,fdbBandera]/property[minimumSize]/size[size,1]/width[width,1]/text()[1]" >25</xupdate:update>
+<xupdate:update select="/UI[UI,1]/widget[QWidget,Comandas]/vbox[vbox,1]/widget[QTabWidget,tbwComanda]/widget[QWidget,recibos]/vbox[vbox,1]/widget[QGroupBox,gbxFactura]/vbox[vbox,1]/widget[QLayoutWidget,layoutDir3]/hbox[hbox,1]/widget[FLFieldDB,fdbCodPais]/property[minimumSize]/size[size,1]/width[width,1]/text()[1]" >25</xupdate:update>
+<xupdate:update select="/UI[UI,1]/widget[QWidget,Comandas]/vbox[vbox,1]/widget[QTabWidget,tbwComanda]/widget[QWidget,recibos]/vbox[vbox,1]/widget[QGroupBox,gbxFactura]/vbox[vbox,1]/widget[QLayoutWidget,layoutDir3]/hbox[hbox,1]/widget[FLFieldDB,fdbCodPostal]/property[minimumSize]/size[size,1]/width[width,1]/text()[1]" >25</xupdate:update>
+<xupdate:insert-after select="/UI[UI,1]/includehints[includehints,1]/includehint[flfielddb.h]" >
+<includehint>flfielddb.h</includehint>
+</xupdate:insert-after>
+<xupdate:insert-after select="/UI[UI,1]/includehints[includehints,1]/includehint[flfielddb.h]" >
+<includehint>flfielddb.h</includehint>
+</xupdate:insert-after>
+<xupdate:insert-after select="/UI[UI,1]/includehints[includehints,1]/includehint[flfielddb.h]" >
+<includehint>flfielddb.h</includehint>
+</xupdate:insert-after>
+<xupdate:insert-after select="/UI[UI,1]/includehints[includehints,1]/includehint[flfielddb.h]" >
+<includehint>flfielddb.h</includehint>
+</xupdate:insert-after>
+</xupdate:modifications>

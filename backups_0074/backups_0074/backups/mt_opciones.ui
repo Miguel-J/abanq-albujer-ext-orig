@@ -1,0 +1,274 @@
+<!DOCTYPE UI><UI version="3.3" stdsetdef="1">
+<class>formTablas</class>
+<widget class="QWidget">
+    <property name="name">
+        <cstring>formTablas</cstring>
+    </property>
+    <property name="geometry">
+        <rect>
+            <x>0</x>
+            <y>0</y>
+            <width>570</width>
+            <height>426</height>
+        </rect>
+    </property>
+    <property name="caption">
+        <string>Opciones</string>
+    </property>
+    <vbox>
+        <property name="name">
+            <cstring>unnamed</cstring>
+        </property>
+        <widget class="QTabWidget">
+            <property name="name">
+                <cstring>tabWidget2</cstring>
+            </property>
+            <property name="font">
+                <font>
+                    <bold>1</bold>
+                </font>
+            </property>
+            <widget class="QWidget">
+                <property name="name">
+                    <cstring>tab</cstring>
+                </property>
+                <attribute name="title">
+                    <string>Backups</string>
+                </attribute>
+                <vbox>
+                    <property name="name">
+                        <cstring>unnamed</cstring>
+                    </property>
+                    <widget class="QGroupBox">
+                        <property name="name">
+                            <cstring>groupBox20</cstring>
+                        </property>
+                        <property name="title">
+                            <string>Ruta a los ficheros de backup</string>
+                        </property>
+                        <hbox>
+                            <property name="name">
+                                <cstring>unnamed</cstring>
+                            </property>
+                            <widget class="QLabel">
+                                <property name="name">
+                                    <cstring>lblDirBackups</cstring>
+                                </property>
+                                <property name="sizePolicy">
+                                    <sizepolicy>
+                                        <hsizetype>7</hsizetype>
+                                        <vsizetype>5</vsizetype>
+                                        <horstretch>0</horstretch>
+                                        <verstretch>0</verstretch>
+                                    </sizepolicy>
+                                </property>
+                                <property name="font">
+                                    <font>
+                                        <bold>0</bold>
+                                    </font>
+                                </property>
+                                <property name="text">
+                                    <string>Ruta sin establecer</string>
+                                </property>
+                            </widget>
+                            <widget class="QPushButton">
+                                <property name="name">
+                                    <cstring>pbnCambiarDirBackups</cstring>
+                                </property>
+                                <property name="font">
+                                    <font>
+                                        <bold>0</bold>
+                                    </font>
+                                </property>
+                                <property name="text">
+                                    <string>Cambiar</string>
+                                </property>
+                                <property name="iconSet">
+                                    <iconset>image0</iconset>
+                                </property>
+                                <property name="toolTip" stdset="0">
+                                    <string>Cambiar el directorio de volcado de los ficheros de backup</string>
+                                </property>
+                                <property name="whatsThis" stdset="0">
+                                    <string>Cambia o establece el directorio donde se guardaran los ficheros de backup. Este directorio es independiente para cada usuario</string>
+                                </property>
+                            </widget>
+                        </hbox>
+                    </widget>
+                    <widget class="QGroupBox">
+                        <property name="name">
+                            <cstring>groupBox1</cstring>
+                        </property>
+                        <property name="font">
+                            <font>
+                            </font>
+                        </property>
+                        <property name="title">
+                            <string>Mensajes de volcado de backup correcto</string>
+                        </property>
+                        <vbox>
+                            <property name="name">
+                                <cstring>unnamed</cstring>
+                            </property>
+                            <widget class="FLFieldDB">
+                                <property name="name">
+                                    <cstring>fdbBackupOkPg</cstring>
+                                </property>
+                                <property name="minimumSize">
+                                    <size>
+                                        <width>500</width>
+                                        <height>0</height>
+                                    </size>
+                                </property>
+                                <property name="font">
+                                    <font>
+                                        <bold>0</bold>
+                                    </font>
+                                </property>
+                                <property name="fieldName">
+                                    <string>backupokpg</string>
+                                </property>
+                            </widget>
+                            <widget class="FLFieldDB">
+                                <property name="name">
+                                    <cstring>fdbBackupOkMysql</cstring>
+                                </property>
+                                <property name="minimumSize">
+                                    <size>
+                                        <width>500</width>
+                                        <height>0</height>
+                                    </size>
+                                </property>
+                                <property name="font">
+                                    <font>
+                                        <bold>0</bold>
+                                    </font>
+                                </property>
+                                <property name="fieldName">
+                                    <string>backupokmysql</string>
+                                </property>
+                            </widget>
+                        </vbox>
+                    </widget>
+                    <widget class="QGroupBox">
+                        <property name="name">
+                            <cstring>groupBox1_2</cstring>
+                        </property>
+                        <property name="font">
+                            <font>
+                            </font>
+                        </property>
+                        <property name="title">
+                            <string>Mensajes de eliminación de base de datos</string>
+                        </property>
+                        <vbox>
+                            <property name="name">
+                                <cstring>unnamed</cstring>
+                            </property>
+                            <widget class="FLFieldDB">
+                                <property name="name">
+                                    <cstring>fdbDelOkPg</cstring>
+                                </property>
+                                <property name="minimumSize">
+                                    <size>
+                                        <width>500</width>
+                                        <height>0</height>
+                                    </size>
+                                </property>
+                                <property name="font">
+                                    <font>
+                                        <bold>0</bold>
+                                    </font>
+                                </property>
+                                <property name="fieldName">
+                                    <string>delokpg</string>
+                                </property>
+                            </widget>
+                            <widget class="FLFieldDB">
+                                <property name="name">
+                                    <cstring>fdbDelOkMysql</cstring>
+                                </property>
+                                <property name="minimumSize">
+                                    <size>
+                                        <width>500</width>
+                                        <height>0</height>
+                                    </size>
+                                </property>
+                                <property name="font">
+                                    <font>
+                                        <bold>0</bold>
+                                    </font>
+                                </property>
+                                <property name="fieldName">
+                                    <string>delokmysql</string>
+                                </property>
+                            </widget>
+                        </vbox>
+                    </widget>
+                    <widget class="QGroupBox">
+                        <property name="name">
+                            <cstring>groupBox1_2_2</cstring>
+                        </property>
+                        <property name="font">
+                            <font>
+                            </font>
+                        </property>
+                        <property name="title">
+                            <string>Mensajes de creación de base de datos</string>
+                        </property>
+                        <vbox>
+                            <property name="name">
+                                <cstring>unnamed</cstring>
+                            </property>
+                            <widget class="FLFieldDB">
+                                <property name="name">
+                                    <cstring>fdbCreateOkPg</cstring>
+                                </property>
+                                <property name="minimumSize">
+                                    <size>
+                                        <width>500</width>
+                                        <height>0</height>
+                                    </size>
+                                </property>
+                                <property name="font">
+                                    <font>
+                                        <bold>0</bold>
+                                    </font>
+                                </property>
+                                <property name="fieldName">
+                                    <string>createokpg</string>
+                                </property>
+                            </widget>
+                            <widget class="FLFieldDB">
+                                <property name="name">
+                                    <cstring>fdbCreateOkMysql</cstring>
+                                </property>
+                                <property name="minimumSize">
+                                    <size>
+                                        <width>500</width>
+                                        <height>0</height>
+                                    </size>
+                                </property>
+                                <property name="font">
+                                    <font>
+                                        <bold>0</bold>
+                                    </font>
+                                </property>
+                                <property name="fieldName">
+                                    <string>createokmysql</string>
+                                </property>
+                            </widget>
+                        </vbox>
+                    </widget>
+                </vbox>
+            </widget>
+        </widget>
+    </vbox>
+</widget>
+<images>
+    <image name="image0">
+        <data format="PNG" length="596">89504e470d0a1a0a0000000d49484452000000100000001008060000001ff3ff610000021b49444154789c8d923168136118869f9336e66c0b3987d2830a06744848a5891d62a8a2e7e8a6931d9bb1630a0eada343854c768d8b340ed24e5a07cd15ac3da49834186986041269e5844a2f94928b55f81c2ec492a4e0bb7cffc7f7bfeff7fe2f3fb4214d91fc765ea42922db2267f5f4c3e18afc377266ce3acd1d00c8b2cb8d7761b2259899806cc9626622d1e963b781418f604c1abe1e07a9b4889c781b9acd763df2eae191c8ec9248b33dc899b9cfa7b9e73aa741600f5415a8803a028512687e6facaaaae72062d0233003d4f65cb80485b20b57c1da71885d01f39303807360036016cdde1053e92d1111596e87b955f052174b440e45669772ff52fc221ffa3c2141a1ec52a843e6ad4d22026f8a0e4460b5e80006b66d438d6fca35e556df0c62211502100ae864dec3bd498dd5aff020a201a0eb3af3cfe637badd7732b0ca2efe00ac546c0a07b0f8dac1b80c99a2c3f243483e35e18fabf415c8629108a9a82330774747d5e0fe94c6938f101dd778bc09c9a881db6af5178004560de6e2b0567508c461adea323b0dd9aa831b85cc8e0903feb304201184f52aa4e21a7a1d16a655d6eb3037ada1ed7b0ecae5f2cf6e0105209f16b16fda271b15fd38a0eefa9253612553ac29ad4850eccddaef1fade0c958c31c7dfee8ee38f0bdc7c1f594e2d71abacfd9e7a2311c1e5e7c690e19fee005fb1543493d18186b98a3eb2f9c856e72c7c11950f03eb80f380f1c03bfba2ffd05606d42f8c36082160000000049454e44ae426082</data>
+    </image>
+</images>
+<layoutdefaults spacing="6" margin="11"/>
+</UI>

@@ -1,0 +1,50 @@
+<?xml version = '1.0' encoding = 'UTF-8'?>
+<!DOCTYPE KugarTemplate SYSTEM "kugartemplate.dtd">
+<KugarTemplate BottomMargin="50" TopMargin="50" RightMargin="30" LeftMargin="30" PageOrientation="0" PageSize="0" >
+	<DetailHeader Height="85" Level="0" >
+		<Label WordWrap="0" Width="200" X="2" Y="15" BorderStyle="0" Height="19" HAlignment="0" BorderColor="0,0,0" BackgroundColor="255,255,255" VAlignment="1" ForegroundColor="0,0,0" Text=" TAREAS POR CENTRO" FontWeight="65" FontSize="12" BorderWidth="1" FontFamily="Arial" />
+		
+		<CalculatedField CalculationType="6" FunctionName="flfactinfo.pub_logo" WordWrap="0" Width="109" X="491" Y="2" BorderStyle="0" NegValueColor="0,0,0" Height="34" HAlignment="0" DataType="5" Field="empresa.logo" DateFormat="11" Currency="32" BorderColor="0,0,0" BackgroundColor="255,255,255" FontItalic="0" VAlignment="1" ForegroundColor="0,0,0" CommaSeparator="44" Text="[empresa.logo]" FontWeight="50" FontSize="12" BorderWidth="1" Precision="2" FontFamily="Arial" />
+		<Line Width="1" Y1="36" Y2="36" X1="0" X2="600" Style="1" Color="100,100,100" />
+		
+		<!-- ORDEN -->
+		<Label WordWrap="0" Width="68" X="2" Y="62" BorderStyle="0" Height="19" HAlignment="0" BorderColor="0,0,0" BackgroundColor="255,255,255" VAlignment="1" ForegroundColor="0,0,0" Text=" CENTRO:" FontWeight="65" FontSize="12" BorderWidth="1" FontFamily="Arial" />
+		<Field WordWrap="0" Width="200" X="70" Y="62" BorderStyle="0" NegValueColor="0,0,0" Height="19" HAlignment="0" DataType="0" Field="t.codcentro" DateFormat="11" Currency="32" BorderColor="0,0,0" BackgroundColor="255,255,255" FontItalic="0" VAlignment="1" ForegroundColor="0,0,0" CommaSeparator="44" Text="" FontWeight="65" FontSize="12" BorderWidth="1" Precision="2" FontFamily="Arial" />
+		<Label WordWrap="0" Width="50" X="280" Y="62" BorderStyle="0" Height="19" HAlignment="0" BorderColor="0,0,0" BackgroundColor="255,255,255" VAlignment="1" ForegroundColor="0,0,0" Text=" FECHA:" FontWeight="65" FontSize="12" BorderWidth="1" FontFamily="Arial" />
+		<Special WordWrap="0" Width="80" X="330" Y="62" BorderStyle="0" Height="19" HAlignment="0" DateFormat="19" BorderColor="0,0,0" BackgroundColor="255,255,255" Type="0" FontItalic="0" VAlignment="1" ForegroundColor="0,0,0" Text="" FontWeight="65" FontSize="12" BorderWidth="1" FontFamily="Arial" />
+	</DetailHeader>
+		
+	<AddOnHeader Height="85" Level="0" >
+		<Label WordWrap="0" Width="200" X="2" Y="15" BorderStyle="0" Height="19" HAlignment="0" BorderColor="0,0,0" BackgroundColor="255,255,255" VAlignment="1" ForegroundColor="0,0,0" Text=" TAREAS POR CENTRO" FontWeight="65" FontSize="12" BorderWidth="1" FontFamily="Arial" />
+		
+		<CalculatedField CalculationType="6" FunctionName="flfactinfo.pub_logo" WordWrap="0" Width="109" X="491" Y="2" BorderStyle="0" NegValueColor="0,0,0" Height="34" HAlignment="0" DataType="5" Field="empresa.logo" DateFormat="11" Currency="32" BorderColor="0,0,0" BackgroundColor="255,255,255" FontItalic="0" VAlignment="1" ForegroundColor="0,0,0" CommaSeparator="44" Text="[empresa.logo]" FontWeight="50" FontSize="12" BorderWidth="1" Precision="2" FontFamily="Arial" />
+		<Line Width="1" Y1="36" Y2="36" X1="0" X2="600" Style="1" Color="100,100,100" />
+		
+		<!-- ORDEN -->
+		<Label WordWrap="0" Width="68" X="2" Y="62" BorderStyle="0" Height="19" HAlignment="0" BorderColor="0,0,0" BackgroundColor="255,255,255" VAlignment="1" ForegroundColor="0,0,0" Text=" CENTRO:" FontWeight="65" FontSize="12" BorderWidth="1" FontFamily="Arial" />
+		<Field WordWrap="0" Width="200" X="70" Y="62" BorderStyle="0" NegValueColor="0,0,0" Height="19" HAlignment="0" DataType="0" Field="t.codcentro" DateFormat="11" Currency="32" BorderColor="0,0,0" BackgroundColor="255,255,255" FontItalic="0" VAlignment="1" ForegroundColor="0,0,0" CommaSeparator="44" Text="" FontWeight="65" FontSize="12" BorderWidth="1" Precision="2" FontFamily="Arial" />
+		<Label WordWrap="0" Width="50" X="280" Y="62" BorderStyle="0" Height="19" HAlignment="0" BorderColor="0,0,0" BackgroundColor="255,255,255" VAlignment="1" ForegroundColor="0,0,0" Text=" FECHA:" FontWeight="65" FontSize="12" BorderWidth="1" FontFamily="Arial" />
+		<Special WordWrap="0" Width="80" X="330" Y="62" BorderStyle="0" Height="19" HAlignment="0" DateFormat="19" BorderColor="0,0,0" BackgroundColor="255,255,255" Type="0" FontItalic="0" VAlignment="1" ForegroundColor="0,0,0" Text="" FontWeight="65" FontSize="12" BorderWidth="1" FontFamily="Arial" />
+	</AddOnHeader>
+	
+	<Detail Height="80" Level="0" >
+		<!-- TAREAS -->
+		<Line Width="1" Y1="0" Y2="0" X1="0" X2="600" Style="1" Color="100,100,100" />
+		
+		<Field WordWrap="0" Width="150" X="0" Y="10" BorderStyle="0" NegValueColor="0,0,0" Height="55" HAlignment="0" DataType="6" BarcodeType="EAN" Field="t.idtarea" DateFormat="11" Currency="32" BorderColor="0,0,0" BackgroundColor="255,255,255" FontItalic="0" VAlignment="1" ForegroundColor="0,0,0" CommaSeparator="44" Text="" FontWeight="50" FontSize="5" BorderWidth="1" Precision="2" FontFamily="Arial" />
+			
+		<Field WordWrap="0" Width="250" X="153" Y="10" BorderStyle="0" NegValueColor="0,0,0" Height="55" HAlignment="0" DataType="0" Field="pe.nombrecliente" DateFormat="11" Currency="32" BorderColor="0,0,0" BackgroundColor="255,255,255" FontItalic="0" VAlignment="0" ForegroundColor="0,0,0" CommaSeparator="44" Text="" FontWeight="50" FontSize="11" BorderWidth="1" Precision="2" FontFamily="Arial" />
+		<Field WordWrap="1" Width="350" X="153" Y="30" BorderStyle="0" NegValueColor="0,0,0" Height="30" HAlignment="0" DataType="0" Field="lp.descripcion" DateFormat="19" Currency="32" BorderColor="0,0,0" BackgroundColor="255,255,255" FontItalic="0" VAlignment="0" ForegroundColor="0,0,0" CommaSeparator="44" Text="" FontWeight="50" FontSize="11" BorderWidth="1" Precision="2" FontFamily="Arial" />
+		
+		<Field WordWrap="1" ChangeHeight="1" Width="600" X="0" Y="60" BorderStyle="0" NegValueColor="0,0,0" Height="0" HAlignment="0" DataType="0" Field="t.observaciones" DateFormat="19" Currency="32" BorderColor="0,0,0" BackgroundColor="255,255,255" FontItalic="0" VAlignment="0" ForegroundColor="0,0,0" CommaSeparator="44" Text="" FontWeight="50" FontSize="11" BorderWidth="1" Precision="2" FontFamily="Arial" />
+		
+		
+	</Detail>
+	
+	
+	
+	<DetailFooter Height="20" Level="1">
+	</DetailFooter>
+	
+	<PageFooter Height="0" PrintFrequency="1" />
+</KugarTemplate>

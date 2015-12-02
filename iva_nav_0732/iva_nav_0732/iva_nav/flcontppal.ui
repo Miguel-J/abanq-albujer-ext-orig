@@ -1,0 +1,50 @@
+<xupdate:modifications>
+<xupdate:insert-after select="/UI[UI,1]/actions[actions,1]/action[co_contppal_general]" >
+<action>
+<property name="name" >
+<cstring>gruposcontablesivaneg</cstring>
+</property>
+<property name="text" >
+<string>Grupos I.V.A. negocio</string>
+</property>
+<property name="menuText" >
+<string>Grupos I.V.A. negocio</string>
+</property>
+</action>
+</xupdate:insert-after>
+<xupdate:insert-after select="/UI[UI,1]/actions[actions,1]/action[gruposcontablesivaneg]" >
+<action>
+<property name="name" >
+<cstring>impuestos</cstring>
+</property>
+<property name="text" >
+<string>Grupos I.V.A. producto</string>
+</property>
+<property name="menuText" >
+<string>Grupos I.V.A. producto</string>
+</property>
+</action>
+</xupdate:insert-after>
+<xupdate:insert-after select="/UI[UI,1]/connections[connections,1]/connection[co_contppal_general,activated(),FLWidgetApplication,execDefaultScript()]" >
+<connection>
+<sender>impuestos</sender>
+<signal>activated()</signal>
+<receiver>FLWidgetApplication</receiver>
+<slot>openDefaultForm()</slot>
+</connection>
+</xupdate:insert-after>
+<xupdate:insert-after select="/UI[UI,1]/connections[connections,1]/connection[impuestos,activated(),FLWidgetApplication,openDefaultForm()]" >
+<connection>
+<sender>gruposcontablesivaneg</sender>
+<signal>activated()</signal>
+<receiver>FLWidgetApplication</receiver>
+<slot>openDefaultForm()</slot>
+</connection>
+</xupdate:insert-after>
+<xupdate:insert-after select="/UI[UI,1]/menubar[menubar,1]/item[Cuadro_de_cuentas]" >
+<item name="Grupos_contables" text="Grupos contables" >
+<action name="gruposcontablesivaneg" />
+<action name="impuestos" />
+</item>
+</xupdate:insert-after>
+</xupdate:modifications>

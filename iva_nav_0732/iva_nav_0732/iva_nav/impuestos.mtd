@@ -1,0 +1,32 @@
+<xupdate:modifications>
+<xupdate:insert-after select="/TMD[TMD,1]/field[codimpuesto]/relation[co_subcuentas,codimpuesto]" >
+<relation>
+<table>gruposcontablesivaproneg</table>
+<field>codimpuesto</field>
+<card>1M</card>
+</relation>
+</xupdate:insert-after>
+<xupdate:insert-after select="/TMD[TMD,1]/field[codimpuesto]/relation[gruposcontablesivaproneg,codimpuesto]" >
+<relation>
+<table>co_subcuentas</table>
+<field>codimpuesto</field>
+<card>1M</card>
+</relation>
+</xupdate:insert-after>
+<xupdate:insert-after select="/TMD[TMD,1]/field[iva]/default[default,1]" >
+<editable>false</editable>
+</xupdate:insert-after>
+<xupdate:insert-after select="/TMD[TMD,1]/field[recargo]/default[default,1]" >
+<editable>false</editable>
+</xupdate:insert-after>
+<xupdate:insert-after select="/TMD[TMD,1]/field[idsubcuentaivasopagra]" >
+<field>
+<name>habilitartipos</name>
+<alias>QT_TRANSLATE_NOOP(&quot;MetaData&quot;,&quot;Habilitar tipos&quot;)</alias>
+<null>false</null>
+<pk>false</pk>
+<type>bool</type>
+<default>false</default>
+</field>
+</xupdate:insert-after>
+</xupdate:modifications>

@@ -1,0 +1,36 @@
+<xupdate:modifications>
+<xupdate:insert-after select="/TMD[TMD,1]/field[hora]" >
+<field>
+<name>codmaquina</name>
+<alias>QT_TRANSLATE_NOOP(&quot;MetaData&quot;,&quot;Máquina&quot;)</alias>
+<null>true</null>
+<pk>false</pk>
+<type>string</type>
+<length>25</length>
+<relation>
+<table>cl_maquinas</table>
+<field>codmaquina</field>
+<card>M1</card>
+</relation>
+</field>
+</xupdate:insert-after>
+<xupdate:insert-after select="/TMD[TMD,1]/field[codmaquina]" >
+<field>
+<name>codaveria</name>
+<alias>QT_TRANSLATE_NOOP(&quot;MetaData&quot;,&quot;Averia/Revisión&quot;)</alias>
+<null>true</null>
+<pk>false</pk>
+<type>string</type>
+<length>6</length>
+<relation>
+<table>cl_averiasrevisionmaquina</table>
+<field>codaveria</field>
+<card>M1</card>
+</relation>
+<associated>
+<with>codmaquina</with>
+<by>codmaquina</by>
+</associated>
+</field>
+</xupdate:insert-after>
+</xupdate:modifications>

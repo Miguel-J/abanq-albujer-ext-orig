@@ -1,0 +1,37 @@
+<xupdate:modifications>
+<xupdate:update select="/UI[UI,1]/widget[QMainWindow,FLWidgetApplication]/property[property,2]/rect[rect,1]/width[width,1]/text()[1]" >568</xupdate:update>
+<xupdate:append-first select="/UI[UI,1]/images[images,1]" >
+<image name="info_trazabimage19" >
+<data format="PNG" length="868" >89504e470d0a1a0a0000000d4948445200000016000000160806000000c4b46c3b0000032b49444154789cb59431681b5718803f9533bc8367780f5c38410a276807430bb2f1d0962e099d04c56a8887261e64f09ac1b85bd32d9d6a10944017b71124d6540b9b866e8937ab1013090c7107c31d5420410d7783400f7c701deee9a2583299f22f1fff7b77dffdf7deff5e214d53de473800854261e6e4f3356ad125ab7a8e727489afe720ba24d47374a34b0eef1cd098f55e9aa614d2349d123f5ba3ea3ad485f4fce2ca2dbc520957c0280e402e119cb609fee973e7e5bdd0a0b638593f78a7f88f2a8ff5bca895beb94be9f36518ecc3b00d4393fd9f0184c73e8f689d2ed3faf305c6880627eb1bd78a9fadf1582b55fbf2fe4310c7d06bbe914d72a8d0a7112681db37a0f5640f63c8e5699af2c144a5555788dad2fd87e0ecc04513a49dbcc29dff7e201e8249a0790e95efee2184a9b1f2b43af6e562ed525ffcf62eeec23198f05a2942f153ef7b84cd8584560f6eddac00a6fe96f8f91a35a4f28b5f2f437c7da548d809b6c1010128910d2b01af65116fc1f329efd672f108564b5f55c0ec83b2eb384b9e285af10384034a8270c0b3c401512c82a35673b10b65f149099c362464e5cca8f8b78b6dfa09683b7f95782548e232b63646e0171580c92a36563649a1d8fbf7015a0209780ec489add6e6412cc0117e2e3647109503f439d391644fbd924b5006918010594728cb71ae1d0813432e8e2f08114b3e1ddbb7563649ed83bb027a1ecc68368381014785f91a0be89efd7d049ec79bcfbdcd1120e6b3f43a46833e247137171b388cdaafe08b0a4805524c516b8d9ae8024f32950fcecec01187b978131a83de200c06640b2745d61952590a8c63f243a1260ec738efb45f638626e464bd918bed726c1d3f69c267b7c115f0a102174b81521e2e50b4c39334fd119da333c06c8d7db9781d0e189ac65efd77f8b4620f89ce193b0625b3cef32c9584a017d1fcf52fcc306e70b2793025b6f20d86a6b1f773933ecbd9662a0d52e0a922c281a2cc36b324a17d14d0fce505c6c40dba9b1b93ae9917fd53a81aa87b373c5ffb9ac58f04c1c222ad9bbbf4a301c1f988cecb0e714c4862b6e86ebefba29f8c5da829588da1dc578bfe8f1f6f032a84b80be270bc51572317bf8ff81f7693446faa0196980000000049454e44ae426082</data>
+</image>
+</xupdate:append-first>
+<xupdate:insert-after select="/UI[UI,1]/actions[actions,1]/action[tesoreraRecibosAction]" >
+<action>
+<property name="name" >
+<cstring>i_trazaarticulos</cstring>
+</property>
+<property name="iconSet" >
+<iconset>info_trazabimage19</iconset>
+</property>
+<property name="text" >
+<string>&amp;Trazabilidad</string>
+</property>
+<property name="menuText" >
+<string>Trazabilidad</string>
+</property>
+</action>
+</xupdate:insert-after>
+<xupdate:insert-after select="/UI[UI,1]/connections[connections,1]/connection[connection,18]" >
+<connection>
+<sender>i_trazaarticulos</sender>
+<signal>activated()</signal>
+<receiver>FLWidgetApplication</receiver>
+<slot>openDefaultForm()</slot>
+</connection>
+</xupdate:insert-after>
+<xupdate:insert-after select="/UI[UI,1]/menubar[menubar,1]/item[item,4]/action[i_inventarioval]" >
+<action name="i_trazaarticulos" />
+</xupdate:insert-after>
+<xupdate:update select="/UI[UI,1]/menubar[menubar,1]/property[property,2]/rect[rect,1]/height[height,1]/text()[1]" >23</xupdate:update>
+<xupdate:update select="/UI[UI,1]/menubar[menubar,1]/property[property,2]/rect[rect,1]/width[width,1]/text()[1]" >568</xupdate:update>
+</xupdate:modifications>

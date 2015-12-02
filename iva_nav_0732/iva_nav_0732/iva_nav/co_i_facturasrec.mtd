@@ -1,0 +1,58 @@
+<xupdate:modifications>
+<xupdate:delete select="/TMD[TMD,1]/field[i_co__cuentas_codejercicio]" />
+<xupdate:insert-after select="/TMD[TMD,1]/field[h_co__asientos_fecha]" >
+<field>
+<name>i_co__asientos_codejercicio</name>
+<!-- Ejercicio al que pertenecen las subcuentas del informe --><alias>QT_TRANSLATE_NOOP(&quot;MetaData&quot;,&quot;Ejercicio&quot;)</alias>
+<pk>false</pk>
+<null>false</null>
+<type>string</type>
+<length>4</length>
+<relation>
+<table>ejercicios</table>
+<field>codejercicio</field>
+<card>M1</card>
+</relation>
+</field>
+</xupdate:insert-after>
+<xupdate:insert-after select="/TMD[TMD,1]/field[codserie]" >
+<field>
+<name>i_co__partidas_codimpuesto</name>
+<alias>QT_TRANSLATE_NOOP(&quot;MetaData&quot;,&quot;Impuesto&quot;)</alias>
+<pk>false</pk>
+<null>true</null>
+<type>string</type>
+<length>10</length>
+<relation>
+<table>impuestos</table>
+<field>codimpuesto</field>
+<card>M1</card>
+</relation>
+</field>
+</xupdate:insert-after>
+<xupdate:insert-after select="/TMD[TMD,1]/field[i_co__partidas_codimpuesto]" >
+<field>
+<name>i_co__partidas_codgrupoivaneg</name>
+<alias>QT_TRANSLATE_NOOP(&quot;MetaData&quot;,&quot;G.IVA Negocio&quot;)</alias>
+<null>true</null>
+<pk>false</pk>
+<type>string</type>
+<length>10</length>
+<relation>
+<table>gruposcontablesivaneg</table>
+<field>codgrupoivaneg</field>
+<card>M1</card>
+</relation>
+</field>
+</xupdate:insert-after>
+<xupdate:insert-after select="/TMD[TMD,1]/field[i_co__partidas_codgrupoivaneg]" >
+<field>
+<name>agruparivaneg</name>
+<alias>QT_TRANSLATE_NOOP(&quot;MetaData&quot;,&quot;Agrupado G.Neg.&quot;)</alias>
+<null>true</null>
+<pk>false</pk>
+<type>bool</type>
+<default>false</default>
+</field>
+</xupdate:insert-after>
+</xupdate:modifications>

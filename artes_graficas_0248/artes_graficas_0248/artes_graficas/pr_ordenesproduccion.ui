@@ -1,0 +1,165 @@
+<xupdate:modifications>
+<xupdate:insert-after select="/UI[UI,1]/widget[QWidget,pr_ordenesproduccion]/vbox[vbox,1]/property[name]" >
+<widget class="QGroupBox" >
+<property name="name" >
+<cstring>gbxPedido</cstring>
+</property>
+<property name="sizePolicy" >
+<sizepolicy>
+<hsizetype>5</hsizetype>
+<vsizetype>0</vsizetype>
+<horstretch>0</horstretch>
+<verstretch>0</verstretch>
+</sizepolicy>
+</property>
+<property name="font" >
+<font>
+<bold>1</bold>
+<italic>1</italic>
+</font>
+</property>
+<property name="title" >
+<string>P&amp;edido</string>
+</property>
+<vbox>
+<property name="name" >
+<cstring>unnamed</cstring>
+</property>
+<widget class="FLFieldDB" >
+<property name="name" >
+<cstring>fdbDescripcion2</cstring>
+</property>
+<property name="sizePolicy" >
+<sizepolicy>
+<hsizetype>1</hsizetype>
+<vsizetype>0</vsizetype>
+<horstretch>0</horstretch>
+<verstretch>0</verstretch>
+</sizepolicy>
+</property>
+<property name="minimumSize" >
+<size>
+<width>145</width>
+<height>31</height>
+</size>
+</property>
+<property name="font" >
+<font>
+<bold>0</bold>
+<italic>0</italic>
+</font>
+</property>
+<property name="fieldName" >
+<string>descripcion</string>
+</property>
+</widget>
+<widget class="QLayoutWidget" >
+<property name="name" >
+<cstring>layout15</cstring>
+</property>
+<hbox>
+<property name="name" >
+<cstring>unnamed</cstring>
+</property>
+<widget class="FLFieldDB" >
+<property name="name" >
+<cstring>fdbCodPedido</cstring>
+</property>
+<property name="sizePolicy" >
+<sizepolicy>
+<hsizetype>1</hsizetype>
+<vsizetype>0</vsizetype>
+<horstretch>0</horstretch>
+<verstretch>0</verstretch>
+</sizepolicy>
+</property>
+<property name="minimumSize" >
+<size>
+<width>135</width>
+<height>31</height>
+</size>
+</property>
+<property name="maximumSize" >
+<size>
+<width>200</width>
+<height>32767</height>
+</size>
+</property>
+<property name="font" >
+<font>
+<bold>0</bold>
+<italic>0</italic>
+</font>
+</property>
+<property name="fieldName" >
+<string>codpedido</string>
+</property>
+</widget>
+<widget class="FLFieldDB" >
+<property name="name" >
+<cstring>fdbCodCliente</cstring>
+</property>
+<property name="sizePolicy" >
+<sizepolicy>
+<hsizetype>1</hsizetype>
+<vsizetype>0</vsizetype>
+<horstretch>0</horstretch>
+<verstretch>0</verstretch>
+</sizepolicy>
+</property>
+<property name="minimumSize" >
+<size>
+<width>135</width>
+<height>31</height>
+</size>
+</property>
+<property name="maximumSize" >
+<size>
+<width>200</width>
+<height>32767</height>
+</size>
+</property>
+<property name="font" >
+<font>
+<bold>0</bold>
+<italic>0</italic>
+</font>
+</property>
+<property name="fieldName" >
+<string>codcliente</string>
+</property>
+</widget>
+<widget class="FLFieldDB" >
+<property name="name" >
+<cstring>fdbNombreCliente</cstring>
+</property>
+<property name="sizePolicy" >
+<sizepolicy>
+<hsizetype>7</hsizetype>
+<vsizetype>0</vsizetype>
+<horstretch>0</horstretch>
+<verstretch>0</verstretch>
+</sizepolicy>
+</property>
+<property name="minimumSize" >
+<size>
+<width>164</width>
+<height>31</height>
+</size>
+</property>
+<property name="font" >
+<font>
+<bold>0</bold>
+<italic>0</italic>
+</font>
+</property>
+<property name="fieldName" >
+<string>nombrecliente</string>
+</property>
+</widget>
+</hbox>
+</widget>
+</vbox>
+</widget>
+</xupdate:insert-after>
+</xupdate:modifications>

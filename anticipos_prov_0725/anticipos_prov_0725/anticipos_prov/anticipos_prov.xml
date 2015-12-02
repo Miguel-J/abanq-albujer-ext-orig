@@ -1,0 +1,24 @@
+<flpatch:modifications name="anticipos_prov" >
+    <flpatch:patchXml path="facturacion/principal/tables/" name="ejercicios.mtd" />
+    <flpatch:patchXml path="facturacion/principal/tables/" name="proveedores.mtd" />
+    <flpatch:addFile path="facturacion/tesoreria/forms/" name="anticiposprov.ui" />
+    <flpatch:addFile path="facturacion/tesoreria/forms/" name="masteranticiposprov.ui" />
+    <flpatch:addFile path="facturacion/tesoreria/scripts/" name="anticiposprov.qs" />
+    <flpatch:patchScript path="facturacion/tesoreria/scripts/" name="flfactteso.qs" />
+    <flpatch:addFile path="facturacion/tesoreria/scripts/" name="masteranticiposprov.qs" />
+    <flpatch:addFile path="facturacion/tesoreria/tables/" name="anticiposprov.mtd" />
+    <flpatch:patchXml path="facturacion/tesoreria/forms/" name="masterrecibosprov.ui" />
+    <flpatch:patchXml path="facturacion/tesoreria/forms/" name="flfactteso.ui" />
+    <flpatch:patchXml path="facturacion/tesoreria/tables/" name="recibosprov.mtd" />
+    <flpatch:patchScript path="facturacion/tesoreria/scripts/" name="masterrecibosprov.qs" />
+    <flpatch:patchScript path="facturacion/tesoreria/scripts/" name="recibosprov.qs" />
+    <flpatch:patchXml path="facturacion/tesoreria/" name="flfactteso.xml" />
+    <flpatch:patchXml path="facturacion/tesoreria/forms/" name="reciboscli.ui" />
+    <flpatch:patchXml path="facturacion/tesoreria/forms/" name="recibosprov.ui" />
+    <flpatch:patchXml path="facturacion/principal/forms/" name="proveedores.ui" />
+    <flpatch:patchScript path="facturacion/principal/scripts/" name="proveedores.qs" />
+    <flpatch:patchXml path="contabilidad/principal/tables/" name="co_asientos.mtd" />
+    <flpatch:addFile path="facturacion/tesoreria/scripts/" name="seleccionrecibosanticiposprov.qs" />
+    <flpatch:addFile path="facturacion/tesoreria/forms/" name="seleccionrecibosanticiposprov.ui" />
+    <flpatch:patchScript path="facturacion/facturacion/scripts/" name="flfacturac.qs" />
+</flpatch:modifications>

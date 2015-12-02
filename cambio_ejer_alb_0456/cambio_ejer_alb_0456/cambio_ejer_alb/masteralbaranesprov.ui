@@ -1,0 +1,76 @@
+<xupdate:modifications>
+<xupdate:update select="/UI[UI,1]/widget[QWidget,FLWidgetMasterTable]/property[geometry]/rect[rect,1]/width[width,1]/text()[1]" >683</xupdate:update>
+<xupdate:insert-after select="/UI[UI,1]/widget[QWidget,FLWidgetMasterTable]/vbox[vbox,1]/widget[QFrame,barraBotones]/hbox[hbox,1]/widget[QPushButton,pbnGenerarFactura]" >
+<spacer>
+<property name="name" >
+<cstring>spacerCambioEjercicio</cstring>
+</property>
+<property name="orientation" >
+<enum>Horizontal</enum>
+</property>
+<property name="sizeType" >
+<enum>Fixed</enum>
+</property>
+<property name="sizeHint" >
+<size>
+<width>16</width>
+<height>20</height>
+</size>
+</property>
+</spacer>
+</xupdate:insert-after>
+<xupdate:append-first select="/UI[UI,1]/images[images,1]" >
+<image name="cambio_ejer_albimage52318" >
+<data format="PNG" length="1365" >89504e470d0a1a0a0000000d4948445200000016000000160806000000c4b46c3b0000051c49444154789c75955f685bf715c73f52ad724513b81aedb80217644847ac75c552a1cc7769a92fc9d83c36b67865d4e93ae6b41bf15bc8de9c6c648e1f8229a39bfd10b0c70af106c1f1582aab349d6ec0add49120b94be71b130bcbb49a145c239b389554dbdb770f57f953b73b703970f89d2fdff33de7cb0d589685d166d0a4093b00d0bcb3c1c5d767ffe40c382f01554a880ea00a9884cffc85cf4656d6ff61ce8fff8d5bc64cf5daaf3e657798a689655986699a21d3341f36f61801a3cd60f0f889f7f46551af4b92262e64d57356ea3f576bf41c5b78cde8eadd2b89bb1fa9f1d41bf9427e4dcbfab7e654d1b23ecace6597b5acff0c9c4e6974524a5ddd055e93b4258d9e4ba97b523a71494acde993ce8383dfbc073c716ee2da9732dbaa4b15a9e7e763e2f99aba4f5594bf2ed56a3ee3caf28254917a4fa5d43d220dce489982143b38f86349909dcaa6b57577cc5de01f49aad475f8d8a8385893f5aa343a259dbfecd7f3eeb45297eae255a9f37569607c41e7d312b1de030f753cdd71e4b9e79f7ba2b1d920f44808b68187f0f31e2878eff2cba71d660a17d8d8798662ad44b91ea1b4bac44fbefe14ef96aff172d0c47edce5e4b792ec3cbcc4cfbefaed38d9a9ec5bf717b38bf14d49cb52f6f2b426c697c57752328fd765be90d1e0883478b62edd96e4e5fdde9b7edbf93726fe1974575c001a9b0d083f702edb403bb84517bbdde6c69a8bb9d341e2ce1f39badf24c224cdb512536f5e84ce245ed1030b4a4b256e2c963e6b73620e6c43786fd8070bb5804340199c7d0e8dc5594e1c3a4c629fcb91443fac19d09564f6ef53c44d1bd621fe8d382c4147ac03da08fa8c432dc6a15d8c3bc0bbe311eefa1e55a3c491eff6e1354bf064186fc5c36e7728ac152002ebebeb1003afe8e1e0047c8debff47e3dbad5c79e04ab65a5ad6a5e99969d5aed664b55b1a3a30a489c909a9260d9f1a2eb4b9453760876dd6d7d78944229fb7e5de568efa13851f0f53ad5689c6a23eb37687f4529aeac755bfbf2d42a158f0a570624e804d7cd0cd2f38fe5edcdd41341a8532c4ad38ee8a8b1db539faf251e25f8b73e67767485a498000c3a787df96a44aa5356fcb2c9d4f762ad195d0e86ba392a48c9b11a09e033dea7fa15ff9425e955c4513e726a42d293b97956118cace659519c95c27339979fb9e86abf7412b737ed1344d4952fe425e83c706efdf77459abe30ad854b0b5ab8bea0ba57976559d24d69f8f4b017cc957310f5ef8fc7a0d16870e35f37883e1b056063630380913f8f70e59d2bf4fda88f46b341ae98c3deb6b952bac22bbf7885786f9cb117c7985d9c050806ed76dbbf3fab0396201c7ec025dbadbc0917ff7a11cff518383440fc0771ec761b77c7a53bda4de6b719bcb407cf826dd90004dd1537800585c5023c0aa55289445782f1df8f430862b118ec05ef430f4cffb69bcd26b38bb3d8d8b825d777e88a8b1373c89573387b9caf04329399cb66c23c94b4925006f6c1d49b539cfccd49226684b1e363980993f4afd3ccdc9aa1ba56a5effb7d0cfd7488f48769cc0d93f9b5f9a6b3df09b94537e8c49cc0cc073345864e0dbda3557fab5a6ee555295fc84bab5236e7d7339733aadfac2b954ea976b5a6e9a96955ae5694e84afca125d823f8333d06ec09f6eeef3529831db3c99573d8311b8a90b492fe82da6d5881ee5837ef17dfc7b66cdcb28bf38443e156815eb377ab05fc29b0017c02dc091cfee1e1b3fd1dfd87d21be9db469bf1df264d8c36e30b0669ee3431f07fba0606cd9d662862461e4dbf951e330c637cfe83f9cfbdff1f1d13aa07d38aeca70000000049454e44ae426082</data>
+</image>
+</xupdate:append-first>
+<xupdate:insert-after select="/UI[UI,1]/widget[QWidget,FLWidgetMasterTable]/vbox[vbox,1]/widget[QFrame,barraBotones]/hbox[hbox,1]/spacer[spacerCambioEjercicio]" >
+<widget class="QPushButton" >
+<property name="name" >
+<cstring>tbnCambiarEjercicio</cstring>
+</property>
+<property name="sizePolicy" >
+<sizepolicy>
+<hsizetype>1</hsizetype>
+<vsizetype>1</vsizetype>
+<horstretch>0</horstretch>
+<verstretch>0</verstretch>
+</sizepolicy>
+</property>
+<property name="minimumSize" >
+<size>
+<width>32</width>
+<height>32</height>
+</size>
+</property>
+<property name="maximumSize" >
+<size>
+<width>32</width>
+<height>32</height>
+</size>
+</property>
+<property name="focusPolicy" >
+<enum>NoFocus</enum>
+</property>
+<property name="text" >
+<string/>
+</property>
+<property name="accel" >
+<string>E</string>
+</property>
+<property name="iconSet" >
+<iconset>cambio_ejer_albimage52318</iconset>
+</property>
+<property name="toolTip" stdset="0" >
+<string>Cambiar ejercicio</string>
+</property>
+<property name="whatsThis" stdset="0" >
+<string>Permite cambiar el albarán de ejercicio y serie (si no está ya facturado)</string>
+</property>
+</widget>
+</xupdate:insert-after>
+<xupdate:delete select="/UI[UI,1]/includehints[includehints,1]/includehint[FLTableDB.h]" />
+<xupdate:append-first select="/UI[UI,1]/includehints[includehints,1]" >
+<includehint>fltabledb.h</includehint>
+</xupdate:append-first>
+</xupdate:modifications>

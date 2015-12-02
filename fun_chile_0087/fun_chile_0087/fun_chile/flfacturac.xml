@@ -1,0 +1,15 @@
+<xupdate:modifications>
+<xupdate:update select="/ACTIONS[ACTIONS,1]/action[busfactcli]/form[form,1]/text()[1]" >master_print</xupdate:update>
+<xupdate:insert-after select="/ACTIONS[ACTIONS,1]/action[busfactprov]" >
+<action>
+<name>boletas</name>
+<description>QT_TRANSLATE_NOOP(&quot;MetaData&quot;,&quot;Boletas&quot;)</description>
+<alias>QT_TRANSLATE_NOOP(&quot;MetaData&quot;,&quot;Boletas&quot;)</alias>
+<table>facturascli</table>
+<form>master_print</form>
+<formrecord>facturascli</formrecord>
+<scriptformrecord>facturascli</scriptformrecord>
+<scriptform>masterboletas</scriptform>
+</action>
+</xupdate:insert-after>
+</xupdate:modifications>

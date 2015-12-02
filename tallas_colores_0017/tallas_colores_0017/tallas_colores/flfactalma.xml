@@ -1,0 +1,52 @@
+<xupdate:modifications>
+<xupdate:insert-after select="/ACTIONS[ACTIONS,1]/action[tarifas]" >
+<action>
+<name>seriestallas</name>
+<description>QT_TRANSLATE_NOOP(&quot;MetaData&quot;,&quot;&quot;)</description>
+<alias>QT_TRANSLATE_NOOP(&quot;MetaData&quot;,&quot;Series de Tallas&quot;)</alias>
+<table>seriestallas</table>
+<form>master</form>
+<formrecord>seriestallas</formrecord>
+</action>
+</xupdate:insert-after>
+<xupdate:insert-after select="/ACTIONS[ACTIONS,1]/action[seriestallas]" >
+<action>
+<name>tallas</name>
+<description>QT_TRANSLATE_NOOP(&quot;MetaData&quot;,&quot;&quot;)</description>
+<alias>QT_TRANSLATE_NOOP(&quot;MetaData&quot;,&quot;Tallas&quot;)</alias>
+<table>tallas</table>
+<form>master</form>
+<formrecord>tallas</formrecord>
+</action>
+</xupdate:insert-after>
+<xupdate:insert-after select="/ACTIONS[ACTIONS,1]/action[tallas]" >
+<action>
+<name>colores</name>
+<description>QT_TRANSLATE_NOOP(&quot;MetaData&quot;,&quot;&quot;)</description>
+<alias>QT_TRANSLATE_NOOP(&quot;MetaData&quot;,&quot;Colores&quot;)</alias>
+<table>colores</table>
+<form>master</form>
+<formrecord>colores</formrecord>
+</action>
+</xupdate:insert-after>
+<xupdate:insert-after select="/ACTIONS[ACTIONS,1]/action[colores]" >
+<action>
+<name>articulostallas</name>
+<description>QT_TRANSLATE_NOOP(&quot;MetaData&quot;,&quot;&quot;)</description>
+<alias>QT_TRANSLATE_NOOP(&quot;MetaData&quot;,&quot;Artículos por talla&quot;)</alias>
+<table>articulostallas</table>
+<form>master</form>
+<formrecord>articulostallas</formrecord>
+</action>
+</xupdate:insert-after>
+<xupdate:insert-after select="/ACTIONS[ACTIONS,1]/action[articulostallas]" >
+<action>
+<name>articuloscolores</name>
+<description>QT_TRANSLATE_NOOP(&quot;MetaData&quot;,&quot;&quot;)</description>
+<alias>QT_TRANSLATE_NOOP(&quot;MetaData&quot;,&quot;Artículos por color&quot;)</alias>
+<table>articuloscolores</table>
+<form>master</form>
+<formrecord>articuloscolores</formrecord>
+</action>
+</xupdate:insert-after>
+</xupdate:modifications>

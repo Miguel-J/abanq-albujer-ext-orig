@@ -1,0 +1,10 @@
+<flpatch:modifications name="banesconfirming" >
+    <flpatch:patchXml path="facturacion/principal/forms/" name="empresa.ui" />
+    <flpatch:patchXml path="facturacion/principal/tables/" name="empresa.mtd" />
+    <flpatch:patchXml path="facturacion/tesoreria/" name="flfactteso.xml" />
+    <flpatch:patchXml path="facturacion/tesoreria/forms/" name="masterremesasprov.ui" />
+    <flpatch:addFile path="facturacion/tesoreria/forms/" name="vdiscobc.ui" />
+    <flpatch:patchScript path="facturacion/tesoreria/scripts/" name="masterremesasprov.qs" />
+    <flpatch:addFile path="facturacion/tesoreria/scripts/" name="vdiscobc.qs" />
+    <flpatch:patchScript path="facturacion/principal/scripts/" name="flfactppal.qs" />
+</flpatch:modifications>

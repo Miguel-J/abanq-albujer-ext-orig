@@ -1,0 +1,90 @@
+<xupdate:modifications>
+<xupdate:delete select="/TMD[TMD,1]/field[codcentro]/relation[calendariolab,codcentro]" />
+<xupdate:delete select="/TMD[TMD,1]/field[codcentro]/relation[fo_alumnos,codcentro]" />
+<xupdate:delete select="/TMD[TMD,1]/field[codcentro]/relation[fo_formadores,codcentro]" />
+<xupdate:insert-after select="/TMD[TMD,1]/field[codcentro]/relation[fo_gruposcurso,codcentro]" >
+<relation>
+<table>clientes</table>
+<field>codcentroesc</field>
+<card>1M</card>
+</relation>
+</xupdate:insert-after>
+<xupdate:insert-after select="/TMD[TMD,1]/field[codcentro]/relation[clientes,codcentroesc]" >
+<relation>
+<table>pedidoscli</table>
+<field>codcentroesc</field>
+<card>1M</card>
+</relation>
+</xupdate:insert-after>
+<xupdate:insert-after select="/TMD[TMD,1]/field[codcentro]/relation[pedidoscli,codcentroesc]" >
+<relation>
+<table>albaranescli</table>
+<field>codcentroesc</field>
+<card>1M</card>
+</relation>
+</xupdate:insert-after>
+<xupdate:insert-after select="/TMD[TMD,1]/field[codcentro]/relation[albaranescli,codcentroesc]" >
+<relation>
+<table>facturascli</table>
+<field>codcentroesc</field>
+<card>1M</card>
+</relation>
+</xupdate:insert-after>
+<xupdate:insert-after select="/TMD[TMD,1]/field[codcentro]/relation[facturascli,codcentroesc]" >
+<relation>
+<table>reciboscli</table>
+<field>codcentroesc</field>
+<card>1M</card>
+</relation>
+</xupdate:insert-after>
+<xupdate:insert-after select="/TMD[TMD,1]/field[codcentro]/relation[reciboscli,codcentroesc]" >
+<relation>
+<table>tarifas</table>
+<field>codcentroesc</field>
+<card>1M</card>
+</relation>
+</xupdate:insert-after>
+<xupdate:insert-after select="/TMD[TMD,1]/field[codcentro]/relation[tarifas,codcentroesc]" >
+<relation>
+<table>contratos</table>
+<field>codcentroesc</field>
+<card>1M</card>
+</relation>
+</xupdate:insert-after>
+<xupdate:insert-after select="/TMD[TMD,1]/field[codcentro]/relation[contratos,codcentroesc]" >
+<relation>
+<table>usuarios</table>
+<field>codcentroesc</field>
+<card>1M</card>
+</relation>
+</xupdate:insert-after>
+<xupdate:insert-after select="/TMD[TMD,1]/field[codcentro]/relation[usuarios,codcentroesc]" >
+<relation>
+<table>tpv_comandas</table>
+<field>codcentroesc</field>
+<card>1M</card>
+</relation>
+</xupdate:insert-after>
+<xupdate:insert-after select="/TMD[TMD,1]/field[codcentro]/relation[tpv_comandas,codcentroesc]" >
+<relation>
+<table>calendariolab</table>
+<field>codcentroesc</field>
+<card>1M</card>
+</relation>
+</xupdate:insert-after>
+<xupdate:insert-after select="/TMD[TMD,1]/field[nombre]" >
+<field>
+<name>codtarifatpv</name>
+<alias>QT_TRANSLATE_NOOP(&quot;MetaData&quot;,&quot;Tarifa TPV&quot;)</alias>
+<null>true</null>
+<pk>false</pk>
+<type>string</type>
+<length>6</length>
+<relation>
+<table>tarifas</table>
+<field>codtarifa</field>
+<card>M1</card>
+</relation>
+</field>
+</xupdate:insert-after>
+</xupdate:modifications>

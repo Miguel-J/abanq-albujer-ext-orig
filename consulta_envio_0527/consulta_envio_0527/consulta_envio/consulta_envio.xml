@@ -1,0 +1,10 @@
+<flpatch:modifications name="consulta_envio" >
+    <flpatch:patchXml path="facturacion/facturacion/forms/" name="albaranescli.ui" />
+    <flpatch:patchXml path="facturacion/facturacion/tables/" name="albaranescli.mtd" />
+    <flpatch:patchXml path="facturacion/principal/tables/" name="agenciastrans.mtd" />
+    <flpatch:patchXml path="facturacion/principal/forms/" name="agenciastrans.ui" />
+    <flpatch:patchScript path="facturacion/facturacion/scripts/" name="masteralbaranescli.qs" />
+    <flpatch:patchXml path="facturacion/facturacion/forms/" name="masteralbaranescli.ui" />
+    <flpatch:patchScript path="facturacion/principal/scripts/" name="clientes.qs" />
+    <flpatch:patchXml path="facturacion/principal/forms/" name="clientes.ui" />
+</flpatch:modifications>

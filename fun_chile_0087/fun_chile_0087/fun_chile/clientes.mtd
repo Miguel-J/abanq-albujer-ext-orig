@@ -1,0 +1,27 @@
+<xupdate:modifications>
+<xupdate:insert-after select="/TMD[TMD,1]/field[cifnif]/length[length,1]" >
+<regexp>(\d{7,8})-([\dK])</regexp>
+</xupdate:insert-after>
+<xupdate:insert-after select="/TMD[TMD,1]/field[recargo]/type[type,1]" >
+<visible>false</visible>
+</xupdate:insert-after>
+<xupdate:insert-after select="/TMD[TMD,1]/field[recargo]/visible[visible,1]" >
+<visiblegrid>false</visiblegrid>
+</xupdate:insert-after>
+<xupdate:insert-after select="/TMD[TMD,1]/field[regimeniva]/default[default,1]" >
+<visible>false</visible>
+</xupdate:insert-after>
+<xupdate:insert-after select="/TMD[TMD,1]/field[regimeniva]/visible[visible,1]" >
+<visiblegrid>false</visiblegrid>
+</xupdate:insert-after>
+<xupdate:insert-after select="/TMD[TMD,1]/field[codedi]" >
+<field>
+<name>girocomercial</name>
+<alias>QT_TRANSLATE_NOOP(&quot;MetaData&quot;,&quot;Giro Comercial&quot;)</alias>
+<null>true</null>
+<pk>false</pk>
+<type>string</type>
+<length>35</length>
+</field>
+</xupdate:insert-after>
+</xupdate:modifications>

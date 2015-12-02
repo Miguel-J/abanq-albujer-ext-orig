@@ -1,0 +1,154 @@
+<xupdate:modifications>
+<xupdate:insert-after select="/TMD[TMD,1]/field[codtienda]/length[length,1]" >
+<relation>
+<table>sincrostockstienda</table>
+<field>codtienda</field>
+<card>1M</card>
+</relation>
+</xupdate:insert-after>
+<xupdate:insert-after select="/TMD[TMD,1]/field[codtienda]/relation[sincrostockstienda,codtienda]" >
+<relation>
+<table>sincrostockstienda</table>
+<field>codtienda</field>
+<card>1M</card>
+</relation>
+</xupdate:insert-after>
+<xupdate:insert-after select="/TMD[TMD,1]/field[codtienda]/relation[sincrostockstienda,codtienda]" >
+<relation>
+<table>tpv_sincrodevoltienda</table>
+<field>codtienda</field>
+<card>1M</card>
+</relation>
+</xupdate:insert-after>
+<xupdate:insert-after select="/TMD[TMD,1]/field[descripcion]" >
+<field>
+<name>servidor</name>
+<!--Servidor--><alias>QT_TRANSLATE_NOOP(&quot;MetaData&quot;,&quot;Servidor&quot;)</alias>
+<null>true</null>
+<pk>false</pk>
+<type>string</type>
+<length>50</length>
+</field>
+</xupdate:insert-after>
+<xupdate:insert-after select="/TMD[TMD,1]/field[servidor]" >
+<field>
+<name>puerto</name>
+<!--puerto--><alias>QT_TRANSLATE_NOOP(&quot;MetaData&quot;,&quot;Puerto&quot;)</alias>
+<null>true</null>
+<pk>false</pk>
+<type>string</type>
+<length>10</length>
+</field>
+</xupdate:insert-after>
+<xupdate:insert-after select="/TMD[TMD,1]/field[puerto]" >
+<field>
+<name>contrasena</name>
+<alias>QT_TRANSLATE_NOOP(&quot;MetaData&quot;,&quot;Contraseña&quot;)</alias>
+<null>true</null>
+<pk>false</pk>
+<type>string</type>
+<length>50</length>
+</field>
+</xupdate:insert-after>
+<xupdate:insert-after select="/TMD[TMD,1]/field[contrasena]" >
+<field>
+<name>nombrebd</name>
+<!--Nombre B.D.--><alias>QT_TRANSLATE_NOOP(&quot;MetaData&quot;,&quot;Nombre B.D.&quot;)</alias>
+<null>true</null>
+<pk>false</pk>
+<type>string</type>
+<length>20</length>
+</field>
+</xupdate:insert-after>
+<xupdate:insert-after select="/TMD[TMD,1]/field[nombrebd]" >
+<field>
+<name>usuario</name>
+<!--usuario central--><alias>QT_TRANSLATE_NOOP(&quot;MetaData&quot;,&quot;Usuario&quot;)</alias>
+<null>true</null>
+<pk>false</pk>
+<type>string</type>
+<length>20</length>
+</field>
+</xupdate:insert-after>
+<xupdate:insert-after select="/TMD[TMD,1]/field[usuario]" >
+<field>
+<name>driver</name>
+<!--tipo base de datos central --><alias>QT_TRANSLATE_NOOP(&quot;MetaData&quot;,&quot;Driver&quot;)</alias>
+<null>false</null>
+<pk>false</pk>
+<type>string</type>
+<length>20</length>
+<optionslist>PostgreSQL,MySQL</optionslist>
+<default>PostgreSQL</default>
+</field>
+</xupdate:insert-after>
+<xupdate:insert-after select="/TMD[TMD,1]/field[driver]" >
+<field>
+<name>sincronizando</name>
+<alias>QT_TRANSLATE_NOOP(&quot;MetaData&quot;,&quot;Sincronizando&quot;)</alias>
+<null>false</null>
+<pk>false</pk>
+<type>bool</type>
+<default>false</default>
+<visiblegrid>false</visiblegrid>
+</field>
+</xupdate:insert-after>
+<xupdate:insert-after select="/TMD[TMD,1]/field[sincronizando]" >
+<field>
+<name>fechasinc</name>
+<alias>QT_TRANSLATE_NOOP(&quot;MetaData&quot;,&quot;F.Sinc&quot;)</alias>
+<null>true</null>
+<pk>false</pk>
+<type>date</type>
+</field>
+</xupdate:insert-after>
+<xupdate:insert-after select="/TMD[TMD,1]/field[fechasinc]" >
+<field>
+<name>horasinc</name>
+<alias>QT_TRANSLATE_NOOP(&quot;MetaData&quot;,&quot;H.Sinc&quot;)</alias>
+<null>true</null>
+<pk>false</pk>
+<type>time</type>
+</field>
+</xupdate:insert-after>
+<xupdate:insert-after select="/TMD[TMD,1]/field[horasinc]" >
+<field>
+<name>fechasinccatalogo</name>
+<alias>QT_TRANSLATE_NOOP(&quot;MetaData&quot;,&quot;F.S.Catálogo&quot;)</alias>
+<null>true</null>
+<pk>false</pk>
+<type>date</type>
+</field>
+</xupdate:insert-after>
+<xupdate:insert-after select="/TMD[TMD,1]/field[fechasinccatalogo]" >
+<field>
+<name>fechaultmovstock</name>
+<alias>QT_TRANSLATE_NOOP(&quot;MetaData&quot;,&quot;Fecha Ult.Mov.&quot;)</alias>
+<null>true</null>
+<pk>false</pk>
+<type>date</type>
+<editable>false</editable>
+</field>
+</xupdate:insert-after>
+<xupdate:insert-after select="/TMD[TMD,1]/field[fechaultmovstock]" >
+<field>
+<name>horaultmovstock</name>
+<alias>QT_TRANSLATE_NOOP(&quot;MetaData&quot;,&quot;Hora Ult.Mov.&quot;)</alias>
+<null>true</null>
+<pk>false</pk>
+<type>time</type>
+<editable>false</editable>
+</field>
+</xupdate:insert-after>
+<xupdate:insert-after select="/TMD[TMD,1]/field[horaultmovstock]" >
+<field>
+<name>prefijocod</name>
+<!--Prefijo para código de tique y arqueo--><alias>QT_TRANSLATE_NOOP(&quot;MetaData&quot;,&quot;Prefijo para códigos de tique y arqueo&quot;)</alias>
+<null>true</null>
+<pk>false</pk>
+<type>string</type>
+<length>2</length>
+<unique>true</unique>
+</field>
+</xupdate:insert-after>
+</xupdate:modifications>

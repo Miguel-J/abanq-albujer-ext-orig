@@ -1,0 +1,183 @@
+<!DOCTYPE TMD>
+<TMD>
+
+	<name>tpv_tarjetaspuntos</name>
+	<alias>QT_TRANSLATE_NOOP("MetaData","Tarjetas de puntos")</alias>
+
+	<field>
+		<name>codtarjetapuntos</name>
+		<alias>QT_TRANSLATE_NOOP("MetaData","Código")</alias>
+		<null>false</null>
+		<pk>true</pk>
+		<type>string</type>
+		<length>15</length>
+
+		<relation>
+			<table>clientes</table>
+			<field>codtarjetapuntos</field>
+			<card>1M</card>
+		</relation>
+		
+		<relation>
+				<table>tpv_movpuntos</table>
+				<field>codtarjetapuntos</field>
+				<card>1M</card>
+		</relation>
+	</field>
+	
+	<field>
+			<name>saldopuntos</name>
+			<alias>QT_TRANSLATE_NOOP("MetaData","Puntos: ")</alias>
+			<null>true</null>
+			<pk>false</pk>
+			<type>uint</type>
+			<default>0</default>
+			<editable>false</editable>
+	</field>
+
+	<field>
+			<name>saldopuntossinc</name>
+			<alias>QT_TRANSLATE_NOOP("MetaData","Saldo sinc.")</alias>
+			<null>true</null>
+			<pk>false</pk>
+			<type>uint</type>
+			<default>0</default>
+			<editable>false</editable>
+	</field>
+	
+	<field>
+			<name>activa</name>
+			<alias>QT_TRANSLATE_NOOP("MetaData","Activa")</alias>
+			<null>false</null>
+			<pk>false</pk>
+			<type>bool</type>
+			<default>true</default>
+	</field>
+	
+	<field>
+        <name>idusuarioalta</name>
+        <alias>QT_TRANSLATE_NOOP("MetaData","U.Alta")</alias>
+        <null>true</null>
+        <pk>false</pk>
+        <type>string</type>
+        <length>50</length>
+        <editable>false</editable>
+    </field>
+    <field>
+        <name>fechaalta</name>
+        <alias>QT_TRANSLATE_NOOP("MetaData","F.Alta")</alias>
+        <null>true</null>
+        <pk>false</pk>
+        <type>date</type>
+        <editable>false</editable>
+    </field>
+    <field>
+        <name>idusuariomod</name>
+        <alias>QT_TRANSLATE_NOOP("MetaData","U.Mod.")</alias>
+        <null>true</null>
+        <pk>false</pk>
+        <type>string</type>
+        <length>50</length>
+        <editable>false</editable>
+    </field>
+    <field>
+        <name>fechamod</name>
+        <alias>QT_TRANSLATE_NOOP("MetaData","F.Mod.")</alias>
+        <null>true</null>
+        <pk>false</pk>
+        <type>date</type>
+        <editable>false</editable>
+    </field>
+    
+    <field>
+        <name>nombre</name>
+        <alias>QT_TRANSLATE_NOOP("MetaData","Nombre")</alias>
+        <null>false</null>
+        <pk>false</pk>
+        <type>string</type>
+        <length>100</length>
+    </field>
+    <field>
+        <name>cifnif</name>
+        <alias>QT_TRANSLATE_NOOP("MetaData","C.I.F./N.I.F")</alias>
+        <null>false</null>
+        <pk>false</pk>
+        <type>string</type>
+        <length>20</length>
+    </field>
+    
+	<field>
+		<name>direccion</name>
+		<alias>QT_TRANSLATE_NOOP("MetaData","Dirección")</alias>
+		<null>false</null>
+		<pk>false</pk>
+		<type>string</type>
+		<length>100</length>
+	</field>
+
+	<field>
+		<name>codpostal</name>
+		<alias>QT_TRANSLATE_NOOP("MetaData","Código postal")</alias>
+		<null>true</null>
+		<pk>false</pk>
+		<type>string</type>
+		<length>10</length>
+	</field>
+
+	<field>
+		<name>ciudad</name>
+		<alias>QT_TRANSLATE_NOOP("MetaData","Ciudad")</alias>
+		<null>true</null>
+		<pk>false</pk>
+		<type>string</type>
+		<length>100</length>
+	</field>
+
+	<field>
+		<name>idprovincia</name>
+		<alias>QT_TRANSLATE_NOOP("MetaData","")</alias>
+		<null>true</null>
+		<pk>false</pk>
+		<type>uint</type>
+		<visiblegrid>false</visiblegrid>
+		
+		<relation>
+			<table>provincias</table>
+			<field>idprovincia</field>
+			<card>M1</card>
+		</relation>
+	</field>
+	
+	<field>
+		<name>provincia</name>
+		<alias>QT_TRANSLATE_NOOP("MetaData","Provincia")</alias>
+		<null>true</null>
+		<pk>false</pk>
+		<type>string</type>
+		<length>100</length>
+	</field>
+
+	<field>
+		<name>codpais</name>
+		<alias>QT_TRANSLATE_NOOP("MetaData","Pais")</alias>
+		<null>true</null>
+		<pk>false</pk>
+		<type>string</type>
+		<length>20</length>
+
+		<relation>
+			<table>paises</table>
+			<field>codpais</field>
+			<card>M1</card>
+		</relation>
+	</field>
+	
+	<field>
+		<name>sincronizada</name>
+		<alias>QT_TRANSLATE_NOOP("MetaData","Sincro")</alias>
+		<null>false</null>
+		<pk>false</pk>
+		<type>bool</type>
+	</field>
+
+</TMD>

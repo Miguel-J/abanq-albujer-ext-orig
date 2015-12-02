@@ -1,0 +1,26 @@
+<xupdate:modifications>
+<xupdate:insert-after select="/UI[UI,1]/actions[actions,1]/action[co_datosfiscales]" >
+<action>
+<property name="name" >
+<cstring>co_modelo201</cstring>
+</property>
+<property name="text" >
+<string>Modelo 201</string>
+</property>
+<property name="menuText" >
+<string>Modelo 201</string>
+</property>
+</action>
+</xupdate:insert-after>
+<xupdate:insert-after select="/UI[UI,1]/connections[connections,1]/connection[co_datosfiscales,activated(),FLWidgetApplication,execDefaultScript()]" >
+<connection>
+<sender>co_modelo201</sender>
+<signal>activated()</signal>
+<receiver>FLWidgetApplication</receiver>
+<slot>openDefaultForm()</slot>
+</connection>
+</xupdate:insert-after>
+<xupdate:append-first select="/UI[UI,1]/menubar[menubar,1]/item[Modelos]" >
+<action name="co_modelo201" />
+</xupdate:insert-after>
+</xupdate:modifications>

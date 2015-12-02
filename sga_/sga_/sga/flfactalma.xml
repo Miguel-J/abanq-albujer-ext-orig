@@ -1,0 +1,266 @@
+<xupdate:modifications>
+<xupdate:insert-after select="/ACTIONS[ACTIONS,1]/action[tarifas]" >
+<action>
+<name>zonas</name>
+<description>QT_TRANSLATE_NOOP(&quot;MetaData&quot;,&quot;Zonas del almacén&quot;)</description>
+<alias>QT_TRANSLATE_NOOP(&quot;MetaData&quot;,&quot;Zonas&quot;)</alias>
+<table>zonas</table>
+<form>master</form>
+<formrecord>zonas</formrecord>
+</action>
+</xupdate:insert-after>
+<xupdate:insert-after select="/ACTIONS[ACTIONS,1]/action[zonas]" >
+<action>
+<name>estanterias</name>
+<description>QT_TRANSLATE_NOOP(&quot;MetaData&quot;,&quot;Estanterias físicas del almacén&quot;)</description>
+<alias>QT_TRANSLATE_NOOP(&quot;MetaData&quot;,&quot;Estanterias&quot;)</alias>
+<table>estanterias</table>
+<form>master</form>
+<formrecord>estanterias</formrecord>
+</action>
+</xupdate:insert-after>
+<xupdate:insert-after select="/ACTIONS[ACTIONS,1]/action[estanterias]" >
+<action>
+<name>ubicaciones</name>
+<description>QT_TRANSLATE_NOOP(&quot;MetaData&quot;,&quot;Lugar físico donde se almacena mercancía&quot;)</description>
+<alias>QT_TRANSLATE_NOOP(&quot;MetaData&quot;,&quot;Ubicaciones&quot;)</alias>
+<table>ubicaciones</table>
+<form>master</form>
+<formrecord>ubicaciones</formrecord>
+<scriptformrecord>ubicaciones</scriptformrecord>
+</action>
+</xupdate:insert-after>
+<xupdate:insert-after select="/ACTIONS[ACTIONS,1]/action[ubicaciones]" >
+<action>
+<name>movimat</name>
+<description>QT_TRANSLATE_NOOP(&quot;MetaData&quot;,&quot;Entrada/Salida de material en una ubicación&quot;)</description>
+<alias>QT_TRANSLATE_NOOP(&quot;MetaData&quot;,&quot;Movimientos&quot;)</alias>
+<table>movimat</table>
+<form>mastermovimat</form>
+<scriptform>mastermovimat</scriptform>
+<formrecord>movimat</formrecord>
+</action>
+</xupdate:insert-after>
+<xupdate:insert-after select="/ACTIONS[ACTIONS,1]/action[movimat]" >
+<action>
+<name>envases</name>
+<description>QT_TRANSLATE_NOOP(&quot;MetaData&quot;,&quot;Envases&quot;)</description>
+<alias>QT_TRANSLATE_NOOP(&quot;MetaData&quot;,&quot;Envases&quot;)</alias>
+<table>envases</table>
+<form>master</form>
+<formrecord>envases</formrecord>
+<scriptformrecord>envases</scriptformrecord>
+</action>
+</xupdate:insert-after>
+<xupdate:insert-after select="/ACTIONS[ACTIONS,1]/action[envases]" >
+<action>
+<name>tiposenvases</name>
+<description>QT_TRANSLATE_NOOP(&quot;MetaData&quot;,&quot;Tipos de envases&quot;)</description>
+<alias>QT_TRANSLATE_NOOP(&quot;MetaData&quot;,&quot;Tipos de envases&quot;)</alias>
+<table>tiposenvases</table>
+<form>master</form>
+<formrecord>tiposenvases</formrecord>
+</action>
+</xupdate:insert-after>
+<xupdate:insert-after select="/ACTIONS[ACTIONS,1]/action[tiposenvases]" >
+<action>
+<name>menumat</name>
+<description>QT_TRANSLATE_NOOP(&quot;MetaData&quot;,&quot;Menú&quot;)</description>
+<alias>QT_TRANSLATE_NOOP(&quot;MetaData&quot;,&quot;Menú&quot;)</alias>
+<table>movimat</table>
+<form>menumat</form>
+<scriptform>menumat</scriptform>
+</action>
+</xupdate:insert-after>
+<xupdate:insert-after select="/ACTIONS[ACTIONS,1]/action[menumat]" >
+<action>
+<name>entradasmatpda</name>
+<description>QT_TRANSLATE_NOOP(&quot;MetaData&quot;,&quot;Entradas de material en el almacén &quot;)</description>
+<alias>QT_TRANSLATE_NOOP(&quot;MetaData&quot;,&quot;Entradas de material&quot;)</alias>
+<table>movimat</table>
+<formrecord>entradasmatpda</formrecord>
+<scriptformrecord>entradasmatpda</scriptformrecord>
+</action>
+</xupdate:insert-after>
+<xupdate:insert-after select="/ACTIONS[ACTIONS,1]/action[entradasmatpda]" >
+<action>
+<name>asignarubicacion</name>
+<description>QT_TRANSLATE_NOOP(&quot;MetaData&quot;,&quot;Asigna ubicación a un entrada de material &quot;)</description>
+<alias>QT_TRANSLATE_NOOP(&quot;MetaData&quot;,&quot;Asignar Ubicación&quot;)</alias>
+<table>ubicaciones</table>
+<form>asignarubicacion</form>
+<scriptform>asignarubicacion</scriptform>
+</action>
+</xupdate:insert-after>
+<xupdate:insert-after select="/ACTIONS[ACTIONS,1]/action[asignarubicacion]" >
+<action>
+<name>salidasmatpda</name>
+<description>QT_TRANSLATE_NOOP(&quot;MetaData&quot;,&quot;Salidas de material en el almacén &quot;)</description>
+<alias>QT_TRANSLATE_NOOP(&quot;MetaData&quot;,&quot;Salidas de material&quot;)</alias>
+<table>movimat</table>
+<formrecord>salidasmatpda</formrecord>
+<scriptformrecord>salidasmatpda</scriptformrecord>
+</action>
+</xupdate:insert-after>
+<xupdate:insert-after select="/ACTIONS[ACTIONS,1]/action[salidasmatpda]" >
+<action>
+<name>transferenciasmatpda</name>
+<description>QT_TRANSLATE_NOOP(&quot;MetaData&quot;,&quot;Trasnferencias de material de una ubicación a otra&quot;)</description>
+<alias>QT_TRANSLATE_NOOP(&quot;MetaData&quot;,&quot;Transferencias de material&quot;)</alias>
+<table>movimat</table>
+<formrecord>transferenciasmatpda</formrecord>
+<scriptformrecord>transferenciasmatpda</scriptformrecord>
+</action>
+</xupdate:insert-after>
+<xupdate:insert-after select="/ACTIONS[ACTIONS,1]/action[transferenciasmatpda]" >
+<action>
+<name>regularizacionesmatpda</name>
+<description>QT_TRANSLATE_NOOP(&quot;MetaData&quot;,&quot;Regularizaciones de material&quot;)</description>
+<alias>QT_TRANSLATE_NOOP(&quot;MetaData&quot;,&quot;Regularizaciones de material&quot;)</alias>
+<table>movimat</table>
+<form>regularizacionesmatpda</form>
+<formrecord>regularizacionesmatpda</formrecord>
+<scriptform>regularizacionesmatpda</scriptform>
+<scriptformrecord>regularizacionesmatpda</scriptformrecord>
+</action>
+</xupdate:insert-after>
+<xupdate:insert-after select="/ACTIONS[ACTIONS,1]/action[regularizacionesmatpda]" >
+<action>
+<name>i_etiquetasubic</name>
+<alias>QT_TRANSLATE_NOOP(&quot;MetaData&quot;,&quot;Etiquetas asociadas a las ubicaciones&quot;)</alias>
+<description>QT_TRANSLATE_NOOP(&quot;MetaData&quot;,&quot;Ofrece las etiquetas correspondientes a las ubicaciones seleccionadas&quot;)</description>
+<table>i_etiquetasubic</table>
+<form>master_print</form>
+<formrecord>i_etiquetasubic</formrecord>
+<scriptform>i_masteretiquetasubic</scriptform>
+</action>
+</xupdate:insert-after>
+<xupdate:insert-after select="/ACTIONS[ACTIONS,1]/action[i_etiquetasubic]" >
+<action>
+<name>pedidospicking</name>
+<description>QT_TRANSLATE_NOOP(&quot;MetaData&quot;,&quot;Pedidos de cantidades pequeñas &quot;)</description>
+<alias>QT_TRANSLATE_NOOP(&quot;MetaData&quot;,&quot;Pedidos Picking&quot;)</alias>
+<table>pedidospicking</table>
+<form>masterpedidospicking</form>
+<formrecord>pedidospicking</formrecord>
+<scriptform>masterpedidospicking</scriptform>
+<scriptformrecord>pedidospicking</scriptformrecord>
+</action>
+</xupdate:insert-after>
+<xupdate:insert-after select="/ACTIONS[ACTIONS,1]/action[pedidospicking]" >
+<action>
+<name>lineaspedidospicking</name>
+<description>QT_TRANSLATE_NOOP(&quot;MetaData&quot;,&quot; Lineas de pedidos de cantidades pequeñas &quot;)</description>
+<alias>QT_TRANSLATE_NOOP(&quot;MetaData&quot;,&quot;Lineas de pedidos picking&quot;)</alias>
+<table>lineaspedidospicking</table>
+<form>masterlineaspedidospicking</form>
+<formrecord>lineaspedidospicking</formrecord>
+<scriptform>masterlineaspedidospicking</scriptform>
+</action>
+</xupdate:insert-after>
+<xupdate:insert-after select="/ACTIONS[ACTIONS,1]/action[lineaspedidospicking]" >
+<action>
+<name>numerocesta</name>
+<alias>QT_TRANSLATE_NOOP(&quot;MetaData&quot;,&quot;Formulario para pedir al usuario el número de la cesta correspondiente&quot;)</alias>
+<description>QT_TRANSLATE_NOOP(&quot;MetaData&quot;,&quot;Este formulario muestra el número de la cesta que corresponde a cada linea de pedido picking&quot;)</description>
+<table>numerocesta</table>
+<form>numerocesta</form>
+<scriptform>numerocesta</scriptform>
+</action>
+</xupdate:insert-after>
+<xupdate:insert-after select="/ACTIONS[ACTIONS,1]/action[numerocesta]" >
+<action>
+<name>transmat</name>
+<table>transmat</table>
+<form>transmat</form>
+<scriptform>transmat</scriptform>
+</action>
+</xupdate:insert-after>
+<xupdate:insert-after select="/ACTIONS[ACTIONS,1]/action[transmat]" >
+<action>
+<name>reposicion</name>
+<description>QT_TRANSLATE_NOOP(&quot;MetaData&quot;,&quot;Reposición de ubicaciones con cantidad menor al limite de reposición&quot;)</description>
+<alias>QT_TRANSLATE_NOOP(&quot;MetaData&quot;,&quot;Reposición&quot;)</alias>
+<table>reposicion</table>
+<form>masterreposicion</form>
+<formrecord>reposicion</formrecord>
+<scriptform>masterreposicion</scriptform>
+</action>
+</xupdate:insert-after>
+<xupdate:insert-after select="/ACTIONS[ACTIONS,1]/action[reposicion]" >
+<action>
+<name>lineasreposicion</name>
+<description>QT_TRANSLATE_NOOP(&quot;MetaData&quot;,&quot;Lineas de la reposición&quot;)</description>
+<alias>QT_TRANSLATE_NOOP(&quot;MetaData&quot;,&quot;Lineas de reposición&quot;)</alias>
+<table>lineasreposicion</table>
+<form>masterlineasreposicion</form>
+<formrecord>lineasreposicion</formrecord>
+<scriptform>masterlineasreposicion</scriptform>
+</action>
+</xupdate:insert-after>
+<xupdate:insert-after select="/ACTIONS[ACTIONS,1]/action[lineasreposicion]" >
+<action>
+<name>entrada</name>
+<table>entrada</table>
+<form>entrada</form>
+<scriptform>entrada</scriptform>
+</action>
+</xupdate:insert-after>
+<xupdate:insert-after select="/ACTIONS[ACTIONS,1]/action[entrada]" >
+<action>
+<name>salida</name>
+<table>salida</table>
+<form>salida</form>
+<scriptform>salida</scriptform>
+</action>
+</xupdate:insert-after>
+<xupdate:insert-after select="/ACTIONS[ACTIONS,1]/action[salida]" >
+<action>
+<name>pedidosclialmacen</name>
+<description>QT_TRANSLATE_NOOP(&quot;MetaData&quot;,&quot;Pedidos cliente que están en almacen.&quot;)</description>
+<alias>QT_TRANSLATE_NOOP(&quot;MetaData&quot;,&quot;Pedidos de clientes en almacén&quot;)</alias>
+<table>pedidoscli</table>
+<form>masterpedidosclialmacen</form>
+<formrecord>pedidoscli</formrecord>
+<scriptform>masterpedidosclialmacen</scriptform>
+</action>
+</xupdate:insert-after>
+<xupdate:insert-after select="/ACTIONS[ACTIONS,1]/action[pedidosclialmacen]" >
+<action>
+<name>consolidacion</name>
+<description>QT_TRANSLATE_NOOP(&quot;MetaData&quot;,&quot;La consolidación de pedidos es el proceso por el cual se reunen los materiales recogidos en un pedido con objeto de completarlo y mandarlo a su destino.&quot;)</description>
+<alias>QT_TRANSLATE_NOOP(&quot;MetaData&quot;,&quot;Consolidación de pedidos&quot;)</alias>
+<table>lineaspedidospicking</table>
+<form>masterconsolidacion</form>
+<scriptform>masterconsolidacion</scriptform>
+</action>
+</xupdate:insert-after>
+<xupdate:insert-after select="/ACTIONS[ACTIONS,1]/action[consolidacion]" >
+<action>
+<name>consomat</name>
+<table>consomat</table>
+<form>consomat</form>
+<scriptform>consomat</scriptform>
+</action>
+</xupdate:insert-after>
+<xupdate:insert-after select="/ACTIONS[ACTIONS,1]/action[consomat]" >
+<action>
+<name>crearubicacion</name>
+<alias>QT_TRANSLATE_NOOP(&quot;MetaData&quot;,&quot;Ubicaciones&quot;)</alias>
+<description>QT_TRANSLATE_NOOP(&quot;MetaData&quot;,&quot;Sirve para crear manualmente una nueva ubicación&quot;)</description>
+<table>ubicacionesarticulo</table>
+<form>ubicacionesarticulo</form>
+<scriptform>crearubicacion</scriptform>
+</action>
+</xupdate:insert-after>
+<xupdate:insert-after select="/ACTIONS[ACTIONS,1]/action[crearubicacion]" >
+<action>
+<name>ubicacionesarticulo</name>
+<alias>QT_TRANSLATE_NOOP(&quot;MetaData&quot;,&quot;Ubicaciones por artículo&quot;)</alias>
+<description>QT_TRANSLATE_NOOP(&quot;MetaData&quot;,&quot;Ubicaciones que contienen articulos seleccionados por referencia&quot;)</description>
+<table>ubicacionesarticulo</table>
+<form>master</form>
+<formrecord>ubicacionesarticulo</formrecord>
+</action>
+</xupdate:insert-after>
+</xupdate:modifications>

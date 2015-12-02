@@ -1,0 +1,147 @@
+<?xml version = '1.0' encoding = 'UTF-8'?>
+<!DOCTYPE KugarTemplate SYSTEM "kugartemplate.dtd">
+<KugarTemplate>
+	
+	<!--Encabezado-->
+	<field>
+		<name>codigo</name>
+		<queryname>facturascli.codigo</queryname>
+		<type>string</type>
+	</field>
+	
+	<field>
+		<name>divisa</name>
+		<queryname>facturascli.coddivisa</queryname>
+		<type>string</type>
+	</field>
+	
+	<field>
+		<name>fecha</name>
+		<queryname>facturascli.fecha</queryname>
+		<type>date</type>
+	</field>
+	
+	
+	
+	<!--Cliente-->
+	<field>
+		<name>codcliente</name>
+		<queryname>facturascli.codcliente</queryname>
+		<type>string</type>
+	</field>
+	
+	<field>
+		<name>nombre</name>
+		<queryname>facturascli.nombre</queryname>
+		<type>string</type>
+	</field>
+	
+	<field>
+		<name>direccion</name>
+		<queryname>facturascli.referencia</queryname>
+		<type>string</type>
+	</field>
+	
+	<field>
+		<name>ciudad</name>
+		<queryname>facturascli.ciudad</queryname>
+		<type>string</type>
+	</field>
+	
+	<field>
+		<name>provincia</name>
+		<queryname>facturascli.provincia</queryname>
+		<type>string</type>
+	</field>
+	
+	<field>
+		<name>codpostal</name>
+		<queryname>facturascli.codpostal</queryname>
+		<type>string</type>
+	</field>
+	
+	
+	
+	<!--Lineas-->	
+	<field>
+		<name>albaran</name>
+		<queryname>albaranescli.codigo</queryname>
+		<type>string</type>
+		<blankzero>true</blankzero>
+	</field>
+	
+	<field>
+		<name>referencia</name>
+		<queryname>lineasfacturascli.referencia</queryname>
+		<type>string</type>
+	</field>
+	
+	<field>
+		<name>descripcion</name>
+		<queryname>lineasfacturascli.descripcion</queryname>
+		<type>string</type>
+	</field>
+	
+	<field>
+		<name>pvpunitario</name>
+		<queryname>lineasfacturascli.pvpunitario</queryname>
+		<type>number</type>
+		<partD>2</partD>
+	</field>
+
+	<field>
+		<name>cantidad</name>
+		<queryname>lineasfacturascli.cantidad</queryname>
+		<type>number</type>
+		<partD>0</partD>
+	</field>
+	
+	<field>
+		<name>pvptotal</name>
+		<queryname>lineasfacturascli.pvptotal</queryname>
+		<type>number</type>
+		<partD>2</partD>
+		<calculation>sum</calculation>
+	</field>
+	
+	<field>
+		<name>pvptotalalbaran</name>
+		<queryname>lineasfacturascli.pvptotal</queryname>
+		<type>number</type>
+		<partD>2</partD>
+		<calculation>sum</calculation>
+		<blankzero>true</blankzero>
+	</field>
+	
+	
+	
+	<!--Pie-->
+	
+	<field>
+		<name>neto</name>
+		<queryname>facturascli.neto</queryname>
+		<type>number</type>
+		<partD>2</partD>
+	</field>
+	
+	<field>
+		<name>totaliva</name>
+		<queryname>facturascli.totaliva</queryname>
+		<type>number</type>
+		<partD>2</partD>
+	</field>
+	
+	<field>
+		<name>total</name>
+		<queryname>facturascli.total</queryname>
+		<type>number</type>
+		<partD>2</partD>
+	</field>
+	
+	<field>
+		<name>observaciones</name>
+		<queryname>facturascli.observaciones</queryname>
+		<type>string</type>
+	</field>
+	
+</KugarTemplate>

@@ -1,0 +1,41 @@
+<xupdate:modifications>
+<xupdate:delete select="/UI[UI,1]/actions[actions,1]/action[wg_widget]" />
+<xupdate:append-first select="/UI[UI,1]/images[images,1]" >
+<image name="produccionimage663" >
+<data format="PNG" length="1044" >89504e470d0a1a0a0000000d4948445200000016000000160806000000c4b46c3b000003db49444154789c9dd46d4c93571407f0ffd3174a19a55d49a4f445055d4c60a51d191933ccd10d664696b904315b36951010976dc8faa2365984c437a2b86503362531a568624c083611b005a2a87c98034d10191a1da06456d61760a5cb789efb3c771fa61931535bcea7fbe1e49773ce3df732883f18bbdd662e2e2eae494a4acae7053e2112f9f35e28143ceb72b94f5f1eb8c22ec3045357b7afc2ffc8cff23ca1f3f3f374726a925ebf314c3bcf750836c7d74d002471abef1459d65cf0f6fc150806e8e2df8b7421ba401b1a0ef37979afdf954aa5df0178038018f1ea8a97923729950a39cff3e0080b8661d0e3f59e1a1a1a76020800204f724571b862d5cbaa372726a6402905c771203c0fad46330ee0d152345e589e959595373efe2b08e1400801e108b66edb5ab46af52ae9d244abbd56298e557d6b43c1ab2525258e6030c4c813e5d06ab5e07982c42479a652a9589f6dcc1aa8a9a95953bdb3fac0ececdcc1582b660a0b0b3fd06ab58c4ea743e7390f0e1f69042104893219f47ac3bb8932f9ed75afac1bd6a66b2bae5eb93a1b2b2c331a8da5f77e9b44a7a70be6dc5c7479bdb8393a0a50c06030203939592e9549999faf5d23bdbd7d67628199fafaba32b3c99c63cccec6ef7e3fc4221132333270b6a303822040a552816118dcb97d873af7387d82209c79d1ba312d2dcd9fe4e7e79f98999981d168c4fb1b8bd1e3f562b55e07b3290709b2040402330887c2dca7f59f75b32ceb0430c33c4bcc3119c536abf51bb13461df2977bb686e7e0e478f1c855eafc383e90742eb89d6a8ffa13f4481e9c1c1c11142c810001f803f00d0ffadb87a679562c3db85ae5ba3b74a7d3e1f52d5a93018564293ae115a5a7efca5a9a9e93ccbb2d7014c0208025800c001a0cfecdd66b7ae75b7bb46367df42135ac345093d9442d160bede9e91676d5eeea009089c7cff6b9335c7a76ecb66dccc8cc38ed6e6b4f9d9aba0f89548214450acacbb74310e865e75e6705808917a1c07f7f85d46aabb5a953d5fb8f1f6f95040321884422f08487e93513d46af5ddaaca1d8ec7adc714128d264df6e5579f37af48d3548e8d8d2145a100bbc8221a8d42afd7e3bda2e290dde6d80de0069e37c3a742647358f7105ed8d2e672ef0d87c39bb77c5c36ad52a9a0d3e9505ebe6df158e3b707c3e1f005007cac2800c0e53e395a50b0be0f800a00d378ace18b1dd555f487e6ef798ba5b01980322ef049c5b2045944939e9e06200d807891e356e4e69ae9c5fe7ecfa54b038700cc2f07964422919fcaca4a5d0683fe242362eea72814a5fdfd17bb3d9ef376000f978302ffae9be8c0a1fddb398ead8c46a3cccd91d1ae5e5f5f1b003fe2b8aca7e31f0d858c2fb71c099c0000000049454e44ae426082</data>
+</image>
+</xupdate:append-first>
+<xupdate:insert-after select="/UI[UI,1]/actions[actions,1]/action[Action]" >
+<action>
+<property name="name" >
+<cstring>prodppal_general</cstring>
+</property>
+<property name="iconSet" >
+<iconset>produccionimage663</iconset>
+</property>
+<property name="text" >
+<string>Configuración</string>
+</property>
+<property name="menuText" >
+<string>Configuración</string>
+</property>
+</action>
+</xupdate:insert-after>
+<xupdate:delete select="/UI[UI,1]/connections[connections,1]/connection[wg_widget,activated(),FLWidgetApplication,execDefaultScript()]" />
+<xupdate:insert-after select="/UI[UI,1]/connections[connections,1]/connection[pr_horarios,activated(),FLWidgetApplication,openDefaultForm()]" >
+<connection>
+<sender>prodppal_general</sender>
+<signal>activated()</signal>
+<receiver>FLWidgetApplication</receiver>
+<slot>execDefaultScript()</slot>
+</connection>
+</xupdate:insert-after>
+<xupdate:append-first select="/UI[UI,1]/menubar[menubar,1]/item[General]" >
+<action name="prodppal_general" />
+</xupdate:append-first>
+<xupdate:delete select="/UI[UI,1]/menubar[menubar,1]/item[Principal]" />
+<xupdate:update select="/UI[UI,1]/toolbars[toolbars,1]/toolbar[toolBar]/property[geometry]/rect[rect,1]/width[width,1]/text()[1]" >282</xupdate:update>
+<xupdate:insert-after select="/UI[UI,1]/toolbars[toolbars,1]/toolbar[toolBar]/separator[separator,1]" >
+<action name="prodppal_general" />
+</xupdate:insert-after>
+</xupdate:modifications>

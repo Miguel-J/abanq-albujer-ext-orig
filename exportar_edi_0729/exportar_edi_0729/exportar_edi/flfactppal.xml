@@ -1,0 +1,43 @@
+<xupdate:modifications>
+<xupdate:insert-after select="/ACTIONS[ACTIONS,1]/action[wg_widget]" >
+<action>
+<name>edi_esquemas</name>
+<alias>QT_TRANSLATE_NOOP(&quot;MetaData&quot;,&quot;Esquemas de exportación EDI&quot;)</alias>
+<description>QT_TRANSLATE_NOOP(&quot;MetaData&quot;,&quot;Esquemas de exportación EDI&quot;)</description>
+<table>edi_esquemas</table>
+<form>edi_masteresquemas</form>
+<formrecord>edi_esquemas</formrecord>
+<scriptformrecord>edi_esquemas</scriptformrecord>
+<scriptform>edi_masteresquemas</scriptform>
+</action>
+</xupdate:insert-after>
+<xupdate:insert-after select="/ACTIONS[ACTIONS,1]/action[edi_esquemas]" >
+<action>
+<name>edi_funciones</name>
+<alias>QT_TRANSLATE_NOOP(&quot;MetaData&quot;,&quot;Funciones EDI&quot;)</alias>
+<description>QT_TRANSLATE_NOOP(&quot;MetaData&quot;,&quot;Funciones EDI&quot;)</description>
+<table>edi_funciones</table>
+<form>master</form>
+<formrecord>edi_funciones</formrecord>
+</action>
+</xupdate:insert-after>
+<xupdate:insert-after select="/ACTIONS[ACTIONS,1]/action[edi_funciones]" >
+<action>
+<name>edi_campos</name>
+<alias>QT_TRANSLATE_NOOP(&quot;MetaData&quot;,&quot;Campos EDI&quot;)</alias>
+<description>QT_TRANSLATE_NOOP(&quot;MetaData&quot;,&quot;Campos EDI&quot;)</description>
+<table>edi_campos</table>
+<form>master</form>
+<formrecord>edi_campos</formrecord>
+<scriptformrecord>edi_campos</scriptformrecord>
+</action>
+</xupdate:insert-after>
+<xupdate:insert-after select="/ACTIONS[ACTIONS,1]/action[edi_campos]" >
+<action>
+<name>edi_settings</name>
+<alias>QT_TRANSLATE_NOOP(&quot;MetaData&quot;,&quot;Preferencias Globales EDI&quot;)</alias>
+<description>QT_TRANSLATE_NOOP(&quot;MetaData&quot;,&quot;Preferencias Globales EDI&quot;)</description>
+<table>edi_settings</table>
+</action>
+</xupdate:insert-after>
+</xupdate:modifications>

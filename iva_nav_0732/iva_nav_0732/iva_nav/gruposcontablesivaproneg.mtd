@@ -1,0 +1,231 @@
+<!DOCTYPE TMD>
+<TMD>
+	<name>gruposcontablesivaproneg</name>
+	<alias>QT_TRANSLATE_NOOP("MetaData","Grupos contables de IVA")</alias>
+
+	<field>
+		<name>id</name>
+		<alias>QT_TRANSLATE_NOOP("MetaData","Id")</alias>
+		<null>false</null>
+		<pk>true</pk>
+		<type>serial</type>
+		<visiblegrid>false</visiblegrid>
+	</field>
+	
+	<field>
+		<name>codimpuesto</name>
+		<alias>QT_TRANSLATE_NOOP("MetaData","G.Producto")</alias>
+		<null>true</null>
+		<pk>false</pk>
+		<ck>true</ck>
+		<type>string</type>
+		<length>10</length>
+		
+		<relation>
+			<table>impuestos</table>
+			<field>codimpuesto</field>
+			<card>M1</card>
+		</relation>
+	</field>
+	
+	<field>
+		<name>codgrupoivaneg</name>
+		<alias>QT_TRANSLATE_NOOP("MetaData","G.Negocio")</alias>
+		<null>true</null>
+		<pk>false</pk>
+		<ck>true</ck>
+		<type>string</type>
+		<length>10</length>
+		
+		<relation>
+			<table>gruposcontablesivaneg</table>
+			<field>codgrupoivaneg</field>
+			<card>M1</card>
+		</relation>
+	</field>
+	
+	<field>
+		<name>tipocalculo</name>
+		<alias>QT_TRANSLATE_NOOP("MetaData","Tipo cálculo")</alias>
+		<null>false</null>
+		<pk>false</pk>
+		<type>string</type>
+		<length>15</length>
+		<optionslist>Normal,No sujeto,Reversión</optionslist>
+		<default>Normal</default>
+	</field>
+	
+	<field>
+		<name>codsubcuentarep</name>
+		<alias>QT_TRANSLATE_NOOP("MetaData","S.IVA Repercutido")</alias>
+		<null>true</null>
+		<pk>false</pk>
+		<type>string</type>
+		<length>15</length>
+	</field>
+	
+	<field>
+		<name>idsubcuentarep</name>
+		<alias>QT_TRANSLATE_NOOP("MetaData","ID")</alias>
+		<null>true</null>
+		<pk>false</pk>
+		<type>uint</type>
+		<visiblegrid>false</visiblegrid>
+		<relation>
+			<table>co_subcuentas</table>
+			<field>idsubcuenta</field>
+			<card>M1</card>
+			<checkIn>false</checkIn>
+		</relation>
+	</field>
+	
+	<field>
+		<name>codsubcuentarec</name>
+		<alias>QT_TRANSLATE_NOOP("MetaData","S.Recargo Eq.")</alias>
+		<null>true</null>
+		<pk>false</pk>
+		<type>string</type>
+		<length>15</length>
+	</field>
+	
+	<field>
+		<name>idsubcuentarec</name>
+		<alias>QT_TRANSLATE_NOOP("MetaData","ID")</alias>
+		<null>true</null>
+		<pk>false</pk>
+		<type>uint</type>
+		<visiblegrid>false</visiblegrid>
+		<relation>
+			<table>co_subcuentas</table>
+			<field>idsubcuenta</field>
+			<card>M1</card>
+			<checkIn>false</checkIn>
+		</relation>
+	</field>
+	
+	<field>
+		<name>codsubcuentasop</name>
+		<alias>QT_TRANSLATE_NOOP("MetaData","S.IVA Soportado")</alias>
+		<null>true</null>
+		<pk>false</pk>
+		<type>string</type>
+		<length>15</length>
+	</field>
+	
+	<field>
+		<name>idsubcuentasop</name>
+		<alias>QT_TRANSLATE_NOOP("MetaData","ID")</alias>
+		<null>true</null>
+		<pk>false</pk>
+		<type>uint</type>
+		<visiblegrid>false</visiblegrid>
+		<relation>
+			<table>co_subcuentas</table>
+			<field>idsubcuenta</field>
+			<card>M1</card>
+			<checkIn>false</checkIn>
+		</relation>
+	</field>
+	
+	<field>
+		<name>codsubcuentarev</name>
+		<alias>QT_TRANSLATE_NOOP("MetaData","S.IVA Reversión")</alias>
+		<null>true</null>
+		<pk>false</pk>
+		<type>string</type>
+		<length>15</length>
+	</field>
+	
+	<field>
+		<name>idsubcuentarev</name>
+		<alias>QT_TRANSLATE_NOOP("MetaData","ID")</alias>
+		<null>true</null>
+		<pk>false</pk>
+		<type>uint</type>
+		<visiblegrid>false</visiblegrid>
+		<relation>
+			<table>co_subcuentas</table>
+			<field>idsubcuenta</field>
+			<card>M1</card>
+			<checkIn>false</checkIn>
+		</relation>
+	</field>
+	
+	<field>
+		<name>casilla303rep</name>
+			<alias>QT_TRANSLATE_NOOP("MetaData","C.303 IVA Repercutido")</alias>
+			<null>true</null>
+			<pk>false</pk>
+			<type>string</type>
+			<length>10</length>
+			<relation>
+					<table>co_casillas303</table>
+					<field>casilla303</field>
+					<card>M1</card>
+			</relation>
+	</field>
+	
+	<field>
+		<name>casilla303rec</name>
+			<alias>QT_TRANSLATE_NOOP("MetaData","C.303 Recargo Eq.")</alias>
+			<null>true</null>
+			<pk>false</pk>
+			<type>string</type>
+			<length>10</length>
+			<relation>
+					<table>co_casillas303</table>
+					<field>casilla303</field>
+					<card>M1</card>
+			</relation>
+	</field>
+	
+	<field>
+		<name>casilla303sop</name>
+			<alias>QT_TRANSLATE_NOOP("MetaData","C.303 IVA Soportado")</alias>
+			<null>true</null>
+			<pk>false</pk>
+			<type>string</type>
+			<length>10</length>
+			<relation>
+					<table>co_casillas303</table>
+					<field>casilla303</field>
+					<card>M1</card>
+			</relation>
+	</field>
+	
+	<field>
+		<name>casilla303rev</name>
+			<alias>QT_TRANSLATE_NOOP("MetaData","C.303 IVA Reversión")</alias>
+			<null>true</null>
+			<pk>false</pk>
+			<type>string</type>
+			<length>10</length>
+			<relation>
+					<table>co_casillas303</table>
+					<field>casilla303</field>
+					<card>M1</card>
+			</relation>
+	</field>
+	
+	<field>
+		<name>iva</name>
+		<alias>QT_TRANSLATE_NOOP("MetaData","% I.V.A.")</alias>
+		<null>true</null>
+		<pk>false</pk>
+		<type>double</type>
+		<partI>2</partI>
+		<partD>2</partD>
+		<default>0</default>
+	</field>
+	
+	<field>
+		<name>recargo</name>
+		<alias>QT_TRANSLATE_NOOP("MetaData","% Recargo Eq.")</alias>
+		<null>true</null>
+		<pk>false</pk>
+		<type>double</type>
+		<partI>2</partI>
+		<partD>2</partD>
+		<default>0</default>
+	</field>
+</TMD>

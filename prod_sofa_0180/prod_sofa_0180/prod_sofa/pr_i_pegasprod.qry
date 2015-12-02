@@ -1,0 +1,30 @@
+<!DOCTYPE QRY>
+<QRY>
+	<name>pr_i_pegasprod</name>
+
+	<tables>pr_ordenesproduccion,lotesstock</tables>
+
+	<select>
+		pr_ordenesproduccion.codorden, pr_ordenesproduccion.codordencorte, pr_ordenesproduccion.codruta, lotesstock.codlote,lineaspedidoscli.descripcion,pedidoscli.observaciones
+	</select>
+
+	<from>
+		pr_ordenesproduccion
+		INNER JOIN pr_procesos ON pr_ordenesproduccion.codorden = pr_procesos.codordenproduccion AND pr_ordenesproduccion.tipoorden = 'P'
+		INNER JOIN lotesstock ON lotesstock.codlote = pr_procesos.idobjeto 
+		INNER JOIN articulos ON lotesstock.referencia = articulos.referencia 
+		LEFT OUTER JOIN pr_tareas ON pr_procesos.idproceso = pr_tareas.idproceso AND pr_tareas.idtipotarea = 'MONTAJE'
+		LEFT OUTER JOIN pr_centroscoste ON pr_tareas.codcentro = pr_centroscoste.codcentro 
+		INNER JOIN lineaspedidoscli ON pr_procesos.idlineapedidocli = lineaspedidoscli.idlinea 
+		INNER JOIN pedidoscli ON lineaspedidoscli.idpedido = pedidoscli.idpedido
+		<!--pr_ordenesproduccion 
+		LEFT OUTER JOIN lotesstock ON pr_ordenesproduccion.codorden = lotesstock.codordenproduccion AND pr_ordenesproduccion.tipoorden = 'P' INNER JOIN articulos ON lotesstock.referencia = articulos.referencia INNER JOIN pr_procesos ON lotesstock.codlote = pr_procesos.idobjeto LEFT OUTER JOIN pr_tareas ON pr_procesos.idproceso = pr_tareas.idproceso AND pr_tareas.idtipotarea = 'MONTAJE' LEFT OUTER JOIN pr_centroscoste ON pr_tareas.codcentro = pr_centroscoste.codcentro INNER JOIN movistock ON lotesstock.codlote = movistock.codlote AND idlineapc IS NOT NULL INNER JOIN lineaspedidoscli ON movistock.idlineapc = lineaspedidoscli.idlinea INNER JOIN pedidoscli ON lineaspedidoscli.idpedido = pedidoscli.idpedido-->
+	</from>
+
+	<where>
+	</where>
+	
+	<order>
+		pr_ordenesproduccion.codorden,pr_centroscoste.codcentro,pr_tareas.fechainicioprev, pr_tareas.horainicioprev
+	</order>
+</QRY>

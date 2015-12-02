@@ -1,0 +1,139 @@
+<!DOCTYPE UI><UI version="3.3" stdsetdef="1">
+<class>cl_TiposRevisionMaquina</class>
+<widget class="QWidget">
+    <property name="name">
+        <cstring>cl_TiposRevisionMaquina</cstring>
+    </property>
+    <property name="geometry">
+        <rect>
+            <x>0</x>
+            <y>0</y>
+            <width>600</width>
+            <height>155</height>
+        </rect>
+    </property>
+    <property name="caption">
+        <string>cl_tiposrevisionmaquina</string>
+    </property>
+    <vbox>
+        <property name="name">
+            <cstring>unnamed</cstring>
+        </property>
+        <widget class="QGroupBox">
+            <property name="name">
+                <cstring>gbxTipoRevision</cstring>
+            </property>
+            <property name="title">
+                <string></string>
+            </property>
+            <vbox>
+                <property name="name">
+                    <cstring>unnamed</cstring>
+                </property>
+                <widget class="QLayoutWidget">
+                    <property name="name">
+                        <cstring>layout13</cstring>
+                    </property>
+                    <hbox>
+                        <property name="name">
+                            <cstring>unnamed</cstring>
+                        </property>
+                        <widget class="FLFieldDB">
+                            <property name="name">
+                                <cstring>fdbCodTipo</cstring>
+                            </property>
+                            <property name="fieldName">
+                                <string>codtipo</string>
+                            </property>
+                        </widget>
+                        <widget class="FLFieldDB">
+                            <property name="name">
+                                <cstring>fdbDescripcion</cstring>
+                            </property>
+                            <property name="minimumSize">
+                                <size>
+                                    <width>4</width>
+                                    <height>21</height>
+                                </size>
+                            </property>
+                            <property name="fieldName">
+                                <string>descripcion</string>
+                            </property>
+                            <property name="tableName">
+                                <string>cl_tiposaveriasrevision</string>
+                            </property>
+                            <property name="foreignField">
+                                <string>codtipo</string>
+                            </property>
+                            <property name="fieldRelation">
+                                <string>codtipo</string>
+                            </property>
+                        </widget>
+                    </hbox>
+                </widget>
+                <widget class="QLayoutWidget">
+                    <property name="name">
+                        <cstring>layout14</cstring>
+                    </property>
+                    <hbox>
+                        <property name="name">
+                            <cstring>unnamed</cstring>
+                        </property>
+                        <widget class="FLFieldDB">
+                            <property name="name">
+                                <cstring>fdbFechaUltima</cstring>
+                            </property>
+                            <property name="fieldName">
+                                <string>fechaultima</string>
+                            </property>
+                        </widget>
+                        <widget class="FLFieldDB">
+                            <property name="name">
+                                <cstring>fdbFechaProxima</cstring>
+                            </property>
+                            <property name="fieldName">
+                                <string>fechaproxima</string>
+                            </property>
+                        </widget>
+                    </hbox>
+                </widget>
+                <widget class="QLayoutWidget">
+                    <property name="name">
+                        <cstring>layout15</cstring>
+                    </property>
+                    <hbox>
+                        <property name="name">
+                            <cstring>unnamed</cstring>
+                        </property>
+                        <widget class="FLFieldDB">
+                            <property name="name">
+                                <cstring>fdbKmsUltima</cstring>
+                            </property>
+                            <property name="fieldName">
+                                <string>kmsultima</string>
+                            </property>
+                        </widget>
+                        <widget class="FLFieldDB">
+                            <property name="name">
+                                <cstring>fdbKmsProxima</cstring>
+                            </property>
+                            <property name="fieldName">
+                                <string>kmsproxima</string>
+                            </property>
+                        </widget>
+                    </hbox>
+                </widget>
+            </vbox>
+        </widget>
+    </vbox>
+</widget>
+<layoutdefaults spacing="6" margin="11"/>
+<includehints>
+    <includehint>flfielddb.h</includehint>
+    <includehint>flfielddb.h</includehint>
+    <includehint>flfielddb.h</includehint>
+    <includehint>flfielddb.h</includehint>
+    <includehint>flfielddb.h</includehint>
+    <includehint>flfielddb.h</includehint>
+</includehints>
+</UI>

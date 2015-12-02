@@ -1,0 +1,29 @@
+<flpatch:modifications name="modelo303" >
+    <flpatch:patchXml path="contabilidad/modelos/" name="flcontmode.xml" />
+    <flpatch:addFile path="contabilidad/modelos/forms/" name="co_modelo303.ui" />
+    <flpatch:patchXml path="contabilidad/modelos/forms/" name="flcontmode.ui" />
+    <flpatch:addFile path="contabilidad/modelos/scripts/" name="co_mastermodelo303.qs" />
+    <flpatch:addFile path="contabilidad/modelos/scripts/" name="co_modelo303.qs" />
+    <flpatch:addFile path="contabilidad/modelos/tables/" name="co_modelo303.mtd" />
+    <flpatch:patchScript path="contabilidad/modelos/scripts/" name="flcontmode.qs" />
+    <flpatch:addFile path="contabilidad/modelos/tables/" name="co_tipodec303.mtd" />
+    <flpatch:addFile path="contabilidad/modelos/tables/" name="co_casillas303.mtd" />
+    <flpatch:patchXml path="contabilidad/principal/tables/" name="co_partidas.mtd" />
+    <flpatch:addFile path="contabilidad/modelos/scripts/" name="co_masterpartidas303.qs" />
+    <flpatch:addFile path="contabilidad/modelos/forms/" name="co_masterpartidas303.ui" />
+    <flpatch:patchScript path="facturacion/facturacion/scripts/" name="masterfacturascli.qs" />
+    <flpatch:patchXml path="facturacion/facturacion/forms/" name="facturascli.ui" />
+    <flpatch:patchXml path="facturacion/facturacion/tables/" name="facturascli.mtd" />
+    <flpatch:patchScript path="facturacion/facturacion/scripts/" name="masterfacturasprov.qs" />
+    <flpatch:patchXml path="facturacion/facturacion/tables/" name="facturasprov.mtd" />
+    <flpatch:patchXml path="facturacion/facturacion/forms/" name="facturasprov.ui" />
+    <flpatch:patchXml path="contabilidad/principal/forms/" name="co_partidas.ui" />
+    <flpatch:patchScript path="contabilidad/principal/scripts/" name="co_partidas.qs" />
+    <flpatch:patchXml path="contabilidad/principal/tables/" name="co_subcuentas.mtd" />
+    <flpatch:patchXml path="contabilidad/principal/forms/" name="co_subcuentas.ui" />
+    <flpatch:patchScript path="contabilidad/principal/scripts/" name="co_subcuentas.qs" />
+    <flpatch:patchXml path="contabilidad/modelos/tables/" name="co_datosfiscales.mtd" />
+    <flpatch:patchXml path="contabilidad/principal/tables/" name="co_partidasmayor.mtd" />
+    <flpatch:patchXml path="contabilidad/modelos/forms/" name="co_datosfiscales.ui" />
+    <flpatch:patchScript path="facturacion/principal/scripts/" name="ejercicios.qs" />
+</flpatch:modifications>

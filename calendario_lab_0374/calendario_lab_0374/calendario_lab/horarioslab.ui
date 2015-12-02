@@ -1,0 +1,227 @@
+<!DOCTYPE UI><UI version="3.3" stdsetdef="1">
+<class>HorariosLab</class>
+<widget class="QWidget">
+    <property name="name">
+        <cstring>HorariosLab</cstring>
+    </property>
+    <property name="geometry">
+        <rect>
+            <x>0</x>
+            <y>0</y>
+            <width>680</width>
+            <height>210</height>
+        </rect>
+    </property>
+    <property name="caption">
+        <string>horarioslab</string>
+    </property>
+    <vbox>
+        <property name="name">
+            <cstring>unnamed</cstring>
+        </property>
+        <widget class="QGroupBox">
+            <property name="name">
+                <cstring>groupBox20</cstring>
+            </property>
+            <property name="title">
+                <string></string>
+            </property>
+            <hbox>
+                <property name="name">
+                    <cstring>unnamed</cstring>
+                </property>
+                <widget class="FLFieldDB">
+                    <property name="name">
+                        <cstring>fdbCodHorario</cstring>
+                    </property>
+                    <property name="maximumSize">
+                        <size>
+                            <width>120</width>
+                            <height>32767</height>
+                        </size>
+                    </property>
+                    <property name="fieldName">
+                        <string>codhorario</string>
+                    </property>
+                </widget>
+                <widget class="FLFieldDB">
+                    <property name="name">
+                        <cstring>fdbDescripcion</cstring>
+                    </property>
+                    <property name="minimumSize">
+                        <size>
+                            <width>300</width>
+                            <height>26</height>
+                        </size>
+                    </property>
+                    <property name="fieldName">
+                        <string>descripcion</string>
+                    </property>
+                </widget>
+                <widget class="FLFieldDB">
+                    <property name="name">
+                        <cstring>fdbColor</cstring>
+                    </property>
+                    <property name="fieldName">
+                        <string>color</string>
+                    </property>
+                </widget>
+            </hbox>
+        </widget>
+        <widget class="QGroupBox">
+            <property name="name">
+                <cstring>groupBox6_2</cstring>
+            </property>
+            <property name="title">
+                <string></string>
+            </property>
+            <vbox>
+                <property name="name">
+                    <cstring>unnamed</cstring>
+                </property>
+                <widget class="QLayoutWidget">
+                    <property name="name">
+                        <cstring>layout15</cstring>
+                    </property>
+                    <hbox>
+                        <property name="name">
+                            <cstring>unnamed</cstring>
+                        </property>
+                        <widget class="FLFieldDB">
+                            <property name="name">
+                                <cstring>fdbHoraEntradaManana</cstring>
+                            </property>
+                            <property name="minimumSize">
+                                <size>
+                                    <width>185</width>
+                                    <height>24</height>
+                                </size>
+                            </property>
+                            <property name="fieldName">
+                                <string>horaentradamanana</string>
+                            </property>
+                        </widget>
+                        <widget class="FLFieldDB">
+                            <property name="name">
+                                <cstring>fdbHoraSalidaManana</cstring>
+                            </property>
+                            <property name="minimumSize">
+                                <size>
+                                    <width>174</width>
+                                    <height>24</height>
+                                </size>
+                            </property>
+                            <property name="fieldName">
+                                <string>horasalidamanana</string>
+                            </property>
+                        </widget>
+                    </hbox>
+                </widget>
+                <widget class="QLayoutWidget">
+                    <property name="name">
+                        <cstring>layout16</cstring>
+                    </property>
+                    <hbox>
+                        <property name="name">
+                            <cstring>unnamed</cstring>
+                        </property>
+                        <widget class="FLFieldDB">
+                            <property name="name">
+                                <cstring>fdbHoraEntradaTarde</cstring>
+                            </property>
+                            <property name="minimumSize">
+                                <size>
+                                    <width>166</width>
+                                    <height>24</height>
+                                </size>
+                            </property>
+                            <property name="fieldName">
+                                <string>horaentradatarde</string>
+                            </property>
+                        </widget>
+                        <widget class="FLFieldDB">
+                            <property name="name">
+                                <cstring>fdbHoraSalidaTarde</cstring>
+                            </property>
+                            <property name="minimumSize">
+                                <size>
+                                    <width>155</width>
+                                    <height>24</height>
+                                </size>
+                            </property>
+                            <property name="fieldName">
+                                <string>horasalidatarde</string>
+                            </property>
+                        </widget>
+                    </hbox>
+                </widget>
+            </vbox>
+        </widget>
+        <widget class="QGroupBox">
+            <property name="name">
+                <cstring>groupBox6</cstring>
+            </property>
+            <property name="title">
+                <string></string>
+            </property>
+            <vbox>
+                <property name="name">
+                    <cstring>unnamed</cstring>
+                </property>
+                <widget class="QLayoutWidget">
+                    <property name="name">
+                        <cstring>layout17</cstring>
+                    </property>
+                    <hbox>
+                        <property name="name">
+                            <cstring>unnamed</cstring>
+                        </property>
+                        <widget class="FLFieldDB">
+                            <property name="name">
+                                <cstring>fdbTotalHoras</cstring>
+                            </property>
+                            <property name="maximumSize">
+                                <size>
+                                    <width>200</width>
+                                    <height>32767</height>
+                                </size>
+                            </property>
+                            <property name="fieldName">
+                                <string>totalhoras</string>
+                            </property>
+                        </widget>
+                        <spacer>
+                            <property name="name">
+                                <cstring>spacer11</cstring>
+                            </property>
+                            <property name="orientation">
+                                <enum>Horizontal</enum>
+                            </property>
+                            <property name="sizeType">
+                                <enum>Expanding</enum>
+                            </property>
+                            <property name="sizeHint">
+                                <size>
+                                    <width>274</width>
+                                    <height>21</height>
+                                </size>
+                            </property>
+                        </spacer>
+                    </hbox>
+                </widget>
+            </vbox>
+        </widget>
+    </vbox>
+</widget>
+<layoutdefaults spacing="6" margin="11"/>
+<includehints>
+    <includehint>flfielddb.h</includehint>
+    <includehint>flfielddb.h</includehint>
+    <includehint>flfielddb.h</includehint>
+    <includehint>flfielddb.h</includehint>
+    <includehint>flfielddb.h</includehint>
+    <includehint>flfielddb.h</includehint>
+    <includehint>flfielddb.h</includehint>
+    <includehint>flfielddb.h</includehint>
+</includehints>
+</UI>

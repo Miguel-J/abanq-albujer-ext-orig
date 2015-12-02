@@ -1,0 +1,11 @@
+<xupdate:modifications>
+<xupdate:delete select="/UI[UI,1]/connections[connections,1]/connection[toolButtonEditOp,clicked(),tdbOpcionesComp,deleteRecord()]" />
+<xupdate:insert-after select="/UI[UI,1]/connections[connections,1]/connection[toolButtomInsertOp,clicked(),tdbOpcionesComp,insertRecord()]" >
+<connection>
+<sender>toolButtonEditOp</sender>
+<signal>clicked()</signal>
+<receiver>tdbOpcionesComp</receiver>
+<slot>editRecord()</slot>
+</connection>
+</xupdate:insert-after>
+</xupdate:modifications>

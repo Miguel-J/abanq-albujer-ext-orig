@@ -1,0 +1,76 @@
+<xupdate:modifications>
+<xupdate:insert-after select="/TMD[TMD,1]/field[avisocliente]" >
+<field>
+<name>basedatosda</name>
+<alias>QT_TRANSLATE_NOOP(&quot;MetaData&quot;,&quot;Base de datos&quot;)</alias>
+<null>true</null>
+<pk>false</pk>
+<type>string</type>
+<length>50</length>
+</field>
+</xupdate:insert-after>
+<xupdate:insert-after select="/TMD[TMD,1]/field[basedatosda]" >
+<field>
+<name>driverda</name>
+<alias>QT_TRANSLATE_NOOP(&quot;MetaData&quot;,&quot;Driver&quot;)</alias>
+<null>false</null>
+<pk>false</pk>
+<type>string</type>
+<length>50</length>
+<optionslist>PostgreSQL,MySQL</optionslist>
+<default>PostgreSQL</default>
+</field>
+</xupdate:insert-after>
+<xupdate:insert-after select="/TMD[TMD,1]/field[driverda]" >
+<field>
+<name>puertoda</name>
+<alias>QT_TRANSLATE_NOOP(&quot;MetaData&quot;,&quot;Puerto&quot;)</alias>
+<null>true</null>
+<pk>false</pk>
+<type>string</type>
+<length>4</length>
+</field>
+</xupdate:insert-after>
+<xupdate:insert-after select="/TMD[TMD,1]/field[puertoda]" >
+<field>
+<name>servidorda</name>
+<alias>QT_TRANSLATE_NOOP(&quot;MetaData&quot;,&quot;Servidor&quot;)</alias>
+<null>true</null>
+<pk>false</pk>
+<type>string</type>
+<length>50</length>
+</field>
+</xupdate:insert-after>
+<xupdate:insert-after select="/TMD[TMD,1]/field[servidorda]" >
+<field>
+<name>usuarioda</name>
+<alias>QT_TRANSLATE_NOOP(&quot;MetaData&quot;,&quot;Usuario&quot;)</alias>
+<null>true</null>
+<pk>false</pk>
+<type>string</type>
+<length>50</length>
+</field>
+</xupdate:insert-after>
+<xupdate:insert-after select="/TMD[TMD,1]/field[usuarioda]" >
+<field>
+<name>contrasenada</name>
+<alias>QT_TRANSLATE_NOOP(&quot;MetaData&quot;,&quot;Contraseña&quot;)</alias>
+<null>true</null>
+<pk>false</pk>
+<type>string</type>
+<length>50</length>
+</field>
+</xupdate:insert-after>
+<xupdate:insert-after select="/TMD[TMD,1]/field[contrasenada]" >
+<field>
+<name>pordistribuir</name>
+<alias>QT_TRANSLATE_NOOP(&quot;MetaData&quot;,&quot;% Distribuir albarán por defecto&quot;)</alias>
+<null>true</null>
+<pk>false</pk>
+<type>double</type>
+<partI>3</partI>
+<partD>2</partD>
+<default>0</default>
+</field>
+</xupdate:insert-after>
+</xupdate:modifications>

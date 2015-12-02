@@ -1,0 +1,17 @@
+<xupdate:modifications>
+<xupdate:insert-after select="/TMD[TMD,1]/field[actualizarartprov]" >
+<field>
+<name>tipocontratobec</name>
+<!-- Código del tipo de contrato de organismo becador--><alias>QT_TRANSLATE_NOOP(&quot;MetaData&quot;,&quot;Tipo de contrato Organismo Becador&quot;)</alias>
+<null>true</null>
+<pk>false</pk>
+<type>string</type>
+<length>3</length>
+<relation>
+<table>tiposcontrato</table>
+<field>codigo</field>
+<card>M1</card>
+</relation>
+</field>
+</xupdate:insert-after>
+</xupdate:modifications>

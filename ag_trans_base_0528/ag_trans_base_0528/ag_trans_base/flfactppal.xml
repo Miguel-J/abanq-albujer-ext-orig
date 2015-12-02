@@ -1,0 +1,23 @@
+<xupdate:modifications>
+<xupdate:insert-after select="/ACTIONS[ACTIONS,1]/action[contactos]" >
+<action>
+<name>agenciastrans</name>
+<alias>QT_TRANSLATE_NOOP(&quot;MetaData&quot;,&quot;Agencias de transporte&quot;)</alias>
+<table>agenciastrans</table>
+<form>master</form>
+<formrecord>agenciastrans</formrecord>
+<scriptformrecord>agenciastrans</scriptformrecord>
+</action>
+</xupdate:insert-after>
+<xupdate:insert-after select="/ACTIONS[ACTIONS,1]/action[agenciastrans]" >
+<action>
+<name>sedesagencia</name>
+<alias>QT_TRANSLATE_NOOP(&quot;MetaData&quot;,&quot;Sedes&quot;)</alias>
+<description>QT_TRANSLATE_NOOP(&quot;MetaData&quot;,&quot;Gestión de direcciones de agencias de trasporte&quot;)</description>
+<table>sedesagencia</table>
+<form>master</form>
+<formrecord>sedesagencia</formrecord>
+<scriptformrecord>sedesagencia</scriptformrecord>
+</action>
+</xupdate:insert-after>
+</xupdate:modifications>

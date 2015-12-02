@@ -1,0 +1,75 @@
+<!DOCTYPE TMD>
+<TMD>
+	<name>partidasalb</name>
+	<!--Partidas de albaranes-->
+	<alias>QT_TRANSLATE_NOOP(&quot;MetaData&quot;,&quot;Capítulos de albaranes&quot;)</alias>
+	<field>
+		<name>idpartidaalb</name>
+		<!--Identificador interno de la tabla-->
+		<alias>QT_TRANSLATE_NOOP(&quot;MetaData&quot;,&quot;ID&quot;)</alias>
+		<null>false</null>
+		<pk>true</pk>
+		<type>serial</type>
+		<visiblegrid>false</visiblegrid>
+		<relation>
+			<table>lineasalbaranescli</table>
+			<field>idpartidaalb</field>
+			<card>1M</card>
+		</relation>
+	</field>
+	<field>
+		<name>idalbaran</name>
+		<!--Albarán asociado-->
+		<alias>QT_TRANSLATE_NOOP(&quot;MetaData&quot;,&quot;Albarán&quot;)</alias>
+		<pk>false</pk>
+		<null>false</null>
+		<type>uint</type>
+		<visiblegrid>false</visiblegrid>
+		<relation>
+			<table>albaranescli</table>
+			<field>idalbaran</field>
+			<card>M1</card>
+			<delC>true</delC>
+		</relation>
+	</field>
+	<field>
+		<name>orden</name>
+		<!--Número de orden-->
+		<alias>QT_TRANSLATE_NOOP(&quot;MetaData&quot;,&quot;Orden&quot;)</alias>
+		<null>false</null>
+		<pk>false</pk>
+		<type>uint</type>
+	</field>
+	<field>
+		<name>descripcion</name>
+		<!--Descripción-->
+		<alias>QT_TRANSLATE_NOOP(&quot;MetaData&quot;,&quot;Descripción&quot;)</alias>
+		<null>true</null>
+		<pk>false</pk>
+		<type>string</type>
+		<length>70</length>
+	</field>
+	<field>
+		<name>codpartidacat</name>
+		<!--Código de partida en el catálogo-->
+		<alias>QT_TRANSLATE_NOOP(&quot;MetaData&quot;,&quot;Código&quot;)</alias>
+		<pk>false</pk>
+		<type>string</type>
+		<length>25</length>
+		<relation>
+			<table>catpartidas</table>
+			<field>codpartidacat</field>
+			<card>M1</card>
+			<delC>true</delC>
+		</relation>
+	</field>
+	<field>
+        	<name>idpartidao</name>
+		<!--Partida origen (para la copia)-->
+		<alias>QT_TRANSLATE_NOOP("MetaData","Partida origen")</alias>
+        	<null>true</null>
+		<pk>false</pk>
+        	<type>uint</type>
+		<visiblegrid>false</visiblegrid>
+	</field>
+</TMD>

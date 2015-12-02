@@ -1,0 +1,32 @@
+<flpatch:modifications name="cheques_cli" >
+    <flpatch:patchXml path="facturacion/tesoreria/" name="flfactteso.xml" />
+    <flpatch:patchXml path="facturacion/tesoreria/forms/" name="flfactteso.ui" />
+    <flpatch:patchXml path="facturacion/tesoreria/forms/" name="pagosdevolcli.ui" />
+    <flpatch:addFile path="facturacion/tesoreria/forms/" name="remesaschequescli.ui" />
+    <flpatch:addFile path="facturacion/tesoreria/forms/" name="seleccionchequescli.ui" />
+    <flpatch:patchScript path="facturacion/tesoreria/scripts/" name="pagosdevolcli.qs" />
+    <flpatch:addFile path="facturacion/tesoreria/scripts/" name="remesaschequescli.qs" />
+    <flpatch:addFile path="facturacion/tesoreria/scripts/" name="seleccionchequescli.qs" />
+    <flpatch:patchXml path="facturacion/tesoreria/tables/" name="pagosdevolcli.mtd" />
+    <flpatch:addFile path="facturacion/tesoreria/tables/" name="seleccionchequescli.mtd" />
+    <flpatch:addFile path="facturacion/tesoreria/tables/" name="remesaschequescli.mtd" />
+    <flpatch:patchScript path="facturacion/tesoreria/scripts/" name="flfactteso.qs" />
+    <flpatch:patchXml path="facturacion/facturacion/forms/" name="facturascli.ui" />
+    <flpatch:patchXml path="facturacion/facturacion/tables/" name="facturascli.mtd" />
+    <flpatch:patchScript path="facturacion/facturacion/scripts/" name="facturascli.qs" />
+    <flpatch:addFile path="facturacion/informes/queries/" name="i_chequescli.qry" />
+    <flpatch:addFile path="facturacion/informes/tables/" name="i_chequescli.mtd" />
+    <flpatch:addFile path="facturacion/informes/forms/" name="i_chequescli.ui" />
+    <flpatch:patchXml path="facturacion/informes/forms/" name="flfactinfo.ui" />
+    <flpatch:addFile path="facturacion/informes/reports/" name="i_chequescli.kut" />
+    <flpatch:patchXml path="facturacion/informes/" name="flfactinfo.xml" />
+    <flpatch:addFile path="facturacion/informes/scripts/" name="i_chequescli.qs" />
+    <flpatch:addFile path="facturacion/informes/scripts/" name="i_masterchequescli.qs" />
+    <flpatch:addFile path="facturacion/tesoreria/scripts/" name="masterchequescli.qs" />
+    <flpatch:addFile path="facturacion/tesoreria/queries/" name="qry_chequescli.qry" />
+    <flpatch:addFile path="facturacion/tesoreria/forms/" name="masterchequescli.ui" />
+    <flpatch:addFile path="facturacion/tesoreria/tables/" name="qry_chequescli.mtd" />
+    <flpatch:patchXml path="facturacion/tesoreria/forms/" name="seleccionreciboscli.ui" />
+    <flpatch:patchXml path="facturacion/tesoreria/tables/" name="reciboscli.mtd" />
+    <flpatch:patchScript path="facturacion/tesoreria/scripts/" name="reciboscli.qs" />
+</flpatch:modifications>

@@ -1,0 +1,36 @@
+<!DOCTYPE QRY>
+<QRY>
+	<name>i_bultos_despacho</name>
+
+	<tables>empresa,despachos</tables>
+
+	<select>
+		despachos.coddespacho, despachos.fecha,
+		despachos.direccion, despachos.ciudad,
+		despachos.codpostal, despachos.provincia,
+		paises.nombre,
+		empresa.nombre, empresa.cifnif, empresa.telefono, empresa.email,
+		empresa.logo, empresa.direccion, empresa.codpostal,
+		empresa.ciudad, empresa.provincia, empresa.apartado,
+		paises2.nombre,
+		bultosdespacho.numero, despachos.canbultos,
+		clientes.nombre
+	</select>
+
+	<from>
+		empresa LEFT OUTER JOIN paises paises2 ON empresa.codpais = paises2.codpais,
+		despachos
+		INNER JOIN clientes ON despachos.codcliente = clientes.codcliente
+		INNER JOIN bultosdespacho ON despachos.iddespacho = bultosdespacho.iddespacho
+		LEFT OUTER JOIN paises ON despachos.codpais = paises.codpais
+		
+	</from>
+
+
+	<where>
+	</where>
+	
+	<order>
+		bultosdespacho.numero
+	</order>
+</QRY>

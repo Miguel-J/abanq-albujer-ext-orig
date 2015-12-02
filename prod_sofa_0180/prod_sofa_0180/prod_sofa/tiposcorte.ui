@@ -1,0 +1,49 @@
+<!DOCTYPE UI><UI version="3.3" stdsetdef="1">
+<class>tiposcorte</class>
+<widget class="QWidget">
+    <property name="name">
+        <cstring>tiposcorte</cstring>
+    </property>
+    <property name="geometry">
+        <rect>
+            <x>0</x>
+            <y>0</y>
+            <width>361</width>
+            <height>71</height>
+        </rect>
+    </property>
+    <property name="caption">
+        <string>tiposcorte</string>
+    </property>
+    <vbox>
+        <property name="name">
+            <cstring>unnamed</cstring>
+        </property>
+        <widget class="QGroupBox">
+            <property name="name">
+                <cstring>gbxTipoCorte</cstring>
+            </property>
+            <property name="title">
+                <string></string>
+            </property>
+            <vbox>
+                <property name="name">
+                    <cstring>unnamed</cstring>
+                </property>
+                <widget class="FLFieldDB">
+                    <property name="name">
+                        <cstring>fdbParte</cstring>
+                    </property>
+                    <property name="fieldName">
+                        <string>parte</string>
+                    </property>
+                </widget>
+            </vbox>
+        </widget>
+    </vbox>
+</widget>
+<layoutdefaults spacing="6" margin="11"/>
+<includehints>
+    <includehint>FLFieldDB.h</includehint>
+</includehints>
+</UI>

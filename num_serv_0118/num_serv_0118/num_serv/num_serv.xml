@@ -1,0 +1,13 @@
+<flpatch:modifications name="num_serv" >
+    <flpatch:patchXml path="facturacion/facturacion/forms/" name="lineasservicioscli.ui" />
+    <flpatch:patchScript path="facturacion/facturacion/scripts/" name="lineasservicioscli.qs" />
+    <flpatch:patchXml path="facturacion/facturacion/tables/" name="lineasservicioscli.mtd" />
+    <flpatch:patchScript path="facturacion/facturacion/scripts/" name="masterservicioscli.qs" />
+    <flpatch:patchXml path="facturacion/facturacion/forms/" name="masterservicioscli.ui" />
+    <flpatch:replaceFile path="facturacion/informes/queries/" name="i_servicioscli.qry" />
+    <flpatch:addFile path="facturacion/informes/reports/" name="i_servicioscli_ns.kut" />
+    <flpatch:patchScript path="facturacion/facturacion/scripts/" name="flfacturac.qs" />
+    <flpatch:patchScript path="facturacion/almacen/scripts/" name="numerosserie.qs" />
+    <flpatch:patchXml path="facturacion/almacen/tables/" name="numerosserie.mtd" />
+    <flpatch:patchXml path="facturacion/almacen/forms/" name="numerosserie.ui" />
+</flpatch:modifications>

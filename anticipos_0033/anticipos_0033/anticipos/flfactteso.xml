@@ -1,0 +1,24 @@
+<xupdate:modifications>
+<xupdate:insert-after select="/ACTIONS[ACTIONS,1]/action[vdisco]" >
+<action>
+<name>anticiposcli</name>
+<description>QT_TRANSLATE_NOOP(&quot;MetaData&quot;,&quot;Los anticipos o entregas a cuenta de clientes se relacionan con alguno de sus pedidos. Un anticipo es un pago que queda en espera hasta generar la factura. Cuando una factura es generada a partir de pedidos con anticipos asociados estos son asignados automáticamente como recibos pagados de dicha factura.&quot;)</description>
+<alias>QT_TRANSLATE_NOOP(&quot;MetaData&quot;,&quot;Anticipos de clientes&quot;)</alias>
+<table>anticiposcli</table>
+<form>masteranticiposcli</form>
+<formrecord>anticiposcli</formrecord>
+<scriptform>masteranticiposcli</scriptform>
+<scriptformrecord>anticiposcli</scriptformrecord>
+</action>
+</xupdate:insert-after>
+<xupdate:insert-after select="/ACTIONS[ACTIONS,1]/action[recibosfacturacli]" >
+<action>
+<name>seleccionrecibosanticiposcli</name>
+<description>QT_TRANSLATE_NOOP(&quot;MetaData&quot;,&quot;Selección de los recibos de cliente que se van a incluir en un anticipo (pago a cuenta))</description>
+<alias>QT_TRANSLATE_NOOP(&quot;MetaData&quot;,&quot;Recibos de clientes&quot;)</alias>
+<table>reciboscli</table>
+<form>seleccionrecibosanticiposcli</form>
+<scriptform>seleccionrecibosanticiposcli</scriptform>
+</action>
+</xupdate:insert-after>
+</xupdate:modifications>

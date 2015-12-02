@@ -1,0 +1,9 @@
+<flpatch:modifications name="remesas_auto" >
+    <flpatch:patchXml path="facturacion/principal/tables/" name="formaspago.mtd" />
+    <flpatch:patchXml path="facturacion/tesoreria/forms/" name="remesas.ui" />
+    <flpatch:patchScript path="facturacion/tesoreria/scripts/" name="flfactteso.qs" />
+    <flpatch:patchScript path="facturacion/tesoreria/scripts/" name="remesas.qs" />
+    <flpatch:patchXml path="facturacion/tesoreria/tables/" name="remesas.mtd" />
+    <flpatch:patchXml path="facturacion/principal/tables/" name="empresa.mtd" />
+    <flpatch:patchXml path="facturacion/principal/forms/" name="empresa.ui" />
+</flpatch:modifications>

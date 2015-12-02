@@ -1,0 +1,32 @@
+<flpatch:modifications name="poblaciones" >
+    <flpatch:patchXml path="facturacion/principal/" name="flfactppal.xml" />
+    <flpatch:patchXml path="facturacion/principal/forms/" name="flfactppal.ui" />
+    <flpatch:addFile path="facturacion/principal/forms/" name="poblaciones.ui" />
+    <flpatch:addFile path="facturacion/principal/tables/" name="poblaciones.mtd" />
+    <flpatch:patchXml path="facturacion/principal/tables/" name="provincias.mtd" />
+    <flpatch:patchXml path="facturacion/principal/tables/" name="paises.mtd" />
+    <flpatch:addFile path="facturacion/principal/scripts/" name="poblaciones.qs" />
+    <flpatch:patchXml path="facturacion/principal/tables/" name="dirclientes.mtd" />
+    <flpatch:patchXml path="facturacion/principal/forms/" name="dirclientes.ui" />
+    <flpatch:patchScript path="facturacion/principal/scripts/" name="dirclientes.qs" />
+    <flpatch:patchScript path="facturacion/principal/scripts/" name="dirproveedores.qs" />
+    <flpatch:patchXml path="facturacion/principal/tables/" name="dirproveedores.mtd" />
+    <flpatch:patchXml path="facturacion/principal/forms/" name="dirproveedores.ui" />
+    <flpatch:patchXml path="facturacion/facturacion/tables/" name="albaranescli.mtd" />
+    <flpatch:patchXml path="facturacion/facturacion/forms/" name="albaranescli.ui" />
+    <flpatch:patchScript path="facturacion/facturacion/scripts/" name="albaranescli.qs" />
+    <flpatch:patchScript path="facturacion/principal/scripts/" name="flfactppal.qs" />
+    <flpatch:patchScript path="facturacion/facturacion/scripts/" name="pedidoscli.qs" />
+    <flpatch:patchScript path="facturacion/facturacion/scripts/" name="presupuestoscli.qs" />
+    <flpatch:patchScript path="facturacion/facturacion/scripts/" name="facturascli.qs" />
+    <flpatch:patchXml path="facturacion/facturacion/tables/" name="pedidoscli.mtd" />
+    <flpatch:patchXml path="facturacion/facturacion/tables/" name="facturascli.mtd" />
+    <flpatch:patchXml path="facturacion/facturacion/tables/" name="presupuestoscli.mtd" />
+    <flpatch:patchXml path="facturacion/facturacion/forms/" name="presupuestoscli.ui" />
+    <flpatch:patchXml path="facturacion/facturacion/forms/" name="pedidoscli.ui" />
+    <flpatch:patchXml path="facturacion/facturacion/forms/" name="facturascli.ui" />
+    <flpatch:patchScript path="facturacion/facturacion/scripts/" name="masterpresupuestoscli.qs" />
+    <flpatch:patchScript path="facturacion/facturacion/scripts/" name="masteralbaranescli.qs" />
+    <flpatch:patchScript path="facturacion/facturacion/scripts/" name="masterpedidoscli.qs" />
+    <flpatch:patchScript path="facturacion/facturacion/scripts/" name="masterfacturascli.qs" />
+</flpatch:modifications>

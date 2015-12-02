@@ -1,0 +1,22 @@
+<xupdate:modifications>
+<xupdate:insert-after select="/ACTIONS[ACTIONS,1]/action[co_i_cuentasanuales]" >
+<action>
+<name>co_i_seleccioncentroscoste</name>
+<description>QT_TRANSLATE_NOOP(&quot;MetaData&quot;,&quot;&quot;)</description>
+<alias>QT_TRANSLATE_NOOP(&quot;MetaData&quot;,&quot;&quot;)</alias>
+<table>co_i_seleccioncentroscoste</table>
+<form>co_i_seleccioncentroscoste</form>
+<scriptform>co_i_seleccioncentroscoste</scriptform>
+</action>
+</xupdate:insert-after>
+<xupdate:insert-after select="/ACTIONS[ACTIONS,1]/action[co_i_seleccioncentroscoste]" >
+<action>
+<name>co_i_seleccionsubcentroscoste</name>
+<description>QT_TRANSLATE_NOOP(&quot;MetaData&quot;,&quot;&quot;)</description>
+<alias>QT_TRANSLATE_NOOP(&quot;MetaData&quot;,&quot;&quot;)</alias>
+<table>co_i_seleccionsubcentroscoste</table>
+<form>co_i_seleccionsubcentroscoste</form>
+<scriptform>co_i_seleccionsubcentroscoste</scriptform>
+</action>
+</xupdate:insert-after>
+</xupdate:modifications>

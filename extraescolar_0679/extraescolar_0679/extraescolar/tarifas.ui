@@ -1,0 +1,231 @@
+<xupdate:modifications>
+<xupdate:update select="/UI[UI,1]/widget[QWidget,tarifas]/property[geometry]/rect[rect,1]/height[height,1]/text()[1]" >296</xupdate:update>
+<xupdate:update select="/UI[UI,1]/widget[QWidget,tarifas]/property[geometry]/rect[rect,1]/width[width,1]/text()[1]" >361</xupdate:update>
+<xupdate:update select="/UI[UI,1]/widget[QWidget,tarifas]/vbox[vbox,1]/widget[QFrame,fdmIdentificacion]/vbox[vbox,1]/widget[FLFieldDB,fdbNombre]/property[minimumSize]/size[size,1]/height[height,1]/text()[1]" >22</xupdate:update>
+<xupdate:update select="/UI[UI,1]/widget[QWidget,tarifas]/vbox[vbox,1]/widget[QFrame,fdmIdentificacion]/vbox[vbox,1]/widget[FLFieldDB,fdbNombre]/property[minimumSize]/size[size,1]/width[width,1]/text()[1]" >26</xupdate:update>
+<xupdate:update select="/UI[UI,1]/widget[QWidget,tarifas]/vbox[vbox,1]/widget[QFrame,fdmIdentificacion]/vbox[vbox,1]/widget[QLayoutWidget,layout14]/hbox[hbox,1]/widget[FLFieldDB,fdbCodTarifa]/property[minimumSize]/size[size,1]/height[height,1]/text()[1]" >22</xupdate:update>
+<xupdate:update select="/UI[UI,1]/widget[QWidget,tarifas]/vbox[vbox,1]/widget[QFrame,fdmIdentificacion]/vbox[vbox,1]/widget[QLayoutWidget,layout14]/hbox[hbox,1]/widget[FLFieldDB,fdbCodTarifa]/property[minimumSize]/size[size,1]/width[width,1]/text()[1]" >26</xupdate:update>
+<xupdate:update select="/UI[UI,1]/widget[QWidget,tarifas]/vbox[vbox,1]/widget[QFrame,frmIncrementos]/vbox[vbox,1]/widget[QLayoutWidget,layout18]/hbox[hbox,1]/widget[FLFieldDB,fdbIncLineal]/property[minimumSize]/size[size,1]/height[height,1]/text()[1]" >22</xupdate:update>
+<xupdate:update select="/UI[UI,1]/widget[QWidget,tarifas]/vbox[vbox,1]/widget[QFrame,frmIncrementos]/vbox[vbox,1]/widget[QLayoutWidget,layout18]/hbox[hbox,1]/widget[FLFieldDB,fdbIncLineal]/property[minimumSize]/size[size,1]/width[width,1]/text()[1]" >26</xupdate:update>
+<xupdate:update select="/UI[UI,1]/widget[QWidget,tarifas]/vbox[vbox,1]/widget[QFrame,frmIncrementos]/vbox[vbox,1]/widget[QLayoutWidget,layout19]/hbox[hbox,1]/widget[FLFieldDB,fdbIncPorcentual]/property[minimumSize]/size[size,1]/height[height,1]/text()[1]" >22</xupdate:update>
+<xupdate:update select="/UI[UI,1]/widget[QWidget,tarifas]/vbox[vbox,1]/widget[QFrame,frmIncrementos]/vbox[vbox,1]/widget[QLayoutWidget,layout19]/hbox[hbox,1]/widget[FLFieldDB,fdbIncPorcentual]/property[minimumSize]/size[size,1]/width[width,1]/text()[1]" >26</xupdate:update>
+<xupdate:insert-after select="/UI[UI,1]/widget[QWidget,tarifas]/vbox[vbox,1]/widget[QFrame,fdmIdentificacion]" >
+<widget class="QGroupBox" >
+<property name="name" >
+<cstring>gbxFormacion</cstring>
+</property>
+<property name="title" >
+<string/>
+</property>
+<vbox>
+<property name="name" >
+<cstring>unnamed</cstring>
+</property>
+<widget class="QLayoutWidget" >
+<property name="name" >
+<cstring>layoutCentro</cstring>
+</property>
+<hbox>
+<property name="name" >
+<cstring>unnamed</cstring>
+</property>
+<widget class="FLFieldDB" >
+<property name="name" >
+<cstring>fdbCodCentroEsc</cstring>
+</property>
+<property name="sizePolicy" >
+<sizepolicy>
+<hsizetype>1</hsizetype>
+<vsizetype>0</vsizetype>
+<horstretch>0</horstretch>
+<verstretch>0</verstretch>
+</sizepolicy>
+</property>
+<property name="minimumSize" >
+<size>
+<width>38</width>
+<height>24</height>
+</size>
+</property>
+<property name="fieldName" >
+<string>codcentroesc</string>
+</property>
+</widget>
+<widget class="FLFieldDB" >
+<property name="name" >
+<cstring>fdbDesCentro</cstring>
+</property>
+<property name="sizePolicy" >
+<sizepolicy>
+<hsizetype>1</hsizetype>
+<vsizetype>0</vsizetype>
+<horstretch>0</horstretch>
+<verstretch>0</verstretch>
+</sizepolicy>
+</property>
+<property name="minimumSize" >
+<size>
+<width>9</width>
+<height>23</height>
+</size>
+</property>
+<property name="fieldName" >
+<string>nombre</string>
+</property>
+<property name="tableName" >
+<string>fo_centros</string>
+</property>
+<property name="foreignField" >
+<string>codcentroesc</string>
+</property>
+<property name="fieldRelation" >
+<string>codcentro</string>
+</property>
+<property name="showAlias" >
+<bool>false</bool>
+</property>
+</widget>
+</hbox>
+</widget>
+<widget class="QLayoutWidget" >
+<property name="name" >
+<cstring>layoutTipoTFor</cstring>
+</property>
+<hbox>
+<property name="name" >
+<cstring>unnamed</cstring>
+</property>
+<widget class="FLFieldDB" >
+<property name="name" >
+<cstring>fdbTipo</cstring>
+</property>
+<property name="sizePolicy" >
+<sizepolicy>
+<hsizetype>1</hsizetype>
+<vsizetype>0</vsizetype>
+<horstretch>0</horstretch>
+<verstretch>0</verstretch>
+</sizepolicy>
+</property>
+<property name="minimumSize" >
+<size>
+<width>26</width>
+<height>22</height>
+</size>
+</property>
+<property name="maximumSize" >
+<size>
+<width>230</width>
+<height>32767</height>
+</size>
+</property>
+<property name="fieldName" >
+<string>tipo</string>
+</property>
+</widget>
+<spacer>
+<property name="name" >
+<cstring>spacer12_2_2</cstring>
+</property>
+<property name="orientation" >
+<enum>Horizontal</enum>
+</property>
+<property name="sizeType" >
+<enum>Expanding</enum>
+</property>
+<property name="sizeHint" >
+<size>
+<width>89</width>
+<height>20</height>
+</size>
+</property>
+</spacer>
+</hbox>
+</widget>
+<widget class="QLayoutWidget" >
+<property name="name" >
+<cstring>layoutBeca</cstring>
+</property>
+<hbox>
+<property name="name" >
+<cstring>unnamed</cstring>
+</property>
+<widget class="FLFieldDB" >
+<property name="name" >
+<cstring>fdbBeca</cstring>
+</property>
+<property name="sizePolicy" >
+<sizepolicy>
+<hsizetype>1</hsizetype>
+<vsizetype>0</vsizetype>
+<horstretch>0</horstretch>
+<verstretch>0</verstretch>
+</sizepolicy>
+</property>
+<property name="minimumSize" >
+<size>
+<width>26</width>
+<height>22</height>
+</size>
+</property>
+<property name="maximumSize" >
+<size>
+<width>230</width>
+<height>32767</height>
+</size>
+</property>
+<property name="fieldName" >
+<string>beca</string>
+</property>
+</widget>
+<spacer>
+<property name="name" >
+<cstring>spacer12_2_2_2</cstring>
+</property>
+<property name="orientation" >
+<enum>Horizontal</enum>
+</property>
+<property name="sizeType" >
+<enum>Expanding</enum>
+</property>
+<property name="sizeHint" >
+<size>
+<width>89</width>
+<height>20</height>
+</size>
+</property>
+</spacer>
+</hbox>
+</widget>
+</vbox>
+</widget>
+</xupdate:insert-after>
+<xupdate:delete select="/UI[UI,1]/includehints[includehints,1]/includehint[FLFieldDB.h]" />
+<xupdate:delete select="/UI[UI,1]/includehints[includehints,1]/includehint[FLFieldDB.h]" />
+<xupdate:delete select="/UI[UI,1]/includehints[includehints,1]/includehint[FLFieldDB.h]" />
+<xupdate:delete select="/UI[UI,1]/includehints[includehints,1]/includehint[FLFieldDB.h]" />
+<xupdate:append-first select="/UI[UI,1]/includehints[includehints,1]" >
+<includehint>flfielddb.h</includehint>
+</xupdate:append-first>
+<xupdate:insert-after select="/UI[UI,1]/includehints[includehints,1]/includehint[flfielddb.h]" >
+<includehint>flfielddb.h</includehint>
+</xupdate:insert-after>
+<xupdate:insert-after select="/UI[UI,1]/includehints[includehints,1]/includehint[flfielddb.h]" >
+<includehint>flfielddb.h</includehint>
+</xupdate:insert-after>
+<xupdate:insert-after select="/UI[UI,1]/includehints[includehints,1]/includehint[flfielddb.h]" >
+<includehint>flfielddb.h</includehint>
+</xupdate:insert-after>
+<xupdate:insert-after select="/UI[UI,1]/includehints[includehints,1]/includehint[flfielddb.h]" >
+<includehint>flfielddb.h</includehint>
+</xupdate:insert-after>
+<xupdate:insert-after select="/UI[UI,1]/includehints[includehints,1]/includehint[flfielddb.h]" >
+<includehint>flfielddb.h</includehint>
+</xupdate:insert-after>
+<xupdate:insert-after select="/UI[UI,1]/includehints[includehints,1]/includehint[flfielddb.h]" >
+<includehint>flfielddb.h</includehint>
+</xupdate:insert-after>
+<xupdate:insert-after select="/UI[UI,1]/includehints[includehints,1]/includehint[flfielddb.h]" >
+<includehint>flfielddb.h</includehint>
+</xupdate:insert-after>
+</xupdate:modifications>

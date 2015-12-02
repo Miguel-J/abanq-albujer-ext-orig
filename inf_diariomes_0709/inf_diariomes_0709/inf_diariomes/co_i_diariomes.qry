@@ -1,0 +1,22 @@
+<!DOCTYPE QRY>
+<QRY>
+	<name>co_i_diariomes</name>
+
+	<tables>co_i_diariomes_buffer</tables>
+
+	<group>
+		<level>0</level>
+		<field>co_i_diariomes_buffer.mes</field>
+	</group>
+
+	<select>
+		co_i_diariomes_buffer.mes, co_i_diariomes_buffer.cuenta, co_i_diariomes_buffer.descripcion, co_i_diariomes_buffer.debe, co_i_diariomes_buffer.haber
+	</select>
+
+	<from>
+		co_i_diariomes_buffer
+	</from>
+
+	<where>
+	</where>
+</QRY>

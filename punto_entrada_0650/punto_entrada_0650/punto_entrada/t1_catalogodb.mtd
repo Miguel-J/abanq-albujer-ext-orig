@@ -1,0 +1,48 @@
+<!DOCTYPE TMD>
+<TMD>
+	<name>t1_catalogodb</name>
+	<!--Catálogo de elementos de dashboard-->
+	<alias>QT_TRANSLATE_NOOP("MetaData","Catálogo de elementos de dashboard")</alias>
+
+	<field>
+		<name>codcatalogodb</name>
+		<alias>QT_TRANSLATE_NOOP("MetaData","Código")</alias>
+		<null>false</null>
+		<pk>true</pk>
+		<type>string</type>
+		<length>50</length>
+		
+		<relation>
+			<table>t1_elementosdb</table>
+			<field>codcatalogodb</field>
+			<card>1M</card>
+		</relation>
+	</field>
+
+	<field>
+		<name>accion</name>
+		<alias>QT_TRANSLATE_NOOP("MetaData","Acción")</alias>
+		<null>false</null>
+		<pk>false</pk>
+		<type>string</type>
+		<length>50</length>
+	</field>
+
+	<field>
+		<name>tipowidget</name>
+		<alias>QT_TRANSLATE_NOOP("MetaData","T.Widget")</alias>
+		<null>false</null>
+		<pk>false</pk>
+		<type>string</type>
+		<length>50</length>
+	</field>
+	
+	<field>
+		<name>xmlbase</name>
+		<alias>QT_TRANSLATE_NOOP("MetaData","XML")</alias>
+		<null>false</null>
+		<pk>false</pk>
+		<type>stringlist</type>
+	</field>
+
+</TMD>

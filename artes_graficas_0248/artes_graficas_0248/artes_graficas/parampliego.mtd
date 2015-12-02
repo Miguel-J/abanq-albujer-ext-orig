@@ -1,0 +1,51 @@
+<!DOCTYPE TMD>
+<TMD>
+    <name>parampliego</name>
+	<!--Parámetros de pliego-->
+	<alias>QT_TRANSLATE_NOOP("MetaData","Parámetros de pliego")</alias>
+    <field>
+        <name>id</name>
+		<!--Identificador interno de la tabla-->        <alias>QT_TRANSLATE_NOOP("MetaData","Identificador")</alias>
+        <null>false</null>
+        <pk>true</pk>
+        <type>serial</type>
+        <visiblegrid>false</visiblegrid>
+    </field>
+    <field>
+        <name>idusuario</name>
+		<alias>QT_TRANSLATE_NOOP("MetaData","Usuario")</alias>
+        <null>false</null>
+        <pk>false</pk>
+        <type>string</type>
+        <length>50</length>
+    </field>
+    <field>
+        <name>xml</name>
+		<alias>QT_TRANSLATE_NOOP("MetaData","XML")</alias>
+        <null>false</null>
+        <pk>false</pk>
+        <type>stringlist</type>
+    </field>
+	
+	<field>
+        <name>altopi</name>
+		<alias>QT_TRANSLATE_NOOP("MetaData","Alto")</alias>
+        <null>true</null>
+        <pk>false</pk>
+        <type>double</type>
+        <partI>6</partI>
+        <partD>2</partD>
+		<editable>false</editable>
+    </field>
+	<field>
+        <name>anchopi</name>
+		<alias>QT_TRANSLATE_NOOP("MetaData","Ancho")</alias>
+        <null>true</null>
+        <pk>false</pk>
+        <type>double</type>
+        <partI>6</partI>
+        <partD>2</partD>
+		<editable>false</editable>
+    </field>
+	
+</TMD>

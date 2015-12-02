@@ -1,0 +1,18 @@
+<flpatch:modifications name="distri_alb_ejer" >
+    <flpatch:patchXml path="facturacion/facturacion/forms/" name="masteralbaranescli.ui" />
+    <flpatch:patchXml path="facturacion/facturacion/tables/" name="albaranescli.mtd" />
+    <flpatch:patchXml path="facturacion/principal/forms/" name="ejercicios.ui" />
+    <flpatch:patchXml path="facturacion/principal/tables/" name="ejercicios.mtd" />
+    <flpatch:patchXml path="facturacion/facturacion/" name="flfacturac.xml" />
+    <flpatch:addFile path="facturacion/facturacion/forms/" name="distribuiralbaranescli.ui" />
+    <flpatch:patchScript path="facturacion/facturacion/scripts/" name="masteralbaranescli.qs" />
+    <flpatch:addFile path="facturacion/facturacion/scripts/" name="distribuiralbaranescli.qs" />
+    <flpatch:patchXml path="facturacion/facturacion/tables/" name="lineasalbaranescli.mtd" />
+    <flpatch:patchXml path="facturacion/facturacion/forms/" name="lineasalbaranescli.ui" />
+    <flpatch:patchScript path="facturacion/facturacion/scripts/" name="masterpedidoscli.qs" />
+    <flpatch:patchScript path="facturacion/facturacion/scripts/" name="lineasalbaranescli.qs" />
+    <flpatch:patchXml path="facturacion/facturacion/forms/" name="facturac_general.ui" />
+    <flpatch:patchXml path="facturacion/facturacion/tables/" name="facturac_general.mtd" />
+    <flpatch:patchScript path="facturacion/facturacion/scripts/" name="flfacturac.qs" />
+    <flpatch:patchScript path="facturacion/facturacion/scripts/" name="lineaspedidoscli.qs" />
+</flpatch:modifications>

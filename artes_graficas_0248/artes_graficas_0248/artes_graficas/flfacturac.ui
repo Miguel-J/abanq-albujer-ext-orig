@@ -1,0 +1,29 @@
+<xupdate:modifications>
+<xupdate:insert-after select="/UI[UI,1]/actions[actions,1]/action[cambiarejer]" >
+<action>
+<property name="name" >
+<cstring>numcopiasag</cstring>
+</property>
+<property name="text" >
+<string>Números de copias</string>
+</property>
+<property name="menuText" >
+<string>&amp;Números de copias</string>
+</property>
+</action>
+</xupdate:insert-after>
+<xupdate:insert-after select="/UI[UI,1]/connections[connections,1]/connection[cambiarejer,activated(),FLWidgetApplication,execDefaultScript()]" >
+<connection>
+<sender>numcopiasag</sender>
+<signal>activated()</signal>
+<receiver>FLWidgetApplication</receiver>
+<slot>openDefaultForm()</slot>
+</connection>
+</xupdate:insert-after>
+<xupdate:update select="/UI[UI,1]/menubar[menubar,1]/property[geometry]/rect[rect,1]/height[height,1]/text()[1]" >28</xupdate:update>
+<xupdate:insert-after select="/UI[UI,1]/menubar[menubar,1]/item[Ejercicio]" >
+<item name="Artes_grficas" text="Artes &amp;gráficas" >
+<action name="numcopiasag" />
+</item>
+</xupdate:insert-after>
+</xupdate:modifications>

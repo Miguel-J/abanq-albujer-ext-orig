@@ -1,0 +1,13 @@
+<flpatch:modifications name="batch_docs" >
+    <flpatch:patchXml path="facturacion/facturacion/" name="flfacturac.xml" />
+    <flpatch:addFile path="facturacion/facturacion/forms/" name="agruparpresupuestoscli.ui" />
+    <flpatch:patchXml path="facturacion/facturacion/forms/" name="masteralbaranescli.ui" />
+    <flpatch:patchXml path="facturacion/facturacion/forms/" name="masterfacturascli.ui" />
+    <flpatch:patchXml path="facturacion/facturacion/forms/" name="masterpedidoscli.ui" />
+    <flpatch:addFile path="facturacion/facturacion/scripts/" name="agruparpresupuestoscli.qs" />
+    <flpatch:patchScript path="facturacion/facturacion/scripts/" name="masteralbaranescli.qs" />
+    <flpatch:patchScript path="facturacion/facturacion/scripts/" name="masterfacturascli.qs" />
+    <flpatch:patchScript path="facturacion/facturacion/scripts/" name="masterpedidoscli.qs" />
+    <flpatch:patchScript path="facturacion/facturacion/scripts/" name="masterpresupuestoscli.qs" />
+    <flpatch:addFile path="facturacion/facturacion/tables/" name="agruparpresupuestoscli.mtd" />
+</flpatch:modifications>

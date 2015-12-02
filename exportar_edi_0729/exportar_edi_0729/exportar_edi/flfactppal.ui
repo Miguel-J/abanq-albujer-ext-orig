@@ -1,0 +1,37 @@
+<xupdate:modifications>
+<xupdate:update select="/UI[UI,1]/widget[QMainWindow,FLWidgetApplication]/property[geometry]/rect[rect,1]/height[height,1]/text()[1]" >480</xupdate:update>
+<xupdate:update select="/UI[UI,1]/widget[QMainWindow,FLWidgetApplication]/property[geometry]/rect[rect,1]/width[width,1]/text()[1]" >644</xupdate:update>
+<xupdate:append-first select="/UI[UI,1]/images[images,1]" >
+<image name="exportar_ediimage27828" >
+<data format="PNG" length="930" >89504e470d0a1a0a0000000d4948445200000018000000180806000000e0773df80000036949444154789ce5945f6c544518c5cf3777eedcbbedb25d5ad636084dff10a536c4ea5224d490289140887d68684c49acbcd06062343c58f5ad4fa0255134318df6451bc34b958426f481c4a489d618d862145aa842c0edee76a1bbb07fbaed76f7ce8c0f4b2b44b69b587cf22437f9ee3d33f3cbfdcecc00ff7b5d7cab45078ef90f15f3d95a015a6a08b777f0d231ff40a0c76f3e7e80d2a86ddb5f56bea9fe0d72d3cf17de6dad79d0a76213cff662230b951d1551b39dc5f8b3cce6283c06566aab506f3d78185a3b484783cedc958b29e9a8f6d65381f15501a37d951e4f9abd5ab56ecb2b15a2fa45dbae6a64eb37009c834c0e7003e01c3039c039966602109b9b91cb4984c7cf2fcaa5ec07db3f99f8b424c0ab2a769767649b4b8a665802b004c81280650262b95efe6e8157d703eb3622fcfdd96c3611fb6dcd19ac2a428e971a6354f82ccb576d0bbb0aabb528179a8059d3845c2e8ff0c8378b3257685151c06d7872e53a33150e4e6e0bdfb9969441a60cc1d94ad0d6df8137771f81d8d48264e8a613bb3a713fe4897100280a18b559075ce55f0d7f3c2700bc5f6cdc4f5d4f6bad34a2bffcb8988945ae4a830eec3815882efbff00f47ce13753e97b9f79cbbcddf1f4dd921969a57163f4bb05ed2c0c41f2b7777c19c83fe83f04e8ecafab994f25ce3db3794bd37eff1e57ff9901590a00a5b1944c1dd9353479fa51f60aa0e3786d9bc9f8c8bee7777bb6d53772680602a8eb647ddc60ec9e41142783e698a628231d21a219a5696630af9b32b5937f60e8d17c0e00aff537bc630bd789ee97db5d551e8178ea122add3bd1dbf1a6020c05189ac86444c262105e4766e7b3f9a4954c47e474702c9df281868bfc20ef3ad9f883cfebdbdeb3afcb76540489f92928ed2072770c79c7518e9419c79131a954542a39ebe465d451ceacd47256b027e64b759069adc4f20b15bf39feb508b8df22d33af1fa9e76d7068f0bf1d41554ba5f8094ca018c04602488cc0491483088a423b3a16c3e793d998e4c4f07c7a652be5f6ff7bd04a7280028846c0b31b2f7b95d9e9686ad5c6b13c7bffd5c9bc41286414983519c318a31a2a80144141022adff8465dff87df6f2f5b1be1200a0b04d4d32ce3df5645dd381d6bdaefe330372f8bd5b25af93d5f4d0411aeebd15757bbc3baf456e7e3d78fef4c25a162ea9ce0f1b0e757e5497fb4f218f437f019bd3646642efeb2d0000000049454e44ae426082</data>
+</image>
+</xupdate:append-first>
+<xupdate:insert-after select="/UI[UI,1]/actions[actions,1]/action[factppal_general]" >
+<action>
+<property name="name" >
+<cstring>edi_esquemas</cstring>
+</property>
+<property name="iconSet" >
+<iconset>exportar_ediimage27828</iconset>
+</property>
+<property name="text" >
+<string>Esquemas de exportación EDI</string>
+</property>
+</action>
+</xupdate:insert-after>
+<xupdate:insert-after select="/UI[UI,1]/connections[connections,1]/connection[factppal_general,activated(),FLWidgetApplication,execDefaultScript()]" >
+<connection>
+<sender>edi_esquemas</sender>
+<signal>activated()</signal>
+<receiver>FLWidgetApplication</receiver>
+<slot>openDefaultForm()</slot>
+</connection>
+</xupdate:insert-after>
+<xupdate:insert-after select="/UI[UI,1]/menubar[menubar,1]/item[generalMenu]/action[factppal_general]" >
+<action name="edi_esquemas" />
+</xupdate:insert-after>
+<xupdate:update select="/UI[UI,1]/menubar[menubar,1]/property[geometry]/rect[rect,1]/width[width,1]/text()[1]" >644</xupdate:update>
+<xupdate:insert-after select="/UI[UI,1]/toolbars[toolbars,1]/toolbar[toolBar]/action[empresa]" >
+<action name="edi_esquemas" />
+</xupdate:insert-after>
+</xupdate:modifications>

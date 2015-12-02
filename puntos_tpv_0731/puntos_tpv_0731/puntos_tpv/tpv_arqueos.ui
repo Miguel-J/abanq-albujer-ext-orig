@@ -1,0 +1,192 @@
+<xupdate:modifications>
+<xupdate:update select="/UI[UI,1]/widget[QWidget,tpv_arqueos]/property[geometry]/rect[rect,1]/height[height,1]/text()[1]" >587</xupdate:update>
+<xupdate:update select="/UI[UI,1]/widget[QWidget,tpv_arqueos]/property[geometry]/rect[rect,1]/width[width,1]/text()[1]" >660</xupdate:update>
+<xupdate:insert-after select="/UI[UI,1]/widget[QWidget,tpv_arqueos]/vbox[vbox,1]/widget[QGroupBox,gbxTotales]/grid[grid,1]/widget[QGroupBox,gbxEnCaja]/vbox[vbox,1]/widget[FLFieldDB,fdbTotalVale]" >
+<widget class="FLFieldDB" >
+<property name="name" >
+<cstring>fdbTotalPuntos</cstring>
+</property>
+<property name="minimumSize" >
+<size>
+<width>26</width>
+<height>22</height>
+</size>
+</property>
+<property name="maximumSize" >
+<size>
+<width>180</width>
+<height>32767</height>
+</size>
+</property>
+<property name="fieldName" >
+<string>totalpuntos</string>
+</property>
+</widget>
+</xupdate:insert-after>
+<xupdate:insert-after select="/UI[UI,1]/widget[QWidget,tpv_arqueos]/vbox[vbox,1]/widget[QGroupBox,gbxTotales]/grid[grid,1]/widget[QGroupBox,gbxCalculado]/vbox[vbox,1]/widget[QLayoutWidget,layout35]" >
+<spacer>
+<property name="name" >
+<cstring>spacer48_2_3</cstring>
+</property>
+<property name="orientation" >
+<enum>Vertical</enum>
+</property>
+<property name="sizeType" >
+<enum>Minimum</enum>
+</property>
+<property name="sizeHint" >
+<size>
+<width>20</width>
+<height>10</height>
+</size>
+</property>
+</spacer>
+</xupdate:insert-after>
+<xupdate:insert-after select="/UI[UI,1]/widget[QWidget,tpv_arqueos]/vbox[vbox,1]/widget[QGroupBox,gbxTotales]/grid[grid,1]/widget[QGroupBox,gbxCalculado]/vbox[vbox,1]/spacer[spacer48_2_3]" >
+<widget class="QLayoutWidget" >
+<property name="name" >
+<cstring>layout35_2</cstring>
+</property>
+<hbox>
+<property name="name" >
+<cstring>unnamed</cstring>
+</property>
+<widget class="QLabel" >
+<property name="name" >
+<cstring>lblCPuntos</cstring>
+</property>
+<property name="font" >
+<font/>
+</property>
+<property name="text" >
+<string>Puntos</string>
+</property>
+</widget>
+<widget class="QLabel" >
+<property name="name" >
+<cstring>lblCalculadoPuntos</cstring>
+</property>
+<property name="minimumSize" >
+<size>
+<width>70</width>
+<height>0</height>
+</size>
+</property>
+<property name="font" >
+<font/>
+</property>
+<property name="text" >
+<string>0.00</string>
+</property>
+<property name="alignment" >
+<set>AlignVCenter|AlignRight</set>
+</property>
+</widget>
+</hbox>
+</widget>
+</xupdate:insert-after>
+<xupdate:update select="/UI[UI,1]/widget[QWidget,tpv_arqueos]/vbox[vbox,1]/widget[QGroupBox,gbxTotales]/grid[grid,1]/widget[QGroupBox,gbxDiferencia]/vbox[vbox,1]/spacer[spacer48_2_2]/property[sizeHint]/size[size,1]/height[height,1]/text()[1]" >10</xupdate:update>
+<xupdate:insert-after select="/UI[UI,1]/widget[QWidget,tpv_arqueos]/vbox[vbox,1]/widget[QGroupBox,gbxTotales]/grid[grid,1]/widget[QGroupBox,gbxDiferencia]/vbox[vbox,1]/widget[QLayoutWidget,layout37_2]" >
+<spacer>
+<property name="name" >
+<cstring>spacer48_2_2_2</cstring>
+</property>
+<property name="orientation" >
+<enum>Vertical</enum>
+</property>
+<property name="sizeType" >
+<enum>Minimum</enum>
+</property>
+<property name="sizeHint" >
+<size>
+<width>20</width>
+<height>10</height>
+</size>
+</property>
+</spacer>
+</xupdate:insert-after>
+<xupdate:insert-after select="/UI[UI,1]/widget[QWidget,tpv_arqueos]/vbox[vbox,1]/widget[QGroupBox,gbxTotales]/grid[grid,1]/widget[QGroupBox,gbxDiferencia]/vbox[vbox,1]/spacer[spacer48_2_2_2]" >
+<widget class="QLayoutWidget" >
+<property name="name" >
+<cstring>layout37_2_2</cstring>
+</property>
+<hbox>
+<property name="name" >
+<cstring>unnamed</cstring>
+</property>
+<widget class="QLabel" >
+<property name="name" >
+<cstring>lblDPuntos</cstring>
+</property>
+<property name="font" >
+<font/>
+</property>
+<property name="text" >
+<string>Puntos</string>
+</property>
+</widget>
+<widget class="QLabel" >
+<property name="name" >
+<cstring>lblDiferenciaPuntos</cstring>
+</property>
+<property name="minimumSize" >
+<size>
+<width>70</width>
+<height>0</height>
+</size>
+</property>
+<property name="font" >
+<font/>
+</property>
+<property name="text" >
+<string>0.00</string>
+</property>
+<property name="alignment" >
+<set>AlignVCenter|AlignRight</set>
+</property>
+</widget>
+</hbox>
+</widget>
+</xupdate:insert-after>
+<xupdate:insert-after select="/UI[UI,1]/widget[QWidget,tpv_arqueos]/vbox[vbox,1]/widget[QTabWidget,tbwArqueo]/widget[QWidget,pagos]/vbox[vbox,1]/widget[QLayoutWidget,layout32]/hbox[hbox,1]/widget[FLFieldDB,fdbPagosVale]" >
+<spacer>
+<property name="name" >
+<cstring>spacer9_2_2</cstring>
+</property>
+<property name="orientation" >
+<enum>Horizontal</enum>
+</property>
+<property name="sizeType" >
+<enum>Fixed</enum>
+</property>
+<property name="sizeHint" >
+<size>
+<width>40</width>
+<height>20</height>
+</size>
+</property>
+</spacer>
+</xupdate:insert-after>
+<xupdate:insert-after select="/UI[UI,1]/widget[QWidget,tpv_arqueos]/vbox[vbox,1]/widget[QTabWidget,tbwArqueo]/widget[QWidget,pagos]/vbox[vbox,1]/widget[QLayoutWidget,layout32]/hbox[hbox,1]/spacer[spacer9_2_2]" >
+<widget class="FLFieldDB" >
+<property name="name" >
+<cstring>fdbPagosPuntos</cstring>
+</property>
+<property name="maximumSize" >
+<size>
+<width>180</width>
+<height>32767</height>
+</size>
+</property>
+<property name="fieldName" >
+<string>pagospuntos</string>
+</property>
+</widget>
+</xupdate:insert-after>
+<xupdate:insert-after select="/UI[UI,1]/includehints[includehints,1]/includehint[flfielddb.h]" >
+<includehint>flfielddb.h</includehint>
+</xupdate:insert-after>
+<xupdate:insert-after select="/UI[UI,1]/includehints[includehints,1]/includehint[flfielddb.h]" >
+<includehint>flfielddb.h</includehint>
+</xupdate:insert-after>
+</xupdate:modifications>

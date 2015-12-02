@@ -1,0 +1,112 @@
+<xupdate:modifications>
+<xupdate:insert-after select="/UI[UI,1]/widget[QWidget,factteso_general]/vbox[vbox,1]/widget[QTabWidget,tbwDatosGenerales]/widget[QWidget,datosgenerales]/vbox[vbox,1]/widget[QGroupBox,gbxDatosGenerales]/vbox[vbox,1]/widget[QGroupBox,gbxRemesasCli]" >
+<widget class="QGroupBox" >
+<property name="name" >
+<cstring>gbxRemesasProv</cstring>
+</property>
+<property name="minimumSize" >
+<size>
+<width>100</width>
+<height>0</height>
+</size>
+</property>
+<property name="font" >
+<font>
+<bold>0</bold>
+</font>
+</property>
+<property name="title" >
+<string>Remesas de proveedor</string>
+</property>
+<hbox>
+<property name="name" >
+<cstring>unnamed</cstring>
+</property>
+<widget class="QLayoutWidget" >
+<property name="name" >
+<cstring>layout3</cstring>
+</property>
+<vbox>
+<property name="name" >
+<cstring>unnamed</cstring>
+</property>
+<widget class="FLFieldDB" >
+<property name="name" >
+<cstring>fdbPagoDiferidoProv</cstring>
+</property>
+<property name="minimumSize" >
+<size>
+<width>38</width>
+<height>24</height>
+</size>
+</property>
+<property name="maximumSize" >
+<size>
+<width>250</width>
+<height>32767</height>
+</size>
+</property>
+<property name="font" >
+<font/>
+</property>
+<property name="fieldName" >
+<string>pagodiferidoprov</string>
+</property>
+</widget>
+<widget class="FLFieldDB" >
+<property name="name" >
+<cstring>fdbPagoIndirectoProv</cstring>
+</property>
+<property name="minimumSize" >
+<size>
+<width>38</width>
+<height>24</height>
+</size>
+</property>
+<property name="maximumSize" >
+<size>
+<width>250</width>
+<height>32767</height>
+</size>
+</property>
+<property name="font" >
+<font/>
+</property>
+<property name="fieldName" >
+<string>pagoindirectoprov</string>
+</property>
+</widget>
+</vbox>
+</widget>
+<widget class="QLabel" >
+<property name="name" >
+<cstring>lblDesPagoRemesasProv</cstring>
+</property>
+<property name="sizePolicy" >
+<sizepolicy>
+<hsizetype>7</hsizetype>
+<vsizetype>7</vsizetype>
+<horstretch>0</horstretch>
+<verstretch>0</verstretch>
+</sizepolicy>
+</property>
+<property name="minimumSize" >
+<size>
+<width>400</width>
+<height>100</height>
+</size>
+</property>
+<property name="font" >
+<font/>
+</property>
+<property name="text" >
+<string/>
+</property>
+<property name="alignment" >
+<set>WordBreak|AlignVCenter</set>
+</property>
+</widget>
+</hbox>
+</widget>
+</xupdate:insert-after>
+</xupdate:modifications>

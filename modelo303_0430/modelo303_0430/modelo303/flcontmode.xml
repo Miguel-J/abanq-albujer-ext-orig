@@ -1,0 +1,42 @@
+<xupdate:modifications>
+<xupdate:insert-after select="/ACTIONS[ACTIONS,1]/action[co_calculoscasilla]" >
+<action>
+<name>co_modelo303</name>
+<description>QT_TRANSLATE_NOOP(&quot;MetaData&quot;,&quot;Modelo 303&quot;)</description>
+<alias>QT_TRANSLATE_NOOP(&quot;MetaData&quot;,&quot;Modelo 303&quot;)</alias>
+<scriptformrecord>co_modelo303</scriptformrecord>
+<scriptform>co_mastermodelo303</scriptform>
+<table>co_modelo303</table>
+<form>co_mastermodelo</form>
+<formrecord>co_modelo303</formrecord>
+</action>
+</xupdate:insert-after>
+<xupdate:insert-after select="/ACTIONS[ACTIONS,1]/action[co_modelo303]" >
+<action>
+<name>co_tipodec303</name>
+<description>QT_TRANSLATE_NOOP(&quot;MetaData&quot;,&quot;Esta tabla almacena los distintos tipos de declaración que puede tener el modelo 303&quot;)</description>
+<alias>QT_TRANSLATE_NOOP(&quot;MetaData&quot;,&quot;Tipos de declaración (modelo 303)&quot;)</alias>
+<table>co_tipodec303</table>
+<form>master</form>
+</action>
+</xupdate:insert-after>
+<xupdate:insert-after select="/ACTIONS[ACTIONS,1]/action[co_tipodec303]" >
+<action>
+<name>co_casillas303</name>
+<description>QT_TRANSLATE_NOOP(&quot;MetaData&quot;,&quot;Esta tabla almacena las casillas calculadas del modelo 303&quot;)</description>
+<alias>QT_TRANSLATE_NOOP(&quot;MetaData&quot;,&quot;Casillas del modelo 303&quot;)</alias>
+<table>co_casillas303</table>
+<form>master</form>
+</action>
+</xupdate:insert-after>
+<xupdate:insert-after select="/ACTIONS[ACTIONS,1]/action[co_casillas303]" >
+<action>
+<name>co_partidas303</name>
+<description>QT_TRANSLATE_NOOP(&quot;MetaData&quot;,&quot;Partidas asociadas al modelo 303&quot;)</description>
+<alias>QT_TRANSLATE_NOOP(&quot;MetaData&quot;,&quot;Partidas asociadas al modelo 303&quot;)</alias>
+<table>co_partidas</table>
+<form>co_masterpartidas303</form>
+<scriptform>co_masterpartidas303</scriptform>
+</action>
+</xupdate:insert-after>
+</xupdate:modifications>

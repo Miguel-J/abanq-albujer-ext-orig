@@ -1,0 +1,10 @@
+<flpatch:modifications name="tpv_traza" >
+    <flpatch:patchXml path="facturacion/tpv/forms/" name="tpv_lineascomanda.ui" />
+    <flpatch:patchScript path="facturacion/tpv/scripts/" name="tpv_lineascomanda.qs" />
+    <flpatch:patchScript path="facturacion/almacen/scripts/" name="movilote.qs" />
+    <flpatch:patchScript path="facturacion/tpv/scripts/" name="tpv_comandas.qs" />
+    <flpatch:patchXml path="facturacion/almacen/tables/" name="movilote.mtd" />
+    <flpatch:patchXml path="facturacion/tpv/tables/" name="tpv_lineascomanda.mtd" />
+    <flpatch:patchScript path="facturacion/informes/scripts/" name="i_mastermovilote.qs" />
+    <flpatch:replaceFile path="facturacion/informes/queries/" name="i_movilote.qry" />
+</flpatch:modifications>

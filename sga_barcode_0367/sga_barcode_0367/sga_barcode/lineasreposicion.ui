@@ -1,0 +1,78 @@
+<xupdate:modifications>
+<xupdate:update select="/UI[UI,1]/widget[QWidget,lineasreposicion]/property[property,2]/rect[rect,1]/height[height,1]/text()[1]" >248</xupdate:update>
+<xupdate:insert-after select="/UI[UI,1]/widget[QWidget,lineasreposicion]/vbox[vbox,1]/widget[QLayoutWidget,layoutArticulo]" >
+<widget class="QLayoutWidget" >
+<property name="name" >
+<cstring>layout16</cstring>
+</property>
+<hbox>
+<property name="name" >
+<cstring>unnamed</cstring>
+</property>
+<widget class="FLFieldDB" >
+<property name="name" >
+<cstring>fdbBarcode</cstring>
+</property>
+<property name="sizePolicy" >
+<sizepolicy>
+<hsizetype>1</hsizetype>
+<vsizetype>0</vsizetype>
+<horstretch>0</horstretch>
+<verstretch>0</verstretch>
+</sizepolicy>
+</property>
+<property name="font" >
+<font/>
+</property>
+<property name="fieldName" >
+<string>barcode</string>
+</property>
+</widget>
+<widget class="FLFieldDB" >
+<property name="name" >
+<cstring>fdbTalla</cstring>
+</property>
+<property name="sizePolicy" >
+<sizepolicy>
+<hsizetype>1</hsizetype>
+<vsizetype>0</vsizetype>
+<horstretch>0</horstretch>
+<verstretch>0</verstretch>
+</sizepolicy>
+</property>
+<property name="font" >
+<font/>
+</property>
+<property name="fieldName" >
+<string>talla</string>
+</property>
+<property name="showAlias" >
+<bool>false</bool>
+</property>
+</widget>
+<widget class="FLFieldDB" >
+<property name="name" >
+<cstring>fdbColor</cstring>
+</property>
+<property name="sizePolicy" >
+<sizepolicy>
+<hsizetype>1</hsizetype>
+<vsizetype>0</vsizetype>
+<horstretch>0</horstretch>
+<verstretch>0</verstretch>
+</sizepolicy>
+</property>
+<property name="font" >
+<font/>
+</property>
+<property name="fieldName" >
+<string>color</string>
+</property>
+<property name="showAlias" >
+<bool>false</bool>
+</property>
+</widget>
+</hbox>
+</widget>
+</xupdate:insert-after>
+</xupdate:modifications>

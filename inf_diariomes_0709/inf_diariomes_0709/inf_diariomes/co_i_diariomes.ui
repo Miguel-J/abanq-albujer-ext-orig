@@ -1,0 +1,279 @@
+<!DOCTYPE UI><UI version="3.3" stdsetdef="1">
+<class>co_i_diario</class>
+<widget class="QWidget">
+    <property name="name">
+        <cstring>co_i_diario</cstring>
+    </property>
+    <property name="geometry">
+        <rect>
+            <x>0</x>
+            <y>0</y>
+            <width>671</width>
+            <height>178</height>
+        </rect>
+    </property>
+    <property name="caption">
+        <string>Criterios libro diario</string>
+    </property>
+    <vbox>
+        <property name="name">
+            <cstring>unnamed</cstring>
+        </property>
+        <property name="margin">
+            <number>6</number>
+        </property>
+        <property name="spacing">
+            <number>15</number>
+        </property>
+        <widget class="QFrame">
+            <property name="name">
+                <cstring>frame5</cstring>
+            </property>
+            <property name="frameShape">
+                <enum>GroupBoxPanel</enum>
+            </property>
+            <property name="frameShadow">
+                <enum>Sunken</enum>
+            </property>
+            <hbox>
+                <property name="name">
+                    <cstring>unnamed</cstring>
+                </property>
+                <widget class="FLFieldDB">
+                    <property name="name">
+                        <cstring>fdbDescripcion</cstring>
+                    </property>
+                    <property name="sizePolicy">
+                        <sizepolicy>
+                            <hsizetype>3</hsizetype>
+                            <vsizetype>0</vsizetype>
+                            <horstretch>0</horstretch>
+                            <verstretch>0</verstretch>
+                        </sizepolicy>
+                    </property>
+                    <property name="minimumSize">
+                        <size>
+                            <width>26</width>
+                            <height>22</height>
+                        </size>
+                    </property>
+                    <property name="fieldName">
+                        <string>descripcion</string>
+                    </property>
+                </widget>
+            </hbox>
+        </widget>
+        <widget class="QTabWidget">
+            <property name="name">
+                <cstring>tbwDiario</cstring>
+            </property>
+            <property name="font">
+                <font>
+                    <bold>1</bold>
+                </font>
+            </property>
+            <widget class="QWidget">
+                <property name="name">
+                    <cstring>criterios</cstring>
+                </property>
+                <attribute name="title">
+                    <string>&amp;Criterios de búsqueda</string>
+                </attribute>
+                <vbox>
+                    <property name="name">
+                        <cstring>unnamed</cstring>
+                    </property>
+                    <widget class="QGroupBox">
+                        <property name="name">
+                            <cstring>groupBox3</cstring>
+                        </property>
+                        <property name="font">
+                            <font>
+                                <italic>1</italic>
+                            </font>
+                        </property>
+                        <property name="title">
+                            <string></string>
+                        </property>
+                        <vbox>
+                            <property name="name">
+                                <cstring>unnamed</cstring>
+                            </property>
+                            <property name="margin">
+                                <number>15</number>
+                            </property>
+                            <widget class="QLayoutWidget">
+                                <property name="name">
+                                    <cstring>layout67</cstring>
+                                </property>
+                                <hbox>
+                                    <property name="name">
+                                        <cstring>unnamed</cstring>
+                                    </property>
+                                    <widget class="FLFieldDB">
+                                        <property name="name">
+                                            <cstring>fdbEjercicio</cstring>
+                                        </property>
+                                        <property name="sizePolicy">
+                                            <sizepolicy>
+                                                <hsizetype>1</hsizetype>
+                                                <vsizetype>0</vsizetype>
+                                                <horstretch>0</horstretch>
+                                                <verstretch>0</verstretch>
+                                            </sizepolicy>
+                                        </property>
+                                        <property name="minimumSize">
+                                            <size>
+                                                <width>38</width>
+                                                <height>24</height>
+                                            </size>
+                                        </property>
+                                        <property name="maximumSize">
+                                            <size>
+                                                <width>220</width>
+                                                <height>32767</height>
+                                            </size>
+                                        </property>
+                                        <property name="font">
+                                            <font>
+                                                <bold>0</bold>
+                                                <italic>0</italic>
+                                            </font>
+                                        </property>
+                                        <property name="fieldName">
+                                            <string>codejercicio</string>
+                                        </property>
+                                    </widget>
+                                    <widget class="FLFieldDB">
+                                        <property name="name">
+                                            <cstring>fdbNombreEjercicio</cstring>
+                                        </property>
+                                        <property name="sizePolicy">
+                                            <sizepolicy>
+                                                <hsizetype>1</hsizetype>
+                                                <vsizetype>0</vsizetype>
+                                                <horstretch>0</horstretch>
+                                                <verstretch>0</verstretch>
+                                            </sizepolicy>
+                                        </property>
+                                        <property name="minimumSize">
+                                            <size>
+                                                <width>9</width>
+                                                <height>23</height>
+                                            </size>
+                                        </property>
+                                        <property name="font">
+                                            <font>
+                                                <bold>0</bold>
+                                                <italic>0</italic>
+                                            </font>
+                                        </property>
+                                        <property name="fieldName">
+                                            <string>nombre</string>
+                                        </property>
+                                        <property name="tableName">
+                                            <string>ejercicios</string>
+                                        </property>
+                                        <property name="foreignField">
+                                            <string>codejercicio</string>
+                                        </property>
+                                        <property name="fieldRelation">
+                                            <string>codejercicio</string>
+                                        </property>
+                                        <property name="showAlias">
+                                            <bool>false</bool>
+                                        </property>
+                                    </widget>
+                                    <widget class="FLFieldDB">
+                                        <property name="name">
+                                            <cstring>fdbFechaDesde</cstring>
+                                        </property>
+                                        <property name="sizePolicy">
+                                            <sizepolicy>
+                                                <hsizetype>1</hsizetype>
+                                                <vsizetype>0</vsizetype>
+                                                <horstretch>0</horstretch>
+                                                <verstretch>0</verstretch>
+                                            </sizepolicy>
+                                        </property>
+                                        <property name="minimumSize">
+                                            <size>
+                                                <width>16</width>
+                                                <height>23</height>
+                                            </size>
+                                        </property>
+                                        <property name="font">
+                                            <font>
+                                                <bold>0</bold>
+                                                <italic>0</italic>
+                                            </font>
+                                        </property>
+                                        <property name="fieldName">
+                                            <string>fechadesde</string>
+                                        </property>
+                                        <property name="foreignField">
+                                            <string>fechainicio</string>
+                                        </property>
+                                        <property name="fieldRelation">
+                                            <string>codejercicio</string>
+                                        </property>
+                                    </widget>
+                                    <widget class="FLFieldDB">
+                                        <property name="name">
+                                            <cstring>fdbFechaHasta</cstring>
+                                        </property>
+                                        <property name="sizePolicy">
+                                            <sizepolicy>
+                                                <hsizetype>1</hsizetype>
+                                                <vsizetype>0</vsizetype>
+                                                <horstretch>0</horstretch>
+                                                <verstretch>0</verstretch>
+                                            </sizepolicy>
+                                        </property>
+                                        <property name="minimumSize">
+                                            <size>
+                                                <width>16</width>
+                                                <height>23</height>
+                                            </size>
+                                        </property>
+                                        <property name="font">
+                                            <font>
+                                                <bold>0</bold>
+                                                <italic>0</italic>
+                                            </font>
+                                        </property>
+                                        <property name="fieldName">
+                                            <string>fechahasta</string>
+                                        </property>
+                                        <property name="foreignField">
+                                            <string>fechafin</string>
+                                        </property>
+                                        <property name="fieldRelation">
+                                            <string>codejercicio</string>
+                                        </property>
+                                    </widget>
+                                </hbox>
+                            </widget>
+                        </vbox>
+                    </widget>
+                </vbox>
+            </widget>
+        </widget>
+    </vbox>
+</widget>
+<tabstops>
+    <tabstop>fdbDescripcion</tabstop>
+    <tabstop>fdbEjercicio</tabstop>
+    <tabstop>fdbNombreEjercicio</tabstop>
+    <tabstop>fdbFechaDesde</tabstop>
+    <tabstop>fdbFechaHasta</tabstop>
+</tabstops>
+<layoutdefaults spacing="6" margin="11"/>
+<includehints>
+    <includehint>flfielddb.h</includehint>
+    <includehint>flfielddb.h</includehint>
+    <includehint>flfielddb.h</includehint>
+    <includehint>flfielddb.h</includehint>
+    <includehint>flfielddb.h</includehint>
+</includehints>
+</UI>

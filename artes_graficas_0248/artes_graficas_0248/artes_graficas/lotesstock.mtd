@@ -1,0 +1,16 @@
+<xupdate:modifications>
+<xupdate:insert-after select="/TMD[TMD,1]/field[fechafabricacion]" >
+<field>
+<name>iditinerario</name>
+<!--Itinerario presupuestado seleccionado--><alias>QT_TRANSLATE_NOOP(&quot;MetaData&quot;,&quot;Itinerario&quot;)</alias>
+<null>true</null>
+<pk>false</pk>
+<type>uint</type>
+<relation>
+<table>itinerarioslp</table>
+<field>iditinerario</field>
+<card>M1</card>
+</relation>
+</field>
+</xupdate:insert-after>
+</xupdate:modifications>

@@ -1,0 +1,63 @@
+<xupdate:modifications>
+<xupdate:update select="/UI[UI,1]/widget[QWidget,formtpv_datosgenerales]/property[geometry]/rect[rect,1]/height[height,1]/text()[1]" >436</xupdate:update>
+<xupdate:update select="/UI[UI,1]/widget[QWidget,formtpv_datosgenerales]/vbox[vbox,1]/widget[QTabWidget,tbwDatosGenerales]/widget[QWidget,contabilidad]/vbox[vbox,1]/widget[QGroupBox,gbxContabilidad]/vbox[vbox,1]/widget[QLayoutWidget,layoutSubcuentaCausaCierre]/hbox[hbox,1]/widget[FLFieldDB,fdbCodCausaCierre]/property[minimumSize]/size[size,1]/width[width,1]/text()[1]" >27</xupdate:update>
+<xupdate:update select="/UI[UI,1]/widget[QWidget,formtpv_datosgenerales]/vbox[vbox,1]/widget[QTabWidget,tbwDatosGenerales]/widget[QWidget,contabilidad]/vbox[vbox,1]/widget[QGroupBox,gbxContabilidad]/vbox[vbox,1]/widget[QLayoutWidget,layoutSubcuentaDifNeg]/hbox[hbox,1]/widget[FLFieldDB,fdbCodSubcuentaDifNeg]/property[minimumSize]/size[size,1]/width[width,1]/text()[1]" >27</xupdate:update>
+<xupdate:update select="/UI[UI,1]/widget[QWidget,formtpv_datosgenerales]/vbox[vbox,1]/widget[QTabWidget,tbwDatosGenerales]/widget[QWidget,contabilidad]/vbox[vbox,1]/widget[QGroupBox,gbxContabilidad]/vbox[vbox,1]/widget[QLayoutWidget,layoutSubcuentaDifPos]/hbox[hbox,1]/widget[FLFieldDB,fdbCodSubcuentaDifPos]/property[minimumSize]/size[size,1]/width[width,1]/text()[1]" >27</xupdate:update>
+<xupdate:update select="/UI[UI,1]/widget[QWidget,formtpv_datosgenerales]/vbox[vbox,1]/widget[QTabWidget,tbwDatosGenerales]/widget[QWidget,datosgenerales]/vbox[vbox,1]/widget[QGroupBox,gbxDatosGenerales]/vbox[vbox,1]/widget[QLayoutWidget,layoutCliente_2]/hbox[hbox,1]/widget[FLFieldDB,fdbCodSerie]/property[minimumSize]/size[size,1]/height[height,1]/text()[1]" >22</xupdate:update>
+<xupdate:update select="/UI[UI,1]/widget[QWidget,formtpv_datosgenerales]/vbox[vbox,1]/widget[QTabWidget,tbwDatosGenerales]/widget[QWidget,datosgenerales]/vbox[vbox,1]/widget[QGroupBox,gbxDatosGenerales]/vbox[vbox,1]/widget[QLayoutWidget,layoutCliente_2]/hbox[hbox,1]/widget[FLFieldDB,fdbCodSerie]/property[minimumSize]/size[size,1]/width[width,1]/text()[1]" >26</xupdate:update>
+<xupdate:update select="/UI[UI,1]/widget[QWidget,formtpv_datosgenerales]/vbox[vbox,1]/widget[QTabWidget,tbwDatosGenerales]/widget[QWidget,datosgenerales]/vbox[vbox,1]/widget[QGroupBox,gbxDatosGenerales]/vbox[vbox,1]/widget[QLayoutWidget,layoutCliente_2]/hbox[hbox,1]/widget[FLFieldDB,fdbDesSerie]/property[minimumSize]/size[size,1]/height[height,1]/text()[1]" >21</xupdate:update>
+<xupdate:update select="/UI[UI,1]/widget[QWidget,formtpv_datosgenerales]/vbox[vbox,1]/widget[QTabWidget,tbwDatosGenerales]/widget[QWidget,datosgenerales]/vbox[vbox,1]/widget[QGroupBox,gbxDatosGenerales]/vbox[vbox,1]/widget[QLayoutWidget,layoutCliente_2]/hbox[hbox,1]/widget[FLFieldDB,fdbDesSerie]/property[minimumSize]/size[size,1]/width[width,1]/text()[1]" >2</xupdate:update>
+<xupdate:update select="/UI[UI,1]/widget[QWidget,formtpv_datosgenerales]/vbox[vbox,1]/widget[QTabWidget,tbwDatosGenerales]/widget[QWidget,datosgenerales]/vbox[vbox,1]/widget[QGroupBox,gbxDatosGenerales]/vbox[vbox,1]/widget[QLayoutWidget,layoutDiasVale]/hbox[hbox,1]/widget[FLFieldDB,fdbDiasValidezVale]/property[minimumSize]/size[size,1]/height[height,1]/text()[1]" >24</xupdate:update>
+<xupdate:update select="/UI[UI,1]/widget[QWidget,formtpv_datosgenerales]/vbox[vbox,1]/widget[QTabWidget,tbwDatosGenerales]/widget[QWidget,datosgenerales]/vbox[vbox,1]/widget[QGroupBox,gbxDatosGenerales]/vbox[vbox,1]/widget[QLayoutWidget,layoutDiasVale]/hbox[hbox,1]/widget[FLFieldDB,fdbDiasValidezVale]/property[minimumSize]/size[size,1]/width[width,1]/text()[1]" >38</xupdate:update>
+<xupdate:insert-after select="/UI[UI,1]/widget[QWidget,formtpv_datosgenerales]/vbox[vbox,1]/widget[QTabWidget,tbwDatosGenerales]/widget[QWidget,datosgenerales]/vbox[vbox,1]/widget[QGroupBox,gbxDatosGenerales]/vbox[vbox,1]/widget[QGroupBox,gbxTipoIntegracion]" >
+<widget class="QLayoutWidget" >
+<property name="name" >
+<cstring>layoutIvaIncluido</cstring>
+</property>
+<hbox>
+<property name="name" >
+<cstring>unnamed</cstring>
+</property>
+<widget class="FLFieldDB" >
+<property name="name" >
+<cstring>fdbIvaIncluido</cstring>
+</property>
+<property name="minimumSize" >
+<size>
+<width>38</width>
+<height>24</height>
+</size>
+</property>
+<property name="font" >
+<font>
+<bold>0</bold>
+</font>
+</property>
+<property name="fieldName" >
+<string>ivaincluido</string>
+</property>
+</widget>
+<spacer>
+<property name="name" >
+<cstring>spacerIvaIncluido</cstring>
+</property>
+<property name="orientation" >
+<enum>Horizontal</enum>
+</property>
+<property name="sizeType" >
+<enum>Expanding</enum>
+</property>
+<property name="sizeHint" >
+<size>
+<width>121</width>
+<height>20</height>
+</size>
+</property>
+</spacer>
+</hbox>
+</widget>
+</xupdate:insert-after>
+<xupdate:insert-after select="/UI[UI,1]/includehints[includehints,1]/includehint[flfielddb.h]" >
+<includehint>flfielddb.h</includehint>
+</xupdate:insert-after>
+</xupdate:modifications>

@@ -1,0 +1,37 @@
+<!DOCTYPE TMD>
+<TMD>
+	<name>modotransporte</name>
+	<!--Listado de los modos de transporte probable-->
+	<alias>QT_TRANSLATE_NOOP("MetaData","Modo de transporte probable")</alias>
+
+	<field>
+		<name>codmodotransporte</name>
+		<!--Código del modo de transporte-->
+		<alias>QT_TRANSLATE_NOOP("MetaData","Código")</alias>
+		<null>false</null>
+		<pk>true</pk>
+		<type>string</type>
+		<length>1</length>
+
+		<relation>
+			<table>lineasintrastatcli</table>
+			<field>codmodotransporte</field>
+			<card>1M</card>
+		</relation>
+		<relation>
+			<table>lineasintrastatprov</table>
+			<field>codmodotransporte</field>
+			<card>1M</card>
+		</relation>
+	</field>
+
+	<field>
+		<name>descripcion</name>
+		<alias>QT_TRANSLATE_NOOP("MetaData","Descripción")</alias>
+		<null>false</null>
+		<pk>false</pk>
+		<type>string</type>
+		<length>100</length>
+	</field>
+
+</TMD>

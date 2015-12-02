@@ -1,0 +1,287 @@
+<!DOCTYPE UI><UI version="3.3" stdsetdef="1">
+<class>formOpcionesTV</class>
+<widget class="QWidget">
+    <property name="name">
+        <cstring>formOpcionesTV</cstring>
+    </property>
+    <property name="geometry">
+        <rect>
+            <x>0</x>
+            <y>0</y>
+            <width>678</width>
+            <height>129</height>
+        </rect>
+    </property>
+    <property name="sizePolicy">
+        <sizepolicy>
+            <hsizetype>1</hsizetype>
+            <vsizetype>5</vsizetype>
+            <horstretch>0</horstretch>
+            <verstretch>0</verstretch>
+        </sizepolicy>
+    </property>
+    <property name="caption">
+        <string>Opciones</string>
+    </property>
+    <vbox>
+        <property name="name">
+            <cstring>unnamed</cstring>
+        </property>
+        <property name="margin">
+            <number>6</number>
+        </property>
+        <property name="spacing">
+            <number>6</number>
+        </property>
+        <widget class="QButtonGroup">
+            <property name="name">
+                <cstring>buttonGroup2</cstring>
+            </property>
+            <property name="paletteBackgroundColor">
+                <color>
+                    <red>239</red>
+                    <green>243</green>
+                    <blue>247</blue>
+                </color>
+            </property>
+            <property name="title">
+                <string></string>
+            </property>
+            <vbox>
+                <property name="name">
+                    <cstring>unnamed</cstring>
+                </property>
+                <widget class="QLayoutWidget">
+                    <property name="name">
+                        <cstring>layout27</cstring>
+                    </property>
+                    <hbox>
+                        <property name="name">
+                            <cstring>unnamed</cstring>
+                        </property>
+                        <widget class="QLabel">
+                            <property name="name">
+                                <cstring>lblRutaTmp_2</cstring>
+                            </property>
+                            <property name="minimumSize">
+                                <size>
+                                    <width>200</width>
+                                    <height>0</height>
+                                </size>
+                            </property>
+                            <property name="paletteBackgroundColor">
+                                <color>
+                                    <red>239</red>
+                                    <green>243</green>
+                                    <blue>247</blue>
+                                </color>
+                            </property>
+                            <property name="text">
+                                <string>Directorio temporal</string>
+                            </property>
+                        </widget>
+                        <widget class="QLabel">
+                            <property name="name">
+                                <cstring>lblRutaTmp</cstring>
+                            </property>
+                            <property name="minimumSize">
+                                <size>
+                                    <width>350</width>
+                                    <height>0</height>
+                                </size>
+                            </property>
+                            <property name="paletteBackgroundColor">
+                                <color>
+                                    <red>215</red>
+                                    <green>219</green>
+                                    <blue>222</blue>
+                                </color>
+                            </property>
+                            <property name="text">
+                                <string>ruta no establecida</string>
+                            </property>
+                        </widget>
+                        <widget class="QPushButton">
+                            <property name="name">
+                                <cstring>pbnCambiarRutaTmp</cstring>
+                            </property>
+                            <property name="font">
+                                <font>
+                                </font>
+                            </property>
+                            <property name="text">
+                                <string>Cambiar</string>
+                            </property>
+                            <property name="iconSet">
+                                <iconset>image0</iconset>
+                            </property>
+                            <property name="toolTip" stdset="0">
+                                <string>Cambiar el directorio de los modulos a documentar</string>
+                            </property>
+                            <property name="whatsThis" stdset="0">
+                                <string>Cambia o establece el directorio en el que se encuentran los modulos. Bajo este directorio deben encontrarse directamente los directorios de area, y dentro de estos los de modulos: en el caso de '/home/usuario/facturalux/modulos/facturacion/principal' deberiamos indicar '/home/usuario/facturalux/modulos'</string>
+                            </property>
+                        </widget>
+                    </hbox>
+                </widget>
+                <widget class="QLayoutWidget">
+                    <property name="name">
+                        <cstring>layout28</cstring>
+                    </property>
+                    <hbox>
+                        <property name="name">
+                            <cstring>unnamed</cstring>
+                        </property>
+                        <widget class="QLabel">
+                            <property name="name">
+                                <cstring>lblRutaTmp_2_2</cstring>
+                            </property>
+                            <property name="minimumSize">
+                                <size>
+                                    <width>200</width>
+                                    <height>0</height>
+                                </size>
+                            </property>
+                            <property name="paletteBackgroundColor">
+                                <color>
+                                    <red>239</red>
+                                    <green>243</green>
+                                    <blue>247</blue>
+                                </color>
+                            </property>
+                            <property name="text">
+                                <string>Directorio de plantillas</string>
+                            </property>
+                        </widget>
+                        <widget class="QLabel">
+                            <property name="name">
+                                <cstring>lblRutaPlantillas</cstring>
+                            </property>
+                            <property name="minimumSize">
+                                <size>
+                                    <width>350</width>
+                                    <height>0</height>
+                                </size>
+                            </property>
+                            <property name="paletteBackgroundColor">
+                                <color>
+                                    <red>215</red>
+                                    <green>219</green>
+                                    <blue>222</blue>
+                                </color>
+                            </property>
+                            <property name="text">
+                                <string>ruta no establecida</string>
+                            </property>
+                        </widget>
+                        <widget class="QPushButton">
+                            <property name="name">
+                                <cstring>pbnCambiarRutaPlantillas</cstring>
+                            </property>
+                            <property name="font">
+                                <font>
+                                </font>
+                            </property>
+                            <property name="text">
+                                <string>Cambiar</string>
+                            </property>
+                            <property name="iconSet">
+                                <iconset>image1</iconset>
+                            </property>
+                            <property name="toolTip" stdset="0">
+                                <string>Cambiar el directorio de los modulos a documentar</string>
+                            </property>
+                            <property name="whatsThis" stdset="0">
+                                <string>Cambia o establece el directorio en el que se encuentran los modulos. Bajo este directorio deben encontrarse directamente los directorios de area, y dentro de estos los de modulos: en el caso de '/home/usuario/facturalux/modulos/facturacion/principal' deberiamos indicar '/home/usuario/facturalux/modulos'</string>
+                            </property>
+                        </widget>
+                    </hbox>
+                </widget>
+                <widget class="QLayoutWidget">
+                    <property name="name">
+                        <cstring>layout9</cstring>
+                    </property>
+                    <hbox>
+                        <property name="name">
+                            <cstring>unnamed</cstring>
+                        </property>
+                        <widget class="QLabel">
+                            <property name="name">
+                                <cstring>lblRutaTmp_2_3_2</cstring>
+                            </property>
+                            <property name="minimumSize">
+                                <size>
+                                    <width>200</width>
+                                    <height>0</height>
+                                </size>
+                            </property>
+                            <property name="paletteBackgroundColor">
+                                <color>
+                                    <red>239</red>
+                                    <green>243</green>
+                                    <blue>247</blue>
+                                </color>
+                            </property>
+                            <property name="text">
+                                <string>Comando de Open Office writer</string>
+                            </property>
+                        </widget>
+                        <widget class="QLabel">
+                            <property name="name">
+                                <cstring>lblComandoWriter</cstring>
+                            </property>
+                            <property name="minimumSize">
+                                <size>
+                                    <width>350</width>
+                                    <height>25</height>
+                                </size>
+                            </property>
+                            <property name="paletteBackgroundColor">
+                                <color>
+                                    <red>215</red>
+                                    <green>219</green>
+                                    <blue>222</blue>
+                                </color>
+                            </property>
+                            <property name="text">
+                                <string>no establecido</string>
+                            </property>
+                        </widget>
+                        <widget class="QPushButton">
+                            <property name="name">
+                                <cstring>pbnCambiarComandoWriter</cstring>
+                            </property>
+                            <property name="font">
+                                <font>
+                                </font>
+                            </property>
+                            <property name="text">
+                                <string>Cambiar</string>
+                            </property>
+                            <property name="toolTip" stdset="0">
+                                <string>Cambiar el directorio de los modulos a documentar</string>
+                            </property>
+                            <property name="whatsThis" stdset="0">
+                                <string>Cambia o establece el directorio en el que se encuentran los modulos. Bajo este directorio deben encontrarse directamente los directorios de area, y dentro de estos los de modulos: en el caso de '/home/usuario/facturalux/modulos/facturacion/principal' deberiamos indicar '/home/usuario/facturalux/modulos'</string>
+                            </property>
+                        </widget>
+                    </hbox>
+                </widget>
+            </vbox>
+        </widget>
+    </vbox>
+</widget>
+<images>
+    <image name="image0">
+        <data format="PNG" length="582">89504e470d0a1a0a0000000d49484452000000100000001008060000001ff3ff610000020d49444154789c8d923f68137114c73f271a73b6819c48e98105030a362e6969a1862821e2124737c1258e1973e060dd5c2ab42e764c96529d222eda2917517a434da320e6022da412e5848a5742c8c554780e09ade60ff85d1e8ff77b5f3eefcb0f7a928ec8f6d6b6484744b64446f50c536b5dfe5b05b360fdbd7b022047854a118c157ad5faa7e7f078213197f00d106496bb882222ad56af36baf5674324b524d2ea0d0a66a1344000c029a00eaa0aec801a80f227d002ddb1aaaa5d82488201831450ab7b300565db834b607d7099bd0ce63b170077df01c02c9983216696374544e4692fcccd72ef244b441a22a9a5c2718a15793be4842865dba3bc07d90d87e80cbc2ab910817cc90512388e0375be2861e5fad00c66a75508c2cc399dec06dc9ad3c87f84db110d005dd7319e18c57efaa30c2cdbc31f84aced50de87c5972ec98b902db964efc2bdc726fcf694a106392ca2d32a6a008c9b3aaa067716341ebe81ab17348c22a4e71378edf670038862d5201383f5aa4b3006cfaa1ee938e4aa2ede3cacbe37e1a47f94014443f0a20a8b310d7d171ec555f2bb90896b687b5d02dbb67ff41b28009f97456ad79c4e71476f06d58a2fbd1056564b35a51d098953ac1d7e6f873a9307e644eefe8df3c0b701822b19c5af37759ffb95b3c96078dc5833c792e3a133ce73c6d253a1e0e48139f17acd7bd0bf7c4430420add0fee034e034de057ffa33ff28045f29678f9500000000049454e44ae426082</data>
+    </image>
+    <image name="image1">
+        <data format="PNG" length="585">89504e470d0a1a0a0000000d49484452000000100000001008060000001ff3ff610000021049444154789c8d92bf6b137118c63f576aec5903399192031d222ab4e060c99250258d5dc4adfe05b6a36e177088a34b2de7946c4687d2493a6ac19a2b44720da58d43d3062c344a9513845e292517a3f03ae4ec8f5c049fe5f9bebceffbf0becff7051f2222ebabeb222222ab1dea15d30b322fff8da255b40302b9f94dd9298918a6f85c3e154bfb844253d6020286795cd46cfa7cd0e1bd0391a91991a69f285ac553027d47af33c02ea82ab00d6a18aa1ba0853b6955550148c7d304041e028d5d0f2e43b5eec135b03fba8cde00eb830b80fbc301c0aa5841130db32c222239dfcc72d5dfd71691a6c8d44cf1d8834f52eab142926adda3fa190a8b0ec99bf066c585382c545c208de338e0f045b9aedceee9c1e8b00a114844750a8b702fa1b1b006f7e31a00baae9399cd2c774fdfffd703bbee311051c96f38804ee3b5cbd3098d42c5a5f04063fa9985f6db53ba05fa00f2d8248755d4303cb9aba36a303da691790fe9ab1a9925301269bc56abb70024b11b904d41a1e6124941a1e6614c40bee6e225c05cb1a07f2020e0ff42c7e09cdde117feedcfda227b4d91ec3b91cd92c8786afc7977af02b0638a6cdd72dacbdbfa6144dd0a1963238a596928ad784c9ca5c6afefad583bba6f0dbd7c7ce712f02db0c215431988b5f490fb950b931747ce3f7a650d4e4662e79c39068d582c12ddb786dece91ed6e3e9ae01f50e81c7808380b1c023fbb8bfe00bd4f7a4d9484c2750000000049454e44ae426082</data>
+    </image>
+</images>
+<slots>
+    <slot>eliminarGruposImpuestos()</slot>
+    <slot>traspasarGruposImpuestos()</slot>
+</slots>
+<layoutdefaults spacing="6" margin="11"/>
+</UI>

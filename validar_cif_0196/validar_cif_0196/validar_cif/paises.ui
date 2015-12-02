@@ -1,0 +1,127 @@
+<xupdate:modifications>
+<xupdate:insert-after select="/UI[UI,1]/widget[QWidget,formPaises]/vbox[vbox,1]/widget[QTabWidget,tbwPaises]/widget[QWidget,tab]/vbox[vbox,1]/widget[QFrame,frame62]" >
+<spacer>
+<property name="name" >
+<cstring>spacer11</cstring>
+</property>
+<property name="orientation" >
+<enum>Vertical</enum>
+</property>
+<property name="sizeType" >
+<enum>Expanding</enum>
+</property>
+<property name="sizeHint" >
+<size>
+<width>21</width>
+<height>121</height>
+</size>
+</property>
+</spacer>
+</xupdate:insert-after>
+<xupdate:insert-after select="/UI[UI,1]/widget[QWidget,formPaises]/vbox[vbox,1]/widget[QTabWidget,tbwPaises]/widget[QWidget,tab]" >
+<widget class="QWidget" >
+<property name="name" >
+<cstring>TabPage</cstring>
+</property>
+<attribute name="title" >
+<string>Validar CIF/NIF</string>
+</attribute>
+<vbox>
+<property name="name" >
+<cstring>unnamed</cstring>
+</property>
+<widget class="QLayoutWidget" >
+<property name="name" >
+<cstring>layout4</cstring>
+</property>
+<hbox>
+<property name="name" >
+<cstring>unnamed</cstring>
+</property>
+<widget class="FLFieldDB" >
+<property name="name" >
+<cstring>fdbExigirValidacion</cstring>
+</property>
+<property name="sizePolicy" >
+<sizepolicy>
+<hsizetype>1</hsizetype>
+<vsizetype>0</vsizetype>
+<horstretch>0</horstretch>
+<verstretch>0</verstretch>
+</sizepolicy>
+</property>
+<property name="font" >
+<font>
+<bold>0</bold>
+<italic>0</italic>
+</font>
+</property>
+<property name="fieldName" >
+<string>exigirvalidacion</string>
+</property>
+</widget>
+<spacer>
+<property name="name" >
+<cstring>spacer5_4</cstring>
+</property>
+<property name="orientation" >
+<enum>Horizontal</enum>
+</property>
+<property name="sizeType" >
+<enum>Expanding</enum>
+</property>
+<property name="sizeHint" >
+<size>
+<width>91</width>
+<height>20</height>
+</size>
+</property>
+</spacer>
+<widget class="QPushButton" >
+<property name="name" >
+<cstring>pbnEstablecerFuncion</cstring>
+</property>
+<property name="font" >
+<font>
+<bold>0</bold>
+<italic>0</italic>
+</font>
+</property>
+<property name="text" >
+<string>Establecer Función Validación</string>
+</property>
+</widget>
+</hbox>
+</widget>
+<widget class="FLFieldDB" >
+<property name="name" >
+<cstring>fdbFuncionValidacion</cstring>
+</property>
+<property name="sizePolicy" >
+<sizepolicy>
+<hsizetype>1</hsizetype>
+<vsizetype>7</vsizetype>
+<horstretch>0</horstretch>
+<verstretch>0</verstretch>
+</sizepolicy>
+</property>
+<property name="minimumSize" >
+<size>
+<width>38</width>
+<height>24</height>
+</size>
+</property>
+<property name="font" >
+<font>
+<bold>0</bold>
+<italic>0</italic>
+</font>
+</property>
+<property name="fieldName" >
+<string>funcionvalidacion</string>
+</property>
+</widget>
+</vbox>
+</widget>
+</xupdate:insert-after>
+</xupdate:modifications>

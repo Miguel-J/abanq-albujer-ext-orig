@@ -1,0 +1,14 @@
+<flpatch:modifications name="tpv_offline" >
+    <flpatch:patchXml path="facturacion/tpv/forms/" name="tpv_datosgenerales.ui" />
+    <flpatch:patchXml path="facturacion/tpv/tables/" name="tpv_datosgenerales.mtd" />
+    <flpatch:patchXml path="facturacion/tpv/tables/" name="tpv_comandas.mtd" />
+    <flpatch:patchScript path="facturacion/tpv/scripts/" name="tpv_mastercomandas.qs" />
+    <flpatch:patchScript path="facturacion/tpv/scripts/" name="flfact_tpv.qs" />
+    <flpatch:patchScript path="facturacion/almacen/scripts/" name="mastersincrocatalogo.qs" />
+    <flpatch:patchScript path="facturacion/almacen/scripts/" name="sincrocatalogo.qs" />
+    <flpatch:patchXml path="facturacion/tpv/forms/" name="tpv_mastertiendas.ui" />
+    <flpatch:patchScript path="facturacion/tpv/scripts/" name="tpv_mastertiendas.qs" />
+    <flpatch:patchXml path="facturacion/tpv/forms/" name="tpv_tiendas.ui" />
+    <flpatch:patchXml path="facturacion/tpv/tables/" name="tpv_tiendas.mtd" />
+    <flpatch:patchScript path="facturacion/tpv/scripts/" name="tpv_tiendas.qs" />
+</flpatch:modifications>

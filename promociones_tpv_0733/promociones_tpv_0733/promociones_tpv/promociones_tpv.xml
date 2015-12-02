@@ -1,0 +1,26 @@
+<flpatch:modifications name="promociones_tpv" >
+    <flpatch:patchXml path="facturacion/principal/tables/" name="clientes.mtd" />
+    <flpatch:addFile path="facturacion/almacen/forms/" name="articulospromociones.ui" />
+    <flpatch:patchXml path="facturacion/almacen/" name="flfactalma.xml" />
+    <flpatch:addFile path="facturacion/almacen/tables/" name="articulospromociones.mtd" />
+    <flpatch:patchXml path="facturacion/almacen/tables/" name="articulos.mtd" />
+    <flpatch:addFile path="facturacion/principal/forms/" name="clientespromociones.ui" />
+    <flpatch:addFile path="facturacion/principal/tables/" name="clientespromociones.mtd" />
+    <flpatch:patchXml path="facturacion/facturacion/" name="flfacturac.xml" />
+    <flpatch:addFile path="facturacion/tpv/tables/" name="promociones.mtd" />
+    <flpatch:addFile path="facturacion/tpv/forms/" name="promociones.ui" />
+    <flpatch:patchXml path="facturacion/tpv/" name="flfact_tpv.xml" />
+    <flpatch:addFile path="facturacion/tpv/scripts/" name="promociones.qs" />
+    <flpatch:patchXml path="facturacion/tpv/forms/" name="flfact_tpv.ui" />
+    <flpatch:patchXml path="facturacion/principal/" name="flfactppal.xml" />
+    <flpatch:patchScript path="facturacion/tpv/scripts/" name="tpv_comandas.qs" />
+    <flpatch:patchXml path="facturacion/tpv/tables/" name="tpv_lineascomanda.mtd" />
+    <flpatch:patchScript path="facturacion/tpv/scripts/" name="flfact_tpv.qs" />
+    <flpatch:patchScript path="facturacion/tpv/scripts/" name="tpv_lineascomanda.qs" />
+    <flpatch:patchXml path="facturacion/tpv/tables/" name="tpv_datosgenerales.mtd" />
+    <flpatch:patchScript path="facturacion/tpv/scripts/" name="tpv_datosgenerales.qs" />
+    <flpatch:patchXml path="facturacion/tpv/forms/" name="tpv_datosgenerales.ui" />
+    <flpatch:patchScript path="facturacion/principal/scripts/" name="flfactppal.qs" />
+    <flpatch:patchXml path="facturacion/tpv/forms/" name="tpv_comandas.ui" />
+    <flpatch:patchScript path="facturacion/tpv/scripts/" name="tpv_vales.qs" />
+</flpatch:modifications>

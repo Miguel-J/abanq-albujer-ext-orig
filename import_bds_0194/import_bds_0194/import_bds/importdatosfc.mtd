@@ -1,0 +1,93 @@
+<!DOCTYPE TMD>
+<TMD>
+    <name>importdatosfc</name>
+	<alias>QT_TRANSLATE_NOOP("MetaData","Intercambio de datos")</alias>
+	<field>
+		<name>id</name>
+		<alias>QT_TRANSLATE_NOOP("MetaData","Id")</alias>
+		<null>false</null>
+		<pk>true</pk>
+		<type>serial</type>
+	</field>
+	
+	<field>
+		<name>driver</name>
+		<alias>QT_TRANSLATE_NOOP("MetaData","Tipo de base de datos")</alias>
+		<null>false</null>
+		<pk>false</pk>
+		<type>string</type>
+		<optionslist>QT_TRANSLATE_NOOP("MetaData","MySQL");QT_TRANSLATE_NOOP("MetaData","PostgreSQL")</optionslist>
+		<default>QT_TRANSLATE_NOOP("MetaData","MySQL")</default>
+		<length>50</length>
+		<editable>false</editable>
+	</field>
+	
+	<field>
+		<name>nombrebd</name>
+		<alias>QT_TRANSLATE_NOOP("MetaData","Base de datos")</alias>
+		<null>true</null>
+		<pk>false</pk>
+		<type>string</type>
+		<length>100</length>
+		<editable>false</editable>
+	</field>
+	
+	<field>
+		<name>usuario</name>
+		<alias>QT_TRANSLATE_NOOP("MetaData","Usuario")</alias>
+		<null>true</null>
+		<pk>false</pk>
+		<type>string</type>
+		<length>100</length>
+		<editable>false</editable>
+	</field>
+	
+	<field>
+		<name>password</name>
+		<alias>QT_TRANSLATE_NOOP("MetaData","Password")</alias>
+		<null>true</null>
+		<pk>false</pk>
+		<type>string</type>
+		<length>100</length>
+		<editable>false</editable>
+	</field>
+	
+	<field>
+		<name>host</name>
+		<alias>QT_TRANSLATE_NOOP("MetaData","Servidor")</alias>
+		<null>true</null>
+		<pk>false</pk>
+		<type>string</type>
+		<length>100</length>
+		<editable>false</editable>
+	</field>
+	
+	<field>
+		<name>puerto</name>
+		<alias>QT_TRANSLATE_NOOP("MetaData","Puerto")</alias>
+		<null>true</null>
+		<pk>false</pk>
+		<type>string</type>
+		<length>100</length>
+		<editable>false</editable>
+	</field>
+	
+	<field>
+		<name>seriesimportables</name>
+		<alias>QT_TRANSLATE_NOOP("MetaData","Series importables (separadas por comas; ejemplo: A,C,M1)")</alias>
+		<null>true</null>
+		<pk>false</pk>
+		<type>string</type>
+		<length>100</length>
+        <regexp>^([A-Za-z0-9]{1,2}(,A-Za-z0-9{1,2})*)?$</regexp>
+	</field>
+
+	<field>
+		<name>limite</name>
+		<alias>QT_TRANSLATE_NOOP("MetaData","Limite de importaciones")</alias>
+		<null>true</null>
+		<pk>false</pk>
+		<type>int</type>
+	</field>
+	
+</TMD>

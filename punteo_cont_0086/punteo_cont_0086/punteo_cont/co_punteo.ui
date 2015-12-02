@@ -1,0 +1,328 @@
+<!DOCTYPE UI><UI version="3.3" stdsetdef="1">
+<class>co_subcuentas</class>
+<widget class="QWidget">
+    <property name="name">
+        <cstring>co_subcuentas</cstring>
+    </property>
+    <property name="geometry">
+        <rect>
+            <x>0</x>
+            <y>0</y>
+            <width>754</width>
+            <height>494</height>
+        </rect>
+    </property>
+    <property name="caption">
+        <string>Punteo</string>
+    </property>
+    <vbox>
+        <property name="name">
+            <cstring>unnamed</cstring>
+        </property>
+        <widget class="QGroupBox">
+            <property name="name">
+                <cstring>groupBox4_2_2_2</cstring>
+            </property>
+            <property name="font">
+                <font>
+                    <bold>1</bold>
+                    <italic>1</italic>
+                </font>
+            </property>
+            <property name="title">
+                <string>&amp;Subcuenta</string>
+            </property>
+            <hbox>
+                <property name="name">
+                    <cstring>unnamed</cstring>
+                </property>
+                <widget class="FLFieldDB">
+                    <property name="name">
+                        <cstring>fdbCodSubcuenta</cstring>
+                    </property>
+                    <property name="sizePolicy">
+                        <sizepolicy>
+                            <hsizetype>1</hsizetype>
+                            <vsizetype>0</vsizetype>
+                            <horstretch>0</horstretch>
+                            <verstretch>0</verstretch>
+                        </sizepolicy>
+                    </property>
+                    <property name="minimumSize">
+                        <size>
+                            <width>26</width>
+                            <height>22</height>
+                        </size>
+                    </property>
+                    <property name="font">
+                        <font>
+                            <bold>0</bold>
+                            <italic>0</italic>
+                        </font>
+                    </property>
+                    <property name="fieldName">
+                        <string>codsubcuenta</string>
+                    </property>
+                </widget>
+                <widget class="FLFieldDB">
+                    <property name="name">
+                        <cstring>fdbDescripcion</cstring>
+                    </property>
+                    <property name="sizePolicy">
+                        <sizepolicy>
+                            <hsizetype>1</hsizetype>
+                            <vsizetype>0</vsizetype>
+                            <horstretch>0</horstretch>
+                            <verstretch>0</verstretch>
+                        </sizepolicy>
+                    </property>
+                    <property name="minimumSize">
+                        <size>
+                            <width>26</width>
+                            <height>22</height>
+                        </size>
+                    </property>
+                    <property name="font">
+                        <font>
+                            <bold>0</bold>
+                            <italic>0</italic>
+                        </font>
+                    </property>
+                    <property name="fieldName">
+                        <string>descripcion</string>
+                    </property>
+                </widget>
+            </hbox>
+        </widget>
+        <widget class="QGroupBox">
+            <property name="name">
+                <cstring>groupBox9</cstring>
+            </property>
+            <property name="title">
+                <string></string>
+            </property>
+            <vbox>
+                <property name="name">
+                    <cstring>unnamed</cstring>
+                </property>
+                <property name="margin">
+                    <number>0</number>
+                </property>
+                <widget class="QGroupBox">
+                    <property name="name">
+                        <cstring>gbxBotonesPunteo</cstring>
+                    </property>
+                    <property name="title">
+                        <string></string>
+                    </property>
+                    <hbox>
+                        <property name="name">
+                            <cstring>unnamed</cstring>
+                        </property>
+                        <property name="margin">
+                            <number>0</number>
+                        </property>
+                        <property name="spacing">
+                            <number>2</number>
+                        </property>
+                        <widget class="QToolButton">
+                            <property name="name">
+                                <cstring>tbnVerAsiento</cstring>
+                            </property>
+                            <property name="sizePolicy">
+                                <sizepolicy>
+                                    <hsizetype>1</hsizetype>
+                                    <vsizetype>1</vsizetype>
+                                    <horstretch>0</horstretch>
+                                    <verstretch>0</verstretch>
+                                </sizepolicy>
+                            </property>
+                            <property name="minimumSize">
+                                <size>
+                                    <width>32</width>
+                                    <height>32</height>
+                                </size>
+                            </property>
+                            <property name="focusPolicy">
+                                <enum>NoFocus</enum>
+                            </property>
+                            <property name="text">
+                                <string></string>
+                            </property>
+                            <property name="iconSet">
+                                <iconset>image50715</iconset>
+                            </property>
+                            <property name="toolTip" stdset="0">
+                                <string>Ver asiento</string>
+                            </property>
+                        </widget>
+                        <widget class="QLabel">
+                            <property name="name">
+                                <cstring>leSaldoP</cstring>
+                            </property>
+                            <property name="sizePolicy">
+                                <sizepolicy>
+                                    <hsizetype>7</hsizetype>
+                                    <vsizetype>5</vsizetype>
+                                    <horstretch>0</horstretch>
+                                    <verstretch>0</verstretch>
+                                </sizepolicy>
+                            </property>
+                            <property name="minimumSize">
+                                <size>
+                                    <width>200</width>
+                                    <height>0</height>
+                                </size>
+                            </property>
+                            <property name="paletteForegroundColor">
+                                <color>
+                                    <red>0</red>
+                                    <green>0</green>
+                                    <blue>127</blue>
+                                </color>
+                            </property>
+                            <property name="text">
+                                <string></string>
+                            </property>
+                        </widget>
+                        <spacer>
+                            <property name="name">
+                                <cstring>spcPuntear</cstring>
+                            </property>
+                            <property name="orientation">
+                                <enum>Horizontal</enum>
+                            </property>
+                            <property name="sizeType">
+                                <enum>Fixed</enum>
+                            </property>
+                            <property name="sizeHint">
+                                <size>
+                                    <width>25</width>
+                                    <height>20</height>
+                                </size>
+                            </property>
+                        </spacer>
+                        <widget class="QLabel">
+                            <property name="name">
+                                <cstring>leSaldoC</cstring>
+                            </property>
+                            <property name="sizePolicy">
+                                <sizepolicy>
+                                    <hsizetype>7</hsizetype>
+                                    <vsizetype>5</vsizetype>
+                                    <horstretch>0</horstretch>
+                                    <verstretch>0</verstretch>
+                                </sizepolicy>
+                            </property>
+                            <property name="minimumSize">
+                                <size>
+                                    <width>200</width>
+                                    <height>0</height>
+                                </size>
+                            </property>
+                            <property name="paletteForegroundColor">
+                                <color>
+                                    <red>5</red>
+                                    <green>45</green>
+                                    <blue>0</blue>
+                                </color>
+                            </property>
+                            <property name="text">
+                                <string></string>
+                            </property>
+                        </widget>
+                        <spacer>
+                            <property name="name">
+                                <cstring>spcPuntear_2</cstring>
+                            </property>
+                            <property name="orientation">
+                                <enum>Horizontal</enum>
+                            </property>
+                            <property name="sizeType">
+                                <enum>Fixed</enum>
+                            </property>
+                            <property name="sizeHint">
+                                <size>
+                                    <width>25</width>
+                                    <height>20</height>
+                                </size>
+                            </property>
+                        </spacer>
+                        <widget class="QPushButton">
+                            <property name="name">
+                                <cstring>pbnPuntear</cstring>
+                            </property>
+                            <property name="text">
+                                <string>Puntear (tecla P)</string>
+                            </property>
+                            <property name="accel">
+                                <string>P</string>
+                            </property>
+                            <property name="toolTip" stdset="0">
+                                <string>Marca la partida seleccionada como punteada (tecla P)</string>
+                            </property>
+                        </widget>
+                        <widget class="QPushButton">
+                            <property name="name">
+                                <cstring>pbnCasar</cstring>
+                            </property>
+                            <property name="text">
+                                <string>Casar (tecla C)</string>
+                            </property>
+                            <property name="accel">
+                                <string>C</string>
+                            </property>
+                            <property name="toolTip" stdset="0">
+                                <string>Marca la partida seleccionada como casada (Tecla C)</string>
+                            </property>
+                        </widget>
+                    </hbox>
+                </widget>
+                <widget class="FLTableDB">
+                    <property name="name">
+                        <cstring>tdbPartidasPunteo</cstring>
+                    </property>
+                    <property name="sizePolicy">
+                        <sizepolicy>
+                            <hsizetype>1</hsizetype>
+                            <vsizetype>5</vsizetype>
+                            <horstretch>0</horstretch>
+                            <verstretch>0</verstretch>
+                        </sizepolicy>
+                    </property>
+                    <property name="minimumSize">
+                        <size>
+                            <width>0</width>
+                            <height>200</height>
+                        </size>
+                    </property>
+                    <property name="font">
+                        <font>
+                        </font>
+                    </property>
+                    <property name="tableName">
+                        <string>co_qry_punteo_partidas</string>
+                    </property>
+                    <property name="foreignField">
+                        <string>idsubcuenta</string>
+                    </property>
+                    <property name="fieldRelation">
+                        <string>idsubcuenta</string>
+                    </property>
+                </widget>
+            </vbox>
+        </widget>
+    </vbox>
+</widget>
+<images>
+    <image name="image50715">
+        <data format="PNG" length="878">89504e470d0a1a0a0000000d4948445200000016000000160806000000c4b46c3b0000033549444154789cad945d48537118c69fb3b38f9667d39d33b58e93c26fa7128a810893ec4ac12e0e412432db58377511dd2c99c3a48b2e8ca4c02ea42eea2aa20bf52252b0a92704077e41f8814a31991f3899b1cd6dcc738ea71b8bb269b37ae17ff3e77d7e3cbc5f842008502a95f8df41c8b2fccf1051140100244982200800c03f59154591d8dcdc2c5b5858b83e363646979595bd6b6969794f10c4df83777777f5cbcbcb76afd77b7b6969a9b0afaf8f686c6c8c363737bf2749129065f9444f9224040281129ee75fdb6cb6cfe5e5e56193c9245b2c167e7e7efedcf7bc1341f7f6f6b0b6b676796868e8a3d56afd545f5fbf9d9b9b2b575656cef13c5ff9736ecaa51045113e9fefeadcdc9c6b70705052a954a6eded6d8356abf5bbddeebb757575b33fe72b5281eeefef636565e5caf4f474fbc0c080a4d7eb4b6766660c914864c7e974dee338eec3614d4a8e239188767c7cfce6d4d45406c33067878787b5d16874d7e974deb75aad6f158adffda5040e06837aafd74bc562b13c8fc7039224130e87e391cd667baed168f6938afed4b0adadad332e97eb4d6d6dadc4b2ac9c9797277475753d0e87c3dae374c73af6fbfdc6d1d1d1a72ccb5e0b068304455112c7712f1c0ec7039d4e173f4e7be44a0702015d6767e793c5c545bbc96452949494486ab5fa15c7714e9aa6bf521405b55afd63850f4752c7d16854d5d3d3d3c6f3fc8d5028a49024494c4f4f7fe9f3f9dafafbfbbf86c361d4d4d4a0bbbb1b191919c92d1fae8d288ae8ededb5171717478c46a35c545414379bcddd2a95ea17426161213636368eacf16f1f232323b5555555ab0cc3c83939393b2ccbba4892a401a401388583d93f1178757535aba9a9c9939d9d2d6766667ea128ea1680f3007200d00760c26834a2a3a303b158eccf60bfdfaf686d6d7dc8b2ac603018c6954a650b800b00f20118019c62184661b7db3131310141108e1d53c8b20c4110e076bb2f1614144ca5a5a53d2308e212802200d91a8de674454505d9dede8ec9c949241289940e96f27b0343a110b5bebe7e271e8f2f531495c8cfcf4f582c16a1a1a141aeaeae465656d691a3952c7eccf1ecec2c3c1e0f743a1dcc66334a4b4b41d33492dd811381ff6788a2886fd4ac510baf53d7c20000000049454e44ae426082</data>
+    </image>
+</images>
+<layoutdefaults spacing="6" margin="11"/>
+<includehints>
+    <includehint>flfielddb.h</includehint>
+    <includehint>flfielddb.h</includehint>
+    <includehint>fltabledb.h</includehint>
+</includehints>
+</UI>

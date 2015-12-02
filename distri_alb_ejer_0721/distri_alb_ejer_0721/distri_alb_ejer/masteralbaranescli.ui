@@ -1,0 +1,71 @@
+<xupdate:modifications>
+<xupdate:insert-after select="/UI[UI,1]/widget[QWidget,FLWidgetMasterTable]/vbox[vbox,1]/widget[QFrame,barraBotones]/hbox[hbox,1]/widget[QPushButton,pbnGenerarFactura]" >
+<spacer>
+<property name="name" >
+<cstring>spacerCE</cstring>
+</property>
+<property name="orientation" >
+<enum>Horizontal</enum>
+</property>
+<property name="sizeType" >
+<enum>Fixed</enum>
+</property>
+<property name="sizeHint" >
+<size>
+<width>16</width>
+<height>20</height>
+</size>
+</property>
+</spacer>
+</xupdate:insert-after>
+<xupdate:append-first select="/UI[UI,1]/images[images,1]" >
+<image name="distri_alb_ejerimage33519" >
+<data format="PNG" length="1229" >89504e470d0a1a0a0000000d4948445200000016000000160806000000c4b46c3b0000049449444154789c65955d681c5514c77fb3bd2b6774837735eae6414cd0081bad74038a6949b505055b7df0a3824d5f342a98a020ad4a695ad12688a03e885184d62f880f6a0222f625d83e541b41e82a4ab70fd2081667d0e05ccd9a396daeae0fb39336ed81e1c2b933f7fcfee7e34e50a9541023280a1e00b4e9d8f9dc9e0fc6f68ded887e8d22f5b4c48018704dc2a9a3f36726be4ebeb57fd43f27aecf44df4dffc38566ada552a988b5b668adbd444a128811469eddf9f5d2d9d6c5b6b4d45afafdb7d6814fbe696d7af5546bfbbb7fa69b9e3af0baacdbd2d16ab5c89f60cfee3d1f3eb0ed81addad4334040c6ed41ae3b78242a38ba78ec9e2a5b6f0d5760d224415dc4c1d97966e23ed6d77a90c56461e6fdb1fb4ecc4e7e0b607aba7bfafa6bfd575e246539450476bd33c7bdcf470c0cf6333460d97e3b94051cb0a556e6c8172738f623d4aa3d9ddb9f999cebb96b74dbfcece4676b060707ef5f7fdbfa5ece42ea538ac5624675d6532cfccbe6aa213efd23b33f788ec721f55f0c7ed9d1f5df699acd3f70dac1c727a1b9304fa9b04875ed1d0fdffbd08eafd66cdcb47168e39d1b7b534d090b6db96ba0489105e768feedb8e51ae1bb9f4fe37c09f5454e2f5548d4d37b79130d8af416121ebe49d97cdd196ebb5ee8bdbaa3cf8891002034ed438b9c5b3da817a404033758deab27e095289e27eaac10c521bbeeabb0f966458c0021d60a8d4e2e35ea1596b33484129e97e376eba922405914eb636a56e9af80c83cd1021cab276c1eec277129981475d038397fc66491ce233ecfc40822823685816a85da0d4acf55824848b9d372e26403b7a8d8520511c53997911b0a19316de20b0e979260ad4545b015281b21f50a46483d80202184e5104d140c249a20489011fb36b15f9d6311a1abd2756e22bd223e5b01b4adaaebda2eaadd55861e1d62e0d60180c0a86a9092a2aa94a5bc8a38ec08093b3215e9628a20b8a6435472325cea884e4524cd04173b124dc050288891000f8290faf4a23caf0a2221b66433474eee61787898be1bfb98fa742a571714f24da72e732e431225f4adeda3bfd6cf6b6fbc06c0e12387092e09d8ba652bbb5ed8752e1daa8cbf34cef4cc3413af4ca0aa60080af9e60a411136dcbd81fdbbf773bc7e9c89fd130034ea0d469e1ae1cb435f323e31be92773c24cd0455c55a9bdf34c6e445516d77479ad2f8a9c183db1f04c03997111f3d4ce3a7063ba21d8c3e398a940496b36f1f7ff271a23862e891219266025030ab8855b352e7d61e927431e5c0db0750af4cbe33c9f0c830531f4dade478fce5712023cf9514d46b90cb4935257631b5753526df9c24d594eeee6e9c73440b59e507060750d59c6ca5e0a94fc9874d4a72851193b5ce0a39b0f3d99d8cbd38c6c1f70f32fac428894bd8bb6f2f511c112d64927332b7e03876f4984a498aaa5a102341bc10ff65d46b2048d615edc3ab6bab4ccf4c93fb9d738c8e8c8281545350d045453a8443b387deaa7f5f7f1ab88c6cbc8a406a6cc95a25bb9dd4b76f29050c38ef10323fa63d6a1e1445420103d6dab3ed8aacfaef99b9b9b9c3711caf495cf2b718f92f0f72a1a9d72c089a072b966db9338ee353b57535eadfd757bdff3f96d66e6badb690030000000049454e44ae426082</data>
+</image>
+</xupdate:append-first>
+<xupdate:insert-after select="/UI[UI,1]/widget[QWidget,FLWidgetMasterTable]/vbox[vbox,1]/widget[QFrame,barraBotones]/hbox[hbox,1]/spacer[spacerCE]" >
+<widget class="QPushButton" >
+<property name="name" >
+<cstring>tbnDistribuyeEjercicio</cstring>
+</property>
+<property name="sizePolicy" >
+<sizepolicy>
+<hsizetype>1</hsizetype>
+<vsizetype>1</vsizetype>
+<horstretch>0</horstretch>
+<verstretch>0</verstretch>
+</sizepolicy>
+</property>
+<property name="minimumSize" >
+<size>
+<width>32</width>
+<height>32</height>
+</size>
+</property>
+<property name="maximumSize" >
+<size>
+<width>32</width>
+<height>32</height>
+</size>
+</property>
+<property name="focusPolicy" >
+<enum>NoFocus</enum>
+</property>
+<property name="text" >
+<string/>
+</property>
+<property name="accel" >
+<string>E</string>
+</property>
+<property name="iconSet" >
+<iconset>distri_alb_ejerimage33519</iconset>
+</property>
+<property name="toolTip" stdset="0" >
+<string>Distribuir en ejercicios</string>
+</property>
+<property name="whatsThis" stdset="0" >
+<string>Permite dividir el albarán en dos, cada uno correspondiente a un ejercicio, seleccionando las líneas y cantidades a trasvasar al segundo ejercicio.</string>
+</property>
+</widget>
+</xupdate:insert-after>
+</xupdate:modifications>

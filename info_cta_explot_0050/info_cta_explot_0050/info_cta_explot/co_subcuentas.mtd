@@ -1,0 +1,17 @@
+<xupdate:modifications>
+<xupdate:insert-after select="/TMD[TMD,1]/field[codejercicio]" >
+<field>
+<name>codcuentaexp</name>
+<!-- Código de cuenta de explotación --><alias>QT_TRANSLATE_NOOP(&quot;MetaData&quot;,&quot;Cuenta de explotación&quot;)</alias>
+<null>true</null>
+<pk>false</pk>
+<type>string</type>
+<length>15</length>
+<relation>
+<table>co_codcuentaexp2</table>
+<field>codigo</field>
+<card>M1</card>
+</relation>
+</field>
+</xupdate:insert-after>
+</xupdate:modifications>

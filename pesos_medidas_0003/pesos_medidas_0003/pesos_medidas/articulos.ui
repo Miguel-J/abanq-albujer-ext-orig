@@ -1,0 +1,55 @@
+<xupdate:modifications>
+<xupdate:update select="/UI[UI,1]/widget[QWidget,formArticulos]/vbox[vbox,1]/widget[QTabWidget,tbwArticulo]/widget[QWidget,general]/vbox[vbox,1]/widget[QFrame,frmFamilia]/hbox[hbox,1]/widget[FLFieldDB,fdbDesFamilia]/property[property,3]/size[size,1]/width[width,1]/text()[1]" >200</xupdate:update>
+<xupdate:insert-after select="/UI[UI,1]/widget[QWidget,formArticulos]/vbox[vbox,1]/widget[QTabWidget,tbwArticulo]/widget[QWidget,general]/vbox[vbox,1]/widget[QFrame,frmFamilia]/hbox[hbox,1]/widget[FLFieldDB,fdbDesFamilia]" >
+<widget class="FLFieldDB" >
+<property name="name" >
+<cstring>fdbCodUnidad</cstring>
+</property>
+<property name="sizePolicy" >
+<sizepolicy>
+<hsizetype>7</hsizetype>
+<vsizetype>0</vsizetype>
+<horstretch>0</horstretch>
+<verstretch>0</verstretch>
+</sizepolicy>
+</property>
+<property name="minimumSize" >
+<size>
+<width>70</width>
+<height>25</height>
+</size>
+</property>
+<property name="fieldName" >
+<string>codunidad</string>
+</property>
+<property name="tableName" >
+<string/>
+</property>
+<property name="foreignField" >
+<string>codunidad</string>
+</property>
+<property name="fieldRelation" >
+<string>codfamilia</string>
+</property>
+</widget>
+</xupdate:insert-after>
+<xupdate:update select="/UI[UI,1]/tabstops[tabstops,1]/tabstop[tabstop,5]/text()[1]" >fdbCodUnidad</xupdate:update>
+<xupdate:update select="/UI[UI,1]/tabstops[tabstops,1]/tabstop[tabstop,6]/text()[1]" >fdbControlStock</xupdate:update>
+<xupdate:update select="/UI[UI,1]/tabstops[tabstops,1]/tabstop[tabstop,8]/text()[1]" >fieldCodBarras</xupdate:update>
+<xupdate:update select="/UI[UI,1]/tabstops[tabstops,1]/tabstop[tabstop,9]/text()[1]" >fieldTipoCodBarras</xupdate:update>
+<xupdate:update select="/UI[UI,1]/tabstops[tabstops,1]/tabstop[tabstop,10]/text()[1]" >fdbObservaciones</xupdate:update>
+<xupdate:update select="/UI[UI,1]/tabstops[tabstops,1]/tabstop[tabstop,11]/text()[1]" >fdbPvp</xupdate:update>
+<xupdate:update select="/UI[UI,1]/tabstops[tabstops,1]/tabstop[tabstop,12]/text()[1]" >fdbImpuesto</xupdate:update>
+<xupdate:update select="/UI[UI,1]/tabstops[tabstops,1]/tabstop[tabstop,13]/text()[1]" >fdbDesImpuesto</xupdate:update>
+<xupdate:update select="/UI[UI,1]/tabstops[tabstops,1]/tabstop[tabstop,14]/text()[1]" >fdbIvaImpuesto</xupdate:update>
+<xupdate:update select="/UI[UI,1]/tabstops[tabstops,1]/tabstop[tabstop,15]/text()[1]" >tdbArticulosTarifas</xupdate:update>
+<xupdate:update select="/UI[UI,1]/tabstops[tabstops,1]/tabstop[tabstop,16]/text()[1]" >tdbArticlulosProv</xupdate:update>
+<xupdate:update select="/UI[UI,1]/tabstops[tabstops,1]/tabstop[tabstop,17]/text()[1]" >fdbStockFisico</xupdate:update>
+<xupdate:update select="/UI[UI,1]/tabstops[tabstops,1]/tabstop[tabstop,18]/text()[1]" >fdbStockMin</xupdate:update>
+<xupdate:update select="/UI[UI,1]/tabstops[tabstops,1]/tabstop[tabstop,19]/text()[1]" >fdbStockMax</xupdate:update>
+<xupdate:update select="/UI[UI,1]/tabstops[tabstops,1]/tabstop[tabstop,20]/text()[1]" >tdbStocks</xupdate:update>
+<xupdate:update select="/UI[UI,1]/tabstops[tabstops,1]/tabstop[tabstop,21]/text()[1]" >fLTableDB4</xupdate:update>
+<xupdate:insert-after select="/UI[UI,1]/widget[QWidget,formArticulos]" >
+<customwidgets/>
+</xupdate:insert-after>
+</xupdate:modifications>

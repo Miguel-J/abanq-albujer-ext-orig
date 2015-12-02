@@ -1,0 +1,35 @@
+<!DOCTYPE QRY>
+<QRY>
+		<name>i_pegasalbaranescli</name>
+		<tables>albaranescli,lineasalbaranescli,lotesstock,movistock,pedidoscli,lineaspedidoscli</tables>
+
+	<select>
+		lotesstock.codlote,articulos.configuracion,
+		albaranescli.nombrecliente,albaranescli.direccion,albaranescli.observaciones,
+		albaranescli.ciudad,albaranescli.provincia,albaranescli.codpostal,
+		<!--lineasalbaranescli.configuracion,-->lineasalbaranescli.descripcion, albaranescli.codigo,pedidoscli.refcliente
+	</select>
+
+	<from>
+		albaranescli 
+		INNER JOIN lineasalbaranescli ON albaranescli.idalbaran = lineasalbaranescli.idalbaran
+		INNER JOIN movistock ON movistock.idlineaac = lineasalbaranescli.idlinea
+		INNER JOIN lotesstock ON lotesstock.codlote = movistock.codlote
+		INNER JOIN articulos ON lotesstock.referencia = articulos.referencia
+		LEFT OUTER JOIN lineaspedidoscli ON lineasalbaranescli.idlineapedido = lineaspedidoscli.idlinea
+		LEFT OUTER JOIN pedidoscli ON lineaspedidoscli.idpedido = pedidoscli.idpedido
+		<!--pr_ordenesproduccion 
+		INNER JOIN lotesstock ON pr_ordenesproduccion.codorden = lotesstock.codordenproduccion 
+		INNER JOIN articulos ON lotesstock.referencia = articulos.referencia
+		INNER JOIN movistock ON lotesstock.codlote = movistock.codlote 
+		INNER JOIN lineasalbaranescli ON movistock.idlineaac = lineasalbaranescli.idlinea
+		LEFT OUTER JOIN albaranescli ON albaranescli.idalbaran = lineasalbaranescli.idalbaran-->
+	</from> 
+
+	<where>
+	</where>
+	
+	<order>
+		albaranescli.provincia,albaranescli.ciudad,albaranescli.nombrecliente,lotesstock.codlote
+	</order>
+</QRY>

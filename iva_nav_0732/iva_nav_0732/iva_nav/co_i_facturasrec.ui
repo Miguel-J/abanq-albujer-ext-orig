@@ -1,0 +1,110 @@
+<xupdate:modifications>
+<xupdate:update select="/UI[UI,1]/widget[QWidget,co_i_facturasrec]/property[geometry]/rect[rect,1]/height[height,1]/text()[1]" >333</xupdate:update>
+<xupdate:update select="/UI[UI,1]/widget[QWidget,co_i_facturasrec]/vbox[vbox,1]/widget[QGroupBox,groupBox3]/vbox[vbox,1]/widget[QLayoutWidget,layout10]/hbox[hbox,1]/widget[FLFieldDB,fdbEjercicio]/property[fieldName]/string[string,1]/text()[1]" >i_co__asientos_codejercicio</xupdate:update>
+<xupdate:update select="/UI[UI,1]/widget[QWidget,co_i_facturasrec]/vbox[vbox,1]/widget[QGroupBox,groupBox3]/vbox[vbox,1]/widget[QLayoutWidget,layout10]/hbox[hbox,1]/widget[FLFieldDB,fdbNombreEjercicio]/property[foreignField]/string[string,1]/text()[1]" >i_co__asientos_codejercicio</xupdate:update>
+<xupdate:insert-after select="/UI[UI,1]/widget[QWidget,co_i_facturasrec]/vbox[vbox,1]/widget[QGroupBox,groupBox3]/vbox[vbox,1]/widget[QLayoutWidget,layoutIva]" >
+<widget class="QLayoutWidget" >
+<property name="name" >
+<cstring>layoutGI</cstring>
+</property>
+<hbox>
+<property name="name" >
+<cstring>unnamed</cstring>
+</property>
+<widget class="FLFieldDB" >
+<property name="name" >
+<cstring>fdbCodImpuesto</cstring>
+</property>
+<property name="sizePolicy" >
+<sizepolicy>
+<hsizetype>1</hsizetype>
+<vsizetype>0</vsizetype>
+<horstretch>0</horstretch>
+<verstretch>0</verstretch>
+</sizepolicy>
+</property>
+<property name="minimumSize" >
+<size>
+<width>38</width>
+<height>24</height>
+</size>
+</property>
+<property name="font" >
+<font>
+<bold>0</bold>
+<italic>0</italic>
+</font>
+</property>
+<property name="fieldName" >
+<string>i_co__partidas_codimpuesto</string>
+</property>
+</widget>
+<widget class="FLFieldDB" >
+<property name="name" >
+<cstring>fdbCodGrupoIvaNeg</cstring>
+</property>
+<property name="sizePolicy" >
+<sizepolicy>
+<hsizetype>1</hsizetype>
+<vsizetype>0</vsizetype>
+<horstretch>0</horstretch>
+<verstretch>0</verstretch>
+</sizepolicy>
+</property>
+<property name="minimumSize" >
+<size>
+<width>26</width>
+<height>22</height>
+</size>
+</property>
+<property name="font" >
+<font>
+<bold>0</bold>
+<italic>0</italic>
+</font>
+</property>
+<property name="fieldName" >
+<string>i_co__partidas_codgrupoivaneg</string>
+</property>
+</widget>
+<widget class="FLFieldDB" >
+<property name="name" >
+<cstring>fdbAgruparIvaNeg</cstring>
+</property>
+<property name="sizePolicy" >
+<sizepolicy>
+<hsizetype>1</hsizetype>
+<vsizetype>0</vsizetype>
+<horstretch>0</horstretch>
+<verstretch>0</verstretch>
+</sizepolicy>
+</property>
+<property name="minimumSize" >
+<size>
+<width>26</width>
+<height>22</height>
+</size>
+</property>
+<property name="font" >
+<font>
+<bold>0</bold>
+<italic>0</italic>
+</font>
+</property>
+<property name="fieldName" >
+<string>agruparivaneg</string>
+</property>
+</widget>
+</hbox>
+</widget>
+</xupdate:insert-after>
+<xupdate:insert-after select="/UI[UI,1]/includehints[includehints,1]/includehint[flfielddb.h]" >
+<includehint>flfielddb.h</includehint>
+</xupdate:insert-after>
+<xupdate:insert-after select="/UI[UI,1]/includehints[includehints,1]/includehint[flfielddb.h]" >
+<includehint>flfielddb.h</includehint>
+</xupdate:insert-after>
+<xupdate:insert-after select="/UI[UI,1]/includehints[includehints,1]/includehint[flfielddb.h]" >
+<includehint>flfielddb.h</includehint>
+</xupdate:insert-after>
+</xupdate:modifications>

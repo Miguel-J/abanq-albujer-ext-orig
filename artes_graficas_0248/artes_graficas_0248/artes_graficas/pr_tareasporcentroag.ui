@@ -1,0 +1,457 @@
+<!DOCTYPE UI><UI version="3.3" stdsetdef="1">
+<class>pr_tareasporcentroag</class>
+<widget class="QWidget">
+    <property name="name">
+        <cstring>pr_tareasporcentroag</cstring>
+    </property>
+    <property name="geometry">
+        <rect>
+            <x>0</x>
+            <y>0</y>
+            <width>982</width>
+            <height>590</height>
+        </rect>
+    </property>
+    <property name="caption">
+        <string>pr_tareasporcentroag</string>
+    </property>
+    <vbox>
+        <property name="name">
+            <cstring>unnamed</cstring>
+        </property>
+        <widget class="QGroupBox">
+            <property name="name">
+                <cstring>gbxTareas</cstring>
+            </property>
+            <property name="font">
+                <font>
+                    <bold>1</bold>
+                    <italic>1</italic>
+                </font>
+            </property>
+            <property name="title">
+                <string></string>
+            </property>
+            <vbox>
+                <property name="name">
+                    <cstring>unnamed</cstring>
+                </property>
+                <widget class="QGroupBox">
+                    <property name="name">
+                        <cstring>gbxBotonesOP</cstring>
+                    </property>
+                    <property name="sizePolicy">
+                        <sizepolicy>
+                            <hsizetype>1</hsizetype>
+                            <vsizetype>1</vsizetype>
+                            <horstretch>0</horstretch>
+                            <verstretch>0</verstretch>
+                        </sizepolicy>
+                    </property>
+                    <property name="font">
+                        <font>
+                        </font>
+                    </property>
+                    <property name="frameShape">
+                        <enum>NoFrame</enum>
+                    </property>
+                    <property name="title">
+                        <string></string>
+                    </property>
+                    <hbox>
+                        <property name="name">
+                            <cstring>unnamed</cstring>
+                        </property>
+                        <property name="margin">
+                            <number>3</number>
+                        </property>
+                        <property name="spacing">
+                            <number>3</number>
+                        </property>
+                        <widget class="QToolButton">
+                            <property name="name">
+                                <cstring>tbnBuscarCentro</cstring>
+                            </property>
+                            <property name="minimumSize">
+                                <size>
+                                    <width>32</width>
+                                    <height>32</height>
+                                </size>
+                            </property>
+                            <property name="maximumSize">
+                                <size>
+                                    <width>32</width>
+                                    <height>32</height>
+                                </size>
+                            </property>
+                            <property name="font">
+                                <font>
+                                    <bold>0</bold>
+                                    <italic>0</italic>
+                                </font>
+                            </property>
+                            <property name="text">
+                                <string></string>
+                            </property>
+                            <property name="iconSet">
+                                <iconset>image33081</iconset>
+                            </property>
+                            <property name="toolTip" stdset="0">
+                                <string>Buscar centro de coste</string>
+                            </property>
+                        </widget>
+                        <widget class="QLabel">
+                            <property name="name">
+                                <cstring>lblCentro</cstring>
+                            </property>
+                            <property name="minimumSize">
+                                <size>
+                                    <width>250</width>
+                                    <height>0</height>
+                                </size>
+                            </property>
+                            <property name="alignment">
+                                <set>AlignVCenter|AlignLeft</set>
+                            </property>
+                        </widget>
+                        <spacer>
+                            <property name="name">
+                                <cstring>spacer5</cstring>
+                            </property>
+                            <property name="orientation">
+                                <enum>Horizontal</enum>
+                            </property>
+                            <property name="sizeType">
+                                <enum>Expanding</enum>
+                            </property>
+                            <property name="sizeHint">
+                                <size>
+                                    <width>120</width>
+                                    <height>20</height>
+                                </size>
+                            </property>
+                        </spacer>
+                        <widget class="QButtonGroup">
+                            <property name="name">
+                                <cstring>bgPrioridad</cstring>
+                            </property>
+                            <property name="font">
+                                <font>
+                                    <bold>0</bold>
+                                    <italic>0</italic>
+                                </font>
+                            </property>
+                            <property name="title">
+                                <string>Prioridad</string>
+                            </property>
+                            <hbox>
+                                <property name="name">
+                                    <cstring>unnamed</cstring>
+                                </property>
+                                <property name="margin">
+                                    <number>5</number>
+                                </property>
+                                <property name="spacing">
+                                    <number>2</number>
+                                </property>
+                                <widget class="QToolButton">
+                                    <property name="name">
+                                        <cstring>tbnPrioridad0</cstring>
+                                    </property>
+                                    <property name="minimumSize">
+                                        <size>
+                                            <width>32</width>
+                                            <height>32</height>
+                                        </size>
+                                    </property>
+                                    <property name="text">
+                                        <string>0</string>
+                                    </property>
+                                    <property name="buttonGroupId">
+                                        <number>0</number>
+                                    </property>
+                                    <property name="toolTip" stdset="0">
+                                        <string></string>
+                                    </property>
+                                    <property name="whatsThis" stdset="0">
+                                        <string></string>
+                                    </property>
+                                </widget>
+                                <widget class="QToolButton">
+                                    <property name="name">
+                                        <cstring>tbnPrioridad1</cstring>
+                                    </property>
+                                    <property name="minimumSize">
+                                        <size>
+                                            <width>32</width>
+                                            <height>32</height>
+                                        </size>
+                                    </property>
+                                    <property name="paletteBackgroundColor">
+                                        <color>
+                                            <red>170</red>
+                                            <green>255</green>
+                                            <blue>127</blue>
+                                        </color>
+                                    </property>
+                                    <property name="text">
+                                        <string>1</string>
+                                    </property>
+                                    <property name="buttonGroupId">
+                                        <number>1</number>
+                                    </property>
+                                    <property name="toolTip" stdset="0">
+                                        <string></string>
+                                    </property>
+                                    <property name="whatsThis" stdset="0">
+                                        <string></string>
+                                    </property>
+                                </widget>
+                                <widget class="QToolButton">
+                                    <property name="name">
+                                        <cstring>tbnPrioridad2</cstring>
+                                    </property>
+                                    <property name="minimumSize">
+                                        <size>
+                                            <width>32</width>
+                                            <height>32</height>
+                                        </size>
+                                    </property>
+                                    <property name="paletteBackgroundColor">
+                                        <color>
+                                            <red>85</red>
+                                            <green>170</green>
+                                            <blue>0</blue>
+                                        </color>
+                                    </property>
+                                    <property name="text">
+                                        <string>2</string>
+                                    </property>
+                                    <property name="buttonGroupId">
+                                        <number>2</number>
+                                    </property>
+                                    <property name="toolTip" stdset="0">
+                                        <string></string>
+                                    </property>
+                                    <property name="whatsThis" stdset="0">
+                                        <string></string>
+                                    </property>
+                                </widget>
+                                <widget class="QToolButton">
+                                    <property name="name">
+                                        <cstring>tbnPrioridad3</cstring>
+                                    </property>
+                                    <property name="minimumSize">
+                                        <size>
+                                            <width>32</width>
+                                            <height>32</height>
+                                        </size>
+                                    </property>
+                                    <property name="paletteBackgroundColor">
+                                        <color>
+                                            <red>255</red>
+                                            <green>255</green>
+                                            <blue>127</blue>
+                                        </color>
+                                    </property>
+                                    <property name="text">
+                                        <string>3</string>
+                                    </property>
+                                    <property name="buttonGroupId">
+                                        <number>3</number>
+                                    </property>
+                                    <property name="toolTip" stdset="0">
+                                        <string></string>
+                                    </property>
+                                    <property name="whatsThis" stdset="0">
+                                        <string></string>
+                                    </property>
+                                </widget>
+                                <widget class="QToolButton">
+                                    <property name="name">
+                                        <cstring>tbnPrioridad4</cstring>
+                                    </property>
+                                    <property name="minimumSize">
+                                        <size>
+                                            <width>32</width>
+                                            <height>32</height>
+                                        </size>
+                                    </property>
+                                    <property name="paletteBackgroundColor">
+                                        <color>
+                                            <red>255</red>
+                                            <green>255</green>
+                                            <blue>0</blue>
+                                        </color>
+                                    </property>
+                                    <property name="text">
+                                        <string>4</string>
+                                    </property>
+                                    <property name="buttonGroupId">
+                                        <number>4</number>
+                                    </property>
+                                    <property name="toolTip" stdset="0">
+                                        <string></string>
+                                    </property>
+                                    <property name="whatsThis" stdset="0">
+                                        <string></string>
+                                    </property>
+                                </widget>
+                                <widget class="QToolButton">
+                                    <property name="name">
+                                        <cstring>tbnPrioridad5</cstring>
+                                    </property>
+                                    <property name="minimumSize">
+                                        <size>
+                                            <width>32</width>
+                                            <height>32</height>
+                                        </size>
+                                    </property>
+                                    <property name="paletteBackgroundColor">
+                                        <color>
+                                            <red>255</red>
+                                            <green>0</green>
+                                            <blue>0</blue>
+                                        </color>
+                                    </property>
+                                    <property name="text">
+                                        <string>5</string>
+                                    </property>
+                                    <property name="buttonGroupId">
+                                        <number>5</number>
+                                    </property>
+                                    <property name="toolTip" stdset="0">
+                                        <string></string>
+                                    </property>
+                                    <property name="whatsThis" stdset="0">
+                                        <string></string>
+                                    </property>
+                                </widget>
+                                <widget class="QToolButton">
+                                    <property name="name">
+                                        <cstring>tbnPrioridad6</cstring>
+                                    </property>
+                                    <property name="minimumSize">
+                                        <size>
+                                            <width>32</width>
+                                            <height>32</height>
+                                        </size>
+                                    </property>
+                                    <property name="paletteBackgroundColor">
+                                        <color>
+                                            <red>170</red>
+                                            <green>0</green>
+                                            <blue>0</blue>
+                                        </color>
+                                    </property>
+                                    <property name="text">
+                                        <string>6</string>
+                                    </property>
+                                    <property name="buttonGroupId">
+                                        <number>6</number>
+                                    </property>
+                                    <property name="toolTip" stdset="0">
+                                        <string></string>
+                                    </property>
+                                    <property name="whatsThis" stdset="0">
+                                        <string></string>
+                                    </property>
+                                </widget>
+                            </hbox>
+                        </widget>
+                        <spacer>
+                            <property name="name">
+                                <cstring>spacer5_2</cstring>
+                            </property>
+                            <property name="orientation">
+                                <enum>Horizontal</enum>
+                            </property>
+                            <property name="sizeType">
+                                <enum>Expanding</enum>
+                            </property>
+                            <property name="sizeHint">
+                                <size>
+                                    <width>8</width>
+                                    <height>20</height>
+                                </size>
+                            </property>
+                        </spacer>
+                        <widget class="QToolButton">
+                            <property name="name">
+                                <cstring>tbnLanzarInforme</cstring>
+                            </property>
+                            <property name="sizePolicy">
+                                <sizepolicy>
+                                    <hsizetype>1</hsizetype>
+                                    <vsizetype>1</vsizetype>
+                                    <horstretch>0</horstretch>
+                                    <verstretch>0</verstretch>
+                                </sizepolicy>
+                            </property>
+                            <property name="minimumSize">
+                                <size>
+                                    <width>32</width>
+                                    <height>32</height>
+                                </size>
+                            </property>
+                            <property name="maximumSize">
+                                <size>
+                                    <width>32</width>
+                                    <height>32</height>
+                                </size>
+                            </property>
+                            <property name="focusPolicy">
+                                <enum>NoFocus</enum>
+                            </property>
+                            <property name="text">
+                                <string></string>
+                            </property>
+                            <property name="accel">
+                                <string>I</string>
+                            </property>
+                            <property name="iconSet">
+                                <iconset>image534</iconset>
+                            </property>
+                            <property name="toolTip" stdset="0">
+                                <string>Lanzar informe</string>
+                            </property>
+                        </widget>
+                    </hbox>
+                </widget>
+                <widget class="FLTable">
+                    <property name="name">
+                        <cstring>tblTareas</cstring>
+                    </property>
+                    <property name="font">
+                        <font>
+                            <bold>0</bold>
+                            <italic>0</italic>
+                        </font>
+                    </property>
+                    <property name="numRows">
+                        <number>0</number>
+                    </property>
+                    <property name="numCols">
+                        <number>0</number>
+                    </property>
+                    <property name="selectionMode">
+                        <enum>SingleRow</enum>
+                    </property>
+                </widget>
+            </vbox>
+        </widget>
+    </vbox>
+</widget>
+<images>
+    <image name="image33081">
+        <data format="PNG" length="1177">89504e470d0a1a0a0000000d4948445200000024000000240806000000e10098980000046049444154789cbd9851685b551cc6bfda54ce43953357f104f3701fee83b7444866070d82106da1660535e0c33a4512f161b7088eacc2087b28a58854c1c13a18b4b2427ca959842eab2024ba4a37984bed260d5230ddca8875602d52ba32aa9f0ff7266dd2d9a66d92f3f2cf25e1de1fbff33f5fceb920893a0d096056494938e4a210ea1d0002c01325bfaa139004302ba562ece27992a4b7dd4fd1ac5db6bf6bac27900430cbbfc9d85749fabb581cfeae20458bf72708a50368aa079004301b7c3bccb9f9659264f864941cde840abf1ba450be5b009e03d0544ba0a219cedb4f7f407bba82d6877c8a2419e80850b87805c0b3b502da6626ff608d24b96c57cd13a4f98149ce8f903469b4052994ffa35a006d37932f35144bccd95061728d6476842429f4f052b581b699c92dda3567d591f139728c1c1ace909f92beae012a7798b1e1012a0f594da0ed667276b5af63e39699a18bd6756470daeaa1508cd24d0add5ca82650899942cddcc96f37738e8c0ca618e927c37d491a1da4d0cdbb10ea44d5808443144d64b2b6999b3b9b09f7915e1b46087502407bf50c39c40ac7c8cc8c65243595db9b19a01d80b33a400e7949b90c1a1e3f493299e6264ca566002780271b48a2a1a1e14030866ebc17e98b22f14d020f3780f4b7a318fd3a8bf71fb6e2b3d5199cde3882d3ab6960e355fcb57a15377e3e8685bbbdf7d6ef27a2585ffa0dc03d007f02787430430e79c970fb994c5b269825bdeda4afcbdcb399e23df70d54065348e2f8c43435770fbd1d11f2f30a7a662bccbe81cacdd8093c6daf2af34c8c463ba93c66e566f60d5406935bb4cca4aee7c93172e0dc347996ecf9708452efa1d0c3549e0accec0ba8dc8c9d3ba92996f64c7f8a9a8714aee00f00de102dbe8f01bc06a06d47983d0195c164ee58499cfc2e579233667f8a5a5ba400730cc04b003400cf033884c246ec40400ef9458919bb57e2938f31d3c6ad305e00876d884600bbe74b4540424dc52732f6f458491c9b98dbcd4c01a671c77bef1328c9b5cd042eec672a30b3371800bb27b55021299d5f3a9513feceab3872b434817b57d298bc3289a5a5856bebf7134300f2001601ac00f867af403b1b6ad6425291f109cb84d116ac9999dd81840a29ddc7e464a177e6689e22851660e038699e4956a7672a026ad642f490bc6ee78c5dc3a762943a2954e0a6d449e10a7e5f5598c702091532dc81e2124fa6ad9c89f42729f51e427a2f00781dc02b005e06f062d5608a400ef996106a0542512a7264ac34672c1852b4782f00e804d00aeb60f70c80e6aac1148184ba164fa4183d4b068f47ada56deff4cacc74027801c0d3287f495065a01f0b09ac343fa383f1ff33535b98029068d64e1af6f136363e4da907e87f73a0be66b6020110a2c59bf577474892e747495f07295c4102e806e0ae0bcc96073c5a5ffdbdfbc6ad99f9565f2fb2bf02c6d1cb8043ac015807b00c6015c0bfb506dabaec9b003885f2f50b57e0b6d4f88b68f17d026b4375a8e620f628ff2f6b82353587013c0580b04e037fc03255f3f11fbff8d69b58d84f280000000049454e44ae426082</data>
+    </image>
+    <image name="image534">
+        <data format="PNG" length="1859">89504e470d0a1a0a0000000d4948445200000020000000200806000000737a7af40000070a49444154789ca5576f4c1bf7197e12aec9a119e5ac41776e9a15a225c319fd63d62c1c4da638e9ba165669f3b64ad045d15c55dae89fb5732275733a75023e4414a991c22414daad13ee07eaba1af3ac29958906b39d01763a5a9b88642673a68391d678d43517e2e6d9873b8f989a1679ef9747bfbbdfbdeffb3cefefde7baf02e55aad720fe47bbe86ecb50f91d7ae97eba6a2dc07c5832f3c57fdc357cee4ad0fb50bdbfb95fc964bdb01e126b2f3190037caf5bb6193fa7946f190f624a978c8c12952eee64db19f51c88a03c0a68df8295f819abb9fd87d744ffd6de380f93030fb3e50d78a4d6262ce92bdebb9c7b495ec17b070611437f39f941b637d13c40a7998632d436468816c0f90f11ce90c90f114d9d24fd68e9262dbc09b10a52f7e96abf214d86212abeb8ffe7cc7f7abaa23e701d321203209888781b1f0224c372b51998a4176b5eed1b06b5ff6ddd12056b24b65c52a692679dbc038af3986c9e812e91c255592ae988e1dc364744a5786246b7b8393a8aedd55ca55790adcb1d772f52b477f6679045b22e380c90e8c4e002f7d1d38f51eb0e90070f60f23406b1de69796213eb8fb8e5961d7835a221cc15266eeff220f00a8b5372933bce1306adf11d699bb13648ea43b46c693a4dd1364708a74f491f619523aeeff274cf2fdb7bada5c560226730d2210c426a0fbaf0014a0f702002bd07d0970d980dec808ccff3a84beb73d10f380f98f6188575abf044ddb85b2df3e01900400fb5d47fd2ae91826a3eb28905449e7ab64324576f8c85098141b1c31000fe89efee7724381374b92b4adaed67a97b5ce72a726cb8f06de99c58050876e7f02e6837bd07b6e116ebb19ddef01b0017d638b78f98819bdef2ec3fcbd4a3cfdab18b4f9e911004900f90dc59565f9f6e8a9e84f7a4ef604a8f29a3f10bcc11592a3247364f06c905c22fdc37e5225078674ec0c906943891c49d708299fe235002dd848d92549aa723ee9fc25d39c8b4fc54992058cc64a63683c4ad2484a25075ef7b22745bacfa6d9d24fa2c1e10750f7b9c195fd4aa377c87b81d45992245306ce94c678613da543743c4aae907e9f9f9c211dc7072856d7be80cf2bb9fda0fda1e878f443de62aaaa922493c935985a83c6f5f84cb248b1e0d920e9219d4f3acf4b26a96433d2993729fba2b1f807b706a76a60728d120beba05abc2f9e30d6a3fa1ed7f3aebf4b9254ffe99a574bdbbc3e7fb49879ba8859619d5e307029578ce95cd17dd550269ed0b30f8e84c814e9fcb1332c0aa25c9440c74f3b7ef199cc0bebb4814b06e6d6e0d29a7d6ab112fe00c904a93429bd28cc0ba249aca4ca8258abcc8d5a16981498e50ac1d6b1c2fd822285e7a3b138b9420e7abcec78c6350701f70200061b06ebfd012e935c3ddd85740a0a146a5c6016e6eafbbf40fa7d5e32457a870675d6c37e16f93330341a2255d2fd622765597602c0266bbdb521319a981cb918de7ae8403362133134ee6d44627a167bac7598bb3a07cb0e0bc291189aa71b71e2ca093ca5b9d08b5e2c0b223498a1094f21030f80c781fcab90f00444ad0b6641832c4b3876e418c2976368beaf119eb7df82e3620b769ed9797c7e7efe154892b46da07fe03273d44f2bc9e878bc28f378824c0fa7d9f36b37d530a99c22bd31d2d6afcf84f62132a8ea684f91caebfa8c683d49da3c647b5b3b73811cbd435e3241763ce3ba2e99a4760015159aa65d37559a6e17cde66feefe461d46c261343fd088d8440c96bb2d861266bc167c0d979257f1fb150b9a9fb5e0dc24607914a84a003b5a81e9f7819a6f03555340cdb780e904607e04981e8e41bb740e91cb3e9c105f42d7541726fe168e5c9cb9f83b00f3fa4114c59a5c2037e10fe8bd9d2305258c37d3e87003be105592de25bdd4b74e426992ae2903c7f5ebed43e4408054da5c4cfbd2741d7733f49dd03f44416c03602aee059264753def9ef40e79f58315089239e3e0908c864374abe469a3c9b8a64897813992ee19b293fa27394db2639474aaa4b53b495b5b9aed6ded9f28f72b7f8180c700941e544541dc1e7c38f89b9e933d1f3365f4f2b4d14ed3fad44b929d337a90cea9d53549761af340a7a188d347dac2a4f4b06b5192a42e00f7ae655eeae7419024a9c9da60fb91cde6395c77a767e731e9d8e6c7b5184e3fdb08df55605a06701e701f007a2700ec053001b8f602dd11000a803160b90188fc7611d3eff4cd6a7f7ef10700622599af6302809db2247dd77a9fd2139ca1767a864ca6f5dac655b2dd474655d23144860a98221d1e329ad2f70513a4d836f81f08a2522ac8867e9fc4a68e36db91ae37b40fcc589cff5356d35a33dae2cb8bd0b4254dcb7c046d39a7e533791122340115a2d8b515425f9554d3552dca235fce640f99326f5a8e2033ef292b01d42afbc5bc6b9f96797a015ae6dfc86b1f01c802f8188006e03a56c7accd867a5b01544110cda8aefb2ab28b57909d1fc346c7b112761b363a43aefffca7c6b1ff024868b694f57a8bdb0000000049454e44ae426082</data>
+    </image>
+</images>
+<layoutdefaults spacing="6" margin="11"/>
+<includehints>
+    <includehint>fltable.h</includehint>
+</includehints>
+</UI>

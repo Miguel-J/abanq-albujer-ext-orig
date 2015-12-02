@@ -1,0 +1,12 @@
+<flpatch:modifications name="bi_crm" >
+    <flpatch:patchXml path="crm/principal/forms/" name="crm_subcatincidencias.ui" />
+    <flpatch:patchXml path="crm/principal/tables/" name="crm_subcatincidencias.mtd" />
+    <flpatch:patchXml path="direccion/analisis/" name="fldireinne.xml" />
+    <flpatch:patchScript path="direccion/analisis/scripts/" name="in_navegador.qs" />
+    <flpatch:addFile path="direccion/analisis/tables/" name="in_dimcatincidencias.mtd" />
+    <flpatch:addFile path="direccion/analisis/tables/" name="in_dimsubcatincidencias.mtd" />
+    <flpatch:addFile path="direccion/analisis/tables/" name="in_dimusuarios.mtd" />
+    <flpatch:addFile path="direccion/analisis/tables/" name="in_h_incidencias.mtd" />
+    <flpatch:addFile path="direccion/analisis/tables/" name="in_dimdepartamento.mtd" />
+    <flpatch:addFile path="direccion/analisis/tables/" name="in_dimusuario.mtd" />
+</flpatch:modifications>

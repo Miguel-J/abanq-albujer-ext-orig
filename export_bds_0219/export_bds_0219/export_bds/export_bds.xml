@@ -1,0 +1,24 @@
+<flpatch:modifications name="export_bds" >
+    <flpatch:patchScript path="contabilidad/principal/scripts/" name="flcontppal.qs" />
+    <flpatch:patchScript path="facturacion/tesoreria/scripts/" name="flfactteso.qs" />
+    <flpatch:patchScript path="facturacion/principal/scripts/" name="flfactppal.qs" />
+    <flpatch:patchScript path="facturacion/facturacion/scripts/" name="flfacturac.qs" />
+    <flpatch:addFile path="facturacion/facturacion/tables/" name="registrosmodificados.mtd" />
+    <flpatch:patchXml path="facturacion/facturacion/" name="flfacturac.xml" />
+    <flpatch:addFile path="facturacion/facturacion/tables/" name="registrosexportados.mtd" />
+    <flpatch:patchXml path="facturacion/facturacion/forms/" name="flfacturac.ui" />
+    <flpatch:patchScript path="facturacion/facturacion/scripts/" name="masterfacturascli.qs" />
+    <flpatch:patchXml path="facturacion/facturacion/forms/" name="masterfacturascli.ui" />
+    <flpatch:patchScript path="facturacion/facturacion/scripts/" name="masteralbaranescli.qs" />
+    <flpatch:patchScript path="facturacion/facturacion/scripts/" name="masteralbaranesprov.qs" />
+    <flpatch:patchScript path="facturacion/facturacion/scripts/" name="masterfacturasprov.qs" />
+    <flpatch:patchXml path="facturacion/facturacion/forms/" name="masteralbaranescli.ui" />
+    <flpatch:patchXml path="facturacion/facturacion/forms/" name="masteralbaranesprov.ui" />
+    <flpatch:patchXml path="facturacion/facturacion/forms/" name="masterfacturasprov.ui" />
+    <flpatch:patchScript path="facturacion/tesoreria/scripts/" name="masterremesas.qs" />
+    <flpatch:patchXml path="facturacion/tesoreria/forms/" name="masterremesas.ui" />
+    <flpatch:patchScript path="facturacion/principal/scripts/" name="masterproveedores.qs" />
+    <flpatch:patchScript path="facturacion/principal/scripts/" name="masterclientes.qs" />
+    <flpatch:patchXml path="facturacion/principal/forms/" name="masterproveedores.ui" />
+    <flpatch:patchXml path="facturacion/principal/forms/" name="masterclientes.ui" />
+</flpatch:modifications>

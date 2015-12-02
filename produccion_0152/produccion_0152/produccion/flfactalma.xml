@@ -1,0 +1,81 @@
+<xupdate:modifications>
+<xupdate:insert-after select="/ACTIONS[ACTIONS,1]/action[articulos]/scriptform[scriptform,1]" >
+<scriptform>masterarticulos</scriptform>
+</xupdate:insert-after>
+<xupdate:update select="/ACTIONS[ACTIONS,1]/action[opcionesarticulocomp]/form[form,1]/text()[1]" >masteropcionesartcomp</xupdate:update>
+<xupdate:insert-after select="/ACTIONS[ACTIONS,1]/action[opcionesarticulocomp]/formrecord[formrecord,1]" >
+<scriptform>masteropcionesartcomp</scriptform>
+</xupdate:insert-after>
+<xupdate:insert-after select="/ACTIONS[ACTIONS,1]/action[pesosmedidas]" >
+<action>
+<name>movistock</name>
+<description>QT_TRANSLATE_NOOP(&quot;MetaData&quot;,&quot;Los movimientos de stock son variaciones en el stock (entradas, salidas, producción, consumo) de un determinado artículo&quot;)</description>
+<alias>QT_TRANSLATE_NOOP(&quot;MetaData&quot;,&quot;Movimientos de stock&quot;)</alias>
+<table>movistock</table>
+<form>master</form>
+<formrecord>movistock</formrecord>
+<scriptformrecord>movistock</scriptformrecord>
+</action>
+</xupdate:insert-after>
+<xupdate:insert-after select="/ACTIONS[ACTIONS,1]/action[movistock]" >
+<action>
+<name>lotesstock</name>
+<description>QT_TRANSLATE_NOOP(&quot;MetaData&quot;,&quot;Los lotes de stock son agrupaciones de artículos bajo un mismo código identificativo.&quot;)</description>
+<alias>QT_TRANSLATE_NOOP(&quot;MetaData&quot;,&quot;Lotes de stock&quot;)</alias>
+<table>lotesstock</table>
+<form>masterlotesstock</form>
+<formrecord>lotesstock</formrecord>
+<scriptform>masterlotesstock</scriptform>
+<scriptformrecord>lotesstock</scriptformrecord>
+</action>
+</xupdate:insert-after>
+<xupdate:insert-after select="/ACTIONS[ACTIONS,1]/action[opcionescomp]" >
+<action>
+<name>selopcionescomp</name>
+<alias>QT_TRANSLATE_NOOP(&quot;MetaData&quot;,&quot;Seleccion de opciones de composición&quot;)</alias>
+<table>opcionescomp</table>
+<form>selopcionescomp</form>
+<scriptform>selopcionescomp</scriptform>
+</action>
+</xupdate:insert-after>
+<xupdate:insert-after select="/ACTIONS[ACTIONS,1]/action[tiposopcionartcomp]" >
+<action>
+<name>buscarcomponente</name>
+<description>QT_TRANSLATE_NOOP(&quot;MetaData&quot;,&quot;Esta acción permite seleccionar un componente de una determinada familia.&quot;)</description>
+<alias>QT_TRANSLATE_NOOP(&quot;MetaData&quot;,&quot;Selección de componentes&quot;)</alias>
+<table>articulos</table>
+<form>masterbuscarcomponente</form>
+<scriptform>masterbuscarcomponente</scriptform>
+</action>
+</xupdate:insert-after>
+<xupdate:insert-after select="/ACTIONS[ACTIONS,1]/action[buscarcomponente]" >
+<action>
+<name>reglotestock</name>
+<description>QT_TRANSLATE_NOOP(&quot;MetaData&quot;,&quot;Esta acción permite regularizar la cantidad actual de un lote de stock.&quot;)</description>
+<alias>QT_TRANSLATE_NOOP(&quot;MetaData&quot;,&quot;Regularización de lotes de stock&quot;)</alias>
+<table>reglotestock</table>
+<formrecord>reglotestock</formrecord>
+<scriptformrecord>reglotestock</scriptformrecord>
+</action>
+</xupdate:insert-after>
+<xupdate:insert-after select="/ACTIONS[ACTIONS,1]/action[reglotestock]" >
+<action>
+<name>consumoprod</name>
+<description>QT_TRANSLATE_NOOP(&quot;MetaData&quot;,&quot;Esta acción permite ajustar la cantidad consumida de un determinado material en cada tarea.&quot;)</description>
+<alias>QT_TRANSLATE_NOOP(&quot;MetaData&quot;,&quot;Ajuste de consumo en producción&quot;)</alias>
+<table>movistock</table>
+<form>consumoprod</form>
+<scriptform>consumoprod</scriptform>
+</action>
+</xupdate:insert-after>
+<xupdate:insert-after select="/ACTIONS[ACTIONS,1]/action[consumoprod]" >
+<action>
+<name>secuenciaslotes</name>
+<description>QT_TRANSLATE_NOOP(&quot;MetaData&quot;,&quot;Esta acción permite ver y modificar las secuencias de lotes para impedir su bloqueo.&quot;)</description>
+<alias>QT_TRANSLATE_NOOP(&quot;MetaData&quot;,&quot;Secuencias de Lotes&quot;)</alias>
+<table>secuenciaslotes</table>
+<form>master</form>
+<formrecord>secuenciaslotes</formrecord>
+</action>
+</xupdate:insert-after>
+</xupdate:modifications>

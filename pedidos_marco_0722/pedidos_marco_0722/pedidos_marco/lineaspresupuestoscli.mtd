@@ -1,0 +1,34 @@
+<xupdate:modifications>
+<xupdate:insert-after select="/TMD[TMD,1]/field[porcomision]" >
+<field>
+<name>idlineapedidomarco</name>
+<alias>QT_TRANSLATE_NOOP(&quot;MetaData&quot;,&quot;Línea PM&quot;)</alias>
+<null>true</null>
+<pk>false</pk>
+<type>uint</type>
+<visiblegrid>false</visiblegrid>
+<relation>
+<table>lineaspedidomarcocli</table>
+<field>idlinea</field>
+<card>1M</card>
+</relation>
+</field>
+</xupdate:insert-after>
+<xupdate:insert-after select="/TMD[TMD,1]/field[idlineapedidomarco]" >
+<field>
+<name>codpedidomarco</name>
+<alias>QT_TRANSLATE_NOOP(&quot;MetaData&quot;,&quot;Ped.Marco&quot;)</alias>
+<null>true</null>
+<pk>false</pk>
+<type>string</type>
+<length>8</length>
+<visiblegrid>true</visiblegrid>
+<editable>false</editable>
+<relation>
+<table>pedidosmarcocli</table>
+<field>codpedidomarco</field>
+<card>1M</card>
+</relation>
+</field>
+</xupdate:insert-after>
+</xupdate:modifications>

@@ -1,0 +1,99 @@
+<xupdate:modifications>
+<xupdate:append-first select="/UI[UI,1]/images[images,1]" >
+<image name="info_cta_explotimage10" >
+<data format="PNG" length="1460" >89504e470d0a1a0a0000000d4948445200000020000000200806000000737a7af40000057b49444154789cad97cd6b24c719871f991ea8861ea886dea50b76610ad6108df710070c591d620c6b30f2cd7f402e3ee6b83e19937bc04bc8219704f21f58c658ec21c6da43b0d6ac588ff1876649403504a12a5642dd301d756535d039544b33236be2d98fba14bfeaae7adf79ead76fd5ac70a1354f9affd665ed49800a9eb17fc5e3fff3ee6fdffdfd83af1ffce5e2da3fdb7edcfeb179e1f6b4699ae3a690997c739998afcca9ea99739e6f75e876f777e5c177079fca44fefad912485e20f82910837516952890a47bdfec7d2612f1c6d209b8ca3d7f021da00625155410c731e9b5f4eadec3bd4d99c88549cc259027f9f327d012304706443b1683bc26afee3edcdd5c44e2e579a025a0131d9238cba11ba37aeaeadef6dea6103f4d229a532fe20180180a5f20106c7db1459ee4b8ca85debbab8fb61e6dbef69bd76e33e1fb4be77ff9f72f5ffc336c9aa6396e9ae6a4699a7f374df3a4694efe79d2344fc2d8fa2fd7ff301bf3e579e0ac9d0269204106c5a420ce63acb7e12bc18ad9d7e7b760d603b680ea2e24ab501a48148c867063154a0b52831b8254e08ba04b0322056f49130dce92468addf216fd1bfdb388cd4202b31ef8e4fe068c14ec4b609dfa6b8bbdbf058f05b00efb92fafe00f3f9d6b9a65c65fbaf7f86a3d7c1e561dece3671e9a9276d959acc035b58077457c3834fa074f07883f8d0b2bd63e0c8c00f1b508e18fcb08bdcf7f038687636e0fb0206ad7ebc413c2aa94b4b1cc761dd482f4e60d603c34303510a376fc1ed3b585f8203b214deb903bd55c4210c9c81db77e0e65b9029b64725bcba16f4ed3bec3a0b89a2ae030133318b1338f7c0694b000f591f260225156ee221ebc14440ae31409e88a0b33e74400354663a2f013743e082eb16d4810e98b161cd17b0f93e48817503722161e76fe0ee41e5d111b8b2a0ffed07507a38741821c00e61f37720c19425794b208ee3253d700aba9b87927af33d48faa87c1587077d0b641f7eb186c1a3330d493fbc2744209048b8b90eb28fce34a69a1250a8c504ce3dd0013376ac4d3cecdc0562acb3e491807f6d844f2daed11d81290dfae81e0c6bf01e13b55bf0e02e5c89b1a541278a7a5c1377e3253d50b704f0900214c10311e71aa9b011e80ca80a4815e0d19168e729a80a942410e80602229aab430bea400ca670814f5142ea292a430e302e21f2500e511198d243e2a11842e431109e1743483cb6aa51221000f013bf3881730f8c41a77940914a283ca9ac5b022d19e9b1787426a0f2907aa0460bd1cef3c1a899c656e69c8066993ad005538c5a0243486b6ce5c923603c0c01ca2210a83c24358c0b8808468d085ad6986a884a34455100cbd6810254d20b28af00954765821282073a1e32b08096806fbd12f960d433ef541e2d05b634a4490a2ceb0101a66c0978c2a9e6dbc53dd0065591c054e1399e2901319d67bc47258aa20c0496f340055af6c242ede269da2e7e162c13d8a8f5401b8c0ef4221112cf800981406549652090337fe45fee81649640085ad46704ce9208046c35d56430a2dd36ef4325ace6092ce7810a74d2832e702dfca2f4bac075a69a9e40088fcea71aa077a5dde35e18ef5f1398ca9e7b208ee2b990979f052d013312d46350110c9c478ce19b7f8016023b04730483d2b39e09ac87740203ebf9d55050185002b6bef5e8b715455590c6e9f45e705902ae72f4e9c311dc7ae32d3efae3166a906371a834c7761d832f5a4d8eed3874a2b9f7a9091a87beaef9e07eab272356afbfce5aa60381d3701f1831e2d236f7dff0697bbf3c3e9ef64fff4fffe4b8694ea6fdc1c141d0edfc939393a6699aa677a3f7a7c55b50c1c71f7e7c303c1a7a9d684c695089c256e1ef96290d67e35afef4b92d2d4acebc5718f234c7150e9dea15736856dcc87d351b72e502842e5c382f5f5e5b019e02fb84bb3300ff03787c8609f887bfb80000000049454e44ae426082</data>
+</image>
+</xupdate:append-first>
+<xupdate:insert-after select="/UI[UI,1]/actions[actions,1]/action[co_planasientos]" >
+<action>
+<property name="name" >
+<cstring>co_codcuentaexp1</cstring>
+</property>
+<property name="iconSet" >
+<iconset>info_cta_explotimage10</iconset>
+</property>
+<property name="text" >
+<string>Códigos de Cuenta de Explotación</string>
+</property>
+<property name="menuText" >
+<string>Códigos de Cuenta de Explotación</string>
+</property>
+</action>
+</xupdate:insert-after>
+<xupdate:append-first select="/UI[UI,1]/images[images,1]" >
+<image name="info_cta_explotimage11" >
+<data format="PNG" length="1544" >89504e470d0a1a0a0000000d4948445200000020000000200806000000737a7af4000005cf49444154789cad973d8824c715c77f2bd7e22ae8836eb3826998e01ad658e3e8ced8462b39d129536639f365cac4192712383970200983d90dfca15170dc65b603218597184e8aa4c062e70cebd90b16f71aaddd0d3aa80e06eac1d4691c54f5c7ecce9ecce1073daf6baaa6defffdebbd576fb656ab156ffff2edbf17bbc5779db8274681f310b460941e8c071a709cd78241e388d2fd5e40e9c118eabafec7feeff75f540028be7debcdd70c52812a001bb7041625107edc6ef24c63248202c6d7b9f5abdb26980eb202e0ec2e48131625d7c3ccc95db0a7e13deed169ff3f3cc3754200f3bbff740e3ed7b28507163348f740a7019a6f40ea1ea6d6412bdd7ed18fd5257ab85e0d5c8e07d50d3105bcf0475039780b2a03b1307e2342d7bdee3c1bd27ccee3767e407f88210d3aebccf60000aebc145f8a1ed4265982f336049c0773c574536e09663be835d98e81ea4220af03f07cb32cc19e7d060bdb7dd578d0aad506bd5360f20296603c381c0683c3511e95c1b5dd02540f580d3e2f15571ed23c2e49c713cc680226bbb8c696c8d99ce6ec9074f74647b3f30ea30cc727c76469467e35c7701ec0650c384b75741f9d16e43ffad906562c6c8700335981c90ab025e5d1c78c766f405ac4bae198bc30214b337417c0419ebb9401e7a81e7e4cba53908d27b074fd830bc611583640035480852ca5f8e16bd48feec3a2ea8a523ecec94739d206ec1a800d0cd8470f48d35120ab9e85746c0bc012d826640b327822186329aeed517ff1a7904980561adbd80b763632e0be2a91c529060995d05b783c0f450a816d81a58092e075cbc8d2822bc1d5a01b46e32230a10cf5594dd334970038c740737648ae752cc312f35d6071183c5c46efa55a3f065f064052821c63c682f6823415874787cc4fe6647a3d802f66c112f4229ea9226ca80ca043d1591c82cfa2e7352c4e63e59458726d00ec1b50a0d1c8c2861848f32e2bd6010c19f00e910a54150cab34aed4c188544089f3134434595241534292c6ca17d7780129c9f41ee5a266b2bb874e584bc18d0c382f6822e55dc94f7b26a4c6a1115580fe01e5a35f505cd5b0888c2de2b14860c0f90670e8c48077a1383d8d01a37488f5340bb3491abc4f4c186b8df102fe73c46b8af1089ae3b05e6256f8265e40a13fd0ca446605ad9f52079c7338405ada5be3da847c563a526d31fe984c0b90439205daa58999d2f703b611f44ec1fd4f1f307b38bb9071eb0c08a00da2b2e0850ec6018c6e372518a408cd4b3a015f407d77cdf3704be608053a49c9930c9de835fa2f30107a00477af506d569153c8fb487c876b0a863016a634322909b2160bb2b18dca94692093ac9c8c73993dd09cebb0d00d66220dc6aecbc843b9a634c34e25df01006baed032c2413d8b9d9836a726a3f6174ed751047312e3089b98481c181b408f5b59fd33cce707ffb0c241a6f8b8f97be0cfbd8927a1bdab89d9bd08c28bfbc4afa93b7baadad589c389cb8f326c3bd3d64c0e1c8b4c1bef816e5a707e4679f935d1b818ea5586c9fa2ad472a06e249c5fe5f2798f4fbf0973fd331ac7a1d417cdd01688b43db3c00cc4fe6c84290f1eb34f58cf4930714cf3798d44212f35cbba0170dae2e69beac287d0149c11b6fdec218fa8b2b6afb95e5f6af6fd7d30fa63f7d7ffafec58bd828031eb224c37a1bdbe83d9a9debcc1ecfd0e531da57185581bf072ac5c6c224cfbf429a1650dfefebdd76afadb5bcf7ce7bf5f483e9cbc069c7c0f91830ca908fc2fddd9e99880093709f7b89e32079eca2b5ea9db062c9c842e53366e8f9cbc03f9f1a036b8cb475e08a8934aecfc3459a219cb71387490c555571f09b830bc62166c1f90b62a3c42ed73917de874ff0a25fa7084c69a8ea8a77df79b73ef8c3c105e31d036b32f4648336c66c9e1f069c07ad35e549c9bd3bf7367abe0e40b1d519ff7f680db32f66cb8f3efce8dfd33bd3572f33de0170de2df77fbbffb57879a2d12b414223f12c5ae9ad66d1307f38ffd7f4cef4c784cee552d95aad566c6d6d7d07f81ef02dda3faacf2e5bc013e0d137195fad56fc17e889166119c576b20000000049454e44ae426082</data>
+</image>
+</xupdate:append-first>
+<xupdate:insert-after select="/UI[UI,1]/actions[actions,1]/action[co_codcuentaexp1]" >
+<action>
+<property name="name" >
+<cstring>co_codcuentaexp2</cstring>
+</property>
+<property name="iconSet" >
+<iconset>info_cta_explotimage11</iconset>
+</property>
+<property name="text" >
+<string>Códigos de Cuenta de Explotación (II)</string>
+</property>
+<property name="menuText" >
+<string>Códigos de Cuenta de Explotación (II)</string>
+</property>
+</action>
+</xupdate:insert-after>
+<xupdate:insert-after select="/UI[UI,1]/connections[connections,1]/connection[connection,12]" >
+<connection>
+<sender>co_codcuentaexp1</sender>
+<signal>activated()</signal>
+<receiver>FLWidgetApplication</receiver>
+<slot>openDefaultForm()</slot>
+</connection>
+</xupdate:insert-after>
+<xupdate:insert-after select="/UI[UI,1]/connections[connections,1]/connection[connection,13]" >
+<connection>
+<sender>co_codcuentaexp2</sender>
+<signal>activated()</signal>
+<receiver>FLWidgetApplication</receiver>
+<slot>openDefaultForm()</slot>
+</connection>
+</xupdate:insert-after>
+<xupdate:insert-after select="/UI[UI,1]/menubar[menubar,1]/item[item,1]/item[item,3]/action[co_codbalances]" >
+<action name="co_codcuentaexp1" />
+</xupdate:insert-after>
+<xupdate:insert-after select="/UI[UI,1]/menubar[menubar,1]/item[item,1]/item[item,3]/action[co_codcuentaexp1]" >
+<action name="co_codcuentaexp2" />
+</xupdate:insert-after>
+<xupdate:delete select="/UI[UI,1]/menubar[menubar,1]/item[item,2]/action[co_asientosejer]" />
+<xupdate:delete select="/UI[UI,1]/menubar[menubar,1]/item[item,2]/action[co_cambiarejer]" />
+<xupdate:delete select="/UI[UI,1]/menubar[menubar,1]/item[item,2]/action[ejercicios]" />
+<xupdate:append-first select="/UI[UI,1]/menubar[menubar,1]/item[item,2]" >
+<action name="co_epigrafes" />
+</xupdate:append-first>
+<xupdate:insert-after select="/UI[UI,1]/menubar[menubar,1]/item[item,2]/action[co_epigrafes]" >
+<action name="co_cuentas" />
+</xupdate:insert-after>
+<xupdate:insert-after select="/UI[UI,1]/menubar[menubar,1]/item[item,2]/action[co_cuentas]" >
+<action name="co_subcuentas" />
+</xupdate:insert-after>
+<xupdate:delete select="/UI[UI,1]/menubar[menubar,1]/item[item,3]/action[co_cuentas]" />
+<xupdate:delete select="/UI[UI,1]/menubar[menubar,1]/item[item,3]/action[co_epigrafes]" />
+<xupdate:delete select="/UI[UI,1]/menubar[menubar,1]/item[item,3]/action[co_subcuentas]" />
+<xupdate:append-first select="/UI[UI,1]/menubar[menubar,1]/item[item,3]" >
+<action name="co_cambiarejer" />
+</xupdate:append-first>
+<xupdate:insert-after select="/UI[UI,1]/menubar[menubar,1]/item[item,3]/action[co_cambiarejer]" >
+<action name="co_asientosejer" />
+</xupdate:insert-after>
+<xupdate:insert-after select="/UI[UI,1]/menubar[menubar,1]/item[item,3]/action[co_asientosejer]" >
+<action name="ejercicios" />
+</xupdate:insert-after>
+<xupdate:insert-after select="/UI[UI,1]/toolbars[toolbars,1]/toolbar[toolBar]/action[co_codbalances]" >
+<separator/>
+</xupdate:insert-after>
+<xupdate:insert-after select="/UI[UI,1]/toolbars[toolbars,1]/toolbar[toolBar]/separator[separator,4]" >
+<action name="co_codcuentaexp1" />
+</xupdate:insert-after>
+<xupdate:insert-after select="/UI[UI,1]/toolbars[toolbars,1]/toolbar[toolBar]/action[co_codcuentaexp1]" >
+<action name="co_codcuentaexp2" />
+</xupdate:insert-after>
+</xupdate:modifications>

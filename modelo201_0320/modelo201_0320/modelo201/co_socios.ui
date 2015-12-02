@@ -1,0 +1,180 @@
+<!DOCTYPE UI><UI version="3.3" stdsetdef="1">
+<class>co_socios</class>
+<widget class="QWidget">
+    <property name="name">
+        <cstring>co_socios</cstring>
+    </property>
+    <property name="geometry">
+        <rect>
+            <x>0</x>
+            <y>0</y>
+            <width>902</width>
+            <height>150</height>
+        </rect>
+    </property>
+    <property name="caption">
+        <string>Socios</string>
+    </property>
+    <vbox>
+        <property name="name">
+            <cstring>unnamed</cstring>
+        </property>
+        <widget class="QLayoutWidget">
+            <property name="name">
+                <cstring>layout181</cstring>
+            </property>
+            <hbox>
+                <property name="name">
+                    <cstring>unnamed</cstring>
+                </property>
+                <widget class="FLFieldDB">
+                    <property name="name">
+                        <cstring>fdbNifSocio</cstring>
+                    </property>
+                    <property name="fieldName">
+                        <string>nifsocio</string>
+                    </property>
+                </widget>
+                <widget class="FLFieldDB">
+                    <property name="name">
+                        <cstring>fdbRepresentante</cstring>
+                    </property>
+                    <property name="fieldName">
+                        <string>representante</string>
+                    </property>
+                    <property name="foreignField">
+                        <string></string>
+                    </property>
+                    <property name="fieldRelation">
+                        <string></string>
+                    </property>
+                </widget>
+                <spacer>
+                    <property name="name">
+                        <cstring>spacer1_2_2</cstring>
+                    </property>
+                    <property name="orientation">
+                        <enum>Horizontal</enum>
+                    </property>
+                    <property name="sizeType">
+                        <enum>Expanding</enum>
+                    </property>
+                    <property name="sizeHint">
+                        <size>
+                            <width>161</width>
+                            <height>21</height>
+                        </size>
+                    </property>
+                </spacer>
+            </hbox>
+        </widget>
+        <widget class="QLayoutWidget">
+            <property name="name">
+                <cstring>layout180</cstring>
+            </property>
+            <hbox>
+                <property name="name">
+                    <cstring>unnamed</cstring>
+                </property>
+                <widget class="FLFieldDB">
+                    <property name="name">
+                        <cstring>fdbFj</cstring>
+                    </property>
+                    <property name="fieldName">
+                        <string>fj</string>
+                    </property>
+                    <property name="foreignField">
+                        <string></string>
+                    </property>
+                    <property name="fieldRelation">
+                        <string></string>
+                    </property>
+                </widget>
+                <widget class="FLFieldDB">
+                    <property name="name">
+                        <cstring>fdbRx</cstring>
+                    </property>
+                    <property name="fieldName">
+                        <string>rx</string>
+                    </property>
+                    <property name="foreignField">
+                        <string></string>
+                    </property>
+                    <property name="fieldRelation">
+                        <string></string>
+                    </property>
+                </widget>
+                <spacer>
+                    <property name="name">
+                        <cstring>spacer163</cstring>
+                    </property>
+                    <property name="orientation">
+                        <enum>Horizontal</enum>
+                    </property>
+                    <property name="sizeType">
+                        <enum>Expanding</enum>
+                    </property>
+                    <property name="sizeHint">
+                        <size>
+                            <width>181</width>
+                            <height>20</height>
+                        </size>
+                    </property>
+                </spacer>
+            </hbox>
+        </widget>
+        <widget class="FLFieldDB">
+            <property name="name">
+                <cstring>fdbNombre</cstring>
+            </property>
+            <property name="fieldName">
+                <string>nombre</string>
+            </property>
+        </widget>
+        <widget class="QLayoutWidget">
+            <property name="name">
+                <cstring>layout182</cstring>
+            </property>
+            <hbox>
+                <property name="name">
+                    <cstring>unnamed</cstring>
+                </property>
+                <widget class="FLFieldDB">
+                    <property name="name">
+                        <cstring>fdbCodPostal</cstring>
+                    </property>
+                    <property name="fieldName">
+                        <string>codpos</string>
+                    </property>
+                </widget>
+                <widget class="FLFieldDB">
+                    <property name="name">
+                        <cstring>fdbBaseImponible</cstring>
+                    </property>
+                    <property name="minimumSize">
+                        <size>
+                            <width>320</width>
+                            <height>0</height>
+                        </size>
+                    </property>
+                    <property name="fieldName">
+                        <string>baseimponible</string>
+                    </property>
+                </widget>
+                <widget class="FLFieldDB">
+                    <property name="name">
+                        <cstring>fdbParticipacion</cstring>
+                    </property>
+                    <property name="fieldName">
+                        <string>participacion</string>
+                    </property>
+                </widget>
+            </hbox>
+        </widget>
+    </vbox>
+</widget>
+<tabstops>
+    <tabstop>fdbNombre</tabstop>
+</tabstops>
+<layoutdefaults spacing="6" margin="11"/>
+</UI>

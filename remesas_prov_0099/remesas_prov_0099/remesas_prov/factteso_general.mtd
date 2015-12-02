@@ -1,0 +1,22 @@
+<xupdate:modifications>
+<xupdate:insert-after select="/TMD[TMD,1]/field[pagodiferido]" >
+<field>
+<name>pagoindirectoprov</name>
+<!-- Cobro directo de remesas --><alias>QT_TRANSLATE_NOOP(&quot;MetaData&quot;,&quot;Pago indirecto de remesas (prov)&quot;)</alias>
+<null>true</null>
+<pk>false</pk>
+<type>bool</type>
+<default>false</default>
+</field>
+</xupdate:insert-after>
+<xupdate:insert-after select="/TMD[TMD,1]/field[pagoindirectoprov]" >
+<field>
+<name>pagodiferidoprov</name>
+<!-- Cobro directo de remesas --><alias>QT_TRANSLATE_NOOP(&quot;MetaData&quot;,&quot;Pago diferido de remesas (prov)&quot;)</alias>
+<null>true</null>
+<pk>false</pk>
+<type>bool</type>
+<default>false</default>
+</field>
+</xupdate:insert-after>
+</xupdate:modifications>

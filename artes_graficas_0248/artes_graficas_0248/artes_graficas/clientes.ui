@@ -1,0 +1,83 @@
+<xupdate:modifications>
+<xupdate:insert-after select="/UI[UI,1]/widget[QWidget,formClientes]/vbox[vbox,1]/widget[QTabWidget,tbwCliente]/widget[QWidget,comercial]/vbox[vbox,1]/widget[QLayoutWidget,layout80]" >
+<widget class="QGroupBox" >
+<property name="name" >
+<cstring>gbxAG</cstring>
+</property>
+<property name="font" >
+<font>
+<bold>0</bold>
+</font>
+</property>
+<property name="title" >
+<string>Artes gráficas</string>
+</property>
+<hbox>
+<property name="name" >
+<cstring>unnamed</cstring>
+</property>
+<widget class="FLFieldDB" >
+<property name="name" >
+<cstring>fdbPrioridad</cstring>
+</property>
+<property name="sizePolicy" >
+<sizepolicy>
+<hsizetype>1</hsizetype>
+<vsizetype>0</vsizetype>
+<horstretch>0</horstretch>
+<verstretch>0</verstretch>
+</sizepolicy>
+</property>
+<property name="minimumSize" >
+<size>
+<width>127</width>
+<height>27</height>
+</size>
+</property>
+<property name="fieldName" >
+<string>prioridad</string>
+</property>
+</widget>
+<widget class="FLFieldDB" >
+<property name="name" >
+<cstring>fdbPorBeneficio</cstring>
+</property>
+<property name="sizePolicy" >
+<sizepolicy>
+<hsizetype>1</hsizetype>
+<vsizetype>0</vsizetype>
+<horstretch>0</horstretch>
+<verstretch>0</verstretch>
+</sizepolicy>
+</property>
+<property name="minimumSize" >
+<size>
+<width>150</width>
+<height>27</height>
+</size>
+</property>
+<property name="fieldName" >
+<string>porbeneficio</string>
+</property>
+</widget>
+<spacer>
+<property name="name" >
+<cstring>spacer36</cstring>
+</property>
+<property name="orientation" >
+<enum>Horizontal</enum>
+</property>
+<property name="sizeType" >
+<enum>Expanding</enum>
+</property>
+<property name="sizeHint" >
+<size>
+<width>71</width>
+<height>20</height>
+</size>
+</property>
+</spacer>
+</hbox>
+</widget>
+</xupdate:insert-after>
+</xupdate:modifications>

@@ -1,0 +1,96 @@
+<!DOCTYPE TMD>
+<TMD>
+	<name>mt_backups</name>
+	<!-- Listado de backups para una base de datos -->
+	<alias>QT_TRANSLATE_NOOP("MetaData","Backups")</alias>
+
+	<field>
+		<name>codigo</name>
+		<!-- Código autonumérico -->
+		<alias>QT_TRANSLATE_NOOP("MetaData","Código")</alias>
+		<null>false</null>
+		<pk>true</pk>
+		<type>string</type>
+		<length>5</length>
+		<counter>true</counter>
+	</field>
+	
+	<field>
+		<name>basedatos</name>
+		<!-- Nombre de la base de datos, tal como existe en el servidor -->
+		<alias>QT_TRANSLATE_NOOP("MetaData","Base de datos")</alias>
+		<null>false</null>
+		<pk>false</pk>
+		<type>string</type>
+		<length>100</length>
+		<relation>
+			<table>mt_basesdatos</table>
+			<field>nombre</field>
+			<card>M1</card>
+		</relation>
+	</field>
+	
+	<field>
+		<name>fecha</name>
+		<!-- Fecha de creación del backup -->
+		<alias>QT_TRANSLATE_NOOP("MetaData","Fecha")</alias>
+		<null>false</null>
+		<pk>false</pk>
+		<type>date</type>
+	</field>
+	
+	<field>
+		<name>descripcion</name>
+		<!-- Texto libre -->
+		<alias>QT_TRANSLATE_NOOP("MetaData","Descripción")</alias>
+		<null>true</null>
+		<pk>false</pk>
+		<type>string</type>
+		<length>255</length>
+	</field>
+	
+	<field>
+		<name>fichero</name>
+ 		<!-- Fichero que contiene los datos volcados con el backup -->
+		<alias>QT_TRANSLATE_NOOP("MetaData","Fichero")</alias>
+		<null>false</null>
+		<pk>false</pk>
+		<type>string</type>
+		<length>255</length>
+	</field>
+	
+	<field>
+		<name>fecharest</name>
+		<!-- Fecha registrada de la última restauración -->
+		<alias>QT_TRANSLATE_NOOP("MetaData","Última restauración")</alias>
+		<null>true</null>
+		<pk>false</pk>
+		<type>date</type>
+	</field>
+	
+	<field>
+		<name>basedatosrestexi</name>
+		<!-- Base de datos que ya existe. Será eliminada para cargar los datos del fichero -->
+		<alias>QT_TRANSLATE_NOOP("MetaData","Base de datos existente")</alias>
+		<null>true</null>
+		<pk>false</pk>
+		<type>string</type>
+		<length>100</length>
+		<relation>
+			<table>mt_basesdatos</table>
+			<field>nombre</field>
+			<card>M1</card>
+		</relation>
+	</field>
+	
+	<field>
+		<name>basedatosrestnue</name>
+		<!-- Base de datos nueva. Será creada para cargar los datos del fichero -->
+		<alias>QT_TRANSLATE_NOOP("MetaData","Base de datos nueva")</alias>
+		<null>true</null>
+		<pk>false</pk>
+		<type>string</type>
+		<length>100</length>
+	</field>
+	
+</TMD>

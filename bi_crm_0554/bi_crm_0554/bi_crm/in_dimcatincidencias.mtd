@@ -1,0 +1,22 @@
+<!DOCTYPE TMD>
+<TMD>
+	<name>in_dimcatincidencias</name>
+	<!--Dimensión de categoría-->
+	<alias>QT_TRANSLATE_NOOP("MetaData","Dimensión de categoría")</alias>
+
+	<field>
+		<name>codcategoria</name>
+		<!--Código de la Categoría-->
+		<alias>QT_TRANSLATE_NOOP("MetaData","Categoría")</alias>
+		<null>false</null>
+		<pk>true</pk>
+		<type>string</type>
+		<length>25</length>
+		
+		<relation>
+			<table>in_h_incidencias</table>
+			<field>codcategoria</field>
+			<card>1M</card>
+		</relation>
+	</field>
+</TMD>

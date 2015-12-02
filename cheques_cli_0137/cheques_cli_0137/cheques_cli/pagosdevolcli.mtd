@@ -1,0 +1,56 @@
+<xupdate:modifications>
+<xupdate:insert-after select="/TMD[TMD,1]/field[idremesa]" >
+<field>
+<name>pagoporcheque</name>
+<alias>QT_TRANSLATE_NOOP(&quot;MetaData&quot;,&quot;Pago por cheque&quot;)</alias>
+<null>true</null>
+<pk>false</pk>
+<type>bool</type>
+<default>false</default>
+</field>
+</xupdate:insert-after>
+<xupdate:insert-after select="/TMD[TMD,1]/field[pagoporcheque]" >
+<field>
+<name>fechavtocheque</name>
+<alias>QT_TRANSLATE_NOOP(&quot;MetaData&quot;,&quot;Vencimiento&quot;)</alias>
+<null>true</null>
+<pk>false</pk>
+<type>date</type>
+</field>
+</xupdate:insert-after>
+<xupdate:insert-after select="/TMD[TMD,1]/field[fechavtocheque]" >
+<field>
+<name>numerocheque</name>
+<alias>QT_TRANSLATE_NOOP(&quot;MetaData&quot;,&quot;Cheque nº&quot;)</alias>
+<null>true</null>
+<pk>false</pk>
+<type>string</type>
+<length>100</length>
+</field>
+</xupdate:insert-after>
+<xupdate:insert-after select="/TMD[TMD,1]/field[numerocheque]" >
+<field>
+<name>idremesacheque</name>
+<alias>QT_TRANSLATE_NOOP(&quot;MetaData&quot;,&quot;Remesa de cheque&quot;)</alias>
+<null>true</null>
+<pk>false</pk>
+<type>uint</type>
+<default>0</default>
+</field>
+</xupdate:insert-after>
+<xupdate:insert-after select="/TMD[TMD,1]/field[idremesacheque]" >
+<field>
+<name>entidadcheque</name>
+<alias>QT_TRANSLATE_NOOP(&quot;MetaData&quot;,&quot;Entidad bancaria&quot;)</alias>
+<null>true</null>
+<pk>false</pk>
+<type>string</type>
+<length>4</length>
+<relation>
+<table>bancos</table>
+<field>entidad</field>
+<card>M1</card>
+</relation>
+</field>
+</xupdate:insert-after>
+</xupdate:modifications>

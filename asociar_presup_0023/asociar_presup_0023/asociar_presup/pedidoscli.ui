@@ -1,0 +1,285 @@
+<xupdate:modifications>
+<xupdate:update select="/UI[UI,1]/widget[QWidget,formPedidosCli]/property[property,2]/rect[rect,1]/height[height,1]/text()[1]" >624</xupdate:update>
+<xupdate:insert-after select="/UI[UI,1]/widget[QWidget,formPedidosCli]/vbox[vbox,1]/widget[QTabWidget,tabWidget3]/widget[QWidget,datos]/hbox[hbox,1]/widget[QFrame,frame4]/vbox[vbox,1]/widget[QLayoutWidget,layout18]" >
+<widget class="QLayoutWidget" >
+<property name="name" >
+<cstring>layout40</cstring>
+</property>
+<hbox>
+<property name="name" >
+<cstring>unnamed</cstring>
+</property>
+<spacer>
+<property name="name" >
+<cstring>spacer36_2</cstring>
+</property>
+<property name="orientation" >
+<enum>Horizontal</enum>
+</property>
+<property name="sizeType" >
+<enum>Expanding</enum>
+</property>
+<property name="sizeHint" >
+<size>
+<width>191</width>
+<height>20</height>
+</size>
+</property>
+</spacer>
+<widget class="FLFieldDB" >
+<property name="name" >
+<cstring>fdbAutomatic</cstring>
+</property>
+<property name="sizePolicy" >
+<sizepolicy>
+<hsizetype>1</hsizetype>
+<vsizetype>0</vsizetype>
+<horstretch>0</horstretch>
+<verstretch>0</verstretch>
+</sizepolicy>
+</property>
+<property name="minimumSize" >
+<size>
+<width>120</width>
+<height>25</height>
+</size>
+</property>
+<property name="font" >
+<font/>
+</property>
+<property name="fieldName" >
+<string>automatico</string>
+</property>
+</widget>
+</hbox>
+</widget>
+</xupdate:insert-after>
+<xupdate:insert-after select="/UI[UI,1]/widget[QWidget,formPedidosCli]/vbox[vbox,1]/widget[QTabWidget,tabWidget3]/widget[QWidget,observaciones]/vbox[vbox,1]/property[property,1]" >
+<widget class="QGroupBox" >
+<property name="name" >
+<cstring>gbxAutomatico</cstring>
+</property>
+<property name="maximumSize" >
+<size>
+<width>32767</width>
+<height>50</height>
+</size>
+</property>
+<property name="title" >
+<string/>
+</property>
+<hbox>
+<property name="name" >
+<cstring>unnamed</cstring>
+</property>
+<widget class="FLFieldDB" >
+<property name="name" >
+<cstring>fdbAutomatico</cstring>
+</property>
+<property name="sizePolicy" >
+<sizepolicy>
+<hsizetype>1</hsizetype>
+<vsizetype>0</vsizetype>
+<horstretch>170</horstretch>
+<verstretch>25</verstretch>
+</sizepolicy>
+</property>
+<property name="minimumSize" >
+<size>
+<width>90</width>
+<height>0</height>
+</size>
+</property>
+<property name="maximumSize" >
+<size>
+<width>90</width>
+<height>32767</height>
+</size>
+</property>
+<property name="font" >
+<font>
+<bold>0</bold>
+</font>
+</property>
+<property name="fieldName" >
+<string>automatico</string>
+</property>
+</widget>
+<spacer>
+<property name="name" >
+<cstring>spacer21</cstring>
+</property>
+<property name="orientation" >
+<enum>Horizontal</enum>
+</property>
+<property name="sizeType" >
+<enum>Expanding</enum>
+</property>
+<property name="sizeHint" >
+<size>
+<width>20</width>
+<height>21</height>
+</size>
+</property>
+</spacer>
+</hbox>
+</widget>
+</xupdate:insert-after>
+<xupdate:insert-after select="/UI[UI,1]/widget[QWidget,formPedidosCli]/vbox[vbox,1]/widget[QTabWidget,tabWidget3]/widget[QWidget,observaciones]" >
+<widget class="QWidget" >
+<property name="name" >
+<cstring>presupuestos</cstring>
+</property>
+<attribute name="title" >
+<string>&amp;Presupuestos</string>
+</attribute>
+<vbox>
+<property name="name" >
+<cstring>unnamed</cstring>
+</property>
+<widget class="QLayoutWidget" >
+<property name="name" >
+<cstring>layoutPresupuestos</cstring>
+</property>
+<hbox>
+<property name="name" >
+<cstring>unnamed</cstring>
+</property>
+<widget class="QToolButton" >
+<property name="name" >
+<cstring>toolButtonZoomPresupuestos</cstring>
+</property>
+<property name="sizePolicy" >
+<sizepolicy>
+<hsizetype>1</hsizetype>
+<vsizetype>1</vsizetype>
+<horstretch>0</horstretch>
+<verstretch>0</verstretch>
+</sizepolicy>
+</property>
+<property name="minimumSize" >
+<size>
+<width>90</width>
+<height>32</height>
+</size>
+</property>
+<property name="focusPolicy" >
+<enum>NoFocus</enum>
+</property>
+<property name="text" >
+<string>Ver</string>
+</property>
+<property name="textLabel" >
+<string>Ver</string>
+</property>
+<property name="toolTip" stdset="0" >
+<string>Ver registro (V)</string>
+</property>
+<property name="whatsThis" stdset="0" >
+<string>Para ver registro, sin permitir editar</string>
+</property>
+</widget>
+<spacer>
+<property name="name" >
+<cstring>spacerPresupuestos</cstring>
+</property>
+<property name="orientation" >
+<enum>Horizontal</enum>
+</property>
+<property name="sizeType" >
+<enum>Expanding</enum>
+</property>
+<property name="sizeHint" >
+<size>
+<width>668</width>
+<height>20</height>
+</size>
+</property>
+</spacer>
+</hbox>
+</widget>
+<widget class="FLTableDB" >
+<property name="name" >
+<cstring>tdbPresupuestos</cstring>
+</property>
+<property name="sizePolicy" >
+<sizepolicy>
+<hsizetype>1</hsizetype>
+<vsizetype>5</vsizetype>
+<horstretch>0</horstretch>
+<verstretch>0</verstretch>
+</sizepolicy>
+</property>
+<property name="minimumSize" >
+<size>
+<width>0</width>
+<height>150</height>
+</size>
+</property>
+<property name="font" >
+<font>
+<bold>0</bold>
+</font>
+</property>
+<property name="tableName" >
+<string>presupuestoscli</string>
+</property>
+<property name="foreignField" >
+<string>idpedido</string>
+</property>
+<property name="fieldRelation" >
+<string>idpedido</string>
+</property>
+</widget>
+</vbox>
+</widget>
+</xupdate:insert-after>
+<xupdate:insert-after select="/UI[UI,1]/connections[connections,1]/connection[toolButtonZoom,clicked(),tdbLineasPedidosCli,browseRecord()]" >
+<connection>
+<sender>toolButtonZoomPresupuestos</sender>
+<signal>clicked()</signal>
+<receiver>tdbPresupuestos</receiver>
+<slot>browseRecord()</slot>
+</connection>
+</xupdate:insert-after>
+<xupdate:delete select="/UI[UI,1]/includehints[includehints,1]/includehint[FLFieldDB.h]" />
+<xupdate:delete select="/UI[UI,1]/includehints[includehints,1]/includehint[FLFieldDB.h]" />
+<xupdate:delete select="/UI[UI,1]/includehints[includehints,1]/includehint[FLFieldDB.h]" />
+<xupdate:delete select="/UI[UI,1]/includehints[includehints,1]/includehint[FLFieldDB.h]" />
+<xupdate:delete select="/UI[UI,1]/includehints[includehints,1]/includehint[FLFieldDB.h]" />
+<xupdate:delete select="/UI[UI,1]/includehints[includehints,1]/includehint[FLFieldDB.h]" />
+<xupdate:delete select="/UI[UI,1]/includehints[includehints,1]/includehint[FLFieldDB.h]" />
+<xupdate:delete select="/UI[UI,1]/includehints[includehints,1]/includehint[FLFieldDB.h]" />
+<xupdate:delete select="/UI[UI,1]/includehints[includehints,1]/includehint[FLFieldDB.h]" />
+<xupdate:delete select="/UI[UI,1]/includehints[includehints,1]/includehint[FLFieldDB.h]" />
+<xupdate:delete select="/UI[UI,1]/includehints[includehints,1]/includehint[FLFieldDB.h]" />
+<xupdate:delete select="/UI[UI,1]/includehints[includehints,1]/includehint[FLFieldDB.h]" />
+<xupdate:delete select="/UI[UI,1]/includehints[includehints,1]/includehint[FLFieldDB.h]" />
+<xupdate:delete select="/UI[UI,1]/includehints[includehints,1]/includehint[FLFieldDB.h]" />
+<xupdate:delete select="/UI[UI,1]/includehints[includehints,1]/includehint[FLFieldDB.h]" />
+<xupdate:delete select="/UI[UI,1]/includehints[includehints,1]/includehint[FLFieldDB.h]" />
+<xupdate:delete select="/UI[UI,1]/includehints[includehints,1]/includehint[FLFieldDB.h]" />
+<xupdate:delete select="/UI[UI,1]/includehints[includehints,1]/includehint[FLFieldDB.h]" />
+<xupdate:delete select="/UI[UI,1]/includehints[includehints,1]/includehint[FLFieldDB.h]" />
+<xupdate:delete select="/UI[UI,1]/includehints[includehints,1]/includehint[FLFieldDB.h]" />
+<xupdate:delete select="/UI[UI,1]/includehints[includehints,1]/includehint[FLFieldDB.h]" />
+<xupdate:delete select="/UI[UI,1]/includehints[includehints,1]/includehint[FLFieldDB.h]" />
+<xupdate:delete select="/UI[UI,1]/includehints[includehints,1]/includehint[FLFieldDB.h]" />
+<xupdate:delete select="/UI[UI,1]/includehints[includehints,1]/includehint[FLFieldDB.h]" />
+<xupdate:delete select="/UI[UI,1]/includehints[includehints,1]/includehint[FLFieldDB.h]" />
+<xupdate:delete select="/UI[UI,1]/includehints[includehints,1]/includehint[FLFieldDB.h]" />
+<xupdate:delete select="/UI[UI,1]/includehints[includehints,1]/includehint[FLFieldDB.h]" />
+<xupdate:delete select="/UI[UI,1]/includehints[includehints,1]/includehint[FLFieldDB.h]" />
+<xupdate:delete select="/UI[UI,1]/includehints[includehints,1]/includehint[FLFieldDB.h]" />
+<xupdate:delete select="/UI[UI,1]/includehints[includehints,1]/includehint[FLFieldDB.h]" />
+<xupdate:delete select="/UI[UI,1]/includehints[includehints,1]/includehint[FLFieldDB.h]" />
+<xupdate:delete select="/UI[UI,1]/includehints[includehints,1]/includehint[FLFieldDB.h]" />
+<xupdate:delete select="/UI[UI,1]/includehints[includehints,1]/includehint[FLFieldDB.h]" />
+<xupdate:delete select="/UI[UI,1]/includehints[includehints,1]/includehint[FLFieldDB.h]" />
+<xupdate:insert-after select="/UI[UI,1]/includehints[includehints,1]/includehint[FLTableDB.h]" >
+<includehint>FLTableDB.h</includehint>
+</xupdate:insert-after>
+<xupdate:insert-after select="/UI[UI,1]/widget[QWidget,formPedidosCli]" >
+<customwidgets/>
+</xupdate:insert-after>
+</xupdate:modifications>

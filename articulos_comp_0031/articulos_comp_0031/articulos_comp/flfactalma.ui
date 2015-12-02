@@ -1,0 +1,51 @@
+<xupdate:modifications>
+<xupdate:insert-after select="/UI[UI,1]/actions[actions,1]/action[transstock]" >
+<action>
+<property name="name" >
+<cstring>tiposopcioncomp</cstring>
+</property>
+<property name="text" >
+<string>Opciones de composición</string>
+</property>
+<property name="menuText" >
+<string>&amp;Opciones de composición</string>
+</property>
+</action>
+</xupdate:insert-after>
+<xupdate:insert-after select="/UI[UI,1]/actions[actions,1]/action[wg_widget]" >
+<action>
+<property name="name" >
+<cstring>composiciones</cstring>
+</property>
+<property name="text" >
+<string>Composiciones</string>
+</property>
+<property name="menuText" >
+<string>&amp;Composiciones</string>
+</property>
+</action>
+</xupdate:insert-after>
+<xupdate:insert-after select="/UI[UI,1]/connections[connections,1]/connection[transstock,activated(),FLWidgetApplication,openDefaultForm()]" >
+<connection>
+<sender>tiposopcioncomp</sender>
+<signal>activated()</signal>
+<receiver>FLWidgetApplication</receiver>
+<slot>openDefaultForm()</slot>
+</connection>
+</xupdate:insert-after>
+<xupdate:insert-after select="/UI[UI,1]/connections[connections,1]/connection[wg_widget,activated(),FLWidgetApplication,execDefaultScript()]" >
+<connection>
+<sender>composiciones</sender>
+<signal>activated()</signal>
+<receiver>FLWidgetApplication</receiver>
+<slot>openDefaultForm()</slot>
+</connection>
+</xupdate:insert-after>
+<xupdate:insert-after select="/UI[UI,1]/menubar[menubar,1]/item[Almacn]" >
+<item name="ACompuestos" text="A.&amp;Compuestos" >
+<action name="composiciones" />
+<action name="tiposopcioncomp" />
+</item>
+</xupdate:insert-after>
+<xupdate:update select="/UI[UI,1]/toolbars[toolbars,1]/toolbar[toolBar]/property[geometry]/rect[rect,1]/width[width,1]/text()[1]" >254</xupdate:update>
+</xupdate:modifications>

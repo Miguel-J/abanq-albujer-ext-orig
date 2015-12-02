@@ -1,0 +1,13 @@
+<flpatch:modifications name="tpv_ns_acomp" >
+    <flpatch:patchXml path="facturacion/almacen/forms/" name="numerosserie.ui" />
+    <flpatch:patchScript path="facturacion/almacen/scripts/" name="numerosserie.qs" />
+    <flpatch:patchXml path="facturacion/tpv/forms/" name="tpv_lineascomanda.ui" />
+    <flpatch:addFile path="facturacion/tpv/forms/" name="tpv_lineascomandans.ui" />
+    <flpatch:patchScript path="facturacion/tpv/scripts/" name="flfact_tpv.qs" />
+    <flpatch:patchScript path="facturacion/tpv/scripts/" name="tpv_lineascomanda.qs" />
+    <flpatch:addFile path="facturacion/tpv/scripts/" name="tpv_lineascomandans.qs" />
+    <flpatch:patchXml path="facturacion/tpv/tables/" name="tpv_lineascomanda.mtd" />
+    <flpatch:addFile path="facturacion/tpv/tables/" name="tpv_lineascomandans.mtd" />
+    <flpatch:patchXml path="facturacion/tpv/" name="flfact_tpv.xml" />
+    <flpatch:patchXml path="facturacion/almacen/tables/" name="numerosserie.mtd" />
+</flpatch:modifications>

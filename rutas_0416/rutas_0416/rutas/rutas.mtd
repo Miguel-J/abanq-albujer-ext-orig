@@ -1,0 +1,37 @@
+<!DOCTYPE TMD>
+<TMD>
+	<name>rutas</name>
+	<!--Listado de rutas-->
+	<alias>QT_TRANSLATE_NOOP("MetaData","Rutas")</alias>
+
+	<field>
+		<name>codruta</name>
+		<alias>QT_TRANSLATE_NOOP("MetaData","Código")</alias>
+		<null>false</null>
+		<pk>true</pk>
+		<type>string</type>
+		<length>25</length>
+	
+		<relation>
+			<table>paradas</table>
+			<field>codruta</field>
+			<card>1M</card>
+		</relation>
+	
+		<relation>
+			<table>i_facturascli</table>
+			<field>codruta</field>
+			<card>1M</card>
+		</relation>
+	</field>
+
+	<field>
+		<name>descripcion</name>
+		<alias>QT_TRANSLATE_NOOP("MetaData","Descripción")</alias>
+		<null>true</null>
+		<pk>false</pk>
+		<type>string</type>
+		<length>200</length>
+	</field>
+
+</TMD>

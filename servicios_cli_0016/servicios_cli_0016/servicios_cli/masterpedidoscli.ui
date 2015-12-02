@@ -1,0 +1,52 @@
+<xupdate:modifications>
+<xupdate:insert-after select="/UI[UI,1]/widget[QWidget,FLWidgetMasterTable]/vbox[vbox,1]/widget[QFrame,barraBotones]/hbox[hbox,1]/spacer[Spacer2]" >
+<widget class="QPushButton" >
+<property name="name" >
+<cstring>pbnGenerarServicio</cstring>
+</property>
+<property name="sizePolicy" >
+<sizepolicy>
+<hsizetype>0</hsizetype>
+<vsizetype>0</vsizetype>
+<horstretch>0</horstretch>
+<verstretch>0</verstretch>
+</sizepolicy>
+</property>
+<property name="font" >
+<font>
+<bold>1</bold>
+<italic>1</italic>
+</font>
+</property>
+<property name="text" >
+<string>Generar &amp;Servicio</string>
+</property>
+<property name="accel" >
+<string>Alt+S</string>
+</property>
+<property name="toolTip" stdset="0" >
+<string>Generar el albaran correspondiente al pedido seleccionado</string>
+</property>
+</widget>
+</xupdate:insert-after>
+<xupdate:insert-after select="/UI[UI,1]/widget[QWidget,FLWidgetMasterTable]/vbox[vbox,1]/widget[QFrame,barraBotones]/hbox[hbox,1]/widget[QPushButton,pbnGenerarServicio]" >
+<spacer>
+<property name="name" >
+<cstring>SpacerGS</cstring>
+</property>
+<property name="orientation" >
+<enum>Horizontal</enum>
+</property>
+<property name="sizeType" >
+<enum>Fixed</enum>
+</property>
+<property name="sizeHint" >
+<size>
+<width>16</width>
+<height>20</height>
+</size>
+</property>
+</spacer>
+</xupdate:insert-after>
+<xupdate:delete select="/UI[UI,1]/customwidgets[customwidgets,1]" />
+</xupdate:modifications>

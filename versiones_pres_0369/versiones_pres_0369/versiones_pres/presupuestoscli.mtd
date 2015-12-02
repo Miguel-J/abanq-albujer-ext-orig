@@ -1,0 +1,16 @@
+<xupdate:modifications>
+<xupdate:delete select="/TMD[TMD,1]/field[codejercicio]/ck[ck,1]" />
+<xupdate:update select="/TMD[TMD,1]/field[codigo]/length[length,1]/text()[1]" >15</xupdate:update>
+<xupdate:delete select="/TMD[TMD,1]/field[codserie]/ck[ck,1]" />
+<xupdate:delete select="/TMD[TMD,1]/field[numero]/ck[ck,1]" />
+<xupdate:insert-after select="/TMD[TMD,1]/field[editable]" >
+<field>
+<name>versionactiva</name>
+<alias>QT_TRANSLATE_NOOP(&quot;MetaData&quot;,&quot;Versión activa&quot;)</alias>
+<null>true</null>
+<pk>false</pk>
+<type>bool</type>
+<default>true</default>
+</field>
+</xupdate:insert-after>
+</xupdate:modifications>

@@ -1,0 +1,152 @@
+<xupdate:modifications>
+<xupdate:update select="/UI[UI,1]/widget[QWidget,formFacturasCli]/property[property,2]/rect[rect,1]/height[height,1]/text()[1]" >623</xupdate:update>
+<xupdate:insert-after select="/UI[UI,1]/widget[QWidget,formFacturasCli]/vbox[vbox,1]/widget[QTabWidget,tbwFactura]/widget[QWidget,cliente]/vbox[vbox,1]/widget[QGroupBox,groupBox30]" >
+<widget class="QGroupBox" >
+<property name="name" >
+<cstring>gbxDtoEsp_2</cstring>
+</property>
+<property name="font" >
+<font>
+<bold>0</bold>
+</font>
+</property>
+<property name="title" >
+<string/>
+</property>
+<hbox>
+<property name="name" >
+<cstring>unnamed</cstring>
+</property>
+<widget class="FLFieldDB" >
+<property name="name" >
+<cstring>fdbNetoSinDtoEsp</cstring>
+</property>
+<property name="sizePolicy" >
+<sizepolicy>
+<hsizetype>1</hsizetype>
+<vsizetype>0</vsizetype>
+<horstretch>0</horstretch>
+<verstretch>0</verstretch>
+</sizepolicy>
+</property>
+<property name="minimumSize" >
+<size>
+<width>140</width>
+<height>25</height>
+</size>
+</property>
+<property name="font" >
+<font/>
+</property>
+<property name="fieldName" >
+<string>netosindtoesp</string>
+</property>
+</widget>
+<widget class="FLFieldDB" >
+<property name="name" >
+<cstring>fdbPorDtoEsp</cstring>
+</property>
+<property name="sizePolicy" >
+<sizepolicy>
+<hsizetype>1</hsizetype>
+<vsizetype>0</vsizetype>
+<horstretch>0</horstretch>
+<verstretch>0</verstretch>
+</sizepolicy>
+</property>
+<property name="minimumSize" >
+<size>
+<width>140</width>
+<height>25</height>
+</size>
+</property>
+<property name="font" >
+<font/>
+</property>
+<property name="fieldName" >
+<string>pordtoesp</string>
+</property>
+<property name="foreignField" >
+<string>pordtoesp</string>
+</property>
+<property name="fieldRelation" >
+<string>codcliente</string>
+</property>
+</widget>
+<widget class="FLFieldDB" >
+<property name="name" >
+<cstring>fdbDtoEsp</cstring>
+</property>
+<property name="sizePolicy" >
+<sizepolicy>
+<hsizetype>1</hsizetype>
+<vsizetype>0</vsizetype>
+<horstretch>0</horstretch>
+<verstretch>0</verstretch>
+</sizepolicy>
+</property>
+<property name="minimumSize" >
+<size>
+<width>140</width>
+<height>25</height>
+</size>
+</property>
+<property name="font" >
+<font/>
+</property>
+<property name="fieldName" >
+<string>dtoesp</string>
+</property>
+</widget>
+<spacer>
+<property name="name" >
+<cstring>spacer22_2_2</cstring>
+</property>
+<property name="orientation" >
+<enum>Horizontal</enum>
+</property>
+<property name="sizeType" >
+<enum>Expanding</enum>
+</property>
+<property name="sizeHint" >
+<size>
+<width>270</width>
+<height>20</height>
+</size>
+</property>
+</spacer>
+</hbox>
+</widget>
+</xupdate:insert-after>
+<xupdate:delete select="/UI[UI,1]/connections[connections,1]/connection[fdbProvincia,keyF2Pressed(),fdbIdProvincia,searchValue()]" />
+<xupdate:update select="/UI[UI,1]/tabstops[tabstops,1]/tabstop[tabstop,5]/text()[1]" >fdbCodCliente</xupdate:update>
+<xupdate:update select="/UI[UI,1]/tabstops[tabstops,1]/tabstop[tabstop,6]/text()[1]" >fdbNombreCliente</xupdate:update>
+<xupdate:update select="/UI[UI,1]/tabstops[tabstops,1]/tabstop[tabstop,7]/text()[1]" >fdbCifNif</xupdate:update>
+<xupdate:update select="/UI[UI,1]/tabstops[tabstops,1]/tabstop[tabstop,8]/text()[1]" >fdbNetoSinDtoEsp</xupdate:update>
+<xupdate:update select="/UI[UI,1]/tabstops[tabstops,1]/tabstop[tabstop,9]/text()[1]" >fdbPorDtoEsp</xupdate:update>
+<xupdate:update select="/UI[UI,1]/tabstops[tabstops,1]/tabstop[tabstop,10]/text()[1]" >fdbDtoEsp</xupdate:update>
+<xupdate:update select="/UI[UI,1]/tabstops[tabstops,1]/tabstop[tabstop,11]/text()[1]" >fdbNeto</xupdate:update>
+<xupdate:update select="/UI[UI,1]/tabstops[tabstops,1]/tabstop[tabstop,12]/text()[1]" >fdbTotaIrpf</xupdate:update>
+<xupdate:update select="/UI[UI,1]/tabstops[tabstops,1]/tabstop[tabstop,13]/text()[1]" >fdbTotalIva</xupdate:update>
+<xupdate:update select="/UI[UI,1]/tabstops[tabstops,1]/tabstop[tabstop,14]/text()[1]" >fdbTotalRecargo</xupdate:update>
+<xupdate:update select="/UI[UI,1]/tabstops[tabstops,1]/tabstop[tabstop,15]/text()[1]" >fdbTotal</xupdate:update>
+<xupdate:update select="/UI[UI,1]/tabstops[tabstops,1]/tabstop[tabstop,16]/text()[1]" >tdbLineasFacturasCli</xupdate:update>
+<xupdate:update select="/UI[UI,1]/tabstops[tabstops,1]/tabstop[tabstop,17]/text()[1]" >tbwFactura</xupdate:update>
+<xupdate:update select="/UI[UI,1]/tabstops[tabstops,1]/tabstop[tabstop,18]/text()[1]" >fdbFecha</xupdate:update>
+<xupdate:update select="/UI[UI,1]/tabstops[tabstops,1]/tabstop[tabstop,19]/text()[1]" >fdbRecFinanciero</xupdate:update>
+<xupdate:update select="/UI[UI,1]/tabstops[tabstops,1]/tabstop[tabstop,20]/text()[1]" >fdbCodAlmacen</xupdate:update>
+<xupdate:update select="/UI[UI,1]/tabstops[tabstops,1]/tabstop[tabstop,21]/text()[1]" >fdbDesAlmacen</xupdate:update>
+<xupdate:update select="/UI[UI,1]/tabstops[tabstops,1]/tabstop[tabstop,22]/text()[1]" >fdbCodPago</xupdate:update>
+<xupdate:update select="/UI[UI,1]/tabstops[tabstops,1]/tabstop[tabstop,23]/text()[1]" >fdbDesPago</xupdate:update>
+<xupdate:update select="/UI[UI,1]/tabstops[tabstops,1]/tabstop[tabstop,24]/text()[1]" >fdbCodAgente</xupdate:update>
+<xupdate:update select="/UI[UI,1]/tabstops[tabstops,1]/tabstop[tabstop,25]/text()[1]" >fdbTotalRecargo</xupdate:update>
+<xupdate:update select="/UI[UI,1]/tabstops[tabstops,1]/tabstop[tabstop,26]/text()[1]" >fdbTotal</xupdate:update>
+<xupdate:update select="/UI[UI,1]/tabstops[tabstops,1]/tabstop[tabstop,27]/text()[1]" >tbwFactura</xupdate:update>
+<xupdate:update select="/UI[UI,1]/tabstops[tabstops,1]/tabstop[tabstop,28]/text()[1]" >fdbNeto</xupdate:update>
+<xupdate:update select="/UI[UI,1]/tabstops[tabstops,1]/tabstop[tabstop,29]/text()[1]" >fdbTotalIva</xupdate:update>
+<xupdate:update select="/UI[UI,1]/tabstops[tabstops,1]/tabstop[tabstop,30]/text()[1]" >fdbTotal</xupdate:update>
+<xupdate:update select="/UI[UI,1]/tabstops[tabstops,1]/tabstop[tabstop,31]/text()[1]" >fdbTotalRecargo</xupdate:update>
+<xupdate:update select="/UI[UI,1]/tabstops[tabstops,1]/tabstop[tabstop,32]/text()[1]" >tbwFactura</xupdate:update>
+<xupdate:delete select="/UI[UI,1]/tabstops[tabstops,1]/tabstop[tabstop,33]" />
+<xupdate:delete select="/UI[UI,1]/tabstops[tabstops,1]/tabstop[tabstop,34]" />
+</xupdate:modifications>

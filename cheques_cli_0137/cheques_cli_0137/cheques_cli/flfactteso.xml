@@ -1,0 +1,34 @@
+<xupdate:modifications>
+<xupdate:insert-after select="/ACTIONS[ACTIONS,1]/action[seleccionreciboscli]" >
+<action>
+<name>remesaschequescli</name>
+<description>QT_TRANSLATE_NOOP(&quot;MetaData&quot;,&quot;Las remesas de cheques permiten crear listados de cheques pendientes de cobro para ser enviados al banco&quot;)</description>
+<alias>QT_TRANSLATE_NOOP(&quot;MetaData&quot;,&quot;Remesas de cheques de cliente&quot;)</alias>
+<table>remesaschequescli</table>
+<form>master</form>
+<formrecord>remesaschequescli</formrecord>
+<scriptformrecord>remesaschequescli</scriptformrecord>
+<scriptform>masterremesaschequescli</scriptform>
+</action>
+</xupdate:insert-after>
+<xupdate:insert-after select="/ACTIONS[ACTIONS,1]/action[remesaschequescli]" >
+<action>
+<name>seleccionchequescli</name>
+<description>QT_TRANSLATE_NOOP(&quot;MetaData&quot;,&quot;Esta acción proporciona un formulario para seleccionar múltiples cheques que incluir en remesas y otros documentos&quot;)</description>
+<alias>QT_TRANSLATE_NOOP(&quot;MetaData&quot;,&quot;Selección de cheques de cliente&quot;)</alias>
+<table>seleccionchequescli</table>
+<form>seleccionchequescli</form>
+<scriptform>seleccionchequescli</scriptform>
+</action>
+</xupdate:insert-after>
+<xupdate:insert-after select="/ACTIONS[ACTIONS,1]/action[seleccionchequescli]" >
+<action>
+<name>chequescli</name>
+<description>QT_TRANSLATE_NOOP(&quot;MetaData&quot;,&quot;Listado de pagos con datos de cheques&quot;)</description>
+<alias>QT_TRANSLATE_NOOP(&quot;MetaData&quot;,&quot;Selección de cheques de cliente&quot;)</alias>
+<table>pagosdevolcli</table>
+<form>masterchequescli</form>
+<scriptform>masterchequescli</scriptform>
+</action>
+</xupdate:insert-after>
+</xupdate:modifications>

@@ -1,0 +1,17 @@
+<xupdate:modifications>
+<xupdate:insert-after select="/TMD[TMD,1]/field[cerrada]" >
+<field>
+<name>idlineamultitc</name>
+<!--Identificador interno de la tabla--><alias>QT_TRANSLATE_NOOP(&quot;MetaData&quot;,&quot;Id Linea Multitc&quot;)</alias>
+<null>true</null>
+<pk>false</pk>
+<type>uint</type>
+<visiblegrid>false</visiblegrid>
+<relation>
+<table>tpv_lineasmultitransstock</table>
+<field>idlinea</field>
+<card>M1</card>
+</relation>
+</field>
+</xupdate:insert-after>
+</xupdate:modifications>

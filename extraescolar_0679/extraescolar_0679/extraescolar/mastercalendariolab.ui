@@ -1,0 +1,32 @@
+<xupdate:modifications>
+<xupdate:update select="/UI[UI,1]/widget[QWidget,MasterCalendarioLab]/vbox[vbox,1]/widget[QTabWidget,tbwCalendario]/widget[QWidget,dias]/vbox[vbox,1]/widget[QGroupBox,gbxDias]/vbox[vbox,1]/widget[QFrame,barraBotonesDias]/hbox[hbox,1]/spacer[SpacerDias]/property[sizeHint]/size[size,1]/width[width,1]/text()[1]" >80</xupdate:update>
+<xupdate:insert-after select="/UI[UI,1]/widget[QWidget,MasterCalendarioLab]/vbox[vbox,1]/widget[QTabWidget,tbwCalendario]/widget[QWidget,dias]/vbox[vbox,1]/widget[QGroupBox,gbxDias]/vbox[vbox,1]/widget[QFrame,barraBotonesDias]/hbox[hbox,1]/spacer[SpacerDias]" >
+<widget class="QToolButton" >
+<property name="name" >
+<cstring>tbnMarcarDesmarcarLectivo</cstring>
+</property>
+<property name="text" >
+<string>Marcar/Desmarcar lectivo</string>
+</property>
+</widget>
+</xupdate:insert-after>
+<xupdate:insert-after select="/UI[UI,1]/widget[QWidget,MasterCalendarioLab]/vbox[vbox,1]/widget[QTabWidget,tbwCalendario]/widget[QWidget,dias]/vbox[vbox,1]/widget[QGroupBox,gbxDias]/vbox[vbox,1]/widget[QFrame,barraBotonesDias]/hbox[hbox,1]/widget[QToolButton,tbnMarcarDesmarcarLectivo]" >
+<spacer>
+<property name="name" >
+<cstring>spacerDias2</cstring>
+</property>
+<property name="orientation" >
+<enum>Horizontal</enum>
+</property>
+<property name="sizeType" >
+<enum>Expanding</enum>
+</property>
+<property name="sizeHint" >
+<size>
+<width>41</width>
+<height>20</height>
+</size>
+</property>
+</spacer>
+</xupdate:insert-after>
+</xupdate:modifications>

@@ -1,0 +1,37 @@
+<xupdate:modifications>
+<xupdate:insert-after select="/UI[UI,1]/actions[actions,1]/action[co_i_balancesis]" >
+<action>
+<property name="name" >
+<cstring>co_i_digitconta</cstring>
+</property>
+<property name="text" >
+<string>Digitalización contable</string>
+</property>
+<property name="menuText" >
+<string>&amp;Digitalización contable</string>
+</property>
+</action>
+</xupdate:insert-after>
+<xupdate:insert-after select="/UI[UI,1]/connections[connections,1]/connection[co_i_balancesis,activated(),FLWidgetApplication,openDefaultForm()]" >
+<connection>
+<sender>co_i_digitconta</sender>
+<signal>activated()</signal>
+<receiver>FLWidgetApplication</receiver>
+<slot>openDefaultForm()</slot>
+</connection>
+</xupdate:insert-after>
+<xupdate:insert-after select="/UI[UI,1]/connections[connections,1]/connection[co_i_cuentasanuales,activated(),FLWidgetApplication,openDefaultForm()]" >
+<connection>
+<sender>co_i_digitconta</sender>
+<signal>activated()</signal>
+<receiver>FLWidgetApplication</receiver>
+<slot>openDefaultForm()</slot>
+</connection>
+</xupdate:insert-after>
+<xupdate:update select="/UI[UI,1]/menubar[menubar,1]/property[geometry]/rect[rect,1]/height[height,1]/text()[1]" >23</xupdate:update>
+<xupdate:insert-after select="/UI[UI,1]/menubar[menubar,1]/item[IVA]" >
+<item name="Digitalizacin" text="&amp;Digitalización" >
+<action name="co_i_digitconta" />
+</item>
+</xupdate:insert-after>
+</xupdate:modifications>

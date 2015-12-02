@@ -1,0 +1,40 @@
+<!DOCTYPE QRY>
+<QRY>
+	<name>i_ordenescorte</name>
+
+	<tables>empresa,pr_ordenesproduccion,lotesstock,pr_procesos,pr_tareas,pr_tiposproceso,movistock,articulos,articuloscomp,tiposopcionartcomp</tables>
+
+	<group>
+		<level>0</level>
+		<field>lotesstock.codlote</field>
+	</group>
+
+	<select>
+		empresa.nombre,
+		pr_ordenesproduccion.codorden, pr_ordenesproduccion.fecha,
+		pr_tareas.idtarea, 
+		lotesstock.codlote,lotesstock.observacionescorte,
+		articulos.descripcion,
+		articuloscomp.desccomponente, movistock.referencia, movistock.codlote, movistock.cantidad, opcionesarticulocomp.opcion
+	</select>
+
+	
+	<from>
+		empresa,pr_ordenesproduccion 
+		INNER JOIN pr_procesos ON pr_ordenesproduccion.codorden = pr_procesos.codordenproduccion 
+		INNER JOIN lotesstock ON lotesstock.codlote = pr_procesos.idobjeto
+		INNER JOIN articulos ON lotesstock.referencia = articulos.referencia
+		INNER JOIN pr_tareas ON pr_procesos.idproceso = pr_tareas.idproceso
+		INNER JOIN movistock ON lotesstock.codlote = movistock.codloteprod
+		INNER JOIN articuloscomp ON movistock.idarticulocomp = articuloscomp.id
+		INNER JOIN tiposopcionartcomp ON articuloscomp.idtipoopcionart = tiposopcionartcomp.idtipoopcionart
+		INNER JOIN opcionesarticulocomp ON articuloscomp.idopcionarticulo = opcionesarticulocomp.idopcionarticulo
+	</from>
+
+	<where>
+	</where>
+
+	<order>
+		pr_ordenesproduccion.codorden, lotesstock.referencia, lotesstock.codlote, opcionesarticulocomp.opcion, articulos.sofacompleto
+	</order>
+</QRY>

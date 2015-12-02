@@ -1,0 +1,38 @@
+<!DOCTYPE QRY>
+<QRY>
+	<name>i_reciboscli</name>
+
+	<tables>empresa,reciboscli</tables>
+
+	<group>
+		<level>0</level>
+		<field>reciboscli.idrecibo</field>
+	</group>
+
+	<select>
+		reciboscli.idrecibo, reciboscli.codigo,
+		reciboscli.fecha, reciboscli.importe,
+		reciboscli.coddivisa, reciboscli.codcliente,
+		reciboscli.cifnif, reciboscli.direccion,
+		reciboscli.codpostal, reciboscli.ciudad,
+		reciboscli.provincia, reciboscli.nombrecliente,
+		reciboscli.descripcion, reciboscli.ctaentidad,
+		reciboscli.ctaagencia, reciboscli.dc, reciboscli.texto,
+		reciboscli.cuenta, reciboscli.fechav,
+		empresa.nombre, empresa.cifnif,
+		empresa.direccion,
+		empresa.codpostal, empresa.ciudad,
+		empresa.provincia, empresa.apartado,
+		empresa.codpais
+	</select>
+
+	<from>
+		reciboscli 
+		INNER JOIN facturascli ON reciboscli.idfactura = facturascli.idfactura
+		INNER JOIN ejercicios ON facturascli.codejercicio = ejercicios.codejercicio
+		INNER JOIN empresa ON ejercicios.idempresa = empresa.id
+	</from>
+
+	<where>
+	</where>
+</QRY>

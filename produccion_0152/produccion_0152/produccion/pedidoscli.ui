@@ -1,0 +1,77 @@
+<xupdate:modifications>
+<xupdate:insert-after select="/UI[UI,1]/widget[QWidget,formPedidosCli]/vbox[vbox,1]/widget[QTabWidget,tabWidget3]/widget[QWidget,observaciones]" >
+<widget class="QWidget" >
+<property name="name" >
+<cstring>produccion</cstring>
+</property>
+<attribute name="title" >
+<string>&amp;Producción</string>
+</attribute>
+<vbox>
+<property name="name" >
+<cstring>unnamed</cstring>
+</property>
+<widget class="QGroupBox" >
+<property name="name" >
+<cstring>groupBox14_2</cstring>
+</property>
+<property name="sizePolicy" >
+<sizepolicy>
+<hsizetype>1</hsizetype>
+<vsizetype>1</vsizetype>
+<horstretch>0</horstretch>
+<verstretch>0</verstretch>
+</sizepolicy>
+</property>
+<property name="font" >
+<font>
+<bold>0</bold>
+</font>
+</property>
+<property name="frameShadow" >
+<enum>Plain</enum>
+</property>
+<property name="lineWidth" >
+<number>1</number>
+</property>
+<property name="title" >
+<string>Lotes asociados al pedido</string>
+</property>
+<vbox>
+<property name="name" >
+<cstring>unnamed</cstring>
+</property>
+<widget class="FLTableDB" >
+<property name="name" >
+<cstring>tdbLotesStock</cstring>
+</property>
+<property name="sizePolicy" >
+<sizepolicy>
+<hsizetype>1</hsizetype>
+<vsizetype>5</vsizetype>
+<horstretch>0</horstretch>
+<verstretch>0</verstretch>
+</sizepolicy>
+</property>
+<property name="font" >
+<font/>
+</property>
+<property name="tableName" >
+<string>lotesstock</string>
+</property>
+<property name="foreignField" >
+<string/>
+</property>
+<property name="fieldRelation" >
+<string/>
+</property>
+</widget>
+</vbox>
+</widget>
+</vbox>
+</widget>
+</xupdate:insert-after>
+<xupdate:insert-after select="/UI[UI,1]/includehints[includehints,1]/includehint[fltabledb.h]" >
+<includehint>FLTableDB.h</includehint>
+</xupdate:insert-after>
+</xupdate:modifications>

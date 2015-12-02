@@ -1,0 +1,15 @@
+<flpatch:modifications name="batch_servired" >
+    <flpatch:patchXml path="facturacion/facturacion/forms/" name="facturascli.ui" />
+    <flpatch:patchXml path="facturacion/facturacion/tables/" name="facturascli.mtd" />
+    <flpatch:patchXml path="facturacion/tesoreria/forms/" name="reciboscli.ui" />
+    <flpatch:patchXml path="facturacion/tesoreria/tables/" name="reciboscli.mtd" />
+    <flpatch:patchScript path="facturacion/tesoreria/scripts/" name="flfactteso.qs" />
+    <flpatch:patchXml path="facturacion/tesoreria/forms/" name="masterremesas.ui" />
+    <flpatch:patchScript path="facturacion/tesoreria/scripts/" name="masterremesas.qs" />
+    <flpatch:patchXml path="facturacion/tesoreria/tables/" name="remesas.mtd" />
+    <flpatch:patchXml path="facturacion/tesoreria/" name="flfactteso.xml" />
+    <flpatch:addFile path="facturacion/tesoreria/forms/" name="vdiscosr.ui" />
+    <flpatch:addFile path="facturacion/tesoreria/scripts/" name="vdiscosr.qs" />
+    <flpatch:patchXml path="facturacion/tesoreria/forms/" name="masterreciboscli.ui" />
+    <flpatch:patchScript path="facturacion/tesoreria/scripts/" name="masterreciboscli.qs" />
+</flpatch:modifications>

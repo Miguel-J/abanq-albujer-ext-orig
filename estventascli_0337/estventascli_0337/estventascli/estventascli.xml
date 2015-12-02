@@ -1,0 +1,10 @@
+<flpatch:modifications name="estventascli" >
+    <flpatch:patchXml path="facturacion/principal/forms/" name="clientes.ui" />
+    <flpatch:patchXml path="facturacion/principal/tables/" name="clientes.mtd" />
+    <flpatch:addFile path="facturacion/principal/tables/" name="ventasclientes.mtd" />
+    <flpatch:patchXml path="facturacion/almacen/tables/" name="articulos.mtd" />
+    <flpatch:patchScript path="facturacion/principal/scripts/" name="clientes.qs" />
+    <flpatch:patchXml path="facturacion/principal/" name="flfactppal.xml" />
+    <flpatch:addFile path="facturacion/principal/forms/" name="ventasclientes.ui" />
+    <flpatch:addFile path="facturacion/principal/scripts/" name="ventasclientes.qs" />
+</flpatch:modifications>

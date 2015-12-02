@@ -1,0 +1,9 @@
+<flpatch:modifications name="pedidos_auto_tc" >
+    <flpatch:patchScript path="facturacion/facturacion/scripts/" name="seleccionarticulos.qs" />
+    <flpatch:patchXml path="facturacion/facturacion/forms/" name="lineaspedidosaut.ui" />
+    <flpatch:patchXml path="facturacion/facturacion/tables/" name="lineaspedidosaut.mtd" />
+    <flpatch:patchScript path="facturacion/facturacion/scripts/" name="pedidosaut.qs" />
+    <flpatch:patchScript path="facturacion/facturacion/scripts/" name="masterpedidosaut.qs" />
+    <flpatch:patchScript path="facturacion/facturacion/scripts/" name="lineaspedidosprov.qs" />
+    <flpatch:patchScript path="facturacion/facturacion/scripts/" name="pedidosprov.qs" />
+</flpatch:modifications>

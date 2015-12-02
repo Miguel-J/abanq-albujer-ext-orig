@@ -1,0 +1,10 @@
+<flpatch:modifications name="contratos_cc" >
+    <flpatch:patchXml path="facturacion/facturacion/forms/" name="contratos.ui" />
+    <flpatch:patchScript path="facturacion/facturacion/scripts/" name="mastercontratos.qs" />
+    <flpatch:patchXml path="facturacion/facturacion/tables/" name="contratos.mtd" />
+    <flpatch:patchXml path="facturacion/principal/tables/" name="centroscoste.mtd" />
+    <flpatch:patchXml path="facturacion/principal/tables/" name="subcentroscoste.mtd" />
+    <flpatch:patchXml path="facturacion/facturacion/" name="flfacturac.xml" />
+    <flpatch:addFile path="facturacion/facturacion/forms/" name="seleccionccsubcc.ui" />
+    <flpatch:addFile path="facturacion/facturacion/tables/" name="seleccionccsubcc.mtd" />
+</flpatch:modifications>

@@ -1,0 +1,159 @@
+<xupdate:modifications>
+<xupdate:insert-after select="/UI[UI,1]/widget[QWidget,formFacturasCli]/vbox[vbox,1]/widget[QTabWidget,tbwFactura]/widget[QWidget,modelos]/vbox[vbox,1]/property[name]" >
+<widget class="QGroupBox" >
+<property name="name" >
+<cstring>gbxModelo340</cstring>
+</property>
+<property name="font" >
+<font>
+<bold>0</bold>
+</font>
+</property>
+<property name="title" >
+<string>Modelo 340</string>
+</property>
+<hbox>
+<property name="name" >
+<cstring>unnamed</cstring>
+</property>
+<property name="margin" >
+<number>0</number>
+</property>
+<widget class="FLFieldDB" >
+<property name="name" >
+<cstring>fdbManual340</cstring>
+</property>
+<property name="sizePolicy" >
+<sizepolicy>
+<hsizetype>1</hsizetype>
+<vsizetype>0</vsizetype>
+<horstretch>0</horstretch>
+<verstretch>0</verstretch>
+</sizepolicy>
+</property>
+<property name="fieldName" >
+<string>manual340</string>
+</property>
+</widget>
+<widget class="FLFieldDB" >
+<property name="name" >
+<cstring>fdbClaveOperacion340</cstring>
+</property>
+<property name="sizePolicy" >
+<sizepolicy>
+<hsizetype>1</hsizetype>
+<vsizetype>0</vsizetype>
+<horstretch>0</horstretch>
+<verstretch>0</verstretch>
+</sizepolicy>
+</property>
+<property name="minimumSize" >
+<size>
+<width>34</width>
+<height>24</height>
+</size>
+</property>
+<property name="maximumSize" >
+<size>
+<width>250</width>
+<height>32767</height>
+</size>
+</property>
+<property name="fieldName" >
+<string>claveoperacion340</string>
+</property>
+</widget>
+<widget class="FLFieldDB" >
+<property name="name" >
+<cstring>fdbDesClaveOperacion340</cstring>
+</property>
+<property name="sizePolicy" >
+<sizepolicy>
+<hsizetype>7</hsizetype>
+<vsizetype>0</vsizetype>
+<horstretch>0</horstretch>
+<verstretch>0</verstretch>
+</sizepolicy>
+</property>
+<property name="minimumSize" >
+<size>
+<width>7</width>
+<height>23</height>
+</size>
+</property>
+<property name="fieldName" >
+<string>descripcion</string>
+</property>
+<property name="tableName" >
+<string>co_claveoperacion</string>
+</property>
+<property name="foreignField" >
+<string>claveoperacion340</string>
+</property>
+<property name="fieldRelation" >
+<string>codigo</string>
+</property>
+<property name="showAlias" >
+<bool>false</bool>
+</property>
+</widget>
+<widget class="FLFieldDB" >
+<property name="name" >
+<cstring>fdbCodInmueble340</cstring>
+</property>
+<property name="sizePolicy" >
+<sizepolicy>
+<hsizetype>1</hsizetype>
+<vsizetype>0</vsizetype>
+<horstretch>0</horstretch>
+<verstretch>0</verstretch>
+</sizepolicy>
+</property>
+<property name="minimumSize" >
+<size>
+<width>34</width>
+<height>24</height>
+</size>
+</property>
+<property name="maximumSize" >
+<size>
+<width>250</width>
+<height>32767</height>
+</size>
+</property>
+<property name="fieldName" >
+<string>codinmueble340</string>
+</property>
+</widget>
+<widget class="FLFieldDB" >
+<property name="name" >
+<cstring>fdbDesglose340</cstring>
+</property>
+<property name="sizePolicy" >
+<sizepolicy>
+<hsizetype>1</hsizetype>
+<vsizetype>0</vsizetype>
+<horstretch>0</horstretch>
+<verstretch>0</verstretch>
+</sizepolicy>
+</property>
+<property name="minimumSize" >
+<size>
+<width>34</width>
+<height>24</height>
+</size>
+</property>
+<property name="maximumSize" >
+<size>
+<width>250</width>
+<height>32767</height>
+</size>
+</property>
+<property name="fieldName" >
+<string>desglose340</string>
+</property>
+</widget>
+</hbox>
+</widget>
+</xupdate:insert-after>
+</xupdate:modifications>

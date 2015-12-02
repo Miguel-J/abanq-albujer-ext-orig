@@ -1,0 +1,311 @@
+<!DOCTYPE UI><UI version="3.3" stdsetdef="1">
+<class>formClientes</class>
+<widget class="QWidget">
+    <property name="name">
+        <cstring>formClientes</cstring>
+    </property>
+    <property name="geometry">
+        <rect>
+            <x>0</x>
+            <y>0</y>
+            <width>633</width>
+            <height>441</height>
+        </rect>
+    </property>
+    <property name="caption">
+        <string>Clientes</string>
+    </property>
+    <vbox>
+        <property name="name">
+            <cstring>unnamed</cstring>
+        </property>
+        <widget class="QFrame">
+            <property name="name">
+                <cstring>frame7</cstring>
+            </property>
+            <property name="frameShape">
+                <enum>GroupBoxPanel</enum>
+            </property>
+            <property name="frameShadow">
+                <enum>Sunken</enum>
+            </property>
+            <hbox>
+                <property name="name">
+                    <cstring>unnamed</cstring>
+                </property>
+                <widget class="FLFieldDB">
+                    <property name="name">
+                        <cstring>fdbCodCliente</cstring>
+                    </property>
+                    <property name="sizePolicy">
+                        <sizepolicy>
+                            <hsizetype>1</hsizetype>
+                            <vsizetype>0</vsizetype>
+                            <horstretch>0</horstretch>
+                            <verstretch>0</verstretch>
+                        </sizepolicy>
+                    </property>
+                    <property name="minimumSize">
+                        <size>
+                            <width>140</width>
+                            <height>25</height>
+                        </size>
+                    </property>
+                    <property name="maximumSize">
+                        <size>
+                            <width>200</width>
+                            <height>32767</height>
+                        </size>
+                    </property>
+                    <property name="fieldName">
+                        <string>codcliente</string>
+                    </property>
+                </widget>
+                <spacer>
+                    <property name="name">
+                        <cstring>spacer13_3</cstring>
+                    </property>
+                    <property name="orientation">
+                        <enum>Horizontal</enum>
+                    </property>
+                    <property name="sizeType">
+                        <enum>Fixed</enum>
+                    </property>
+                    <property name="sizeHint">
+                        <size>
+                            <width>20</width>
+                            <height>20</height>
+                        </size>
+                    </property>
+                </spacer>
+                <widget class="FLFieldDB">
+                    <property name="name">
+                        <cstring>fdbNombre</cstring>
+                    </property>
+                    <property name="sizePolicy">
+                        <sizepolicy>
+                            <hsizetype>7</hsizetype>
+                            <vsizetype>0</vsizetype>
+                            <horstretch>0</horstretch>
+                            <verstretch>0</verstretch>
+                        </sizepolicy>
+                    </property>
+                    <property name="fieldName">
+                        <string>nombre</string>
+                    </property>
+                </widget>
+            </hbox>
+        </widget>
+        <widget class="QTabWidget">
+            <property name="name">
+                <cstring>tbwDocumentos</cstring>
+            </property>
+            <widget class="QWidget">
+                <property name="name">
+                    <cstring>TabPage</cstring>
+                </property>
+                <attribute name="title">
+                    <string>Todas</string>
+                </attribute>
+                <vbox>
+                    <property name="name">
+                        <cstring>unnamed</cstring>
+                    </property>
+                    <widget class="FLTableDB">
+                        <property name="name">
+                            <cstring>tdbTodas</cstring>
+                        </property>
+                        <property name="font">
+                            <font>
+                            </font>
+                        </property>
+                        <property name="tableName">
+                            <string>comunicacionescli</string>
+                        </property>
+                        <property name="foreignField">
+                            <string>codcliente</string>
+                        </property>
+                        <property name="fieldRelation">
+                            <string>codcliente</string>
+                        </property>
+                    </widget>
+                </vbox>
+            </widget>
+            <widget class="QWidget">
+                <property name="name">
+                    <cstring>TabPage</cstring>
+                </property>
+                <attribute name="title">
+                    <string>&amp;Directas</string>
+                </attribute>
+                <vbox>
+                    <property name="name">
+                        <cstring>unnamed</cstring>
+                    </property>
+                    <widget class="FLTableDB">
+                        <property name="name">
+                            <cstring>tdbDirectas</cstring>
+                        </property>
+                        <property name="font">
+                            <font>
+                            </font>
+                        </property>
+                        <property name="tableName">
+                            <string>comunicacionescli</string>
+                        </property>
+                        <property name="foreignField">
+                            <string>codcliente</string>
+                        </property>
+                        <property name="fieldRelation">
+                            <string>codcliente</string>
+                        </property>
+                    </widget>
+                </vbox>
+            </widget>
+            <widget class="QWidget">
+                <property name="name">
+                    <cstring>presupuestos</cstring>
+                </property>
+                <attribute name="title">
+                    <string>P&amp;resupuestos</string>
+                </attribute>
+                <vbox>
+                    <property name="name">
+                        <cstring>unnamed</cstring>
+                    </property>
+                    <widget class="FLTableDB">
+                        <property name="name">
+                            <cstring>tdbPresupuestos</cstring>
+                        </property>
+                        <property name="font">
+                            <font>
+                            </font>
+                        </property>
+                        <property name="tableName">
+                            <string>comunicacionescli</string>
+                        </property>
+                        <property name="foreignField">
+                            <string>codcliente</string>
+                        </property>
+                        <property name="fieldRelation">
+                            <string>codcliente</string>
+                        </property>
+                    </widget>
+                </vbox>
+            </widget>
+            <widget class="QWidget">
+                <property name="name">
+                    <cstring>pedidos</cstring>
+                </property>
+                <attribute name="title">
+                    <string>&amp;Pedidos</string>
+                </attribute>
+                <vbox>
+                    <property name="name">
+                        <cstring>unnamed</cstring>
+                    </property>
+                    <widget class="FLTableDB">
+                        <property name="name">
+                            <cstring>tdbPedidos</cstring>
+                        </property>
+                        <property name="font">
+                            <font>
+                            </font>
+                        </property>
+                        <property name="tableName">
+                            <string>comunicacionescli</string>
+                        </property>
+                        <property name="foreignField">
+                            <string>codcliente</string>
+                        </property>
+                        <property name="fieldRelation">
+                            <string>codcliente</string>
+                        </property>
+                    </widget>
+                </vbox>
+            </widget>
+            <widget class="QWidget">
+                <property name="name">
+                    <cstring>albaranes</cstring>
+                </property>
+                <attribute name="title">
+                    <string>A&amp;lbaranes</string>
+                </attribute>
+                <vbox>
+                    <property name="name">
+                        <cstring>unnamed</cstring>
+                    </property>
+                    <widget class="FLTableDB">
+                        <property name="name">
+                            <cstring>tdbAlbaranes</cstring>
+                        </property>
+                        <property name="font">
+                            <font>
+                            </font>
+                        </property>
+                        <property name="tableName">
+                            <string>comunicacionescli</string>
+                        </property>
+                        <property name="foreignField">
+                            <string>codcliente</string>
+                        </property>
+                        <property name="fieldRelation">
+                            <string>codcliente</string>
+                        </property>
+                    </widget>
+                </vbox>
+            </widget>
+            <widget class="QWidget">
+                <property name="name">
+                    <cstring>facturas</cstring>
+                </property>
+                <attribute name="title">
+                    <string>&amp;Facturas</string>
+                </attribute>
+                <vbox>
+                    <property name="name">
+                        <cstring>unnamed</cstring>
+                    </property>
+                    <widget class="FLTableDB">
+                        <property name="name">
+                            <cstring>tdbFacturas</cstring>
+                        </property>
+                        <property name="font">
+                            <font>
+                            </font>
+                        </property>
+                        <property name="tableName">
+                            <string>comunicacionescli</string>
+                        </property>
+                        <property name="foreignField">
+                            <string>codcliente</string>
+                        </property>
+                        <property name="fieldRelation">
+                            <string>codcliente</string>
+                        </property>
+                    </widget>
+                </vbox>
+            </widget>
+        </widget>
+    </vbox>
+</widget>
+<customwidgets>
+</customwidgets>
+<tabstops>
+    <tabstop>fdbCodCliente</tabstop>
+    <tabstop>fdbNombre</tabstop>
+</tabstops>
+<slots>
+    <slot>eliminarGruposImpuestos()</slot>
+    <slot>traspasarGruposImpuestos()</slot>
+</slots>
+<layoutdefaults spacing="6" margin="11"/>
+<includehints>
+    <includehint>FLTableDB.h</includehint>
+    <includehint>FLTableDB.h</includehint>
+    <includehint>FLTableDB.h</includehint>
+    <includehint>FLTableDB.h</includehint>
+    <includehint>FLTableDB.h</includehint>
+    <includehint>FLTableDB.h</includehint>
+</includehints>
+</UI>

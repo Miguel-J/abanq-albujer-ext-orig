@@ -1,0 +1,54 @@
+<xupdate:modifications>
+<xupdate:insert-after select="/UI[UI,1]/widget[QWidget,tpv_multitransstock]/vbox[vbox,1]/widget[QTabWidget,tbwMultiTransStock]/widget[QWidget,tabsets]/vbox[vbox,1]/widget[QLayoutWidget,layoutSets]/hbox[hbox,1]/widget[QGroupBox,gbxArticulosGen]/vbox[vbox,1]/widget[QGroupBox,gbxArticulos]" >
+<widget class="QGroupBox" >
+<property name="name" >
+<cstring>gbxBarcodes</cstring>
+</property>
+<property name="title" >
+<string>Barcodes</string>
+</property>
+<vbox>
+<property name="name" >
+<cstring>unnamed</cstring>
+</property>
+<widget class="FLTableDB" >
+<property name="name" >
+<cstring>tdbBarCodes</cstring>
+</property>
+<property name="sizePolicy" >
+<sizepolicy>
+<hsizetype>1</hsizetype>
+<vsizetype>5</vsizetype>
+<horstretch>0</horstretch>
+<verstretch>0</verstretch>
+</sizepolicy>
+</property>
+<property name="minimumSize" >
+<size>
+<width>0</width>
+<height>200</height>
+</size>
+</property>
+<property name="font" >
+<font/>
+</property>
+<property name="tableName" >
+<string>tpv_barcodemultitransstock</string>
+</property>
+<property name="foreignField" >
+<string>codmultitransstock</string>
+</property>
+<property name="fieldRelation" >
+<string>codmultitransstock</string>
+</property>
+<property name="filterHidden" >
+<bool>true</bool>
+</property>
+</widget>
+</vbox>
+</widget>
+</xupdate:insert-after>
+<xupdate:insert-after select="/UI[UI,1]/includehints[includehints,1]/includehint[fltabledb.h]" >
+<includehint>fltabledb.h</includehint>
+</xupdate:insert-after>
+</xupdate:modifications>

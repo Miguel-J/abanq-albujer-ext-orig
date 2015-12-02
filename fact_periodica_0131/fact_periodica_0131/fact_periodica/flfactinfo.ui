@@ -1,0 +1,26 @@
+<xupdate:modifications>
+<xupdate:insert-after select="/UI[UI,1]/actions[actions,1]/action[wg_widget]" >
+<action>
+<property name="name" >
+<cstring>i_contratos</cstring>
+</property>
+<property name="text" >
+<string>Contratos</string>
+</property>
+<property name="menuText" >
+<string>Contratos</string>
+</property>
+</action>
+</xupdate:insert-after>
+<xupdate:insert-after select="/UI[UI,1]/connections[connections,1]/connection[wg_widget,activated(),FLWidgetApplication,execDefaultScript()]" >
+<connection>
+<sender>i_contratos</sender>
+<signal>activated()</signal>
+<receiver>FLWidgetApplication</receiver>
+<slot>openDefaultForm()</slot>
+</connection>
+</xupdate:insert-after>
+<xupdate:insert-after select="/UI[UI,1]/menubar[menubar,1]/item[Ventas]/item[item,4]" >
+<action name="i_contratos" />
+</xupdate:insert-after>
+</xupdate:modifications>

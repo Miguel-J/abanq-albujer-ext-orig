@@ -1,0 +1,168 @@
+<!DOCTYPE TMD>
+<TMD>
+	<name>in_h_incidencias</name>
+	<!--Hipercubo de incidencias CRM-->
+	<alias>QT_TRANSLATE_NOOP("MetaData","Cubo de incidencias CRM")</alias>
+
+	<field>
+		<name>id</name>
+		<!--Identificador interno de la tabla-->
+		<alias>QT_TRANSLATE_NOOP("MetaData","Identificador")</alias>
+		<null>false</null>
+		<pk>true</pk>
+		<type>serial</type>
+		<visiblegrid>false</visiblegrid>
+	</field>
+
+	<field>
+		<name>m_valor</name>
+		<alias>QT_TRANSLATE_NOOP("MetaData","Valor")</alias>
+		<null>false</null>
+		<pk>false</pk>
+		<type>int</type>
+		<default>0</default>
+	</field>
+	
+	<field>
+		<name>m_cantidad</name>
+		<alias>QT_TRANSLATE_NOOP("MetaData","Cantidad")</alias>
+		<null>false</null>
+		<pk>false</pk>
+		<type>uint</type>
+		<default>0</default>
+	</field>
+
+	<field>
+		<name>d_codcliente</name>
+		<alias>QT_TRANSLATE_NOOP("MetaData","Cliente")</alias>
+		<null>true</null>
+		<pk>false</pk>
+		<type>string</type>
+		<length>6</length>
+		
+		<relation>
+			<table>in_dimcliente</table>
+			<field>codcliente</field>
+			<card>M1</card>
+			<checkIn>false</checkIn>
+		</relation>
+	</field>
+
+	<field>
+		<name>d_mes</name>
+		<alias>QT_TRANSLATE_NOOP("MetaData","Mes")</alias>
+		<null>false</null>
+		<pk>false</pk>
+		<type>string</type>
+		<length>6</length>
+		
+		<relation>
+			<table>in_dimmes</table>
+			<field>mesano</field>
+			<card>M1</card>
+			<checkIn>false</checkIn>
+		</relation>
+	</field>
+
+	<field>
+		<name>d_estado</name>
+		<alias>QT_TRANSLATE_NOOP("MetaData","Estado")</alias>
+		<null>true</null>
+		<pk>false</pk>
+		<type>string</type>
+		<length>20</length>
+	</field>
+
+	<field>
+		<name>d_idusuario</name>
+		<alias>QT_TRANSLATE_NOOP("MetaData","Empleado")</alias>
+		<null>true</null>
+		<pk>false</pk>
+		<type>string</type>
+		<length>100</length>
+		<relation>
+			<table>in_dimusuario</table>
+			<field>iduser</field>
+			<card>M1</card>
+			<checkIn>false</checkIn>
+		</relation>
+	</field>
+
+	<field>
+		<name>d_codcategoria</name>
+		<!--Código de categoría-->
+		<alias>QT_TRANSLATE_NOOP("MetaData","Categoría")</alias>
+		<null>true</null>
+		<pk>false</pk>
+		<type>string</type>
+		<length>25</length>
+		
+		<relation>
+			<table>in_dimcatincidencias</table>
+			<field>codcategoria</field>
+			<card>M1</card>
+			<checkIn>false</checkIn>
+		</relation>
+	</field>
+	
+	<field>
+		<name>d_codsubcategoria</name>
+		<!--Código de subcategoría-->
+		<alias>QT_TRANSLATE_NOOP("MetaData","Subcategoría")</alias>
+		<null>true</null>
+		<pk>false</pk>
+		<type>string</type>
+		<length>25</length>
+		
+		<relation>
+			<table>in_dimsubcatincidencias</table>
+			<field>codsubcategoria</field>
+			<card>M1</card>
+			<checkIn>false</checkIn>
+		</relation>
+	</field>
+	
+	<Schema>
+		<Cube name="crm" alias="QT_TRANSLATE_NOOP('MetaData','CRM')" >
+			<Table name="in_h_incidencias"/>
+			<Dimension name="tiempo" foreignKey="d_mes">
+				<Hierarchy hasAll="false" primaryKey="mesano">
+					<Table name="in_dimmes"/>
+					<Level name="mes" column="mes" uniqueMembers="true" ordinalColumn="mes" nameColumn="nombremes" levelType="TimeMonths"/>
+					<Level name="ano" column="ano" uniqueMembers="false" levelType="TimeYears"/>
+				</Hierarchy>
+			</Dimension>
+			<Dimension name="empleado" foreignKey="d_idusuario">
+				<Hierarchy hasAll="true" allMemberName="" primaryKey="idusuario" primaryKeyTable="in_dimusuario">
+					<Join leftKey="coddepartamento" rightKey="coddepartamento">
+						<Table name="in_dimusuario"/>
+						<Table name="in_dimdepartamento"/>
+					</Join>
+					<Level name="empleado" table="in_dimusuario" column="idusuario" nameColumn="nombre" uniqueMembers="true" sourceTable="usuarios"/>
+					<Level name="departamento" table="in_dimdepartamento" column="coddepartamento" nameColumn="nombre" uniqueMembers="true" sourceTable="departamentos"/>
+				</Hierarchy>
+			</Dimension>
+			
+			<Dimension name="categoria" foreignKey="d_codcategoria">
+				<Hierarchy hasAll="false" primaryKey="codcategoria">
+					<Table name="in_dimcatincidencias"/>
+					<Level name="categorias" column="codcategoria" uniqueMembers="true" sourceTable="crm_catincidencias"/>
+				</Hierarchy>
+			</Dimension>
+			<Dimension name="subcategoria" foreignKey="d_codsubcategoria">
+				<Hierarchy hasAll="false" primaryKey="codsubcategoria">
+					<Table name="in_dimsubcatincidencias"/>
+					<Level name="subcategorias" column="codsubcategoria" uniqueMembers="true" sourceTable="crm_subcatincidencias"/>
+				</Hierarchy>
+			</Dimension>
+			<Dimension name="cliente" foreignKey="d_codcliente">
+				<Hierarchy hasAll="false" primaryKey="codcliente">
+					<Table name="in_dimcliente"/>
+					<Level name="cliente" column="codcliente" nameColumn="nombre" sourceTable="clientes"/>
+				</Hierarchy>
+			</Dimension>
+			<Measure name="valor" column="m_valor" aggregator="sum" formatString="#,###"/>
+			<Measure name="cantidad" column="m_cantidad" aggregator="sum" formatString="#,###"/>
+		</Cube>
+	</Schema>
+</TMD>

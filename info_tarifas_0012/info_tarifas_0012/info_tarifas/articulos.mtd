@@ -1,0 +1,16 @@
+<xupdate:modifications>
+<xupdate:insert-after select="/TMD[TMD,1]/field[referencia]/relation[lineasfacturasprov,referencia]" >
+<relation>
+<table>i_articulos</table>
+<field>d_a_referencia</field>
+<card>1M</card>
+</relation>
+</xupdate:insert-after>
+<xupdate:insert-after select="/TMD[TMD,1]/field[referencia]/relation[i_articulos,d_a_referencia]" >
+<relation>
+<table>i_articulos</table>
+<field>h_a_referencia</field>
+<card>1M</card>
+</relation>
+</xupdate:insert-after>
+</xupdate:modifications>

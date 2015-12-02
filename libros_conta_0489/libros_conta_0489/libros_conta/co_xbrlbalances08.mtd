@@ -1,0 +1,31 @@
+<!DOCTYPE TMD>
+<TMD>
+    <name>co_xbrlbalances08</name>
+	<!--Nodos XBRL correspondientes a los códigos de balance 08 y sus acumulados-->
+	<alias>QT_TRANSLATE_NOOP("MetaData","Nods XBRL para PGC 08")</alias>
+    <field>
+        <name>codbalance</name>
+<!-- Identificador interno de la clasificación en el balance -->        <alias>QT_TRANSLATE_NOOP("MetaData","Código")</alias>
+        <null>false</null>
+        <pk>true</pk>
+        <type>string</type>
+        <length>15</length>
+    </field>
+	<field>
+        <name>nivel</name>
+		<!-- Nivel de agrupación-->
+		<alias>QT_TRANSLATE_NOOP("MetaData","Nivel de agrupación")</alias>
+        <null>false</null>
+        <pk>false</pk>
+        <type>int</type>
+    </field>
+	<field>
+        <name>nodoxbrl</name>
+		<!-- Nodo XBRL -->
+		<alias>QT_TRANSLATE_NOOP("MetaData","Nodo XBRL")</alias>
+        <null>false</null>
+        <pk>false</pk>
+        <type>string</type>
+        <length>200</length>
+    </field>
+</TMD>

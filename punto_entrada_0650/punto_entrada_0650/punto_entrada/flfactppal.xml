@@ -1,0 +1,96 @@
+<xupdate:modifications>
+<xupdate:insert-after select="/ACTIONS[ACTIONS,1]/action[wg_widget]" >
+<action>
+<name>t1_principal</name>
+<description>QT_TRANSLATE_NOOP(&quot;MetaData&quot;,&quot;&quot;)</description>
+<alias>QT_TRANSLATE_NOOP(&quot;MetaData&quot;,&quot;Principal&quot;)</alias>
+<table>t1_principal</table>
+<form>t1_principal</form>
+<scriptform>t1_principal</scriptform>
+</action>
+</xupdate:insert-after>
+<xupdate:insert-after select="/ACTIONS[ACTIONS,1]/action[t1_principal]" >
+<action>
+<name>t1_elementos</name>
+<description>QT_TRANSLATE_NOOP(&quot;MetaData&quot;,&quot;Elementos&quot;)</description>
+<alias>QT_TRANSLATE_NOOP(&quot;MetaData&quot;,&quot;Elementos&quot;)</alias>
+<table>t1_elementos</table>
+<form>master</form>
+<formrecord>t1_elementos</formrecord>
+<scriptformrecord>t1_elementos</scriptformrecord>
+</action>
+</xupdate:insert-after>
+<xupdate:insert-after select="/ACTIONS[ACTIONS,1]/action[t1_elementos]" >
+<action>
+<name>t1_elementosug</name>
+<description>QT_TRANSLATE_NOOP(&quot;MetaData&quot;,&quot;Elementos por usuario o grupo&quot;)</description>
+<alias>QT_TRANSLATE_NOOP(&quot;MetaData&quot;,&quot;Elementos por usuario o grupo&quot;)</alias>
+<table>t1_elementosug</table>
+<form>master</form>
+<formrecord>t1_elementosug</formrecord>
+<scriptformrecord>t1_elementosug</scriptformrecord>
+</action>
+</xupdate:insert-after>
+<xupdate:insert-after select="/ACTIONS[ACTIONS,1]/action[t1_elementosug]" >
+<action>
+<name>t1_accioneselemento</name>
+<description>QT_TRANSLATE_NOOP(&quot;MetaData&quot;,&quot;Acciones&quot;)</description>
+<alias>QT_TRANSLATE_NOOP(&quot;MetaData&quot;,&quot;Acciones&quot;)</alias>
+<table>t1_accioneselemento</table>
+<form>master</form>
+<formrecord>t1_accioneselemento</formrecord>
+<scriptformrecord>t1_accioneselemento</scriptformrecord>
+</action>
+</xupdate:insert-after>
+<xupdate:insert-after select="/ACTIONS[ACTIONS,1]/action[t1_accioneselemento]" >
+<action>
+<name>t1_relacioneselemento</name>
+<description>QT_TRANSLATE_NOOP(&quot;MetaData&quot;,&quot;Relaciones&quot;)</description>
+<alias>QT_TRANSLATE_NOOP(&quot;MetaData&quot;,&quot;Relaciones&quot;)</alias>
+<table>t1_relacioneselemento</table>
+<form>master</form>
+<formrecord>t1_relacioneselemento</formrecord>
+<scriptformrecord>t1_relacioneselemento</scriptformrecord>
+</action>
+</xupdate:insert-after>
+<xupdate:insert-after select="/ACTIONS[ACTIONS,1]/action[t1_relacioneselemento]" >
+<action>
+<name>t1_relacioneselementoug</name>
+<description>QT_TRANSLATE_NOOP(&quot;MetaData&quot;,&quot;Relaciones por usuario y grupo&quot;)</description>
+<alias>QT_TRANSLATE_NOOP(&quot;MetaData&quot;,&quot;Relaciones por usuario y grupo&quot;)</alias>
+<table>t1_relacioneselementoug</table>
+<formrecord>t1_relacioneselementoug</formrecord>
+<scriptformrecord>t1_relacioneselementoug</scriptformrecord>
+</action>
+</xupdate:insert-after>
+<xupdate:insert-after select="/ACTIONS[ACTIONS,1]/action[t1_relacioneselementoug]" >
+<action>
+<name>t1_mr</name>
+<description>QT_TRANSLATE_NOOP(&quot;MetaData&quot;,&quot;Minority Report&quot;)</description>
+<alias>QT_TRANSLATE_NOOP(&quot;MetaData&quot;,&quot;Minority Report&quot;)</alias>
+<table>empresa</table>
+<form>t1_mr</form>
+<scriptform>t1_mr</scriptform>
+</action>
+</xupdate:insert-after>
+<xupdate:insert-after select="/ACTIONS[ACTIONS,1]/action[t1_mr]" >
+<action>
+<name>t1_catalogodb</name>
+<description>QT_TRANSLATE_NOOP(&quot;MetaData&quot;,&quot;Catálogo DB&quot;)</description>
+<alias>QT_TRANSLATE_NOOP(&quot;MetaData&quot;,&quot;Catálogo DB&quot;)</alias>
+<table>t1_catalogodb</table>
+<form>master</form>
+</action>
+</xupdate:insert-after>
+<xupdate:insert-after select="/ACTIONS[ACTIONS,1]/action[t1_catalogodb]" >
+<action>
+<name>t1_iconos</name>
+<description>QT_TRANSLATE_NOOP(&quot;MetaData&quot;,&quot;Iconos&quot;)</description>
+<alias>QT_TRANSLATE_NOOP(&quot;MetaData&quot;,&quot;Iconos&quot;)</alias>
+<table>t1_iconos</table>
+<form>mastericonos</form>
+<scriptform>mastericonos</scriptform>
+<formrecord>t1_iconos</formrecord>
+</action>
+</xupdate:insert-after>
+</xupdate:modifications>

@@ -1,0 +1,190 @@
+<xupdate:modifications>
+<xupdate:delete select="/TMD[TMD,1]/field[costemedio]/editable[editable,1]" />
+<xupdate:update select="/TMD[TMD,1]/field[costemedio]/partD[partD,1]/text()[1]" >7</xupdate:update>
+<xupdate:insert-after select="/TMD[TMD,1]/field[referencia]/relation[movistock,referencia]" >
+<relation>
+<table>empresa</table>
+<field>refportes</field>
+<card>1M</card>
+</relation>
+</xupdate:insert-after>
+<xupdate:insert-after select="/TMD[TMD,1]/field[referencia]/relation[empresa,refportes]" >
+<relation>
+<table>paramiptico</table>
+<field>refpliego</field>
+<card>1M</card>
+</relation>
+</xupdate:insert-after>
+<xupdate:insert-after select="/TMD[TMD,1]/field[referencia]/relation[paramiptico,refpliego]" >
+<relation>
+<table>paramiptico</table>
+<field>reftroquel</field>
+<card>1M</card>
+</relation>
+</xupdate:insert-after>
+<xupdate:insert-after select="/TMD[TMD,1]/field[costemedio]" >
+<field>
+<name>costemedioet</name>
+<!-- Promedio calculado del coste del artículo entre todos los proveedores	--><alias>QT_TRANSLATE_NOOP(&quot;MetaData&quot;,&quot;Coste ET&quot;)</alias>
+<null>true</null>
+<pk>false</pk>
+<type>double</type>
+<partI>8</partI>
+<partD>2</partD>
+</field>
+</xupdate:insert-after>
+<xupdate:insert-after select="/TMD[TMD,1]/field[diasprodenvio]" >
+<field>
+<name>gramaje</name>
+<alias>QT_TRANSLATE_NOOP(&quot;MetaData&quot;,&quot;Gramaje (g)&quot;)</alias>
+<null>true</null>
+<pk>false</pk>
+<type>uint</type>
+<relation>
+<table>gramajes</table>
+<field>gramaje</field>
+<card>M1</card>
+</relation>
+</field>
+</xupdate:insert-after>
+<xupdate:insert-after select="/TMD[TMD,1]/field[gramaje]" >
+<field>
+<name>codmarcapapel</name>
+<!-- Marca por defecto--><alias>QT_TRANSLATE_NOOP(&quot;MetaData&quot;,&quot;Marca&quot;)</alias>
+<null>true</null>
+<pk>false</pk>
+<type>string</type>
+<length>25</length>
+<relation>
+<table>marcaspapel</table>
+<field>codmarcapapel</field>
+<card>M1</card>
+</relation>
+</field>
+</xupdate:insert-after>
+<xupdate:insert-after select="/TMD[TMD,1]/field[codmarcapapel]" >
+<field>
+<name>dimpliego</name>
+<alias>QT_TRANSLATE_NOOP(&quot;MetaData&quot;,&quot;Dim.&quot;)</alias>
+<null>true</null>
+<pk>false</pk>
+<type>string</type>
+<length>15</length>
+</field>
+</xupdate:insert-after>
+<xupdate:insert-after select="/TMD[TMD,1]/field[dimpliego]" >
+<field>
+<name>anchopliego</name>
+<alias>QT_TRANSLATE_NOOP(&quot;MetaData&quot;,&quot;Ancho&quot;)</alias>
+<null>true</null>
+<pk>false</pk>
+<type>double</type>
+<partI>8</partI>
+<partD>2</partD>
+</field>
+</xupdate:insert-after>
+<xupdate:insert-after select="/TMD[TMD,1]/field[anchopliego]" >
+<field>
+<name>altopliego</name>
+<alias>QT_TRANSLATE_NOOP(&quot;MetaData&quot;,&quot;Alto&quot;)</alias>
+<null>true</null>
+<pk>false</pk>
+<type>double</type>
+<partI>8</partI>
+<partD>2</partD>
+</field>
+</xupdate:insert-after>
+<xupdate:insert-after select="/TMD[TMD,1]/field[altopliego]" >
+<field>
+<name>xmlparametros</name>
+<!--XML que contiene los parámetros --><alias>QT_TRANSLATE_NOOP(&quot;MetaData&quot;,&quot;Parámetros&quot;)</alias>
+<null>true</null>
+<pk>false</pk>
+<type>stringlist</type>
+</field>
+</xupdate:insert-after>
+<xupdate:insert-after select="/TMD[TMD,1]/field[xmlparametros]" >
+<field>
+<name>tipoplas</name>
+<alias>QT_TRANSLATE_NOOP(&quot;MetaData&quot;,&quot;T.Plas.&quot;)</alias>
+<null>true</null>
+<pk>false</pk>
+<type>string</type>
+<length>15</length>
+<optionslist>No,Brillo,Mate</optionslist>
+<default>No</default>
+</field>
+</xupdate:insert-after>
+<xupdate:insert-after select="/TMD[TMD,1]/field[tipoplas]" >
+<field>
+<name>codformato</name>
+<!--Formato de papel--><alias>QT_TRANSLATE_NOOP(&quot;MetaData&quot;,&quot;Formato&quot;)</alias>
+<null>true</null>
+<pk>false</pk>
+<type>string</type>
+<length>50</length>
+<relation>
+<table>formatospapel</table>
+<field>codformato</field>
+<card>M1</card>
+</relation>
+</field>
+</xupdate:insert-after>
+<xupdate:insert-after select="/TMD[TMD,1]/field[codformato]" >
+<field>
+<name>grosorunidad</name>
+<alias>QT_TRANSLATE_NOOP(&quot;MetaData&quot;,&quot;Cms/unidad&quot;)</alias>
+<null>true</null>
+<pk>false</pk>
+<type>double</type>
+<partI>1</partI>
+<partD>6</partD>
+</field>
+</xupdate:insert-after>
+<xupdate:insert-after select="/TMD[TMD,1]/field[grosorunidad]" >
+<field>
+<name>unidadesgr</name>
+<alias>QT_TRANSLATE_NOOP(&quot;MetaData&quot;,&quot;Cantidad&quot;)</alias>
+<null>true</null>
+<pk>false</pk>
+<type>uint</type>
+</field>
+</xupdate:insert-after>
+<xupdate:insert-after select="/TMD[TMD,1]/field[unidadesgr]" >
+<field>
+<name>cmsgr</name>
+<alias>QT_TRANSLATE_NOOP(&quot;MetaData&quot;,&quot;Cms&quot;)</alias>
+<null>true</null>
+<pk>false</pk>
+<type>double</type>
+<partI>2</partI>
+<partD>2</partD>
+</field>
+</xupdate:insert-after>
+<xupdate:insert-after select="/TMD[TMD,1]/field[cmsgr]" >
+<field>
+<name>tpreptroquel</name>
+<alias>QT_TRANSLATE_NOOP(&quot;MetaData&quot;,&quot;T.Preparación&quot;)</alias>
+<null>true</null>
+<pk>false</pk>
+<type>double</type>
+<partI>4</partI>
+<partD>2</partD>
+</field>
+</xupdate:insert-after>
+<xupdate:insert-after select="/TMD[TMD,1]/field[tpreptroquel]" >
+<field>
+<name>codcalidad</name>
+<alias>QT_TRANSLATE_NOOP(&quot;MetaData&quot;,&quot;Calidad&quot;)</alias>
+<null>true</null>
+<pk>false</pk>
+<type>string</type>
+<length>25</length>
+<relation>
+<table>calidadespapel</table>
+<field>codcalidad</field>
+<card>M1</card>
+</relation>
+</field>
+</xupdate:insert-after>
+</xupdate:modifications>

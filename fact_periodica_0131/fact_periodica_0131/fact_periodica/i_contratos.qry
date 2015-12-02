@@ -1,0 +1,39 @@
+<!DOCTYPE QRY>
+<QRY>
+	<name>i_contratos</name>
+
+	<tables>clientes,dirclientes,contratos,tiposcontrato,articulos</tables>
+
+	<group>
+		<level>0</level>
+		<field>clientes.codcliente</field>
+	</group>
+
+	<select>
+		clientes.codcliente, clientes.nombre, clientes.cifnif,
+		clientes.telefono1, clientes.fax, clientes.email,
+		dirclientes.direccion, dirclientes.ciudad,
+		dirclientes.codpostal, dirclientes.provincia, dirclientes.codpais,
+		empresa.direccion, empresa.nombre,
+		empresa.codpostal, empresa.ciudad,
+		empresa.provincia, empresa.apartado,
+		empresa.codpais, empresa.cifnif,
+		empresa.telefono, empresa.fax,
+		contratos.codigo, contratos.estado, contratos.codcliente, contratos.nombrecliente, contratos.periodopago, contratos.factprimeromes, contratos.ultimopago, contratos.fechainicio, contratos.tipocontrato, contratos.referencia, contratos.descripcion, contratos.codimpuesto, contratos.coste, contratos.observaciones, contratos.condiciones, tiposcontrato.nombre, articulos.descripcion
+	</select>
+
+	<from>
+		empresa,contratos
+		INNER JOIN clientes ON contratos.codcliente = clientes.codcliente
+		LEFT OUTER JOIN articulos ON contratos.referencia = articulos.referencia
+		LEFT OUTER JOIN tiposcontrato ON contratos.tipocontrato = tiposcontrato.codigo
+		LEFT OUTER JOIN dirclientes ON clientes.codcliente = dirclientes.codcliente
+	</from>
+
+	<where>
+	</where>
+	
+	<order>
+		clientes.nombre
+	</order>
+</QRY>

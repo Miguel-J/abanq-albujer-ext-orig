@@ -1,0 +1,29 @@
+<xupdate:modifications>
+<xupdate:insert-after select="/UI[UI,1]/actions[actions,1]/action[factalma_general]" >
+<action>
+<property name="name" >
+<cstring>nivelestpv</cstring>
+</property>
+<property name="text" >
+<string>Niveles</string>
+</property>
+<property name="menuText" >
+<string>Niveles</string>
+</property>
+<property name="accel" >
+<string>Ctrl+N</string>
+</property>
+</action>
+</xupdate:insert-after>
+<xupdate:insert-after select="/UI[UI,1]/connections[connections,1]/connection[factalma_general,activated(),FLWidgetApplication,execDefaultScript()]" >
+<connection>
+<sender>nivelestpv</sender>
+<signal>activated()</signal>
+<receiver>FLWidgetApplication</receiver>
+<slot>openDefaultForm()</slot>
+</connection>
+</xupdate:insert-after>
+<xupdate:insert-after select="/UI[UI,1]/menubar[menubar,1]/item[Almacn]/action[tarifas]" >
+<action name="nivelestpv" />
+</xupdate:insert-after>
+</xupdate:modifications>

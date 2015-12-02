@@ -1,0 +1,22 @@
+<flpatch:modifications name="info_vencimtos" >
+    <flpatch:patchXml path="facturacion/informes/" name="flfactinfo.xml" />
+    <flpatch:patchXml path="facturacion/informes/forms/" name="flfactinfo.ui" />
+    <flpatch:addFile path="facturacion/informes/forms/" name="i_vencimientos.ui" />
+    <flpatch:addFile path="facturacion/informes/queries/" name="i_vencimientos.qry" />
+    <flpatch:addFile path="facturacion/informes/reports/" name="i_vencimientos.kut" />
+    <flpatch:addFile path="facturacion/informes/scripts/" name="i_mastervencimientos.qs" />
+    <flpatch:addFile path="facturacion/informes/tables/" name="i_vencimientos.mtd" />
+    <flpatch:addFile path="facturacion/informes/tables/" name="i_vencimientos_buffer.mtd" />
+    <flpatch:patchXml path="facturacion/principal/tables/" name="cuentasbanco.mtd" />
+    <flpatch:patchXml path="facturacion/principal/tables/" name="ejercicios.mtd" />
+    <flpatch:patchXml path="facturacion/tesoreria/tables/" name="reciboscli.mtd" />
+    <flpatch:patchXml path="facturacion/tesoreria/forms/" name="reciboscli.ui" />
+    <flpatch:patchScript path="facturacion/tesoreria/scripts/" name="flfactteso.qs" />
+    <flpatch:patchScript path="facturacion/tesoreria/scripts/" name="pagosdevolcli.qs" />
+    <flpatch:patchXml path="facturacion/tesoreria/tables/" name="recibosprov.mtd" />
+    <flpatch:patchXml path="facturacion/tesoreria/forms/" name="recibosprov.ui" />
+    <flpatch:patchScript path="facturacion/tesoreria/scripts/" name="pagosdevolprov.qs" />
+    <flpatch:addFile path="facturacion/informes/scripts/" name="i_vencimientos.qs" />
+    <flpatch:patchScript path="facturacion/informes/scripts/" name="flfactinfo.qs" />
+    <flpatch:patchXml path="facturacion/principal/tables/" name="intervalos.mtd" />
+</flpatch:modifications>

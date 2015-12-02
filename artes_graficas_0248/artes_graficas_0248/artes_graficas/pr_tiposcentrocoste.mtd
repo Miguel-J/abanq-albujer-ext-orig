@@ -1,0 +1,161 @@
+<xupdate:modifications>
+<xupdate:insert-after select="/TMD[TMD,1]/field[codtipocentro]/relation[pr_centroscoste,codtipocentro]" >
+<relation>
+<table>pr_costesestilosimp</table>
+<field>codtipocentro</field>
+<card>1M</card>
+</relation>
+</xupdate:insert-after>
+<xupdate:insert-after select="/TMD[TMD,1]/field[codtipocentro]/relation[pr_costesestilosimp,codtipocentro]" >
+<relation>
+<table>pr_paramguillotina</table>
+<field>codtipocentro</field>
+<card>1M</card>
+</relation>
+</xupdate:insert-after>
+<xupdate:insert-after select="/TMD[TMD,1]/field[codtipocentro]/relation[pr_paramguillotina,codtipocentro]" >
+<relation>
+<table>pr_paramdisenador</table>
+<field>codtipocentro</field>
+<card>1M</card>
+</relation>
+</xupdate:insert-after>
+<xupdate:insert-after select="/TMD[TMD,1]/field[codtipocentro]/relation[pr_paramdisenador,codtipocentro]" >
+<relation>
+<table>pr_paramplegadora</table>
+<field>codtipocentro</field>
+<card>1M</card>
+</relation>
+</xupdate:insert-after>
+<xupdate:insert-after select="/TMD[TMD,1]/field[codtipocentro]/relation[pr_paramplegadora,codtipocentro]" >
+<relation>
+<table>pr_paramimpresora</table>
+<field>codtipocentro</field>
+<card>1M</card>
+</relation>
+</xupdate:insert-after>
+<xupdate:insert-after select="/TMD[TMD,1]/field[codtipocentro]/relation[pr_paramimpresora,codtipocentro]" >
+<relation>
+<table>pr_paramplastificadora</table>
+<field>codtipocentro</field>
+<card>1M</card>
+</relation>
+</xupdate:insert-after>
+<xupdate:insert-after select="/TMD[TMD,1]/field[codtipocentro]/relation[pr_paramplastificadora,codtipocentro]" >
+<relation>
+<table>pr_dimoptimasimp</table>
+<field>codtipocentro</field>
+<card>1M</card>
+</relation>
+</xupdate:insert-after>
+<xupdate:insert-after select="/TMD[TMD,1]/field[codtipocentro]/relation[pr_dimoptimasimp,codtipocentro]" >
+<relation>
+<table>trabexternolibro</table>
+<field>codtipocentro</field>
+<card>1M</card>
+</relation>
+</xupdate:insert-after>
+<xupdate:insert-after select="/TMD[TMD,1]/field[descripcion]" >
+<field>
+<name>tipoag</name>
+<!--Tipo de centro para artes gráficas--><alias>QT_TRANSLATE_NOOP(&quot;MetaData&quot;,&quot;Tipo A.G.&quot;)</alias>
+<null>true</null>
+<pk>false</pk>
+<type>string</type>
+<length>50</length>
+<optionslist>Alzadora,Diseñador,E+G+C,Encuadernadora,Grapadora de mesa,Guillotina,Impresora,Otros,Peladora,Plastificadora,Plegadora,Troqueladora,Wire-o</optionslist>
+<default>Otros</default>
+</field>
+</xupdate:insert-after>
+<xupdate:insert-after select="/TMD[TMD,1]/field[tipoag]" >
+<field>
+<name>parametros</name>
+<!--Nodo con los parámetros de la máquina--><alias>QT_TRANSLATE_NOOP(&quot;MetaData&quot;,&quot;Parámetros&quot;)</alias>
+<null>true</null>
+<pk>false</pk>
+<type>stringlist</type>
+</field>
+</xupdate:insert-after>
+<xupdate:insert-after select="/TMD[TMD,1]/field[parametros]" >
+<field>
+<name>porbeneficio</name>
+<alias>QT_TRANSLATE_NOOP(&quot;MetaData&quot;,&quot;% Beneficio&quot;)</alias>
+<null>true</null>
+<pk>false</pk>
+<type>double</type>
+<partI>3</partI>
+<partD>2</partD>
+<default>0</default>
+</field>
+</xupdate:insert-after>
+<xupdate:insert-after select="/TMD[TMD,1]/field[porbeneficio]" >
+<field>
+<name>costetiempo</name>
+<alias>QT_TRANSLATE_NOOP(&quot;MetaData&quot;,&quot;Coste/Min.&quot;)</alias>
+<null>true</null>
+<pk>false</pk>
+<type>double</type>
+<partI>6</partI>
+<partD>2</partD>
+<default>0</default>
+</field>
+</xupdate:insert-after>
+<xupdate:insert-after select="/TMD[TMD,1]/field[costetiempo]" >
+<field>
+<name>tiempoinicio</name>
+<alias>QT_TRANSLATE_NOOP(&quot;MetaData&quot;,&quot;Min.Inicio&quot;)</alias>
+<null>true</null>
+<pk>false</pk>
+<type>double</type>
+<partI>6</partI>
+<partD>2</partD>
+<default>0</default>
+</field>
+</xupdate:insert-after>
+<xupdate:insert-after select="/TMD[TMD,1]/field[tiempoinicio]" >
+<field>
+<name>tiempounidad</name>
+<alias>QT_TRANSLATE_NOOP(&quot;MetaData&quot;,&quot;Min/Unidad&quot;)</alias>
+<null>true</null>
+<pk>false</pk>
+<type>double</type>
+<partI>6</partI>
+<partD>4</partD>
+<default>0</default>
+</field>
+</xupdate:insert-after>
+<xupdate:insert-after select="/TMD[TMD,1]/field[tiempounidad]" >
+<field>
+<name>unidadeshora</name>
+<alias>QT_TRANSLATE_NOOP(&quot;MetaData&quot;,&quot;Unidades/hora&quot;)</alias>
+<null>true</null>
+<pk>false</pk>
+<type>uint</type>
+<default>0</default>
+</field>
+</xupdate:insert-after>
+<xupdate:insert-after select="/TMD[TMD,1]/field[unidadeshora]" >
+<field>
+<name>tipotrabajo</name>
+<alias>QT_TRANSLATE_NOOP(&quot;MetaData&quot;,&quot;Tipo de trabajo&quot;)</alias>
+<null>false</null>
+<pk>false</pk>
+<type>string</type>
+<length>25</length>
+<optionslist>Impresión,Manipulado,Encuadernación,Trabajo externo</optionslist>
+<default>Máquina</default>
+</field>
+</xupdate:insert-after>
+<xupdate:insert-after select="/TMD[TMD,1]/field[tipotrabajo]" >
+<field>
+<name>tiempominprod</name>
+<alias>QT_TRANSLATE_NOOP(&quot;MetaData&quot;,&quot;T.Min.Producción(m)&quot;)</alias>
+<null>true</null>
+<pk>false</pk>
+<type>double</type>
+<partI>6</partI>
+<partD>2</partD>
+<default>0</default>
+</field>
+</xupdate:insert-after>
+</xupdate:modifications>

@@ -1,0 +1,162 @@
+<xupdate:modifications>
+<xupdate:update select="/UI[UI,1]/widget[QWidget,co_subcuentas]/property[property,2]/rect[rect,1]/height[height,1]/text()[1]" >523</xupdate:update>
+<xupdate:update select="/UI[UI,1]/widget[QWidget,co_subcuentas]/property[property,2]/rect[rect,1]/width[width,1]/text()[1]" >657</xupdate:update>
+<xupdate:update select="/UI[UI,1]/widget[QWidget,co_subcuentas]/vbox[vbox,1]/widget[QTabWidget,tabWidget3]/widget[QWidget,libromayor]/vbox[vbox,1]/widget[FLTableDB,tdbPartidas]/property[property,5]/string[string,1]/text()[1]" >co_partidas</xupdate:update>
+<xupdate:delete select="/UI[UI,1]/widget[QWidget,co_subcuentas]/vbox[vbox,1]/widget[QTabWidget,tabWidget3]/widget[QWidget,libromayor]/vbox[vbox,1]/property[property,2]" />
+<xupdate:insert-after select="/UI[UI,1]/widget[QWidget,co_subcuentas]/vbox[vbox,1]/widget[QTabWidget,tabWidget3]/widget[QWidget,libromayor]" >
+<widget class="QWidget" >
+<property name="name" >
+<cstring>codigos</cstring>
+</property>
+<attribute name="title" >
+<string>&amp;Códigos</string>
+</attribute>
+<vbox>
+<property name="name" >
+<cstring>unnamed</cstring>
+</property>
+<widget class="QGroupBox" >
+<property name="name" >
+<cstring>gbxCodExplot</cstring>
+</property>
+<property name="font" >
+<font>
+<bold>0</bold>
+</font>
+</property>
+<property name="title" >
+<string/>
+</property>
+<vbox>
+<property name="name" >
+<cstring>unnamed</cstring>
+</property>
+<widget class="QLayoutWidget" >
+<property name="name" >
+<cstring>layout17</cstring>
+</property>
+<hbox>
+<property name="name" >
+<cstring>unnamed</cstring>
+</property>
+<widget class="FLFieldDB" >
+<property name="name" >
+<cstring>fdbIdCodCuentaExp</cstring>
+</property>
+<property name="sizePolicy" >
+<sizepolicy>
+<hsizetype>1</hsizetype>
+<vsizetype>0</vsizetype>
+<horstretch>0</horstretch>
+<verstretch>0</verstretch>
+</sizepolicy>
+</property>
+<property name="font" >
+<font/>
+</property>
+<property name="fieldName" >
+<string>codcuentaexp</string>
+</property>
+</widget>
+<widget class="FLFieldDB" >
+<property name="name" >
+<cstring>fdbIDescripcion</cstring>
+</property>
+<property name="sizePolicy" >
+<sizepolicy>
+<hsizetype>7</hsizetype>
+<vsizetype>0</vsizetype>
+<horstretch>0</horstretch>
+<verstretch>0</verstretch>
+</sizepolicy>
+</property>
+<property name="font" >
+<font/>
+</property>
+<property name="fieldName" >
+<string>descripcion</string>
+</property>
+<property name="tableName" >
+<string>co_codcuentaexp2</string>
+</property>
+<property name="foreignField" >
+<string>codcuentaexp</string>
+</property>
+<property name="fieldRelation" >
+<string>codigo</string>
+</property>
+<property name="showAlias" >
+<bool>false</bool>
+</property>
+</widget>
+</hbox>
+</widget>
+<spacer>
+<property name="name" >
+<cstring>spcCodExplot</cstring>
+</property>
+<property name="orientation" >
+<enum>Vertical</enum>
+</property>
+<property name="sizeType" >
+<enum>Expanding</enum>
+</property>
+<property name="sizeHint" >
+<size>
+<width>20</width>
+<height>141</height>
+</size>
+</property>
+</spacer>
+</vbox>
+</widget>
+</vbox>
+</widget>
+</xupdate:insert-after>
+<xupdate:delete select="/UI[UI,1]/customwidgets[customwidgets,1]" />
+<xupdate:append-first select="/UI[UI,1]/includehints[includehints,1]" >
+<includehint>FLFieldDB.h</includehint>
+</xupdate:append-first>
+<xupdate:insert-after select="/UI[UI,1]/includehints[includehints,1]/includehint[FLFieldDB.h]" >
+<includehint>FLFieldDB.h</includehint>
+</xupdate:insert-after>
+<xupdate:insert-after select="/UI[UI,1]/includehints[includehints,1]/includehint[FLFieldDB.h]" >
+<includehint>FLFieldDB.h</includehint>
+</xupdate:insert-after>
+<xupdate:insert-after select="/UI[UI,1]/includehints[includehints,1]/includehint[FLFieldDB.h]" >
+<includehint>FLFieldDB.h</includehint>
+</xupdate:insert-after>
+<xupdate:insert-after select="/UI[UI,1]/includehints[includehints,1]/includehint[FLFieldDB.h]" >
+<includehint>FLFieldDB.h</includehint>
+</xupdate:insert-after>
+<xupdate:insert-after select="/UI[UI,1]/includehints[includehints,1]/includehint[FLFieldDB.h]" >
+<includehint>FLFieldDB.h</includehint>
+</xupdate:insert-after>
+<xupdate:insert-after select="/UI[UI,1]/includehints[includehints,1]/includehint[FLFieldDB.h]" >
+<includehint>FLFieldDB.h</includehint>
+</xupdate:insert-after>
+<xupdate:insert-after select="/UI[UI,1]/includehints[includehints,1]/includehint[FLFieldDB.h]" >
+<includehint>FLFieldDB.h</includehint>
+</xupdate:insert-after>
+<xupdate:insert-after select="/UI[UI,1]/includehints[includehints,1]/includehint[FLTableDB.h]" >
+<includehint>FLFieldDB.h</includehint>
+</xupdate:insert-after>
+<xupdate:insert-after select="/UI[UI,1]/includehints[includehints,1]/includehint[FLFieldDB.h]" >
+<includehint>FLFieldDB.h</includehint>
+</xupdate:insert-after>
+<xupdate:insert-after select="/UI[UI,1]/includehints[includehints,1]/includehint[FLFieldDB.h]" >
+<includehint>FLFieldDB.h</includehint>
+</xupdate:insert-after>
+<xupdate:insert-after select="/UI[UI,1]/includehints[includehints,1]/includehint[FLFieldDB.h]" >
+<includehint>FLFieldDB.h</includehint>
+</xupdate:insert-after>
+<xupdate:insert-after select="/UI[UI,1]/includehints[includehints,1]/includehint[FLFieldDB.h]" >
+<includehint>FLFieldDB.h</includehint>
+</xupdate:insert-after>
+<xupdate:insert-after select="/UI[UI,1]/includehints[includehints,1]/includehint[FLFieldDB.h]" >
+<includehint>FLFieldDB.h</includehint>
+</xupdate:insert-after>
+<xupdate:insert-after select="/UI[UI,1]/includehints[includehints,1]/includehint[FLFieldDB.h]" >
+<includehint>FLFieldDB.h</includehint>
+</xupdate:insert-after>
+</xupdate:modifications>

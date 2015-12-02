@@ -1,0 +1,17 @@
+<flpatch:modifications name="info_tarifas" >
+    <flpatch:patchXml path="facturacion/almacen/" name="flfactalma.xml" />
+    <flpatch:patchXml path="facturacion/almacen/forms/" name="articulos.ui" />
+    <flpatch:addFile path="facturacion/almacen/reports/" name="articulostarifa.kut" />
+    <flpatch:addFile path="facturacion/almacen/scripts/" name="mastertarifas.qs" />
+    <flpatch:patchXml path="facturacion/almacen/tables/" name="articulos.mtd" />
+    <flpatch:patchXml path="facturacion/almacen/tables/" name="familias.mtd" />
+    <flpatch:patchXml path="facturacion/informes/" name="flfactinfo.xml" />
+    <flpatch:patchXml path="facturacion/informes/forms/" name="flfactinfo.ui" />
+    <flpatch:addFile path="facturacion/informes/forms/" name="i_articulos.ui" />
+    <flpatch:addFile path="facturacion/informes/queries/" name="i_articulos.qry" />
+    <flpatch:addFile path="facturacion/informes/queries/" name="i_articuloscoste.qry" />
+    <flpatch:addFile path="facturacion/informes/reports/" name="i_articulos.kut" />
+    <flpatch:addFile path="facturacion/informes/reports/" name="i_articuloscoste.kut" />
+    <flpatch:addFile path="facturacion/informes/scripts/" name="i_masterarticulos.qs" />
+    <flpatch:addFile path="facturacion/informes/tables/" name="i_articulos.mtd" />
+</flpatch:modifications>

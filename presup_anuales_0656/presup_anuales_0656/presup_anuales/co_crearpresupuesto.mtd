@@ -1,0 +1,55 @@
+<!DOCTYPE TMD>
+<TMD>
+	<name>co_crearpresupuesto</name>
+	<alias>QT_TRANSLATE_NOOP("MetaData","Crear presupuestos")</alias>
+
+	<field>
+		<name>codejercicio</name>
+		<alias>QT_TRANSLATE_NOOP("MetaData","Ej.Presupuesto")</alias>
+		<null>false</null>
+		<pk>true</pk>
+		<type>string</type>
+		<length>4</length>
+		<relation>
+			<table>ejercicios</table>
+			<field>codejercicio</field>
+			<card>M1</card>
+		</relation>
+	</field>
+	
+	<field>
+		<name>periodicidad</name>
+		<alias>QT_TRANSLATE_NOOP("MetaData","Periodicidad")</alias>
+		<null>false</null>
+		<pk>false</pk>
+		<type>string</type>
+		<length>10</length>
+		<optionslist>QT_TRANSLATE_NOOP("MetaData","Mensual");QT_TRANSLATE_NOOP("MetaData","Trimestral");QT_TRANSLATE_NOOP("MetaData","Semestral");QT_TRANSLATE_NOOP("MetaData","Anual")</optionslist>
+		<default>QT_TRANSLATE_NOOP("MetaData","Mensual")</default>
+	</field>
+	
+	<field>
+		<name>codsubcuenta</name>
+		<alias>QT_TRANSLATE_NOOP("MetaData","Subcuenta")</alias>
+		<null>true</null>
+		<pk>false</pk>
+		<type>string</type>
+		<length>15</length>
+	</field>
+	
+	<field>
+		<name>idsubcuenta</name>
+		<alias>QT_TRANSLATE_NOOP("MetaData","ID")</alias>
+		<null>true</null>
+		<pk>false</pk>
+		<type>uint</type>
+		<visiblegrid>false</visiblegrid>
+		<relation>
+				<table>co_subcuentas</table>
+				<field>idsubcuenta</field>
+				<card>M1</card>
+				<checkIn>false</checkIn>
+		</relation>
+	</field>
+
+</TMD>

@@ -1,0 +1,14 @@
+<xupdate:modifications>
+<xupdate:insert-after select="/ACTIONS[ACTIONS,1]/action[i_resreciboscli]" >
+<action>
+<name>i_ventascli</name>
+<alias>QT_TRANSLATE_NOOP(&quot;MetaData&quot;,&quot;Ventas por cliente clientes&quot;)</alias>
+<description>QT_TRANSLATE_NOOP(&quot;MetaData&quot;,&quot;Ventas por cliente&quot;)</description>
+<table>i_ventascli</table>
+<form>i_master</form>
+<formrecord>i_ventascli</formrecord>
+<scriptform>i_masterventascli</scriptform>
+<scriptformrecord>i_ventascli</scriptformrecord>
+</action>
+</xupdate:insert-after>
+</xupdate:modifications>

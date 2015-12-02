@@ -1,0 +1,27 @@
+<xupdate:modifications>
+<xupdate:insert-after select="/TMD[TMD,1]/field[idlinea]" >
+<field>
+<name>idpartida</name>
+<!--Identificador de la partida asociada--><alias>QT_TRANSLATE_NOOP(&quot;MetaData&quot;,&quot;Capítulo&quot;)</alias>
+<null>true</null>
+<pk>false</pk>
+<type>uint</type>
+<visiblegrid>false</visiblegrid>
+<relation>
+<table>partidas</table>
+<field>idpartida</field>
+<card>M1</card>
+<delC>true</delC>
+</relation>
+</field>
+</xupdate:insert-after>
+<xupdate:insert-after select="/TMD[TMD,1]/field[idpresupuesto]" >
+<field>
+<name>ordenpartida</name>
+<!--Orden de la partida(a la que pertenece la línea) en el capítulo--><alias>QT_TRANSLATE_NOOP(&quot;MetaData&quot;,&quot;Orden capítulo&quot;)</alias>
+<null>true</null>
+<pk>false</pk>
+<type>uint</type>
+</field>
+</xupdate:insert-after>
+</xupdate:modifications>

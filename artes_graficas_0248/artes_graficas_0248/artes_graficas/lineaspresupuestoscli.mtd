@@ -1,0 +1,98 @@
+<xupdate:modifications>
+<xupdate:update select="/TMD[TMD,1]/field[cantidad]/partD[partD,1]/text()[1]" >0</xupdate:update>
+<xupdate:insert-after select="/TMD[TMD,1]/field[idlinea]/visiblegrid[visiblegrid,1]" >
+<relation>
+<table>productoslp</table>
+<field>idlinea</field>
+<card>1M</card>
+</relation>
+</xupdate:insert-after>
+<xupdate:insert-after select="/TMD[TMD,1]/field[idlinea]/relation[productoslp,idlinea]" >
+<relation>
+<table>itinerarioslp</table>
+<field>idlinea</field>
+<card>1M</card>
+</relation>
+</xupdate:insert-after>
+<xupdate:insert-after select="/TMD[TMD,1]/field[idlinea]/relation[itinerarioslp,idlinea]" >
+<relation>
+<table>paramlibro</table>
+<field>idlinea</field>
+<card>1M</card>
+</relation>
+</xupdate:insert-after>
+<xupdate:insert-after select="/TMD[TMD,1]/field[idlinea]/relation[paramlibro,idlinea]" >
+<relation>
+<table>paramiptico</table>
+<field>idlinea</field>
+<card>1M</card>
+</relation>
+</xupdate:insert-after>
+<xupdate:insert-after select="/TMD[TMD,1]/field[idlinea]/relation[paramiptico,idlinea]" >
+<relation>
+<table>paramtaco</table>
+<field>idlinea</field>
+<card>1M</card>
+</relation>
+</xupdate:insert-after>
+<xupdate:insert-after select="/TMD[TMD,1]/field[idpresupuesto]" >
+<field>
+<name>aprobado</name>
+<!--Aprobado--><alias>QT_TRANSLATE_NOOP(&quot;MetaData&quot;,&quot;Aprobado&quot;)</alias>
+<null>true</null>
+<pk>false</pk>
+<type>bool</type>
+</field>
+</xupdate:insert-after>
+<xupdate:insert-after select="/TMD[TMD,1]/field[recargo]" >
+<field>
+<name>xmlparametros</name>
+<!--XML que contiene los parámetros y variantes--><alias>QT_TRANSLATE_NOOP(&quot;MetaData&quot;,&quot;Parámetros&quot;)</alias>
+<null>true</null>
+<pk>false</pk>
+<type>stringlist</type>
+</field>
+</xupdate:insert-after>
+<xupdate:insert-after select="/TMD[TMD,1]/field[xmlparametros]" >
+<field>
+<name>costeprod</name>
+<alias>QT_TRANSLATE_NOOP(&quot;MetaData&quot;,&quot;Coste&quot;)</alias>
+<null>true</null>
+<pk>false</pk>
+<type>double</type>
+<partI>8</partI>
+<partD>0</partD>
+</field>
+</xupdate:insert-after>
+<xupdate:insert-after select="/TMD[TMD,1]/field[costeprod]" >
+<field>
+<name>porbeneficio</name>
+<alias>QT_TRANSLATE_NOOP(&quot;MetaData&quot;,&quot;%Beneficio&quot;)</alias>
+<null>true</null>
+<pk>false</pk>
+<type>double</type>
+<partI>3</partI>
+<partD>2</partD>
+</field>
+</xupdate:insert-after>
+<xupdate:insert-after select="/TMD[TMD,1]/field[porbeneficio]" >
+<field>
+<name>refcliente</name>
+<alias>QT_TRANSLATE_NOOP(&quot;MetaData&quot;,&quot;Ref.Cliente&quot;)</alias>
+<null>true</null>
+<pk>false</pk>
+<type>string</type>
+<length>30</length>
+</field>
+</xupdate:insert-after>
+<xupdate:insert-after select="/TMD[TMD,1]/field[porcomision]" >
+<field>
+<name>idlineamatriz</name>
+<alias>QT_TRANSLATE_NOOP(&quot;MetaData&quot;,&quot;Línea matriz&quot;)</alias>
+<null>true</null>
+<pk>false</pk>
+<type>uint</type>
+<visiblegrid>false</visiblegrid>
+</field>
+</xupdate:insert-after>
+</xupdate:modifications>

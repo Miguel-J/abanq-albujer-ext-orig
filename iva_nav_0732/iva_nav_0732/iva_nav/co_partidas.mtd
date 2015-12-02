@@ -1,0 +1,34 @@
+<xupdate:modifications>
+<xupdate:update select="/TMD[TMD,1]/field[codsubcuenta]/null[null,1]/text()[1]" >true</xupdate:update>
+<xupdate:update select="/TMD[TMD,1]/field[idsubcuenta]/null[null,1]/text()[1]" >true</xupdate:update>
+<xupdate:insert-after select="/TMD[TMD,1]/field[tasaconv]" >
+<field>
+<name>codimpuesto</name>
+<alias>QT_TRANSLATE_NOOP(&quot;MetaData&quot;,&quot;G.IVA Producto&quot;)</alias>
+<null>true</null>
+<pk>false</pk>
+<type>string</type>
+<length>10</length>
+<relation>
+<table>impuestos</table>
+<field>codimpuesto</field>
+<card>M1</card>
+</relation>
+</field>
+</xupdate:insert-after>
+<xupdate:insert-after select="/TMD[TMD,1]/field[codimpuesto]" >
+<field>
+<name>codgrupoivaneg</name>
+<alias>QT_TRANSLATE_NOOP(&quot;MetaData&quot;,&quot;G.IVA Negocio&quot;)</alias>
+<null>true</null>
+<pk>false</pk>
+<type>string</type>
+<length>10</length>
+<relation>
+<table>gruposcontablesivaneg</table>
+<field>codgrupoivaneg</field>
+<card>M1</card>
+</relation>
+</field>
+</xupdate:insert-after>
+</xupdate:modifications>

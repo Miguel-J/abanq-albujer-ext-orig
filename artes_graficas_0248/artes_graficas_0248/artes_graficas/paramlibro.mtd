@@ -1,0 +1,357 @@
+<!DOCTYPE TMD>
+<TMD>
+    <name>paramlibro</name>
+	<!--Parámetros de ípticos-->
+	<alias>QT_TRANSLATE_NOOP("MetaData","Parámetros de libros")</alias>
+    <field>
+        <name>id</name>
+		<!--Identificador interno de la tabla-->        <alias>QT_TRANSLATE_NOOP("MetaData","Identificador")</alias>
+        <null>false</null>
+        <pk>true</pk>
+        <type>serial</type>
+        <visiblegrid>false</visiblegrid>
+		
+		<relation>
+			<table>grupospliegolibro</table>
+			<field>idgrupo</field>
+			<card>1M</card>
+		</relation>
+		
+		<relation>
+			<table>trabexternolibro</table>
+			<field>idparamlibro</field>
+			<card>1M</card>
+		</relation>
+		
+		<relation>
+			<table>paramenvio</table>
+			<field>idparamlibro</field>
+			<card>1M</card>
+		</relation>
+
+		<relation>
+			<table>paramtareamanual</table>
+			<field>idparamlibro</field>
+			<card>1M</card>
+		</relation>
+    </field>
+    <field>
+		<name>idproducto</name>
+		<!--Producto asociado-->
+		<alias>QT_TRANSLATE_NOOP("MetaData","Producto")</alias>
+		<null>true</null>
+		<pk>false</pk>
+		<type>uint</type>
+		
+		<relation>
+			<table>productoslp</table>
+			<field>idproducto</field>
+			<card>M1</card>
+			<delC>true</delC>
+		</relation>
+	</field>
+	<field>
+		<name>idlinea</name>
+		<!--Línea de presupuesto asociada-->
+		<alias>QT_TRANSLATE_NOOP("MetaData","Línea de presupuesto asociada")</alias>
+		<null>false</null>
+		<pk>false</pk>
+		<type>uint</type>
+		
+		<relation>
+			<table>lineaspresupuestoscli</table>
+			<field>idlinea</field>
+			<card>M1</card>
+			<delC>true</delC>
+		</relation>
+	</field>
+	<field>
+        <name>xml</name>
+		<alias>QT_TRANSLATE_NOOP("MetaData","XML")</alias>
+        <null>true</null>
+        <pk>false</pk>
+        <type>stringlist</type>
+        <length>12</length>
+    </field>
+     <field>
+        <name>descripcion</name>
+		<alias>QT_TRANSLATE_NOOP("MetaData","Descripción")</alias>
+        <null>true</null>
+        <pk>false</pk>
+        <type>string</type>
+        <length>100</length>
+    </field>
+    <field>
+        <name>numcopias</name>
+		<alias>QT_TRANSLATE_NOOP("MetaData","Copias")</alias>
+        <null>true</null>
+        <pk>false</pk>
+        <type>uint</type>
+    </field>
+    <field>
+        <name>numpaginas</name>
+		<alias>QT_TRANSLATE_NOOP("MetaData","Páginas")</alias>
+        <null>true</null>
+        <pk>false</pk>
+        <type>uint</type>
+		<editable>false</editable>
+    </field>
+    <field>
+        <name>altocerrado</name>
+		<alias>QT_TRANSLATE_NOOP("MetaData","Alto")</alias>
+        <null>true</null>
+        <pk>false</pk>
+        <type>double</type>
+        <partI>6</partI>
+        <partD>2</partD>
+    </field>
+	<field>
+        <name>anchocerrado</name>
+		<alias>QT_TRANSLATE_NOOP("MetaData","Ancho")</alias>
+        <null>true</null>
+        <pk>false</pk>
+        <type>double</type>
+        <partI>6</partI>
+        <partD>2</partD>
+    </field>
+	<field>
+        <name>altoabierto</name>
+		<alias>QT_TRANSLATE_NOOP("MetaData","Alto")</alias>
+        <null>true</null>
+        <pk>false</pk>
+        <type>double</type>
+        <partI>6</partI>
+        <partD>2</partD>
+		<editable>false</editable>
+    </field>
+	<field>
+        <name>anchoabierto</name>
+		<alias>QT_TRANSLATE_NOOP("MetaData","Ancho")</alias>
+        <null>true</null>
+        <pk>false</pk>
+        <type>double</type>
+        <partI>6</partI>
+        <partD>2</partD>
+		<editable>false</editable>
+    </field>
+	
+	<field>
+        <name>anchofijo</name>
+		<alias>QT_TRANSLATE_NOOP("MetaData","Apaisado")</alias>
+        <null>true</null>
+        <pk>false</pk>
+        <type>bool</type>
+        <default>false</default>
+    </field>
+	
+	<field>
+        <name>gramaje</name>
+        <alias>QT_TRANSLATE_NOOP("MetaData","Gramaje (g)")</alias>
+        <null>true</null>
+        <pk>false</pk>
+        <type>uint</type>
+
+		<relation>
+            <table>gramajes</table>
+            <field>gramaje</field>
+            <card>M1</card>
+        </relation>
+    </field>
+	<field>
+        <name>codcalidad</name>
+        <alias>QT_TRANSLATE_NOOP("MetaData","Calidad")</alias>
+        <null>true</null>
+        <pk>false</pk>
+        <type>string</type>
+        <length>25</length>
+        <relation>
+            <table>calidadespapel</table>
+            <field>codcalidad</field>
+            <card>M1</card>
+        </relation>
+    </field>
+
+	<field>
+		<name>codmarcapapel</name>
+		<!-- Marca por defecto-->
+		<alias>QT_TRANSLATE_NOOP("MetaData","Marca")</alias>
+		<null>true</null>
+		<pk>false</pk>
+		<type>string</type>
+		<length>25</length>
+
+		<relation>
+			<table>marcaspapel</table>
+			<field>codmarcapapel</field>
+			<card>M1</card>
+		</relation>
+	</field>
+	
+	<field>
+        <name>ancholomo</name>
+		<alias>QT_TRANSLATE_NOOP("MetaData","Ancho lomo")</alias>
+        <null>true</null>
+        <pk>false</pk>
+        <type>double</type>
+        <partI>6</partI>
+        <partD>2</partD>
+		<editable>false</editable>
+    </field>
+	
+	<field>
+        <name>encuadernacion</name>
+		<alias>QT_TRANSLATE_NOOP("MetaData","Encuadernación")</alias>
+        <null>true</null>
+        <pk>false</pk>
+        <type>string</type>
+        <length>15</length>
+        <optionslist>Rústica,Fresado,Grapado,Wire-o</optionslist>
+		<default>Rústica</default>
+    </field>
+	
+	<field>
+        <name>grapado</name>
+		<alias>QT_TRANSLATE_NOOP("MetaData","Grapado")</alias>
+        <null>true</null>
+        <pk>false</pk>
+        <type>string</type>
+        <length>10</length>
+    </field>
+	
+	<field>
+        <name>totalpliegos</name>
+		<alias>QT_TRANSLATE_NOOP("MetaData","Total pliegos")</alias>
+        <null>true</null>
+        <pk>false</pk>
+        <type>uint</type>
+		<editable>false</editable>
+    </field>
+	
+	<field>
+        <name>pesopliegos</name>
+		<alias>QT_TRANSLATE_NOOP("MetaData","Peso pliegos")</alias>
+        <null>true</null>
+        <pk>false</pk>
+        <type>double</type>
+        <partI>6</partI>
+        <partD>2</partD>
+		<editable>false</editable>
+    </field>
+	<field>
+        <name>diseno</name>
+		<alias>QT_TRANSLATE_NOOP("MetaData","Evaluar diseño")</alias>
+        <null>true</null>
+        <pk>false</pk>
+        <type>bool</type>
+		<default>false</default>
+    </field>
+	<field>
+        <name>altotapa</name>
+		<alias>QT_TRANSLATE_NOOP("MetaData","Alto")</alias>
+        <null>true</null>
+        <pk>false</pk>
+        <type>double</type>
+        <partI>6</partI>
+        <partD>2</partD>
+		<editable>false</editable>
+    </field>
+	<field>
+        <name>anchotapa</name>
+		<alias>QT_TRANSLATE_NOOP("MetaData","Ancho")</alias>
+        <null>true</null>
+        <pk>false</pk>
+        <type>double</type>
+        <partI>6</partI>
+        <partD>2</partD>
+		<editable>false</editable>
+    </field>
+	<field>
+        <name>gramajetapa</name>
+        <alias>QT_TRANSLATE_NOOP("MetaData","Gramaje (g)")</alias>
+        <null>true</null>
+        <pk>false</pk>
+        <type>uint</type>
+
+		<relation>
+            <table>gramajes</table>
+            <field>gramaje</field>
+            <card>M1</card>
+        </relation>
+    </field>
+    <field>
+        <name>codcalidadtapa</name>
+        <alias>QT_TRANSLATE_NOOP("MetaData","Calidad")</alias>
+        <null>true</null>
+        <pk>false</pk>
+        <type>string</type>
+        <length>25</length>
+        <relation>
+            <table>calidadespapel</table>
+            <field>codcalidad</field>
+            <card>M1</card>
+        </relation>
+    </field>
+	
+	<field>
+		<name>codmarcapapeltapa</name>
+		<!-- Marca por defecto-->
+		<alias>QT_TRANSLATE_NOOP("MetaData","Marca")</alias>
+		<null>true</null>
+		<pk>false</pk>
+		<type>string</type>
+		<length>25</length>
+
+		<relation>
+			<table>marcaspapel</table>
+			<field>codmarcapapel</field>
+			<card>M1</card>
+		</relation>
+	</field>
+	
+	<field>
+        <name>disenotapa</name>
+		<alias>QT_TRANSLATE_NOOP("MetaData","Evaluar diseño")</alias>
+        <null>true</null>
+        <pk>false</pk>
+        <type>bool</type>
+		<default>false</default>
+    </field>
+	
+	<field>
+        <name>colorestapa</name>
+		<alias>QT_TRANSLATE_NOOP("MetaData","Colores")</alias>
+        <null>true</null>
+        <pk>false</pk>
+        <type>string</type>
+        <length>20</length>
+		<optionslist>4+4,4+0,1+1,1+0,Otros</optionslist>
+		<default>4+0</default>
+    </field>
+
+	<field>
+        <name>ignorarenvio</name>
+		<alias>QT_TRANSLATE_NOOP("MetaData","Ignorar envío")</alias>
+        <null>true</null>
+        <pk>false</pk>
+        <type>bool</type>
+        <default>false</default>
+    </field>
+
+	<field>
+        <name>sintapa</name>
+		<alias>QT_TRANSLATE_NOOP("MetaData","Sin tapa")</alias>
+        <null>false</null>
+        <pk>false</pk>
+        <type>bool</type>
+        <default>false</default>
+    </field>
+    
+    <field>
+        <name>idoriginal</name>
+        <!--Id del libro original, si es copiado-->
+		<alias>QT_TRANSLATE_NOOP("MetaData","Id.Original")</alias>
+        <null>true</null>
+        <pk>false</pk>
+        <type>uint</type>
+    </field>
+</TMD>

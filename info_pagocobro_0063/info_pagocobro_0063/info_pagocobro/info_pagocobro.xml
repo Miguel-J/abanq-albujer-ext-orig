@@ -1,0 +1,19 @@
+<flpatch:modifications name="info_pagocobro" >
+    <flpatch:patchXml path="facturacion/informes/" name="flfactinfo.xml" />
+    <flpatch:addFile path="facturacion/informes/forms/" name="i_prevcobros.ui" />
+    <flpatch:addFile path="facturacion/informes/queries/" name="i_prevcobros.qry" />
+    <flpatch:addFile path="facturacion/informes/reports/" name="i_prevcobros.kut" />
+    <flpatch:addFile path="facturacion/informes/scripts/" name="i_masterprevcobros.qs" />
+    <flpatch:addFile path="facturacion/informes/tables/" name="i_prevcobros.mtd" />
+    <flpatch:patchXml path="facturacion/informes/forms/" name="flfactinfo.ui" />
+    <flpatch:addFile path="facturacion/informes/scripts/" name="i_prevcobros.qs" />
+    <flpatch:addFile path="facturacion/informes/queries/" name="i_prevpagos.qry" />
+    <flpatch:addFile path="facturacion/informes/reports/" name="i_prevpagos.kut" />
+    <flpatch:addFile path="facturacion/informes/scripts/" name="i_masterprevpagos.qs" />
+    <flpatch:addFile path="facturacion/informes/scripts/" name="i_prevpagos.qs" />
+    <flpatch:addFile path="facturacion/informes/tables/" name="i_prevpagos.mtd" />
+    <flpatch:addFile path="facturacion/informes/forms/" name="i_prevpagos.ui" />
+    <flpatch:patchScript path="facturacion/informes/scripts/" name="flfactinfo.qs" />
+    <flpatch:addFile path="facturacion/informes/queries/" name="i_prevpagos_fp.qry" />
+    <flpatch:addFile path="facturacion/informes/queries/" name="i_prevcobros_fp.qry" />
+</flpatch:modifications>

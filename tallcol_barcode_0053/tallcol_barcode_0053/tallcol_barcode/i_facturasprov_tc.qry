@@ -1,0 +1,64 @@
+<!DOCTYPE QRY>
+<QRY>
+	<name>facturasprov</name>
+
+	<tables>empresa,facturasprov</tables>
+
+	<group>
+		<level>0</level>
+		<field>facturasprov.idfactura</field>
+	</group>
+
+	<group>
+		<level>1</level>
+		<field>lineasfacturasprov.referencia</field>
+	</group>
+	
+	<group>
+		<level>2</level>
+		<field>lineasfacturasprov.pvpunitario</field>
+	</group>
+
+	<group>
+		<level>3</level>
+		<field>lineasfacturasprov.dtopor</field>
+	</group>
+
+	
+
+	<select>
+		facturasprov.idfactura, facturasprov.codigo, facturasprov.codserie,
+		facturasprov.fecha, facturasprov.total,
+		facturasprov.totaliva, facturasprov.totalrecargo,
+		facturasprov.irpf, facturasprov.totalirpf,
+		facturasprov.neto, facturasprov.coddivisa,
+		facturasprov.codejercicio, facturasprov.codpago,
+		facturasprov.codalmacen, facturasprov.codproveedor,
+		facturasprov.nombre, facturasprov.cifnif,
+		facturasprov.tasaconv,
+		dirproveedores.direccion,dirproveedores.codpostal, dirproveedores.provincia,dirproveedores.ciudad,
+		dirproveedores.apartado, dirproveedores.codpais, paises.nombre,
+		lineasfacturasprov.referencia, lineasfacturasprov.idfactura,
+		lineasfacturasprov.descripcion, sum(lineasfacturasprov.cantidad),
+		lineasfacturasprov.pvpunitario, lineasfacturasprov.dtopor, sum(lineasfacturasprov.pvptotal),
+		lineasfacturasprov.codimpuesto, lineasfacturasprov.iva,
+		lineasfacturasprov.color, articulosprov.refproveedor,
+		empresa.nombre, empresa.cifnif,
+		empresa.direccion, empresa.logo,
+		empresa.codpostal, empresa.ciudad,
+		empresa.provincia, empresa.apartado,
+		empresa.codpais
+	</select>
+
+	<from>
+		empresa,facturasprov INNER JOIN lineasfacturasprov ON facturasprov.idfactura = lineasfacturasprov.idfactura  LEFT OUTER JOIN dirproveedores ON facturasprov.codproveedor = dirproveedores.codproveedor LEFT OUTER JOIN articulosprov ON articulosprov.referencia = lineasfacturasprov.referencia
+		LEFT OUTER JOIN paises ON paises.codpais = dirproveedores.codpais
+	</from>
+
+	<where>
+	</where>
+	
+	<order>
+		lineasfacturasprov.referencia,lineasfacturasprov.pvpunitario,lineasfacturasprov.dtopor
+	</order>
+</QRY>

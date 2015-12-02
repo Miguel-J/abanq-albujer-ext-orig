@@ -1,0 +1,22 @@
+<?xml version='1.0' encoding='UTF-8'?>
+<!DOCTYPE KugarTemplate SYSTEM "kugartemplate.dtd">
+<KugarTemplate BottomMargin="0" LeftMargin="0" PageOrientation="0" PageSize="0" RightMargin="0" TopMargin="0">
+	
+	<Detail Cols="2" Rows="4" Height="227" Level='0'>
+		<Field BackgroundColor='255,255,255' BorderColor='0,0,0' BorderStyle='1' BorderWidth='0' CodBarType='Code128' CommaSeparator='44' Currency='32' DataType='6' DateFormat='11' Field='lotesstock.codlote' FontFamily='Arial Narrow' FontItalic='0' FontSize='10' FontWeight='50' ForegroundColor='0,0,0' HAlignment='0' Height='55' NegValueColor='0,0,0' Precision='2' Text='[lotesstock.codlote]' VAlignment='1' Width='270' WordWrap='0' X='30' Y='30'></Field>
+		
+		<Field WordWrap='1' ChangeHeight="1" BackgroundColor='255,255,255' BorderColor='0,0,0' BorderStyle='0' BorderWidth='1' CommaSeparator='44' Currency='32' DataType='0' DateFormat='11' Field='lineaspedidoscli.descripcion' FontFamily='Arial Narrow' FontItalic='0' FontSize='12' FontWeight='50' ForegroundColor='0,0,0' HAlignment='0' Height='17' NegValueColor='0,0,0' Precision='2' Text='[lineaspedidoscli.descripcion]' VAlignment='1' Width='270' X='30' Y='82'></Field>
+		
+		<Label BackgroundColor='255,255,255' BorderColor='0,0,0' BorderStyle='0' BorderWidth='1' FontFamily='Arial Narrow' FontItalic='0' FontSize='12' FontWeight='50' ForegroundColor='0,0,0' HAlignment='0' Height='17' Text='RUTA:' VAlignment='1' Width='50' WordWrap='0' X='30' Y='122'></Label>
+		<Field BackgroundColor='255,255,255' BorderColor='0,0,0' BorderStyle='0' BorderWidth='1' CommaSeparator='44' Currency='32' DataType='0' DateFormat='11' Field='pr_ordenesproduccion.codruta' FontFamily='Arial Narrow' FontItalic='0' FontSize='12' FontWeight='50' ForegroundColor='0,0,0' HAlignment='0' Height='17' NegValueColor='0,0,0' Precision='2' Text='[pr_ordenesproduccion.codruta]' VAlignment='1' Width='220' WordWrap='0' X='80' Y='122'></Field>
+	
+		<Label BackgroundColor='255,255,255' BorderColor='0,0,0' BorderStyle='0' BorderWidth='1' FontFamily='Arial Narrow' FontItalic='0' FontSize='11' FontWeight='50' ForegroundColor='0,0,0' HAlignment='0' Height='17' Text='O. PROD.:' VAlignment='1' Width='60' WordWrap='0' X='30' Y='144'></Label>
+		<Field BackgroundColor='255,255,255' BorderColor='0,0,0' BorderStyle='0' BorderWidth='1' CommaSeparator='44' Currency='32' DataType='0' DateFormat='11' Field='pr_ordenesproduccion.codorden' FontFamily='Arial Narrow' FontItalic='0' FontSize='11' FontWeight='50' ForegroundColor='0,0,0' HAlignment='0' Height='17' NegValueColor='0,0,0' Precision='2' Text='[pr_ordenesproduccion.codorden]' VAlignment='1' Width='85' WordWrap='0' X='90' Y='144'></Field>
+		
+		<Label BackgroundColor='255,255,255' BorderColor='0,0,0' BorderStyle='0' BorderWidth='1' FontFamily='Arial Narrow' FontItalic='0' FontSize='11' FontWeight='50' ForegroundColor='0,0,0' HAlignment='0' Height='17' Text='O. CORTE.:' VAlignment='1' Width='60' WordWrap='0' X='30' Y='164'></Label>
+		<Field BackgroundColor='255,255,255' BorderColor='0,0,0' BorderStyle='0' BorderWidth='1' CommaSeparator='44' Currency='32' DataType='0' DateFormat='11' Field='pr_ordenesproduccion.codordencorte' FontFamily='Arial Narrow' FontItalic='0' FontSize='11' FontWeight='50' ForegroundColor='0,0,0' HAlignment='0' Height='17' NegValueColor='0,0,0' Precision='2' Text='[pr_ordenesproduccion.codordencorte]' VAlignment='1' Width='85' WordWrap='0' X='90' Y='164'></Field>
+	
+		<Line Color='100,100,100' Style='1' Width='1' X1='30' X2='300' Y1='182' Y2='182'></Line>
+		<Field WordWrap='1' ChangeHeight="1" BackgroundColor='255,255,255' BorderColor='0,0,0' BorderStyle='0' BorderWidth='1' CommaSeparator='44' Currency='32' DataType='0' DateFormat='11' Field='pedidoscli.observaciones' FontFamily='Arial Narrow' FontItalic='0' FontSize='10' FontWeight='50' ForegroundColor='0,0,0' HAlignment='0' Height='17' NegValueColor='0,0,0' Precision='2' Text='[pedidoscli.observaciones]' VAlignment='1' Width='270' X='30' Y='184'></Field>
+	</Detail>
+</KugarTemplate>

@@ -1,0 +1,14 @@
+<xupdate:modifications>
+<xupdate:insert-after select="/ACTIONS[ACTIONS,1]/action[co_i_facturasrec]" >
+<action>
+<name>co_i_cuentaexp</name>
+<description>QT_TRANSLATE_NOOP(&quot;MetaData&quot;,&quot;&quot;)</description>
+<alias>QT_TRANSLATE_NOOP(&quot;MetaData&quot;,&quot;Cuenta de explotación&quot;)</alias>
+<scriptform>co_i_mastercuentaexp</scriptform>
+<scriptformrecord>co_i_cuentaexp</scriptformrecord>
+<table>co_i_cuentaexp</table>
+<form>co_i_master</form>
+<formrecord>co_i_cuentaexp</formrecord>
+</action>
+</xupdate:insert-after>
+</xupdate:modifications>

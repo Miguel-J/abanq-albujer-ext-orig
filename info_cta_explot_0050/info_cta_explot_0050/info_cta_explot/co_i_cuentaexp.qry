@@ -1,0 +1,29 @@
+<!DOCTYPE QRY>
+<QRY>
+	<name>co_i_cuentaexp</name>
+	
+	<tables>empresa,co_i_cuentaexp_buffer</tables>
+	
+	<group>
+		<level>0</level>
+		<field>e1.orden</field>
+	</group>
+	
+	<select>
+		empresa.nombre,				
+		buf.codcuenta1, buf.desccuenta1,
+		buf.codcuenta2, buf.desccuenta2,
+		buf.sumaact, buf.poract,
+		buf.sumaant, buf.porant,
+		buf.sumatot, buf.portot,
+		e1.orden
+	</select>
+	
+	<from>
+		empresa,
+		co_i_cuentaexp_buffer buf INNER JOIN co_codcuentaexp1 e1 ON buf.codcuenta1 = e1.codigo
+	</from>
+	
+	<where>
+	</where>
+</QRY>

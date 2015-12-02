@@ -1,0 +1,29 @@
+<xupdate:modifications>
+<xupdate:insert-after select="/UI[UI,1]/actions[actions,1]/action[tesoreraRecibosAction]" >
+<action>
+<property name="name" >
+<cstring>i_tradetiquetasinforme</cstring>
+</property>
+<property name="text" >
+<string>Etiquetas informe</string>
+</property>
+<property name="menuText" >
+<string>&amp;Etiquetas informe</string>
+</property>
+</action>
+</xupdate:insert-after>
+<xupdate:insert-after select="/UI[UI,1]/connections[connections,1]/connection[i_reciboscli,activated(),FLWidgetApplication,openDefaultForm()]" >
+<connection>
+<sender>i_tradetiquetasinforme</sender>
+<signal>activated()</signal>
+<receiver>FLWidgetApplication</receiver>
+<slot>openDefaultForm()</slot>
+</connection>
+</xupdate:insert-after>
+<xupdate:update select="/UI[UI,1]/menubar[menubar,1]/property[geometry]/rect[rect,1]/height[height,1]/text()[1]" >23</xupdate:update>
+<xupdate:insert-after select="/UI[UI,1]/menubar[menubar,1]/item[Almacn]" >
+<item name="Traducciones" text="&amp;Traducciones" >
+<action name="i_tradetiquetasinforme" />
+</item>
+</xupdate:insert-after>
+</xupdate:modifications>

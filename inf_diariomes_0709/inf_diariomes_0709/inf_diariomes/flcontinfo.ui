@@ -1,0 +1,32 @@
+<xupdate:modifications>
+<xupdate:update select="/UI[UI,1]/actions[actions,1]/action[co_i_cuentasanuales]/property[iconSet]/iconset[iconset,1]/text()[1]" >image49805</xupdate:update>
+<xupdate:update select="/UI[UI,1]/actions[actions,1]/action[co_i_patrimonio]/property[iconSet]/iconset[iconset,1]/text()[1]" >image49479</xupdate:update>
+<xupdate:insert-after select="/UI[UI,1]/actions[actions,1]/action[co_i_patrimonio]" >
+<action>
+<property name="name" >
+<cstring>co_i_diariomes</cstring>
+</property>
+<property name="text" >
+<string>Libro Diario por meses</string>
+</property>
+<property name="menuText" >
+<string>Libro Diario por &amp;meses</string>
+</property>
+<property name="accel" >
+<string>Ctrl+M</string>
+</property>
+</action>
+</xupdate:insert-after>
+<xupdate:insert-after select="/UI[UI,1]/connections[connections,1]/connection[co_i_patrimonio,activated(),FLWidgetApplication,openDefaultForm()]" >
+<connection>
+<sender>co_i_diariomes</sender>
+<signal>activated()</signal>
+<receiver>FLWidgetApplication</receiver>
+<slot>openDefaultForm()</slot>
+</connection>
+</xupdate:insert-after>
+<xupdate:insert-after select="/UI[UI,1]/menubar[menubar,1]/item[Listados]/action[co_i_mayor]" >
+<action name="co_i_diariomes" />
+</xupdate:insert-after>
+<xupdate:update select="/UI[UI,1]/menubar[menubar,1]/property[geometry]/rect[rect,1]/height[height,1]/text()[1]" >23</xupdate:update>
+</xupdate:modifications>

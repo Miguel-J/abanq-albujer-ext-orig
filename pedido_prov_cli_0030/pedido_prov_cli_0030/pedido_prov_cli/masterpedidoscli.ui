@@ -1,0 +1,8 @@
+<xupdate:modifications>
+<xupdate:insert-after select="/UI[UI,1]/widget[QWidget,FLWidgetMasterTable]/vbox[vbox,1]/widget[FLTableDB,tableDBRecords]/property[name]" >
+<property name="functionGetColor" >
+<string>formpedidoscli.colorEstado</string>
+</property>
+</xupdate:insert-after>
+<xupdate:delete select="/UI[UI,1]/customwidgets[customwidgets,1]" />
+</xupdate:modifications>

@@ -1,0 +1,16 @@
+<xupdate:modifications>
+<xupdate:insert-after select="/TMD[TMD,1]/field[id]/relation[ejercicios,idempresa]" >
+<relation>
+<table>tiposcontrato</table>
+<field>idempresa</field>
+<card>1M</card>
+</relation>
+</xupdate:insert-after>
+<xupdate:insert-after select="/TMD[TMD,1]/field[id]/relation[tiposcontrato,idempresa]" >
+<relation>
+<table>contratos</table>
+<field>idempresa</field>
+<card>1M</card>
+</relation>
+</xupdate:insert-after>
+</xupdate:modifications>

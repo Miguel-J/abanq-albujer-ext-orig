@@ -1,0 +1,18 @@
+<xupdate:modifications>
+<xupdate:insert-after select="/TMD[TMD,1]/field[codagencia]/relation[sedesagencia,codagencia]" >
+<relation>
+<table>albaranescli</table>
+<field>codagencia</field>
+<card>1M</card>
+</relation>
+</xupdate:insert-after>
+<xupdate:insert-after select="/TMD[TMD,1]/field[descripcion]" >
+<field>
+<name>urlconsulta</name>
+<alias>QT_TRANSLATE_NOOP(&quot;MetaData&quot;,&quot;U.R.L.&quot;)</alias>
+<null>true</null>
+<pk>false</pk>
+<type>stringlist</type>
+</field>
+</xupdate:insert-after>
+</xupdate:modifications>

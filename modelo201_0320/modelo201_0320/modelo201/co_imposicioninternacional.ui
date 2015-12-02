@@ -1,0 +1,86 @@
+<!DOCTYPE UI><UI version="3.3" stdsetdef="1">
+<class>co_imposicioninternacional</class>
+<widget class="QWidget">
+    <property name="name">
+        <cstring>co_imposicioninternacional</cstring>
+    </property>
+    <property name="geometry">
+        <rect>
+            <x>0</x>
+            <y>0</y>
+            <width>573</width>
+            <height>50</height>
+        </rect>
+    </property>
+    <property name="caption">
+        <string>Imposición internacional</string>
+    </property>
+    <vbox>
+        <property name="name">
+            <cstring>unnamed</cstring>
+        </property>
+        <widget class="QLayoutWidget">
+            <property name="name">
+                <cstring>layout451</cstring>
+            </property>
+            <hbox>
+                <property name="name">
+                    <cstring>unnamed</cstring>
+                </property>
+                <widget class="FLFieldDB">
+                    <property name="name">
+                        <cstring>fdbBase</cstring>
+                    </property>
+                    <property name="minimumSize">
+                        <size>
+                            <width>270</width>
+                            <height>0</height>
+                        </size>
+                    </property>
+                    <property name="maximumSize">
+                        <size>
+                            <width>270</width>
+                            <height>32767</height>
+                        </size>
+                    </property>
+                    <property name="fieldName">
+                        <string>base</string>
+                    </property>
+                </widget>
+                <spacer>
+                    <property name="name">
+                        <cstring>spacer668</cstring>
+                    </property>
+                    <property name="orientation">
+                        <enum>Horizontal</enum>
+                    </property>
+                    <property name="sizeType">
+                        <enum>Expanding</enum>
+                    </property>
+                    <property name="sizeHint">
+                        <size>
+                            <width>100</width>
+                            <height>20</height>
+                        </size>
+                    </property>
+                </spacer>
+                <widget class="FLFieldDB">
+                    <property name="name">
+                        <cstring>fdbParticipacion</cstring>
+                    </property>
+                    <property name="fieldName">
+                        <string>participacion</string>
+                    </property>
+                    <property name="foreignField">
+                        <string></string>
+                    </property>
+                    <property name="fieldRelation">
+                        <string></string>
+                    </property>
+                </widget>
+            </hbox>
+        </widget>
+    </vbox>
+</widget>
+<layoutdefaults spacing="6" margin="11"/>
+</UI>

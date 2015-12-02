@@ -1,0 +1,57 @@
+<xupdate:modifications>
+<xupdate:update select="/UI[UI,1]/widget[QWidget,masterremesasprov]/vbox[vbox,1]/widget[QFrame,barraBotones]/hbox[hbox,1]/spacer[Spacer2]/property[sizeHint]/size[size,1]/width[width,1]/text()[1]" >70</xupdate:update>
+<xupdate:append-first select="/UI[UI,1]/images[images,1]" >
+<image name="banesconfirmingimage56482" >
+<data format="XPM.GZ" length="3100" >789cbdd6594fdb401000e0f7fc0a2b7e43d510c7f6c656d5076e0809907053f5c1c79a231020e1aefadf3bbb33eb9090d8814ad5ca91beae673c3bbb8bbab8609decb5ad85c5caf0217ab84cace4221a580be9e3cdcdebcf5f3f7e57aaae63b9354b34ac7af55ba50a9b5662d9b55ae027be764b3bc8dd56766a41caded70ed0a9f68672bd16faec503bccbdadec3aa1797f4b3b0cd394f21d2b7b4ee4b3d7b5a3dc5d65bf1e4976433b424b651b941b6ecc8635ed38b7a71c7a899442bba39de45e558ebd544a7abfa99de60e9413dfd88ec852f07c5d3b9522a37c8e728af331ad77491ba369deb695315af0f7f7c899c832ed6b6de9055ea4dd33f669bfaec87e8d9d92f37c6f6c53ff0a39cf3f50ce841ffa94ff8e2c1c41be6187ec21b9e1345cedcbdcb1f6333b64bf928334f4b46fc9a1cfbe60a761a2bd4c8efc88e69fd832a2f9989c98fdb7c999e9779f9df1faceb5b35872ff137222f8fcde9353c1f91ed9e6bcbc18733fcfc852b8a1f6a1b1e7681f19f37e64c61c7fca9682e6dddcd4df9a31f76fd798fb1319f37e1e90331153bffcdcb45e69ccfd396167bc3e61ccf5ede4a6f907638aef8c9c91ff65fcaf0c60e313410c098e14e467324006e770019770053db8d6e306faf36400895fbc853b8ce88d3d3daca23403dc63ece043ac7a0698b73ffef664065ced308f988cbf051b4a3b89eb7e1f39fabd831867fb93f153323c4ea9bd074f6a37e6db4d5d436fac8a677899f6ed921a4cf400f7b220bab006f5fb0a6fc5d1857dc0ce8df71dfaea2ce26e2ce1b00b32500dcbe61da0d81558853558870dd8e4b1054d9855c3101f5e3b7eb18991dbd0ca2347a34d5f19cf003bb04bff0e7bd081eed44833f6e986bdcf0007700847b8ca0e1c17c6aad19a5c059cc0299c410d9c92481adb5037779cfe8661ed2e5660e38dac9746b7c0c3f7c6f6027c1079efcb323426cfc887bd28cab005c11c77735686104f849c8c9e3b431b77c79e1e3f4786169ea899d1a5195a3694dfad99195ad0b0edb29b5d90a18b27b3a0f2920cddd179fb4a06bacf9f19f43f511c4d3bfada6ff5cff7ca5f292d71fd</data>
+</image>
+</xupdate:append-first>
+<xupdate:insert-after select="/UI[UI,1]/widget[QWidget,masterremesasprov]/vbox[vbox,1]/widget[QFrame,barraBotones]/hbox[hbox,1]/spacer[Spacer2]" >
+<widget class="QPushButton" >
+<property name="name" >
+<cstring>tbnBanesto</cstring>
+</property>
+<property name="sizePolicy" >
+<sizepolicy>
+<hsizetype>1</hsizetype>
+<vsizetype>1</vsizetype>
+<horstretch>0</horstretch>
+<verstretch>0</verstretch>
+</sizepolicy>
+</property>
+<property name="minimumSize" >
+<size>
+<width>32</width>
+<height>32</height>
+</size>
+</property>
+<property name="maximumSize" >
+<size>
+<width>32</width>
+<height>32</height>
+</size>
+</property>
+<property name="focusPolicy" >
+<enum>NoFocus</enum>
+</property>
+<property name="text" >
+<string/>
+</property>
+<property name="iconSet" >
+<iconset>banesconfirmingimage56482</iconset>
+</property>
+<property name="toolTip" stdset="0" >
+<string>Volcar cuaderno Banesto Confirming</string>
+</property>
+<property name="whatsThis" stdset="0" >
+<string>Para volcar remesa a disco bajo la norma del cuaderno Banesto Confirming</string>
+</property>
+</widget>
+</xupdate:insert-after>
+<xupdate:delete select="/UI[UI,1]/includehints[includehints,1]/includehint[FLTableDB.h]" />
+<xupdate:append-first select="/UI[UI,1]/includehints[includehints,1]" >
+<includehint>fltabledb.h</includehint>
+</xupdate:append-first>
+<xupdate:insert-after select="/UI[UI,1]/widget[QWidget,masterremesasprov]" >
+<customwidgets/>
+</xupdate:insert-after>
+</xupdate:modifications>

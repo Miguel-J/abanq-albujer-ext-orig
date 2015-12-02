@@ -1,0 +1,10 @@
+<xupdate:modifications>
+<xupdate:insert-after select="/TMD[TMD,1]/field[idlinea]/visiblegrid[visiblegrid,1]" >
+<relation>
+<table>lineasserviciosclins</table>
+<field>idlineaservicio</field>
+<card>1M</card>
+</relation>
+</xupdate:insert-after>
+<xupdate:update select="/TMD[TMD,1]/field[numserie]/alias[alias,1]/text()[1]" >QT_TRANSLATE_NOOP(&quot;MetaData&quot;,&quot;Del artículo&quot;)</xupdate:update>
+</xupdate:modifications>

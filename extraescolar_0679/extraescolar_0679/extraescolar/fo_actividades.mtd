@@ -1,0 +1,93 @@
+<!DOCTYPE TMD>
+<TMD>
+	<name>fo_actividades</name>
+	<!--Actividades extraescolares-->
+	<alias>QT_TRANSLATE_NOOP("MetaData","Actividades extraescolares")</alias>
+
+	<field>
+		<name>codactividad</name>
+		<!--Código-->
+		<alias>QT_TRANSLATE_NOOP("MetaData","Código")</alias>
+		<null>false</null>
+		<pk>true</pk>
+		<type>string</type>
+		<length>25</length>
+		<relation>
+			<table>fo_alumnosactividad</table>
+			<field>codactividad</field>
+			<card>1M</card>
+		</relation>
+		
+		<relation>
+			<table>fo_saldotiquetactcli</table>
+			<field>codactividad</field>
+			<card>1M</card>
+		</relation>
+	</field>
+
+	<field>
+		<name>descripcion</name>
+		<alias>QT_TRANSLATE_NOOP("MetaData","Descripción")</alias>
+		<null>false</null>
+		<pk>false</pk>
+		<type>string</type>
+		<length>100</length>
+	</field>
+	
+	<field>
+		<name>refasistenciacon</name>
+		<alias>QT_TRANSLATE_NOOP("MetaData","Artículo asistencia")</alias>
+		<null>true</null>
+		<pk>false</pk>
+		<type>string</type>
+		<length>18</length>
+		
+		<relation>
+			<table>articulos</table>
+			<field>referencia</field>
+			<card>M1</card>
+		</relation>
+	</field>
+	<field>
+		<name>refnoasisprecon</name>
+		<alias>QT_TRANSLATE_NOOP("MetaData","Artículo no asistencia con preaviso")</alias>
+		<null>true</null>
+		<pk>false</pk>
+		<type>string</type>
+		<length>18</length>
+		
+		<relation>
+			<table>articulos</table>
+			<field>referencia</field>
+			<card>M1</card>
+		</relation>
+	</field>
+	<field>
+		<name>refnoasiscon</name>
+		<alias>QT_TRANSLATE_NOOP("MetaData","Artículo no asistencia sin preaviso")</alias>
+		<null>true</null>
+		<pk>false</pk>
+		<type>string</type>
+		<length>18</length>
+		
+		<relation>
+			<table>articulos</table>
+			<field>referencia</field>
+			<card>M1</card>
+		</relation>
+	</field>
+	<field>
+		<name>refasistenciaesp</name>
+		<alias>QT_TRANSLATE_NOOP("MetaData","Artículo asistencia esporádica")</alias>
+		<null>true</null>
+		<pk>false</pk>
+		<type>string</type>
+		<length>18</length>
+		
+		<relation>
+			<table>articulos</table>
+			<field>referencia</field>
+			<card>M1</card>
+		</relation>
+	</field>
+</TMD>

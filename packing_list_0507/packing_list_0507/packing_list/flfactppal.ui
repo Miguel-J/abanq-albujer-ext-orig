@@ -1,0 +1,45 @@
+<xupdate:modifications>
+<xupdate:insert-after select="/UI[UI,1]/actions[actions,1]/action[provincias]" >
+<action>
+<property name="name" >
+<cstring>mediostransporte</cstring>
+</property>
+<property name="text" >
+<string>Medios de transporte</string>
+</property>
+<property name="menuText" >
+<string>Medios de transporte</string>
+</property>
+</action>
+</xupdate:insert-after>
+<xupdate:insert-after select="/UI[UI,1]/connections[connections,1]/connection[provincias,activated(),FLWidgetApplication,openDefaultForm()]" >
+<connection>
+<sender>mediostransporte</sender>
+<signal>activated()</signal>
+<receiver>FLWidgetApplication</receiver>
+<slot>openDefaultForm()</slot>
+</connection>
+</xupdate:insert-after>
+<xupdate:insert-after select="/UI[UI,1]/menubar[menubar,1]/item[Tablas_Generales]/separator[separator,4]" >
+<action name="mediostransporte" />
+</xupdate:insert-after>
+<xupdate:update select="/UI[UI,1]/menubar[menubar,1]/property[geometry]/rect[rect,1]/height[height,1]/text()[1]" >30</xupdate:update>
+<xupdate:insert-after select="/UI[UI,1]/toolbars[toolbars,1]/toolbar[toolBar]/property[name]" >
+<property name="geometry" >
+<rect>
+<x>0</x>
+<y>0</y>
+<width>555</width>
+<height>29</height>
+</rect>
+</property>
+</xupdate:insert-after>
+<xupdate:insert-after select="/UI[UI,1]/toolbars[toolbars,1]/toolbar[toolBar]/property[geometry]" >
+<property name="minimumSize" >
+<size>
+<width>0</width>
+<height>0</height>
+</size>
+</property>
+</xupdate:insert-after>
+</xupdate:modifications>

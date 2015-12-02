@@ -1,0 +1,67 @@
+<!DOCTYPE TMD>
+<TMD>
+	<name>enviomailfra</name>
+	<!--Envio email de facturas-->
+	<alias>QT_TRANSLATE_NOOP("MetaData","Envio Mail Facturas")</alias>
+
+	<field>
+		<name>id</name>
+		<alias>QT_TRANSLATE_NOOP("MetaData","Identificador")</alias>
+		<null>false</null>
+		<pk>true</pk>
+		<type>serial</type>
+		<visiblegrid>false</visiblegrid>
+	</field>
+
+	<field>
+		<name>fechadesde</name>
+		<alias>QT_TRANSLATE_NOOP("MetaData","Desde")</alias>
+		<null>false</null>
+		<pk>false</pk>
+		<type>date</type>
+	</field>
+	
+	<field>
+		<name>fechahasta</name>
+		<alias>QT_TRANSLATE_NOOP("MetaData","Hasta")</alias>
+		<null>false</null>
+		<pk>false</pk>
+		<type>date</type>
+	</field>
+	
+	<field>
+		<name>reenviar</name>
+		<alias>QT_TRANSLATE_NOOP("MetaData","Reenviar")</alias>
+		<null>false</null>
+		<pk>false</pk>
+		<type>bool</type>
+		<default>false</default>
+	</field>
+	
+	<field>
+		<name>asunto</name>
+		<alias>QT_TRANSLATE_NOOP("MetaData","Asunto")</alias>
+		<null>false</null>
+		<pk>false</pk>
+		<type>string</type>
+		<length>200</length>
+	</field>
+	
+	<field>
+		<name>cuerpo</name>
+		<alias>QT_TRANSLATE_NOOP("MetaData","Cuerpo")</alias>
+		<null>true</null>
+		<pk>false</pk>
+		<type>stringlist</type>
+	</field>
+
+	<field>
+		<name>listafacturas</name>
+		<alias>QT_TRANSLATE_NOOP("MetaData","Lista Facturas")</alias>
+		<null>true</null>
+		<pk>false</pk>
+		<type>string</type>
+		<length>200</length>
+		<visiblegrid>false</visiblegrid>
+	</field>	
+</TMD>

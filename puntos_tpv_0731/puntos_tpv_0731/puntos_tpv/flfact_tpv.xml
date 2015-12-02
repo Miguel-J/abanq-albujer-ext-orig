@@ -1,0 +1,23 @@
+<xupdate:modifications>
+<xupdate:insert-after select="/ACTIONS[ACTIONS,1]/action[tpv_i_rentabilidad]" >
+<action>
+<name>tpv_movpuntos</name>
+<alias>QT_TRANSLATE_NOOP(&quot;MetaData&quot;,&quot;Movimiento de puntos&quot;)</alias>
+<description>QT_TRANSLATE_NOOP(&quot;MetaData&quot;,&quot;Movimiento de puntos de fidelización.&quot;)</description>
+<scriptformrecord>tpv_movpuntos</scriptformrecord>
+<table>tpv_movpuntos</table>
+<formrecord>tpv_movpuntos</formrecord>
+</action>
+</xupdate:insert-after>
+<xupdate:insert-after select="/ACTIONS[ACTIONS,1]/action[tpv_seleccionlineasregalo]" >
+<action>
+<name>tpv_tarjetaspuntos</name>
+<description>QT_TRANSLATE_NOOP(&quot;MetaData&quot;,&quot;Tarjetas de puntos&quot;)</description>
+<alias>QT_TRANSLATE_NOOP(&quot;MetaData&quot;,&quot;Tarjetas de puntos&quot;)</alias>
+<table>tpv_tarjetaspuntos</table>
+<form>master</form>
+<formrecord>tpv_tarjetaspuntos</formrecord>
+<scriptformrecord>tpv_tarjetaspuntos</scriptformrecord>
+</action>
+</xupdate:insert-after>
+</xupdate:modifications>

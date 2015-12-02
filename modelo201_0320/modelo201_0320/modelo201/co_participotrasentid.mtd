@@ -1,0 +1,74 @@
+<!DOCTYPE TMD>
+<TMD>
+	<name>co_participotrasentid</name>
+	<!--Participaciones de la declarante en otras entidades-->
+	<alias>QT_TRANSLATE_NOOP("MetaData","Participaciones en otras entidades")</alias>
+
+	<field>
+		<name>id</name>
+		<!--Identificador interno de la tabla-->
+		<alias>QT_TRANSLATE_NOOP("MetaData","Id")</alias>
+		<null>false</null>
+		<pk>true</pk>
+		<type>serial</type>
+		<visiblegrid>false</visiblegrid>
+	</field>
+	
+	<field>
+		<name>nif</name>
+		<!--nif del declarante-->
+		<alias>QT_TRANSLATE_NOOP("MetaData","N.I.F")</alias>
+		<null>false</null>
+		<pk>false</pk>
+		<type>string</type>
+		<length>9</length>
+		<visiblegrid>false</visiblegrid>
+	</field>
+	
+	<field>
+		<name>nifsoci</name>
+		<alias>QT_TRANSLATE_NOOP("MetaData","N.I.F")</alias>
+		<null>false</null>
+		<pk>false</pk>
+		<type>string</type>
+		<length>9</length>
+	</field>
+	
+	<field>
+		<name>sociedad</name>
+		<alias>QT_TRANSLATE_NOOP("MetaData","Sociedad participada")</alias>
+		<null>true</null>
+		<pk>false</pk>
+		<type>string</type>
+		<length>200</length>
+	</field>
+
+	<field>
+		<name>codpos</name>
+		<alias>QT_TRANSLATE_NOOP("MetaData","Código provincial")</alias>
+		<null>true</null>
+		<pk>false</pk>
+		<type>string</type>
+		<length>5</length>
+	</field>
+
+	<field>
+		<name>nominal</name>
+		<alias>QT_TRANSLATE_NOOP("MetaData","Nominal")</alias>
+		<null>true</null>
+		<pk>false</pk>
+		<type>double</type>
+		<partI>12</partI>
+		<partD>2</partD>
+	</field>
+
+	<field>
+		<name>participacion</name>
+		<alias>QT_TRANSLATE_NOOP("MetaData","% Particip.")</alias>
+		<null>true</null>
+		<pk>false</pk>
+		<type>double</type>
+		<partI>3</partI>
+		<partD>2</partD>
+	</field>
+</TMD>

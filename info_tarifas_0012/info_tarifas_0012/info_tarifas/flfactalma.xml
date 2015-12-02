@@ -1,0 +1,6 @@
+<xupdate:modifications>
+<xupdate:update select="/ACTIONS[ACTIONS,1]/action[tarifas]/form[form,1]/text()[1]" >master_print</xupdate:update>
+<xupdate:insert-after select="/ACTIONS[ACTIONS,1]/action[tarifas]/formrecord[formrecord,1]" >
+<scriptform>mastertarifas</scriptform>
+</xupdate:insert-after>
+</xupdate:modifications>

@@ -1,0 +1,64 @@
+<xupdate:modifications>
+<xupdate:insert-after select="/TMD[TMD,1]/field[codimpuesto]" >
+<field>
+<name>basedatos</name>
+<alias>QT_TRANSLATE_NOOP(&quot;MetaData&quot;,&quot;Base de datos&quot;)</alias>
+<null>true</null>
+<pk>false</pk>
+<type>string</type>
+<length>50</length>
+</field>
+</xupdate:insert-after>
+<xupdate:insert-after select="/TMD[TMD,1]/field[basedatos]" >
+<field>
+<name>driver</name>
+<alias>QT_TRANSLATE_NOOP(&quot;MetaData&quot;,&quot;Driver&quot;)</alias>
+<null>false</null>
+<pk>false</pk>
+<type>string</type>
+<length>50</length>
+<optionslist>PostgreSQL,MySQL</optionslist>
+<default>PostgreSQL</default>
+</field>
+</xupdate:insert-after>
+<xupdate:insert-after select="/TMD[TMD,1]/field[driver]" >
+<field>
+<name>puerto</name>
+<alias>QT_TRANSLATE_NOOP(&quot;MetaData&quot;,&quot;Puerto&quot;)</alias>
+<null>true</null>
+<pk>false</pk>
+<type>string</type>
+<length>4</length>
+</field>
+</xupdate:insert-after>
+<xupdate:insert-after select="/TMD[TMD,1]/field[puerto]" >
+<field>
+<name>servidor</name>
+<alias>QT_TRANSLATE_NOOP(&quot;MetaData&quot;,&quot;Servidor&quot;)</alias>
+<null>true</null>
+<pk>false</pk>
+<type>string</type>
+<length>50</length>
+</field>
+</xupdate:insert-after>
+<xupdate:insert-after select="/TMD[TMD,1]/field[servidor]" >
+<field>
+<name>contrasena</name>
+<alias>QT_TRANSLATE_NOOP(&quot;MetaData&quot;,&quot;Contraseña&quot;)</alias>
+<null>true</null>
+<pk>false</pk>
+<type>string</type>
+<length>50</length>
+</field>
+</xupdate:insert-after>
+<xupdate:insert-after select="/TMD[TMD,1]/field[contrasena]" >
+<field>
+<name>usuario</name>
+<!--usuario central--><alias>QT_TRANSLATE_NOOP(&quot;MetaData&quot;,&quot;Usuario&quot;)</alias>
+<null>true</null>
+<pk>false</pk>
+<type>string</type>
+<length>20</length>
+</field>
+</xupdate:insert-after>
+</xupdate:modifications>

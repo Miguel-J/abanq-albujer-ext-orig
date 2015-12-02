@@ -1,0 +1,29 @@
+<!DOCTYPE TMD>
+<TMD>
+	<name>mg_formaspago</name>
+	<alias>QT_TRANSLATE_NOOP("MetaData","Formas Pago Magento->AbanQ")</alias>
+	
+	<field>
+		<name>mg_metodopago</name>
+		<alias>QT_TRANSLATE_NOOP("MetaData","Método de Pago Magento")</alias>
+		<null>false</null>
+		<pk>true</pk>
+		<type>string</type>
+		<length>120</length>
+	</field>
+	
+	<field>
+		<name>codpago</name>
+		<alias>QT_TRANSLATE_NOOP("MetaData","Forma de pago AbanQ")</alias>
+		<null>false</null>
+		<pk>false</pk>
+		<type>string</type>
+		<length>10</length>
+
+		<relation>
+			<table>formaspago</table>
+			<field>codpago</field>
+			<card>M1</card>
+		</relation>
+	</field>
+</TMD>

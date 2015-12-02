@@ -1,0 +1,166 @@
+<xupdate:modifications>
+<xupdate:insert-after select="/UI[UI,1]/widget[QWidget,formLineasPresupuestosCli]/vbox[vbox,1]/widget[QLayoutWidget,layout30]/hbox[hbox,1]/widget[QGroupBox,groupBox9]/vbox[vbox,1]/widget[FLFieldDB,fdbCantidad]/property[minimumSize]" >
+<property name="maximumSize" >
+<size>
+<width>32767</width>
+<height>32767</height>
+</size>
+</property>
+</xupdate:insert-after>
+<xupdate:insert-after select="/UI[UI,1]/widget[QWidget,formLineasPresupuestosCli]/vbox[vbox,1]/property[spacing]" >
+<widget class="QGroupBox" >
+<property name="name" >
+<cstring>gbxPartida</cstring>
+</property>
+<property name="font" >
+<font>
+<bold>1</bold>
+<italic>1</italic>
+</font>
+</property>
+<property name="title" >
+<string>&amp;Capítulo</string>
+</property>
+<hbox>
+<property name="name" >
+<cstring>unnamed</cstring>
+</property>
+<widget class="FLFieldDB" >
+<property name="name" >
+<cstring>fdbIdPartida</cstring>
+</property>
+<property name="sizePolicy" >
+<sizepolicy>
+<hsizetype>1</hsizetype>
+<vsizetype>0</vsizetype>
+<horstretch>0</horstretch>
+<verstretch>0</verstretch>
+</sizepolicy>
+</property>
+<property name="minimumSize" >
+<size>
+<width>83</width>
+<height>22</height>
+</size>
+</property>
+<property name="maximumSize" >
+<size>
+<width>79</width>
+<height>32767</height>
+</size>
+</property>
+<property name="font" >
+<font>
+<bold>0</bold>
+<italic>0</italic>
+</font>
+</property>
+<property name="fieldName" >
+<string>idpartida</string>
+</property>
+<property name="tableName" >
+<string/>
+</property>
+<property name="foreignField" >
+<string/>
+</property>
+<property name="fieldRelation" >
+<string/>
+</property>
+<property name="showAlias" >
+<bool>true</bool>
+</property>
+<property name="showEditor" >
+<bool>false</bool>
+</property>
+</widget>
+<widget class="FLFieldDB" >
+<property name="name" >
+<cstring>fdbCodPartidaCat</cstring>
+</property>
+<property name="sizePolicy" >
+<sizepolicy>
+<hsizetype>1</hsizetype>
+<vsizetype>0</vsizetype>
+<horstretch>0</horstretch>
+<verstretch>0</verstretch>
+</sizepolicy>
+</property>
+<property name="minimumSize" >
+<size>
+<width>35</width>
+<height>26</height>
+</size>
+</property>
+<property name="maximumSize" >
+<size>
+<width>180</width>
+<height>32767</height>
+</size>
+</property>
+<property name="font" >
+<font>
+<bold>0</bold>
+<italic>0</italic>
+</font>
+</property>
+<property name="fieldName" >
+<string>codpartidacat</string>
+</property>
+<property name="tableName" >
+<string>partidas</string>
+</property>
+<property name="foreignField" >
+<string>idpartida</string>
+</property>
+<property name="fieldRelation" >
+<string>idpartida</string>
+</property>
+<property name="showAlias" >
+<bool>false</bool>
+</property>
+</widget>
+<widget class="FLFieldDB" >
+<property name="name" >
+<cstring>fdbDesPartida</cstring>
+</property>
+<property name="sizePolicy" >
+<sizepolicy>
+<hsizetype>1</hsizetype>
+<vsizetype>0</vsizetype>
+<horstretch>0</horstretch>
+<verstretch>0</verstretch>
+</sizepolicy>
+</property>
+<property name="minimumSize" >
+<size>
+<width>28</width>
+<height>24</height>
+</size>
+</property>
+<property name="font" >
+<font>
+<bold>0</bold>
+<italic>0</italic>
+</font>
+</property>
+<property name="fieldName" >
+<string>descripcion</string>
+</property>
+<property name="tableName" >
+<string>partidas</string>
+</property>
+<property name="foreignField" >
+<string>idpartida</string>
+</property>
+<property name="fieldRelation" >
+<string>idpartida</string>
+</property>
+<property name="showAlias" >
+<bool>false</bool>
+</property>
+</widget>
+</hbox>
+</widget>
+</xupdate:insert-after>
+</xupdate:modifications>

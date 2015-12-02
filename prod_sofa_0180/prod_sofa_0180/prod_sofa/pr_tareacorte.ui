@@ -1,0 +1,265 @@
+<!DOCTYPE UI><UI version="3.3" stdsetdef="1">
+<class>tareacorte</class>
+<widget class="QWidget">
+    <property name="name">
+        <cstring>tareacorte</cstring>
+    </property>
+    <property name="geometry">
+        <rect>
+            <x>0</x>
+            <y>0</y>
+            <width>730</width>
+            <height>296</height>
+        </rect>
+    </property>
+    <property name="sizePolicy">
+        <sizepolicy>
+            <hsizetype>5</hsizetype>
+            <vsizetype>1</vsizetype>
+            <horstretch>0</horstretch>
+            <verstretch>0</verstretch>
+        </sizepolicy>
+    </property>
+    <property name="minimumSize">
+        <size>
+            <width>600</width>
+            <height>0</height>
+        </size>
+    </property>
+    <property name="caption">
+        <string>tareacorte</string>
+    </property>
+    <vbox>
+        <property name="name">
+            <cstring>unnamed</cstring>
+        </property>
+        <widget class="QGroupBox">
+            <property name="name">
+                <cstring>groupBox12</cstring>
+            </property>
+            <property name="sizePolicy">
+                <sizepolicy>
+                    <hsizetype>5</hsizetype>
+                    <vsizetype>1</vsizetype>
+                    <horstretch>0</horstretch>
+                    <verstretch>0</verstretch>
+                </sizepolicy>
+            </property>
+            <property name="font">
+                <font>
+                    <bold>1</bold>
+                    <italic>1</italic>
+                </font>
+            </property>
+            <property name="title">
+                <string></string>
+            </property>
+            <vbox>
+                <property name="name">
+                    <cstring>unnamed</cstring>
+                </property>
+                <widget class="QLayoutWidget">
+                    <property name="name">
+                        <cstring>layoutTarea</cstring>
+                    </property>
+                    <hbox>
+                        <property name="name">
+                            <cstring>unnamed</cstring>
+                        </property>
+                        <widget class="QLabel">
+                            <property name="name">
+                                <cstring>lblTarea</cstring>
+                            </property>
+                            <property name="font">
+                                <font>
+                                    <pointsize>13</pointsize>
+                                    <bold>0</bold>
+                                    <italic>0</italic>
+                                </font>
+                            </property>
+                            <property name="text">
+                                <string>Tarea</string>
+                            </property>
+                        </widget>
+                        <widget class="QLineEdit">
+                            <property name="name">
+                                <cstring>ledTarea</cstring>
+                            </property>
+                            <property name="enabled">
+                                <bool>false</bool>
+                            </property>
+                            <property name="paletteForegroundColor">
+                                <color>
+                                    <red>0</red>
+                                    <green>0</green>
+                                    <blue>0</blue>
+                                </color>
+                            </property>
+                            <property name="font">
+                                <font>
+                                    <pointsize>13</pointsize>
+                                    <bold>0</bold>
+                                    <italic>0</italic>
+                                </font>
+                            </property>
+                            <property name="alignment">
+                                <set>AlignAuto</set>
+                            </property>
+                        </widget>
+                    </hbox>
+                </widget>
+                <widget class="QLayoutWidget">
+                    <property name="name">
+                        <cstring>layoutCorte</cstring>
+                    </property>
+                    <hbox>
+                        <property name="name">
+                            <cstring>unnamed</cstring>
+                        </property>
+                        <widget class="QLabel">
+                            <property name="name">
+                                <cstring>lblCorte</cstring>
+                            </property>
+                            <property name="font">
+                                <font>
+                                    <pointsize>13</pointsize>
+                                    <bold>0</bold>
+                                    <italic>0</italic>
+                                </font>
+                            </property>
+                            <property name="text">
+                                <string>Corte</string>
+                            </property>
+                        </widget>
+                        <widget class="QLineEdit">
+                            <property name="name">
+                                <cstring>ledCorte</cstring>
+                            </property>
+                            <property name="enabled">
+                                <bool>false</bool>
+                            </property>
+                            <property name="paletteForegroundColor">
+                                <color>
+                                    <red>0</red>
+                                    <green>0</green>
+                                    <blue>0</blue>
+                                </color>
+                            </property>
+                            <property name="font">
+                                <font>
+                                    <pointsize>13</pointsize>
+                                    <bold>0</bold>
+                                    <italic>0</italic>
+                                </font>
+                            </property>
+                            <property name="alignment">
+                                <set>AlignAuto</set>
+                            </property>
+                        </widget>
+                    </hbox>
+                </widget>
+                <widget class="QTable">
+                    <property name="name">
+                        <cstring>tblPartes</cstring>
+                    </property>
+                    <property name="enabled">
+                        <bool>false</bool>
+                    </property>
+                    <property name="paletteForegroundColor">
+                        <color>
+                            <red>0</red>
+                            <green>0</green>
+                            <blue>0</blue>
+                        </color>
+                    </property>
+                    <property name="font">
+                        <font>
+                            <bold>0</bold>
+                            <italic>0</italic>
+                        </font>
+                    </property>
+                    <property name="numRows">
+                        <number>0</number>
+                    </property>
+                    <property name="numCols">
+                        <number>3</number>
+                    </property>
+                </widget>
+                <widget class="QLayoutWidget">
+                    <property name="name">
+                        <cstring>layoutBotones</cstring>
+                    </property>
+                    <hbox>
+                        <property name="name">
+                            <cstring>unnamed</cstring>
+                        </property>
+                        <spacer>
+                            <property name="name">
+                                <cstring>spacerAceptarIzda</cstring>
+                            </property>
+                            <property name="orientation">
+                                <enum>Horizontal</enum>
+                            </property>
+                            <property name="sizeType">
+                                <enum>MinimumExpanding</enum>
+                            </property>
+                            <property name="sizeHint">
+                                <size>
+                                    <width>200</width>
+                                    <height>20</height>
+                                </size>
+                            </property>
+                        </spacer>
+                        <widget class="QPushButton">
+                            <property name="name">
+                                <cstring>pbnAceptar</cstring>
+                            </property>
+                            <property name="focusPolicy">
+                                <enum>StrongFocus</enum>
+                            </property>
+                            <property name="text">
+                                <string>Aceptar</string>
+                            </property>
+                            <property name="accel">
+                                <string>Return</string>
+                            </property>
+                        </widget>
+                        <widget class="QPushButton">
+                            <property name="name">
+                                <cstring>pbnCancelar</cstring>
+                            </property>
+                            <property name="focusPolicy">
+                                <enum>StrongFocus</enum>
+                            </property>
+                            <property name="text">
+                                <string>Cancelar</string>
+                            </property>
+                            <property name="accel">
+                                <string></string>
+                            </property>
+                        </widget>
+                        <spacer>
+                            <property name="name">
+                                <cstring>spacerCancelarDcha</cstring>
+                            </property>
+                            <property name="orientation">
+                                <enum>Horizontal</enum>
+                            </property>
+                            <property name="sizeType">
+                                <enum>MinimumExpanding</enum>
+                            </property>
+                            <property name="sizeHint">
+                                <size>
+                                    <width>200</width>
+                                    <height>20</height>
+                                </size>
+                            </property>
+                        </spacer>
+                    </hbox>
+                </widget>
+            </vbox>
+        </widget>
+    </vbox>
+</widget>
+<layoutdefaults spacing="6" margin="11"/>
+</UI>

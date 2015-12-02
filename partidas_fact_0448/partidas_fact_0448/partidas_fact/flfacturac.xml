@@ -1,0 +1,67 @@
+<xupdate:modifications>
+<xupdate:insert-after select="/ACTIONS[ACTIONS,1]/action[cambiarejer]" >
+<action>
+<name>partidas</name>
+<description>QT_TRANSLATE_NOOP(&quot;MetaData&quot;,&quot;Capítulos por presupuesto&quot;)</description>
+<alias>QT_TRANSLATE_NOOP(&quot;MetaData&quot;,&quot;Capítulos por presupuesto&quot;)</alias>
+<table>partidas</table>
+<form>master</form>
+<formrecord>partidas</formrecord>
+<scriptformrecord>partidas</scriptformrecord>
+</action>
+</xupdate:insert-after>
+<xupdate:insert-after select="/ACTIONS[ACTIONS,1]/action[partidas]" >
+<action>
+<name>partidasped</name>
+<description>QT_TRANSLATE_NOOP(&quot;MetaData&quot;,&quot;Capítulos por pedido&quot;)</description>
+<alias>QT_TRANSLATE_NOOP(&quot;MetaData&quot;,&quot;Capítulos por pedido&quot;)</alias>
+<table>partidasped</table>
+<form>master</form>
+<formrecord>partidas</formrecord>
+<scriptformrecord>partidasped</scriptformrecord>
+</action>
+</xupdate:insert-after>
+<xupdate:insert-after select="/ACTIONS[ACTIONS,1]/action[partidasped]" >
+<action>
+<name>partidasalb</name>
+<description>QT_TRANSLATE_NOOP(&quot;MetaData&quot;,&quot;Capítulos por albarán&quot;)</description>
+<alias>QT_TRANSLATE_NOOP(&quot;MetaData&quot;,&quot;Capítulos por albarán&quot;)</alias>
+<table>partidasalb</table>
+<form>master</form>
+<formrecord>partidas</formrecord>
+<scriptformrecord>partidasalb</scriptformrecord>
+</action>
+</xupdate:insert-after>
+<xupdate:insert-after select="/ACTIONS[ACTIONS,1]/action[partidasalb]" >
+<action>
+<name>partidasfact</name>
+<description>QT_TRANSLATE_NOOP(&quot;MetaData&quot;,&quot;Capítulos por factura&quot;)</description>
+<alias>QT_TRANSLATE_NOOP(&quot;MetaData&quot;,&quot;Capítulos por factura&quot;)</alias>
+<table>partidasfact</table>
+<form>master</form>
+<formrecord>partidas</formrecord>
+<scriptformrecord>partidasfact</scriptformrecord>
+</action>
+</xupdate:insert-after>
+<xupdate:insert-after select="/ACTIONS[ACTIONS,1]/action[partidasfact]" >
+<action>
+<name>catpartidas</name>
+<description>QT_TRANSLATE_NOOP(&quot;MetaData&quot;,&quot;Catálogo de capítulos&quot;)</description>
+<alias>QT_TRANSLATE_NOOP(&quot;MetaData&quot;,&quot;Catálogo de capítulos&quot;)</alias>
+<table>catpartidas</table>
+<form>master</form>
+<formrecord>catpartidas</formrecord>
+</action>
+</xupdate:insert-after>
+<xupdate:insert-after select="/ACTIONS[ACTIONS,1]/action[catpartidas]" >
+<action>
+<name>componentespar</name>
+<description>QT_TRANSLATE_NOOP(&quot;MetaData&quot;,&quot;Componentes por capítulo&quot;)</description>
+<alias>QT_TRANSLATE_NOOP(&quot;MetaData&quot;,&quot;Componentes por capítulo&quot;)</alias>
+<table>componentespar</table>
+<form>master</form>
+<formrecord>componentespar</formrecord>
+<scriptformrecord>componentespar</scriptformrecord>
+</action>
+</xupdate:insert-after>
+</xupdate:modifications>

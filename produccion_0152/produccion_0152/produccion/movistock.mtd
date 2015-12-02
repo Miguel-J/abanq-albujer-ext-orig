@@ -1,0 +1,18 @@
+<xupdate:modifications>
+<xupdate:insert-after select="/TMD[TMD,1]/field[idlineats]" >
+<field>
+<name>idreglotestock</name>
+<!-- Identificador de la regularización de lote de stock --><alias>QT_TRANSLATE_NOOP(&quot;MetaData&quot;,&quot;Identificador de la regularización de lote de stock&quot;)</alias>
+<null>true</null>
+<pk>false</pk>
+<type>uint</type>
+<visiblegrid>false</visiblegrid>
+<relation>
+<field>id</field>
+<table>reglotestock</table>
+<card>M1</card>
+<delC>true</delC>
+</relation>
+</field>
+</xupdate:insert-after>
+</xupdate:modifications>

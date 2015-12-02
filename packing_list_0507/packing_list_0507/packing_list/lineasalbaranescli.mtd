@@ -1,0 +1,31 @@
+<xupdate:modifications>
+<xupdate:insert-after select="/TMD[TMD,1]/field[idlinea]/visiblegrid[visiblegrid,1]" >
+<relation>
+<table>lineasbulto</table>
+<field>idlineaalbaran</field>
+<card>1M</card>
+</relation>
+</xupdate:insert-after>
+<xupdate:insert-after select="/TMD[TMD,1]/field[porcomision]" >
+<field>
+<name>candespachada</name>
+<alias>QT_TRANSLATE_NOOP(&quot;MetaData&quot;,&quot;Can.Despachada&quot;)</alias>
+<null>true</null>
+<pk>false</pk>
+<type>double</type>
+<partI>6</partI>
+<partD>2</partD>
+<default>0</default>
+</field>
+</xupdate:insert-after>
+<xupdate:insert-after select="/TMD[TMD,1]/field[candespachada]" >
+<field>
+<name>despachado</name>
+<alias>QT_TRANSLATE_NOOP(&quot;MetaData&quot;,&quot;Despachado&quot;)</alias>
+<null>true</null>
+<pk>false</pk>
+<type>bool</type>
+<default>false</default>
+</field>
+</xupdate:insert-after>
+</xupdate:modifications>

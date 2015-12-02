@@ -1,0 +1,12 @@
+<flpatch:modifications name="bloqfacturascli" >
+    <flpatch:patchXml path="facturacion/facturacion/" name="flfacturac.xml" />
+    <flpatch:addFile path="facturacion/facturacion/forms/" name="bloqfacturascli.ui" />
+    <flpatch:patchXml path="facturacion/facturacion/forms/" name="flfacturac.ui" />
+    <flpatch:addFile path="facturacion/facturacion/scripts/" name="bloqfacturascli.qs" />
+    <flpatch:addFile path="facturacion/facturacion/tables/" name="bloqfacturascli.mtd" />
+    <flpatch:addFile path="facturacion/facturacion/tables/" name="facturasbloqueadas.mtd" />
+    <flpatch:addFile path="facturacion/facturacion/queries/" name="qry_facturasbloqueadas.qry" />
+    <flpatch:addFile path="facturacion/facturacion/tables/" name="qry_facturasbloqueadas.mtd" />
+    <flpatch:patchScript path="facturacion/facturacion/scripts/" name="masterfacturascli.qs" />
+    <flpatch:patchXml path="facturacion/facturacion/forms/" name="masterfacturascli.ui" />
+</flpatch:modifications>

@@ -1,0 +1,107 @@
+<xupdate:modifications>
+<xupdate:insert-after select="/UI[UI,1]/widget[QWidget,formClientes]/vbox[vbox,1]/widget[QTabWidget,tbwCliente]/widget[QWidget,comercial]/vbox[vbox,1]/widget[QLayoutWidget,layout80]" >
+<widget class="QGroupBox" >
+<property name="name" >
+<cstring>gbxVacaciones</cstring>
+</property>
+<property name="font" >
+<font>
+<bold>0</bold>
+</font>
+</property>
+<property name="title" >
+<string>Vacaciones (formato dd-mm)</string>
+</property>
+<hbox>
+<property name="name" >
+<cstring>unnamed</cstring>
+</property>
+<property name="margin" >
+<number>3</number>
+</property>
+<property name="spacing" >
+<number>2</number>
+</property>
+<widget class="FLFieldDB" >
+<property name="name" >
+<cstring>fdbVacDesde</cstring>
+</property>
+<property name="sizePolicy" >
+<sizepolicy>
+<hsizetype>1</hsizetype>
+<vsizetype>0</vsizetype>
+<horstretch>0</horstretch>
+<verstretch>0</verstretch>
+</sizepolicy>
+</property>
+<property name="maximumSize" >
+<size>
+<width>230</width>
+<height>32767</height>
+</size>
+</property>
+<property name="fieldName" >
+<string>vacdesde</string>
+</property>
+<property name="tableName" >
+<string/>
+</property>
+<property name="foreignField" >
+<string/>
+</property>
+<property name="fieldRelation" >
+<string/>
+</property>
+</widget>
+<widget class="FLFieldDB" >
+<property name="name" >
+<cstring>fdbVacHasta</cstring>
+</property>
+<property name="sizePolicy" >
+<sizepolicy>
+<hsizetype>1</hsizetype>
+<vsizetype>0</vsizetype>
+<horstretch>0</horstretch>
+<verstretch>0</verstretch>
+</sizepolicy>
+</property>
+<property name="maximumSize" >
+<size>
+<width>230</width>
+<height>32767</height>
+</size>
+</property>
+<property name="fieldName" >
+<string>vachasta</string>
+</property>
+<property name="tableName" >
+<string/>
+</property>
+<property name="foreignField" >
+<string/>
+</property>
+<property name="fieldRelation" >
+<string/>
+</property>
+</widget>
+<spacer>
+<property name="name" >
+<cstring>spacerVacaciones</cstring>
+</property>
+<property name="orientation" >
+<enum>Horizontal</enum>
+</property>
+<property name="sizeType" >
+<enum>Expanding</enum>
+</property>
+<property name="sizeHint" >
+<size>
+<width>41</width>
+<height>20</height>
+</size>
+</property>
+</spacer>
+</hbox>
+</widget>
+</xupdate:insert-after>
+</xupdate:modifications>

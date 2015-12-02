@@ -1,0 +1,13 @@
+<xupdate:modifications>
+<xupdate:update select="/TMD[TMD,1]/field[apellidospf]/alias[alias,1]/text()[1]" >QT_TRANSLATE_NOOP(&quot;MetaData&quot;,&quot;Apellido1&quot;)</xupdate:update>
+<xupdate:insert-after select="/TMD[TMD,1]/field[apellidospf]" >
+<field>
+<name>apellidospf2</name>
+<alias>QT_TRANSLATE_NOOP(&quot;MetaData&quot;,&quot;Apellido2&quot;)</alias>
+<null>true</null>
+<pk>false</pk>
+<type>string</type>
+<length>15</length>
+</field>
+</xupdate:insert-after>
+</xupdate:modifications>

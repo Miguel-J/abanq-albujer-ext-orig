@@ -1,0 +1,52 @@
+<!DOCTYPE TMD>
+<TMD>
+    <name>gruposusuariosempresa</name>
+<!--Datos de la empresa-->    <alias>QT_TRANSLATE_NOOP("MetaData","Grupos de usuarios por empresa")</alias>
+    <field>
+        <name>id</name>
+        <alias>QT_TRANSLATE_NOOP("MetaData","Identificador")</alias>
+        <null>false</null>
+        <pk>true</pk>
+        <type>serial</type>
+        <visiblegrid>false</visiblegrid>
+    </field>
+   <field>
+        <name>idempresa</name>
+        <alias>QT_TRANSLATE_NOOP("MetaData","Empresa")</alias>
+        <null>false</null>
+        <pk>false</pk>
+        <ck>true</ck>
+        <type>uint</type>
+        <visiblegrid>false</visiblegrid>
+        <relation>
+            <table>empresa</table>
+            <field>id</field>
+            <card>M1</card>
+        </relation>
+    </field>
+   
+   <field>
+		<name>idgroup</name>
+		<alias>QT_TRANSLATE_NOOP("MetaData","Grupo")</alias>
+		<null>false</null>
+		<pk>false</pk>
+		<ck>true</ck>
+		<type>string</type>
+		<length>30</length>
+
+		<relation>
+			<table>flgroups</table>
+			<field>idgroup</field>
+			<card>M1</card>
+		</relation>
+	</field>
+	
+	<field>
+		<name>descripcion</name>
+		<alias>QT_TRANSLATE_NOOP("MetaData","Descripción")</alias>
+		<null>true</null>
+		<pk>false</pk>
+		<type>string</type>
+		<length>100</length>
+	</field>
+</TMD>

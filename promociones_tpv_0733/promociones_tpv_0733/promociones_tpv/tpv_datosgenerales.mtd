@@ -1,0 +1,12 @@
+<xupdate:modifications>
+<xupdate:insert-after select="/TMD[TMD,1]/field[idsubcuentavale]" >
+<field>
+<name>promosobreprecio</name>
+<!-- Si es true los descuentos de una promoción de un artículo para un cliente en una fecha se aplicarán directamente sobre los precios.--><alias>QT_TRANSLATE_NOOP(&quot;MetaData&quot;,&quot;Aplicar promociones sobre los precios.&quot;)</alias>
+<null>true</null>
+<pk>false</pk>
+<type>bool</type>
+<default>false</default>
+</field>
+</xupdate:insert-after>
+</xupdate:modifications>

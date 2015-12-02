@@ -1,0 +1,12 @@
+<xupdate:modifications>
+<xupdate:insert-after select="/TMD[TMD,1]/field[idpagodevol]" >
+<field>
+<name>excluir303</name>
+<!--Indica si la factura no se incluirá en el modelo 303--><alias>QT_TRANSLATE_NOOP(&quot;MetaData&quot;,&quot;Excluir de modelo 303&quot;)</alias>
+<null>false</null>
+<pk>false</pk>
+<type>bool</type>
+<default>false</default>
+</field>
+</xupdate:insert-after>
+</xupdate:modifications>

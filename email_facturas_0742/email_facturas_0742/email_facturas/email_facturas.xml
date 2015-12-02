@@ -1,0 +1,14 @@
+<flpatch:modifications name="email_facturas" >
+    <flpatch:patchXml path="facturacion/principal/forms/" name="clientes.ui" />
+    <flpatch:patchXml path="facturacion/principal/tables/" name="clientes.mtd" />
+    <flpatch:patchXml path="facturacion/facturacion/forms/" name="facturascli.ui" />
+    <flpatch:patchXml path="facturacion/facturacion/tables/" name="facturascli.mtd" />
+    <flpatch:addFile path="facturacion/facturacion/forms/" name="enviomailfra.ui" />
+    <flpatch:addFile path="facturacion/facturacion/tables/" name="enviomailfra.mtd" />
+    <flpatch:addFile path="facturacion/facturacion/scripts/" name="enviomailfra.qs" />
+    <flpatch:patchXml path="facturacion/facturacion/" name="flfacturac.xml" />
+    <flpatch:patchXml path="facturacion/facturacion/forms/" name="facturac_general.ui" />
+    <flpatch:patchXml path="facturacion/facturacion/forms/" name="flfacturac.ui" />
+    <flpatch:patchXml path="facturacion/facturacion/tables/" name="facturac_general.mtd" />
+    <flpatch:patchScript path="facturacion/facturacion/scripts/" name="facturac_general.qs" />
+</flpatch:modifications>

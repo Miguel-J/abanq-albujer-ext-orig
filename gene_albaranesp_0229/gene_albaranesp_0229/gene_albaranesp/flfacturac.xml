@@ -1,0 +1,12 @@
+<xupdate:modifications>
+<xupdate:insert-after select="/ACTIONS[ACTIONS,1]/action[trazadoc]" >
+<action>
+<name>pedidosprovparciales</name>
+<description>QT_TRANSLATE_NOOP(&quot;MetaData&quot;,&quot;El formulario de generación de albarán a partir de un pedido es una herramienta que permite seleccionar fácilmente las líneas de un pedido que irán al albarán&quot;)</description>
+<alias>QT_TRANSLATE_NOOP(&quot;MetaData&quot;,&quot;Pedidos a albaranar&quot;)</alias>
+<table>pedidosprov</table>
+<formrecord>pedidosprovparciales</formrecord>
+<scriptformrecord>pedidosprovparciales</scriptformrecord>
+</action>
+</xupdate:insert-after>
+</xupdate:modifications>

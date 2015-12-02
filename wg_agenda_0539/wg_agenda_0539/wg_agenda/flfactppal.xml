@@ -1,0 +1,31 @@
+<xupdate:modifications>
+<xupdate:insert-after select="/ACTIONS[ACTIONS,1]/action[wg_widget]" >
+<action>
+<name>wg_agenda</name>
+<alias>QT_TRANSLATE_NOOP(&quot;MetaData&quot;,&quot;Agenda&quot;)</alias>
+<table>wg_agenda</table>
+<form>wg_agenda</form>
+<scriptform>wg_agenda</scriptform>
+<formrecord>wg_agenda</formrecord>
+<scriptformrecord>wg_agenda</scriptformrecord>
+</action>
+</xupdate:insert-after>
+<xupdate:insert-after select="/ACTIONS[ACTIONS,1]/action[wg_agenda]" >
+<action>
+<name>wg_agendaconfig</name>
+<alias>QT_TRANSLATE_NOOP(&quot;MetaData&quot;,&quot;Configuración agenda&quot;)</alias>
+<table>wg_agendaconfig</table>
+<form>master</form>
+<formrecord>wg_agendaconfig</formrecord>
+<scriptformrecord>wg_agendaconfig</scriptformrecord>
+</action>
+</xupdate:insert-after>
+<xupdate:insert-after select="/ACTIONS[ACTIONS,1]/action[wg_agendaconfig]" >
+<action>
+<name>wg_lineasagenda</name>
+<alias>QT_TRANSLATE_NOOP(&quot;MetaData&quot;,&quot;Lineas agenda&quot;)</alias>
+<table>wg_lineasagenda</table>
+<form>master</form>
+</action>
+</xupdate:insert-after>
+</xupdate:modifications>

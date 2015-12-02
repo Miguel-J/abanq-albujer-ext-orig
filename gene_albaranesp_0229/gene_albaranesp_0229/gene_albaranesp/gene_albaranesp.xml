@@ -1,0 +1,8 @@
+<flpatch:modifications name="gene_albaranesp" >
+    <flpatch:patchXml path="facturacion/facturacion/" name="flfacturac.xml" />
+    <flpatch:addFile path="facturacion/facturacion/forms/" name="pedidosprovparciales.ui" />
+    <flpatch:patchScript path="facturacion/facturacion/scripts/" name="masterpedidosprov.qs" />
+    <flpatch:addFile path="facturacion/facturacion/scripts/" name="pedidosprovparciales.qs" />
+    <flpatch:patchXml path="facturacion/facturacion/tables/" name="lineaspedidosprov.mtd" />
+    <flpatch:patchScript path="facturacion/facturacion/scripts/" name="flfacturac.qs" />
+</flpatch:modifications>

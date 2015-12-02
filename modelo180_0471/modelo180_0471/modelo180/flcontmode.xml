@@ -1,0 +1,35 @@
+<xupdate:modifications>
+<xupdate:insert-after select="/ACTIONS[ACTIONS,1]/action[co_datosfiscales]" >
+<action>
+<name>co_modelo180</name>
+<alias>QT_TRANSLATE_NOOP(&quot;MetaData&quot;,&quot;Modelo 180&quot;)</alias>
+<description>QT_TRANSLATE_NOOP(&quot;MetaData&quot;,&quot;Presentación telemática del modelo fiscal 180&quot;)</description>
+<table>co_modelo180</table>
+<form>co_mastermodelo</form>
+<scriptform>co_mastermodelo180</scriptform>
+<formrecord>co_modelo180</formrecord>
+<scriptformrecord>co_modelo180</scriptformrecord>
+</action>
+</xupdate:insert-after>
+<xupdate:insert-after select="/ACTIONS[ACTIONS,1]/action[co_modelo180]" >
+<action>
+<name>co_detalle180</name>
+<alias>QT_TRANSLATE_NOOP(&quot;MetaData&quot;,&quot;Detalle 180&quot;)</alias>
+<description>QT_TRANSLATE_NOOP(&quot;MetaData&quot;,&quot;Proveedores con la cantidad que aportan sus facturas a la declaración&quot;)</description>
+<table>co_detalle180</table>
+<form>master</form>
+<formrecord>co_detalle180</formrecord>
+</action>
+</xupdate:insert-after>
+<xupdate:insert-after select="/ACTIONS[ACTIONS,1]/action[co_detalle180]" >
+<action>
+<name>co_facturasprov180</name>
+<alias>QT_TRANSLATE_NOOP(&quot;MetaData&quot;,&quot;Facturas proveedor 180&quot;)</alias>
+<description>QT_TRANSLATE_NOOP(&quot;MetaData&quot;,&quot;Muestra las facturas del proveedor seleccionado en la tabla de detalle, de donde salen los datos calculados en el modelo&quot;)</description>
+<table>facturasprov</table>
+<form>co_masterfacturasprov180</form>
+<scriptform>co_masterfacturasprov180</scriptform>
+<formrecord>facturasprov</formrecord>
+</action>
+</xupdate:insert-after>
+</xupdate:modifications>

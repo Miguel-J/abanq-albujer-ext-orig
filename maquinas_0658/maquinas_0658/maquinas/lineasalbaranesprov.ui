@@ -1,0 +1,183 @@
+<xupdate:modifications>
+<xupdate:update select="/UI[UI,1]/widget[QWidget,lineaspedidosprov]/property[geometry]/rect[rect,1]/height[height,1]/text()[1]" >361</xupdate:update>
+<xupdate:update select="/UI[UI,1]/widget[QWidget,lineaspedidosprov]/vbox[vbox,1]/widget[QGroupBox,groupBox10]/hbox[hbox,1]/widget[FLFieldDB,fdbCodImpuesto]/property[minimumSize]/size[size,1]/width[width,1]/text()[1]" >26</xupdate:update>
+<xupdate:update select="/UI[UI,1]/widget[QWidget,lineaspedidosprov]/vbox[vbox,1]/widget[QGroupBox,groupBox10]/hbox[hbox,1]/widget[FLFieldDB,fdbIRPF]/property[minimumSize]/size[size,1]/width[width,1]/text()[1]" >26</xupdate:update>
+<xupdate:update select="/UI[UI,1]/widget[QWidget,lineaspedidosprov]/vbox[vbox,1]/widget[QGroupBox,groupBox10]/hbox[hbox,1]/widget[FLFieldDB,fdbIva]/property[minimumSize]/size[size,1]/width[width,1]/text()[1]" >4</xupdate:update>
+<xupdate:update select="/UI[UI,1]/widget[QWidget,lineaspedidosprov]/vbox[vbox,1]/widget[QGroupBox,groupBox10]/hbox[hbox,1]/widget[FLFieldDB,fdbRecargo]/property[minimumSize]/size[size,1]/width[width,1]/text()[1]" >26</xupdate:update>
+<xupdate:update select="/UI[UI,1]/widget[QWidget,lineaspedidosprov]/vbox[vbox,1]/widget[QLayoutWidget,layout12]/hbox[hbox,1]/widget[QGroupBox,groupBox8]/vbox[vbox,1]/widget[QLayoutWidget,layout34]/hbox[hbox,1]/widget[FLFieldDB,fdbDtoPor]/property[minimumSize]/size[size,1]/width[width,1]/text()[1]" >26</xupdate:update>
+<xupdate:update select="/UI[UI,1]/widget[QWidget,lineaspedidosprov]/vbox[vbox,1]/widget[QLayoutWidget,layout12]/hbox[hbox,1]/widget[QGroupBox,groupBox8]/vbox[vbox,1]/widget[QLayoutWidget,layout35]/hbox[hbox,1]/widget[FLFieldDB,fdbPvpSinDto]/property[minimumSize]/size[size,1]/width[width,1]/text()[1]" >26</xupdate:update>
+<xupdate:update select="/UI[UI,1]/widget[QWidget,lineaspedidosprov]/vbox[vbox,1]/widget[QLayoutWidget,layout12]/hbox[hbox,1]/widget[QGroupBox,groupBox8]/vbox[vbox,1]/widget[QLayoutWidget,layout35]/hbox[hbox,1]/widget[FLFieldDB,fdbPvpUnitario]/property[minimumSize]/size[size,1]/width[width,1]/text()[1]" >26</xupdate:update>
+<xupdate:update select="/UI[UI,1]/widget[QWidget,lineaspedidosprov]/vbox[vbox,1]/widget[QLayoutWidget,layout12]/hbox[hbox,1]/widget[QGroupBox,groupBox8]/vbox[vbox,1]/widget[QLayoutWidget,layout36]/hbox[hbox,1]/widget[FLFieldDB,fdbDtoLineal]/property[minimumSize]/size[size,1]/width[width,1]/text()[1]" >26</xupdate:update>
+<xupdate:update select="/UI[UI,1]/widget[QWidget,lineaspedidosprov]/vbox[vbox,1]/widget[QLayoutWidget,layout12]/hbox[hbox,1]/widget[QGroupBox,groupBox8]/vbox[vbox,1]/widget[QLayoutWidget,layout39]/hbox[hbox,1]/widget[FLFieldDB,fdbPvpTotal]/property[minimumSize]/size[size,1]/height[height,1]/text()[1]" >25</xupdate:update>
+<xupdate:update select="/UI[UI,1]/widget[QWidget,lineaspedidosprov]/vbox[vbox,1]/widget[QLayoutWidget,layout12]/hbox[hbox,1]/widget[QGroupBox,groupBox8]/vbox[vbox,1]/widget[QLayoutWidget,layout39]/hbox[hbox,1]/widget[FLFieldDB,fdbPvpTotal]/property[minimumSize]/size[size,1]/width[width,1]/text()[1]" >26</xupdate:update>
+<xupdate:update select="/UI[UI,1]/widget[QWidget,lineaspedidosprov]/vbox[vbox,1]/widget[QLayoutWidget,layout12]/hbox[hbox,1]/widget[QGroupBox,groupBox9]/vbox[vbox,1]/widget[FLFieldDB,fdbCantidad]/property[minimumSize]/size[size,1]/width[width,1]/text()[1]" >26</xupdate:update>
+<xupdate:insert-after select="/UI[UI,1]/widget[QWidget,lineaspedidosprov]/vbox[vbox,1]/property[spacing]" >
+<widget class="QGroupBox" >
+<property name="name" >
+<cstring>gbxMaquina</cstring>
+</property>
+<property name="font" >
+<font>
+<bold>1</bold>
+</font>
+</property>
+<property name="title" >
+<string>&amp;Maquina</string>
+</property>
+<hbox>
+<property name="name" >
+<cstring>unnamed</cstring>
+</property>
+<widget class="FLFieldDB" >
+<property name="name" >
+<cstring>fdbCodMaquina</cstring>
+</property>
+<property name="minimumSize" >
+<size>
+<width>26</width>
+<height>22</height>
+</size>
+</property>
+<property name="maximumSize" >
+<size>
+<width>130</width>
+<height>32767</height>
+</size>
+</property>
+<property name="font" >
+<font>
+<bold>0</bold>
+</font>
+</property>
+<property name="fieldName" >
+<string>codmaquina</string>
+</property>
+<property name="showAlias" >
+<bool>true</bool>
+</property>
+<property name="showEditor" >
+<bool>true</bool>
+</property>
+</widget>
+<widget class="FLFieldDB" >
+<property name="name" >
+<cstring>fdbDescripcionMaquina</cstring>
+</property>
+<property name="font" >
+<font>
+<bold>0</bold>
+</font>
+</property>
+<property name="fieldName" >
+<string>descripcion</string>
+</property>
+<property name="tableName" >
+<string>cl_maquinas</string>
+</property>
+<property name="foreignField" >
+<string>codmaquina</string>
+</property>
+<property name="fieldRelation" >
+<string>codmaquina</string>
+</property>
+<property name="showAlias" >
+<bool>false</bool>
+</property>
+</widget>
+<spacer>
+<property name="name" >
+<cstring>spacer20_2_2</cstring>
+</property>
+<property name="orientation" >
+<enum>Horizontal</enum>
+</property>
+<property name="sizeType" >
+<enum>Fixed</enum>
+</property>
+<property name="sizeHint" >
+<size>
+<width>16</width>
+<height>20</height>
+</size>
+</property>
+</spacer>
+<widget class="FLFieldDB" >
+<property name="name" >
+<cstring>fdbMatriculaMaquina</cstring>
+</property>
+<property name="font" >
+<font>
+<bold>0</bold>
+</font>
+</property>
+<property name="fieldName" >
+<string>matriculamaquina</string>
+</property>
+<property name="tableName" >
+<string/>
+</property>
+<property name="foreignField" >
+<string>matricula</string>
+</property>
+<property name="fieldRelation" >
+<string>codmaquina</string>
+</property>
+</widget>
+<spacer>
+<property name="name" >
+<cstring>spacer20_2_3</cstring>
+</property>
+<property name="orientation" >
+<enum>Horizontal</enum>
+</property>
+<property name="sizeType" >
+<enum>Fixed</enum>
+</property>
+<property name="sizeHint" >
+<size>
+<width>16</width>
+<height>20</height>
+</size>
+</property>
+</spacer>
+<widget class="FLFieldDB" >
+<property name="name" >
+<cstring>fdbEmpresaMaquina</cstring>
+</property>
+<property name="minimumSize" >
+<size>
+<width>26</width>
+<height>22</height>
+</size>
+</property>
+<property name="font" >
+<font>
+<bold>0</bold>
+</font>
+</property>
+<property name="fieldName" >
+<string>empresamaquina</string>
+</property>
+<property name="showAlias" >
+<bool>true</bool>
+</property>
+<property name="showEditor" >
+<bool>true</bool>
+</property>
+</widget>
+</hbox>
+</widget>
+</xupdate:insert-after>
+<xupdate:insert-after select="/UI[UI,1]/includehints[includehints,1]/includehint[flfielddb.h]" >
+<includehint>flfielddb.h</includehint>
+</xupdate:insert-after>
+<xupdate:insert-after select="/UI[UI,1]/includehints[includehints,1]/includehint[flfielddb.h]" >
+<includehint>flfielddb.h</includehint>
+</xupdate:insert-after>
+<xupdate:insert-after select="/UI[UI,1]/includehints[includehints,1]/includehint[flfielddb.h]" >
+<includehint>flfielddb.h</includehint>
+</xupdate:insert-after>
+<xupdate:insert-after select="/UI[UI,1]/includehints[includehints,1]/includehint[flfielddb.h]" >
+<includehint>flfielddb.h</includehint>
+</xupdate:insert-after>
+</xupdate:modifications>

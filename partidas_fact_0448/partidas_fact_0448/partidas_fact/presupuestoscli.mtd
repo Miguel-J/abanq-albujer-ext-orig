@@ -1,0 +1,67 @@
+<xupdate:modifications>
+<xupdate:insert-after select="/TMD[TMD,1]/field[idpresupuesto]/relation[lineaspresupuestoscli,idpresupuesto]" >
+<relation>
+<table>partidas</table>
+<field>idpresupuesto</field>
+<card>1M</card>
+</relation>
+</xupdate:insert-after>
+<xupdate:insert-after select="/TMD[TMD,1]/field[fecha]" >
+<field>
+<name>titulo</name>
+<!--Título del presupuesto--><alias>QT_TRANSLATE_NOOP(&quot;MetaData&quot;,&quot;Título&quot;)</alias>
+<null>true</null>
+<pk>false</pk>
+<type>string</type>
+<length>200</length>
+</field>
+</xupdate:insert-after>
+<xupdate:insert-after select="/TMD[TMD,1]/field[estado]" >
+<field>
+<name>porgastos</name>
+<!--Porcentaje de gastos generales--><alias>QT_TRANSLATE_NOOP(&quot;MetaData&quot;,&quot;% G.G.&quot;)</alias>
+<null>true</null>
+<pk>false</pk>
+<type>double</type>
+<partI>3</partI>
+<partD>2</partD>
+<default>0</default>
+</field>
+</xupdate:insert-after>
+<xupdate:insert-after select="/TMD[TMD,1]/field[porgastos]" >
+<field>
+<name>gastos</name>
+<!--Gastos generales--><alias>QT_TRANSLATE_NOOP(&quot;MetaData&quot;,&quot;G.G.&quot;)</alias>
+<null>true</null>
+<pk>false</pk>
+<type>double</type>
+<partI>8</partI>
+<partD>2</partD>
+<default>0</default>
+</field>
+</xupdate:insert-after>
+<xupdate:insert-after select="/TMD[TMD,1]/field[gastos]" >
+<field>
+<name>porbeneficio</name>
+<!--Porcentaje de beneficio industrial--><alias>QT_TRANSLATE_NOOP(&quot;MetaData&quot;,&quot;% B.I.&quot;)</alias>
+<null>true</null>
+<pk>false</pk>
+<type>double</type>
+<partI>3</partI>
+<partD>2</partD>
+<default>0</default>
+</field>
+</xupdate:insert-after>
+<xupdate:insert-after select="/TMD[TMD,1]/field[porbeneficio]" >
+<field>
+<name>beneficio</name>
+<!--Beneficio industrial--><alias>QT_TRANSLATE_NOOP(&quot;MetaData&quot;,&quot;B.I.&quot;)</alias>
+<null>true</null>
+<pk>false</pk>
+<type>double</type>
+<partI>8</partI>
+<partD>2</partD>
+<default>0</default>
+</field>
+</xupdate:insert-after>
+</xupdate:modifications>

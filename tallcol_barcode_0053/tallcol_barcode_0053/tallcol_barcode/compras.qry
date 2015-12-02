@@ -1,0 +1,17 @@
+<!DOCTYPE QRY>
+<QRY>
+	<name>compras</name>
+	
+	<tables>facturasprov,lineasfacturasprov,articulos</tables>
+	
+	<select>
+		lineasfacturasprov.idlinea, facturasprov.nombre, facturasprov.codproveedor, facturasprov.codigo, facturasprov.fecha, lineasfacturasprov.referencia, lineasfacturasprov.descripcion, lineasfacturasprov.pvpunitario, lineasfacturasprov.cantidad, lineasfacturasprov.pvpsindto, lineasfacturasprov.pvptotal, atributosarticulos.talla, atributosarticulos.color
+	</select>
+	
+	<from>
+		lineasfacturasprov INNER JOIN facturasprov ON lineasfacturasprov.idfactura = facturasprov.idfactura LEFT OUTER JOIN atributosarticulos ON lineasfacturasprov.barcode = atributosarticulos.barcode
+	</from>
+	
+	<where>
+	</where>
+</QRY>

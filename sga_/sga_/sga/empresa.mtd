@@ -1,0 +1,21 @@
+<xupdate:modifications>
+<xupdate:insert-after select="/TMD[TMD,1]/field[stockpedidos]" >
+<field>
+<name>maxpedpick</name>
+<!--Máximo número de pedidos picking simultáneos por operador--><alias>QT_TRANSLATE_NOOP(&quot;MetaData&quot;,&quot;Máximo Nº pedidos por P.picking y usuario&quot;)</alias>
+<null>true</null>
+<pk>false</pk>
+<type>int</type>
+</field>
+</xupdate:insert-after>
+<xupdate:insert-after select="/TMD[TMD,1]/field[maxpedpick]" >
+<field>
+<name>impresoraeti</name>
+<alias>QT_TRANSLATE_NOOP(&quot;MetaData&quot;,&quot;Impresora de etiquetas&quot;)</alias>
+<null>true</null>
+<pk>false</pk>
+<type>string</type>
+<length>100</length>
+</field>
+</xupdate:insert-after>
+</xupdate:modifications>

@@ -1,0 +1,42 @@
+<xupdate:modifications>
+<xupdate:update select="/UI[UI,1]/widget[QWidget,FLWidgetMasterTable]/vbox[vbox,1]/widget[QFrame,barraBotones]/hbox[hbox,1]/spacer[Spacer2]/property[sizeHint]/size[size,1]/height[height,1]/text()[1]" >16</xupdate:update>
+<xupdate:update select="/UI[UI,1]/widget[QWidget,FLWidgetMasterTable]/vbox[vbox,1]/widget[QFrame,barraBotones]/hbox[hbox,1]/spacer[Spacer2]/property[sizeHint]/size[size,1]/width[width,1]/text()[1]" >30</xupdate:update>
+<xupdate:insert-after select="/UI[UI,1]/widget[QWidget,FLWidgetMasterTable]/vbox[vbox,1]/widget[QFrame,barraBotones]/hbox[hbox,1]/spacer[Spacer2]" >
+<widget class="QLabel" >
+<property name="name" >
+<cstring>lePI</cstring>
+</property>
+<property name="minimumSize" >
+<size>
+<width>75</width>
+<height>0</height>
+</size>
+</property>
+<property name="paletteForegroundColor" >
+<color>
+<red>83</red>
+<green>41</green>
+<blue>150</blue>
+</color>
+</property>
+<property name="font" >
+<font>
+<pointsize>7</pointsize>
+<bold>1</bold>
+</font>
+</property>
+<property name="text" >
+<string/>
+</property>
+<property name="alignment" >
+<set>AlignCenter</set>
+</property>
+</widget>
+</xupdate:insert-after>
+<xupdate:delete select="/UI[UI,1]/connections[connections,1]/connection[tableDBRecords,insertOnlyChanged(bool),toolButtonDelete,setDisabled(bool)]" />
+<xupdate:delete select="/UI[UI,1]/connections[connections,1]/connection[tableDBRecords,insertOnlyChanged(bool),toolButtonEdit,setDisabled(bool)]" />
+<xupdate:delete select="/UI[UI,1]/connections[connections,1]/connection[tableDBRecords,readOnlyChanged(bool),toolButtomInsert,setDisabled(bool)]" />
+<xupdate:delete select="/UI[UI,1]/connections[connections,1]/connection[tableDBRecords,readOnlyChanged(bool),toolButtonCopy,setDisabled(bool)]" />
+<xupdate:delete select="/UI[UI,1]/connections[connections,1]/connection[tableDBRecords,readOnlyChanged(bool),toolButtonDelete,setDisabled(bool)]" />
+<xupdate:delete select="/UI[UI,1]/connections[connections,1]/connection[tableDBRecords,readOnlyChanged(bool),toolButtonEdit,setDisabled(bool)]" />
+</xupdate:modifications>

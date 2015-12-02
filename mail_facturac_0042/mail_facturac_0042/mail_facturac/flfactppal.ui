@@ -1,0 +1,159 @@
+<xupdate:modifications>
+<xupdate:insert-after select="/UI[UI,1]/actions[actions,1]/action[tiposrappel]" >
+<action>
+<property name="name" >
+<cstring>comunicacionescli</cstring>
+</property>
+<property name="text" >
+<string>Comunicaciones de cliente</string>
+</property>
+<property name="menuText" >
+<string>Comunicaciones de cliente</string>
+</property>
+</action>
+</xupdate:insert-after>
+<xupdate:insert-after select="/UI[UI,1]/actions[actions,1]/action[comunicacionescli]" >
+<action>
+<property name="name" >
+<cstring>comunicacionesprov</cstring>
+</property>
+<property name="text" >
+<string>Comunicaciones de proveedor</string>
+</property>
+<property name="menuText" >
+<string>Comunicaciones de proveedor</string>
+</property>
+</action>
+</xupdate:insert-after>
+<xupdate:insert-after select="/UI[UI,1]/actions[actions,1]/action[comunicacionesprov]" >
+<action>
+<property name="name" >
+<cstring>comunicacionesopc</cstring>
+</property>
+<property name="text" >
+<string>Opciones</string>
+</property>
+<property name="menuText" >
+<string>Opciones</string>
+</property>
+</action>
+</xupdate:insert-after>
+<xupdate:append-first select="/UI[UI,1]/images[images,1]" >
+<image name="mail_facturacimage17" >
+<data format="PNG" length="1045" >89504e470d0a1a0a0000000d4948445200000016000000160806000000c4b46c3b000003dc49444154789c9d944188556514c77f33f3bd3c57efd8f7e5b3ee0dcdb9e0842f1ce30d698c3990132d9c205191408a4071614209092dc455b48a16e1425a480bcd28238868369246cad8421c68a417f8e83e74e0bef0d6f7c13cbd1f7a8b162fa7a099c93abb730effdff7e79cc3d7c32221c2ca835be4ed7a8ddd3a943ee097a9169f9f38eb8eb7727e5a4cdbb35873efb3f2ed70c2a8002888aa1a13c50872ebe8c9a9fd1397fdc70b697b176aec5c2faf8ed518b53721b54029b4da0edbb63864d9bb07c64ed522362ea4ef9baf2842f58dedeaabd59a60e8b9bd6499a3756306d3a770774a42027a96f6f7847db3e6fcd5ce99fb76ac85d50226f3c2f08ec31c3e7a8a91d19dfc70d3535868e519d61598aa3c238a65f70df69e5b8dcc97c9aacdd0c9a02aec3a70847dafbc49bb0359ea68b452a40c0cb0623e869aafe83c2ddba691d44686ba8514c298e11d7ba96ddccab90b13b8e61453d353b92fe9dcb763e0cec48f7ca8ab71175a02790ade11540d2fec3f886873ebc4457f18f8f5bf8069394ea6b9cdc0836b31e7dc5b98b9449aeb93cef3c942fa05c140eeadbf3e97b9144a0ff91428e1d2b5c6e545b48b8279e7f8e94f717f262ae82e328cb972a1919dbbd8f87a31edbc777c2f1ad7f34b37b26bd5ed5b0737d1f1d02be01dbbdefae0f5e68cfbe67f3b0688e3919f9104ab622c06d68e110f0cf7ff9bee1f7f4514458f2503fb5e33910ceed9567f3c194ad66d7eea09553453022514ab625cdbfe76e2cc649e36db8dc674e34aa3f9d1fb2e6f5f9f171c4503f1d8f3074fd7d70f6faad5f5d258c7dd3353e015d41b5708bc231d1da7f0106be90a55c0e92f276f67cdc9cfde3b76f490f7dec2df66fce2ee2367f7bc34bea5f240a7224b84ceed0e1555a164169180ca6c467f6048971bfa9522bb9dd3532ab24e9b4d4383950d4f6f78326bf3f0f4f717be989b716ddd9197776e1babb76ea44845e33d1831f8b2408b414a21560164294634946094c67a8f41e39d236b662403c9b82809ff5a9ee2217fd72d9132c0150e11c196162d01aef420506429384be11d08d8d26144b0de91b62d93d30db48e1e9150af99038bd8353a88f014e840e3bdc388018458340041db42c761945000b144141d8f7390666de230261048d6d636de03f726abe24157384405f8bb0e231aef0b44c0e2310a684e81b3dd479590b936de7b0a6f89fa351e8f16431cc54322b2528992900acb75bfc6e18857c668118cd68880ae060479015906a12709238a30405442e62c49a8497347a40437ebd04aaf40c9833ddd51c8ba912de3878cd18f02bf8b08a240240025186f91f313101a5cbd8ee804eb1dbe04ef0b28c117bed7e6ed99f3df9d3b46e9affd0155fca334199c39d90000000049454e44ae426082</data>
+</image>
+</xupdate:append-first>
+<xupdate:insert-after select="/UI[UI,1]/actions[actions,1]/action[comunicacionesopc]" >
+<action>
+<property name="name" >
+<cstring>usuarios</cstring>
+</property>
+<property name="iconSet" >
+<iconset>mail_facturacimage17</iconset>
+</property>
+<property name="text" >
+<string>&amp;Usuarios</string>
+</property>
+<property name="menuText" >
+<string>Usuarios</string>
+</property>
+<property name="accel" >
+<string>Ctrl+U</string>
+</property>
+</action>
+</xupdate:insert-after>
+<xupdate:insert-after select="/UI[UI,1]/actions[actions,1]/action[usuarios]" >
+<action>
+<property name="name" >
+<cstring>listadocomcli</cstring>
+</property>
+<property name="text" >
+<string>Resumen de clientes</string>
+</property>
+<property name="menuText" >
+<string>Resumen de clientes</string>
+</property>
+</action>
+</xupdate:insert-after>
+<xupdate:insert-after select="/UI[UI,1]/actions[actions,1]/action[listadocomcli]" >
+<action>
+<property name="name" >
+<cstring>listadocomprov</cstring>
+</property>
+<property name="text" >
+<string>Resumen de proveedores</string>
+</property>
+<property name="menuText" >
+<string>Resumen de proveedores</string>
+</property>
+</action>
+</xupdate:insert-after>
+<xupdate:insert-after select="/UI[UI,1]/connections[connections,1]/connection[connection,17]" >
+<connection>
+<sender>comunicacionescli</sender>
+<signal>activated()</signal>
+<receiver>FLWidgetApplication</receiver>
+<slot>openDefaultForm()</slot>
+</connection>
+</xupdate:insert-after>
+<xupdate:insert-after select="/UI[UI,1]/connections[connections,1]/connection[connection,18]" >
+<connection>
+<sender>comunicacionesprov</sender>
+<signal>activated()</signal>
+<receiver>FLWidgetApplication</receiver>
+<slot>openDefaultForm()</slot>
+</connection>
+</xupdate:insert-after>
+<xupdate:insert-after select="/UI[UI,1]/connections[connections,1]/connection[connection,19]" >
+<connection>
+<sender>comunicacionesopc</sender>
+<signal>activated()</signal>
+<receiver>FLWidgetApplication</receiver>
+<slot>execDefaultScript()</slot>
+</connection>
+</xupdate:insert-after>
+<xupdate:insert-after select="/UI[UI,1]/connections[connections,1]/connection[connection,20]" >
+<connection>
+<sender>usuarios</sender>
+<signal>activated()</signal>
+<receiver>FLWidgetApplication</receiver>
+<slot>openDefaultForm()</slot>
+</connection>
+</xupdate:insert-after>
+<xupdate:insert-after select="/UI[UI,1]/connections[connections,1]/connection[connection,21]" >
+<connection>
+<sender>paises</sender>
+<signal>activated()</signal>
+<receiver>FLWidgetApplication</receiver>
+<slot>openDefaultForm()</slot>
+</connection>
+</xupdate:insert-after>
+<xupdate:insert-after select="/UI[UI,1]/connections[connections,1]/connection[connection,22]" >
+<connection>
+<sender>listadocomcli</sender>
+<signal>activated()</signal>
+<receiver>FLWidgetApplication</receiver>
+<slot>openDefaultForm()</slot>
+</connection>
+</xupdate:insert-after>
+<xupdate:insert-after select="/UI[UI,1]/connections[connections,1]/connection[connection,23]" >
+<connection>
+<sender>listadocomprov</sender>
+<signal>activated()</signal>
+<receiver>FLWidgetApplication</receiver>
+<slot>openDefaultForm()</slot>
+</connection>
+</xupdate:insert-after>
+<xupdate:insert-after select="/UI[UI,1]/menubar[menubar,1]/item[item,1]/action[proveedores]" >
+<action name="usuarios" />
+</xupdate:insert-after>
+<xupdate:insert-after select="/UI[UI,1]/menubar[menubar,1]/item[item,3]" >
+<item name="Comunicaciones" text="&amp;Comunicaciones" >
+<action name="comunicacionescli" />
+<action name="comunicacionesprov" />
+<action name="comunicacionesopc" />
+<action name="listadocomcli" />
+<action name="listadocomprov" />
+</item>
+</xupdate:insert-after>
+</xupdate:modifications>

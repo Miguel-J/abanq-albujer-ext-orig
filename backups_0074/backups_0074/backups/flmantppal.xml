@@ -1,0 +1,48 @@
+<xupdate:modifications>
+<xupdate:insert-after select="/ACTIONS[ACTIONS,1]/action[mt_procesos]" >
+<action>
+<name>mt_basesdatos</name>
+<alias>QT_TRANSLATE_NOOP(&quot;MetaData&quot;,&quot;Bases de datos&quot;)</alias>
+<table>mt_basesdatos</table>
+<form>master_copy</form>
+<formrecord>mt_basesdatos</formrecord>
+<description>QT_TRANSLATE_NOOP(&quot;MetaData&quot;,&quot;A la hora de utilizar backups, previamente hay que definir un listado de las bases de datos. Este listado ha de ser definido por el usuario con las bases de datos existentes en el sistema&quot;)</description>
+</action>
+</xupdate:insert-after>
+<xupdate:insert-after select="/ACTIONS[ACTIONS,1]/action[mt_basesdatos]" >
+<action>
+<name>mt_backups</name>
+<alias>QT_TRANSLATE_NOOP(&quot;MetaData&quot;,&quot;Backups&quot;)</alias>
+<table>mt_backups</table>
+<form>master_copy</form>
+<formrecord>mt_backups</formrecord>
+<scriptformrecord>mt_backups</scriptformrecord>
+<description>QT_TRANSLATE_NOOP(&quot;MetaData&quot;,&quot;Los backups son copias de seguridad de una base de datos. Un backup consiste en un volcado a fichero de todos los datos de una base de datos. Los backups pueden posteriormente restaurarse en caso necesario. Esta acción pretende facilitar al usuario la creación y restauración de backups&quot;)</description>
+</action>
+</xupdate:insert-after>
+<xupdate:insert-after select="/ACTIONS[ACTIONS,1]/action[mt_backups]" >
+<action>
+<name>mt_comandos</name>
+<alias>QT_TRANSLATE_NOOP(&quot;MetaData&quot;,&quot;Comandos&quot;)</alias>
+<table>mt_comandos</table>
+<form>master_copy</form>
+<formrecord>mt_comandos</formrecord>
+<description>QT_TRANSLATE_NOOP(&quot;MetaData&quot;,&quot;El sistema de backups (creación y restauración de backups, creado y borrado de bases de datos, etc) funciona a partir de la ejecución de comandos sobre el sistema operativo. Por ello los comandos dependen del sistema operativo en que trabajamos. Algunos comandos son creados automáticamente al entrar en el módulo de mantenimiento por primera vez.<br/>
+<br/>Los comandos contienen algunas palabras clave entre los símbolos &quot;%&quot;<br/>
+<br/>base_datos. Será sustituido en ejecución por el nombre de la base de datos<br/>
+<br/>usuario. Será sustituido en ejecución por el nombre del usuario que ejecute el comando<br/>
+<br/>fichero. Será sustituido en ejecución por el nombre del fichero</description>
+</action>
+</xupdate:insert-after>
+<xupdate:insert-after select="/ACTIONS[ACTIONS,1]/action[mt_comandos]" >
+<action>
+<name>mt_opciones</name>
+<alias>QT_TRANSLATE_NOOP(&quot;MetaData&quot;,&quot;Opciones&quot;)</alias>
+<scriptform>mt_opciones</scriptform>
+<table>mt_opciones</table>
+<form>mt_opciones</form>
+<formrecord>mt_opciones</formrecord>
+<description>QT_TRANSLATE_NOOP(&quot;MetaData&quot;,&quot;Opciones de backup. Se utilizan para indicar al sistema datos relacionados con la creación y restauración de los backups. Los mensajes de base de datos deben ser verificados o rellenados por el administrador del sistema, ya que requieren de conocimientos de bases de datos.&quot;)</description>
+</action>
+</xupdate:insert-after>
+</xupdate:modifications>

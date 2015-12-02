@@ -1,0 +1,15 @@
+<xupdate:modifications>
+<xupdate:insert-after select="/ACTIONS[ACTIONS,1]/action[ubicacionesarticulo]/formrecord[formrecord,1]" >
+<scriptformrecord>ubicacionesarticulo</scriptformrecord>
+</xupdate:insert-after>
+<xupdate:insert-after select="/ACTIONS[ACTIONS,1]/action[ubicacionesarticulo]" >
+<action>
+<name>envasesbarcode</name>
+<alias>QT_TRANSLATE_NOOP(&quot;MetaData&quot;,&quot;Envases por barcode&quot;)</alias>
+<description>QT_TRANSLATE_NOOP(&quot;MetaData&quot;,&quot;Envases que contienen articulos seleccionados por talla y color&quot;)</description>
+<table>envasesbarcode</table>
+<form>master</form>
+<formrecord>envasesbarcode</formrecord>
+</action>
+</xupdate:insert-after>
+</xupdate:modifications>

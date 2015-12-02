@@ -1,0 +1,30 @@
+<!DOCTYPE QRY>
+<QRY>
+	<name>i_resumencapitulos</name>
+
+	<tables>empresa,presupuestoscli</tables>
+
+	<group>
+		<level>0</level>
+		<field>empresa.cifnif</field>
+	</group>
+
+	<select>
+		partidas.descripcion, partidas.orden,
+		partidas.idpartida,
+		presupuestoscli.idpresupuesto,
+		empresa.nombre, empresa.cifnif,
+		empresa.direccion,
+		empresa.codpostal, empresa.ciudad,
+		empresa.provincia, empresa.apartado,
+		empresa.codpais
+	</select>
+
+	<from>
+		empresa,presupuestoscli
+		LEFT OUTER JOIN partidas ON presupuestoscli.idpresupuesto = partidas.idpresupuesto
+	</from>
+
+	<where>
+	</where>
+</QRY>

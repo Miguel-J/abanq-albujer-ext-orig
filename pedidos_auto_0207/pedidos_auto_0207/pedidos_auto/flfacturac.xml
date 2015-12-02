@@ -1,0 +1,35 @@
+<xupdate:modifications>
+<xupdate:insert-after select="/ACTIONS[ACTIONS,1]/action[trazadoc]" >
+<action>
+<name>pedidosaut</name>
+<description>QT_TRANSLATE_NOOP(&quot;MetaData&quot;,&quot;Pedidos automaticos por proveedores&quot;)</description>
+<alias>QT_TRANSLATE_NOOP(&quot;MetaData&quot;,&quot;Pedidos automaticos&quot;)</alias>
+<table>pedidosaut</table>
+<form>masterpedidosaut</form>
+<formrecord>pedidosaut</formrecord>
+<scriptformrecord>pedidosaut</scriptformrecord>
+<scriptform>masterpedidosaut</scriptform>
+</action>
+</xupdate:insert-after>
+<xupdate:insert-after select="/ACTIONS[ACTIONS,1]/action[pedidosaut]" >
+<action>
+<name>seleccionarticulos</name>
+<description>QT_TRANSLATE_NOOP(&quot;MetaData&quot;,&quot;Seleccionar articulos con un filtro especificado&quot;)</description>
+<alias>QT_TRANSLATE_NOOP(&quot;MetaData&quot;,&quot;Seleccion de articulos&quot;)</alias>
+<table>seleccionarticulos</table>
+<form>seleccionarticulos</form>
+<scriptform>seleccionarticulos</scriptform>
+</action>
+</xupdate:insert-after>
+<xupdate:insert-after select="/ACTIONS[ACTIONS,1]/action[seleccionarticulos]" >
+<action>
+<name>lineaspedidosaut</name>
+<description>QT_TRANSLATE_NOOP(&quot;MetaData&quot;,&quot;Cada línea de pedido refleja la cantidad y precio de un determinado artículo incluido en el documento&quot;)</description>
+<alias>QT_TRANSLATE_NOOP(&quot;MetaData&quot;,&quot;Lineas de pedidos automaticos&quot;)</alias>
+<table>lineaspedidosaut</table>
+<form>master</form>
+<formrecord>lineaspedidosaut</formrecord>
+<scriptformrecord>lineaspedidosaut</scriptformrecord>
+</action>
+</xupdate:insert-after>
+</xupdate:modifications>

@@ -1,0 +1,9 @@
+<flpatch:modifications name="cambio_ejer_alb" >
+    <flpatch:patchXml path="facturacion/facturacion/" name="flfacturac.xml" />
+    <flpatch:addFile path="facturacion/facturacion/forms/" name="cambioejercicio.ui" />
+    <flpatch:patchXml path="facturacion/facturacion/forms/" name="masteralbaranescli.ui" />
+    <flpatch:patchXml path="facturacion/facturacion/forms/" name="masteralbaranesprov.ui" />
+    <flpatch:patchScript path="facturacion/facturacion/scripts/" name="masteralbaranescli.qs" />
+    <flpatch:addFile path="facturacion/facturacion/tables/" name="cambioejercicio.mtd" />
+    <flpatch:patchScript path="facturacion/facturacion/scripts/" name="masteralbaranesprov.qs" />
+</flpatch:modifications>

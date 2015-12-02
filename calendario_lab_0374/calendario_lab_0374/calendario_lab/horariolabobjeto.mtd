@@ -1,0 +1,39 @@
+<!DOCTYPE TMD>
+<TMD>
+	<name>horariolabobjeto</name>
+	<!--Tabla temporal para mostrar el horario asociado a un objeto-->
+	<alias>QT_TRANSLATE_NOOP("MetaData","Horario")</alias>
+
+	<field>
+		<name>id</name>
+		<!--Identificador interno-->
+		<alias>QT_TRANSLATE_NOOP("MetaData","Id")</alias>
+		<null>false</null>
+		<pk>true</pk>
+		<type>serial</type>
+	</field>
+
+	<field>
+		<name>fechadesde</name>
+		<alias>QT_TRANSLATE_NOOP("MetaData","Desde")</alias>
+		<pk>false</pk>
+		<type>date</type>
+	</field>
+
+	<field>
+		<name>codagente</name>
+		<!--El objeto de ejemplo es el agente. Puede reprogramarse con cualquiera-->
+		<alias>QT_TRANSLATE_NOOP("MetaData","Agente")</alias>
+		<null>true</null>
+		<pk>false</pk>
+		<type>string</type>
+		<length>10</length>
+
+		<relation>
+			<table>agentes</table>
+			<field>codagente</field>
+			<card>M1</card>
+		</relation>
+	</field>
+
+</TMD>

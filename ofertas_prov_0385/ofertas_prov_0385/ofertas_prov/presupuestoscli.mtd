@@ -1,0 +1,16 @@
+<xupdate:modifications>
+<xupdate:insert-after select="/TMD[TMD,1]/field[idpresupuesto]/relation[lineaspresupuestoscli,idpresupuesto]" >
+<relation>
+<table>solpresupuestosprov</table>
+<field>idpresupuestocli</field>
+<card>1M</card>
+</relation>
+</xupdate:insert-after>
+<xupdate:insert-after select="/TMD[TMD,1]/field[idpresupuesto]/relation[solpresupuestosprov,idpresupuestocli]" >
+<relation>
+<table>presupuestosprov</table>
+<field>idpresupuesto</field>
+<card>1M</card>
+</relation>
+</xupdate:insert-after>
+</xupdate:modifications>

@@ -1,0 +1,31 @@
+<!DOCTYPE TMD>
+<TMD>
+	<name>formatospapel</name>
+	<!-- Formatos de papel-->
+	<alias>QT_TRANSLATE_NOOP("MetaData","Formatos de papel")</alias>
+
+	<field>
+		<name>codformato</name>
+		<!-- Código de formato-->
+		<alias>QT_TRANSLATE_NOOP("MetaData","Código")</alias>
+		<null>false</null>
+		<pk>true</pk>
+		<type>string</type>
+		<length>50</length>
+		
+		<relation>
+            <table>articulos</table>
+            <field>codformato</field>
+            <card>1M</card>
+        </relation>
+	</field>
+
+	<field>
+		<name>descripcion</name>
+		<alias>QT_TRANSLATE_NOOP("MetaData","Descripción")</alias>
+		<null>true</null>
+		<pk>false</pk>
+		<type>string</type>
+		<length>100</length>
+	</field>
+</TMD>

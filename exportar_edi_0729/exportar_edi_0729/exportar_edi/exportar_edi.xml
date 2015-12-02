@@ -1,0 +1,15 @@
+<flpatch:modifications name="exportar_edi" >
+    <flpatch:patchXml path="facturacion/principal/" name="flfactppal.xml" />
+    <flpatch:addFile path="facturacion/principal/tables/" name="edi_esquemas.mtd" />
+    <flpatch:addFile path="facturacion/principal/tables/" name="edi_funciones.mtd" />
+    <flpatch:addFile path="facturacion/principal/tables/" name="edi_campos.mtd" />
+    <flpatch:patchXml path="facturacion/principal/forms/" name="flfactppal.ui" />
+    <flpatch:addFile path="facturacion/principal/forms/" name="edi_esquemas.ui" />
+    <flpatch:addFile path="facturacion/principal/scripts/" name="edi_esquemas.qs" />
+    <flpatch:addFile path="facturacion/principal/forms/" name="edi_funciones.ui" />
+    <flpatch:addFile path="facturacion/principal/forms/" name="edi_campos.ui" />
+    <flpatch:addFile path="facturacion/principal/scripts/" name="edi_campos.qs" />
+    <flpatch:addFile path="facturacion/principal/tables/" name="edi_settings.mtd" />
+    <flpatch:addFile path="facturacion/principal/scripts/" name="edi_masteresquemas.qs" />
+    <flpatch:addFile path="facturacion/principal/forms/" name="edi_masteresquemas.ui" />
+</flpatch:modifications>

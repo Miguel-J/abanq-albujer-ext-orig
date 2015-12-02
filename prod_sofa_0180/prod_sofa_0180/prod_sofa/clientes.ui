@@ -1,0 +1,19 @@
+<xupdate:modifications>
+<xupdate:update select="/UI[UI,1]/widget[QWidget,formClientes]/vbox[vbox,1]/widget[QTabWidget,tbwCliente]/widget[QWidget,comercial]/vbox[vbox,1]/widget[QLayoutWidget,layout80]/hbox[hbox,1]/widget[QFrame,frame11]/vbox[vbox,1]/spacer[spacer39]/property[property,4]/size[size,1]/height[height,1]/text()[1]" >20</xupdate:update>
+<xupdate:insert-after select="/UI[UI,1]/widget[QWidget,formClientes]/vbox[vbox,1]/widget[QTabWidget,tbwCliente]/widget[QWidget,comercial]/vbox[vbox,1]/widget[QLayoutWidget,layout80]/hbox[hbox,1]/widget[QFrame,frame11]/vbox[vbox,1]/property[property,1]" >
+<widget class="FLFieldDB" >
+<property name="name" >
+<cstring>fdbValorPunto</cstring>
+</property>
+<property name="maximumSize" >
+<size>
+<width>300</width>
+<height>32767</height>
+</size>
+</property>
+<property name="fieldName" >
+<string>valorpunto</string>
+</property>
+</widget>
+</xupdate:insert-after>
+</xupdate:modifications>

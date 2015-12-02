@@ -1,0 +1,103 @@
+<!DOCTYPE TMD>
+<TMD>
+	<name>usuarios</name>
+	<!--Usuarios para el sistema-->
+	<alias>QT_TRANSLATE_NOOP("MetaData","Usuarios")</alias>
+	
+	<field>
+		<name>codigo</name>
+		<alias>QT_TRANSLATE_NOOP("MetaData","Codigo")</alias>
+		<null>false</null>
+		<pk>true</pk>
+		<type>string</type>
+		<length>100</length>
+	</field>
+	
+	<field>
+		<name>usuario</name>
+		<alias>QT_TRANSLATE_NOOP("MetaData","Usuario en FacturaLUX")</alias>
+		<null>false</null>
+		<pk>false</pk>
+		<type>string</type>
+		<length>100</length>
+	</field>
+	
+	<field>
+		<name>nombre</name>
+		<alias>QT_TRANSLATE_NOOP("MetaData","Nombre")</alias>
+		<null>false</null>
+		<pk>false</pk>
+		<type>string</type>
+		<length>100</length>
+	</field>
+	
+	<field>
+		<name>apellidos</name>
+		<alias>QT_TRANSLATE_NOOP("MetaData","Apellidos")</alias>
+		<null>false</null>
+		<pk>false</pk>
+		<type>string</type>
+		<length>100</length>
+	</field>
+	
+	<field>
+		<name>cargo</name>
+		<alias>QT_TRANSLATE_NOOP("MetaData","Cargo")</alias>
+		<null>true</null>
+		<pk>false</pk>
+		<type>string</type>
+		<length>100</length>
+	</field>
+
+	<field>
+		<name>coddepartamento</name>
+		<alias>QT_TRANSLATE_NOOP("MetaData","Departamento")</alias>
+		<null>true</null>
+		<pk>false</pk>
+		<type>string</type>
+		<length>6</length>
+		
+		<relation>
+			<table>departamentos</table>
+			<field>coddepartamento</field>
+			<card>M1</card>
+		</relation>
+	</field>
+	
+	<field>
+		<name>telefono</name>
+		<alias>QT_TRANSLATE_NOOP("MetaData","Teléfono")</alias>
+		<null>true</null>
+		<pk>false</pk>
+		<type>string</type>
+		<length>30</length>
+	</field>
+	
+	<field>
+		<name>fax</name>
+		<alias>QT_TRANSLATE_NOOP("MetaData","Fax")</alias>
+		<null>true</null>
+		<pk>false</pk>
+		<type>string</type>
+		<length>30</length>
+	</field>
+	
+	<field>
+		<name>email</name>
+		<alias>QT_TRANSLATE_NOOP("MetaData","E-mail")</alias>
+		<null>true</null>
+		<pk>false</pk>
+		<type>string</type>
+		<length>50</length>
+	</field>
+
+	<field>
+		<name>firma</name>
+		<!-- Texto del mensaje -->
+		<alias>QT_TRANSLATE_NOOP("MetaData","Firma")</alias>
+		<null>true</null>
+		<pk>false</pk>
+		<type>stringlist</type>
+		<visiblegrid>false</visiblegrid>
+	</field>
+</TMD>

@@ -1,0 +1,69 @@
+<xupdate:modifications>
+<xupdate:update select="/UI[UI,1]/widget[QWidget,formEmpresa]/vbox[vbox,1]/widget[QTabWidget,tbwEmpresa]/widget[QWidget,TabPage]/vbox[vbox,1]/widget[QGroupBox,gbxConfLocal]/vbox[vbox,1]/spacer[spcConfLocal]/property[sizeHint]/size[size,1]/height[height,1]/text()[1]" >290</xupdate:update>
+<xupdate:insert-after select="/UI[UI,1]/widget[QWidget,formEmpresa]/vbox[vbox,1]/widget[QTabWidget,tbwEmpresa]/widget[QWidget,TabPage]/vbox[vbox,1]/widget[QGroupBox,gbxConfLocal]/vbox[vbox,1]/property[name]" >
+<widget class="QGroupBox" >
+<property name="name" >
+<cstring>gbxAccesoNavegador</cstring>
+</property>
+<property name="font" >
+<font/>
+</property>
+<property name="title" >
+<string>Nombre o ruta de acceso al navegador</string>
+</property>
+<hbox>
+<property name="name" >
+<cstring>unnamed</cstring>
+</property>
+<widget class="QLabel" >
+<property name="name" >
+<cstring>lblNombreNavegador</cstring>
+</property>
+<property name="sizePolicy" >
+<sizepolicy>
+<hsizetype>1</hsizetype>
+<vsizetype>5</vsizetype>
+<horstretch>0</horstretch>
+<verstretch>0</verstretch>
+</sizepolicy>
+</property>
+<property name="minimumSize" >
+<size>
+<width>100</width>
+<height>30</height>
+</size>
+</property>
+<property name="font" >
+<font/>
+</property>
+<property name="text" >
+<string/>
+</property>
+<property name="alignment" >
+<set>AlignVCenter</set>
+</property>
+</widget>
+<widget class="QPushButton" >
+<property name="name" >
+<cstring>pbnCambiarNavegador</cstring>
+</property>
+<property name="maximumSize" >
+<size>
+<width>100</width>
+<height>32767</height>
+</size>
+</property>
+<property name="text" >
+<string>Cambiar</string>
+</property>
+<property name="toolTip" stdset="0" >
+<string>Usuario</string>
+</property>
+<property name="whatsThis" stdset="0" >
+<string>Cambiar usuario</string>
+</property>
+</widget>
+</hbox>
+</widget>
+</xupdate:insert-after>
+</xupdate:modifications>

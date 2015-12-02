@@ -1,0 +1,6 @@
+<flpatch:modifications name="prod_barcode" >
+    <flpatch:patchScript path="facturacion/almacen/scripts/" name="flfactalma.qs" />
+    <flpatch:patchXml path="facturacion/almacen/tables/" name="movistock.mtd" />
+    <flpatch:patchScript path="facturacion/facturacion/scripts/" name="roturastock.qs" />
+    <flpatch:patchScript path="facturacion/facturacion/scripts/" name="masterpedidosprov.qs" />
+</flpatch:modifications>

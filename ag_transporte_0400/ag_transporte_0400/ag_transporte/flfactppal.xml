@@ -1,0 +1,30 @@
+<xupdate:modifications>
+<xupdate:insert-after select="/ACTIONS[ACTIONS,1]/action[contactos]" >
+<action>
+<name>zonastrans</name>
+<alias>QT_TRANSLATE_NOOP(&quot;MetaData&quot;,&quot;Zonas de agencias&quot;)</alias>
+<table>zonastrans</table>
+<form>master</form>
+<formrecord>zonastrans</formrecord>
+</action>
+</xupdate:insert-after>
+<xupdate:insert-after select="/ACTIONS[ACTIONS,1]/action[zonastrans]" >
+<action>
+<name>zonaspesoagencia</name>
+<alias>QT_TRANSLATE_NOOP(&quot;MetaData&quot;,&quot;Precios por zona y peso&quot;)</alias>
+<table>zonaspesoagencia</table>
+<form>master</form>
+<formrecord>zonaspesoagencia</formrecord>
+</action>
+</xupdate:insert-after>
+<xupdate:insert-after select="/ACTIONS[ACTIONS,1]/action[zonaspesoagencia]" >
+<action>
+<name>zonasgeo</name>
+<alias>QT_TRANSLATE_NOOP(&quot;MetaData&quot;,&quot;Descripción geográfica de las zonas de transporte&quot;)</alias>
+<table>zonasgeo</table>
+<form>master</form>
+<formrecord>zonasgeo</formrecord>
+<scriptformrecord>zonasgeo</scriptformrecord>
+</action>
+</xupdate:insert-after>
+</xupdate:modifications>

@@ -1,0 +1,138 @@
+<xupdate:modifications>
+<xupdate:update select="/UI[UI,1]/widget[QWidget,formEmpresa]/vbox[vbox,1]/widget[QTabWidget,tbwEmpresa]/widget[QWidget,general]/vbox[vbox,1]/widget[QLayoutWidget,layout92]/hbox[hbox,1]/widget[QFrame,frmDireccion]/vbox[vbox,1]/widget[QLayoutWidget,layoutProvincia]/hbox[hbox,1]/widget[FLFieldDB,fdbIdProvincia]/property[focusPolicy]/enum[enum,1]/text()[1]" >StrongFocus</xupdate:update>
+<xupdate:insert-after select="/UI[UI,1]/widget[QWidget,formEmpresa]/vbox[vbox,1]/widget[QTabWidget,tbwEmpresa]/widget[QWidget,valoresdefecto]" >
+<widget class="QWidget" >
+<property name="name" >
+<cstring>gestionalmacen</cstring>
+</property>
+<attribute name="title" >
+<string>Gestión de &amp;almacén</string>
+</attribute>
+<vbox>
+<property name="name" >
+<cstring>unnamed</cstring>
+</property>
+<widget class="QGroupBox" >
+<property name="name" >
+<cstring>gbxPicking</cstring>
+</property>
+<property name="font" >
+<font>
+<bold>0</bold>
+</font>
+</property>
+<property name="title" >
+<string>Pedidos Pic&amp;king</string>
+</property>
+<hbox>
+<property name="name" >
+<cstring>unnamed</cstring>
+</property>
+<widget class="FLFieldDB" >
+<property name="name" >
+<cstring>fdbMaxPedPicking</cstring>
+</property>
+<property name="sizePolicy" >
+<sizepolicy>
+<hsizetype>1</hsizetype>
+<vsizetype>0</vsizetype>
+<horstretch>0</horstretch>
+<verstretch>0</verstretch>
+</sizepolicy>
+</property>
+<property name="minimumSize" >
+<size>
+<width>270</width>
+<height>25</height>
+</size>
+</property>
+<property name="font" >
+<font/>
+</property>
+<property name="fieldName" >
+<string>maxpedpick</string>
+</property>
+</widget>
+<spacer>
+<property name="name" >
+<cstring>spacer34</cstring>
+</property>
+<property name="orientation" >
+<enum>Horizontal</enum>
+</property>
+<property name="sizeType" >
+<enum>Expanding</enum>
+</property>
+<property name="sizeHint" >
+<size>
+<width>461</width>
+<height>20</height>
+</size>
+</property>
+</spacer>
+</hbox>
+</widget>
+<widget class="QGroupBox" >
+<property name="name" >
+<cstring>gbxPedidosAut_2</cstring>
+</property>
+<property name="font" >
+<font>
+<bold>0</bold>
+</font>
+</property>
+<property name="title" >
+<string>&amp;Almacén</string>
+</property>
+<vbox>
+<property name="name" >
+<cstring>unnamed</cstring>
+</property>
+<widget class="FLFieldDB" >
+<property name="name" >
+<cstring>fdbImpresoraEti</cstring>
+</property>
+<property name="sizePolicy" >
+<sizepolicy>
+<hsizetype>1</hsizetype>
+<vsizetype>0</vsizetype>
+<horstretch>0</horstretch>
+<verstretch>0</verstretch>
+</sizepolicy>
+</property>
+<property name="minimumSize" >
+<size>
+<width>270</width>
+<height>25</height>
+</size>
+</property>
+<property name="font" >
+<font/>
+</property>
+<property name="fieldName" >
+<string>impresoraeti</string>
+</property>
+</widget>
+</vbox>
+</widget>
+<spacer>
+<property name="name" >
+<cstring>spacer34_2</cstring>
+</property>
+<property name="orientation" >
+<enum>Vertical</enum>
+</property>
+<property name="sizeType" >
+<enum>Expanding</enum>
+</property>
+<property name="sizeHint" >
+<size>
+<width>21</width>
+<height>230</height>
+</size>
+</property>
+</spacer>
+</vbox>
+</widget>
+</xupdate:insert-after>
+</xupdate:modifications>

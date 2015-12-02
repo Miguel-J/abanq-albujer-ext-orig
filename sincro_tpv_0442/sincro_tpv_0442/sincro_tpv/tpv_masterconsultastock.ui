@@ -1,0 +1,13 @@
+<xupdate:modifications>
+<xupdate:update select="/UI[UI,1]/widget[QWidget,tpv_masterconsultastock]/vbox[vbox,1]/widget[QGroupBox,gbxAlmaStock]/hbox[hbox,1]/widget[QGroupBox,gbxStocks]/vbox[vbox,1]/widget[QGroupBox,gbxStockCab]/hbox[hbox,1]/spacer[spacerStocks]/property[sizeHint]/size[size,1]/width[width,1]/text()[1]" >90</xupdate:update>
+<xupdate:insert-after select="/UI[UI,1]/widget[QWidget,tpv_masterconsultastock]/vbox[vbox,1]/widget[QGroupBox,gbxAlmaStock]/hbox[hbox,1]/widget[QGroupBox,gbxStocks]/vbox[vbox,1]/widget[QGroupBox,gbxStockCab]/hbox[hbox,1]/spacer[spacerStocks]" >
+<widget class="QCheckBox" >
+<property name="name" >
+<cstring>chkConsultaCentral</cstring>
+</property>
+<property name="text" >
+<string>Consultar BD central</string>
+</property>
+</widget>
+</xupdate:insert-after>
+</xupdate:modifications>

@@ -1,0 +1,34 @@
+<!DOCTYPE TMD>
+<TMD>
+	<name>registrosexportados</name>
+	<alias>QT_TRANSLATE_NOOP("MetaData","Registros exportados")</alias>
+	
+	<field>
+		<name>id</name>
+		<alias>QT_TRANSLATE_NOOP("MetaData","Id")</alias>
+		<null>false</null>
+		<pk>true</pk>
+		<type>serial</type>
+		<visiblegrid>false</visiblegrid>
+	</field>
+	
+	<field>
+		<name>tabla</name>
+		<alias>QT_TRANSLATE_NOOP("MetaData","Tabla")</alias>
+		<null>false</null>
+		<pk>false</pk>
+		<ck>true</ck>
+		<type>string</type>
+		<length>100</length>
+	</field>
+	
+	<field>
+		<name>clave</name>
+		<alias>QT_TRANSLATE_NOOP("MetaData","Código")</alias>
+		<null>false</null>
+		<pk>false</pk>
+		<ck>true</ck>
+		<type>string</type>
+		<length>100</length>
+	</field>
+</TMD>

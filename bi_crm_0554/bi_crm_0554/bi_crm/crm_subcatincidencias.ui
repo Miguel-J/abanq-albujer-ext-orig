@@ -1,0 +1,67 @@
+<xupdate:modifications>
+<xupdate:update select="/UI[UI,1]/widget[QWidget,crm_subcatincidencias]/vbox[vbox,1]/widget[QGroupBox,gbxSubcategoria]/vbox[vbox,1]/widget[QLayoutWidget,layoutCat]/hbox[hbox,1]/widget[FLFieldDB,fdbCodCategoria]/property[minimumSize]/size[size,1]/height[height,1]/text()[1]" >29</xupdate:update>
+<xupdate:update select="/UI[UI,1]/widget[QWidget,crm_subcatincidencias]/vbox[vbox,1]/widget[QGroupBox,gbxSubcategoria]/vbox[vbox,1]/widget[QLayoutWidget,layoutCat]/hbox[hbox,1]/widget[FLFieldDB,fdbCodCategoria]/property[minimumSize]/size[size,1]/width[width,1]/text()[1]" >143</xupdate:update>
+<xupdate:insert-after select="/UI[UI,1]/widget[QWidget,crm_subcatincidencias]/vbox[vbox,1]/widget[QGroupBox,gbxSubcategoria]/vbox[vbox,1]/widget[QLayoutWidget,layoutCat_2]" >
+<widget class="QLayoutWidget" >
+<property name="name" >
+<cstring>lytValor</cstring>
+</property>
+<hbox>
+<property name="name" >
+<cstring>unnamed</cstring>
+</property>
+<widget class="FLFieldDB" >
+<property name="name" >
+<cstring>fdbValor</cstring>
+</property>
+<property name="sizePolicy" >
+<sizepolicy>
+<hsizetype>5</hsizetype>
+<vsizetype>5</vsizetype>
+<horstretch>0</horstretch>
+<verstretch>0</verstretch>
+</sizepolicy>
+</property>
+<property name="minimumSize" >
+<size>
+<width>96</width>
+<height>31</height>
+</size>
+</property>
+<property name="maximumSize" >
+<size>
+<width>180</width>
+<height>32767</height>
+</size>
+</property>
+<property name="font" >
+<font/>
+</property>
+<property name="fieldName" >
+<string>valor</string>
+</property>
+</widget>
+<spacer>
+<property name="name" >
+<cstring>spacerValor</cstring>
+</property>
+<property name="orientation" >
+<enum>Horizontal</enum>
+</property>
+<property name="sizeType" >
+<enum>Expanding</enum>
+</property>
+<property name="sizeHint" >
+<size>
+<width>101</width>
+<height>20</height>
+</size>
+</property>
+</spacer>
+</hbox>
+</widget>
+</xupdate:insert-after>
+<xupdate:insert-after select="/UI[UI,1]/includehints[includehints,1]/includehint[flfielddb.h]" >
+<includehint>flfielddb.h</includehint>
+</xupdate:insert-after>
+</xupdate:modifications>

@@ -1,0 +1,13 @@
+<flpatch:modifications name="inf_diariomes" >
+    <flpatch:patchXml path="contabilidad/informes/" name="flcontinfo.xml" />
+    <flpatch:addFile path="contabilidad/informes/forms/" name="co_i_diariomes.ui" />
+    <flpatch:patchXml path="contabilidad/informes/forms/" name="flcontinfo.ui" />
+    <flpatch:addFile path="contabilidad/informes/scripts/" name="co_i_diariomes.qs" />
+    <flpatch:addFile path="contabilidad/informes/scripts/" name="co_i_masterdiariomes.qs" />
+    <flpatch:addFile path="contabilidad/informes/tables/" name="co_i_diariomes.mtd" />
+    <flpatch:addFile path="contabilidad/informes/tables/" name="co_i_diariomes_buffer.mtd" />
+    <flpatch:replaceFile path="facturacion/informes/reports/" name="i_resalbaranesprov.ar" />
+    <flpatch:addFile path="contabilidad/informes/reports/" name="co_i_diariomes.ar" />
+    <flpatch:addFile path="contabilidad/informes/queries/" name="co_i_diariomes.qry" />
+    <flpatch:patchScript path="contabilidad/informes/scripts/" name="flcontinfo.qs" />
+</flpatch:modifications>

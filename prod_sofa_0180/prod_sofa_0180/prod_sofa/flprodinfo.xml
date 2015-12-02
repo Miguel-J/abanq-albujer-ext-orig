@@ -1,0 +1,22 @@
+<xupdate:modifications>
+<xupdate:insert-after select="/ACTIONS[ACTIONS,1]/action[pr_i_ordenesproduccion]" >
+<action>
+<name>pr_i_ordenescorte</name>
+<table>pr_i_ordenescorte</table>
+<form>master_print</form>
+<formrecord>pr_i_ordenescorte</formrecord>
+<scriptformrecord>pr_i_ordenescorte</scriptformrecord>
+<scriptform>pr_i_masterordenescorte</scriptform>
+</action>
+</xupdate:insert-after>
+<xupdate:insert-after select="/ACTIONS[ACTIONS,1]/action[pr_i_pegascarga]" >
+<action>
+<name>pr_i_pegascorte</name>
+<table>pr_i_pegascorte</table>
+<form>master_print</form>
+<formrecord>pr_i_pegascorte</formrecord>
+<scriptformrecord>pr_i_pegascorte</scriptformrecord>
+<scriptform>pr_i_masterpegascorte</scriptform>
+</action>
+</xupdate:insert-after>
+</xupdate:modifications>

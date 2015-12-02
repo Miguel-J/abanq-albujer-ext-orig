@@ -1,0 +1,112 @@
+<xupdate:modifications>
+<xupdate:update select="/UI[UI,1]/widget[QWidget,formDirClientes]/property[property,2]/rect[rect,1]/height[height,1]/text()[1]" >292</xupdate:update>
+<xupdate:update select="/UI[UI,1]/widget[QWidget,formDirClientes]/property[property,2]/rect[rect,1]/width[width,1]/text()[1]" >648</xupdate:update>
+<xupdate:insert-after select="/UI[UI,1]/widget[QWidget,formDirClientes]/vbox[vbox,1]/widget[QFrame,frame3]/vbox[vbox,1]/widget[QLayoutWidget,layout89]" >
+<widget class="QLayoutWidget" >
+<property name="name" >
+<cstring>layoutRuta</cstring>
+</property>
+<hbox>
+<property name="name" >
+<cstring>unnamed</cstring>
+</property>
+<widget class="FLFieldDB" >
+<property name="name" >
+<cstring>fdbCodRuta</cstring>
+</property>
+<property name="sizePolicy" >
+<sizepolicy>
+<hsizetype>1</hsizetype>
+<vsizetype>0</vsizetype>
+<horstretch>0</horstretch>
+<verstretch>0</verstretch>
+</sizepolicy>
+</property>
+<property name="minimumSize" >
+<size>
+<width>200</width>
+<height>25</height>
+</size>
+</property>
+<property name="fieldName" >
+<string>codruta</string>
+</property>
+<property name="tableName" >
+<string/>
+</property>
+<property name="foreignField" >
+<string/>
+</property>
+<property name="fieldRelation" >
+<string/>
+</property>
+</widget>
+<widget class="FLFieldDB" >
+<property name="name" >
+<cstring>fdbDescRuta</cstring>
+</property>
+<property name="sizePolicy" >
+<sizepolicy>
+<hsizetype>1</hsizetype>
+<vsizetype>0</vsizetype>
+<horstretch>0</horstretch>
+<verstretch>0</verstretch>
+</sizepolicy>
+</property>
+<property name="minimumSize" >
+<size>
+<width>250</width>
+<height>25</height>
+</size>
+</property>
+<property name="fieldName" >
+<string>descripcion</string>
+</property>
+<property name="tableName" >
+<string>rutas</string>
+</property>
+<property name="foreignField" >
+<string>codruta</string>
+</property>
+<property name="fieldRelation" >
+<string>codruta</string>
+</property>
+<property name="showAlias" >
+<bool>false</bool>
+</property>
+</widget>
+<widget class="FLFieldDB" >
+<property name="name" >
+<cstring>fdbOrdenRuta</cstring>
+</property>
+<property name="sizePolicy" >
+<sizepolicy>
+<hsizetype>1</hsizetype>
+<vsizetype>0</vsizetype>
+<horstretch>0</horstretch>
+<verstretch>0</verstretch>
+</sizepolicy>
+</property>
+<property name="minimumSize" >
+<size>
+<width>140</width>
+<height>25</height>
+</size>
+</property>
+<property name="fieldName" >
+<string>ordenruta</string>
+</property>
+<property name="tableName" >
+<string/>
+</property>
+<property name="foreignField" >
+<string/>
+</property>
+<property name="fieldRelation" >
+<string/>
+</property>
+</widget>
+</hbox>
+</widget>
+</xupdate:insert-after>
+</xupdate:modifications>

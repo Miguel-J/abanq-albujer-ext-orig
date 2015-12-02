@@ -1,0 +1,103 @@
+<xupdate:modifications>
+<xupdate:update select="/ACTIONS[ACTIONS,1]/action[lotesstock]/form[form,1]/text()[1]" >masterlotesstock</xupdate:update>
+<xupdate:insert-after select="/ACTIONS[ACTIONS,1]/action[lotesstock]/form[form,1]" >
+<scriptform>masterlotesstock</scriptform>
+</xupdate:insert-after>
+<xupdate:insert-after select="/ACTIONS[ACTIONS,1]/action[opcionescomp]/formrecord[formrecord,1]" >
+<scriptformrecord>opcionescomp</scriptformrecord>
+</xupdate:insert-after>
+<xupdate:insert-after select="/ACTIONS[ACTIONS,1]/action[articuloscomparbol]" >
+<action>
+<name>seriestela</name>
+<description>QT_TRANSLATE_NOOP(&quot;MetaData&quot;,&quot;Las series de tela clasifican las telas según su calidad y precio&quot;)</description>
+<alias>QT_TRANSLATE_NOOP(&quot;MetaData&quot;,&quot;Series de tela&quot;)</alias>
+<table>seriestela</table>
+<form>master</form>
+<formrecord>seriestela</formrecord>
+</action>
+</xupdate:insert-after>
+<xupdate:insert-after select="/ACTIONS[ACTIONS,1]/action[seriestela]" >
+<action>
+<name>telascorte</name>
+<description>QT_TRANSLATE_NOOP(&quot;MetaData&quot;,&quot;Cada corte consume una longitud distinta de tela en función de la anchura del rollo&quot;)</description>
+<alias>QT_TRANSLATE_NOOP(&quot;MetaData&quot;,&quot;Consumo de tela por corte&quot;)</alias>
+<table>telascorte</table>
+<form>master</form>
+<formrecord>telascorte</formrecord>
+</action>
+</xupdate:insert-after>
+<xupdate:insert-after select="/ACTIONS[ACTIONS,1]/action[telascorte]" >
+<action>
+<name>modelos</name>
+<description>QT_TRANSLATE_NOOP(&quot;MetaData&quot;,&quot;Los modelos identifican las variantes de diseño a las que se asocian los módulos&quot;)</description>
+<alias>QT_TRANSLATE_NOOP(&quot;MetaData&quot;,&quot;Modelos de sofá&quot;)</alias>
+<table>modelos</table>
+<form>master</form>
+<formrecord>modelos</formrecord>
+<scriptformrecord>modelos</scriptformrecord>
+</action>
+</xupdate:insert-after>
+<xupdate:insert-after select="/ACTIONS[ACTIONS,1]/action[modelos]" >
+<action>
+<name>modbase</name>
+<description>QT_TRANSLATE_NOOP(&quot;MetaData&quot;,&quot;Los módulos base especifican las posibles configuraciones que puede tener un módulo. Un módulo queda determinado por su módulo base y su modelo&quot;)</description>
+<alias>QT_TRANSLATE_NOOP(&quot;MetaData&quot;,&quot;Módulos base&quot;)</alias>
+<table>modbase</table>
+<form>master</form>
+<formrecord>modbase</formrecord>
+<scriptformrecord>modbase</scriptformrecord>
+</action>
+</xupdate:insert-after>
+<xupdate:insert-after select="/ACTIONS[ACTIONS,1]/action[modbase]" >
+<action>
+<name>preciosbase</name>
+<description>QT_TRANSLATE_NOOP(&quot;MetaData&quot;,&quot;Los precios base son los precios asociados a una configuración básica, un modelo, una serie de tela y un grupo de clientes. El precio base de un sofá es la suma de los precios base de sus módulos&quot;)</description>
+<alias>QT_TRANSLATE_NOOP(&quot;MetaData&quot;,&quot;Precios base&quot;)</alias>
+<table>preciosbase</table>
+<form>master</form>
+<formrecord>preciosbase</formrecord>
+<scriptformrecord>preciosbase</scriptformrecord>
+</action>
+</xupdate:insert-after>
+<xupdate:insert-after select="/ACTIONS[ACTIONS,1]/action[articuloscomponente]" >
+<action>
+<name>marcadas</name>
+<description>QT_TRANSLATE_NOOP(&quot;MetaData&quot;,&quot;Las marcadas definen las longitudes de los distintos tramos de tela en función de la combinación de telas asociada al módulo&quot;)</description>
+<alias>QT_TRANSLATE_NOOP(&quot;MetaData&quot;,&quot;Marcadas&quot;)</alias>
+<scriptformrecord>marcadas</scriptformrecord>
+<table>marcadas</table>
+<form>master</form>
+<formrecord>marcadas</formrecord>
+</action>
+</xupdate:insert-after>
+<xupdate:insert-after select="/ACTIONS[ACTIONS,1]/action[marcadas]" >
+<action>
+<name>copiaarticulo</name>
+<description>QT_TRANSLATE_NOOP(&quot;MetaData&quot;,&quot;Este formulario intermedio permite copiar un artículos de familia MOD, ESQ o CORT indicando el modelo y la configuración&quot;)</description>
+<alias>QT_TRANSLATE_NOOP(&quot;MetaData&quot;,&quot;Copia de artículos&quot;)</alias>
+<table>copiaarticulo</table>
+<form>copiaarticulo</form>
+<scriptform>copiaarticulo</scriptform>
+</action>
+</xupdate:insert-after>
+<xupdate:insert-after select="/ACTIONS[ACTIONS,1]/action[consumoprod]" >
+<action>
+<name>tiposcorte</name>
+<description>QT_TRANSLATE_NOOP(&quot;MetaData&quot;,&quot;Tipos de corte&quot;)</description>
+<alias>QT_TRANSLATE_NOOP(&quot;MetaData&quot;,&quot;Tipos de Corte&quot;)</alias>
+<table>tiposcorte</table>
+<form>master</form>
+<formrecord>tiposcorte</formrecord>
+</action>
+</xupdate:insert-after>
+<xupdate:insert-after select="/ACTIONS[ACTIONS,1]/action[tiposcorte]" >
+<action>
+<name>cortesopcion</name>
+<description>QT_TRANSLATE_NOOP(&quot;MetaData&quot;,&quot;Opciones de Corte&quot;)</description>
+<alias>QT_TRANSLATE_NOOP(&quot;MetaData&quot;,&quot;Opciones de Corte&quot;)</alias>
+<table>cortesopcion</table>
+<form>master</form>
+<formrecord>cortesopcion</formrecord>
+</action>
+</xupdate:insert-after>
+</xupdate:modifications>

@@ -1,0 +1,16 @@
+<xupdate:modifications>
+<xupdate:insert-after select="/TMD[TMD,1]/field[codcentro]/relation[distribucioncostes,codcentro]" >
+<relation>
+<table>presupuestosanuales</table>
+<field>codcentroinicio</field>
+<card>1M</card>
+</relation>
+</xupdate:insert-after>
+<xupdate:insert-after select="/TMD[TMD,1]/field[codcentro]/relation[presupuestosanuales,codcentroinicio]" >
+<relation>
+<table>presupuestosanuales</table>
+<field>codcentrofin</field>
+<card>1M</card>
+</relation>
+</xupdate:insert-after>
+</xupdate:modifications>

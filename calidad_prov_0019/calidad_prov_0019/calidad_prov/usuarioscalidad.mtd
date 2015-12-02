@@ -1,0 +1,55 @@
+<!DOCTYPE TMD>
+<TMD>
+	<name>usuarioscalidad</name>
+	<!--Usuarios para el sistema de calidad-->
+	<alias>QT_TRANSLATE_NOOP("MetaData","Usuarios")</alias>
+
+	<field>
+		<name>codigo</name>
+		<alias>QT_TRANSLATE_NOOP("MetaData","Código")</alias>
+		<null>false</null>
+		<pk>true</pk>
+		<type>string</type>
+		<length>10</length>
+		
+		<relation>
+			<table>seguimientosprov</table> 
+			<field>registradapor</field>
+			<card>1M</card>
+		</relation>
+		
+		<relation>
+			<table>noconformidadesprov</table> 
+			<field>registradapor</field>
+			<card>1M</card>
+		</relation>
+		
+		<relation>
+			<table>noconformidadesprov</table> 
+			<field>resueltapor</field>
+			<card>1M</card>
+		</relation>
+		
+		<relation>
+			<table>evalsemestralesprov</table> 
+			<field>evaluadopor</field>
+			<card>1M</card>
+		</relation>
+		
+		<relation>
+			<table>proveedores</table> 
+			<field>aprobadopor</field>
+			<card>1M</card>
+		</relation>
+	</field>
+
+	<field>
+		<name>nombre</name>
+		<alias>QT_TRANSLATE_NOOP("MetaData","Nombre y apellidos")</alias>
+		<null>false</null>
+		<pk>false</pk>
+		<type>string</type>
+		<length>200</length>
+	</field>
+	
+</TMD>

@@ -1,0 +1,23 @@
+<xupdate:modifications>
+<xupdate:insert-after select="/TMD[TMD,1]/field[codcuenta]/relation[pagosdevolcli,codcuenta]" >
+<relation>
+<table>i_vencimientos</table>
+<field>codcuenta</field>
+<card>1M</card>
+</relation>
+</xupdate:insert-after>
+<xupdate:insert-after select="/TMD[TMD,1]/field[codcuenta]/relation[i_vencimientos,codcuenta]" >
+<relation>
+<table>reciboscli</table>
+<field>codcuentapago</field>
+<card>1M</card>
+</relation>
+</xupdate:insert-after>
+<xupdate:insert-after select="/TMD[TMD,1]/field[codcuenta]/relation[reciboscli,codcuentapago]" >
+<relation>
+<table>recibosprov</table>
+<field>codcuentapago</field>
+<card>1M</card>
+</relation>
+</xupdate:insert-after>
+</xupdate:modifications>

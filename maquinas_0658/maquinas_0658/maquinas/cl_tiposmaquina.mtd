@@ -1,0 +1,36 @@
+<!DOCTYPE TMD>
+<TMD>
+	<name>cl_tiposmaquina</name>
+	<alias>QT_TRANSLATE_NOOP("MetaData","Tipos de Maquinas")</alias>
+
+	<field>
+		<name>codtipomaquina</name>
+		<alias>QT_TRANSLATE_NOOP("MetaData","Codigo")</alias>
+		<null>false</null>
+		<pk>true</pk>
+		<type>string</type>
+		<length>20</length>
+		<relation>
+			<table>cl_maquinas</table>
+			<field>codtipomaquina</field>
+			<card>1M</card>
+		</relation>
+		<relation>
+			<table>cl_empleadostipomaquina</table>
+			<field>codtipomaquina</field>
+			<card>1M</card>
+		</relation>
+	</field>	
+	
+	<field>
+		<name>descripcion</name>
+		<alias>QT_TRANSLATE_NOOP("MetaData","Descripcion")</alias>
+		<null>true</null>
+		<pk>false</pk>
+		<type>string</type>
+		<length>20</length>
+	</field>
+	
+	
+</TMD>
+

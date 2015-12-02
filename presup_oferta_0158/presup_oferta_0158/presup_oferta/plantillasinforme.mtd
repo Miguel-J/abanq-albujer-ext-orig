@@ -1,0 +1,41 @@
+<!DOCTYPE TMD>
+<TMD>
+	<name>plantillasinforme</name>
+	<alias>QT_TRANSLATE_NOOP("MetaData","Plantillas de informe")</alias>
+
+	<field>
+		<name>codigo</name>
+		<alias>QT_TRANSLATE_NOOP("MetaData","Código")</alias>
+		<null>false</null>
+		<pk>true</pk>
+		<type>string</type>
+		<length>10</length>
+		<relation>
+			<table>paraminforme</table>
+			<field>codplantilla</field>
+			<card>1M</card>
+		</relation>
+		<relation>
+			<table>presupuestoscli</table>
+			<field>codplantilla</field>
+			<card>1M</card>
+		</relation>
+	</field>
+
+	<field>
+		<name>descripcion</name>
+		<alias>QT_TRANSLATE_NOOP("MetaData","Descripción")</alias>
+		<null>true</null>
+		<pk>false</pk>
+		<type>stringlist</type>
+	</field>
+	
+	<field>
+		<name>fichero</name>
+		<alias>QT_TRANSLATE_NOOP("MetaData","Fichero odt")</alias>
+		<null>false</null>
+		<pk>false</pk>
+		<type>string</type>
+		<length>100</length>
+	</field>
+</TMD>

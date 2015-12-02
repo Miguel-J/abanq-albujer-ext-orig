@@ -1,0 +1,61 @@
+<!DOCTYPE TMD>
+<TMD>
+	<name>incidenciasprov</name>
+	<!--Incidencias de proveedores para el seguimiento de calidad-->
+	<alias>QT_TRANSLATE_NOOP("MetaData","Incidencias de Proveedores")</alias>
+
+	<field>
+		<name>codigo</name>
+		<!--Código de la incidencia-->
+		<alias>QT_TRANSLATE_NOOP("MetaData","Código")</alias>
+		<null>false</null>
+		<pk>true</pk>
+        <type>string</type>
+		<length>6</length>
+		<counter>true</counter>
+	</field>
+
+	<field>
+		<name>codproveedor</name>
+		<!--Código del proveedor-->
+		<alias>QT_TRANSLATE_NOOP("MetaData","Proveedor")</alias>
+		<null>false</null>
+		<pk>false</pk>
+		<type>string</type>
+		<length>100</length>
+		<visiblegrid>false</visiblegrid>
+	
+		<relation>
+			<table>proveedores</table> 
+			<field>codproveedor</field>
+			<card>M1</card>
+		</relation>
+	</field>
+
+	<field>
+		<name>descripcion</name>
+		<alias>QT_TRANSLATE_NOOP("MetaData","Descripción")</alias>
+		<null>false</null>
+		<pk>false</pk>
+		<type>stringlist</type>
+		<length>200</length>
+	</field>
+	
+	<field>
+		<name>fecha</name>
+		<alias>QT_TRANSLATE_NOOP("MetaData","Fecha")</alias>
+		<null>true</null>
+		<pk>false</pk>
+		<type>date</type>
+	</field>
+	
+	<field>
+		<name>valor</name>
+		<!-- Valor de la incidencia (+1 / -1) -->
+		<alias>QT_TRANSLATE_NOOP("MetaData","Valor")</alias>
+		<null>true</null>
+		<pk>false</pk>
+		<type>int</type>
+	</field>
+
+</TMD>

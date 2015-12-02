@@ -1,0 +1,480 @@
+<xupdate:modifications>
+<xupdate:update select="/UI[UI,1]/widget[QWidget,formClientes]/property[geometry]/rect[rect,1]/height[height,1]/text()[1]" >530</xupdate:update>
+<xupdate:append-first select="/UI[UI,1]/images[images,1]" >
+<image name="envio_mailimage9047" >
+<data format="PNG" length="1143" >89504e470d0a1a0a0000000d4948445200000020000000200806000000737a7af40000043e49444154789ced964f685c5514c67f93deb6e7e9206fa08b04a938cbb68a4e5021dd8dbb0c54ec4816a6b830e04a5c096e4a57adcb2ea46057edaee9a298eeea42490421816a4dc5450a594cc43f13b192070dbe53e636cfc5bdf7fd998cb145a10b7be071dfbbf7dd77bef39defdc77e0893db1ffbbd51e72eebfb46ca4b35b376f656204b58a187193c65d9189101144dc7c18231391921299a8ea623f30f063c9b6fa5b4c1e9f7c7e6363e3270f24337e6d4c8c70b475f491c38988462fecdf3db5fced32c75f3dbeb1b1913ce520260f3c80784cad3a945b5b0503c14988943d221e619fd5e0065700e152f616003a503052c7ea368cef78005213233080f9abf3608b8fccbd3b476ad32a083b046204dd008db7a173f5940751015bc7c800ab8390825a60607666d6e5de425913a9a66020c58f76889100a204267ed98d9daba7aa60e10056f7818c7900de894d59b8b640000330f7ce9c034149a096028489f2e76126263ff237f3de8b2ab25f00c63052c32a2105cea985ce898e8b1cef54150c287e1c02935ac7084a150cec4a8b18711a009f6661accc4000517602148c5846ae63e1ccb5cb0598a0a14115805a2d40196a30cc80c2c2e70bb9a351347767ba0eac9618f14c9cb97699b3337339888a363c033928cf404503892674da9d82c2401ba5c3c9164ecb636422664fb473109129558b0791dc4b82063cc82106221b71e38b1bc0eec8c37367da6924b149b54a6cca44dcc8419c3e399bcf47e2408cd240b50ab653a6a6a6c050513b50a9fb734b578a122c9562dff669c64dbad36d3ebe3ecfd993732043c1141ad8cd00c0ca372b7b6aa0dd6e1301efcf74882576fb0cf4748dc4f6e959681e9aa03bdde6ccf52a1379a9fead06b6135a2fb60a844138252db8f4c0e2dd45a4ee3e020af9f11dc1361c39d4a43b3d55301104bb970642190e0b6c38e749a27c77778d060538416898097af41927452d34e3269d361526fe5103aac529385c42214dfdcd1e584135454c0428138c17a07d84bdbb3dd66ef7484959fe72d97dbbd0405661e0d8e4b1d7ba6f766ff210a68763e2ed06910a294a6484a4ae50571a5650a3f437fb2c7ebdc6ea9d4d1aeb6b7cca52de47005960c03724b1c1481d6800cf0007f1cd8a20b5907bff4cebbdd7575aaf347dc4b8d5c342635c68d69b9028bdd584e5db3d562e5e7ac30b3803f95d60a0700ff803cbbdc0c00e56ef6364dbbf7c00cb58fe0f28478fa22ad9d257bd9a1850af99f8858889f123a43f2bbd1f1256eff458b978a98df502b5f21b864c2d0f30fce976928596ac06f13e97713908ec0b0cb8337b642226f0258885ee27a7bf9f6a35d95ccf237f295f27ee63f35e70c7ede03e6ce6fd4006c903b72803083f29c00a79a955c6e46910f0c21415927575ce2f9c6f868461e557779f14f947324876809dd2a9ef9a44d01d2a9d71350525fbb1bc262662f1f65ab672e1fc73a5bdbf8cdeafd988c97f67531f7c9801cf96aec7628fd57900f048f6172b5857e5aa43870c0000000049454e44ae426082</data>
+</image>
+</xupdate:append-first>
+<xupdate:insert-after select="/UI[UI,1]/widget[QWidget,formClientes]/vbox[vbox,1]/widget[QTabWidget,tbwCliente]/widget[QWidget,agenda]/vbox[vbox,1]/widget[QGroupBox,gbxAgenda]/vbox[vbox,1]/widget[QFrame,barraBotones_2_3]/hbox[hbox,1]/spacer[Spacer2_3_2_3]" >
+<widget class="QPushButton" >
+<property name="name" >
+<cstring>tbnEnviarMailContacto</cstring>
+</property>
+<property name="enabled" >
+<bool>true</bool>
+</property>
+<property name="sizePolicy" >
+<sizepolicy>
+<hsizetype>1</hsizetype>
+<vsizetype>1</vsizetype>
+<horstretch>0</horstretch>
+<verstretch>0</verstretch>
+</sizepolicy>
+</property>
+<property name="minimumSize" >
+<size>
+<width>32</width>
+<height>32</height>
+</size>
+</property>
+<property name="maximumSize" >
+<size>
+<width>32</width>
+<height>32</height>
+</size>
+</property>
+<property name="focusPolicy" >
+<enum>NoFocus</enum>
+</property>
+<property name="text" >
+<string/>
+</property>
+<property name="accel" >
+<string>I</string>
+</property>
+<property name="iconSet" >
+<iconset>envio_mailimage9047</iconset>
+</property>
+<property name="toolTip" stdset="0" >
+<string>Enviar por email</string>
+</property>
+<property name="whatsThis" stdset="0" >
+<string>Envía un email al contacto seleccionado</string>
+</property>
+</widget>
+</xupdate:insert-after>
+<xupdate:insert-after select="/UI[UI,1]/widget[QWidget,formClientes]/vbox[vbox,1]/widget[QTabWidget,tbwCliente]/widget[QWidget,agenda]/vbox[vbox,1]/widget[QGroupBox,gbxAgenda]/vbox[vbox,1]/widget[QFrame,barraBotones_2_3]/hbox[hbox,1]/widget[QPushButton,tbnEnviarMailContacto]" >
+<spacer>
+<property name="name" >
+<cstring>Spacer2_3_2_3_2</cstring>
+</property>
+<property name="orientation" >
+<enum>Horizontal</enum>
+</property>
+<property name="sizeType" >
+<enum>Expanding</enum>
+</property>
+<property name="sizeHint" >
+<size>
+<width>180</width>
+<height>16</height>
+</size>
+</property>
+</spacer>
+</xupdate:insert-after>
+<xupdate:append-first select="/UI[UI,1]/images[images,1]" >
+<image name="envio_mailimage9047" >
+<data format="PNG" length="1143" >89504e470d0a1a0a0000000d4948445200000020000000200806000000737a7af40000043e49444154789ced964f685c5514c67f93deb6e7e9206fa08b04a938cbb68a4e5021dd8dbb0c54ec4816a6b830e04a5c096e4a57adcb2ea46057edaee9a298eeea42490421816a4dc5450a594cc43f13b192070dbe53e636cfc5bdf7fd998cb145a10b7be071dfbbf7dd77bef39defdc77e0893db1ffbbd51e72eebfb46ca4b35b376f656204b58a187193c65d9189101144dc7c18231391921299a8ea623f30f063c9b6fa5b4c1e9f7c7e6363e3270f24337e6d4c8c70b475f491c38988462fecdf3db5fced32c75f3dbeb1b1913ce520260f3c80784cad3a945b5b0503c14988943d221e619fd5e0065700e152f616003a503052c7ea368cef78005213233080f9abf3608b8fccbd3b476ad32a083b046204dd008db7a173f5940751015bc7c800ab8390825a60607666d6e5de425913a9a66020c58f76889100a204267ed98d9daba7aa60e10056f7818c7900de894d59b8b640000330f7ce9c034149a096028489f2e76126263ff237f3de8b2ab25f00c63052c32a2105cea985ce898e8b1cef54150c287e1c02935ac7084a150cec4a8b18711a009f6661accc4000517602148c5846ae63e1ccb5cb0598a0a14115805a2d40196a30cc80c2c2e70bb9a351347767ba0eac9618f14c9cb97699b3337339888a363c033928cf404503892674da9d82c2401ba5c3c9164ecb636422664fb473109129558b0791dc4b82063cc82106221b71e38b1bc0eec8c37367da6924b149b54a6cca44dcc8419c3e399bcf47e2408cd240b50ab653a6a6a6c050513b50a9fb734b578a122c9562dff669c64dbad36d3ebe3ecfd993732043c1141ad8cd00c0ca372b7b6aa0dd6e1301efcf74882576fb0cf4748dc4f6e959681e9aa03bdde6ccf52a1379a9fead06b6135a2fb60a844138252db8f4c0e2dd45a4ee3e020af9f11dc1361c39d4a43b3d55301104bb970642190e0b6c38e749a27c77778d060538416898097af41927452d34e3269d361526fe5103aac529385c42214dfdcd1e584135454c0428138c17a07d84bdbb3dd66ef7484959fe72d97dbbd0405661e0d8e4b1d7ba6f766ff210a68763e2ed06910a294a6484a4ae50571a5650a3f437fb2c7ebdc6ea9d4d1aeb6b7cca52de47005960c03724b1c1481d6800cf0007f1cd8a20b5907bff4cebbdd7575aaf347dc4b8d5c342635c68d69b9028bdd584e5db3d562e5e7ac30b3803f95d60a0700ff803cbbdc0c00e56ef6364dbbf7c00cb58fe0f28478fa22ad9d257bd9a1850af99f8858889f123a43f2bbd1f1256eff458b978a98df502b5f21b864c2d0f30fce976928596ac06f13e97713908ec0b0cb8337b642226f0258885ee27a7bf9f6a35d95ccf237f295f27ee63f35e70c7ede03e6ce6fd4006c903b72803083f29c00a79a955c6e46910f0c21415927575ce2f9c6f868461e557779f14f947324876809dd2a9ef9a44d01d2a9d71350525fbb1bc262662f1f65ab672e1fc73a5bdbf8cdeafd988c97f67531f7c9801cf96aec7628fd57900f048f6172b5857e5aa43870c0000000049454e44ae426082</data>
+</image>
+</xupdate:append-first>
+<xupdate:insert-after select="/UI[UI,1]/widget[QWidget,formClientes]/vbox[vbox,1]/widget[QTabWidget,tbwCliente]/widget[QWidget,documentos]/vbox[vbox,1]/widget[QTabWidget,tbwDocumentos]/widget[QWidget,albaranes]/vbox[vbox,1]/widget[QFrame,barraBotonesAlb]/hbox[hbox,1]/widget[QPushButton,toolButtonPrintAlb]" >
+<widget class="QPushButton" >
+<property name="name" >
+<cstring>tbnEnviarMailAlb</cstring>
+</property>
+<property name="enabled" >
+<bool>true</bool>
+</property>
+<property name="sizePolicy" >
+<sizepolicy>
+<hsizetype>1</hsizetype>
+<vsizetype>1</vsizetype>
+<horstretch>0</horstretch>
+<verstretch>0</verstretch>
+</sizepolicy>
+</property>
+<property name="minimumSize" >
+<size>
+<width>32</width>
+<height>32</height>
+</size>
+</property>
+<property name="maximumSize" >
+<size>
+<width>32</width>
+<height>32</height>
+</size>
+</property>
+<property name="focusPolicy" >
+<enum>NoFocus</enum>
+</property>
+<property name="text" >
+<string/>
+</property>
+<property name="accel" >
+<string>I</string>
+</property>
+<property name="iconSet" >
+<iconset>envio_mailimage9047</iconset>
+</property>
+<property name="toolTip" stdset="0" >
+<string>Enviar por email</string>
+</property>
+<property name="whatsThis" stdset="0" >
+<string>Envía por email el albarán seleccionado</string>
+</property>
+</widget>
+</xupdate:insert-after>
+<xupdate:append-first select="/UI[UI,1]/images[images,1]" >
+<image name="envio_mailimage9047" >
+<data format="PNG" length="1143" >89504e470d0a1a0a0000000d4948445200000020000000200806000000737a7af40000043e49444154789ced964f685c5514c67f93deb6e7e9206fa08b04a938cbb68a4e5021dd8dbb0c54ec4816a6b830e04a5c096e4a57adcb2ea46057edaee9a298eeea42490421816a4dc5450a594cc43f13b192070dbe53e636cfc5bdf7fd998cb145a10b7be071dfbbf7dd77bef39defdc77e0893db1ffbbd51e72eebfb46ca4b35b376f656204b58a187193c65d9189101144dc7c18231391921299a8ea623f30f063c9b6fa5b4c1e9f7c7e6363e3270f24337e6d4c8c70b475f491c38988462fecdf3db5fced32c75f3dbeb1b1913ce520260f3c80784cad3a945b5b0503c14988943d221e619fd5e0065700e152f616003a503052c7ea368cef78005213233080f9abf3608b8fccbd3b476ad32a083b046204dd008db7a173f5940751015bc7c800ab8390825a60607666d6e5de425913a9a66020c58f76889100a204267ed98d9daba7aa60e10056f7818c7900de894d59b8b640000330f7ce9c034149a096028489f2e76126263ff237f3de8b2ab25f00c63052c32a2105cea985ce898e8b1cef54150c287e1c02935ac7084a150cec4a8b18711a009f6661accc4000517602148c5846ae63e1ccb5cb0598a0a14115805a2d40196a30cc80c2c2e70bb9a351347767ba0eac9618f14c9cb97699b3337339888a363c033928cf404503892674da9d82c2401ba5c3c9164ecb636422664fb473109129558b0791dc4b82063cc82106221b71e38b1bc0eec8c37367da6924b149b54a6cca44dcc8419c3e399bcf47e2408cd240b50ab653a6a6a6c050513b50a9fb734b578a122c9562dff669c64dbad36d3ebe3ecfd993732043c1141ad8cd00c0ca372b7b6aa0dd6e1301efcf74882576fb0cf4748dc4f6e959681e9aa03bdde6ccf52a1379a9fead06b6135a2fb60a844138252db8f4c0e2dd45a4ee3e020af9f11dc1361c39d4a43b3d55301104bb970642190e0b6c38e749a27c77778d060538416898097af41927452d34e3269d361526fe5103aac529385c42214dfdcd1e584135454c0428138c17a07d84bdbb3dd66ef7484959fe72d97dbbd0405661e0d8e4b1d7ba6f766ff210a68763e2ed06910a294a6484a4ae50571a5650a3f437fb2c7ebdc6ea9d4d1aeb6b7cca52de47005960c03724b1c1481d6800cf0007f1cd8a20b5907bff4cebbdd7575aaf347dc4b8d5c342635c68d69b9028bdd584e5db3d562e5e7ac30b3803f95d60a0700ff803cbbdc0c00e56ef6364dbbf7c00cb58fe0f28478fa22ad9d257bd9a1850af99f8858889f123a43f2bbd1f1256eff458b978a98df502b5f21b864c2d0f30fce976928596ac06f13e97713908ec0b0cb8337b642226f0258885ee27a7bf9f6a35d95ccf237f295f27ee63f35e70c7ede03e6ce6fd4006c903b72803083f29c00a79a955c6e46910f0c21415927575ce2f9c6f868461e557779f14f947324876809dd2a9ef9a44d01d2a9d71350525fbb1bc262662f1f65ab672e1fc73a5bdbf8cdeafd988c97f67531f7c9801cf96aec7628fd57900f048f6172b5857e5aa43870c0000000049454e44ae426082</data>
+</image>
+</xupdate:append-first>
+<xupdate:insert-after select="/UI[UI,1]/widget[QWidget,formClientes]/vbox[vbox,1]/widget[QTabWidget,tbwCliente]/widget[QWidget,documentos]/vbox[vbox,1]/widget[QTabWidget,tbwDocumentos]/widget[QWidget,facturas]/vbox[vbox,1]/widget[QFrame,barraBotonesFac]/hbox[hbox,1]/widget[QPushButton,toolButtonPrintFac]" >
+<widget class="QPushButton" >
+<property name="name" >
+<cstring>tbnEnviarMailFac</cstring>
+</property>
+<property name="enabled" >
+<bool>true</bool>
+</property>
+<property name="sizePolicy" >
+<sizepolicy>
+<hsizetype>1</hsizetype>
+<vsizetype>1</vsizetype>
+<horstretch>0</horstretch>
+<verstretch>0</verstretch>
+</sizepolicy>
+</property>
+<property name="minimumSize" >
+<size>
+<width>32</width>
+<height>32</height>
+</size>
+</property>
+<property name="maximumSize" >
+<size>
+<width>32</width>
+<height>32</height>
+</size>
+</property>
+<property name="focusPolicy" >
+<enum>NoFocus</enum>
+</property>
+<property name="text" >
+<string/>
+</property>
+<property name="accel" >
+<string>I</string>
+</property>
+<property name="iconSet" >
+<iconset>envio_mailimage9047</iconset>
+</property>
+<property name="toolTip" stdset="0" >
+<string>Enviar por email</string>
+</property>
+<property name="whatsThis" stdset="0" >
+<string>Envía por email la factura seleccionada</string>
+</property>
+</widget>
+</xupdate:insert-after>
+<xupdate:append-first select="/UI[UI,1]/images[images,1]" >
+<image name="envio_mailimage9047" >
+<data format="PNG" length="1143" >89504e470d0a1a0a0000000d4948445200000020000000200806000000737a7af40000043e49444154789ced964f685c5514c67f93deb6e7e9206fa08b04a938cbb68a4e5021dd8dbb0c54ec4816a6b830e04a5c096e4a57adcb2ea46057edaee9a298eeea42490421816a4dc5450a594cc43f13b192070dbe53e636cfc5bdf7fd998cb145a10b7be071dfbbf7dd77bef39defdc77e0893db1ffbbd51e72eebfb46ca4b35b376f656204b58a187193c65d9189101144dc7c18231391921299a8ea623f30f063c9b6fa5b4c1e9f7c7e6363e3270f24337e6d4c8c70b475f491c38988462fecdf3db5fced32c75f3dbeb1b1913ce520260f3c80784cad3a945b5b0503c14988943d221e619fd5e0065700e152f616003a503052c7ea368cef78005213233080f9abf3608b8fccbd3b476ad32a083b046204dd008db7a173f5940751015bc7c800ab8390825a60607666d6e5de425913a9a66020c58f76889100a204267ed98d9daba7aa60e10056f7818c7900de894d59b8b640000330f7ce9c034149a096028489f2e76126263ff237f3de8b2ab25f00c63052c32a2105cea985ce898e8b1cef54150c287e1c02935ac7084a150cec4a8b18711a009f6661accc4000517602148c5846ae63e1ccb5cb0598a0a14115805a2d40196a30cc80c2c2e70bb9a351347767ba0eac9618f14c9cb97699b3337339888a363c033928cf404503892674da9d82c2401ba5c3c9164ecb636422664fb473109129558b0791dc4b82063cc82106221b71e38b1bc0eec8c37367da6924b149b54a6cca44dcc8419c3e399bcf47e2408cd240b50ab653a6a6a6c050513b50a9fb734b578a122c9562dff669c64dbad36d3ebe3ecfd993732043c1141ad8cd00c0ca372b7b6aa0dd6e1301efcf74882576fb0cf4748dc4f6e959681e9aa03bdde6ccf52a1379a9fead06b6135a2fb60a844138252db8f4c0e2dd45a4ee3e020af9f11dc1361c39d4a43b3d55301104bb970642190e0b6c38e749a27c77778d060538416898097af41927452d34e3269d361526fe5103aac529385c42214dfdcd1e584135454c0428138c17a07d84bdbb3dd66ef7484959fe72d97dbbd0405661e0d8e4b1d7ba6f766ff210a68763e2ed06910a294a6484a4ae50571a5650a3f437fb2c7ebdc6ea9d4d1aeb6b7cca52de47005960c03724b1c1481d6800cf0007f1cd8a20b5907bff4cebbdd7575aaf347dc4b8d5c342635c68d69b9028bdd584e5db3d562e5e7ac30b3803f95d60a0700ff803cbbdc0c00e56ef6364dbbf7c00cb58fe0f28478fa22ad9d257bd9a1850af99f8858889f123a43f2bbd1f1256eff458b978a98df502b5f21b864c2d0f30fce976928596ac06f13e97713908ec0b0cb8337b642226f0258885ee27a7bf9f6a35d95ccf237f295f27ee63f35e70c7ede03e6ce6fd4006c903b72803083f29c00a79a955c6e46910f0c21415927575ce2f9c6f868461e557779f14f947324876809dd2a9ef9a44d01d2a9d71350525fbb1bc262662f1f65ab672e1fc73a5bdbf8cdeafd988c97f67531f7c9801cf96aec7628fd57900f048f6172b5857e5aa43870c0000000049454e44ae426082</data>
+</image>
+</xupdate:append-first>
+<xupdate:insert-after select="/UI[UI,1]/widget[QWidget,formClientes]/vbox[vbox,1]/widget[QTabWidget,tbwCliente]/widget[QWidget,documentos]/vbox[vbox,1]/widget[QTabWidget,tbwDocumentos]/widget[QWidget,pedidos]/vbox[vbox,1]/widget[QFrame,barraBotonesPed]/hbox[hbox,1]/widget[QPushButton,toolButtonPrintPed]" >
+<widget class="QPushButton" >
+<property name="name" >
+<cstring>tbnEnviarMailPed</cstring>
+</property>
+<property name="enabled" >
+<bool>true</bool>
+</property>
+<property name="sizePolicy" >
+<sizepolicy>
+<hsizetype>1</hsizetype>
+<vsizetype>1</vsizetype>
+<horstretch>0</horstretch>
+<verstretch>0</verstretch>
+</sizepolicy>
+</property>
+<property name="minimumSize" >
+<size>
+<width>32</width>
+<height>32</height>
+</size>
+</property>
+<property name="maximumSize" >
+<size>
+<width>32</width>
+<height>32</height>
+</size>
+</property>
+<property name="focusPolicy" >
+<enum>NoFocus</enum>
+</property>
+<property name="text" >
+<string/>
+</property>
+<property name="accel" >
+<string>I</string>
+</property>
+<property name="iconSet" >
+<iconset>envio_mailimage9047</iconset>
+</property>
+<property name="toolTip" stdset="0" >
+<string>Enviar por email</string>
+</property>
+<property name="whatsThis" stdset="0" >
+<string>Envía por email el pedido seleccionado</string>
+</property>
+</widget>
+</xupdate:insert-after>
+<xupdate:append-first select="/UI[UI,1]/images[images,1]" >
+<image name="envio_mailimage9047" >
+<data format="PNG" length="1143" >89504e470d0a1a0a0000000d4948445200000020000000200806000000737a7af40000043e49444154789ced964f685c5514c67f93deb6e7e9206fa08b04a938cbb68a4e5021dd8dbb0c54ec4816a6b830e04a5c096e4a57adcb2ea46057edaee9a298eeea42490421816a4dc5450a594cc43f13b192070dbe53e636cfc5bdf7fd998cb145a10b7be071dfbbf7dd77bef39defdc77e0893db1ffbbd51e72eebfb46ca4b35b376f656204b58a187193c65d9189101144dc7c18231391921299a8ea623f30f063c9b6fa5b4c1e9f7c7e6363e3270f24337e6d4c8c70b475f491c38988462fecdf3db5fced32c75f3dbeb1b1913ce520260f3c80784cad3a945b5b0503c14988943d221e619fd5e0065700e152f616003a503052c7ea368cef78005213233080f9abf3608b8fccbd3b476ad32a083b046204dd008db7a173f5940751015bc7c800ab8390825a60607666d6e5de425913a9a66020c58f76889100a204267ed98d9daba7aa60e10056f7818c7900de894d59b8b640000330f7ce9c034149a096028489f2e76126263ff237f3de8b2ab25f00c63052c32a2105cea985ce898e8b1cef54150c287e1c02935ac7084a150cec4a8b18711a009f6661accc4000517602148c5846ae63e1ccb5cb0598a0a14115805a2d40196a30cc80c2c2e70bb9a351347767ba0eac9618f14c9cb97699b3337339888a363c033928cf404503892674da9d82c2401ba5c3c9164ecb636422664fb473109129558b0791dc4b82063cc82106221b71e38b1bc0eec8c37367da6924b149b54a6cca44dcc8419c3e399bcf47e2408cd240b50ab653a6a6a6c050513b50a9fb734b578a122c9562dff669c64dbad36d3ebe3ecfd993732043c1141ad8cd00c0ca372b7b6aa0dd6e1301efcf74882576fb0cf4748dc4f6e959681e9aa03bdde6ccf52a1379a9fead06b6135a2fb60a844138252db8f4c0e2dd45a4ee3e020af9f11dc1361c39d4a43b3d55301104bb970642190e0b6c38e749a27c77778d060538416898097af41927452d34e3269d361526fe5103aac529385c42214dfdcd1e584135454c0428138c17a07d84bdbb3dd66ef7484959fe72d97dbbd0405661e0d8e4b1d7ba6f766ff210a68763e2ed06910a294a6484a4ae50571a5650a3f437fb2c7ebdc6ea9d4d1aeb6b7cca52de47005960c03724b1c1481d6800cf0007f1cd8a20b5907bff4cebbdd7575aaf347dc4b8d5c342635c68d69b9028bdd584e5db3d562e5e7ac30b3803f95d60a0700ff803cbbdc0c00e56ef6364dbbf7c00cb58fe0f28478fa22ad9d257bd9a1850af99f8858889f123a43f2bbd1f1256eff458b978a98df502b5f21b864c2d0f30fce976928596ac06f13e97713908ec0b0cb8337b642226f0258885ee27a7bf9f6a35d95ccf237f295f27ee63f35e70c7ede03e6ce6fd4006c903b72803083f29c00a79a955c6e46910f0c21415927575ce2f9c6f868461e557779f14f947324876809dd2a9ef9a44d01d2a9d71350525fbb1bc262662f1f65ab672e1fc73a5bdbf8cdeafd988c97f67531f7c9801cf96aec7628fd57900f048f6172b5857e5aa43870c0000000049454e44ae426082</data>
+</image>
+</xupdate:append-first>
+<xupdate:insert-after select="/UI[UI,1]/widget[QWidget,formClientes]/vbox[vbox,1]/widget[QTabWidget,tbwCliente]/widget[QWidget,documentos]/vbox[vbox,1]/widget[QTabWidget,tbwDocumentos]/widget[QWidget,presupuestos]/vbox[vbox,1]/widget[QFrame,barraBotonesPre]/hbox[hbox,1]/widget[QPushButton,toolButtonPrintPre]" >
+<widget class="QPushButton" >
+<property name="name" >
+<cstring>tbnEnviarMailPr</cstring>
+</property>
+<property name="enabled" >
+<bool>true</bool>
+</property>
+<property name="sizePolicy" >
+<sizepolicy>
+<hsizetype>1</hsizetype>
+<vsizetype>1</vsizetype>
+<horstretch>0</horstretch>
+<verstretch>0</verstretch>
+</sizepolicy>
+</property>
+<property name="minimumSize" >
+<size>
+<width>32</width>
+<height>32</height>
+</size>
+</property>
+<property name="maximumSize" >
+<size>
+<width>32</width>
+<height>32</height>
+</size>
+</property>
+<property name="focusPolicy" >
+<enum>NoFocus</enum>
+</property>
+<property name="text" >
+<string/>
+</property>
+<property name="accel" >
+<string>I</string>
+</property>
+<property name="iconSet" >
+<iconset>envio_mailimage9047</iconset>
+</property>
+<property name="toolTip" stdset="0" >
+<string>Enviar por email</string>
+</property>
+<property name="whatsThis" stdset="0" >
+<string>Envía por email el presupuesto seleccionado</string>
+</property>
+</widget>
+</xupdate:insert-after>
+<xupdate:append-first select="/UI[UI,1]/images[images,1]" >
+<image name="envio_mailimage9047" >
+<data format="PNG" length="1143" >89504e470d0a1a0a0000000d4948445200000020000000200806000000737a7af40000043e49444154789ced964f685c5514c67f93deb6e7e9206fa08b04a938cbb68a4e5021dd8dbb0c54ec4816a6b830e04a5c096e4a57adcb2ea46057edaee9a298eeea42490421816a4dc5450a594cc43f13b192070dbe53e636cfc5bdf7fd998cb145a10b7be071dfbbf7dd77bef39defdc77e0893db1ffbbd51e72eebfb46ca4b35b376f656204b58a187193c65d9189101144dc7c18231391921299a8ea623f30f063c9b6fa5b4c1e9f7c7e6363e3270f24337e6d4c8c70b475f491c38988462fecdf3db5fced32c75f3dbeb1b1913ce520260f3c80784cad3a945b5b0503c14988943d221e619fd5e0065700e152f616003a503052c7ea368cef78005213233080f9abf3608b8fccbd3b476ad32a083b046204dd008db7a173f5940751015bc7c800ab8390825a60607666d6e5de425913a9a66020c58f76889100a204267ed98d9daba7aa60e10056f7818c7900de894d59b8b640000330f7ce9c034149a096028489f2e76126263ff237f3de8b2ab25f00c63052c32a2105cea985ce898e8b1cef54150c287e1c02935ac7084a150cec4a8b18711a009f6661accc4000517602148c5846ae63e1ccb5cb0598a0a14115805a2d40196a30cc80c2c2e70bb9a351347767ba0eac9618f14c9cb97699b3337339888a363c033928cf404503892674da9d82c2401ba5c3c9164ecb636422664fb473109129558b0791dc4b82063cc82106221b71e38b1bc0eec8c37367da6924b149b54a6cca44dcc8419c3e399bcf47e2408cd240b50ab653a6a6a6c050513b50a9fb734b578a122c9562dff669c64dbad36d3ebe3ecfd993732043c1141ad8cd00c0ca372b7b6aa0dd6e1301efcf74882576fb0cf4748dc4f6e959681e9aa03bdde6ccf52a1379a9fead06b6135a2fb60a844138252db8f4c0e2dd45a4ee3e020af9f11dc1361c39d4a43b3d55301104bb970642190e0b6c38e749a27c77778d060538416898097af41927452d34e3269d361526fe5103aac529385c42214dfdcd1e584135454c0428138c17a07d84bdbb3dd66ef7484959fe72d97dbbd0405661e0d8e4b1d7ba6f766ff210a68763e2ed06910a294a6484a4ae50571a5650a3f437fb2c7ebdc6ea9d4d1aeb6b7cca52de47005960c03724b1c1481d6800cf0007f1cd8a20b5907bff4cebbdd7575aaf347dc4b8d5c342635c68d69b9028bdd584e5db3d562e5e7ac30b3803f95d60a0700ff803cbbdc0c00e56ef6364dbbf7c00cb58fe0f28478fa22ad9d257bd9a1850af99f8858889f123a43f2bbd1f1256eff458b978a98df502b5f21b864c2d0f30fce976928596ac06f13e97713908ec0b0cb8337b642226f0258885ee27a7bf9f6a35d95ccf237f295f27ee63f35e70c7ede03e6ce6fd4006c903b72803083f29c00a79a955c6e46910f0c21415927575ce2f9c6f868461e557779f14f947324876809dd2a9ef9a44d01d2a9d71350525fbb1bc262662f1f65ab672e1fc73a5bdbf8cdeafd988c97f67531f7c9801cf96aec7628fd57900f048f6172b5857e5aa43870c0000000049454e44ae426082</data>
+</image>
+</xupdate:append-first>
+<xupdate:insert-after select="/UI[UI,1]/widget[QWidget,formClientes]/vbox[vbox,1]/widget[QTabWidget,tbwCliente]/widget[QWidget,documentos]/vbox[vbox,1]/widget[QTabWidget,tbwDocumentos]/widget[QWidget,recibos]/vbox[vbox,1]/widget[QFrame,barraBotonesRec]/hbox[hbox,1]/widget[QPushButton,toolButtonPrintRec]" >
+<widget class="QPushButton" >
+<property name="name" >
+<cstring>tbnEnviarMailRec</cstring>
+</property>
+<property name="enabled" >
+<bool>true</bool>
+</property>
+<property name="sizePolicy" >
+<sizepolicy>
+<hsizetype>1</hsizetype>
+<vsizetype>1</vsizetype>
+<horstretch>0</horstretch>
+<verstretch>0</verstretch>
+</sizepolicy>
+</property>
+<property name="minimumSize" >
+<size>
+<width>32</width>
+<height>32</height>
+</size>
+</property>
+<property name="maximumSize" >
+<size>
+<width>32</width>
+<height>32</height>
+</size>
+</property>
+<property name="focusPolicy" >
+<enum>NoFocus</enum>
+</property>
+<property name="text" >
+<string/>
+</property>
+<property name="accel" >
+<string>I</string>
+</property>
+<property name="iconSet" >
+<iconset>envio_mailimage9047</iconset>
+</property>
+<property name="toolTip" stdset="0" >
+<string>Enviar por email</string>
+</property>
+<property name="whatsThis" stdset="0" >
+<string>Envía por email el recibo seleccionado</string>
+</property>
+</widget>
+</xupdate:insert-after>
+<xupdate:delete select="/UI[UI,1]/widget[QWidget,formClientes]/vbox[vbox,1]/widget[QTabWidget,tbwCliente]/widget[QWidget,general]/vbox[vbox,1]/widget[QLayoutWidget,layoutDireccionContacto]/hbox[hbox,1]/widget[QGroupBox,groupBox15]/vbox[vbox,1]/widget[FLFieldDB,fdbWeb]" />
+<xupdate:delete select="/UI[UI,1]/widget[QWidget,formClientes]/vbox[vbox,1]/widget[QTabWidget,tbwCliente]/widget[QWidget,general]/vbox[vbox,1]/widget[QLayoutWidget,layoutDireccionContacto]/hbox[hbox,1]/widget[QGroupBox,groupBox15]/vbox[vbox,1]/widget[QLayoutWidget,layout61]/hbox[hbox,1]/spacer[spacer49]" />
+<xupdate:append-first select="/UI[UI,1]/images[images,1]" >
+<image name="envio_mailimage9047" >
+<data format="PNG" length="1143" >89504e470d0a1a0a0000000d4948445200000020000000200806000000737a7af40000043e49444154789ced964f685c5514c67f93deb6e7e9206fa08b04a938cbb68a4e5021dd8dbb0c54ec4816a6b830e04a5c096e4a57adcb2ea46057edaee9a298eeea42490421816a4dc5450a594cc43f13b192070dbe53e636cfc5bdf7fd998cb145a10b7be071dfbbf7dd77bef39defdc77e0893db1ffbbd51e72eebfb46ca4b35b376f656204b58a187193c65d9189101144dc7c18231391921299a8ea623f30f063c9b6fa5b4c1e9f7c7e6363e3270f24337e6d4c8c70b475f491c38988462fecdf3db5fced32c75f3dbeb1b1913ce520260f3c80784cad3a945b5b0503c14988943d221e619fd5e0065700e152f616003a503052c7ea368cef78005213233080f9abf3608b8fccbd3b476ad32a083b046204dd008db7a173f5940751015bc7c800ab8390825a60607666d6e5de425913a9a66020c58f76889100a204267ed98d9daba7aa60e10056f7818c7900de894d59b8b640000330f7ce9c034149a096028489f2e76126263ff237f3de8b2ab25f00c63052c32a2105cea985ce898e8b1cef54150c287e1c02935ac7084a150cec4a8b18711a009f6661accc4000517602148c5846ae63e1ccb5cb0598a0a14115805a2d40196a30cc80c2c2e70bb9a351347767ba0eac9618f14c9cb97699b3337339888a363c033928cf404503892674da9d82c2401ba5c3c9164ecb636422664fb473109129558b0791dc4b82063cc82106221b71e38b1bc0eec8c37367da6924b149b54a6cca44dcc8419c3e399bcf47e2408cd240b50ab653a6a6a6c050513b50a9fb734b578a122c9562dff669c64dbad36d3ebe3ecfd993732043c1141ad8cd00c0ca372b7b6aa0dd6e1301efcf74882576fb0cf4748dc4f6e959681e9aa03bdde6ccf52a1379a9fead06b6135a2fb60a844138252db8f4c0e2dd45a4ee3e020af9f11dc1361c39d4a43b3d55301104bb970642190e0b6c38e749a27c77778d060538416898097af41927452d34e3269d361526fe5103aac529385c42214dfdcd1e584135454c0428138c17a07d84bdbb3dd66ef7484959fe72d97dbbd0405661e0d8e4b1d7ba6f766ff210a68763e2ed06910a294a6484a4ae50571a5650a3f437fb2c7ebdc6ea9d4d1aeb6b7cca52de47005960c03724b1c1481d6800cf0007f1cd8a20b5907bff4cebbdd7575aaf347dc4b8d5c342635c68d69b9028bdd584e5db3d562e5e7ac30b3803f95d60a0700ff803cbbdc0c00e56ef6364dbbf7c00cb58fe0f28478fa22ad9d257bd9a1850af99f8858889f123a43f2bbd1f1256eff458b978a98df502b5f21b864c2d0f30fce976928596ac06f13e97713908ec0b0cb8337b642226f0258885ee27a7bf9f6a35d95ccf237f295f27ee63f35e70c7ede03e6ce6fd4006c903b72803083f29c00a79a955c6e46910f0c21415927575ce2f9c6f868461e557779f14f947324876809dd2a9ef9a44d01d2a9d71350525fbb1bc262662f1f65ab672e1fc73a5bdbf8cdeafd988c97f67531f7c9801cf96aec7628fd57900f048f6172b5857e5aa43870c0000000049454e44ae426082</data>
+</image>
+</xupdate:append-first>
+<xupdate:insert-after select="/UI[UI,1]/widget[QWidget,formClientes]/vbox[vbox,1]/widget[QTabWidget,tbwCliente]/widget[QWidget,general]/vbox[vbox,1]/widget[QLayoutWidget,layoutDireccionContacto]/hbox[hbox,1]/widget[QGroupBox,groupBox15]/vbox[vbox,1]/widget[QLayoutWidget,layout61]/hbox[hbox,1]/widget[FLFieldDB,fdbEmail]" >
+<widget class="QPushButton" >
+<property name="name" >
+<cstring>tbnEnviarMail</cstring>
+</property>
+<property name="enabled" >
+<bool>true</bool>
+</property>
+<property name="sizePolicy" >
+<sizepolicy>
+<hsizetype>1</hsizetype>
+<vsizetype>1</vsizetype>
+<horstretch>0</horstretch>
+<verstretch>0</verstretch>
+</sizepolicy>
+</property>
+<property name="minimumSize" >
+<size>
+<width>32</width>
+<height>32</height>
+</size>
+</property>
+<property name="maximumSize" >
+<size>
+<width>32</width>
+<height>32</height>
+</size>
+</property>
+<property name="focusPolicy" >
+<enum>NoFocus</enum>
+</property>
+<property name="text" >
+<string/>
+</property>
+<property name="accel" >
+<string>I</string>
+</property>
+<property name="iconSet" >
+<iconset>envio_mailimage9047</iconset>
+</property>
+<property name="toolTip" stdset="0" >
+<string>Enviar email</string>
+</property>
+<property name="whatsThis" stdset="0" >
+<string>Envar un email al contacto principal del cliente</string>
+</property>
+</widget>
+</xupdate:insert-after>
+<xupdate:append-first select="/UI[UI,1]/images[images,1]" >
+<image name="envio_mailimage4234" >
+<data format="PNG" length="2337" >89504e470d0a1a0a0000000d4948445200000020000000200806000000737a7af4000008e849444154789cc5976d6c1c5715861f3be3e64c982d33603733608b1d704ad6ada3ac49400e4ddbb8ad501d5a684a0a14fa03101f227c49294820901005f15504821628a0f0034ac5971104dc462871512abbe0360e2464d3c6685764618678ebbd49469913e7c6cb8f75421a5254c40f8e343ad268ee79df73ce7beedcdbd16ab5f87f5ac793400228740bbcc7851b81420eff50f8f5fd1e3fe36abf6b6abf9957e5b400df03fca5000ac8253cef0e71d7064ee8f0058546d2c8bfe07a2e79bd095f4da958b8bbd5c2598a5314f86550f4d7f85b2382de10f15c1019dde0f225f19acbdefe8999f78e3f617e18b6015eedc25b72f88bc09f81c302cf289c394fa2a2e4fd7999d0dd2e96bd88fbc5fc70b3c54f0d587097803b4ddb7fde1559e33b8276e7e860cc9eba4f70d348c7e4de6641135d313c289b811571fbfbab128febddabfdfb142680bf014f07f03070afc0bbf431b386833aecb691ac3e9eb4f881411bfaac162cbb15aeb0f0b5c0f3dc68a1417602cce586bd0f56085fe17076e12c47f7a70cac712fdbf14863670de61d61ffe09bc3a9e03acf6ffc493f6a4ed9bf59f033582f703d706b01de6717ed4d7357049de650d32d3cd4b8c2aa7da9d34e3e57581cfaf4a7cf3a15e88aa14baca1ea0b7ad8e06ff219de24540f1836dc5224f121e849e2622857d6529dadf40a5a940ebfe866f1567f57f55be9aea5bcfc1abc0ab806b84e66f51aeea92022a1c2c70211b0da02169a96ef001f720cfc3d81df8f0a37ec7184d4f3294da4c4ef28110f86b8bd01810069de35d42fafada5babb9aea6994962ac8ba803dbd86b4ae94458cafba1b8fddacf30b322895105e5a993215f3044f61f51adf916eb5badcc05e00e72bd0fab2c76422dc10ab521568ce024f2498149414147c5246cafebab1c7cc0ba38c63d12fd2326f0d2f1b7f3865475dc1813dfd211cacb1ed469f78955c219e04412f447eb83b6da41fcc6b1a24563708bc1cd809e0840e2fb85dd8b2cff3a902239922aae88421b94d303588d7c554f74369ad7b9588f46e51bdb33ccb57f5f3b5f9b2cad74a45a9545633a7194f89e73f1d167479d1915b8c6505eaa2da4cca370bc914cdf430bf69aab6471570d4d2da63d93762cc55d5ee1083320c5453c5adeba211ed8cfa7c8498a83b09cbb7f10dddcbd52685b8b7f4a2a1d9ca87376df4a9dca23097ea682c4fc79eac546b5626c64755f1d1d7059eee2adde53f691ac2e4432949bdad9a650a677ea58c9f81fc6dd88d3db0ccb196039e4f666c6bd5e60203e5551dd1608c7d66aed35c6efbaa2ba3e5a5c70d27e753d2ad9b38fbc00728f7aea7a79939a33b67576a5d3db10eaeab5858f48597f55ceedd85c8821f0693f16b0a0c6ceaa16f781bcb962a71767a81bd66c11e1bedb437fdc1f71d16147bca41dd6cb1272e74ba2b0250451b86c21bde89be6188c36b7a483fbc81fc7297ca7c85f53beb0407531c07b2798b73ccd2b74a4e5fb9263e13f51556a8ede8aea627bf7fd6dac5938b962b5ffb91f30400386079325964eedacbb8b9e6f99da553594757663b1a453a4e36e69899ad4323a73a5fa7729dcfd1f51ed5530d260e8dd3a51d04e3d3f4352cd601a7b3bd65f6ad8f9d20eaeeea0903b279f3c2b9135d3fcc16ac71802b375e44e01c0916ec893bc86eecb3b6b3eb84ed38d065395cabc35f0dfa8f06eefe3a89ef60fb221aa68ec51248c04f3842cf318778de9259f056f9440305826596f46883e609ba1aa7f209e029bb00039b2e410060c6f2fbd491bf5ebbc2beb11942c353c2651e72da4133f8d5cb2cd365878253c0733c668ecd307d749a70c5209bdfb48b234f4f10371a44aff2c177996a9ce4c78d8c1fed4c3f951d737e921eb7a71b0dcbc8d6bbcfff8cfecdc6ae67b9ef0aa389a2166ab9522dc09e55cacc6a60ae466e61201c682fb0a00a7803e8bbef63c7376f403c43d309a8fa4a8d142c8b138fa4c7cf617c1670b8abbd1867c90338bc92b5fab93415a6569748ba85aaaf4c6515041fa98362a8698d4002c4b6a7da644ade6832bc7a84f18d5ba898317c4df0f1914cd0905b05beae68768e4427fdc06ab8c8df017427c3652a3797988c9a4c352a94643b5b561de2cee14348560403d5b92ab1c49041c98f195d1d20c0a6be3b2103630ca69ea235a1146d1f5087951756dac15ca2feca2ba45b1007f6552649536553bc9b5238822b2002c3abb73171f0a31831a4b60a29c4ab479932503d5c45cf0c51f446a9cd8e63108addf722849701de85509dd8a5d23ffb692a4aa53a83a9478cc6fb88fc1114c86dfbc011f7dd4e28c35087cac194b2ff7e4a7ddb480c54e79a485fcce8c6ef51eeff32a3eb7613f8a3348d59047d96ee9ce79061830c544b0cf7ef4624382fb4f35a7162eebd6b373375435321f22314c034c111020f70224686ef26390a49e31046cd7190d3ed14ce1198b908da028e8c53bef3e3a5fe4fbe0082b6c22dc839700bc624fce82884518478902804029524c10fda84d542d3806a4e333368523d86d5e317c2393c7aa902e88cf48ceca03ffee03970ff5c7b9c761be262c4e4d421f2230948c0508f4f6e0c4da3480062a1a9ed35cd2c4533456bfbfe08cc3d5b03cf61baf72b3f689ae4b42a70a63de37a6ed66dfb4cb5a13c40a93c842bc2be23150c4269b044dc1d613240219d6b624c13d3a82c90561ee1c2faff2702a433d3e9f4d8cf74090cfe05ae0aeed29e1138508c22868637101723027151853c83742e47ac6997ffc8e4efc8d27fabf7731300f4d17b3f539d9dacab42f324680e2603cd20316d10d19cc8e6e459bbdf49a3fd3e7072b60c2a71778ed6f7cd7170ec1bc0df2fc6e8f84f0400280e6ff6b7def750a938540824a71c81ef41e4b9c4dd39b1ef323e9ba3da1669e841e4bb441e8c3d7e88cf7e77ec99f4e1fbef214bbf0d9cbe3074abd57a1e04007acbaf979bee7960dbd691976cbfdea56a9614ae902e6daa22100ab80ee49a333631c3d8430f1e308feef80ce823407671d8e74f00c00b0786dfbafdfe68ede8b5d2137546dd01e280ef5c702dd326499230f1e884a9fcf6c19f539bba0ff82370c90be87f47a06dcb11ffd5d2bf61b384c5b512c54591a000b4d4544fe85c9298c333d3a4955da0d397cafa7f2570a1b9c08b413cd00ee014701c38012c3e9f00ad568b8efff7f5fc9f3be95f6bb5350a270000000049454e44ae426082</data>
+</image>
+</xupdate:append-first>
+<xupdate:insert-after select="/UI[UI,1]/widget[QWidget,formClientes]/vbox[vbox,1]/widget[QTabWidget,tbwCliente]/widget[QWidget,general]/vbox[vbox,1]/widget[QLayoutWidget,layoutDireccionContacto]/hbox[hbox,1]/widget[QGroupBox,groupBox15]/vbox[vbox,1]/widget[QLayoutWidget,layout61]" >
+<widget class="QLayoutWidget" >
+<property name="name" >
+<cstring>layout26</cstring>
+</property>
+<hbox>
+<property name="name" >
+<cstring>unnamed</cstring>
+</property>
+<widget class="FLFieldDB" >
+<property name="name" >
+<cstring>fdbWeb</cstring>
+</property>
+<property name="sizePolicy" >
+<sizepolicy>
+<hsizetype>1</hsizetype>
+<vsizetype>0</vsizetype>
+<horstretch>0</horstretch>
+<verstretch>0</verstretch>
+</sizepolicy>
+</property>
+<property name="minimumSize" >
+<size>
+<width>77</width>
+<height>29</height>
+</size>
+</property>
+<property name="font" >
+<font>
+<bold>0</bold>
+<italic>0</italic>
+</font>
+</property>
+<property name="fieldName" >
+<string>web</string>
+</property>
+</widget>
+<widget class="QPushButton" >
+<property name="name" >
+<cstring>tbnWeb</cstring>
+</property>
+<property name="enabled" >
+<bool>true</bool>
+</property>
+<property name="sizePolicy" >
+<sizepolicy>
+<hsizetype>1</hsizetype>
+<vsizetype>1</vsizetype>
+<horstretch>0</horstretch>
+<verstretch>0</verstretch>
+</sizepolicy>
+</property>
+<property name="minimumSize" >
+<size>
+<width>32</width>
+<height>32</height>
+</size>
+</property>
+<property name="maximumSize" >
+<size>
+<width>32</width>
+<height>32</height>
+</size>
+</property>
+<property name="focusPolicy" >
+<enum>NoFocus</enum>
+</property>
+<property name="text" >
+<string/>
+</property>
+<property name="iconSet" >
+<iconset>envio_mailimage4234</iconset>
+</property>
+<property name="toolTip" stdset="0" >
+<string>Acceso web</string>
+</property>
+</widget>
+</hbox>
+</widget>
+</xupdate:insert-after>
+</xupdate:modifications>

@@ -1,0 +1,292 @@
+<!DOCTYPE TMD>
+<TMD>
+    <name>paramenvio</name>
+	<!--Parámetros de envío-->
+	<alias>QT_TRANSLATE_NOOP("MetaData","Parámetros de envío")</alias>
+    <field>
+        <name>id</name>
+		<!--Identificador interno de la tabla-->        <alias>QT_TRANSLATE_NOOP("MetaData","Identificador")</alias>
+        <null>false</null>
+        <pk>true</pk>
+        <type>serial</type>
+        <visiblegrid>false</visiblegrid>
+    </field>
+	
+	<field>
+		<name>idparamlibro</name>
+		<!--Identificador del registro de parámetros del libro asociado-->
+		<alias>QT_TRANSLATE_NOOP("MetaData","Libro")</alias>
+		<null>true</null>
+		<pk>false</pk>
+		<type>uint</type>
+		<visiblegrid>false</visiblegrid>
+		
+		<relation>
+			<table>paramlibro</table>
+			<field>id</field>
+			<card>M1</card>
+			<delC>true</delC>
+		</relation>
+	</field>
+	
+    <field>
+		<name>idparamiptico</name>
+		<!--Identificador del registro de parámetros del íptico asociado-->
+		<alias>QT_TRANSLATE_NOOP("MetaData","Íptico")</alias>
+		<null>true</null>
+		<pk>false</pk>
+		<type>uint</type>
+		<visiblegrid>false</visiblegrid>
+		
+		<relation>
+			<table>paramiptico</table>
+			<field>id</field>
+			<card>M1</card>
+			<delC>true</delC>
+		</relation>
+	</field>
+	
+    <field>
+		<name>idparamtaco</name>
+		<!--Identificador del registro de parámetros del taco asociado-->
+		<alias>QT_TRANSLATE_NOOP("MetaData","Taco")</alias>
+		<null>true</null>
+		<pk>false</pk>
+		<type>uint</type>
+		<visiblegrid>false</visiblegrid>
+		
+		<relation>
+			<table>paramtaco</table>
+			<field>id</field>
+			<card>M1</card>
+			<delC>true</delC>
+		</relation>
+	</field>
+	
+    <field>
+		<name>idlinea</name>
+		<!--Línea de presupuesto asociada-->
+		<alias>QT_TRANSLATE_NOOP("MetaData","Línea de presupuesto asociada")</alias>
+		<null>true</null>
+		<pk>false</pk>
+		<type>uint</type>
+		<visiblegrid>false</visiblegrid>
+		
+		<relation>
+			<table>lineaspresupuestoscli</table>
+			<field>idlinea</field>
+			<card>M1</card>
+			<delC>true</delC>
+		</relation>
+	</field>
+	<field>
+		<name>idproducto</name>
+		<!--Producto asociado-->
+		<alias>QT_TRANSLATE_NOOP("MetaData","Producto")</alias>
+		<null>true</null>
+		<pk>false</pk>
+		<type>uint</type>
+		<visiblegrid>false</visiblegrid>
+		
+		<relation>
+			<table>productoslp</table>
+			<field>idproducto</field>
+			<card>M1</card>
+			<delC>true</delC>
+		</relation>
+	</field>
+	<field>
+        <name>xml</name>
+		<alias>QT_TRANSLATE_NOOP("MetaData","XML")</alias>
+        <null>true</null>
+        <pk>false</pk>
+        <type>stringlist</type>
+		<visiblegrid>false</visiblegrid>
+    </field>
+     <field>
+        <name>descripcion</name>
+		<alias>QT_TRANSLATE_NOOP("MetaData","Descripción")</alias>
+        <null>true</null>
+        <pk>false</pk>
+        <type>string</type>
+        <length>100</length>
+    </field>
+    <field>
+        <name>nombredestino</name>
+		<!--Nombre del cliente o proveedor-->
+		<alias>QT_TRANSLATE_NOOP("MetaData","Nombre")</alias>
+        <null>true</null>
+        <pk>false</pk>
+        <type>string</type>
+        <length>100</length>
+    </field>
+
+	<field>
+        <name>numcopias</name>
+		<alias>QT_TRANSLATE_NOOP("MetaData","Num.Copias")</alias>
+        <null>false</null>
+        <pk>false</pk>
+        <type>uint</type>
+    </field>
+	
+	<field>
+        <name>pesounidad</name>
+        <alias>QT_TRANSLATE_NOOP("MetaData","Peso unidad")</alias>
+        <null>false</null>
+        <pk>false</pk>
+        <type>double</type>
+        <partI>4</partI>
+        <partD>4</partD>
+        <default>0</default>
+    </field>
+	
+	<field>
+        <name>peso</name>
+        <alias>QT_TRANSLATE_NOOP("MetaData","Peso")</alias>
+        <null>false</null>
+        <pk>false</pk>
+        <type>double</type>
+        <partI>6</partI>
+        <partD>2</partD>
+        <default>0</default>
+    </field>
+	
+	<field>
+        <name>portes</name>
+        <alias>QT_TRANSLATE_NOOP("MetaData","Portes")</alias>
+        <null>false</null>
+        <pk>false</pk>
+        <type>double</type>
+        <partI>6</partI>
+        <partD>2</partD>
+        <default>0</default>
+    </field>
+	
+	<field>
+        <name>codcliente</name>
+        <alias>QT_TRANSLATE_NOOP("MetaData","Cliente")</alias>
+        <null>true</null>
+        <pk>false</pk>
+        <type>string</type>
+        <length>6</length>
+        <relation>
+            <table>clientes</table>
+            <field>codcliente</field>
+            <card>M1</card>
+        </relation>
+    </field>
+	
+	<field>
+        <name>codproveedor</name>
+        <alias>QT_TRANSLATE_NOOP("MetaData","Proveedor")</alias>
+        <null>true</null>
+        <pk>false</pk>
+        <type>string</type>
+        <length>6</length>
+        <relation>
+            <table>proveedores</table>
+            <field>codproveedor</field>
+            <card>M1</card>
+        </relation>
+    </field>
+	
+	<field>
+        <name>direccion</name>
+        <alias>QT_TRANSLATE_NOOP("MetaData","Dirección")</alias>
+        <null>false</null>
+        <pk>false</pk>
+        <type>string</type>
+        <length>100</length>
+    </field>
+    <field>
+        <name>codpostal</name>
+        <alias>QT_TRANSLATE_NOOP("MetaData","Código Postal")</alias>
+        <null>true</null>
+        <pk>false</pk>
+        <type>string</type>
+        <length>10</length>
+    </field>
+    <field>
+        <name>idpoblacion</name>
+        <alias>QT_TRANSLATE_NOOP("MetaData","")</alias>
+        <null>true</null>
+        <pk>false</pk>
+        <type>uint</type>
+        <visiblegrid>false</visiblegrid>
+        <relation>
+            <table>poblaciones</table>
+            <field>idpoblacion</field>
+            <card>M1</card>
+        </relation>
+    </field>
+    <field>
+        <name>ciudad</name>
+        <alias>QT_TRANSLATE_NOOP("MetaData","Población")</alias>
+        <null>true</null>
+        <pk>false</pk>
+        <type>string</type>
+        <length>100</length>
+    </field>
+    <field>
+        <name>idprovincia</name>
+        <alias>QT_TRANSLATE_NOOP("MetaData","")</alias>
+        <null>true</null>
+        <pk>false</pk>
+        <type>uint</type>
+        <visiblegrid>false</visiblegrid>
+        <relation>
+            <table>provincias</table>
+            <field>idprovincia</field>
+            <card>M1</card>
+        </relation>
+    </field>
+    <field>
+        <name>provincia</name>
+        <alias>QT_TRANSLATE_NOOP("MetaData","Provincia")</alias>
+        <null>true</null>
+        <pk>false</pk>
+        <type>string</type>
+        <length>100</length>
+    </field>
+    <field>
+        <name>apartado</name>
+        <alias>QT_TRANSLATE_NOOP("MetaData","Apdo. de correos")</alias>
+        <null>true</null>
+        <pk>false</pk>
+        <type>string</type>
+        <length>10</length>
+    </field>
+    <field>
+        <name>codpais</name>
+        <alias>QT_TRANSLATE_NOOP("MetaData","Pais")</alias>
+        <null>true</null>
+        <pk>false</pk>
+        <type>string</type>
+        <length>20</length>
+        <relation>
+            <table>paises</table>
+            <field>codpais</field>
+            <card>M1</card>
+        </relation>
+    </field>
+	<field>
+        <name>codagencia</name>
+        <alias>QT_TRANSLATE_NOOP("MetaData","Agencia")</alias>
+        <null>true</null>
+        <pk>false</pk>
+        <type>string</type>
+        <length>10</length>
+        <relation>
+            <table>agenciastrans</table>
+            <field>codagencia</field>
+            <card>M1</card>
+        </relation>
+    </field>
+    <field>
+        <name>idayvuelta</name>
+        <alias>QT_TRANSLATE_NOOP("MetaData","Ida y vuelta")</alias>
+        <null>true</null>
+        <pk>false</pk>
+        <type>bool</type>
+    </field>
+</TMD>

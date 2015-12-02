@@ -1,0 +1,6 @@
+<flpatch:modifications name="tec_printer" >
+    <flpatch:addFile path="facturacion/principal/scripts/" name="tec_printer.qs" />
+    <flpatch:patchXml path="facturacion/principal/" name="flfactppal.xml" />
+    <flpatch:patchXml path="facturacion/principal/forms/" name="flfactppal.ui" />
+    <flpatch:addFile path="facturacion/principal/forms/" name="tec_printer.ui" />
+</flpatch:modifications>

@@ -1,0 +1,35 @@
+<xupdate:modifications>
+<xupdate:insert-after select="/TMD[TMD,1]/field[canregalo]" >
+<field>
+<name>codcomanda</name>
+<alias>QT_TRANSLATE_NOOP(&quot;MetaData&quot;,&quot;Nº&quot;)</alias>
+<null>false</null>
+<pk>false</pk>
+<type>string</type>
+<length>12</length>
+<editable>false</editable>
+</field>
+</xupdate:insert-after>
+<xupdate:insert-after select="/TMD[TMD,1]/field[codcomanda]" >
+<field>
+<name>idsincro</name>
+<alias>QT_TRANSLATE_NOOP(&quot;MetaData&quot;,&quot;Id.Sincro&quot;)</alias>
+<null>false</null>
+<pk>false</pk>
+<ck>true</ck>
+<type>string</type>
+<length>30</length>
+<editable>false</editable>
+</field>
+</xupdate:insert-after>
+<xupdate:insert-after select="/TMD[TMD,1]/field[idsincro]" >
+<field>
+<name>ptestock</name>
+<alias>QT_TRANSLATE_NOOP(&quot;MetaData&quot;,&quot;Pte.Stock&quot;)</alias>
+<null>false</null>
+<pk>false</pk>
+<type>bool</type>
+<default>true</default>
+</field>
+</xupdate:insert-after>
+</xupdate:modifications>

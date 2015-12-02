@@ -1,0 +1,48 @@
+<xupdate:modifications>
+<xupdate:insert-after select="/TMD[TMD,1]/field[id]/visiblegrid[visiblegrid,1]" >
+<relation>
+<table>co_i_centrosdiario</table>
+<field>idinforme</field>
+<card>1M</card>
+</relation>
+</xupdate:insert-after>
+<xupdate:insert-after select="/TMD[TMD,1]/field[id]/relation[co_i_centrosdiario,idinforme]" >
+<relation>
+<table>co_i_subcentrosdiario</table>
+<field>idinforme</field>
+<card>1M</card>
+</relation>
+</xupdate:insert-after>
+<xupdate:insert-after select="/TMD[TMD,1]/field[tipoorden3]" >
+<field>
+<name>i_centroscoste_codcentro</name>
+<!-- Código del centro de coste --><alias>QT_TRANSLATE_NOOP(&quot;MetaData&quot;,&quot;Centro coste&quot;)</alias>
+<pk>false</pk>
+<type>string</type>
+<length>8</length>
+<relation>
+<table>centroscoste</table>
+<field>codcentro</field>
+<card>M1</card>
+</relation>
+</field>
+</xupdate:insert-after>
+<xupdate:insert-after select="/TMD[TMD,1]/field[i_centroscoste_codcentro]" >
+<field>
+<name>i_subcentroscoste_codsubcentro</name>
+<alias>QT_TRANSLATE_NOOP(&quot;MetaData&quot;,&quot;Subcentro coste&quot;)</alias>
+<pk>false</pk>
+<type>string</type>
+<length>8</length>
+<relation>
+<table>subcentroscoste</table>
+<field>codsubcentro</field>
+<card>M1</card>
+</relation>
+<associated>
+<with>i_centroscoste_codcentro</with>
+<by>codcentro</by>
+</associated>
+</field>
+</xupdate:insert-after>
+</xupdate:modifications>

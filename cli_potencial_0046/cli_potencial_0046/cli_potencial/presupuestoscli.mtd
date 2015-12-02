@@ -1,0 +1,28 @@
+<xupdate:modifications>
+<xupdate:update select="/TMD[TMD,1]/field[codcliente]/alias[alias,1]/text()[1]" >QT_TRANSLATE_NOOP(&quot;MetaData&quot;,&quot;Cliente&quot;)</xupdate:update>
+<xupdate:insert-after select="/TMD[TMD,1]/field[recfinanciero]" >
+<field>
+<name>clientepot</name>
+<alias>QT_TRANSLATE_NOOP(&quot;MetaData&quot;,&quot;Es cliente potencial&quot;)</alias>
+<null>true</null>
+<pk>false</pk>
+<type>bool</type>
+<default>false</default>
+</field>
+</xupdate:insert-after>
+<xupdate:insert-after select="/TMD[TMD,1]/field[clientepot]" >
+<field>
+<name>codclientepot</name>
+<alias>QT_TRANSLATE_NOOP(&quot;MetaData&quot;,&quot;Cliente potencial&quot;)</alias>
+<null>true</null>
+<pk>false</pk>
+<type>string</type>
+<length>4</length>
+<relation>
+<table>clientespot</table>
+<field>codigo</field>
+<card>M1</card>
+</relation>
+</field>
+</xupdate:insert-after>
+</xupdate:modifications>

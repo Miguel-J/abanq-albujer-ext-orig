@@ -1,0 +1,23 @@
+<xupdate:modifications>
+<xupdate:insert-after select="/ACTIONS[ACTIONS,1]/action[co_datosfiscales]" >
+<action>
+<name>co_modelo300</name>
+<description>QT_TRANSLATE_NOOP(&quot;MetaData&quot;,&quot;Modelo 300&quot;)</description>
+<alias>QT_TRANSLATE_NOOP(&quot;MetaData&quot;,&quot;Modelo 300&quot;)</alias>
+<scriptformrecord>co_modelo300</scriptformrecord>
+<scriptform>co_mastermodelo300</scriptform>
+<table>co_modelo300</table>
+<form>co_mastermodelo</form>
+<formrecord>co_modelo300</formrecord>
+</action>
+</xupdate:insert-after>
+<xupdate:insert-after select="/ACTIONS[ACTIONS,1]/action[co_modelo300]" >
+<action>
+<name>co_tipodec300</name>
+<description>QT_TRANSLATE_NOOP(&quot;MetaData&quot;,&quot;Esta tabla almacena los distintos tipos de declaración que puede tener el modelo 300&quot;)</description>
+<alias>QT_TRANSLATE_NOOP(&quot;MetaData&quot;,&quot;Tipos de declaración (modelo 300)&quot;)</alias>
+<table>co_tipodec300</table>
+<form>master</form>
+</action>
+</xupdate:insert-after>
+</xupdate:modifications>

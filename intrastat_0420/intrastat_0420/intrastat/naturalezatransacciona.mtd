@@ -1,0 +1,31 @@
+<!DOCTYPE TMD>
+<TMD>
+	<name>naturalezatransacciona</name>
+	<!--Listado de naturalezas de la transacción. tabla A-->
+	<alias>QT_TRANSLATE_NOOP("MetaData","Naturaleza de la transacción A")</alias>
+
+	<field>
+		<name>codnaturalezaa</name>
+		<alias>QT_TRANSLATE_NOOP("MetaData","Código")</alias>
+		<null>false</null>
+		<pk>true</pk>
+		<type>string</type>
+		<length>1</length>
+	
+		<relation>
+			<table>naturalezatransaccion</table>
+			<field>codnaturalezaa</field>
+			<card>1M</card>
+		</relation>
+	</field>
+
+	<field>
+		<name>descripcion</name>
+		<alias>QT_TRANSLATE_NOOP("MetaData","Descripción")</alias>
+		<null>true</null>
+		<pk>false</pk>
+		<type>string</type>
+		<length>250</length>
+	</field>
+
+</TMD>

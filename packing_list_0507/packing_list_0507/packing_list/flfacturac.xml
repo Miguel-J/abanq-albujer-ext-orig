@@ -1,0 +1,47 @@
+<xupdate:modifications>
+<xupdate:insert-after select="/ACTIONS[ACTIONS,1]/action[cambiarejer]" >
+<action>
+<name>despachos</name>
+<description>QT_TRANSLATE_NOOP(&quot;MetaData&quot;,&quot;Los despachos son envíos que se hacen a partir de uno o más albaranes y que son la base de los informes de packing-list&quot;)</description>
+<alias>QT_TRANSLATE_NOOP(&quot;MetaData&quot;,&quot;Despachos&quot;)</alias>
+<table>despachos</table>
+<form>masterdespachos</form>
+<formrecord>despachos</formrecord>
+<scriptform>masterdespachos</scriptform>
+<scriptformrecord>despachos</scriptformrecord>
+</action>
+</xupdate:insert-after>
+<xupdate:insert-after select="/ACTIONS[ACTIONS,1]/action[despachos]" >
+<action>
+<name>bultosdespacho</name>
+<description>QT_TRANSLATE_NOOP(&quot;MetaData&quot;,&quot;Bultos por despacho&quot;)</description>
+<alias>QT_TRANSLATE_NOOP(&quot;MetaData&quot;,&quot;Bultos por despacho&quot;)</alias>
+<table>bultosdespacho</table>
+<form>master</form>
+<formrecord>bultosdespacho</formrecord>
+<scriptformrecord>bultosdespacho</scriptformrecord>
+</action>
+</xupdate:insert-after>
+<xupdate:insert-after select="/ACTIONS[ACTIONS,1]/action[bultosdespacho]" >
+<action>
+<name>lineasbulto</name>
+<description>QT_TRANSLATE_NOOP(&quot;MetaData&quot;,&quot;Líneas por bulto&quot;)</description>
+<alias>QT_TRANSLATE_NOOP(&quot;MetaData&quot;,&quot;Líneas por bulto&quot;)</alias>
+<table>lineasbulto</table>
+<form>master</form>
+<formrecord>lineasbulto</formrecord>
+<scriptformrecord>lineasbulto</scriptformrecord>
+</action>
+</xupdate:insert-after>
+<xupdate:insert-after select="/ACTIONS[ACTIONS,1]/action[lineasbulto]" >
+<action>
+<name>embalajesbulto</name>
+<description>QT_TRANSLATE_NOOP(&quot;MetaData&quot;,&quot;Embalajes por bulto&quot;)</description>
+<alias>QT_TRANSLATE_NOOP(&quot;MetaData&quot;,&quot;Embalajes por bulto&quot;)</alias>
+<table>embalajesbulto</table>
+<form>master</form>
+<formrecord>embalajesbulto</formrecord>
+<scriptformrecord>embalajesbulto</scriptformrecord>
+</action>
+</xupdate:insert-after>
+</xupdate:modifications>

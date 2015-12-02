@@ -1,0 +1,22 @@
+<xupdate:modifications>
+<xupdate:insert-after select="/TMD[TMD,1]/field[idsubcuentavale]" >
+<field>
+<name>tiendasincro</name>
+<!--La tienda local sincroniza sus arqueos con una central--><alias>QT_TRANSLATE_NOOP(&quot;MetaData&quot;,&quot;La tienda local sincroniza sus arqueos con una central&quot;)</alias>
+<null>false</null>
+<pk>false</pk>
+<type>bool</type>
+<default>false</default>
+</field>
+</xupdate:insert-after>
+<xupdate:insert-after select="/TMD[TMD,1]/field[autagentearqueo]" >
+<field>
+<name>autageenvrecep</name>
+<alias>QT_TRANSLATE_NOOP(&quot;MetaData&quot;,&quot;Autenticar agente en envíos y recepciones&quot;)</alias>
+<null>false</null>
+<pk>false</pk>
+<type>bool</type>
+<default>false</default>
+</field>
+</xupdate:insert-after>
+</xupdate:modifications>

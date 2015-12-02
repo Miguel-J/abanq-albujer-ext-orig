@@ -1,0 +1,282 @@
+<xupdate:modifications>
+<xupdate:insert-after select="/TMD[TMD,1]/field[deabono]" >
+<field>
+<name>mg_numcliente</name>
+<alias>QT_TRANSLATE_NOOP(&quot;MetaData&quot;,&quot;Nº Cliente&quot;)</alias>
+<null>true</null>
+<pk>false</pk>
+<type>string</type>
+<length>15</length>
+<editable>false</editable>
+</field>
+</xupdate:insert-after>
+<xupdate:insert-after select="/TMD[TMD,1]/field[mg_numcliente]" >
+<field>
+<name>mg_email</name>
+<alias>QT_TRANSLATE_NOOP(&quot;MetaData&quot;,&quot;E-mail&quot;)</alias>
+<null>true</null>
+<pk>false</pk>
+<type>string</type>
+<length>50</length>
+<editable>false</editable>
+</field>
+</xupdate:insert-after>
+<xupdate:insert-after select="/TMD[TMD,1]/field[mg_email]" >
+<field>
+<name>mg_confactura</name>
+<alias>QT_TRANSLATE_NOOP(&quot;MetaData&quot;,&quot;Solicita Factura&quot;)</alias>
+<null>true</null>
+<pk>false</pk>
+<type>bool</type>
+<editable>false</editable>
+</field>
+</xupdate:insert-after>
+<xupdate:insert-after select="/TMD[TMD,1]/field[mg_confactura]" >
+<field>
+<name>mg_metodopago</name>
+<alias>QT_TRANSLATE_NOOP(&quot;MetaData&quot;,&quot;Método de Pago&quot;)</alias>
+<null>true</null>
+<pk>false</pk>
+<type>string</type>
+<length>30</length>
+<editable>false</editable>
+</field>
+</xupdate:insert-after>
+<xupdate:insert-after select="/TMD[TMD,1]/field[mg_metodopago]" >
+<field>
+<name>mg_pesototal</name>
+<alias>QT_TRANSLATE_NOOP(&quot;MetaData&quot;,&quot;Peso Total&quot;)</alias>
+<null>true</null>
+<pk>false</pk>
+<type>double</type>
+<partI>6</partI>
+<partD>4</partD>
+<default>0</default>
+<editable>false</editable>
+</field>
+</xupdate:insert-after>
+<xupdate:insert-after select="/TMD[TMD,1]/field[mg_pesototal]" >
+<field>
+<name>mg_nombrefac</name>
+<alias>QT_TRANSLATE_NOOP(&quot;MetaData&quot;,&quot;Nombre Fact.&quot;)</alias>
+<null>true</null>
+<pk>false</pk>
+<type>string</type>
+<length>100</length>
+<editable>false</editable>
+</field>
+</xupdate:insert-after>
+<xupdate:insert-after select="/TMD[TMD,1]/field[mg_nombrefac]" >
+<field>
+<name>mg_apellidosfac</name>
+<alias>QT_TRANSLATE_NOOP(&quot;MetaData&quot;,&quot;Apellidos Fact.&quot;)</alias>
+<null>true</null>
+<pk>false</pk>
+<type>string</type>
+<length>200</length>
+<editable>false</editable>
+</field>
+</xupdate:insert-after>
+<xupdate:insert-after select="/TMD[TMD,1]/field[mg_apellidosfac]" >
+<field>
+<name>mg_direccionfac</name>
+<alias>QT_TRANSLATE_NOOP(&quot;MetaData&quot;,&quot;Dirección Fact.&quot;)</alias>
+<null>true</null>
+<pk>false</pk>
+<type>string</type>
+<length>200</length>
+<editable>false</editable>
+</field>
+</xupdate:insert-after>
+<xupdate:insert-after select="/TMD[TMD,1]/field[mg_direccionfac]" >
+<field>
+<name>mg_ciudadfac</name>
+<alias>QT_TRANSLATE_NOOP(&quot;MetaData&quot;,&quot;Ciudad Fact.&quot;)</alias>
+<null>true</null>
+<pk>false</pk>
+<type>string</type>
+<length>100</length>
+<editable>false</editable>
+</field>
+</xupdate:insert-after>
+<xupdate:insert-after select="/TMD[TMD,1]/field[mg_ciudadfac]" >
+<field>
+<name>mg_codpostalfac</name>
+<alias>QT_TRANSLATE_NOOP(&quot;MetaData&quot;,&quot;Cod.Postal Fact.&quot;)</alias>
+<null>true</null>
+<pk>false</pk>
+<type>string</type>
+<length>10</length>
+<editable>false</editable>
+</field>
+</xupdate:insert-after>
+<xupdate:insert-after select="/TMD[TMD,1]/field[mg_codpostalfac]" >
+<field>
+<name>mg_provinciafac</name>
+<alias>QT_TRANSLATE_NOOP(&quot;MetaData&quot;,&quot;Provincia Fact.&quot;)</alias>
+<null>true</null>
+<pk>false</pk>
+<type>string</type>
+<length>100</length>
+<editable>false</editable>
+</field>
+</xupdate:insert-after>
+<xupdate:insert-after select="/TMD[TMD,1]/field[mg_provinciafac]" >
+<field>
+<name>mg_paisfac</name>
+<alias>QT_TRANSLATE_NOOP(&quot;MetaData&quot;,&quot;País Fact.&quot;)</alias>
+<null>true</null>
+<pk>false</pk>
+<type>string</type>
+<length>100</length>
+<editable>false</editable>
+</field>
+</xupdate:insert-after>
+<xupdate:insert-after select="/TMD[TMD,1]/field[mg_paisfac]" >
+<field>
+<name>mg_telefonofac</name>
+<alias>QT_TRANSLATE_NOOP(&quot;MetaData&quot;,&quot;Tlf. Fact.&quot;)</alias>
+<null>true</null>
+<pk>false</pk>
+<type>string</type>
+<length>30</length>
+<editable>false</editable>
+</field>
+</xupdate:insert-after>
+<xupdate:insert-after select="/TMD[TMD,1]/field[mg_telefonofac]" >
+<field>
+<name>mg_numseguimiento</name>
+<alias>QT_TRANSLATE_NOOP(&quot;MetaData&quot;,&quot;Nº Seguimiento&quot;)</alias>
+<null>true</null>
+<pk>false</pk>
+<type>string</type>
+<length>50</length>
+<editable>false</editable>
+</field>
+</xupdate:insert-after>
+<xupdate:insert-after select="/TMD[TMD,1]/field[mg_numseguimiento]" >
+<field>
+<name>mg_metodoenvio</name>
+<alias>QT_TRANSLATE_NOOP(&quot;MetaData&quot;,&quot;Método de envío&quot;)</alias>
+<null>true</null>
+<pk>false</pk>
+<type>string</type>
+<length>50</length>
+<editable>false</editable>
+</field>
+</xupdate:insert-after>
+<xupdate:insert-after select="/TMD[TMD,1]/field[mg_metodoenvio]" >
+<field>
+<name>mg_unidadesenv</name>
+<alias>QT_TRANSLATE_NOOP(&quot;MetaData&quot;,&quot;Unidades envío&quot;)</alias>
+<null>true</null>
+<pk>false</pk>
+<type>double</type>
+<partI>6</partI>
+<partD>4</partD>
+<default>0</default>
+<editable>false</editable>
+</field>
+</xupdate:insert-after>
+<xupdate:insert-after select="/TMD[TMD,1]/field[mg_unidadesenv]" >
+<field>
+<name>mg_gastosenv</name>
+<alias>QT_TRANSLATE_NOOP(&quot;MetaData&quot;,&quot;Gastos de envío&quot;)</alias>
+<null>true</null>
+<pk>false</pk>
+<type>double</type>
+<partI>6</partI>
+<partD>4</partD>
+<default>0</default>
+<editable>false</editable>
+</field>
+</xupdate:insert-after>
+<xupdate:insert-after select="/TMD[TMD,1]/field[mg_gastosenv]" >
+<field>
+<name>mg_nombreenv</name>
+<alias>QT_TRANSLATE_NOOP(&quot;MetaData&quot;,&quot;Nombre Envío&quot;)</alias>
+<null>true</null>
+<pk>false</pk>
+<type>string</type>
+<length>100</length>
+<editable>false</editable>
+</field>
+</xupdate:insert-after>
+<xupdate:insert-after select="/TMD[TMD,1]/field[mg_nombreenv]" >
+<field>
+<name>mg_apellidosenv</name>
+<alias>QT_TRANSLATE_NOOP(&quot;MetaData&quot;,&quot;Apellidos Envío&quot;)</alias>
+<null>true</null>
+<pk>false</pk>
+<type>string</type>
+<length>200</length>
+<editable>false</editable>
+</field>
+</xupdate:insert-after>
+<xupdate:insert-after select="/TMD[TMD,1]/field[mg_apellidosenv]" >
+<field>
+<name>mg_direccionenv</name>
+<alias>QT_TRANSLATE_NOOP(&quot;MetaData&quot;,&quot;Dirección Envío&quot;)</alias>
+<null>true</null>
+<pk>false</pk>
+<type>string</type>
+<length>200</length>
+<editable>false</editable>
+</field>
+</xupdate:insert-after>
+<xupdate:insert-after select="/TMD[TMD,1]/field[mg_direccionenv]" >
+<field>
+<name>mg_ciudadenv</name>
+<alias>QT_TRANSLATE_NOOP(&quot;MetaData&quot;,&quot;Ciudad Envío&quot;)</alias>
+<null>true</null>
+<pk>false</pk>
+<type>string</type>
+<length>100</length>
+<editable>false</editable>
+</field>
+</xupdate:insert-after>
+<xupdate:insert-after select="/TMD[TMD,1]/field[mg_ciudadenv]" >
+<field>
+<name>mg_codpostalenv</name>
+<alias>QT_TRANSLATE_NOOP(&quot;MetaData&quot;,&quot;Cod. Postal Envío&quot;)</alias>
+<null>true</null>
+<pk>false</pk>
+<type>string</type>
+<length>10</length>
+<editable>false</editable>
+</field>
+</xupdate:insert-after>
+<xupdate:insert-after select="/TMD[TMD,1]/field[mg_codpostalenv]" >
+<field>
+<name>mg_provinciaenv</name>
+<alias>QT_TRANSLATE_NOOP(&quot;MetaData&quot;,&quot;Provincia Envío&quot;)</alias>
+<null>true</null>
+<pk>false</pk>
+<type>string</type>
+<length>100</length>
+<editable>false</editable>
+</field>
+</xupdate:insert-after>
+<xupdate:insert-after select="/TMD[TMD,1]/field[mg_provinciaenv]" >
+<field>
+<name>mg_paisenv</name>
+<alias>QT_TRANSLATE_NOOP(&quot;MetaData&quot;,&quot;País Envío&quot;)</alias>
+<null>true</null>
+<pk>false</pk>
+<type>string</type>
+<length>100</length>
+<editable>false</editable>
+</field>
+</xupdate:insert-after>
+<xupdate:insert-after select="/TMD[TMD,1]/field[mg_paisenv]" >
+<field>
+<name>mg_telefonoenv</name>
+<alias>QT_TRANSLATE_NOOP(&quot;MetaData&quot;,&quot;Teléfono Envío&quot;)</alias>
+<null>true</null>
+<pk>false</pk>
+<type>string</type>
+<length>30</length>
+<editable>false</editable>
+</field>
+</xupdate:insert-after>
+</xupdate:modifications>

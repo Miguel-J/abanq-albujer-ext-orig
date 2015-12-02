@@ -1,0 +1,72 @@
+<xupdate:modifications>
+<xupdate:insert-after select="/ACTIONS[ACTIONS,1]/action[contactos]" >
+<action>
+<name>horarioslab</name>
+<alias>QT_TRANSLATE_NOOP(&quot;MetaData&quot;,&quot;Horario Laboral&quot;)</alias>
+<table>horarioslab</table>
+<form>master</form>
+<formrecord>horarioslab</formrecord>
+<scriptformrecord>horarioslab</scriptformrecord>
+</action>
+</xupdate:insert-after>
+<xupdate:insert-after select="/ACTIONS[ACTIONS,1]/action[horarioslab]" >
+<action>
+<name>calendariolab</name>
+<alias>QT_TRANSLATE_NOOP(&quot;MetaData&quot;,&quot;Calendario Laboral&quot;)</alias>
+<table>calendariolab</table>
+<form>mastercalendariolab</form>
+<formrecord>calendariolab</formrecord>
+<scriptform>mastercalendariolab</scriptform>
+<scriptformrecord>calendariolab</scriptformrecord>
+</action>
+</xupdate:insert-after>
+<xupdate:insert-after select="/ACTIONS[ACTIONS,1]/action[calendariolab]" >
+<action>
+<name>anyoscalendario</name>
+<alias>QT_TRANSLATE_NOOP(&quot;MetaData&quot;,&quot;Años&quot;)</alias>
+<table>anyoscalendario</table>
+<form>master</form>
+<formrecord>anyoscalendario</formrecord>
+</action>
+</xupdate:insert-after>
+<xupdate:insert-after select="/ACTIONS[ACTIONS,1]/action[wg_widget]" >
+<action>
+<name>cambiarhorario</name>
+<alias>QT_TRANSLATE_NOOP(&quot;MetaData&quot;,&quot;Cambiar horario&quot;)</alias>
+<description>QT_TRANSLATE_NOOP(&quot;MetaData&quot;,&quot;En empresa se almacenan los datos de contacto de la empresa, y un listado de valores por defecto que se utilizarán en todas las actividades de la empresa, como la divisa local o la serie de facturación por defecto&quot;)</description>
+<table>empresa</table>
+<form>cambiarhorario</form>
+<formrecord>cambiarhorario</formrecord>
+</action>
+</xupdate:insert-after>
+<xupdate:insert-after select="/ACTIONS[ACTIONS,1]/action[cambiarhorario]" >
+<action>
+<name>horariolabagentes</name>
+<alias>QT_TRANSLATE_NOOP(&quot;MetaData&quot;,&quot;Horario laboral asociado a un objeto&quot;)</alias>
+<description>QT_TRANSLATE_NOOP(&quot;MetaData&quot;,&quot;Horario laboral asociado a un objeto&quot;)</description>
+<table>horariolabobjeto</table>
+<form>horariolabagentes</form>
+<scriptform>horariolabagentes</scriptform>
+</action>
+</xupdate:insert-after>
+<xupdate:insert-after select="/ACTIONS[ACTIONS,1]/action[horariolabagentes]" >
+<action>
+<name>semanalabagentes</name>
+<alias>QT_TRANSLATE_NOOP(&quot;MetaData&quot;,&quot;Semana laboral asociada a un objeto&quot;)</alias>
+<description>QT_TRANSLATE_NOOP(&quot;MetaData&quot;,&quot;Semana laboral asociada a un objeto&quot;)</description>
+<table>horariolabobjeto</table>
+<form>semanalabagentes</form>
+<scriptform>semanalabagentes</scriptform>
+</action>
+</xupdate:insert-after>
+<xupdate:insert-after select="/ACTIONS[ACTIONS,1]/action[semanalabagentes]" >
+<action>
+<name>calobjetomes</name>
+<alias>QT_TRANSLATE_NOOP(&quot;MetaData&quot;,&quot;Calendario mensual por objeto&quot;)</alias>
+<description>QT_TRANSLATE_NOOP(&quot;MetaData&quot;,&quot;Calendario mensual por objeto&quot;)</description>
+<table>calobjetomes</table>
+<form>calobjetomes</form>
+<scriptform>calobjetomes</scriptform>
+</action>
+</xupdate:insert-after>
+</xupdate:modifications>

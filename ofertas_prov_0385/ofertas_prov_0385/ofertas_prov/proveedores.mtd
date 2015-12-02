@@ -1,0 +1,30 @@
+<xupdate:modifications>
+<xupdate:insert-after select="/TMD[TMD,1]/field[codproveedor]/relation[bancos,codproveedor]" >
+<relation>
+<table>lineassolpresupuestosprov</table>
+<field>codproveedor</field>
+<card>1M</card>
+</relation>
+</xupdate:insert-after>
+<xupdate:insert-after select="/TMD[TMD,1]/field[codproveedor]/relation[lineassolpresupuestosprov,codproveedor]" >
+<relation>
+<table>presupuestosprov</table>
+<field>codproveedor</field>
+<card>1M</card>
+</relation>
+</xupdate:insert-after>
+<xupdate:insert-after select="/TMD[TMD,1]/field[codproveedor]/relation[presupuestosprov,codproveedor]" >
+<relation>
+<table>lineaspresupuestosprov</table>
+<field>codproveedor</field>
+<card>1M</card>
+</relation>
+</xupdate:insert-after>
+<xupdate:insert-after select="/TMD[TMD,1]/field[codproveedor]/relation[lineaspresupuestosprov,codproveedor]" >
+<relation>
+<table>i_presupuestosprov</table>
+<field>i_presupuestosprov_codproveedor</field>
+<card>1M</card>
+</relation>
+</xupdate:insert-after>
+</xupdate:modifications>

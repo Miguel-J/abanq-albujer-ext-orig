@@ -1,0 +1,60 @@
+<!DOCTYPE TMD>
+<TMD>
+	<name>zonastrans</name>
+	<!--Zonas de agencias de transporte-->
+	<alias>QT_TRANSLATE_NOOP("MetaData","Zonas de agencias de transporte")</alias>
+
+	<field>
+		<name>codzona</name>
+		<!--Código de zona-->
+		<alias>QT_TRANSLATE_NOOP("MetaData","Zona")</alias>
+		<null>false</null>
+		<pk>true</pk>
+		<type>string</type>
+		<length>25</length>
+
+		<relation>
+			<table>zonaspesoagencia</table>
+			<field>codzona</field>
+			<card>1M</card>
+		</relation>
+
+	</field>
+
+	<field>
+		<name>descripcion</name>
+		<alias>QT_TRANSLATE_NOOP("MetaData","Descripción")</alias>
+		<null>false</null>
+		<pk>false</pk>
+		<type>string</type>
+		<length>100</length>
+	</field>
+
+	<field>
+		<name>codagencia</name>
+		<!--Código de agencia-->
+		<alias>QT_TRANSLATE_NOOP("MetaData","Agencia")</alias>
+		<null>false</null>
+		<pk>false</pk>
+		<ck>false</ck>
+		<type>string</type>
+		<length>40</length>
+
+		<relation>
+			<table>agenciastrans</table>
+			<field>codagencia</field>
+			<card>M1</card>
+		</relation>
+	</field>
+
+	<field>
+		<name>preciominimo</name>
+		<alias>QT_TRANSLATE_NOOP("MetaData","Precio mínimo")</alias>
+		<null>true</null>
+		<pk>false</pk>
+		<type>double</type>
+		<partI>8</partI>
+		<partD>2</partD>
+	</field>
+	
+</TMD>

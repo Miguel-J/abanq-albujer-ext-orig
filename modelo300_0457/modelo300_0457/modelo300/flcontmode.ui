@@ -1,0 +1,57 @@
+<xupdate:modifications>
+<xupdate:append-first select="/UI[UI,1]/images[images,1]" >
+<image name="modelo300image31695" >
+<data format="PNG" length="1386" >89504e470d0a1a0a0000000d4948445200000020000000200806000000737a7af40000053149444154789cc59741681c6514c77f2b13f806b69081147624851d88e0480f6e5031a105b37a4aa9d0941e6ced25ea2978d1e82dbdd89e6a0f1e622f26bd98f4109a1c4a3717dd1e944468c97a28594171020dec82811948601ee483f130bb3399ec6edab4820f969d796fe67bffefbdff7bef9b5c1445fc9f6274d145e16e8868c96a757a295af0777cec411bcbb2722f0320773802e16e18557eaae00eb989b3b6284325b0eb7f35a97a15cc530a179752b1c4f0e937a08f6301ea8840dba153747a3c018860e54d2c354e65b5caf2eb8bd48d0a8b4d87313d1295df2b639e309f0bc82b5db51a82bd00114144e2f0ebd416435414060b4c5c1aa7b433c1da23c1c7a796af31f3db0c0fee3f88806712ac3b80b6189dd7a632514aa1944a4ce5b30e65a34c6d7d8b7ae0d16f14d8ca6f31bd729d8ddae691208e06402bef6de78699fe1be97d282123a522234189c6530fafb18ea71b8ce55d2a418507abd59e20ba02907de9d09986097d24bf0cb0567a9ca243a02d0468fc5367592a38daa66978ed947448378a3d4b721ccead6122dac7ee57f437152201188a86d764562f620f1429d860addbd1e8c870869c2f02a0b728b045e105216a47e1348ba02cd8528050c92fe30e39917532ed1d2f0d40190a415028e8035bbbd83b2e6ed1429d56285361e515a1867a7d8beaaf552e5eb898bc7f5c0099f0b579a0548b0f068c8db8a0c8744e30b1f20a536d11f801ec13b51b566f00baa72581ae94c2ca5bf8f8289d2dcd9e6b1e5af7b811886845c1344cc490188461818650871de09356aebb7b3b1a8026ceafd1b1b31c7d444aa998033aee964aabf89dd67d8c2005d1659d1e005a8b2854721f1262d2ea052d314d13f6c1c424d4214aab4ceb1691d883a673bab6e4c84e98d9492aed1e906b4502fad2eed8de5226f43ad51d06928980bf1b46376e57d878e28169537ed7456885174563cf6761650d6f3b889ca2cdf4643953154120cc2dade16d37b107fab97cde4d9df6207512818d7a237af59d69aa8f3c003ebd768fd9bb6bc92e440bc3e337985f5a0760e6e63dae7c3117b10fecc7041cfef006732beb88865b77aa7c75b392a64377e5521a81999bcb3883163fcf4f51b95f61f8b4c3ad3b55a63e1a4510e6eeae11ec85fc5dfd060cb8726194f72f7fcbdad532a5a102b7ee5463fbf297881626c61c3efefa1e973f6860db6627390f03f8f1bb49bced20b51cc89b42517dec31f2b69310cb2df60350fd6513b7d84ff5713db66b2194106730b6af3d6972f1a4939668af145827ccdcb06be76a7f34985da9337b778da9aba384122222784f039c8215e7b4c5f442c1c2db6e26767bc04a9e474361c0a4b9e3c7ce9fc5818362590aa76831b752230824412fedd26aff1fd4011c0077d07eac322c0dd94c9cb1f9e1da38b21732b7523b701c936487079d86920598b1f39c55706e72363a37399bce790d2a6f12ecc58b0dbb36f53f1b7153929050429a4d1fb75848ed5e23d96da8439a3b21c542dca6bb1d723200c6ceb854d737a9fe1e97e1c26a1dd90b193f5344b4507eab407dcb6771b586883073fb2100e367636296df2ce06df92c3fac134ac8f74b3500caa542ecbc470432df0553d716a2f9a5b8f655dee493f32e13636e625f58ad33bfb291d8af7f3642c9b593fc2eacd659bcbf19db154c5d1ac62da6f341f6e2c84c7f3e9d7c3f747c98f8be1f2daf2ce39c729e6f56b676d666ba20f100da4f5b719b03229d003a5de81ed75de4f0f84d1c7571de4b7a4e43efa9977df1d093edb6daed1b32a33b704e681fe38f04a0f2f1f1aad16cf486fd822208ee6b6e46d7c1015ae336dcedde3aff0b314f98d03a59fd0b237fd79d023b13a30000000049454e44ae426082</data>
+</image>
+</xupdate:append-first>
+<xupdate:insert-after select="/UI[UI,1]/actions[actions,1]/action[co_datosfiscales]" >
+<action>
+<property name="name" >
+<cstring>co_modelo300</cstring>
+</property>
+<property name="iconSet" >
+<iconset>modelo300image31695</iconset>
+</property>
+<property name="text" >
+<string>Modelo 300</string>
+</property>
+<property name="menuText" >
+<string>Modelo 300</string>
+</property>
+</action>
+</xupdate:insert-after>
+<xupdate:insert-after select="/UI[UI,1]/connections[connections,1]/connection[co_datosfiscales,activated(),FLWidgetApplication,execDefaultScript()]" >
+<connection>
+<sender>co_modelo300</sender>
+<signal>activated()</signal>
+<receiver>FLWidgetApplication</receiver>
+<slot>openDefaultForm()</slot>
+</connection>
+</xupdate:insert-after>
+<xupdate:append-first select="/UI[UI,1]/menubar[menubar,1]/item[&amp;Modelos]" >
+<action name="co_modelo300" />
+</xupdate:append-first>
+<xupdate:insert-after select="/UI[UI,1]/toolbars[toolbars,1]/toolbar[toolBar]/property[name]" >
+<property name="geometry" >
+<rect>
+<x>0</x>
+<y>0</y>
+<width>77</width>
+<height>29</height>
+</rect>
+</property>
+</xupdate:insert-after>
+<xupdate:insert-after select="/UI[UI,1]/toolbars[toolbars,1]/toolbar[toolBar]/property[geometry]" >
+<property name="acceptDrops" >
+<bool>true</bool>
+</property>
+</xupdate:insert-after>
+<xupdate:insert-after select="/UI[UI,1]/toolbars[toolbars,1]/toolbar[toolBar]/property[acceptDrops]" >
+<property name="frameShape" >
+<enum>ToolBarPanel</enum>
+</property>
+</xupdate:insert-after>
+<xupdate:insert-after select="/UI[UI,1]/toolbars[toolbars,1]/toolbar[toolBar]/separator[separator,1]" >
+<action name="co_modelo300" />
+</xupdate:insert-after>
+</xupdate:modifications>

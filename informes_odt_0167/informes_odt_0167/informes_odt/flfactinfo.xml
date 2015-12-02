@@ -1,0 +1,34 @@
+<xupdate:modifications>
+<xupdate:insert-after select="/ACTIONS[ACTIONS,1]/action[i_resreciboscli]" >
+<action>
+<name>i_plantillasodt</name>
+<alias>QT_TRANSLATE_NOOP(&quot;MetaData&quot;,&quot;Plantillas de Open Document&quot;)</alias>
+<description>QT_TRANSLATE_NOOP(&quot;MetaData&quot;,&quot;Opciones de Open Office&quot;)</description>
+<table>i_plantillasodt</table>
+<form>master</form>
+<formrecord>i_plantillasodt</formrecord>
+<scriptform>i_masterplantillasodt</scriptform>
+<scriptformrecord>i_plantillasodt</scriptformrecord>
+</action>
+</xupdate:insert-after>
+<xupdate:insert-after select="/ACTIONS[ACTIONS,1]/action[i_plantillasodt]" >
+<action>
+<name>i_parametrosodt</name>
+<alias>QT_TRANSLATE_NOOP(&quot;MetaData&quot;,&quot;parametros de Open Document&quot;)</alias>
+<description>QT_TRANSLATE_NOOP(&quot;MetaData&quot;,&quot;parametros de Open Office&quot;)</description>
+<table>i_parametrosodt</table>
+<form>master</form>
+<formrecord>i_parametrosodt</formrecord>
+</action>
+</xupdate:insert-after>
+<xupdate:insert-after select="/ACTIONS[ACTIONS,1]/action[i_parametrosodt]" >
+<action>
+<name>i_opcionesodt</name>
+<alias>QT_TRANSLATE_NOOP(&quot;MetaData&quot;,&quot;Opciones de Open Document&quot;)</alias>
+<description>QT_TRANSLATE_NOOP(&quot;MetaData&quot;,&quot;Opciones de Open Document&quot;)</description>
+<table>i_opcionesodt</table>
+<form>i_opcionesodt</form>
+<scriptform>i_opcionesodt</scriptform>
+</action>
+</xupdate:insert-after>
+</xupdate:modifications>

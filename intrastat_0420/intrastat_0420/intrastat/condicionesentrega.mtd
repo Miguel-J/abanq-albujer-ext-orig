@@ -1,0 +1,47 @@
+<!DOCTYPE TMD>
+<TMD>
+	<name>condicionesentrega</name>
+	<!--Listado de condiciones de entrega-->
+	<alias>QT_TRANSLATE_NOOP("MetaData","Condiciones entrega")</alias>
+
+	<field>
+		<name>codcondicionentrega</name>
+		<!--Código de la condición de entrega-->
+		<alias>QT_TRANSLATE_NOOP("MetaData","Cond. entreg.")</alias>
+		<null>false</null>
+		<pk>true</pk>
+		<type>string</type>
+		<length>3</length>
+
+		<relation>
+			<table>lineasintrastatcli</table>
+			<field>codcondicionentrega</field>
+			<card>1M</card>
+		</relation>
+	
+		<relation>
+			<table>lineasintrastatprov</table>
+			<field>codcondicionentrega</field>
+			<card>1M</card>
+		</relation>
+	</field>
+
+	<field>
+		<name>significado</name>
+		<alias>QT_TRANSLATE_NOOP("MetaData","Significado")</alias>
+		<null>true</null>
+		<pk>false</pk>
+		<type>string</type>
+		<length>100</length>
+	</field>
+
+	<field>
+		<name>lugar</name>
+		<!--Lugar a declarar-->
+		<alias>QT_TRANSLATE_NOOP("MetaData","Lugar")</alias>
+		<null>true</null>
+		<pk>false</pk>
+		<type>string</type>
+		<length>100</length>
+	</field>
+</TMD>

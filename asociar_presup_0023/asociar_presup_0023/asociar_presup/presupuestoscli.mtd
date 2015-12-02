@@ -1,0 +1,13 @@
+<xupdate:modifications>
+<xupdate:insert-after select="/TMD[TMD,1]/field[recfinanciero]" >
+<field>
+<name>idpedido</name>
+<!--Identificador interno del pedido asociado al presupuesto--><alias>QT_TRANSLATE_NOOP(&quot;MetaData&quot;,&quot;Id Pedido&quot;)</alias>
+<null>false</null>
+<pk>false</pk>
+<type>uint</type>
+<visiblegrid>false</visiblegrid>
+<default>0</default>
+</field>
+</xupdate:insert-after>
+</xupdate:modifications>

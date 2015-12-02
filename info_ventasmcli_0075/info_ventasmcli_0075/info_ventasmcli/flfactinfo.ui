@@ -1,0 +1,34 @@
+<xupdate:modifications>
+<xupdate:append-first select="/UI[UI,1]/images[images,1]" >
+<image name="info_ventasmcliimage19" >
+<data format="PNG" length="682" >89504e470d0a1a0a0000000d4948445200000020000000200806000000737a7af40000027149444154789cc597a16fdb4014c67f9902ceac658e3490c0c195b5acd5465ababf606386c3dbc068466d343ad8b18d8c77aca0555798b1828118f59eb493dec0d98e9d5c143b75972759e77717bdefddf7be73de0d54955dda939da203c3d0e4d9cb376a3008600041e8e0e7e73fd2fdd619a86ae8d9da4e5fbcd63531834f9081f91f5bf322a0bd6f30ad370feb3430ac8fb6932f480f090066186d37f6c1801796c510156317bf470604dbd8612bbf1f0d44882b823bdbc9efca40f014bc9a9e14b4d27d3cec841f4e60faf15df166abfdc85fff26ae8073deb7ce47112718209b7e7978023f396f805a27882bc141a49cb7cd792798e1dec313f0c0820d80ce9d8506288df5d26f6b41115a27586702e0d4c04d005c30c12dadb730034eaa1ae74ec079bacb354f7bbef82d8516f00976b12003e2bca243e038aae44a266cc584edccc09a04c4d3ea1642cbc5ef3c77fea457eb32f7659132c95aa06cb2b1db096ba008165239d44f0180ff0895eb1503d94449f6372611d6002032c70b2d879a20e7c548bd2cf8f5cb6b838d6f6b510eb17c2502c8460a0692d96023037555d7c1c5890fe6ea742fc04984e8d8f85d1f1be0a0e927b2c2c820d4949e7d38518a2f5c97f1dbd3192447c011300626c00cf80d5c4076b1c240ef2d99a663d5ab58556f8a891befa7e360abd67b576c1b7f4dc08adfb4600980ed2e0bd9089253e0197000ec01397009dc42f61d92bbc729c17d1aab6a5cd17d7f15abeae7253f564de34629fad5403a5ed43a1dab6ad2f4033a78bc7b411aabeaf382998ef7825fd7b3aadb8f3058a4b55ff584c9dd806ca4d172cd972c98c0fbb79f6ad7adce635e05da000eeb4fc17fb39ddf8eff018504cb9c79c9d01d0000000049454e44ae426082</data>
+</image>
+</xupdate:append-first>
+<xupdate:insert-after select="/UI[UI,1]/actions[actions,1]/action[tesoreraRecibosAction]" >
+<action>
+<property name="name" >
+<cstring>i_ventasmcli</cstring>
+</property>
+<property name="iconSet" >
+<iconset>info_ventasmcliimage19</iconset>
+</property>
+<property name="text" >
+<string>Ventas mensuales por cliente</string>
+</property>
+<property name="menuText" >
+<string>Ventas mensuales por cliente</string>
+</property>
+</action>
+</xupdate:insert-after>
+<xupdate:insert-after select="/UI[UI,1]/connections[connections,1]/connection[i_reciboscli,activated(),FLWidgetApplication,openDefaultForm()]" >
+<connection>
+<sender>i_ventasmcli</sender>
+<signal>activated()</signal>
+<receiver>FLWidgetApplication</receiver>
+<slot>openDefaultForm()</slot>
+</connection>
+</xupdate:insert-after>
+<xupdate:insert-after select="/UI[UI,1]/menubar[menubar,1]/item[Ventas]/item[item,4]" >
+<action name="i_ventasmcli" />
+</xupdate:insert-after>
+</xupdate:modifications>

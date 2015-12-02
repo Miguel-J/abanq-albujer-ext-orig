@@ -1,0 +1,16 @@
+<xupdate:modifications>
+<xupdate:insert-after select="/TMD[TMD,1]/field[codinmueble]/length[length,1]" >
+<relation>
+<table>co_facturasemi340</table>
+<field>codinmueble</field>
+<card>1M</card>
+</relation>
+</xupdate:insert-after>
+<xupdate:insert-after select="/TMD[TMD,1]/field[codinmueble]/relation[co_facturasemi340,codinmueble]" >
+<relation>
+<table>facturascli</table>
+<field>codinmueble340</field>
+<card>1M</card>
+</relation>
+</xupdate:insert-after>
+</xupdate:modifications>

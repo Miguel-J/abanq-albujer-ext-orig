@@ -1,0 +1,26 @@
+<xupdate:modifications>
+<xupdate:insert-after select="/UI[UI,1]/widget[QWidget,formArticulos]/vbox[vbox,1]/widget[QTabWidget,tbwArticulo]/widget[QWidget,general]/vbox[vbox,1]/widget[QFrame,frmFamilia]/hbox[hbox,1]/widget[FLFieldDB,fdbCodUnidad]" >
+<widget class="FLFieldDB" >
+<property name="name" >
+<cstring>fdbTipoComplejo</cstring>
+</property>
+<property name="sizePolicy" >
+<sizepolicy>
+<hsizetype>1</hsizetype>
+<vsizetype>0</vsizetype>
+<horstretch>0</horstretch>
+<verstretch>0</verstretch>
+</sizepolicy>
+</property>
+<property name="minimumSize" >
+<size>
+<width>38</width>
+<height>24</height>
+</size>
+</property>
+<property name="fieldName" >
+<string>tipocomplejo</string>
+</property>
+</widget>
+</xupdate:insert-after>
+</xupdate:modifications>

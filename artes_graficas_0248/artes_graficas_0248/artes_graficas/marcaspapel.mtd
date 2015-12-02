@@ -1,0 +1,38 @@
+<!DOCTYPE TMD>
+<TMD>
+	<name>marcaspapel</name>
+	<!-- Marcas de papel-->
+	<alias>QT_TRANSLATE_NOOP("MetaData","Marcas de papel")</alias>
+
+	<field>
+		<name>codmarcapapel</name>
+		<!-- Código-->
+		<alias>QT_TRANSLATE_NOOP("MetaData","Código")</alias>
+		<null>false</null>
+		<pk>true</pk>
+		<type>string</type>
+		<length>25</length>
+
+		<relation>
+			<table>articulos</table>
+			<field>codmarcapapel</field>
+			<card>1M</card>
+		</relation>
+		
+		<relation>
+			<table>gramajes</table>
+			<field>codmarcapapel</field>
+			<card>1M</card>
+		</relation>
+		
+	</field>
+
+	<field>
+        <name>descripcion</name>
+        <alias>QT_TRANSLATE_NOOP("MetaData","Descripción")</alias>
+        <null>true</null>
+        <pk>false</pk>
+        <type>string</type>
+		<length>200</length>
+    </field>
+</TMD>

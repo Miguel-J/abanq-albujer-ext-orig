@@ -1,0 +1,102 @@
+<?xml version = '1.0' encoding = 'UTF-8'?>
+<!DOCTYPE KugarTemplate SYSTEM "kugartemplate.dtd">
+<KugarTemplate BottomMargin="50" TopMargin="50" RightMargin="30" LeftMargin="30" PageOrientation="0" PageSize="0" >
+	<DetailHeader Height="125" Level="0" >
+		<Label WordWrap="0" Width="200" X="2" Y="15" BorderStyle="0" Height="19" HAlignment="0" BorderColor="0,0,0" BackgroundColor="255,255,255" VAlignment="1" ForegroundColor="0,0,0" Text=" ORDEN DE PRODUCCIÓN" FontWeight="65" FontSize="12" BorderWidth="1" FontFamily="Arial" />
+		
+		<CalculatedField CalculationType="6" FunctionName="flfactinfo.pub_logo" WordWrap="0" Width="109" X="491" Y="2" BorderStyle="0" NegValueColor="0,0,0" Height="34" HAlignment="0" DataType="5" Field="empresa.logo" DateFormat="11" Currency="32" BorderColor="0,0,0" BackgroundColor="255,255,255" FontItalic="0" VAlignment="1" ForegroundColor="0,0,0" CommaSeparator="44" Text="[empresa.logo]" FontWeight="50" FontSize="12" BorderWidth="1" Precision="2" FontFamily="Arial" />
+		<Line Width="1" Y1="36" Y2="36" X1="0" X2="600" Style="1" Color="100,100,100" />
+		
+		<!-- ORDEN -->
+		<Label WordWrap="0" Width="68" X="2" Y="40" BorderStyle="0" Height="19" HAlignment="0" BorderColor="0,0,0" BackgroundColor="255,255,255" VAlignment="1" ForegroundColor="0,0,0" Text=" ORDEN:" FontWeight="50" FontSize="12" BorderWidth="1" FontFamily="Arial" />
+		<Field WordWrap="0" Width="90" X="70" Y="40" BorderStyle="0" NegValueColor="0,0,0" Height="19" HAlignment="0" DataType="0" Field="pr_ordenesproduccion.codorden" DateFormat="11" Currency="32" BorderColor="0,0,0" BackgroundColor="255,255,255" FontItalic="0" VAlignment="1" ForegroundColor="0,0,0" CommaSeparator="44" Text="" FontWeight="50" FontSize="12" BorderWidth="1" Precision="2" FontFamily="Arial" />
+		<!--<Label WordWrap="0" Width="50" X="160" Y="62" BorderStyle="0" Height="19" HAlignment="0" BorderColor="0,0,0" BackgroundColor="255,255,255" VAlignment="1" ForegroundColor="0,0,0" Text=" FECHA:" FontWeight="65" FontSize="12" BorderWidth="1" FontFamily="Arial" />
+		<Field WordWrap="0" Width="80" X="210" Y="62" BorderStyle="0" NegValueColor="0,0,0" Height="19" HAlignment="0" DataType="3" Field="pr_ordenesproduccion.fecha" DateFormat="19" Currency="32" BorderColor="0,0,0" BackgroundColor="255,255,255" FontItalic="0" VAlignment="1" ForegroundColor="0,0,0" CommaSeparator="44" Text="" FontWeight="65" FontSize="12" BorderWidth="1" Precision="2" FontFamily="Arial" />-->
+		<Label WordWrap="0" Width="120" X="160" Y="40" BorderStyle="0" Height="19" HAlignment="0" BorderColor="0,0,0" BackgroundColor="255,255,255" VAlignment="1" ForegroundColor="0,0,0" Text=" FECHA ENTREGA:" FontWeight="50" FontSize="12" BorderWidth="1" FontFamily="Arial" />
+		<Field WordWrap="0" Width="80" X="280" Y="40" BorderStyle="0" NegValueColor="0,0,0" Height="19" HAlignment="0" DataType="3" Field="pr_ordenesproduccion.fechaentrega" DateFormat="19" Currency="32" BorderColor="0,0,0" BackgroundColor="255,255,255" FontItalic="0" VAlignment="1" ForegroundColor="0,0,0" CommaSeparator="44" Text="" FontWeight="50" FontSize="12" BorderWidth="1" Precision="2" FontFamily="Arial" />
+		<!--<Label WordWrap="0" Width="70" X="440" Y="62" BorderStyle="0" Height="19" HAlignment="0" BorderColor="0,0,0" BackgroundColor="255,255,255" VAlignment="1" ForegroundColor="0,0,0" Text=" ESTADO:" FontWeight="65" FontSize="12" BorderWidth="1" FontFamily="Arial" />
+		<Field WordWrap="0" Width="85" X="510" Y="62" BorderStyle="0" NegValueColor="0,0,0" Height="19" HAlignment="0" DataType="0" Field="pr_ordenesproduccion.estado" DateFormat="11" Currency="32" BorderColor="0,0,0" BackgroundColor="255,255,255" FontItalic="0" VAlignment="1" ForegroundColor="0,0,0" CommaSeparator="44" Text="" FontWeight="65" FontSize="12" BorderWidth="1" Precision="2" FontFamily="Arial" />-->
+		
+		<!--<Label WordWrap="0" Width="70" X="0" Y="85" BorderStyle="0" Height="19" HAlignment="0" BorderColor="0,0,0" BackgroundColor="255,255,255" VAlignment="1" ForegroundColor="0,0,0" Text="PEDIDO" FontWeight="65" FontSize="12" BorderWidth="1" FontFamily="Arial" />
+		<Field WordWrap="0" Width="90" X="70" Y="85" BorderStyle="0" NegValueColor="0,0,0" Height="19" HAlignment="0" DataType="0" Field="pr_ordenesproduccion.codpedido" DateFormat="11" Currency="32" BorderColor="0,0,0" BackgroundColor="255,255,255" FontItalic="0" VAlignment="1" ForegroundColor="0,0,0" CommaSeparator="44" Text="" FontWeight="65" FontSize="12" BorderWidth="1" Precision="2" FontFamily="Arial" />-->
+		
+		<Label WordWrap="0" Width="70" X="0" Y="65" BorderStyle="0" Height="19" HAlignment="0" BorderColor="0,0,0" BackgroundColor="255,255,255" VAlignment="1" ForegroundColor="0,0,0" Text="CLIENTE" FontWeight="65" FontSize="12" BorderWidth="1" FontFamily="Arial" />
+		<Field WordWrap="0" Width="350" X="70" Y="65" BorderStyle="0" NegValueColor="0,0,0" Height="19" HAlignment="0" DataType="0" Field="pr_ordenesproduccion.nombrecliente" DateFormat="11" Currency="32" BorderColor="0,0,0" BackgroundColor="255,255,255" FontItalic="0" VAlignment="1" ForegroundColor="0,0,0" CommaSeparator="44" Text="" FontWeight="65" FontSize="12" BorderWidth="1" Precision="2" FontFamily="Arial" />
+		
+		<Field WordWrap="1" ChangeHeight="1" Width="550" X="0" Y="85" BorderStyle="0" NegValueColor="0,0,0" Height="19" HAlignment="0" DataType="0" Field="pr_ordenesproduccion.descripcion" DateFormat="11" Currency="32" BorderColor="0,0,0" BackgroundColor="255,255,255" FontItalic="1" VAlignment="1" ForegroundColor="0,0,0" CommaSeparator="44" Text="" FontWeight="50" FontSize="12" BorderWidth="1" Precision="2" FontFamily="Arial" />
+		
+	</DetailHeader>
+	
+	<AddOnHeader Height="125" Level="0" >
+		<Label WordWrap="0" Width="200" X="2" Y="15" BorderStyle="0" Height="19" HAlignment="0" BorderColor="0,0,0" BackgroundColor="255,255,255" VAlignment="1" ForegroundColor="0,0,0" Text=" ORDEN DE PRODUCCIÓN" FontWeight="65" FontSize="12" BorderWidth="1" FontFamily="Arial" />
+		
+		<CalculatedField CalculationType="6" FunctionName="flfactinfo.pub_logo" WordWrap="0" Width="109" X="491" Y="2" BorderStyle="0" NegValueColor="0,0,0" Height="34" HAlignment="0" DataType="5" Field="empresa.logo" DateFormat="11" Currency="32" BorderColor="0,0,0" BackgroundColor="255,255,255" FontItalic="0" VAlignment="1" ForegroundColor="0,0,0" CommaSeparator="44" Text="[empresa.logo]" FontWeight="50" FontSize="12" BorderWidth="1" Precision="2" FontFamily="Arial" />
+		<Line Width="1" Y1="36" Y2="36" X1="0" X2="600" Style="1" Color="100,100,100" />
+		
+		<!-- ORDEN -->
+		<Label WordWrap="0" Width="68" X="2" Y="40" BorderStyle="0" Height="19" HAlignment="0" BorderColor="0,0,0" BackgroundColor="255,255,255" VAlignment="1" ForegroundColor="0,0,0" Text=" ORDEN:" FontWeight="50" FontSize="12" BorderWidth="1" FontFamily="Arial" />
+		<Field WordWrap="0" Width="90" X="70" Y="40" BorderStyle="0" NegValueColor="0,0,0" Height="19" HAlignment="0" DataType="0" Field="pr_ordenesproduccion.codorden" DateFormat="11" Currency="32" BorderColor="0,0,0" BackgroundColor="255,255,255" FontItalic="0" VAlignment="1" ForegroundColor="0,0,0" CommaSeparator="44" Text="" FontWeight="50" FontSize="12" BorderWidth="1" Precision="2" FontFamily="Arial" />
+		<!--<Label WordWrap="0" Width="50" X="160" Y="62" BorderStyle="0" Height="19" HAlignment="0" BorderColor="0,0,0" BackgroundColor="255,255,255" VAlignment="1" ForegroundColor="0,0,0" Text=" FECHA:" FontWeight="65" FontSize="12" BorderWidth="1" FontFamily="Arial" />
+		<Field WordWrap="0" Width="80" X="210" Y="62" BorderStyle="0" NegValueColor="0,0,0" Height="19" HAlignment="0" DataType="3" Field="pr_ordenesproduccion.fecha" DateFormat="19" Currency="32" BorderColor="0,0,0" BackgroundColor="255,255,255" FontItalic="0" VAlignment="1" ForegroundColor="0,0,0" CommaSeparator="44" Text="" FontWeight="65" FontSize="12" BorderWidth="1" Precision="2" FontFamily="Arial" />-->
+		<Label WordWrap="0" Width="120" X="160" Y="40" BorderStyle="0" Height="19" HAlignment="0" BorderColor="0,0,0" BackgroundColor="255,255,255" VAlignment="1" ForegroundColor="0,0,0" Text=" FECHA ENTREGA:" FontWeight="50" FontSize="12" BorderWidth="1" FontFamily="Arial" />
+		<Field WordWrap="0" Width="80" X="280" Y="40" BorderStyle="0" NegValueColor="0,0,0" Height="19" HAlignment="0" DataType="3" Field="pr_ordenesproduccion.fechaentrega" DateFormat="19" Currency="32" BorderColor="0,0,0" BackgroundColor="255,255,255" FontItalic="0" VAlignment="1" ForegroundColor="0,0,0" CommaSeparator="44" Text="" FontWeight="50" FontSize="12" BorderWidth="1" Precision="2" FontFamily="Arial" />
+		<!--<Label WordWrap="0" Width="70" X="440" Y="62" BorderStyle="0" Height="19" HAlignment="0" BorderColor="0,0,0" BackgroundColor="255,255,255" VAlignment="1" ForegroundColor="0,0,0" Text=" ESTADO:" FontWeight="65" FontSize="12" BorderWidth="1" FontFamily="Arial" />
+		<Field WordWrap="0" Width="85" X="510" Y="62" BorderStyle="0" NegValueColor="0,0,0" Height="19" HAlignment="0" DataType="0" Field="pr_ordenesproduccion.estado" DateFormat="11" Currency="32" BorderColor="0,0,0" BackgroundColor="255,255,255" FontItalic="0" VAlignment="1" ForegroundColor="0,0,0" CommaSeparator="44" Text="" FontWeight="65" FontSize="12" BorderWidth="1" Precision="2" FontFamily="Arial" />-->
+		
+		<!--<Label WordWrap="0" Width="70" X="0" Y="85" BorderStyle="0" Height="19" HAlignment="0" BorderColor="0,0,0" BackgroundColor="255,255,255" VAlignment="1" ForegroundColor="0,0,0" Text="PEDIDO" FontWeight="65" FontSize="12" BorderWidth="1" FontFamily="Arial" />
+		<Field WordWrap="0" Width="90" X="70" Y="85" BorderStyle="0" NegValueColor="0,0,0" Height="19" HAlignment="0" DataType="0" Field="pr_ordenesproduccion.codpedido" DateFormat="11" Currency="32" BorderColor="0,0,0" BackgroundColor="255,255,255" FontItalic="0" VAlignment="1" ForegroundColor="0,0,0" CommaSeparator="44" Text="" FontWeight="65" FontSize="12" BorderWidth="1" Precision="2" FontFamily="Arial" />-->
+		
+		<Label WordWrap="0" Width="70" X="0" Y="65" BorderStyle="0" Height="19" HAlignment="0" BorderColor="0,0,0" BackgroundColor="255,255,255" VAlignment="1" ForegroundColor="0,0,0" Text="CLIENTE" FontWeight="65" FontSize="12" BorderWidth="1" FontFamily="Arial" />
+		<Field WordWrap="0" Width="350" X="70" Y="65" BorderStyle="0" NegValueColor="0,0,0" Height="19" HAlignment="0" DataType="0" Field="pr_ordenesproduccion.nombrecliente" DateFormat="11" Currency="32" BorderColor="0,0,0" BackgroundColor="255,255,255" FontItalic="0" VAlignment="1" ForegroundColor="0,0,0" CommaSeparator="44" Text="" FontWeight="65" FontSize="12" BorderWidth="1" Precision="2" FontFamily="Arial" />
+		
+		<Field WordWrap="1" ChangeHeight="1" Width="550" X="0" Y="85" BorderStyle="0" NegValueColor="0,0,0" Height="19" HAlignment="0" DataType="0" Field="pr_ordenesproduccion.descripcion" DateFormat="11" Currency="32" BorderColor="0,0,0" BackgroundColor="255,255,255" FontItalic="1" VAlignment="1" ForegroundColor="0,0,0" CommaSeparator="44" Text="" FontWeight="50" FontSize="12" BorderWidth="1" Precision="2" FontFamily="Arial" />
+		
+	</AddOnHeader>
+		
+	<Detail Height="30" Level="0" >
+		
+		<Line Width="1" Y1="0" Y2="0" X1="0" X2="600" Style="1" Color="100,100,100" />
+		<Line Width="1" Y1="25" Y2="25" X1="0" X2="600" Style="1" Color="100,100,100" />
+		<Line Width="1" Y1="0" Y2="25" X1="0" X2="0" Style="1" Color="100,100,100" />
+		<Line Width="1" Y1="0" Y2="25" X1="600" X2="600" Style="1" Color="100,100,100" />
+		
+		<!-- CENTRO DE COSTE -->
+		<Label WordWrap="0" Width="118" X="2" Y="2" BorderStyle="0" Height="19" HAlignment="0" BorderColor="0,0,0" BackgroundColor="255,255,255" VAlignment="1" ForegroundColor="0,0,0" Text=" C.COSTE:" FontWeight="50" FontSize="12" BorderWidth="1" FontFamily="Arial" />
+		<Field WordWrap="0" Width="120" X="120" Y="2" BorderStyle="0" NegValueColor="0,0,0" Height="19" HAlignment="0" DataType="0" Field="pr_centroscoste.codcentro" DateFormat="11" Currency="32" BorderColor="0,0,0" BackgroundColor="255,255,255" FontItalic="0" VAlignment="1" ForegroundColor="0,0,0" CommaSeparator="44" Text="" FontWeight="50" FontSize="12" BorderWidth="1" Precision="2" FontFamily="Arial" />		
+		<!--<Field WordWrap="0" Width="358" X="240" Y="2" BorderStyle="0" NegValueColor="0,0,0" Height="19" HAlignment="0" DataType="0" Field="pr_centroscoste.descripcion" DateFormat="11" Currency="32" BorderColor="0,0,0" BackgroundColor="255,255,255" FontItalic="0" VAlignment="1" ForegroundColor="0,0,0" CommaSeparator="44" Text="" FontWeight="65" FontSize="12" BorderWidth="1" Precision="2" FontFamily="Arial" />-->
+		
+		
+		<!-- CABECERA TAREA -->
+		
+		<!--<Label WordWrap="0" Width="149" X="0" Y="30" BorderStyle="0" Height="17" HAlignment="0" BorderColor="0,0,0" BackgroundColor="220,220,220" VAlignment="1" ForegroundColor="0,0,0" Text="   Tarea" FontWeight="65" FontSize="11" BorderWidth="1" FontFamily="Arial" />
+		<Label WordWrap="0" Width="450" X="150" Y="30" BorderStyle="0" Height="17" HAlignment="0" BorderColor="0,0,0" BackgroundColor="220,220,220" VAlignment="1" ForegroundColor="0,0,0" Text="   Descripción" FontWeight="65" FontSize="11" BorderWidth="1" FontFamily="Arial" />-->
+		<!--<Label WordWrap="0" Width="59" X="310" Y="30" BorderStyle="0" Height="17" HAlignment="0" BorderColor="0,0,0" BackgroundColor="220,220,220" VAlignment="1" ForegroundColor="0,0,0" Text="   Fecha" FontWeight="65" FontSize="11" BorderWidth="1" FontFamily="Arial" />
+		<Label WordWrap="0" Width="49" X="370" Y="30" BorderStyle="0" Height="17" HAlignment="0" BorderColor="0,0,0" BackgroundColor="220,220,220" VAlignment="1" ForegroundColor="0,0,0" Text="   Hora" FontWeight="65" FontSize="11" BorderWidth="1" FontFamily="Arial" />
+		<Label WordWrap="0" Width="69" X="420" Y="30" BorderStyle="0" Height="17" HAlignment="0" BorderColor="0,0,0" BackgroundColor="220,220,220" VAlignment="1" ForegroundColor="0,0,0" Text="   Lote" FontWeight="65" FontSize="11" BorderWidth="1" FontFamily="Arial" />
+		<Label WordWrap="0" Width="109" X="490" Y="30" BorderStyle="0" Height="17" HAlignment="0" BorderColor="0,0,0" BackgroundColor="220,220,220" VAlignment="1" ForegroundColor="0,0,0" Text="   Referencia" FontWeight="65" FontSize="11" BorderWidth="1" FontFamily="Arial" />-->
+	</Detail>
+	
+	<Detail Height="80" Level="1" >
+		<!-- TAREAS -->
+		<Line Width="1" Y1="0" Y2="0" X1="0" X2="600" Style="1" Color="100,100,100" />
+		
+		<Field WordWrap="0" Width="150" X="0" Y="10" BorderStyle="0" NegValueColor="0,0,0" Height="55" HAlignment="0" DataType="6" BarcodeType="EAN" Field="pr_tareas.idtarea" DateFormat="11" Currency="32" BorderColor="0,0,0" BackgroundColor="255,255,255" FontItalic="0" VAlignment="1" ForegroundColor="0,0,0" CommaSeparator="44" Text="" FontWeight="50" FontSize="5" BorderWidth="1" Precision="2" FontFamily="Arial" />
+			
+		<!--<Field WordWrap="1" Width="157" X="153" Y="10" BorderStyle="0" NegValueColor="0,0,0" Height="55" HAlignment="0" DataType="0" Field="pr_tareas.descripcion" DateFormat="11" Currency="32" BorderColor="0,0,0" BackgroundColor="255,255,255" FontItalic="0" VAlignment="0" ForegroundColor="0,0,0" CommaSeparator="44" Text="" FontWeight="50" FontSize="11" BorderWidth="1" Precision="2" FontFamily="Arial" />-->
+		<!--<Field WordWrap="0" Width="57" X="313" Y="10" BorderStyle="0" NegValueColor="0,0,0" Height="20" HAlignment="0" DataType="3" Field="pr_tareas.fechainicioprev" DateFormat="19" Currency="32" BorderColor="0,0,0" BackgroundColor="255,255,255" FontItalic="0" VAlignment="0" ForegroundColor="0,0,0" CommaSeparator="44" Text="" FontWeight="50" FontSize="11" BorderWidth="1" Precision="2" FontFamily="Arial" />
+		<Field WordWrap="0" Width="47" X="373" Y="10" BorderStyle="0" NegValueColor="0,0,0" Height="20" HAlignment="0" DataType="0" Field="pr_tareas.horainicioprev" DateFormat="19" Currency="32" BorderColor="0,0,0" BackgroundColor="255,255,255" FontItalic="0" VAlignment="0" ForegroundColor="0,0,0" CommaSeparator="44" Text="" FontWeight="50" FontSize="11" BorderWidth="1" Precision="2" FontFamily="Arial" />-->
+		<Field WordWrap="0" Width="107" X="0" Y="60" BorderStyle="0" NegValueColor="0,0,0" Height="20" HAlignment="0" DataType="0" Field="lotesstock.codlote" DateFormat="19" Currency="32" BorderColor="0,0,0" BackgroundColor="255,255,255" FontItalic="0" VAlignment="0" ForegroundColor="0,0,0" CommaSeparator="44" Text="" FontWeight="50" FontSize="11" BorderWidth="1" Precision="2" FontFamily="Arial" />
+		<!--<Field WordWrap="0" Width="107" X="0" Y="80" BorderStyle="0" NegValueColor="0,0,0" Height="20" HAlignment="0" DataType="0" Field="lotesstock.referencia" DateFormat="19" Currency="32" BorderColor="0,0,0" BackgroundColor="255,255,255" FontItalic="0" VAlignment="0" ForegroundColor="0,0,0" CommaSeparator="44" Text="" FontWeight="50" FontSize="11" BorderWidth="1" Precision="2" FontFamily="Arial" />-->
+		
+		<Field WordWrap="1" ChangeHeight="1" Width="450" X="150" Y="10" BorderStyle="0" NegValueColor="0,0,0" Height="0" HAlignment="0" DataType="0" Field="pr_tareas.observaciones" DateFormat="19" Currency="32" BorderColor="0,0,0" BackgroundColor="255,255,255" FontItalic="0" VAlignment="0" ForegroundColor="0,0,0" CommaSeparator="44" Text="" FontWeight="50" FontSize="11" BorderWidth="1" Precision="2" FontFamily="Arial" />
+		
+		
+	</Detail>
+	
+	
+	
+	<DetailFooter Height="20" Level="1">
+	</DetailFooter>
+	
+	<PageFooter Height="0" PrintFrequency="1" />
+</KugarTemplate>

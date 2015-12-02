@@ -1,0 +1,22 @@
+<flpatch:modifications name="rutas" >
+    <flpatch:patchXml path="facturacion/principal/" name="flfactppal.xml" />
+    <flpatch:addFile path="facturacion/principal/forms/" name="paradas.ui" />
+    <flpatch:addFile path="facturacion/principal/forms/" name="rutas.ui" />
+    <flpatch:patchXml path="facturacion/principal/tables/" name="clientes.mtd" />
+    <flpatch:patchXml path="facturacion/principal/tables/" name="dirclientes.mtd" />
+    <flpatch:patchXml path="facturacion/principal/tables/" name="paises.mtd" />
+    <flpatch:addFile path="facturacion/principal/tables/" name="paradas.mtd" />
+    <flpatch:patchXml path="facturacion/principal/tables/" name="provincias.mtd" />
+    <flpatch:addFile path="facturacion/principal/tables/" name="rutas.mtd" />
+    <flpatch:patchXml path="facturacion/principal/forms/" name="flfactppal.ui" />
+    <flpatch:patchXml path="facturacion/principal/forms/" name="dirclientes.ui" />
+    <flpatch:patchXml path="facturacion/informes/tables/" name="i_facturascli.mtd" />
+    <flpatch:patchXml path="facturacion/informes/forms/" name="i_facturascli.ui" />
+    <flpatch:replaceFile path="facturacion/informes/queries/" name="i_facturascli.qry" />
+    <flpatch:patchScript path="facturacion/informes/scripts/" name="i_masterfacturascli.qs" />
+    <flpatch:replaceFile path="facturacion/informes/queries/" name="i_resfacturascli.qry" />
+    <flpatch:patchXml path="facturacion/facturacion/tables/" name="facturascli.mtd" />
+    <flpatch:addFile path="facturacion/principal/scripts/" name="paradas.qs" />
+    <flpatch:addFile path="facturacion/principal/scripts/" name="rutas.qs" />
+    <flpatch:patchScript path="facturacion/principal/scripts/" name="flfactppal.qs" />
+</flpatch:modifications>

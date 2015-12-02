@@ -1,0 +1,28 @@
+<!DOCTYPE QRY>
+<QRY>
+	<name>i_ventasmfam</name>
+
+	<tables>empresa,i_ventasmfam_buffer</tables>
+
+	<select>
+		i_ventasmfam_buffer.codfamilia,i_ventasmfam_buffer.nombre,
+		sum(ventas01),sum(ventas02),sum(ventas03),sum(ventas04),
+		sum(ventas05),sum(ventas06),sum(ventas07),sum(ventas08),
+		sum(ventas09),sum(ventas10),sum(ventas11),sum(ventas12),
+		sum(ventasfam),
+		
+		empresa.nombre,
+		
+		i_ventasmfam.familiadesde, i_ventasmfam.familiahasta,
+		i_ventasmfam.fechainicio, i_ventasmfam.fechafin,
+		i_ventasmfam.codejercicio, i_ventasmfam.codserie
+	</select>
+
+	<from>
+		empresa, i_ventasmfam_buffer,
+		i_ventasmfam 
+	</from>
+
+	<where>
+	</where>
+</QRY>

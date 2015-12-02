@@ -1,0 +1,16 @@
+<flpatch:modifications name="multiempresa_cc" >
+    <flpatch:patchXml path="facturacion/principal/forms/" name="centroscoste.ui" />
+    <flpatch:patchXml path="facturacion/principal/tables/" name="centroscoste.mtd" />
+    <flpatch:patchXml path="facturacion/principal/tables/" name="empresa.mtd" />
+    <flpatch:patchScript path="facturacion/principal/scripts/" name="mastercentroscoste.qs" />
+    <flpatch:addFile path="facturacion/principal/forms/" name="mastercentroscoste.ui" />
+    <flpatch:patchXml path="facturacion/principal/" name="flfactppal.xml" />
+    <flpatch:patchScript path="facturacion/principal/scripts/" name="flfactppal.qs" />
+    <flpatch:patchScript path="contabilidad/principal/scripts/" name="flcontppal.qs" />
+    <flpatch:patchXml path="facturacion/facturacion/forms/" name="masterfacturasprov.ui" />
+    <flpatch:patchScript path="facturacion/facturacion/scripts/" name="masterfacturasprov.qs" />
+    <flpatch:patchXml path="facturacion/facturacion/tables/" name="facturasprov.mtd" />
+    <flpatch:patchXml path="facturacion/facturacion/tables/" name="facturascli.mtd" />
+    <flpatch:patchXml path="contabilidad/principal/tables/" name="co_partidascc.mtd" />
+    <flpatch:patchXml path="facturacion/facturacion/forms/" name="facturasprov.ui" />
+</flpatch:modifications>

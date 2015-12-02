@@ -1,0 +1,7 @@
+<flpatch:modifications name="subcuenta_irpf" >
+    <flpatch:patchScript path="facturacion/facturacion/scripts/" name="flfacturac.qs" />
+    <flpatch:patchXml path="facturacion/principal/forms/" name="clientes.ui" />
+    <flpatch:patchXml path="facturacion/principal/forms/" name="proveedores.ui" />
+    <flpatch:patchXml path="facturacion/principal/tables/" name="clientes.mtd" />
+    <flpatch:patchXml path="facturacion/principal/tables/" name="proveedores.mtd" />
+</flpatch:modifications>

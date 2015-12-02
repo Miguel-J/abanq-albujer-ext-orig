@@ -1,0 +1,50 @@
+<!DOCTYPE QRY>
+<QRY>
+	<name>i_presupuestosprov</name>
+
+	<tables>empresa,presupuestosprov</tables>
+
+	<group>
+		<level>0</level>
+		<field>presupuestosprov.idpresupuesto</field>
+	</group>
+
+	<select>	
+		presupuestosprov.idpresupuesto,
+		presupuestosprov.codigo, presupuestosprov.idpresupuestocli,
+		presupuestosprov.codpresupuestocli, presupuestosprov.codproveedor,
+		presupuestosprov.femision, presupuestosprov.nombreproveedor,
+		presupuestosprov.frecepcion, presupuestosprov.estado,
+		presupuestosprov.tipoemision, presupuestosprov.idusuario,
+		presupuestosprov.observaciones, presupuestosprov.numofertaprov,
+		presupuestosprov.contacto, presupuestosprov.coddir,
+		presupuestosprov.direccion, presupuestosprov.numero,
+		presupuestosprov.apartado, presupuestosprov.codpostal,
+		presupuestosprov.idprovincia, presupuestosprov.ciudad,
+		presupuestosprov.provincia, presupuestosprov.codpais,
+		presupuestosprov.telefono1, presupuestosprov.fax, 
+		presupuestosprov.email, presupuestosprov.codsolicitud,
+		lineaspresupuestosprov.idlinea, lineaspresupuestosprov.idpresupuesto,
+		lineaspresupuestosprov.referencia, lineaspresupuestosprov.descripcion,
+		lineaspresupuestosprov.cantidad, lineaspresupuestosprov.refproveedor,
+		lineaspresupuestosprov.pvpunitario, lineaspresupuestosprov.dto,
+		lineaspresupuestosprov.plazo, lineaspresupuestosprov.aprobado,
+		lineaspresupuestosprov.codsolicitud, lineaspresupuestosprov.codproveedor,
+		lineaspresupuestosprov.nombreproveedor,
+		empresa.nombre, empresa.cifnif, empresa.direccion,
+		empresa.codpostal, empresa.ciudad, empresa.provincia, 
+		empresa.apartado, empresa.codpais
+	</select>
+
+	<from>
+		empresa, presupuestosprov 
+		INNER JOIN lineaspresupuestosprov ON presupuestosprov.idpresupuesto = lineaspresupuestosprov.idpresupuesto
+	</from>
+
+	<where>
+	</where>
+	
+	<order>
+		lineaspresupuestosprov.idpresupuesto, lineaspresupuestosprov.referencia
+	</order>
+</QRY>

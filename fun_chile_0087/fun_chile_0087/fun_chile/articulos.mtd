@@ -1,0 +1,14 @@
+<xupdate:modifications>
+<xupdate:insert-after select="/TMD[TMD,1]/field[codimpuesto]/length[length,1]" >
+<default>IVA19</default>
+</xupdate:insert-after>
+<xupdate:insert-after select="/TMD[TMD,1]/field[codsubcuentairpfcom]/length[length,1]" >
+<visible>false</visible>
+</xupdate:insert-after>
+<xupdate:insert-after select="/TMD[TMD,1]/field[codsubcuentairpfcom]/visible[visible,1]" >
+<visiblegrid>false</visiblegrid>
+</xupdate:insert-after>
+<xupdate:insert-after select="/TMD[TMD,1]/field[idsubcuentairpfcom]/type[type,1]" >
+<visible>false</visible>
+</xupdate:insert-after>
+</xupdate:modifications>

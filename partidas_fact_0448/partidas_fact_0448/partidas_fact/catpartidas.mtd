@@ -1,0 +1,38 @@
+<!DOCTYPE TMD>
+<TMD>
+	<name>catpartidas</name>
+	<!--Catálogo de capítulos-->
+	<alias>QT_TRANSLATE_NOOP("MetaData","Catálogo de capítulos")</alias>
+
+	<field>
+		<name>codpartidacat</name>
+		<!--Código de capítulo en el catálogo-->
+		<alias>QT_TRANSLATE_NOOP("MetaData","Código")</alias>
+		<pk>true</pk>
+		<type>string</type>
+		<length>25</length>
+		
+		<relation>
+			<table>partidas</table>
+			<field>codpartidacat</field>
+			<card>1M</card>
+		</relation>
+		
+		<relation>
+			<table>componentespar</table>
+			<field>codpartidacat</field>
+			<card>1M</card>
+		</relation>
+	</field>
+
+	<field>
+		<name>descripcion</name>
+		<!--Descripción del capítulo-->
+		<alias>QT_TRANSLATE_NOOP("MetaData","Descripción")</alias>
+		<null>true</null>
+		<pk>false</pk>
+		<type>string</type>
+		<length>200</length>
+	</field>
+
+</TMD>

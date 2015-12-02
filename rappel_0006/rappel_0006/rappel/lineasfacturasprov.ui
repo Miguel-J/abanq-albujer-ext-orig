@@ -1,0 +1,96 @@
+<xupdate:modifications>
+<xupdate:update select="/UI[UI,1]/widget[QWidget,lineaspedidosprov]/property[property,2]/rect[rect,1]/height[height,1]/text()[1]" >434</xupdate:update>
+<xupdate:update select="/UI[UI,1]/widget[QWidget,lineaspedidosprov]/property[property,2]/rect[rect,1]/width[width,1]/text()[1]" >610</xupdate:update>
+<xupdate:update select="/UI[UI,1]/widget[QWidget,lineaspedidosprov]/vbox[vbox,1]/widget[QLayoutWidget,layout19]/hbox[hbox,1]/widget[QGroupBox,groupBox8]/vbox[vbox,1]/spacer[spacer101]/property[property,4]/size[size,1]/height[height,1]/text()[1]" >16</xupdate:update>
+<xupdate:insert-after select="/UI[UI,1]/widget[QWidget,lineaspedidosprov]/vbox[vbox,1]/widget[QLayoutWidget,layout19]/hbox[hbox,1]/widget[QGroupBox,groupBox8]/vbox[vbox,1]/widget[QLayoutWidget,layout34]" >
+<widget class="QLayoutWidget" >
+<property name="name" >
+<cstring>layoutRappel</cstring>
+</property>
+<hbox>
+<property name="name" >
+<cstring>unnamed</cstring>
+</property>
+<spacer>
+<property name="name" >
+<cstring>spacerRappel</cstring>
+</property>
+<property name="orientation" >
+<enum>Horizontal</enum>
+</property>
+<property name="sizeType" >
+<enum>Expanding</enum>
+</property>
+<property name="sizeHint" >
+<size>
+<width>150</width>
+<height>20</height>
+</size>
+</property>
+</spacer>
+<widget class="FLFieldDB" >
+<property name="name" >
+<cstring>fdbDtoRappel</cstring>
+</property>
+<property name="sizePolicy" >
+<sizepolicy>
+<hsizetype>1</hsizetype>
+<vsizetype>0</vsizetype>
+<horstretch>0</horstretch>
+<verstretch>0</verstretch>
+</sizepolicy>
+</property>
+<property name="minimumSize" >
+<size>
+<width>200</width>
+<height>25</height>
+</size>
+</property>
+<property name="font" >
+<font>
+<bold>0</bold>
+<italic>0</italic>
+</font>
+</property>
+<property name="fieldName" >
+<string>dtorappel</string>
+</property>
+</widget>
+<widget class="QLabel" >
+<property name="name" >
+<cstring>lblDtoRappel</cstring>
+</property>
+<property name="sizePolicy" >
+<sizepolicy>
+<hsizetype>1</hsizetype>
+<vsizetype>0</vsizetype>
+<horstretch>0</horstretch>
+<verstretch>0</verstretch>
+</sizepolicy>
+</property>
+<property name="minimumSize" >
+<size>
+<width>120</width>
+<height>23</height>
+</size>
+</property>
+<property name="font" >
+<font>
+<bold>0</bold>
+<italic>0</italic>
+</font>
+</property>
+<property name="frameShape" >
+<enum>Box</enum>
+</property>
+<property name="text" >
+<string>0</string>
+</property>
+<property name="alignment" >
+<set>AlignVCenter|AlignRight</set>
+</property>
+</widget>
+</hbox>
+</widget>
+</xupdate:insert-after>
+</xupdate:modifications>

@@ -1,0 +1,82 @@
+<xupdate:modifications>
+<xupdate:insert-after select="/TMD[TMD,1]/field[idfactura]/relation[facturasprov,idfacturarect]" >
+<relation>
+<table>venfacturasprov</table>
+<field>idfactura</field>
+<card>1M</card>
+</relation>
+</xupdate:insert-after>
+<xupdate:insert-after select="/TMD[TMD,1]/field[irpf]" >
+<field>
+<name>codcuenta</name>
+<alias>QT_TRANSLATE_NOOP(&quot;MetaData&quot;,&quot;Cuenta&quot;)</alias>
+<null>true</null>
+<pk>false</pk>
+<type>string</type>
+<length>6</length>
+<visiblegrid>false</visiblegrid>
+<relation>
+<table>cuentasbanco</table>
+<field>codcuenta</field>
+<card>M1</card>
+</relation>
+</field>
+</xupdate:insert-after>
+<xupdate:insert-after select="/TMD[TMD,1]/field[codcuenta]" >
+<field>
+<name>ctaentidad</name>
+<alias>QT_TRANSLATE_NOOP(&quot;MetaData&quot;,&quot;Nº Entidad&quot;)</alias>
+<null>true</null>
+<pk>false</pk>
+<type>string</type>
+<length>4</length>
+<editable>false</editable>
+</field>
+</xupdate:insert-after>
+<xupdate:insert-after select="/TMD[TMD,1]/field[ctaentidad]" >
+<field>
+<name>ctaagencia</name>
+<alias>QT_TRANSLATE_NOOP(&quot;MetaData&quot;,&quot;Nº Oficina&quot;)</alias>
+<null>true</null>
+<pk>false</pk>
+<type>string</type>
+<length>4</length>
+<editable>false</editable>
+</field>
+</xupdate:insert-after>
+<xupdate:insert-after select="/TMD[TMD,1]/field[ctaagencia]" >
+<field>
+<name>dc</name>
+<alias>QT_TRANSLATE_NOOP(&quot;MetaData&quot;,&quot;Dígitos de Control&quot;)</alias>
+<null>true</null>
+<pk>false</pk>
+<type>string</type>
+<length>2</length>
+<calculated>true</calculated>
+<editable>false</editable>
+</field>
+</xupdate:insert-after>
+<xupdate:insert-after select="/TMD[TMD,1]/field[dc]" >
+<field>
+<name>cuenta</name>
+<alias>QT_TRANSLATE_NOOP(&quot;MetaData&quot;,&quot;Nº Cuenta&quot;)</alias>
+<null>true</null>
+<pk>false</pk>
+<type>string</type>
+<length>10</length>
+<editable>false</editable>
+</field>
+</xupdate:insert-after>
+<xupdate:insert-after select="/TMD[TMD,1]/field[cuenta]" >
+<field>
+<name>genrecibos</name>
+<!--Opciones en la generación de recibos--><alias>QT_TRANSLATE_NOOP(&quot;MetaData&quot;,&quot;Generar recibos como&quot;)</alias>
+<null>false</null>
+<pk>false</pk>
+<optionslist>QT_TRANSLATE_NOOP(&quot;MetaData&quot;,&quot;Emitidos&quot;);QT_TRANSLATE_NOOP(&quot;MetaData&quot;,&quot;Pagados&quot;)</optionslist>
+<default>QT_TRANSLATE_NOOP(&quot;MetaData&quot;,&quot;Emitidos&quot;)</default>
+<type>string</type>
+<length>10</length>
+</field>
+</xupdate:insert-after>
+</xupdate:modifications>

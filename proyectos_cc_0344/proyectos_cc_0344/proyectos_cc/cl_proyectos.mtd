@@ -1,0 +1,19 @@
+<xupdate:modifications>
+<xupdate:update select="/TMD[TMD,1]/field[codproyecto]/length[length,1]/text()[1]" >8</xupdate:update>
+<xupdate:insert-after select="/TMD[TMD,1]/field[codproyecto]" >
+<field>
+<name>codcentro</name>
+<!--Código del centro--><alias>QT_TRANSLATE_NOOP(&quot;MetaData&quot;,&quot;Centro Coste&quot;)</alias>
+<null>true</null>
+<pk>false</pk>
+<type>string</type>
+<length>8</length>
+<editable>false</editable>
+<relation>
+<table>centroscoste</table>
+<field>codcentro</field>
+<card>M1</card>
+</relation>
+</field>
+</xupdate:insert-after>
+</xupdate:modifications>

@@ -1,0 +1,59 @@
+<xupdate:modifications>
+<xupdate:insert-after select="/TMD[TMD,1]/field[fechahasta]" >
+<field>
+<name>idlineapedido</name>
+<!--Línea de pedido--><alias>QT_TRANSLATE_NOOP(&quot;MetaData&quot;,&quot;L.Pedido&quot;)</alias>
+<null>true</null>
+<pk>false</pk>
+<type>uint</type>
+<relation>
+<table>lineaspedidoscli</table>
+<field>idlinea</field>
+<card>M1</card>
+<delC>true</delC>
+</relation>
+</field>
+</xupdate:insert-after>
+<xupdate:insert-after select="/TMD[TMD,1]/field[idlineapedido]" >
+<field>
+<name>descripcion</name>
+<!--Descripción del trabajo--><alias>QT_TRANSLATE_NOOP(&quot;MetaData&quot;,&quot;Descripción&quot;)</alias>
+<null>true</null>
+<pk>false</pk>
+<type>stringlist</type>
+</field>
+</xupdate:insert-after>
+<xupdate:insert-after select="/TMD[TMD,1]/field[descripcion]" >
+<field>
+<name>codpedido</name>
+<!--Código de pedido--><alias>QT_TRANSLATE_NOOP(&quot;MetaData&quot;,&quot;Pedido&quot;)</alias>
+<null>true</null>
+<pk>false</pk>
+<type>string</type>
+<length>12</length>
+<editable>false</editable>
+</field>
+</xupdate:insert-after>
+<xupdate:insert-after select="/TMD[TMD,1]/field[codpedido]" >
+<field>
+<name>codcliente</name>
+<!--Código de cliente--><alias>QT_TRANSLATE_NOOP(&quot;MetaData&quot;,&quot;C.Cliente&quot;)</alias>
+<null>true</null>
+<pk>false</pk>
+<type>string</type>
+<length>6</length>
+<editable>false</editable>
+</field>
+</xupdate:insert-after>
+<xupdate:insert-after select="/TMD[TMD,1]/field[codcliente]" >
+<field>
+<name>nombrecliente</name>
+<!--Nombre de cliente--><alias>QT_TRANSLATE_NOOP(&quot;MetaData&quot;,&quot;Cliente&quot;)</alias>
+<null>true</null>
+<pk>false</pk>
+<type>string</type>
+<length>200</length>
+<editable>false</editable>
+</field>
+</xupdate:insert-after>
+</xupdate:modifications>

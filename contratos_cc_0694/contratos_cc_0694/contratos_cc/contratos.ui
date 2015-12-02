@@ -1,0 +1,207 @@
+<xupdate:modifications>
+<xupdate:update select="/UI[UI,1]/widget[QWidget,se_contratosman]/property[geometry]/rect[rect,1]/height[height,1]/text()[1]" >493</xupdate:update>
+<xupdate:update select="/UI[UI,1]/widget[QWidget,se_contratosman]/vbox[vbox,1]/widget[QTabWidget,tdbContratos]/widget[QWidget,general]/vbox[vbox,1]/widget[QGroupBox,gbxProyecto]/vbox[vbox,1]/widget[QLayoutWidget,layout9]/hbox[hbox,1]/widget[FLFieldDB,fdbFactPrimeroMes]/property[minimumSize]/size[size,1]/height[height,1]/text()[1]" >21</xupdate:update>
+<xupdate:update select="/UI[UI,1]/widget[QWidget,se_contratosman]/vbox[vbox,1]/widget[QTabWidget,tdbContratos]/widget[QWidget,general]/vbox[vbox,1]/widget[QGroupBox,gbxProyecto]/vbox[vbox,1]/widget[QLayoutWidget,layout9]/hbox[hbox,1]/widget[FLFieldDB,fdbFactPrimeroMes]/property[minimumSize]/size[size,1]/width[width,1]/text()[1]" >4</xupdate:update>
+<xupdate:update select="/UI[UI,1]/widget[QWidget,se_contratosman]/vbox[vbox,1]/widget[QTabWidget,tdbContratos]/widget[QWidget,general]/vbox[vbox,1]/widget[QGroupBox,gbxProyecto]/vbox[vbox,1]/widget[QLayoutWidget,layout9]/hbox[hbox,1]/widget[FLFieldDB,fdbPeriodoPago]/property[minimumSize]/size[size,1]/height[height,1]/text()[1]" >21</xupdate:update>
+<xupdate:update select="/UI[UI,1]/widget[QWidget,se_contratosman]/vbox[vbox,1]/widget[QTabWidget,tdbContratos]/widget[QWidget,general]/vbox[vbox,1]/widget[QGroupBox,gbxProyecto]/vbox[vbox,1]/widget[QLayoutWidget,layout9]/hbox[hbox,1]/widget[FLFieldDB,fdbPeriodoPago]/property[minimumSize]/size[size,1]/width[width,1]/text()[1]" >4</xupdate:update>
+<xupdate:update select="/UI[UI,1]/widget[QWidget,se_contratosman]/vbox[vbox,1]/widget[QTabWidget,tdbContratos]/widget[QWidget,general]/vbox[vbox,1]/widget[QGroupBox,gbxProyecto]/vbox[vbox,1]/widget[QLayoutWidget,layout9]/hbox[hbox,1]/widget[FLFieldDB,fdbUltimoPago]/property[minimumSize]/size[size,1]/height[height,1]/text()[1]" >22</xupdate:update>
+<xupdate:update select="/UI[UI,1]/widget[QWidget,se_contratosman]/vbox[vbox,1]/widget[QTabWidget,tdbContratos]/widget[QWidget,general]/vbox[vbox,1]/widget[QGroupBox,gbxProyecto]/vbox[vbox,1]/widget[QLayoutWidget,layout9]/hbox[hbox,1]/widget[FLFieldDB,fdbUltimoPago]/property[minimumSize]/size[size,1]/width[width,1]/text()[1]" >26</xupdate:update>
+<xupdate:update select="/UI[UI,1]/widget[QWidget,se_contratosman]/vbox[vbox,1]/widget[QTabWidget,tdbContratos]/widget[QWidget,general]/vbox[vbox,1]/widget[QGroupBox,groupBox20]/vbox[vbox,1]/widget[FLFieldDB,fdbObservaciones]/property[minimumSize]/size[size,1]/height[height,1]/text()[1]" >24</xupdate:update>
+<xupdate:update select="/UI[UI,1]/widget[QWidget,se_contratosman]/vbox[vbox,1]/widget[QTabWidget,tdbContratos]/widget[QWidget,general]/vbox[vbox,1]/widget[QGroupBox,groupBox20]/vbox[vbox,1]/widget[FLFieldDB,fdbObservaciones]/property[minimumSize]/size[size,1]/width[width,1]/text()[1]" >31</xupdate:update>
+<xupdate:insert-after select="/UI[UI,1]/widget[QWidget,se_contratosman]/vbox[vbox,1]/widget[QTabWidget,tdbContratos]/widget[QWidget,general]/vbox[vbox,1]/widget[QGroupBox,gbxProyecto]" >
+<widget class="QGroupBox" >
+<property name="name" >
+<cstring>gbxCentro</cstring>
+</property>
+<property name="font" >
+<font>
+<bold>0</bold>
+</font>
+</property>
+<property name="title" >
+<string>Centro de coste</string>
+</property>
+<vbox>
+<property name="name" >
+<cstring>unnamed</cstring>
+</property>
+<widget class="QLayoutWidget" >
+<property name="name" >
+<cstring>lytCentro</cstring>
+</property>
+<hbox>
+<property name="name" >
+<cstring>unnamed</cstring>
+</property>
+<widget class="FLFieldDB" >
+<property name="name" >
+<cstring>fdbCodCentro</cstring>
+</property>
+<property name="sizePolicy" >
+<sizepolicy>
+<hsizetype>1</hsizetype>
+<vsizetype>0</vsizetype>
+<horstretch>0</horstretch>
+<verstretch>0</verstretch>
+</sizepolicy>
+</property>
+<property name="minimumSize" >
+<size>
+<width>26</width>
+<height>22</height>
+</size>
+</property>
+<property name="maximumSize" >
+<size>
+<width>250</width>
+<height>32767</height>
+</size>
+</property>
+<property name="paletteForegroundColor" >
+<color>
+<red>0</red>
+<green>0</green>
+<blue>0</blue>
+</color>
+</property>
+<property name="font" >
+<font/>
+</property>
+<property name="fieldName" >
+<string>codcentro</string>
+</property>
+</widget>
+<widget class="FLFieldDB" >
+<property name="name" >
+<cstring>fdbDescCentro</cstring>
+</property>
+<property name="sizePolicy" >
+<sizepolicy>
+<hsizetype>1</hsizetype>
+<vsizetype>0</vsizetype>
+<horstretch>0</horstretch>
+<verstretch>0</verstretch>
+</sizepolicy>
+</property>
+<property name="minimumSize" >
+<size>
+<width>2</width>
+<height>21</height>
+</size>
+</property>
+<property name="fieldName" >
+<string>descripcion</string>
+</property>
+<property name="tableName" >
+<string>centroscoste</string>
+</property>
+<property name="foreignField" >
+<string>codcentro</string>
+</property>
+<property name="fieldRelation" >
+<string>codcentro</string>
+</property>
+<property name="showAlias" >
+<bool>false</bool>
+</property>
+</widget>
+</hbox>
+</widget>
+<widget class="QLayoutWidget" >
+<property name="name" >
+<cstring>lytSubCentro</cstring>
+</property>
+<hbox>
+<property name="name" >
+<cstring>unnamed</cstring>
+</property>
+<widget class="FLFieldDB" >
+<property name="name" >
+<cstring>fdbCodSubCentro</cstring>
+</property>
+<property name="sizePolicy" >
+<sizepolicy>
+<hsizetype>1</hsizetype>
+<vsizetype>0</vsizetype>
+<horstretch>0</horstretch>
+<verstretch>0</verstretch>
+</sizepolicy>
+</property>
+<property name="minimumSize" >
+<size>
+<width>26</width>
+<height>22</height>
+</size>
+</property>
+<property name="maximumSize" >
+<size>
+<width>250</width>
+<height>32767</height>
+</size>
+</property>
+<property name="paletteForegroundColor" >
+<color>
+<red>0</red>
+<green>0</green>
+<blue>0</blue>
+</color>
+</property>
+<property name="font" >
+<font/>
+</property>
+<property name="fieldName" >
+<string>codsubcentro</string>
+</property>
+</widget>
+<widget class="FLFieldDB" >
+<property name="name" >
+<cstring>fdbDescSubCentro</cstring>
+</property>
+<property name="sizePolicy" >
+<sizepolicy>
+<hsizetype>1</hsizetype>
+<vsizetype>0</vsizetype>
+<horstretch>0</horstretch>
+<verstretch>0</verstretch>
+</sizepolicy>
+</property>
+<property name="minimumSize" >
+<size>
+<width>2</width>
+<height>21</height>
+</size>
+</property>
+<property name="fieldName" >
+<string>descripcion</string>
+</property>
+<property name="tableName" >
+<string>subcentroscoste</string>
+</property>
+<property name="foreignField" >
+<string>codsubcentro</string>
+</property>
+<property name="fieldRelation" >
+<string>codsubcentro</string>
+</property>
+<property name="showAlias" >
+<bool>false</bool>
+</property>
+</widget>
+</hbox>
+</widget>
+</vbox>
+</widget>
+</xupdate:insert-after>
+<xupdate:insert-after select="/UI[UI,1]/includehints[includehints,1]/includehint[flfielddb.h]" >
+<includehint>flfielddb.h</includehint>
+</xupdate:insert-after>
+<xupdate:insert-after select="/UI[UI,1]/includehints[includehints,1]/includehint[flfielddb.h]" >
+<includehint>flfielddb.h</includehint>
+</xupdate:insert-after>
+<xupdate:insert-after select="/UI[UI,1]/includehints[includehints,1]/includehint[flfielddb.h]" >
+<includehint>flfielddb.h</includehint>
+</xupdate:insert-after>
+<xupdate:insert-after select="/UI[UI,1]/includehints[includehints,1]/includehint[fltabledb.h]" >
+<includehint>flfielddb.h</includehint>
+</xupdate:insert-after>
+</xupdate:modifications>

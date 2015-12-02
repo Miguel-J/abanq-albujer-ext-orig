@@ -1,0 +1,23 @@
+<xupdate:modifications>
+<xupdate:insert-after select="/ACTIONS[ACTIONS,1]/action[tarifas]" >
+<action>
+<name>rappelarticulos</name>
+<description>QT_TRANSLATE_NOOP(&quot;MetaData&quot;,&quot;Intervalos de rappel (descuentos por cantidad) para un artículo&quot;)</description>
+<alias>QT_TRANSLATE_NOOP(&quot;MetaData&quot;,&quot;Rappels de artículo&quot;)</alias>
+<table>rappelarticulos</table>
+<form>master</form>
+<formrecord>rappelarticulos</formrecord>
+<scriptformrecord>rappelarticulos</scriptformrecord>
+</action>
+</xupdate:insert-after>
+<xupdate:insert-after select="/ACTIONS[ACTIONS,1]/action[rappelarticulos]" >
+<action>
+<name>rappelprovart</name>
+<alias>QT_TRANSLATE_NOOP(&quot;MetaData&quot;,&quot;Rappel por Proveedor y Artículo&quot;)</alias>
+<table>rappelprovart</table>
+<form>master</form>
+<formrecord>rappelprovart</formrecord>
+<scriptformrecord>rappelprovart</scriptformrecord>
+</action>
+</xupdate:insert-after>
+</xupdate:modifications>

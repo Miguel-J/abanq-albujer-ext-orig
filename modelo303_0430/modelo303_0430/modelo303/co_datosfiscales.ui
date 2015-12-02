@@ -1,0 +1,194 @@
+<xupdate:modifications>
+<xupdate:update select="/UI[UI,1]/widget[QWidget,Form1]/vbox[vbox,1]/widget[QTabWidget,twDatosGenerales]/widget[QWidget,datosfiscales]/vbox[vbox,1]/widget[QLayoutWidget,layout11]/hbox[hbox,1]/widget[FLFieldDB,fdbNumero]/property[minimumSize]/size[size,1]/height[height,1]/text()[1]" >22</xupdate:update>
+<xupdate:update select="/UI[UI,1]/widget[QWidget,Form1]/vbox[vbox,1]/widget[QTabWidget,twDatosGenerales]/widget[QWidget,datosfiscales]/vbox[vbox,1]/widget[QLayoutWidget,layout11]/hbox[hbox,1]/widget[FLFieldDB,fdbTelefono]/property[minimumSize]/size[size,1]/height[height,1]/text()[1]" >22</xupdate:update>
+<xupdate:update select="/UI[UI,1]/widget[QWidget,Form1]/vbox[vbox,1]/widget[QTabWidget,twDatosGenerales]/widget[QWidget,datosfiscales]/vbox[vbox,1]/widget[QLayoutWidget,layout204]/hbox[hbox,1]/widget[FLFieldDB,fdbCifNif]/property[minimumSize]/size[size,1]/height[height,1]/text()[1]" >22</xupdate:update>
+<xupdate:update select="/UI[UI,1]/widget[QWidget,Form1]/vbox[vbox,1]/widget[QTabWidget,twDatosGenerales]/widget[QWidget,datosfiscales]/vbox[vbox,1]/widget[QLayoutWidget,layout204]/hbox[hbox,1]/widget[FLFieldDB,fdbPersonaFisica]/property[minimumSize]/size[size,1]/height[height,1]/text()[1]" >22</xupdate:update>
+<xupdate:update select="/UI[UI,1]/widget[QWidget,Form1]/vbox[vbox,1]/widget[QTabWidget,twDatosGenerales]/widget[QWidget,datosfiscales]/vbox[vbox,1]/widget[QLayoutWidget,layout205]/hbox[hbox,1]/widget[FLFieldDB,fdbApellidosPF]/property[minimumSize]/size[size,1]/height[height,1]/text()[1]" >22</xupdate:update>
+<xupdate:update select="/UI[UI,1]/widget[QWidget,Form1]/vbox[vbox,1]/widget[QTabWidget,twDatosGenerales]/widget[QWidget,datosfiscales]/vbox[vbox,1]/widget[QLayoutWidget,layout205]/hbox[hbox,1]/widget[FLFieldDB,fdbApellidosPF]/property[minimumSize]/size[size,1]/width[width,1]/text()[1]" >26</xupdate:update>
+<xupdate:update select="/UI[UI,1]/widget[QWidget,Form1]/vbox[vbox,1]/widget[QTabWidget,twDatosGenerales]/widget[QWidget,datosfiscales]/vbox[vbox,1]/widget[QLayoutWidget,layout205]/hbox[hbox,1]/widget[FLFieldDB,fdbNombrePF]/property[minimumSize]/size[size,1]/height[height,1]/text()[1]" >22</xupdate:update>
+<xupdate:update select="/UI[UI,1]/widget[QWidget,Form1]/vbox[vbox,1]/widget[QTabWidget,twDatosGenerales]/widget[QWidget,datosfiscales]/vbox[vbox,1]/widget[QLayoutWidget,layout205]/hbox[hbox,1]/widget[FLFieldDB,fdbNombrePF]/property[minimumSize]/size[size,1]/width[width,1]/text()[1]" >26</xupdate:update>
+<xupdate:update select="/UI[UI,1]/widget[QWidget,Form1]/vbox[vbox,1]/widget[QTabWidget,twDatosGenerales]/widget[QWidget,datosfiscales]/vbox[vbox,1]/widget[QLayoutWidget,layout5_2]/hbox[hbox,1]/widget[FLFieldDB,fdbLetrasEti]/property[minimumSize]/size[size,1]/height[height,1]/text()[1]" >22</xupdate:update>
+<xupdate:update select="/UI[UI,1]/widget[QWidget,Form1]/vbox[vbox,1]/widget[QTabWidget,twDatosGenerales]/widget[QWidget,datosfiscales]/vbox[vbox,1]/widget[QLayoutWidget,layoutProvincia]/hbox[hbox,1]/widget[FLFieldDB,fdbProvincia]/property[minimumSize]/size[size,1]/height[height,1]/text()[1]" >21</xupdate:update>
+<xupdate:update select="/UI[UI,1]/widget[QWidget,Form1]/vbox[vbox,1]/widget[QTabWidget,twDatosGenerales]/widget[QWidget,datosfiscales]/vbox[vbox,1]/widget[QLayoutWidget,layoutProvincia]/hbox[hbox,1]/widget[FLFieldDB,fdbProvincia]/property[minimumSize]/size[size,1]/width[width,1]/text()[1]" >4</xupdate:update>
+<xupdate:insert-after select="/UI[UI,1]/widget[QWidget,Form1]/vbox[vbox,1]/widget[QTabWidget,twDatosGenerales]/widget[QWidget,datosfiscales]" >
+<widget class="QWidget" >
+<property name="name" >
+<cstring>TabModelo303</cstring>
+</property>
+<attribute name="title" >
+<string>Modelo 303</string>
+</attribute>
+<hbox>
+<property name="name" >
+<cstring>unnamed</cstring>
+</property>
+<widget class="QGroupBox" >
+<property name="name" >
+<cstring>gbxMod303</cstring>
+</property>
+<property name="font" >
+<font>
+<bold>1</bold>
+</font>
+</property>
+<property name="title" >
+<string>IVA</string>
+</property>
+<vbox>
+<property name="name" >
+<cstring>unnamed</cstring>
+</property>
+<widget class="FLFieldDB" >
+<property name="name" >
+<cstring>fdbPorcentajes123</cstring>
+</property>
+<property name="font" >
+<font>
+<bold>0</bold>
+</font>
+</property>
+<property name="fieldName" >
+<string>porcentajes123</string>
+</property>
+</widget>
+<widget class="FLFieldDB" >
+<property name="name" >
+<cstring>fdbPorcentajes456</cstring>
+</property>
+<property name="font" >
+<font>
+<bold>0</bold>
+</font>
+</property>
+<property name="fieldName" >
+<string>porcentajes456</string>
+</property>
+</widget>
+<widget class="FLFieldDB" >
+<property name="name" >
+<cstring>fdbPorcentajes789</cstring>
+</property>
+<property name="font" >
+<font>
+<bold>0</bold>
+</font>
+</property>
+<property name="fieldName" >
+<string>porcentajes789</string>
+</property>
+</widget>
+<spacer>
+<property name="name" >
+<cstring>spacerMod303</cstring>
+</property>
+<property name="orientation" >
+<enum>Vertical</enum>
+</property>
+<property name="sizeType" >
+<enum>Expanding</enum>
+</property>
+<property name="sizeHint" >
+<size>
+<width>51</width>
+<height>161</height>
+</size>
+</property>
+</spacer>
+</vbox>
+</widget>
+<widget class="QGroupBox" >
+<property name="name" >
+<cstring>gbxMod303Recargo</cstring>
+</property>
+<property name="font" >
+<font>
+<bold>1</bold>
+</font>
+</property>
+<property name="title" >
+<string>RECARGO DE EQUIVALENCIA</string>
+</property>
+<vbox>
+<property name="name" >
+<cstring>unnamed</cstring>
+</property>
+<widget class="FLFieldDB" >
+<property name="name" >
+<cstring>fdbPorcentajesRecargo123</cstring>
+</property>
+<property name="font" >
+<font>
+<bold>0</bold>
+</font>
+</property>
+<property name="fieldName" >
+<string>porcentajesrecargo123</string>
+</property>
+</widget>
+<widget class="FLFieldDB" >
+<property name="name" >
+<cstring>fdbPorcentajesRecargo456</cstring>
+</property>
+<property name="font" >
+<font>
+<bold>0</bold>
+</font>
+</property>
+<property name="fieldName" >
+<string>porcentajesrecargo456</string>
+</property>
+</widget>
+<widget class="FLFieldDB" >
+<property name="name" >
+<cstring>fdbPorcentajesRecargo789</cstring>
+</property>
+<property name="font" >
+<font>
+<bold>0</bold>
+</font>
+</property>
+<property name="fieldName" >
+<string>porcentajesrecargo789</string>
+</property>
+</widget>
+<spacer>
+<property name="name" >
+<cstring>spacerMod303_2</cstring>
+</property>
+<property name="orientation" >
+<enum>Vertical</enum>
+</property>
+<property name="sizeType" >
+<enum>Expanding</enum>
+</property>
+<property name="sizeHint" >
+<size>
+<width>51</width>
+<height>161</height>
+</size>
+</property>
+</spacer>
+</vbox>
+</widget>
+</hbox>
+</widget>
+</xupdate:insert-after>
+<xupdate:insert-after select="/UI[UI,1]/includehints[includehints,1]/includehint[flfielddb.h]" >
+<includehint>flfielddb.h</includehint>
+</xupdate:insert-after>
+<xupdate:insert-after select="/UI[UI,1]/includehints[includehints,1]/includehint[flfielddb.h]" >
+<includehint>flfielddb.h</includehint>
+</xupdate:insert-after>
+<xupdate:insert-after select="/UI[UI,1]/includehints[includehints,1]/includehint[flfielddb.h]" >
+<includehint>flfielddb.h</includehint>
+</xupdate:insert-after>
+<xupdate:insert-after select="/UI[UI,1]/includehints[includehints,1]/includehint[flfielddb.h]" >
+<includehint>flfielddb.h</includehint>
+</xupdate:insert-after>
+<xupdate:insert-after select="/UI[UI,1]/includehints[includehints,1]/includehint[flfielddb.h]" >
+<includehint>flfielddb.h</includehint>
+</xupdate:insert-after>
+<xupdate:insert-after select="/UI[UI,1]/includehints[includehints,1]/includehint[flfielddb.h]" >
+<includehint>flfielddb.h</includehint>
+</xupdate:insert-after>
+</xupdate:modifications>

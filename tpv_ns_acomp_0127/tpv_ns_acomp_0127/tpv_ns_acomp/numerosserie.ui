@@ -1,0 +1,68 @@
+<xupdate:modifications>
+<xupdate:update select="/UI[UI,1]/widget[QWidget,formNumerosSerie]/property[property,2]/rect[rect,1]/height[height,1]/text()[1]" >478</xupdate:update>
+<xupdate:insert-after select="/UI[UI,1]/widget[QWidget,formNumerosSerie]/vbox[vbox,1]/widget[QGroupBox,gbxVenta]/vbox[vbox,1]/property[property,1]" >
+<widget class="QLayoutWidget" >
+<property name="name" >
+<cstring>tlyComanda</cstring>
+</property>
+<hbox>
+<property name="name" >
+<cstring>unnamed</cstring>
+</property>
+<widget class="QLabel" >
+<property name="name" >
+<cstring>leComanda</cstring>
+</property>
+<property name="minimumSize" >
+<size>
+<width>300</width>
+<height>0</height>
+</size>
+</property>
+<property name="font" >
+<font>
+<bold>0</bold>
+</font>
+</property>
+<property name="text" >
+<string>Comanda TPV</string>
+</property>
+</widget>
+<widget class="QPushButton" >
+<property name="name" >
+<cstring>pbnVerComanda</cstring>
+</property>
+<property name="maximumSize" >
+<size>
+<width>32</width>
+<height>32</height>
+</size>
+</property>
+<property name="text" >
+<string/>
+</property>
+<property name="iconSet" >
+<iconset>tpv_ns_acompimage2</iconset>
+</property>
+</widget>
+<spacer>
+<property name="name" >
+<cstring>spcComanda</cstring>
+</property>
+<property name="orientation" >
+<enum>Horizontal</enum>
+</property>
+<property name="sizeType" >
+<enum>Expanding</enum>
+</property>
+<property name="sizeHint" >
+<size>
+<width>210</width>
+<height>20</height>
+</size>
+</property>
+</spacer>
+</hbox>
+</widget>
+</xupdate:insert-after>
+</xupdate:modifications>

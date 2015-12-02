@@ -1,0 +1,28 @@
+<flpatch:modifications name="anticipos" >
+    <flpatch:patchXml path="facturacion/facturacion/forms/" name="pedidoscli.ui" />
+    <flpatch:patchXml path="facturacion/facturacion/tables/" name="pedidoscli.mtd" />
+    <flpatch:patchXml path="facturacion/tesoreria/" name="flfactteso.xml" />
+    <flpatch:addFile path="facturacion/tesoreria/forms/" name="anticiposcli.ui" />
+    <flpatch:patchXml path="facturacion/tesoreria/forms/" name="reciboscli.ui" />
+    <flpatch:addFile path="facturacion/tesoreria/scripts/" name="anticiposcli.qs" />
+    <flpatch:patchScript path="facturacion/tesoreria/scripts/" name="flfactteso.qs" />
+    <flpatch:patchScript path="facturacion/tesoreria/scripts/" name="reciboscli.qs" />
+    <flpatch:addFile path="facturacion/tesoreria/tables/" name="anticiposcli.mtd" />
+    <flpatch:patchXml path="facturacion/tesoreria/tables/" name="reciboscli.mtd" />
+    <flpatch:patchXml path="facturacion/tesoreria/forms/" name="flfactteso.ui" />
+    <flpatch:patchXml path="facturacion/principal/tables/" name="clientes.mtd" />
+    <flpatch:patchXml path="facturacion/principal/tables/" name="ejercicios.mtd" />
+    <flpatch:patchXml path="facturacion/facturacion/forms/" name="albaranescli.ui" />
+    <flpatch:patchXml path="facturacion/tesoreria/forms/" name="masterreciboscli.ui" />
+    <flpatch:patchScript path="facturacion/tesoreria/scripts/" name="masterreciboscli.qs" />
+    <flpatch:addFile path="facturacion/tesoreria/forms/" name="masteranticipos.ui" />
+    <flpatch:addFile path="facturacion/tesoreria/scripts/" name="masteranticipos.qs" />
+    <flpatch:addFile path="facturacion/tesoreria/forms/" name="masteranticiposcli.ui" />
+    <flpatch:addFile path="facturacion/tesoreria/scripts/" name="masteranticiposcli.qs" />
+    <flpatch:patchXml path="facturacion/principal/forms/" name="clientes.ui" />
+    <flpatch:patchScript path="facturacion/principal/scripts/" name="clientes.qs" />
+    <flpatch:addFile path="facturacion/tesoreria/forms/" name="seleccionrecibosanticiposcli.ui" />
+    <flpatch:addFile path="facturacion/tesoreria/scripts/" name="seleccionrecibosanticiposcli.qs" />
+    <flpatch:patchXml path="contabilidad/principal/tables/" name="co_asientos.mtd" />
+    <flpatch:patchScript path="facturacion/facturacion/scripts/" name="flfacturac.qs" />
+</flpatch:modifications>

@@ -1,0 +1,26 @@
+<xupdate:modifications>
+<xupdate:insert-after select="/ACTIONS[ACTIONS,1]/action[pr_calendario]" >
+<action>
+<name>pr_ordenescorte</name>
+<alias>QT_TRANSLATE_NOOP(&quot;MetaData&quot;,&quot;Órdenes de corte&quot;)</alias>
+<description>QT_TRANSLATE_NOOP(&quot;MetaData&quot;,&quot;Estas órdenes se usan para solicitar el corte de telas con arreglo a los pedidos recibidos&quot;)</description>
+<table>pr_ordenesproduccion</table>
+<form>pr_masterordenescorte</form>
+<formrecord>pr_ordenesproduccion</formrecord>
+<scriptform>pr_masterordenescorte</scriptform>
+<scriptformrecord>pr_ordenescorte</scriptformrecord>
+</action>
+</xupdate:insert-after>
+<xupdate:insert-after select="/ACTIONS[ACTIONS,1]/action[pr_ordenescorte]" >
+<action>
+<name>pr_asociarordenesprod</name>
+<description>QT_TRANSLATE_NOOP(&quot;MetaData&quot;,&quot;Asociar Órdenes de Producción&quot;)</description>
+<alias>QT_TRANSLATE_NOOP(&quot;MetaData&quot;,&quot;Asociar órdenes de producción a órdenes de corte&quot;)</alias>
+<scriptform>pr_asociarordenesprod</scriptform>
+<scriptformrecord>pr_asociarordenesprod</scriptformrecord>
+<table>pr_asociarordenesprod</table>
+<form>pr_asociarordenesprod</form>
+<formrecord>pr_asociarordenesprod</formrecord>
+</action>
+</xupdate:insert-after>
+</xupdate:modifications>

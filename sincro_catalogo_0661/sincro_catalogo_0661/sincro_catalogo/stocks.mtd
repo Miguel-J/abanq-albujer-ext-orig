@@ -1,0 +1,34 @@
+<xupdate:modifications>
+<xupdate:insert-after select="/TMD[TMD,1]/field[stockmax]" >
+<field>
+<name>idsincro</name>
+<alias>QT_TRANSLATE_NOOP(&quot;MetaData&quot;,&quot;Id.Sincro&quot;)</alias>
+<null>true</null>
+<pk>false</pk>
+<type>string</type>
+<length>60</length>
+<unique>true</unique>
+<editable>false</editable>
+</field>
+</xupdate:insert-after>
+<xupdate:insert-after select="/TMD[TMD,1]/field[idsincro]" >
+<field>
+<name>fechaultmov</name>
+<alias>QT_TRANSLATE_NOOP(&quot;MetaData&quot;,&quot;Fecha Ult.Mov.&quot;)</alias>
+<null>true</null>
+<pk>false</pk>
+<type>date</type>
+<editable>false</editable>
+</field>
+</xupdate:insert-after>
+<xupdate:insert-after select="/TMD[TMD,1]/field[fechaultmov]" >
+<field>
+<name>horaultmov</name>
+<alias>QT_TRANSLATE_NOOP(&quot;MetaData&quot;,&quot;Hora Ult.Mov.&quot;)</alias>
+<null>true</null>
+<pk>false</pk>
+<type>time</type>
+<editable>false</editable>
+</field>
+</xupdate:insert-after>
+</xupdate:modifications>

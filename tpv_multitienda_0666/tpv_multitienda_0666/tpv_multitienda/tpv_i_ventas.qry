@@ -1,0 +1,35 @@
+<!DOCTYPE QRY>
+<QRY>
+	<name>tpv_i_ventas</name>
+
+	<tables>empresa,tpv_comandas,tpv_agentes,tpv_puntosventa,tpv_tiendas</tables>
+
+	<select>
+		empresa.nombre, empresa.cifnif, empresa.direccion,
+		empresa.ciudad, empresa.telefono,
+		tpv_comandas.idtpv_comanda, tpv_comandas.codigo,
+		tpv_comandas.fecha, tpv_comandas.codtpv_agente,
+		tpv_comandas.neto, tpv_comandas.totaliva, 
+		tpv_comandas.pagado, tpv_comandas.pendiente,
+		tpv_comandas.codtarifa,
+		tpv_comandas.hora,
+		tpv_comandas.total,
+		tpv_puntosventa.descripcion,
+		tpv_agentes.descripcion,
+		tpv_tiendas.codtienda, tpv_tiendas.descripcion
+	</select>
+
+	<from>
+		empresa, tpv_comandas 
+		LEFT OUTER JOIN tpv_agentes ON tpv_comandas.codtpv_agente = tpv_agentes.codtpv_agente
+		LEFT OUTER JOIN tpv_puntosventa ON tpv_comandas.codtpv_puntoventa = tpv_puntosventa.codtpv_puntoventa
+		INNER JOIN tpv_tiendas ON tpv_puntosventa.codtienda = tpv_tiendas.codtienda
+	</from>
+
+	<where>
+	</where>
+	
+	<order>
+		tpv_comandas.codigo
+	</order>
+</QRY>

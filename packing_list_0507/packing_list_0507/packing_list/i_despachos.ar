@@ -1,0 +1,3445 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ui version="4.0">
+ <class>formFacturasCli</class>
+ <widget class="QWidget" name="formFacturasCli">
+  <property name="geometry">
+   <rect>
+    <x>0</x>
+    <y>0</y>
+    <width>673</width>
+    <height>895</height>
+   </rect>
+  </property>
+  <property name="sizePolicy">
+   <sizepolicy hsizetype="Preferred" vsizetype="Preferred">
+    <horstretch>0</horstretch>
+    <verstretch>0</verstretch>
+   </sizepolicy>
+  </property>
+  <property name="windowTitle">
+   <string>Prueba de un informe</string>
+  </property>
+  <property name="autoFillBackground">
+   <bool>false</bool>
+  </property>
+  <property name="ChangeHeight" stdset="0">
+   <string/>
+  </property>
+  <widget class="QTabWidget" name="tabPrincipal">
+   <property name="geometry">
+    <rect>
+     <x>10</x>
+     <y>10</y>
+     <width>660</width>
+     <height>880</height>
+    </rect>
+   </property>
+   <property name="currentIndex">
+    <number>0</number>
+   </property>
+   <widget class="QWidget" name="tab">
+    <attribute name="title">
+     <string>Principal</string>
+    </attribute>
+    <widget class="rpDetailHeader" name="DetailHeader1_2" native="true">
+     <property name="geometry">
+      <rect>
+       <x>20</x>
+       <y>10</y>
+       <width>630</width>
+       <height>286</height>
+      </rect>
+     </property>
+     <property name="autoFillBackground">
+      <bool>false</bool>
+     </property>
+     <property name="styleSheet">
+      <string notr="true">background-color: rgb(255, 201, 169);</string>
+     </property>
+     <property name="Level" stdset="0">
+      <number>0</number>
+     </property>
+     <widget class="rpField" name="textLabel1_2_19">
+      <property name="geometry">
+       <rect>
+        <x>10</x>
+        <y>16</y>
+        <width>210</width>
+        <height>12</height>
+       </rect>
+      </property>
+      <property name="font">
+       <font>
+        <family>Arial Narrow</family>
+        <pointsize>11</pointsize>
+        <weight>75</weight>
+        <bold>true</bold>
+       </font>
+      </property>
+      <property name="styleSheet">
+       <string notr="true">background-color: rgb(255, 255, 255);</string>
+      </property>
+      <property name="text">
+       <string>nombre empresa</string>
+      </property>
+      <property name="wordWrap">
+       <bool>false</bool>
+      </property>
+      <property name="DataType" stdset="0">
+       <UInt>0</UInt>
+      </property>
+      <property name="Field" stdset="0">
+       <string>empresa.nombre</string>
+      </property>
+     </widget>
+     <widget class="rpField" name="textLabel1_2_20">
+      <property name="geometry">
+       <rect>
+        <x>10</x>
+        <y>40</y>
+        <width>210</width>
+        <height>12</height>
+       </rect>
+      </property>
+      <property name="font">
+       <font>
+        <family>Arial Narrow</family>
+        <pointsize>11</pointsize>
+        <weight>50</weight>
+        <bold>false</bold>
+       </font>
+      </property>
+      <property name="styleSheet">
+       <string notr="true">background-color: rgb(255, 255, 255);</string>
+      </property>
+      <property name="text">
+       <string>direccion y codpostal</string>
+      </property>
+      <property name="wordWrap">
+       <bool>false</bool>
+      </property>
+      <property name="DataType" stdset="0">
+       <UInt>0</UInt>
+      </property>
+      <property name="Field" stdset="0">
+       <string>empresa.direccion || '  ' || empresa.codpostal</string>
+      </property>
+     </widget>
+     <widget class="rpField" name="textLabel1_2_23">
+      <property name="geometry">
+       <rect>
+        <x>10</x>
+        <y>52</y>
+        <width>210</width>
+        <height>12</height>
+       </rect>
+      </property>
+      <property name="font">
+       <font>
+        <family>Arial Narrow</family>
+        <pointsize>11</pointsize>
+        <weight>50</weight>
+        <bold>false</bold>
+       </font>
+      </property>
+      <property name="styleSheet">
+       <string notr="true">background-color: rgb(255, 255, 255);</string>
+      </property>
+      <property name="text">
+       <string>ciudad y provincia</string>
+      </property>
+      <property name="wordWrap">
+       <bool>false</bool>
+      </property>
+      <property name="DataType" stdset="0">
+       <UInt>0</UInt>
+      </property>
+      <property name="Field" stdset="0">
+       <string>empresa.ciudad || '  ' || empresa.provincia</string>
+      </property>
+     </widget>
+     <widget class="rpField" name="textLabel1_2_24">
+      <property name="geometry">
+       <rect>
+        <x>10</x>
+        <y>28</y>
+        <width>210</width>
+        <height>12</height>
+       </rect>
+      </property>
+      <property name="font">
+       <font>
+        <family>Arial Narrow</family>
+        <pointsize>11</pointsize>
+        <weight>50</weight>
+        <bold>false</bold>
+       </font>
+      </property>
+      <property name="styleSheet">
+       <string notr="true">background-color: rgb(255, 255, 255);</string>
+      </property>
+      <property name="text">
+       <string>empresa cifnif</string>
+      </property>
+      <property name="wordWrap">
+       <bool>false</bool>
+      </property>
+      <property name="DataType" stdset="0">
+       <UInt>0</UInt>
+      </property>
+      <property name="Field" stdset="0">
+       <string>empresa.cifnif</string>
+      </property>
+     </widget>
+     <widget class="rpField" name="textLabel1_2_25">
+      <property name="geometry">
+       <rect>
+        <x>10</x>
+        <y>64</y>
+        <width>210</width>
+        <height>12</height>
+       </rect>
+      </property>
+      <property name="font">
+       <font>
+        <family>Arial Narrow</family>
+        <pointsize>11</pointsize>
+        <weight>50</weight>
+        <bold>false</bold>
+       </font>
+      </property>
+      <property name="styleSheet">
+       <string notr="true">background-color: rgb(255, 255, 255);</string>
+      </property>
+      <property name="text">
+       <string>pais</string>
+      </property>
+      <property name="wordWrap">
+       <bool>false</bool>
+      </property>
+      <property name="DataType" stdset="0">
+       <UInt>0</UInt>
+      </property>
+      <property name="Field" stdset="0">
+       <string>empresa.codpais</string>
+      </property>
+     </widget>
+     <widget class="QLabel" name="textLabel1_2_27">
+      <property name="geometry">
+       <rect>
+        <x>10</x>
+        <y>76</y>
+        <width>20</width>
+        <height>12</height>
+       </rect>
+      </property>
+      <property name="font">
+       <font>
+        <family>Arial Narrow</family>
+        <pointsize>11</pointsize>
+        <weight>50</weight>
+        <bold>false</bold>
+       </font>
+      </property>
+      <property name="styleSheet">
+       <string notr="true">background-color: rgb(255, 255, 255);</string>
+      </property>
+      <property name="text">
+       <string>Telf.</string>
+      </property>
+      <property name="wordWrap">
+       <bool>false</bool>
+      </property>
+      <property name="DataType" stdset="0">
+       <UInt>0</UInt>
+      </property>
+      <property name="Field" stdset="0">
+       <string>ofertaprov.codigo</string>
+      </property>
+     </widget>
+     <widget class="rpField" name="textLabel1_2_28">
+      <property name="geometry">
+       <rect>
+        <x>30</x>
+        <y>76</y>
+        <width>80</width>
+        <height>12</height>
+       </rect>
+      </property>
+      <property name="font">
+       <font>
+        <family>Arial Narrow</family>
+        <pointsize>11</pointsize>
+        <weight>50</weight>
+        <bold>false</bold>
+       </font>
+      </property>
+      <property name="styleSheet">
+       <string notr="true">background-color: rgb(255, 255, 255);</string>
+      </property>
+      <property name="text">
+       <string>telefono</string>
+      </property>
+      <property name="wordWrap">
+       <bool>false</bool>
+      </property>
+      <property name="DataType" stdset="0">
+       <UInt>0</UInt>
+      </property>
+      <property name="Field" stdset="0">
+       <string>empresa.telefono</string>
+      </property>
+     </widget>
+     <widget class="rpField" name="textLabel1_2_29">
+      <property name="geometry">
+       <rect>
+        <x>130</x>
+        <y>76</y>
+        <width>90</width>
+        <height>12</height>
+       </rect>
+      </property>
+      <property name="font">
+       <font>
+        <family>Arial Narrow</family>
+        <pointsize>11</pointsize>
+        <weight>50</weight>
+        <bold>false</bold>
+       </font>
+      </property>
+      <property name="styleSheet">
+       <string notr="true">background-color: rgb(255, 255, 255);</string>
+      </property>
+      <property name="text">
+       <string>fax</string>
+      </property>
+      <property name="wordWrap">
+       <bool>false</bool>
+      </property>
+      <property name="DataType" stdset="0">
+       <UInt>0</UInt>
+      </property>
+      <property name="Field" stdset="0">
+       <string>empresa.fax</string>
+      </property>
+     </widget>
+     <widget class="QLabel" name="textLabel1_2_30">
+      <property name="geometry">
+       <rect>
+        <x>110</x>
+        <y>76</y>
+        <width>20</width>
+        <height>12</height>
+       </rect>
+      </property>
+      <property name="font">
+       <font>
+        <family>Arial Narrow</family>
+        <pointsize>11</pointsize>
+        <weight>50</weight>
+        <bold>false</bold>
+       </font>
+      </property>
+      <property name="styleSheet">
+       <string notr="true">background-color: rgb(255, 255, 255);</string>
+      </property>
+      <property name="text">
+       <string>Fax.</string>
+      </property>
+      <property name="wordWrap">
+       <bool>false</bool>
+      </property>
+      <property name="DataType" stdset="0">
+       <UInt>0</UInt>
+      </property>
+      <property name="Field" stdset="0">
+       <string>ofertaprov.codigo</string>
+      </property>
+     </widget>
+     <widget class="QLabel" name="textLabel1_2_31">
+      <property name="geometry">
+       <rect>
+        <x>10</x>
+        <y>88</y>
+        <width>40</width>
+        <height>12</height>
+       </rect>
+      </property>
+      <property name="font">
+       <font>
+        <family>Arial Narrow</family>
+        <pointsize>11</pointsize>
+        <weight>50</weight>
+        <bold>false</bold>
+       </font>
+      </property>
+      <property name="styleSheet">
+       <string notr="true">background-color: rgb(255, 255, 255);</string>
+      </property>
+      <property name="text">
+       <string>e-mail:</string>
+      </property>
+      <property name="wordWrap">
+       <bool>false</bool>
+      </property>
+      <property name="DataType" stdset="0">
+       <UInt>0</UInt>
+      </property>
+      <property name="Field" stdset="0">
+       <string>ofertaprov.codigo</string>
+      </property>
+     </widget>
+     <widget class="rpField" name="textLabel1_2_34">
+      <property name="geometry">
+       <rect>
+        <x>50</x>
+        <y>88</y>
+        <width>170</width>
+        <height>12</height>
+       </rect>
+      </property>
+      <property name="font">
+       <font>
+        <family>Arial Narrow</family>
+        <pointsize>11</pointsize>
+        <weight>50</weight>
+        <bold>false</bold>
+       </font>
+      </property>
+      <property name="styleSheet">
+       <string notr="true">background-color: rgb(255, 255, 255);</string>
+      </property>
+      <property name="text">
+       <string>email</string>
+      </property>
+      <property name="wordWrap">
+       <bool>false</bool>
+      </property>
+      <property name="DataType" stdset="0">
+       <UInt>0</UInt>
+      </property>
+      <property name="Field" stdset="0">
+       <string>empresa.email</string>
+      </property>
+     </widget>
+     <widget class="rpField" name="textLabel1_2_35">
+      <property name="geometry">
+       <rect>
+        <x>10</x>
+        <y>135</y>
+        <width>180</width>
+        <height>15</height>
+       </rect>
+      </property>
+      <property name="font">
+       <font>
+        <family>Arial Narrow</family>
+        <pointsize>11</pointsize>
+        <weight>50</weight>
+        <bold>false</bold>
+       </font>
+      </property>
+      <property name="styleSheet">
+       <string notr="true">background-color: rgb(255, 255, 255);</string>
+      </property>
+      <property name="text">
+       <string>nombre cliente</string>
+      </property>
+      <property name="wordWrap">
+       <bool>false</bool>
+      </property>
+      <property name="DataType" stdset="0">
+       <UInt>0</UInt>
+      </property>
+      <property name="Field" stdset="0">
+       <string>clientes.nombre</string>
+      </property>
+     </widget>
+     <widget class="QLabel" name="textLabel1_2_36">
+      <property name="geometry">
+       <rect>
+        <x>10</x>
+        <y>120</y>
+        <width>100</width>
+        <height>15</height>
+       </rect>
+      </property>
+      <property name="font">
+       <font>
+        <family>Arial Narrow</family>
+        <pointsize>11</pointsize>
+        <weight>75</weight>
+        <bold>true</bold>
+       </font>
+      </property>
+      <property name="styleSheet">
+       <string notr="true">background-color: rgb(255, 255, 255);</string>
+      </property>
+      <property name="text">
+       <string>Cliente / Client:</string>
+      </property>
+      <property name="wordWrap">
+       <bool>false</bool>
+      </property>
+      <property name="DataType" stdset="0">
+       <UInt>0</UInt>
+      </property>
+      <property name="Field" stdset="0">
+       <string>ofertaprov.codigo</string>
+      </property>
+     </widget>
+     <widget class="rpField" name="textLabel1_2_37">
+      <property name="geometry">
+       <rect>
+        <x>10</x>
+        <y>150</y>
+        <width>180</width>
+        <height>15</height>
+       </rect>
+      </property>
+      <property name="font">
+       <font>
+        <family>Arial Narrow</family>
+        <pointsize>11</pointsize>
+        <weight>50</weight>
+        <bold>false</bold>
+       </font>
+      </property>
+      <property name="styleSheet">
+       <string notr="true">background-color: rgb(255, 255, 255);</string>
+      </property>
+      <property name="text">
+       <string>cifnif cliente</string>
+      </property>
+      <property name="wordWrap">
+       <bool>false</bool>
+      </property>
+      <property name="DataType" stdset="0">
+       <UInt>0</UInt>
+      </property>
+      <property name="Field" stdset="0">
+       <string>clientes.cifnif</string>
+      </property>
+     </widget>
+     <widget class="rpField" name="textLabel1_2_38">
+      <property name="geometry">
+       <rect>
+        <x>10</x>
+        <y>165</y>
+        <width>180</width>
+        <height>15</height>
+       </rect>
+      </property>
+      <property name="font">
+       <font>
+        <family>Arial Narrow</family>
+        <pointsize>11</pointsize>
+        <weight>50</weight>
+        <bold>false</bold>
+       </font>
+      </property>
+      <property name="styleSheet">
+       <string notr="true">background-color: rgb(255, 255, 255);</string>
+      </property>
+      <property name="text">
+       <string>direccion</string>
+      </property>
+      <property name="wordWrap">
+       <bool>false</bool>
+      </property>
+      <property name="DataType" stdset="0">
+       <UInt>0</UInt>
+      </property>
+      <property name="Field" stdset="0">
+       <string>df.direccion</string>
+      </property>
+     </widget>
+     <widget class="rpField" name="textLabel1_2_39">
+      <property name="geometry">
+       <rect>
+        <x>10</x>
+        <y>180</y>
+        <width>180</width>
+        <height>15</height>
+       </rect>
+      </property>
+      <property name="font">
+       <font>
+        <family>Arial Narrow</family>
+        <pointsize>11</pointsize>
+        <weight>50</weight>
+        <bold>false</bold>
+       </font>
+      </property>
+      <property name="styleSheet">
+       <string notr="true">background-color: rgb(255, 255, 255);</string>
+      </property>
+      <property name="text">
+       <string>ciudad y provincia</string>
+      </property>
+      <property name="wordWrap">
+       <bool>false</bool>
+      </property>
+      <property name="DataType" stdset="0">
+       <UInt>0</UInt>
+      </property>
+      <property name="Field" stdset="0">
+       <string>df.ciudad || '  ' || df.provincia</string>
+      </property>
+     </widget>
+     <widget class="rpField" name="textLabel1_2_40">
+      <property name="geometry">
+       <rect>
+        <x>50</x>
+        <y>225</y>
+        <width>140</width>
+        <height>15</height>
+       </rect>
+      </property>
+      <property name="font">
+       <font>
+        <family>Arial Narrow</family>
+        <pointsize>11</pointsize>
+        <weight>50</weight>
+        <bold>false</bold>
+       </font>
+      </property>
+      <property name="styleSheet">
+       <string notr="true">background-color: rgb(255, 255, 255);</string>
+      </property>
+      <property name="text">
+       <string>email</string>
+      </property>
+      <property name="wordWrap">
+       <bool>false</bool>
+      </property>
+      <property name="DataType" stdset="0">
+       <UInt>0</UInt>
+      </property>
+      <property name="Field" stdset="0">
+       <string>clientes.email</string>
+      </property>
+     </widget>
+     <widget class="rpField" name="textLabel1_2_45">
+      <property name="geometry">
+       <rect>
+        <x>30</x>
+        <y>210</y>
+        <width>70</width>
+        <height>15</height>
+       </rect>
+      </property>
+      <property name="font">
+       <font>
+        <family>Arial Narrow</family>
+        <pointsize>11</pointsize>
+        <weight>50</weight>
+        <bold>false</bold>
+       </font>
+      </property>
+      <property name="styleSheet">
+       <string notr="true">background-color: rgb(255, 255, 255);</string>
+      </property>
+      <property name="text">
+       <string>telefono</string>
+      </property>
+      <property name="wordWrap">
+       <bool>false</bool>
+      </property>
+      <property name="DataType" stdset="0">
+       <UInt>0</UInt>
+      </property>
+      <property name="Field" stdset="0">
+       <string>clientes.telefono1</string>
+      </property>
+     </widget>
+     <widget class="QLabel" name="textLabel1_2_46">
+      <property name="geometry">
+       <rect>
+        <x>100</x>
+        <y>210</y>
+        <width>20</width>
+        <height>15</height>
+       </rect>
+      </property>
+      <property name="font">
+       <font>
+        <family>Arial Narrow</family>
+        <pointsize>11</pointsize>
+        <weight>50</weight>
+        <bold>false</bold>
+       </font>
+      </property>
+      <property name="styleSheet">
+       <string notr="true">background-color: rgb(255, 255, 255);</string>
+      </property>
+      <property name="text">
+       <string>Fax.</string>
+      </property>
+      <property name="wordWrap">
+       <bool>false</bool>
+      </property>
+      <property name="DataType" stdset="0">
+       <UInt>0</UInt>
+      </property>
+      <property name="Field" stdset="0">
+       <string>ofertaprov.codigo</string>
+      </property>
+     </widget>
+     <widget class="rpField" name="textLabel1_2_47">
+      <property name="geometry">
+       <rect>
+        <x>120</x>
+        <y>210</y>
+        <width>70</width>
+        <height>15</height>
+       </rect>
+      </property>
+      <property name="font">
+       <font>
+        <family>Arial Narrow</family>
+        <pointsize>11</pointsize>
+        <weight>50</weight>
+        <bold>false</bold>
+       </font>
+      </property>
+      <property name="styleSheet">
+       <string notr="true">background-color: rgb(255, 255, 255);</string>
+      </property>
+      <property name="text">
+       <string>fax</string>
+      </property>
+      <property name="wordWrap">
+       <bool>false</bool>
+      </property>
+      <property name="DataType" stdset="0">
+       <UInt>0</UInt>
+      </property>
+      <property name="Field" stdset="0">
+       <string>clientes.fax</string>
+      </property>
+     </widget>
+     <widget class="QLabel" name="textLabel1_2_48">
+      <property name="geometry">
+       <rect>
+        <x>10</x>
+        <y>225</y>
+        <width>40</width>
+        <height>15</height>
+       </rect>
+      </property>
+      <property name="font">
+       <font>
+        <family>Arial Narrow</family>
+        <pointsize>11</pointsize>
+        <weight>50</weight>
+        <bold>false</bold>
+       </font>
+      </property>
+      <property name="styleSheet">
+       <string notr="true">background-color: rgb(255, 255, 255);</string>
+      </property>
+      <property name="text">
+       <string>e-mail:</string>
+      </property>
+      <property name="wordWrap">
+       <bool>false</bool>
+      </property>
+      <property name="DataType" stdset="0">
+       <UInt>0</UInt>
+      </property>
+      <property name="Field" stdset="0">
+       <string>ofertaprov.codigo</string>
+      </property>
+     </widget>
+     <widget class="rpField" name="textLabel1_2_49">
+      <property name="geometry">
+       <rect>
+        <x>10</x>
+        <y>195</y>
+        <width>180</width>
+        <height>15</height>
+       </rect>
+      </property>
+      <property name="font">
+       <font>
+        <family>Arial Narrow</family>
+        <pointsize>11</pointsize>
+        <weight>50</weight>
+        <bold>false</bold>
+       </font>
+      </property>
+      <property name="styleSheet">
+       <string notr="true">background-color: rgb(255, 255, 255);</string>
+      </property>
+      <property name="text">
+       <string>pais</string>
+      </property>
+      <property name="wordWrap">
+       <bool>false</bool>
+      </property>
+      <property name="DataType" stdset="0">
+       <UInt>0</UInt>
+      </property>
+      <property name="Field" stdset="0">
+       <string>pf.nombre</string>
+      </property>
+     </widget>
+     <widget class="QLabel" name="textLabel1_2_50">
+      <property name="geometry">
+       <rect>
+        <x>10</x>
+        <y>210</y>
+        <width>20</width>
+        <height>15</height>
+       </rect>
+      </property>
+      <property name="font">
+       <font>
+        <family>Arial Narrow</family>
+        <pointsize>11</pointsize>
+        <weight>50</weight>
+        <bold>false</bold>
+       </font>
+      </property>
+      <property name="styleSheet">
+       <string notr="true">background-color: rgb(255, 255, 255);</string>
+      </property>
+      <property name="text">
+       <string>Telf.</string>
+      </property>
+      <property name="wordWrap">
+       <bool>false</bool>
+      </property>
+      <property name="DataType" stdset="0">
+       <UInt>0</UInt>
+      </property>
+      <property name="Field" stdset="0">
+       <string>ofertaprov.codigo</string>
+      </property>
+     </widget>
+     <widget class="QLabel" name="textLabel1_2_51">
+      <property name="geometry">
+       <rect>
+        <x>490</x>
+        <y>190</y>
+        <width>20</width>
+        <height>15</height>
+       </rect>
+      </property>
+      <property name="font">
+       <font>
+        <family>Arial Narrow</family>
+        <pointsize>11</pointsize>
+        <weight>50</weight>
+        <bold>false</bold>
+       </font>
+      </property>
+      <property name="styleSheet">
+       <string notr="true">background-color: rgb(255, 255, 255);</string>
+      </property>
+      <property name="text">
+       <string>Fax.</string>
+      </property>
+      <property name="wordWrap">
+       <bool>false</bool>
+      </property>
+      <property name="DataType" stdset="0">
+       <UInt>0</UInt>
+      </property>
+      <property name="Field" stdset="0">
+       <string>ofertaprov.codigo</string>
+      </property>
+     </widget>
+     <widget class="rpField" name="textLabel1_2_52">
+      <property name="geometry">
+       <rect>
+        <x>380</x>
+        <y>145</y>
+        <width>230</width>
+        <height>15</height>
+       </rect>
+      </property>
+      <property name="font">
+       <font>
+        <family>Arial Narrow</family>
+        <pointsize>11</pointsize>
+        <weight>50</weight>
+        <bold>false</bold>
+       </font>
+      </property>
+      <property name="styleSheet">
+       <string notr="true">background-color: rgb(255, 255, 255);</string>
+      </property>
+      <property name="text">
+       <string>direccion</string>
+      </property>
+      <property name="wordWrap">
+       <bool>false</bool>
+      </property>
+      <property name="DataType" stdset="0">
+       <UInt>0</UInt>
+      </property>
+      <property name="Field" stdset="0">
+       <string>de.direccion</string>
+      </property>
+     </widget>
+     <widget class="QLabel" name="textLabel1_2_54">
+      <property name="geometry">
+       <rect>
+        <x>380</x>
+        <y>190</y>
+        <width>20</width>
+        <height>16</height>
+       </rect>
+      </property>
+      <property name="font">
+       <font>
+        <family>Arial Narrow</family>
+        <pointsize>11</pointsize>
+        <weight>50</weight>
+        <bold>false</bold>
+       </font>
+      </property>
+      <property name="styleSheet">
+       <string notr="true">background-color: rgb(255, 255, 255);</string>
+      </property>
+      <property name="text">
+       <string>Telf.</string>
+      </property>
+      <property name="wordWrap">
+       <bool>false</bool>
+      </property>
+      <property name="DataType" stdset="0">
+       <UInt>0</UInt>
+      </property>
+      <property name="Field" stdset="0">
+       <string>ofertaprov.codigo</string>
+      </property>
+     </widget>
+     <widget class="rpField" name="textLabel1_2_55">
+      <property name="geometry">
+       <rect>
+        <x>400</x>
+        <y>190</y>
+        <width>90</width>
+        <height>15</height>
+       </rect>
+      </property>
+      <property name="font">
+       <font>
+        <family>Arial Narrow</family>
+        <pointsize>11</pointsize>
+        <weight>50</weight>
+        <bold>false</bold>
+       </font>
+      </property>
+      <property name="styleSheet">
+       <string notr="true">background-color: rgb(255, 255, 255);</string>
+      </property>
+      <property name="text">
+       <string>telefono</string>
+      </property>
+      <property name="wordWrap">
+       <bool>false</bool>
+      </property>
+      <property name="DataType" stdset="0">
+       <UInt>0</UInt>
+      </property>
+      <property name="Field" stdset="0">
+       <string>clientes.telefono1</string>
+      </property>
+     </widget>
+     <widget class="rpField" name="textLabel1_2_56">
+      <property name="geometry">
+       <rect>
+        <x>420</x>
+        <y>205</y>
+        <width>190</width>
+        <height>15</height>
+       </rect>
+      </property>
+      <property name="font">
+       <font>
+        <family>Arial Narrow</family>
+        <pointsize>11</pointsize>
+        <weight>50</weight>
+        <bold>false</bold>
+       </font>
+      </property>
+      <property name="styleSheet">
+       <string notr="true">background-color: rgb(255, 255, 255);</string>
+      </property>
+      <property name="text">
+       <string>email</string>
+      </property>
+      <property name="wordWrap">
+       <bool>false</bool>
+      </property>
+      <property name="DataType" stdset="0">
+       <UInt>0</UInt>
+      </property>
+      <property name="Field" stdset="0">
+       <string>clientes.email</string>
+      </property>
+     </widget>
+     <widget class="rpField" name="textLabel1_2_57">
+      <property name="geometry">
+       <rect>
+        <x>380</x>
+        <y>130</y>
+        <width>230</width>
+        <height>15</height>
+       </rect>
+      </property>
+      <property name="font">
+       <font>
+        <family>Arial Narrow</family>
+        <pointsize>11</pointsize>
+        <weight>50</weight>
+        <bold>false</bold>
+       </font>
+      </property>
+      <property name="styleSheet">
+       <string notr="true">background-color: rgb(255, 255, 255);</string>
+      </property>
+      <property name="text">
+       <string>nombre cliente</string>
+      </property>
+      <property name="wordWrap">
+       <bool>false</bool>
+      </property>
+      <property name="DataType" stdset="0">
+       <UInt>0</UInt>
+      </property>
+      <property name="Field" stdset="0">
+       <string>clientes.nombre</string>
+      </property>
+     </widget>
+     <widget class="rpField" name="textLabel1_2_58">
+      <property name="geometry">
+       <rect>
+        <x>380</x>
+        <y>175</y>
+        <width>230</width>
+        <height>15</height>
+       </rect>
+      </property>
+      <property name="font">
+       <font>
+        <family>Arial Narrow</family>
+        <pointsize>11</pointsize>
+        <weight>50</weight>
+        <bold>false</bold>
+       </font>
+      </property>
+      <property name="styleSheet">
+       <string notr="true">background-color: rgb(255, 255, 255);</string>
+      </property>
+      <property name="text">
+       <string>pais</string>
+      </property>
+      <property name="wordWrap">
+       <bool>false</bool>
+      </property>
+      <property name="DataType" stdset="0">
+       <UInt>0</UInt>
+      </property>
+      <property name="Field" stdset="0">
+       <string>pe.nombre</string>
+      </property>
+     </widget>
+     <widget class="QLabel" name="textLabel1_2_59">
+      <property name="geometry">
+       <rect>
+        <x>380</x>
+        <y>205</y>
+        <width>40</width>
+        <height>15</height>
+       </rect>
+      </property>
+      <property name="font">
+       <font>
+        <family>Arial Narrow</family>
+        <pointsize>11</pointsize>
+        <weight>50</weight>
+        <bold>false</bold>
+       </font>
+      </property>
+      <property name="styleSheet">
+       <string notr="true">background-color: rgb(255, 255, 255);</string>
+      </property>
+      <property name="text">
+       <string>e-mail:</string>
+      </property>
+      <property name="wordWrap">
+       <bool>false</bool>
+      </property>
+      <property name="DataType" stdset="0">
+       <UInt>0</UInt>
+      </property>
+      <property name="Field" stdset="0">
+       <string>ofertaprov.codigo</string>
+      </property>
+     </widget>
+     <widget class="rpField" name="textLabel1_2_60">
+      <property name="geometry">
+       <rect>
+        <x>380</x>
+        <y>160</y>
+        <width>230</width>
+        <height>15</height>
+       </rect>
+      </property>
+      <property name="font">
+       <font>
+        <family>Arial Narrow</family>
+        <pointsize>11</pointsize>
+        <weight>50</weight>
+        <bold>false</bold>
+       </font>
+      </property>
+      <property name="styleSheet">
+       <string notr="true">background-color: rgb(255, 255, 255);</string>
+      </property>
+      <property name="text">
+       <string>ciudad y provincia</string>
+      </property>
+      <property name="wordWrap">
+       <bool>false</bool>
+      </property>
+      <property name="DataType" stdset="0">
+       <UInt>0</UInt>
+      </property>
+      <property name="Field" stdset="0">
+       <string>de.ciudad || '  ' || de.provincia</string>
+      </property>
+     </widget>
+     <widget class="QLabel" name="textLabel1_2_61">
+      <property name="geometry">
+       <rect>
+        <x>380</x>
+        <y>115</y>
+        <width>230</width>
+        <height>15</height>
+       </rect>
+      </property>
+      <property name="font">
+       <font>
+        <family>Arial Narrow</family>
+        <pointsize>11</pointsize>
+        <weight>75</weight>
+        <bold>true</bold>
+       </font>
+      </property>
+      <property name="styleSheet">
+       <string notr="true">background-color: rgb(255, 255, 255);</string>
+      </property>
+      <property name="text">
+       <string>Direccion de envio / Delivery Address:</string>
+      </property>
+      <property name="wordWrap">
+       <bool>false</bool>
+      </property>
+      <property name="DataType" stdset="0">
+       <UInt>0</UInt>
+      </property>
+      <property name="Field" stdset="0">
+       <string>ofertaprov.codigo</string>
+      </property>
+     </widget>
+     <widget class="rpField" name="textLabel1_2_63">
+      <property name="geometry">
+       <rect>
+        <x>510</x>
+        <y>190</y>
+        <width>100</width>
+        <height>15</height>
+       </rect>
+      </property>
+      <property name="font">
+       <font>
+        <family>Arial Narrow</family>
+        <pointsize>11</pointsize>
+        <weight>50</weight>
+        <bold>false</bold>
+       </font>
+      </property>
+      <property name="styleSheet">
+       <string notr="true">background-color: rgb(255, 255, 255);</string>
+      </property>
+      <property name="text">
+       <string>fax</string>
+      </property>
+      <property name="wordWrap">
+       <bool>false</bool>
+      </property>
+      <property name="DataType" stdset="0">
+       <UInt>0</UInt>
+      </property>
+      <property name="Field" stdset="0">
+       <string>clientes.fax</string>
+      </property>
+     </widget>
+     <widget class="QLabel" name="textLabel1_2_62">
+      <property name="geometry">
+       <rect>
+        <x>380</x>
+        <y>5</y>
+        <width>80</width>
+        <height>12</height>
+       </rect>
+      </property>
+      <property name="font">
+       <font>
+        <family>Arial Narrow</family>
+        <pointsize>11</pointsize>
+        <weight>75</weight>
+        <bold>true</bold>
+       </font>
+      </property>
+      <property name="styleSheet">
+       <string notr="true">background-color: rgb(255, 255, 255);</string>
+      </property>
+      <property name="text">
+       <string>Fecha / Date:</string>
+      </property>
+      <property name="wordWrap">
+       <bool>false</bool>
+      </property>
+      <property name="DataType" stdset="0">
+       <UInt>0</UInt>
+      </property>
+      <property name="Field" stdset="0">
+       <string>empresa.nombre</string>
+      </property>
+     </widget>
+     <widget class="rpField" name="textLabel1_2_64">
+      <property name="geometry">
+       <rect>
+        <x>470</x>
+        <y>5</y>
+        <width>110</width>
+        <height>12</height>
+       </rect>
+      </property>
+      <property name="font">
+       <font>
+        <family>Arial Narrow</family>
+        <pointsize>11</pointsize>
+        <weight>50</weight>
+        <bold>false</bold>
+       </font>
+      </property>
+      <property name="styleSheet">
+       <string notr="true">background-color: rgb(255, 255, 255);</string>
+      </property>
+      <property name="text">
+       <string>fecha</string>
+      </property>
+      <property name="wordWrap">
+       <bool>false</bool>
+      </property>
+      <property name="DataType" stdset="0">
+       <UInt>3</UInt>
+      </property>
+      <property name="Field" stdset="0">
+       <string>despachos.fecha</string>
+      </property>
+      <property name="DateFormat" stdset="0">
+       <string>19</string>
+      </property>
+     </widget>
+     <widget class="QLabel" name="textLabel1_2_65">
+      <property name="geometry">
+       <rect>
+        <x>380</x>
+        <y>30</y>
+        <width>120</width>
+        <height>15</height>
+       </rect>
+      </property>
+      <property name="font">
+       <font>
+        <family>Arial Narrow</family>
+        <pointsize>11</pointsize>
+        <weight>75</weight>
+        <bold>true</bold>
+       </font>
+      </property>
+      <property name="styleSheet">
+       <string notr="true">background-color: rgb(255, 255, 255);</string>
+      </property>
+      <property name="text">
+       <string>NoCliente / Client No:</string>
+      </property>
+      <property name="wordWrap">
+       <bool>false</bool>
+      </property>
+      <property name="DataType" stdset="0">
+       <UInt>0</UInt>
+      </property>
+      <property name="Field" stdset="0">
+       <string>empresa.ciudad || '  ' || empresa.provincia</string>
+      </property>
+     </widget>
+     <widget class="rpField" name="textLabel1_2_15">
+      <property name="geometry">
+       <rect>
+        <x>200</x>
+        <y>245</y>
+        <width>210</width>
+        <height>16</height>
+       </rect>
+      </property>
+      <property name="font">
+       <font>
+        <family>Arial Narrow</family>
+        <pointsize>9</pointsize>
+        <weight>50</weight>
+        <bold>false</bold>
+       </font>
+      </property>
+      <property name="styleSheet">
+       <string notr="true">background-color: rgb(255, 255, 255);</string>
+      </property>
+      <property name="text">
+       <string>codigo</string>
+      </property>
+      <property name="alignment">
+       <set>Qt::AlignCenter</set>
+      </property>
+      <property name="wordWrap">
+       <bool>false</bool>
+      </property>
+      <property name="DataType" stdset="0">
+       <UInt>0</UInt>
+      </property>
+      <property name="Field" stdset="0">
+       <string>despachos.coddespacho</string>
+      </property>
+     </widget>
+     <widget class="QLabel" name="textLabel1_2_80">
+      <property name="geometry">
+       <rect>
+        <x>10</x>
+        <y>265</y>
+        <width>30</width>
+        <height>20</height>
+       </rect>
+      </property>
+      <property name="font">
+       <font>
+        <family>Arial</family>
+        <pointsize>10</pointsize>
+        <weight>75</weight>
+        <bold>true</bold>
+       </font>
+      </property>
+      <property name="styleSheet">
+       <string notr="true">background-color: rgb(218, 218, 218);</string>
+      </property>
+      <property name="text">
+       <string>Item</string>
+      </property>
+      <property name="alignment">
+       <set>Qt::AlignHCenter|Qt::AlignTop</set>
+      </property>
+      <property name="wordWrap">
+       <bool>false</bool>
+      </property>
+     </widget>
+     <widget class="QLabel" name="textLabel1_2_81">
+      <property name="geometry">
+       <rect>
+        <x>174</x>
+        <y>265</y>
+        <width>100</width>
+        <height>20</height>
+       </rect>
+      </property>
+      <property name="font">
+       <font>
+        <family>Arial</family>
+        <pointsize>10</pointsize>
+        <weight>75</weight>
+        <bold>true</bold>
+       </font>
+      </property>
+      <property name="styleSheet">
+       <string notr="true">background-color: rgb(218, 218, 218);</string>
+      </property>
+      <property name="text">
+       <string>Referencia</string>
+      </property>
+      <property name="alignment">
+       <set>Qt::AlignHCenter|Qt::AlignTop</set>
+      </property>
+      <property name="wordWrap">
+       <bool>false</bool>
+      </property>
+     </widget>
+     <widget class="QLabel" name="textLabel1_2_82">
+      <property name="geometry">
+       <rect>
+        <x>274</x>
+        <y>265</y>
+        <width>170</width>
+        <height>20</height>
+       </rect>
+      </property>
+      <property name="font">
+       <font>
+        <family>Arial</family>
+        <pointsize>10</pointsize>
+        <weight>75</weight>
+        <bold>true</bold>
+       </font>
+      </property>
+      <property name="styleSheet">
+       <string notr="true">background-color: rgb(218, 218, 218);</string>
+      </property>
+      <property name="text">
+       <string>Descripcion/Description</string>
+      </property>
+      <property name="alignment">
+       <set>Qt::AlignHCenter|Qt::AlignTop</set>
+      </property>
+      <property name="wordWrap">
+       <bool>false</bool>
+      </property>
+     </widget>
+     <widget class="QLabel" name="textLabel1_2_87">
+      <property name="geometry">
+       <rect>
+        <x>443</x>
+        <y>265</y>
+        <width>64</width>
+        <height>20</height>
+       </rect>
+      </property>
+      <property name="font">
+       <font>
+        <family>Arial</family>
+        <pointsize>10</pointsize>
+        <weight>75</weight>
+        <bold>true</bold>
+       </font>
+      </property>
+      <property name="styleSheet">
+       <string notr="true">background-color: rgb(218, 218, 218);</string>
+      </property>
+      <property name="text">
+       <string>Cant./ Qry</string>
+      </property>
+      <property name="alignment">
+       <set>Qt::AlignLeading|Qt::AlignLeft|Qt::AlignTop</set>
+      </property>
+      <property name="wordWrap">
+       <bool>false</bool>
+      </property>
+     </widget>
+     <widget class="QLabel" name="textLabel1_2_88">
+      <property name="geometry">
+       <rect>
+        <x>507</x>
+        <y>265</y>
+        <width>53</width>
+        <height>20</height>
+       </rect>
+      </property>
+      <property name="font">
+       <font>
+        <family>Arial</family>
+        <pointsize>10</pointsize>
+        <weight>75</weight>
+        <bold>true</bold>
+       </font>
+      </property>
+      <property name="styleSheet">
+       <string notr="true">background-color: rgb(218, 218, 218);</string>
+      </property>
+      <property name="text">
+       <string>Ud./ Unit</string>
+      </property>
+      <property name="alignment">
+       <set>Qt::AlignLeading|Qt::AlignLeft|Qt::AlignTop</set>
+      </property>
+      <property name="wordWrap">
+       <bool>false</bool>
+      </property>
+     </widget>
+     <widget class="QLabel" name="textLabel1_2_89">
+      <property name="geometry">
+       <rect>
+        <x>560</x>
+        <y>265</y>
+        <width>50</width>
+        <height>20</height>
+       </rect>
+      </property>
+      <property name="font">
+       <font>
+        <family>Arial</family>
+        <pointsize>10</pointsize>
+        <weight>75</weight>
+        <bold>true</bold>
+       </font>
+      </property>
+      <property name="styleSheet">
+       <string notr="true">background-color: rgb(218, 218, 218);</string>
+      </property>
+      <property name="text">
+       <string>NoPU</string>
+      </property>
+      <property name="alignment">
+       <set>Qt::AlignHCenter|Qt::AlignTop</set>
+      </property>
+      <property name="wordWrap">
+       <bool>false</bool>
+      </property>
+     </widget>
+     <widget class="rpField" name="textLabel1_2_107">
+      <property name="geometry">
+       <rect>
+        <x>490</x>
+        <y>30</y>
+        <width>130</width>
+        <height>15</height>
+       </rect>
+      </property>
+      <property name="font">
+       <font>
+        <family>Arial Narrow</family>
+        <pointsize>11</pointsize>
+        <weight>50</weight>
+        <bold>false</bold>
+       </font>
+      </property>
+      <property name="styleSheet">
+       <string notr="true">background-color: rgb(255, 255, 255);</string>
+      </property>
+      <property name="text">
+       <string>codigo</string>
+      </property>
+      <property name="wordWrap">
+       <bool>false</bool>
+      </property>
+      <property name="DataType" stdset="0">
+       <UInt>0</UInt>
+      </property>
+      <property name="Field" stdset="0">
+       <string>clientes.codcliente</string>
+      </property>
+     </widget>
+     <widget class="QLabel" name="textLabel1_2_79">
+      <property name="geometry">
+       <rect>
+        <x>200</x>
+        <y>229</y>
+        <width>210</width>
+        <height>16</height>
+       </rect>
+      </property>
+      <property name="font">
+       <font>
+        <family>Arial Narrow</family>
+        <pointsize>9</pointsize>
+        <weight>50</weight>
+        <bold>false</bold>
+       </font>
+      </property>
+      <property name="styleSheet">
+       <string notr="true">background-color: rgb(255, 255, 255);</string>
+      </property>
+      <property name="text">
+       <string>LISTADO DE CONTENIDOS/ PACKING LIST</string>
+      </property>
+      <property name="alignment">
+       <set>Qt::AlignCenter</set>
+      </property>
+      <property name="wordWrap">
+       <bool>false</bool>
+      </property>
+      <property name="DataType" stdset="0">
+       <UInt>0</UInt>
+      </property>
+      <property name="Field" stdset="0">
+       <string>presupuestoscli.codigo</string>
+      </property>
+      <property name="CalculationType" stdset="0">
+       <string>6</string>
+      </property>
+      <property name="FN" stdset="0">
+       <string>flfactinfo.iface.pub_mostrarLabelPed</string>
+      </property>
+     </widget>
+     <widget class="QLabel" name="textLabel1_2_90">
+      <property name="geometry">
+       <rect>
+        <x>40</x>
+        <y>265</y>
+        <width>134</width>
+        <height>20</height>
+       </rect>
+      </property>
+      <property name="font">
+       <font>
+        <family>Arial</family>
+        <pointsize>10</pointsize>
+        <weight>75</weight>
+        <bold>true</bold>
+       </font>
+      </property>
+      <property name="styleSheet">
+       <string notr="true">background-color: rgb(218, 218, 218);</string>
+      </property>
+      <property name="text">
+       <string>Albaranes Rel.</string>
+      </property>
+      <property name="alignment">
+       <set>Qt::AlignHCenter|Qt::AlignTop</set>
+      </property>
+      <property name="wordWrap">
+       <bool>false</bool>
+      </property>
+     </widget>
+    </widget>
+    <widget class="rpDetail" name="rpDetail1_2" native="true">
+     <property name="geometry">
+      <rect>
+       <x>20</x>
+       <y>440</y>
+       <width>620</width>
+       <height>40</height>
+      </rect>
+     </property>
+     <property name="autoFillBackground">
+      <bool>false</bool>
+     </property>
+     <property name="styleSheet">
+      <string notr="true">background-color: rgb(255, 201, 169);</string>
+     </property>
+     <property name="Level" stdset="0">
+      <number>1</number>
+     </property>
+     <widget class="QLabel" name="textLabel1_2_44">
+      <property name="geometry">
+       <rect>
+        <x>10</x>
+        <y>0</y>
+        <width>100</width>
+        <height>15</height>
+       </rect>
+      </property>
+      <property name="font">
+       <font>
+        <family>Arial Narrow</family>
+        <pointsize>10</pointsize>
+        <weight>50</weight>
+        <bold>false</bold>
+       </font>
+      </property>
+      <property name="styleSheet">
+       <string notr="true">background-color: rgb(255, 255, 255);
+color: rgb(101, 101, 101)
+</string>
+      </property>
+      <property name="text">
+       <string>No. Bulto / Box No.:</string>
+      </property>
+      <property name="alignment">
+       <set>Qt::AlignLeading|Qt::AlignLeft|Qt::AlignVCenter</set>
+      </property>
+      <property name="wordWrap">
+       <bool>false</bool>
+      </property>
+      <property name="DataType" stdset="0">
+       <UInt>0</UInt>
+      </property>
+      <property name="Field" stdset="0">
+       <string>lineaspedidoscli.referencia</string>
+      </property>
+      <property name="Precision" stdset="0">
+       <UInt>3</UInt>
+      </property>
+      <property name="CommaSeparator" stdset="0">
+       <UInt>44</UInt>
+      </property>
+     </widget>
+     <widget class="rpField" name="textLabel1_2_67">
+      <property name="geometry">
+       <rect>
+        <x>70</x>
+        <y>20</y>
+        <width>70</width>
+        <height>15</height>
+       </rect>
+      </property>
+      <property name="font">
+       <font>
+        <family>Arial Narrow</family>
+        <pointsize>10</pointsize>
+        <weight>50</weight>
+        <bold>false</bold>
+       </font>
+      </property>
+      <property name="styleSheet">
+       <string notr="true">background-color: rgb(255, 255, 255);
+color: rgb(101, 101, 101)
+</string>
+      </property>
+      <property name="alignment">
+       <set>Qt::AlignLeading|Qt::AlignLeft|Qt::AlignVCenter</set>
+      </property>
+      <property name="wordWrap">
+       <bool>false</bool>
+      </property>
+      <property name="DataType" stdset="0">
+       <UInt>0</UInt>
+      </property>
+      <property name="Field" stdset="0">
+       <string>bultosdespacho.pesoneto</string>
+      </property>
+      <property name="Precision" stdset="0">
+       <UInt>3</UInt>
+      </property>
+      <property name="CommaSeparator" stdset="0">
+       <UInt>44</UInt>
+      </property>
+     </widget>
+     <widget class="QLabel" name="textLabel1_2_70">
+      <property name="geometry">
+       <rect>
+        <x>10</x>
+        <y>20</y>
+        <width>60</width>
+        <height>15</height>
+       </rect>
+      </property>
+      <property name="font">
+       <font>
+        <family>Arial Narrow</family>
+        <pointsize>10</pointsize>
+        <weight>50</weight>
+        <bold>false</bold>
+       </font>
+      </property>
+      <property name="styleSheet">
+       <string notr="true">background-color: rgb(255, 255, 255);
+color: rgb(101, 101, 101)
+</string>
+      </property>
+      <property name="text">
+       <string>Peso Neto:</string>
+      </property>
+      <property name="alignment">
+       <set>Qt::AlignLeading|Qt::AlignLeft|Qt::AlignVCenter</set>
+      </property>
+      <property name="wordWrap">
+       <bool>false</bool>
+      </property>
+      <property name="DataType" stdset="0">
+       <UInt>0</UInt>
+      </property>
+      <property name="Field" stdset="0">
+       <string>lineaspedidoscli.referencia</string>
+      </property>
+      <property name="Precision" stdset="0">
+       <UInt>3</UInt>
+      </property>
+      <property name="CommaSeparator" stdset="0">
+       <UInt>44</UInt>
+      </property>
+     </widget>
+     <widget class="rpField" name="textLabel1_2_72">
+      <property name="geometry">
+       <rect>
+        <x>220</x>
+        <y>20</y>
+        <width>70</width>
+        <height>15</height>
+       </rect>
+      </property>
+      <property name="font">
+       <font>
+        <family>Arial Narrow</family>
+        <pointsize>10</pointsize>
+        <weight>50</weight>
+        <bold>false</bold>
+       </font>
+      </property>
+      <property name="styleSheet">
+       <string notr="true">background-color: rgb(255, 255, 255);
+color: rgb(101, 101, 101)
+</string>
+      </property>
+      <property name="alignment">
+       <set>Qt::AlignLeading|Qt::AlignLeft|Qt::AlignVCenter</set>
+      </property>
+      <property name="wordWrap">
+       <bool>false</bool>
+      </property>
+      <property name="DataType" stdset="0">
+       <UInt>0</UInt>
+      </property>
+      <property name="Field" stdset="0">
+       <string>bultosdespacho.pesobruto</string>
+      </property>
+      <property name="Precision" stdset="0">
+       <UInt>3</UInt>
+      </property>
+      <property name="CommaSeparator" stdset="0">
+       <UInt>44</UInt>
+      </property>
+     </widget>
+     <widget class="QLabel" name="textLabel1_2_73">
+      <property name="geometry">
+       <rect>
+        <x>160</x>
+        <y>20</y>
+        <width>60</width>
+        <height>15</height>
+       </rect>
+      </property>
+      <property name="font">
+       <font>
+        <family>Arial Narrow</family>
+        <pointsize>10</pointsize>
+        <weight>50</weight>
+        <bold>false</bold>
+       </font>
+      </property>
+      <property name="styleSheet">
+       <string notr="true">background-color: rgb(255, 255, 255);
+color: rgb(101, 101, 101)
+</string>
+      </property>
+      <property name="text">
+       <string>Peso Bruto:</string>
+      </property>
+      <property name="alignment">
+       <set>Qt::AlignLeading|Qt::AlignLeft|Qt::AlignVCenter</set>
+      </property>
+      <property name="wordWrap">
+       <bool>false</bool>
+      </property>
+      <property name="DataType" stdset="0">
+       <UInt>0</UInt>
+      </property>
+      <property name="Field" stdset="0">
+       <string>bultosdespacho.pesobruto</string>
+      </property>
+      <property name="Precision" stdset="0">
+       <UInt>3</UInt>
+      </property>
+      <property name="CommaSeparator" stdset="0">
+       <UInt>44</UInt>
+      </property>
+     </widget>
+     <widget class="rpField" name="textLabel1_2_74">
+      <property name="geometry">
+       <rect>
+        <x>360</x>
+        <y>20</y>
+        <width>30</width>
+        <height>15</height>
+       </rect>
+      </property>
+      <property name="font">
+       <font>
+        <family>Arial Narrow</family>
+        <pointsize>10</pointsize>
+        <weight>50</weight>
+        <bold>false</bold>
+       </font>
+      </property>
+      <property name="styleSheet">
+       <string notr="true">background-color: rgb(255, 255, 255);
+color: rgb(101, 101, 101)
+</string>
+      </property>
+      <property name="alignment">
+       <set>Qt::AlignLeading|Qt::AlignLeft|Qt::AlignVCenter</set>
+      </property>
+      <property name="wordWrap">
+       <bool>false</bool>
+      </property>
+      <property name="DataType" stdset="0">
+       <UInt>0</UInt>
+      </property>
+      <property name="Field" stdset="0">
+       <string>bultosdespacho.largo</string>
+      </property>
+      <property name="Precision" stdset="0">
+       <UInt>3</UInt>
+      </property>
+      <property name="CommaSeparator" stdset="0">
+       <UInt>44</UInt>
+      </property>
+     </widget>
+     <widget class="QLabel" name="textLabel1_2_75">
+      <property name="geometry">
+       <rect>
+        <x>300</x>
+        <y>20</y>
+        <width>60</width>
+        <height>15</height>
+       </rect>
+      </property>
+      <property name="font">
+       <font>
+        <family>Arial Narrow</family>
+        <pointsize>10</pointsize>
+        <weight>50</weight>
+        <bold>false</bold>
+       </font>
+      </property>
+      <property name="styleSheet">
+       <string notr="true">background-color: rgb(255, 255, 255);
+color: rgb(101, 101, 101)
+</string>
+      </property>
+      <property name="text">
+       <string>Dimensiones:</string>
+      </property>
+      <property name="alignment">
+       <set>Qt::AlignLeading|Qt::AlignLeft|Qt::AlignVCenter</set>
+      </property>
+      <property name="wordWrap">
+       <bool>false</bool>
+      </property>
+      <property name="DataType" stdset="0">
+       <UInt>0</UInt>
+      </property>
+      <property name="Field" stdset="0">
+       <string>bultosdespacho.pesobruto</string>
+      </property>
+      <property name="Precision" stdset="0">
+       <UInt>3</UInt>
+      </property>
+      <property name="CommaSeparator" stdset="0">
+       <UInt>44</UInt>
+      </property>
+     </widget>
+     <widget class="rpField" name="textLabel1_2_76">
+      <property name="geometry">
+       <rect>
+        <x>540</x>
+        <y>20</y>
+        <width>70</width>
+        <height>15</height>
+       </rect>
+      </property>
+      <property name="font">
+       <font>
+        <family>Arial Narrow</family>
+        <pointsize>10</pointsize>
+        <weight>50</weight>
+        <bold>false</bold>
+       </font>
+      </property>
+      <property name="styleSheet">
+       <string notr="true">background-color: rgb(255, 255, 255);
+color: rgb(101, 101, 101)
+</string>
+      </property>
+      <property name="alignment">
+       <set>Qt::AlignLeading|Qt::AlignLeft|Qt::AlignVCenter</set>
+      </property>
+      <property name="wordWrap">
+       <bool>false</bool>
+      </property>
+      <property name="DataType" stdset="0">
+       <UInt>0</UInt>
+      </property>
+      <property name="Field" stdset="0">
+       <string>bultosdespacho.volumen</string>
+      </property>
+      <property name="Precision" stdset="0">
+       <UInt>3</UInt>
+      </property>
+      <property name="CommaSeparator" stdset="0">
+       <UInt>44</UInt>
+      </property>
+     </widget>
+     <widget class="QLabel" name="textLabel1_2_77">
+      <property name="geometry">
+       <rect>
+        <x>500</x>
+        <y>20</y>
+        <width>40</width>
+        <height>15</height>
+       </rect>
+      </property>
+      <property name="font">
+       <font>
+        <family>Arial Narrow</family>
+        <pointsize>10</pointsize>
+        <weight>50</weight>
+        <bold>false</bold>
+       </font>
+      </property>
+      <property name="styleSheet">
+       <string notr="true">background-color: rgb(255, 255, 255);
+color: rgb(101, 101, 101)
+</string>
+      </property>
+      <property name="text">
+       <string>Volumen:</string>
+      </property>
+      <property name="alignment">
+       <set>Qt::AlignLeading|Qt::AlignLeft|Qt::AlignVCenter</set>
+      </property>
+      <property name="wordWrap">
+       <bool>false</bool>
+      </property>
+      <property name="DataType" stdset="0">
+       <UInt>0</UInt>
+      </property>
+      <property name="Field" stdset="0">
+       <string>bultosdespacho.pesobruto</string>
+      </property>
+      <property name="Precision" stdset="0">
+       <UInt>3</UInt>
+      </property>
+      <property name="CommaSeparator" stdset="0">
+       <UInt>44</UInt>
+      </property>
+     </widget>
+     <widget class="QLabel" name="textLabel1_2_78">
+      <property name="geometry">
+       <rect>
+        <x>390</x>
+        <y>20</y>
+        <width>10</width>
+        <height>15</height>
+       </rect>
+      </property>
+      <property name="font">
+       <font>
+        <family>Arial Narrow</family>
+        <pointsize>10</pointsize>
+        <weight>50</weight>
+        <bold>false</bold>
+       </font>
+      </property>
+      <property name="styleSheet">
+       <string notr="true">background-color: rgb(255, 255, 255);
+color: rgb(101, 101, 101)
+</string>
+      </property>
+      <property name="text">
+       <string>x</string>
+      </property>
+      <property name="alignment">
+       <set>Qt::AlignLeading|Qt::AlignLeft|Qt::AlignVCenter</set>
+      </property>
+      <property name="wordWrap">
+       <bool>false</bool>
+      </property>
+      <property name="DataType" stdset="0">
+       <UInt>0</UInt>
+      </property>
+      <property name="Field" stdset="0">
+       <string>bultosdespacho.pesobruto</string>
+      </property>
+      <property name="Precision" stdset="0">
+       <UInt>3</UInt>
+      </property>
+      <property name="CommaSeparator" stdset="0">
+       <UInt>44</UInt>
+      </property>
+     </widget>
+     <widget class="rpField" name="textLabel1_2_91">
+      <property name="geometry">
+       <rect>
+        <x>400</x>
+        <y>20</y>
+        <width>26</width>
+        <height>15</height>
+       </rect>
+      </property>
+      <property name="font">
+       <font>
+        <family>Arial Narrow</family>
+        <pointsize>10</pointsize>
+        <weight>50</weight>
+        <bold>false</bold>
+       </font>
+      </property>
+      <property name="styleSheet">
+       <string notr="true">background-color: rgb(255, 255, 255);
+color: rgb(101, 101, 101)
+</string>
+      </property>
+      <property name="alignment">
+       <set>Qt::AlignLeading|Qt::AlignLeft|Qt::AlignVCenter</set>
+      </property>
+      <property name="wordWrap">
+       <bool>false</bool>
+      </property>
+      <property name="DataType" stdset="0">
+       <UInt>0</UInt>
+      </property>
+      <property name="Field" stdset="0">
+       <string>bultosdespacho.ancho</string>
+      </property>
+      <property name="Precision" stdset="0">
+       <UInt>3</UInt>
+      </property>
+      <property name="CommaSeparator" stdset="0">
+       <UInt>44</UInt>
+      </property>
+     </widget>
+     <widget class="QLabel" name="textLabel1_2_92">
+      <property name="geometry">
+       <rect>
+        <x>430</x>
+        <y>20</y>
+        <width>10</width>
+        <height>15</height>
+       </rect>
+      </property>
+      <property name="font">
+       <font>
+        <family>Arial Narrow</family>
+        <pointsize>10</pointsize>
+        <weight>50</weight>
+        <bold>false</bold>
+       </font>
+      </property>
+      <property name="styleSheet">
+       <string notr="true">background-color: rgb(255, 255, 255);
+color: rgb(101, 101, 101)
+</string>
+      </property>
+      <property name="text">
+       <string>x</string>
+      </property>
+      <property name="alignment">
+       <set>Qt::AlignLeading|Qt::AlignLeft|Qt::AlignVCenter</set>
+      </property>
+      <property name="wordWrap">
+       <bool>false</bool>
+      </property>
+      <property name="DataType" stdset="0">
+       <UInt>0</UInt>
+      </property>
+      <property name="Field" stdset="0">
+       <string>bultosdespacho.pesobruto</string>
+      </property>
+      <property name="Precision" stdset="0">
+       <UInt>3</UInt>
+      </property>
+      <property name="CommaSeparator" stdset="0">
+       <UInt>44</UInt>
+      </property>
+     </widget>
+     <widget class="rpField" name="textLabel1_2_94">
+      <property name="geometry">
+       <rect>
+        <x>440</x>
+        <y>20</y>
+        <width>30</width>
+        <height>15</height>
+       </rect>
+      </property>
+      <property name="font">
+       <font>
+        <family>Arial Narrow</family>
+        <pointsize>10</pointsize>
+        <weight>50</weight>
+        <bold>false</bold>
+       </font>
+      </property>
+      <property name="styleSheet">
+       <string notr="true">background-color: rgb(255, 255, 255);
+color: rgb(101, 101, 101)
+</string>
+      </property>
+      <property name="alignment">
+       <set>Qt::AlignLeading|Qt::AlignLeft|Qt::AlignVCenter</set>
+      </property>
+      <property name="wordWrap">
+       <bool>false</bool>
+      </property>
+      <property name="DataType" stdset="0">
+       <UInt>0</UInt>
+      </property>
+      <property name="Field" stdset="0">
+       <string>bultosdespacho.alto</string>
+      </property>
+      <property name="Precision" stdset="0">
+       <UInt>3</UInt>
+      </property>
+      <property name="CommaSeparator" stdset="0">
+       <UInt>44</UInt>
+      </property>
+     </widget>
+     <widget class="rpCalculatedField" name="textLabel1_2_71">
+      <property name="geometry">
+       <rect>
+        <x>610</x>
+        <y>10</y>
+        <width>0</width>
+        <height>0</height>
+       </rect>
+      </property>
+      <property name="font">
+       <font>
+        <family>Arial Narrow</family>
+        <pointsize>10</pointsize>
+        <weight>50</weight>
+        <bold>false</bold>
+       </font>
+      </property>
+      <property name="styleSheet">
+       <string notr="true">background-color: rgb(255, 255, 255);</string>
+      </property>
+      <property name="text">
+       <string>a1</string>
+      </property>
+      <property name="alignment">
+       <set>Qt::AlignLeading|Qt::AlignLeft|Qt::AlignVCenter</set>
+      </property>
+      <property name="wordWrap">
+       <bool>false</bool>
+      </property>
+      <property name="DataType" stdset="0">
+       <UInt>0</UInt>
+      </property>
+      <property name="Field" stdset="0">
+       <string>lineasofertaprov.referencia</string>
+      </property>
+      <property name="Precision" stdset="0">
+       <UInt>3</UInt>
+      </property>
+      <property name="CommaSeparator" stdset="0">
+       <UInt>44</UInt>
+      </property>
+      <property name="CalculationType" stdset="0">
+       <string>6</string>
+      </property>
+      <property name="FN" stdset="0">
+       <string>flfactinfo.pub_iniciarItem</string>
+      </property>
+     </widget>
+     <widget class="rpField" name="textLabel1_2_96">
+      <property name="geometry">
+       <rect>
+        <x>110</x>
+        <y>0</y>
+        <width>70</width>
+        <height>15</height>
+       </rect>
+      </property>
+      <property name="font">
+       <font>
+        <family>Arial Narrow</family>
+        <pointsize>10</pointsize>
+        <weight>50</weight>
+        <bold>false</bold>
+       </font>
+      </property>
+      <property name="styleSheet">
+       <string notr="true">background-color: rgb(255, 255, 255);
+color: rgb(101, 101, 101)
+</string>
+      </property>
+      <property name="alignment">
+       <set>Qt::AlignLeading|Qt::AlignLeft|Qt::AlignVCenter</set>
+      </property>
+      <property name="wordWrap">
+       <bool>false</bool>
+      </property>
+      <property name="DataType" stdset="0">
+       <UInt>1</UInt>
+      </property>
+      <property name="Field" stdset="0">
+       <string>bultosdespacho.numero</string>
+      </property>
+      <property name="Precision" stdset="0">
+       <UInt>3</UInt>
+      </property>
+      <property name="CommaSeparator" stdset="0">
+       <UInt>44</UInt>
+      </property>
+     </widget>
+    </widget>
+    <widget class="rpDetailFooter" name="rpDetail1_3" native="true">
+     <property name="geometry">
+      <rect>
+       <x>20</x>
+       <y>540</y>
+       <width>630</width>
+       <height>86</height>
+      </rect>
+     </property>
+     <property name="autoFillBackground">
+      <bool>false</bool>
+     </property>
+     <property name="styleSheet">
+      <string notr="true">background-color: rgb(255, 201, 169);</string>
+     </property>
+     <property name="Level" stdset="0">
+      <number>0</number>
+     </property>
+     <property name="PlaceAtBottom" stdset="0">
+      <bool>true</bool>
+     </property>
+     <widget class="rpCalculatedField" name="textLabel1_2_68">
+      <property name="geometry">
+       <rect>
+        <x>540</x>
+        <y>25</y>
+        <width>70</width>
+        <height>15</height>
+       </rect>
+      </property>
+      <property name="font">
+       <font>
+        <family>Arial</family>
+        <pointsize>10</pointsize>
+        <weight>50</weight>
+        <bold>false</bold>
+       </font>
+      </property>
+      <property name="styleSheet">
+       <string notr="true">background-color: rgb(218, 218, 218);</string>
+      </property>
+      <property name="text">
+       <string>EUR</string>
+      </property>
+      <property name="alignment">
+       <set>Qt::AlignRight|Qt::AlignTrailing|Qt::AlignVCenter</set>
+      </property>
+      <property name="wordWrap">
+       <bool>false</bool>
+      </property>
+      <property name="DataType" stdset="0">
+       <UInt>2</UInt>
+      </property>
+      <property name="Field" stdset="0">
+       <string>despachos.canbultos</string>
+      </property>
+      <property name="Precision" stdset="0">
+       <UInt>2</UInt>
+      </property>
+      <property name="CommaSeparator" stdset="0">
+       <UInt>44</UInt>
+      </property>
+      <property name="Currency" stdset="0">
+       <string>8364</string>
+      </property>
+      <property name="CalculationType" stdset="0">
+       <string>5</string>
+      </property>
+     </widget>
+     <widget class="rpCalculatedField" name="textLabel1_2_69">
+      <property name="geometry">
+       <rect>
+        <x>540</x>
+        <y>40</y>
+        <width>70</width>
+        <height>15</height>
+       </rect>
+      </property>
+      <property name="font">
+       <font>
+        <family>Arial</family>
+        <pointsize>10</pointsize>
+        <weight>50</weight>
+        <bold>false</bold>
+       </font>
+      </property>
+      <property name="styleSheet">
+       <string notr="true">background-color: rgb(255, 255, 255);</string>
+      </property>
+      <property name="text">
+       <string>EUR</string>
+      </property>
+      <property name="alignment">
+       <set>Qt::AlignRight|Qt::AlignTrailing|Qt::AlignVCenter</set>
+      </property>
+      <property name="wordWrap">
+       <bool>false</bool>
+      </property>
+      <property name="DataType" stdset="0">
+       <UInt>2</UInt>
+      </property>
+      <property name="Field" stdset="0">
+       <string>despachos.totalpesoneto</string>
+      </property>
+      <property name="Precision" stdset="0">
+       <UInt>2</UInt>
+      </property>
+      <property name="CommaSeparator" stdset="0">
+       <UInt>44</UInt>
+      </property>
+      <property name="Currency" stdset="0">
+       <string>8364</string>
+      </property>
+      <property name="CalculationType" stdset="0">
+       <string>5</string>
+      </property>
+     </widget>
+     <widget class="rpCalculatedField" name="textLabel1_2_83">
+      <property name="geometry">
+       <rect>
+        <x>540</x>
+        <y>55</y>
+        <width>70</width>
+        <height>15</height>
+       </rect>
+      </property>
+      <property name="font">
+       <font>
+        <family>Arial</family>
+        <pointsize>10</pointsize>
+        <weight>50</weight>
+        <bold>false</bold>
+       </font>
+      </property>
+      <property name="styleSheet">
+       <string notr="true">background-color: rgb(218, 218, 218);</string>
+      </property>
+      <property name="text">
+       <string>EUR</string>
+      </property>
+      <property name="alignment">
+       <set>Qt::AlignRight|Qt::AlignTrailing|Qt::AlignVCenter</set>
+      </property>
+      <property name="wordWrap">
+       <bool>false</bool>
+      </property>
+      <property name="DataType" stdset="0">
+       <UInt>2</UInt>
+      </property>
+      <property name="Field" stdset="0">
+       <string>despachos.totalpesobruto</string>
+      </property>
+      <property name="Precision" stdset="0">
+       <UInt>2</UInt>
+      </property>
+      <property name="CommaSeparator" stdset="0">
+       <UInt>44</UInt>
+      </property>
+      <property name="Currency" stdset="0">
+       <string>8364</string>
+      </property>
+      <property name="CalculationType" stdset="0">
+       <string>5</string>
+      </property>
+     </widget>
+     <widget class="QLabel" name="textLabel1_2_84">
+      <property name="geometry">
+       <rect>
+        <x>390</x>
+        <y>25</y>
+        <width>140</width>
+        <height>15</height>
+       </rect>
+      </property>
+      <property name="font">
+       <font>
+        <family>Arial</family>
+        <pointsize>10</pointsize>
+        <weight>50</weight>
+        <bold>false</bold>
+       </font>
+      </property>
+      <property name="styleSheet">
+       <string notr="true">background-color: rgb(218, 218, 218);</string>
+      </property>
+      <property name="text">
+       <string>No. bultos:</string>
+      </property>
+      <property name="alignment">
+       <set>Qt::AlignRight|Qt::AlignTrailing|Qt::AlignVCenter</set>
+      </property>
+      <property name="wordWrap">
+       <bool>false</bool>
+      </property>
+      <property name="DataType" stdset="0">
+       <UInt>4</UInt>
+      </property>
+      <property name="Field" stdset="0">
+       <string>lineaspresupuestoscli.pvptotal</string>
+      </property>
+      <property name="Precision" stdset="0">
+       <UInt>2</UInt>
+      </property>
+      <property name="CommaSeparator" stdset="0">
+       <UInt>44</UInt>
+      </property>
+      <property name="Currency" stdset="0">
+       <string>8364</string>
+      </property>
+     </widget>
+     <widget class="QLabel" name="textLabel1_2_85">
+      <property name="geometry">
+       <rect>
+        <x>390</x>
+        <y>40</y>
+        <width>140</width>
+        <height>15</height>
+       </rect>
+      </property>
+      <property name="font">
+       <font>
+        <family>Arial</family>
+        <pointsize>10</pointsize>
+        <weight>50</weight>
+        <bold>false</bold>
+       </font>
+      </property>
+      <property name="styleSheet">
+       <string notr="true">background-color: rgb(255, 255, 255);</string>
+      </property>
+      <property name="text">
+       <string>Peso Neto Total (Kg.)</string>
+      </property>
+      <property name="alignment">
+       <set>Qt::AlignRight|Qt::AlignTrailing|Qt::AlignVCenter</set>
+      </property>
+      <property name="wordWrap">
+       <bool>false</bool>
+      </property>
+      <property name="DataType" stdset="0">
+       <UInt>4</UInt>
+      </property>
+      <property name="Field" stdset="0">
+       <string>lineaspresupuestoscli.pvptotal</string>
+      </property>
+      <property name="Precision" stdset="0">
+       <UInt>2</UInt>
+      </property>
+      <property name="CommaSeparator" stdset="0">
+       <UInt>44</UInt>
+      </property>
+      <property name="Currency" stdset="0">
+       <string>8364</string>
+      </property>
+     </widget>
+     <widget class="QLabel" name="textLabel1_2_86">
+      <property name="geometry">
+       <rect>
+        <x>390</x>
+        <y>55</y>
+        <width>140</width>
+        <height>15</height>
+       </rect>
+      </property>
+      <property name="font">
+       <font>
+        <family>Arial</family>
+        <pointsize>10</pointsize>
+        <weight>50</weight>
+        <bold>false</bold>
+       </font>
+      </property>
+      <property name="styleSheet">
+       <string notr="true">background-color: rgb(218, 218, 218);</string>
+      </property>
+      <property name="text">
+       <string>Peso Bruto Total (Kg.)</string>
+      </property>
+      <property name="alignment">
+       <set>Qt::AlignRight|Qt::AlignTrailing|Qt::AlignVCenter</set>
+      </property>
+      <property name="wordWrap">
+       <bool>false</bool>
+      </property>
+      <property name="DataType" stdset="0">
+       <UInt>4</UInt>
+      </property>
+      <property name="Field" stdset="0">
+       <string>lineaspresupuestoscli.pvptotal</string>
+      </property>
+      <property name="Precision" stdset="0">
+       <UInt>2</UInt>
+      </property>
+      <property name="CommaSeparator" stdset="0">
+       <UInt>44</UInt>
+      </property>
+      <property name="Currency" stdset="0">
+       <string>8364</string>
+      </property>
+     </widget>
+     <widget class="QLabel" name="textLabel1_2_93">
+      <property name="geometry">
+       <rect>
+        <x>390</x>
+        <y>70</y>
+        <width>140</width>
+        <height>15</height>
+       </rect>
+      </property>
+      <property name="font">
+       <font>
+        <family>Arial</family>
+        <pointsize>10</pointsize>
+        <weight>50</weight>
+        <bold>false</bold>
+       </font>
+      </property>
+      <property name="styleSheet">
+       <string notr="true">background-color: rgb(255, 255, 255);</string>
+      </property>
+      <property name="text">
+       <string>Volumen Total (m³)</string>
+      </property>
+      <property name="alignment">
+       <set>Qt::AlignRight|Qt::AlignTrailing|Qt::AlignVCenter</set>
+      </property>
+      <property name="wordWrap">
+       <bool>false</bool>
+      </property>
+      <property name="DataType" stdset="0">
+       <UInt>4</UInt>
+      </property>
+      <property name="Field" stdset="0">
+       <string>lineaspresupuestoscli.pvptotal</string>
+      </property>
+      <property name="Precision" stdset="0">
+       <UInt>2</UInt>
+      </property>
+      <property name="CommaSeparator" stdset="0">
+       <UInt>44</UInt>
+      </property>
+      <property name="Currency" stdset="0">
+       <string>8364</string>
+      </property>
+     </widget>
+     <widget class="rpCalculatedField" name="textLabel1_2_95">
+      <property name="geometry">
+       <rect>
+        <x>540</x>
+        <y>70</y>
+        <width>70</width>
+        <height>15</height>
+       </rect>
+      </property>
+      <property name="font">
+       <font>
+        <family>Arial</family>
+        <pointsize>10</pointsize>
+        <weight>50</weight>
+        <bold>false</bold>
+       </font>
+      </property>
+      <property name="styleSheet">
+       <string notr="true">background-color: rgb(255, 255, 255);</string>
+      </property>
+      <property name="text">
+       <string>EUR</string>
+      </property>
+      <property name="alignment">
+       <set>Qt::AlignRight|Qt::AlignTrailing|Qt::AlignVCenter</set>
+      </property>
+      <property name="wordWrap">
+       <bool>false</bool>
+      </property>
+      <property name="DataType" stdset="0">
+       <UInt>2</UInt>
+      </property>
+      <property name="Field" stdset="0">
+       <string>despachos.totalvolumen</string>
+      </property>
+      <property name="Precision" stdset="0">
+       <UInt>2</UInt>
+      </property>
+      <property name="CommaSeparator" stdset="0">
+       <UInt>44</UInt>
+      </property>
+      <property name="Currency" stdset="0">
+       <string>8364</string>
+      </property>
+      <property name="CalculationType" stdset="0">
+       <string>5</string>
+      </property>
+     </widget>
+     <widget class="Line" name="line_6">
+      <property name="geometry">
+       <rect>
+        <x>390</x>
+        <y>5</y>
+        <width>220</width>
+        <height>10</height>
+       </rect>
+      </property>
+      <property name="font">
+       <font>
+        <kerning>true</kerning>
+       </font>
+      </property>
+      <property name="autoFillBackground">
+       <bool>false</bool>
+      </property>
+      <property name="frameShadow">
+       <enum>QFrame::Raised</enum>
+      </property>
+      <property name="lineWidth">
+       <number>1</number>
+      </property>
+      <property name="orientation">
+       <enum>Qt::Horizontal</enum>
+      </property>
+     </widget>
+     <widget class="QLabel" name="textLabel1_2_105">
+      <property name="geometry">
+       <rect>
+        <x>10</x>
+        <y>15</y>
+        <width>70</width>
+        <height>16</height>
+       </rect>
+      </property>
+      <property name="font">
+       <font>
+        <family>Arial</family>
+        <pointsize>9</pointsize>
+        <weight>75</weight>
+        <bold>true</bold>
+       </font>
+      </property>
+      <property name="styleSheet">
+       <string notr="true">background-color: rgb(255, 255, 255);</string>
+      </property>
+      <property name="text">
+       <string>Notas/Notes:</string>
+      </property>
+      <property name="alignment">
+       <set>Qt::AlignCenter</set>
+      </property>
+      <property name="wordWrap">
+       <bool>false</bool>
+      </property>
+     </widget>
+     <widget class="rpCalculatedField" name="textLabel1_2_106">
+      <property name="geometry">
+       <rect>
+        <x>12</x>
+        <y>38</y>
+        <width>360</width>
+        <height>42</height>
+       </rect>
+      </property>
+      <property name="font">
+       <font>
+        <family>Arial</family>
+        <pointsize>9</pointsize>
+        <weight>50</weight>
+        <bold>false</bold>
+       </font>
+      </property>
+      <property name="styleSheet">
+       <string notr="true">background-color: rgb(255, 255, 255);</string>
+      </property>
+      <property name="text">
+       <string>Observaciones</string>
+      </property>
+      <property name="alignment">
+       <set>Qt::AlignLeading|Qt::AlignLeft|Qt::AlignTop</set>
+      </property>
+      <property name="wordWrap">
+       <bool>false</bool>
+      </property>
+      <property name="DataType" stdset="0">
+       <UInt>0</UInt>
+      </property>
+      <property name="Field" stdset="0">
+       <string>pedidoscli.observaciones</string>
+      </property>
+      <property name="Precision" stdset="0">
+       <UInt>2</UInt>
+      </property>
+      <property name="CommaSeparator" stdset="0">
+       <UInt>44</UInt>
+      </property>
+      <property name="Currency" stdset="0">
+       <string>8364</string>
+      </property>
+      <property name="CalculationType" stdset="0">
+       <string>5</string>
+      </property>
+     </widget>
+     <widget class="rpBox" name="widget_9" native="true">
+      <property name="geometry">
+       <rect>
+        <x>10</x>
+        <y>35</y>
+        <width>372</width>
+        <height>50</height>
+       </rect>
+      </property>
+     </widget>
+     <zorder>widget_9</zorder>
+     <zorder>textLabel1_2_68</zorder>
+     <zorder>textLabel1_2_69</zorder>
+     <zorder>textLabel1_2_83</zorder>
+     <zorder>textLabel1_2_84</zorder>
+     <zorder>textLabel1_2_85</zorder>
+     <zorder>textLabel1_2_86</zorder>
+     <zorder>textLabel1_2_93</zorder>
+     <zorder>textLabel1_2_95</zorder>
+     <zorder>line_6</zorder>
+     <zorder>textLabel1_2_105</zorder>
+     <zorder>textLabel1_2_106</zorder>
+    </widget>
+    <widget class="rpDetail" name="rpDetail1" native="true">
+     <property name="geometry">
+      <rect>
+       <x>20</x>
+       <y>490</y>
+       <width>620</width>
+       <height>16</height>
+      </rect>
+     </property>
+     <property name="autoFillBackground">
+      <bool>false</bool>
+     </property>
+     <property name="styleSheet">
+      <string notr="true">background-color: rgb(255, 201, 169);</string>
+     </property>
+     <property name="Level" stdset="0">
+      <number>2</number>
+     </property>
+     <widget class="rpField" name="textLabel1_2_11">
+      <property name="geometry">
+       <rect>
+        <x>443</x>
+        <y>0</y>
+        <width>60</width>
+        <height>15</height>
+       </rect>
+      </property>
+      <property name="font">
+       <font>
+        <family>Arial</family>
+        <pointsize>10</pointsize>
+        <weight>50</weight>
+        <bold>false</bold>
+       </font>
+      </property>
+      <property name="styleSheet">
+       <string notr="true">background-color: rgb(255, 255, 255);</string>
+      </property>
+      <property name="text">
+       <string>3</string>
+      </property>
+      <property name="alignment">
+       <set>Qt::AlignCenter</set>
+      </property>
+      <property name="wordWrap">
+       <bool>false</bool>
+      </property>
+      <property name="DataType" stdset="0">
+       <UInt>1</UInt>
+      </property>
+      <property name="Field" stdset="0">
+       <string>lineasbulto.cantidad</string>
+      </property>
+      <property name="Precision" stdset="0">
+       <UInt>2</UInt>
+      </property>
+      <property name="CommaSeparator" stdset="0">
+       <UInt>44</UInt>
+      </property>
+     </widget>
+     <widget class="rpField" name="textLabel1_2_12">
+      <property name="geometry">
+       <rect>
+        <x>274</x>
+        <y>0</y>
+        <width>170</width>
+        <height>15</height>
+       </rect>
+      </property>
+      <property name="font">
+       <font>
+        <family>Arial Narrow</family>
+        <pointsize>10</pointsize>
+        <weight>50</weight>
+        <bold>false</bold>
+       </font>
+      </property>
+      <property name="styleSheet">
+       <string notr="true">background-color: rgb(255, 255, 255);</string>
+      </property>
+      <property name="text">
+       <string>articulo 1</string>
+      </property>
+      <property name="wordWrap">
+       <bool>false</bool>
+      </property>
+      <property name="DataType" stdset="0">
+       <UInt>0</UInt>
+      </property>
+      <property name="Field" stdset="0">
+       <string>lineasbulto.descripcion</string>
+      </property>
+     </widget>
+     <widget class="rpField" name="textLabel1_2_22">
+      <property name="geometry">
+       <rect>
+        <x>174</x>
+        <y>0</y>
+        <width>100</width>
+        <height>15</height>
+       </rect>
+      </property>
+      <property name="font">
+       <font>
+        <family>Arial Narrow</family>
+        <pointsize>10</pointsize>
+        <weight>50</weight>
+        <bold>false</bold>
+       </font>
+      </property>
+      <property name="styleSheet">
+       <string notr="true">background-color: rgb(255, 255, 255);</string>
+      </property>
+      <property name="text">
+       <string>a1</string>
+      </property>
+      <property name="alignment">
+       <set>Qt::AlignLeading|Qt::AlignLeft|Qt::AlignVCenter</set>
+      </property>
+      <property name="wordWrap">
+       <bool>false</bool>
+      </property>
+      <property name="DataType" stdset="0">
+       <UInt>0</UInt>
+      </property>
+      <property name="Field" stdset="0">
+       <string>lineasbulto.referencia</string>
+      </property>
+      <property name="Precision" stdset="0">
+       <UInt>3</UInt>
+      </property>
+      <property name="CommaSeparator" stdset="0">
+       <UInt>44</UInt>
+      </property>
+     </widget>
+     <widget class="rpField" name="textLabel1_2_14">
+      <property name="geometry">
+       <rect>
+        <x>560</x>
+        <y>0</y>
+        <width>50</width>
+        <height>15</height>
+       </rect>
+      </property>
+      <property name="font">
+       <font>
+        <family>Arial</family>
+        <pointsize>10</pointsize>
+        <weight>50</weight>
+        <bold>false</bold>
+       </font>
+      </property>
+      <property name="styleSheet">
+       <string notr="true">background-color: rgb(255, 255, 255);</string>
+      </property>
+      <property name="text">
+       <string>EUR</string>
+      </property>
+      <property name="alignment">
+       <set>Qt::AlignRight|Qt::AlignTrailing|Qt::AlignVCenter</set>
+      </property>
+      <property name="wordWrap">
+       <bool>false</bool>
+      </property>
+      <property name="DataType" stdset="0">
+       <UInt>2</UInt>
+      </property>
+      <property name="Field" stdset="0">
+       <string>pesosmedidas.factorconv</string>
+      </property>
+      <property name="Precision" stdset="0">
+       <UInt>2</UInt>
+      </property>
+      <property name="CommaSeparator" stdset="0">
+       <UInt>44</UInt>
+      </property>
+      <property name="Currency" stdset="0">
+       <string>8364</string>
+      </property>
+     </widget>
+     <widget class="rpCalculatedField" name="textLabel1_2_53">
+      <property name="geometry">
+       <rect>
+        <x>10</x>
+        <y>0</y>
+        <width>24</width>
+        <height>15</height>
+       </rect>
+      </property>
+      <property name="font">
+       <font>
+        <family>Arial Narrow</family>
+        <pointsize>10</pointsize>
+        <weight>50</weight>
+        <bold>false</bold>
+       </font>
+      </property>
+      <property name="styleSheet">
+       <string notr="true">background-color: rgb(255, 255, 255);</string>
+      </property>
+      <property name="text">
+       <string>a1</string>
+      </property>
+      <property name="alignment">
+       <set>Qt::AlignLeading|Qt::AlignLeft|Qt::AlignVCenter</set>
+      </property>
+      <property name="wordWrap">
+       <bool>false</bool>
+      </property>
+      <property name="DataType" stdset="0">
+       <UInt>0</UInt>
+      </property>
+      <property name="Field" stdset="0">
+       <string>lineasofertaprov.referencia</string>
+      </property>
+      <property name="Precision" stdset="0">
+       <UInt>3</UInt>
+      </property>
+      <property name="CommaSeparator" stdset="0">
+       <UInt>44</UInt>
+      </property>
+      <property name="CalculationType" stdset="0">
+       <string>6</string>
+      </property>
+      <property name="FN" stdset="0">
+       <string>flfactinfo.pub_mostrarItem</string>
+      </property>
+     </widget>
+     <widget class="rpField" name="textLabel1_2_16">
+      <property name="geometry">
+       <rect>
+        <x>507</x>
+        <y>0</y>
+        <width>53</width>
+        <height>15</height>
+       </rect>
+      </property>
+      <property name="font">
+       <font>
+        <family>Arial</family>
+        <pointsize>10</pointsize>
+        <weight>50</weight>
+        <bold>false</bold>
+       </font>
+      </property>
+      <property name="styleSheet">
+       <string notr="true">background-color: rgb(255, 255, 255);</string>
+      </property>
+      <property name="text">
+       <string>3</string>
+      </property>
+      <property name="alignment">
+       <set>Qt::AlignCenter</set>
+      </property>
+      <property name="wordWrap">
+       <bool>false</bool>
+      </property>
+      <property name="DataType" stdset="0">
+       <UInt>0</UInt>
+      </property>
+      <property name="Field" stdset="0">
+       <string>articulos.codunidad</string>
+      </property>
+      <property name="Precision" stdset="0">
+       <UInt>2</UInt>
+      </property>
+      <property name="CommaSeparator" stdset="0">
+       <UInt>44</UInt>
+      </property>
+     </widget>
+     <widget class="rpField" name="textLabel1_2_41">
+      <property name="geometry">
+       <rect>
+        <x>34</x>
+        <y>0</y>
+        <width>140</width>
+        <height>15</height>
+       </rect>
+      </property>
+      <property name="font">
+       <font>
+        <family>Arial Narrow</family>
+        <pointsize>10</pointsize>
+        <weight>50</weight>
+        <bold>false</bold>
+       </font>
+      </property>
+      <property name="styleSheet">
+       <string notr="true">background-color: rgb(255, 255, 255);</string>
+      </property>
+      <property name="text">
+       <string>a1</string>
+      </property>
+      <property name="alignment">
+       <set>Qt::AlignLeading|Qt::AlignLeft|Qt::AlignVCenter</set>
+      </property>
+      <property name="wordWrap">
+       <bool>false</bool>
+      </property>
+      <property name="DataType" stdset="0">
+       <UInt>0</UInt>
+      </property>
+      <property name="Field" stdset="0">
+       <string>lineasbulto.codalbaran</string>
+      </property>
+      <property name="Precision" stdset="0">
+       <UInt>3</UInt>
+      </property>
+      <property name="CommaSeparator" stdset="0">
+       <UInt>44</UInt>
+      </property>
+     </widget>
+    </widget>
+    <widget class="rpDetail" name="rpDetail1_4" native="true">
+     <property name="geometry">
+      <rect>
+       <x>30</x>
+       <y>425</y>
+       <width>610</width>
+       <height>10</height>
+      </rect>
+     </property>
+     <property name="autoFillBackground">
+      <bool>false</bool>
+     </property>
+     <property name="styleSheet">
+      <string notr="true">background-color: rgb(255, 201, 169);</string>
+     </property>
+     <property name="Level" stdset="0">
+      <number>0</number>
+     </property>
+    </widget>
+   </widget>
+   <widget class="QWidget" name="tab_2">
+    <attribute name="title">
+     <string>AddOns</string>
+    </attribute>
+   </widget>
+   <widget class="QWidget" name="tab_3">
+    <attribute name="title">
+     <string>Parametros</string>
+    </attribute>
+    <widget class="rpParamGroup" name="Parametros1" native="true">
+     <property name="geometry">
+      <rect>
+       <x>10</x>
+       <y>10</y>
+       <width>161</width>
+       <height>126</height>
+      </rect>
+     </property>
+     <property name="autoFillBackground">
+      <bool>false</bool>
+     </property>
+     <property name="styleSheet">
+      <string notr="true">background-color: rgb(255, 201, 169);</string>
+     </property>
+     <widget class="rpParameter" name="textLabel1_2_21">
+      <property name="geometry">
+       <rect>
+        <x>5</x>
+        <y>5</y>
+        <width>151</width>
+        <height>26</height>
+       </rect>
+      </property>
+      <property name="font">
+       <font>
+        <family>Arial</family>
+        <pointsize>10</pointsize>
+        <weight>50</weight>
+        <bold>false</bold>
+       </font>
+      </property>
+      <property name="styleSheet">
+       <string notr="true">background-color: rgb(255, 255, 255);</string>
+      </property>
+      <property name="text">
+       <string>TopMargin</string>
+      </property>
+      <property name="alignment">
+       <set>Qt::AlignLeading|Qt::AlignLeft|Qt::AlignVCenter</set>
+      </property>
+      <property name="wordWrap">
+       <bool>false</bool>
+      </property>
+      <property name="Parametro" stdset="0">
+       <string>TopMargin</string>
+      </property>
+      <property name="Valor" stdset="0">
+       <UInt>10</UInt>
+      </property>
+     </widget>
+     <widget class="rpParameter" name="textLabel1_2_26">
+      <property name="geometry">
+       <rect>
+        <x>5</x>
+        <y>35</y>
+        <width>151</width>
+        <height>26</height>
+       </rect>
+      </property>
+      <property name="font">
+       <font>
+        <family>Arial</family>
+        <pointsize>10</pointsize>
+        <weight>50</weight>
+        <bold>false</bold>
+       </font>
+      </property>
+      <property name="styleSheet">
+       <string notr="true">background-color: rgb(255, 255, 255);</string>
+      </property>
+      <property name="text">
+       <string>BottomMargin</string>
+      </property>
+      <property name="alignment">
+       <set>Qt::AlignLeading|Qt::AlignLeft|Qt::AlignVCenter</set>
+      </property>
+      <property name="wordWrap">
+       <bool>false</bool>
+      </property>
+      <property name="Parametro" stdset="0">
+       <string>BottomMargin</string>
+      </property>
+      <property name="Valor" stdset="0">
+       <UInt>10</UInt>
+      </property>
+     </widget>
+     <widget class="rpParameter" name="textLabel1_2_32">
+      <property name="geometry">
+       <rect>
+        <x>5</x>
+        <y>65</y>
+        <width>151</width>
+        <height>26</height>
+       </rect>
+      </property>
+      <property name="font">
+       <font>
+        <family>Arial</family>
+        <pointsize>10</pointsize>
+        <weight>50</weight>
+        <bold>false</bold>
+       </font>
+      </property>
+      <property name="styleSheet">
+       <string notr="true">background-color: rgb(255, 255, 255);</string>
+      </property>
+      <property name="text">
+       <string>LeftMargin</string>
+      </property>
+      <property name="alignment">
+       <set>Qt::AlignLeading|Qt::AlignLeft|Qt::AlignVCenter</set>
+      </property>
+      <property name="wordWrap">
+       <bool>false</bool>
+      </property>
+      <property name="Parametro" stdset="0">
+       <string>LeftMargin</string>
+      </property>
+      <property name="Valor" stdset="0">
+       <UInt>20</UInt>
+      </property>
+     </widget>
+     <widget class="rpParameter" name="textLabel1_2_33">
+      <property name="geometry">
+       <rect>
+        <x>5</x>
+        <y>95</y>
+        <width>151</width>
+        <height>26</height>
+       </rect>
+      </property>
+      <property name="font">
+       <font>
+        <family>Arial</family>
+        <pointsize>10</pointsize>
+        <weight>50</weight>
+        <bold>false</bold>
+       </font>
+      </property>
+      <property name="styleSheet">
+       <string notr="true">background-color: rgb(255, 255, 255);</string>
+      </property>
+      <property name="text">
+       <string>RightMargin</string>
+      </property>
+      <property name="alignment">
+       <set>Qt::AlignLeading|Qt::AlignLeft|Qt::AlignVCenter</set>
+      </property>
+      <property name="wordWrap">
+       <bool>false</bool>
+      </property>
+      <property name="Parametro" stdset="0">
+       <string>RightMargin</string>
+      </property>
+      <property name="Valor" stdset="0">
+       <UInt>10</UInt>
+      </property>
+     </widget>
+    </widget>
+    <widget class="rpParamGroup" name="Parametros2" native="true">
+     <property name="geometry">
+      <rect>
+       <x>195</x>
+       <y>10</y>
+       <width>161</width>
+       <height>126</height>
+      </rect>
+     </property>
+     <property name="autoFillBackground">
+      <bool>false</bool>
+     </property>
+     <property name="styleSheet">
+      <string notr="true">background-color: rgb(255, 201, 169);</string>
+     </property>
+     <widget class="rpParameter" name="textLabel1_2_42">
+      <property name="geometry">
+       <rect>
+        <x>5</x>
+        <y>5</y>
+        <width>151</width>
+        <height>26</height>
+       </rect>
+      </property>
+      <property name="font">
+       <font>
+        <family>Arial</family>
+        <pointsize>10</pointsize>
+        <weight>50</weight>
+        <bold>false</bold>
+       </font>
+      </property>
+      <property name="styleSheet">
+       <string notr="true">background-color: rgb(255, 255, 255);</string>
+      </property>
+      <property name="text">
+       <string>PageSize</string>
+      </property>
+      <property name="alignment">
+       <set>Qt::AlignLeading|Qt::AlignLeft|Qt::AlignVCenter</set>
+      </property>
+      <property name="wordWrap">
+       <bool>false</bool>
+      </property>
+      <property name="Parametro" stdset="0">
+       <string>PageSize</string>
+      </property>
+      <property name="Valor" stdset="0">
+       <UInt>0</UInt>
+      </property>
+     </widget>
+     <widget class="rpParameter" name="textLabel1_2_43">
+      <property name="geometry">
+       <rect>
+        <x>5</x>
+        <y>35</y>
+        <width>151</width>
+        <height>26</height>
+       </rect>
+      </property>
+      <property name="font">
+       <font>
+        <family>Arial</family>
+        <pointsize>10</pointsize>
+        <weight>50</weight>
+        <bold>false</bold>
+       </font>
+      </property>
+      <property name="styleSheet">
+       <string notr="true">background-color: rgb(255, 255, 255);</string>
+      </property>
+      <property name="text">
+       <string>PageOrientation</string>
+      </property>
+      <property name="alignment">
+       <set>Qt::AlignLeading|Qt::AlignLeft|Qt::AlignVCenter</set>
+      </property>
+      <property name="wordWrap">
+       <bool>false</bool>
+      </property>
+      <property name="Parametro" stdset="0">
+       <string>PageOrientation</string>
+      </property>
+      <property name="Valor" stdset="0">
+       <UInt>0</UInt>
+      </property>
+     </widget>
+    </widget>
+   </widget>
+  </widget>
+ </widget>
+ <layoutdefault spacing="6" margin="11"/>
+ <customwidgets>
+  <customwidget>
+   <class>rpDetail</class>
+   <extends>QWidget</extends>
+   <header>mywidget.h</header>
+   <container>1</container>
+  </customwidget>
+  <customwidget>
+   <class>rpDetailHeader</class>
+   <extends>QWidget</extends>
+   <header>mywidget.h</header>
+   <container>1</container>
+  </customwidget>
+  <customwidget>
+   <class>rpField</class>
+   <extends>QLabel</extends>
+   <header>rpfield.h</header>
+  </customwidget>
+  <customwidget>
+   <class>rpCalculatedField</class>
+   <extends>QLabel</extends>
+   <header>rpcalculatedfield.h</header>
+  </customwidget>
+  <customwidget>
+   <class>rpParameter</class>
+   <extends>QLabel</extends>
+   <header>rpparameter.h</header>
+  </customwidget>
+  <customwidget>
+   <class>rpParamGroup</class>
+   <extends>QWidget</extends>
+   <header>rpparamgroup.h</header>
+   <container>1</container>
+  </customwidget>
+  <customwidget>
+   <class>rpDetailFooter</class>
+   <extends>QWidget</extends>
+   <header>rpdetailfooter.h</header>
+   <container>1</container>
+  </customwidget>
+  <customwidget>
+   <class>rpBox</class>
+   <extends>QWidget</extends>
+   <header>rpbox.h</header>
+   <container>1</container>
+  </customwidget>
+ </customwidgets>
+ <includes>
+  <include location="local">mywidget.h</include>
+  <include location="local">mywidget.h</include>
+  <include location="local">mywidget.h</include>
+  <include location="local">mywidget.h</include>
+  <include location="local">mywidget.h</include>
+  <include location="local">mywidget.h</include>
+  <include location="local">mywidget.h</include>
+  <include location="local">mywidget.h</include>
+  <include location="local">mywidget.h</include>
+ </includes>
+ <resources/>
+ <connections/>
+</ui>

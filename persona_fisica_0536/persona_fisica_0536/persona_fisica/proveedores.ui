@@ -1,0 +1,461 @@
+<xupdate:modifications>
+<xupdate:update select="/UI[UI,1]/widget[QWidget,formProveedores]/property[geometry]/rect[rect,1]/height[height,1]/text()[1]" >500</xupdate:update>
+<xupdate:update select="/UI[UI,1]/widget[QWidget,formProveedores]/vbox[vbox,1]/widget[QFrame,frame7]/hbox[hbox,1]/widget[FLFieldDB,fdbCodProveedor]/property[maximumSize]/size[size,1]/width[width,1]/text()[1]" >160</xupdate:update>
+<xupdate:update select="/UI[UI,1]/widget[QWidget,formProveedores]/vbox[vbox,1]/widget[QFrame,frame7]/hbox[hbox,1]/widget[FLFieldDB,fdbCodProveedor]/property[minimumSize]/size[size,1]/height[height,1]/text()[1]" >26</xupdate:update>
+<xupdate:update select="/UI[UI,1]/widget[QWidget,formProveedores]/vbox[vbox,1]/widget[QFrame,frame7]/hbox[hbox,1]/widget[FLFieldDB,fdbCodProveedor]/property[minimumSize]/size[size,1]/width[width,1]/text()[1]" >154</xupdate:update>
+<xupdate:delete select="/UI[UI,1]/widget[QWidget,formProveedores]/vbox[vbox,1]/widget[QFrame,frame7]/hbox[hbox,1]/widget[FLFieldDB,fdbNombre]" />
+<xupdate:delete select="/UI[UI,1]/widget[QWidget,formProveedores]/vbox[vbox,1]/widget[QFrame,frame7]/hbox[hbox,1]/spacer[spacer13_3]" />
+<xupdate:insert-after select="/UI[UI,1]/widget[QWidget,formProveedores]/vbox[vbox,1]/widget[QFrame,frame7]/hbox[hbox,1]/property[name]" >
+<property name="margin" >
+<number>4</number>
+</property>
+</xupdate:insert-after>
+<xupdate:insert-after select="/UI[UI,1]/widget[QWidget,formProveedores]/vbox[vbox,1]/widget[QFrame,frame7]/hbox[hbox,1]/widget[FLFieldDB,fdbCodProveedor]" >
+<widget class="FLFieldDB" >
+<property name="name" >
+<cstring>fdbPersonaFisica</cstring>
+</property>
+<property name="sizePolicy" >
+<sizepolicy>
+<hsizetype>1</hsizetype>
+<vsizetype>0</vsizetype>
+<horstretch>0</horstretch>
+<verstretch>0</verstretch>
+</sizepolicy>
+</property>
+<property name="minimumSize" >
+<size>
+<width>140</width>
+<height>24</height>
+</size>
+</property>
+<property name="maximumSize" >
+<size>
+<width>160</width>
+<height>32767</height>
+</size>
+</property>
+<property name="fieldName" >
+<string>personafisica</string>
+</property>
+</widget>
+</xupdate:insert-after>
+<xupdate:insert-after select="/UI[UI,1]/widget[QWidget,formProveedores]/vbox[vbox,1]/widget[QFrame,frame7]/hbox[hbox,1]/widget[FLFieldDB,fdbPersonaFisica]" >
+<widget class="QGroupBox" >
+<property name="name" >
+<cstring>gbxNombre</cstring>
+</property>
+<property name="maximumSize" >
+<size>
+<width>32767</width>
+<height>50</height>
+</size>
+</property>
+<property name="title" >
+<string/>
+</property>
+<property name="alignment" >
+<set>AlignVCenter</set>
+</property>
+<hbox>
+<property name="name" >
+<cstring>unnamed</cstring>
+</property>
+<property name="margin" >
+<number>6</number>
+</property>
+<widget class="FLFieldDB" >
+<property name="name" >
+<cstring>fdbNombre</cstring>
+</property>
+<property name="sizePolicy" >
+<sizepolicy>
+<hsizetype>7</hsizetype>
+<vsizetype>0</vsizetype>
+<horstretch>0</horstretch>
+<verstretch>0</verstretch>
+</sizepolicy>
+</property>
+<property name="fieldName" >
+<string>nombre</string>
+</property>
+</widget>
+</hbox>
+</widget>
+</xupdate:insert-after>
+<xupdate:append-first select="/UI[UI,1]/images[images,1]" >
+<image name="persona_fisicaimage23051" >
+<data format="PNG" length="857" >89504e470d0a1a0a0000000d4948445200000020000000200806000000737a7af40000032049444154789cc5974f881c451487bfb825d4420b159c4335e430ad82db2038d30464c9c9811c1ca2b299531ccc290a6640082c8939e931c7453c78c8493c18913139984be2ae204c6ef64296e940023520b27b58d82219b20576a81c8a0d41d0e97567b23fe85bbff77ef5d5ab7f47bcf71caabcf7fffa1d500238f15ff9bdf733357019b87d58062e021e583d0c035f4a29bd8a94af42e0a5830cf31f3a0af4117c95d4131cae52909852f157811fa594adf4ad1429258caa054e8380066ea848b59a8d268b8b8b0038578dc0410dbc0dfca2943ad13cdee4f4d269ba27bbd86d8b1472e606de037e534a65cd4693ce5287e58bcb0cee0ed81defcebc073e94427eafb48ada0b6db2a58cdef91ebbf77731770c489042e2cac926fe0f81267055d554942d6424ef26f4cef700e8ffdca71817cc335fa938ec9fc03bc0355dd3b576a34df67e46ef93507c7867c86034208d520ca63281fd1838077cad6a6a3e3b9ed13ad3a27bb60b7f87e2fd5b7d10302a473321f0b9147245d5d49176a34debe316dd8fbaf00886eb436efe7e9358c6582c755167580ea74ae09214f28a3ea6c91a19edb36d3a4b1d763677c8d77206a30194609c41a3592bd7002a1398d4841f00576424898fc5244942aa53866b43566fad3278302089120012956008260024d5f68149046e0357adb5e78a7b05ce398abb052a5628a588558cb186442414b600c09406a0f23e3089c063e05360c56e5bcc03c38eddc13d7261ce9d258e620c2690282121c1956e6a04209ceb170067adfd22bf9787a89741d734c556818a14666ca084c20512d3ea81e7751938e3c6ee61b151b0f9e72676dba250b8b1235161e4098144d5b360bf1bd10f80b363fb53be91cf21c25ceb9a7e36e7c60512b320b0a7ebc0b21b3b9e91b0162d74b807104ccd8ac09e56083df14dbe9ecf015082aaa99071c604f6f42dd071cefd95afe71863d8dade22552994d5931cf44a76031839e7faf946fe9a2b1db18e91918471c50c53ba15a74081c0a70ba9afbf51f784e5fb42df05af037f005e6bed112fde00c02bc07708bc14f2500c00cc111ad403bf4e3230ad77c1f37a027c4658616f4efc7b868fd379e0d424024f013a91d2ec3fe0935e0000000049454e44ae426082</data>
+</image>
+</xupdate:append-first>
+<xupdate:append-first select="/UI[UI,1]/images[images,1]" >
+<image name="persona_fisicaimage5014" >
+<data format="PNG" length="871" >89504e470d0a1a0a0000000d4948445200000020000000200806000000737a7af40000032e49444154789cc5974d881c4514c77f232da98689f480811a18a14b56b43062666f935b4e42f0339e044541fc40c4a35ec4b307413c04054105c11c249e3c6f4061065c482b1176c0c51a74a04b58980207f70925e3a1779655b2d9eecdb81634fdf9defbbd7fbf57d5dd5a2c16fc9f23a9f350abd57a10f805f8fdb8810e4bf48e9af62f029781d671010e1b750122f01cf02135555b35c042250ae015e053e0f4490340024a298067816f80b513055089226b67cbd373c0d7803d310041e8649da50a00f7ef413c7c22000a85528a413e3878f9de3d88c1cdad5608204875a0215fcb0ff6420fb806bc7a1c80da2db5d705d8b6255d4b311846d3112202708aaa4553e0fd2600f5158802094c98a0cf68d0607ae6df29bc073cf59f002c15c8931c1258b7ebe89ee6c2da85fd7b7bfe3e039e5939c052018f47258a1933badd2e699e62cf5a547b1fe22ee00be0dd95022cb3341d8320586dc9b28cfe7d7d4c6eb874ee1259961d34790bf88023d68ffa3361ac5ad1cd1c2a51f8e0316d832482ee6aa42bd807fea104c01bc047dca2d8eb2f2c49d58aa663d865179d69bc78acb6b8b9633d5f67abb7c5f987ceb3b1b9c16c6786dff188c8cbc06fc03b3773dba80654a2707307800b0e85a28c2583de00d5535c3c7b11a515d65ad22c5d9afe005c39cc6fb31a8860da060093199452f4f33ed216cc69c3d00f112f14454139291191ef804781addb062056bba5027e5ec91f087462878d1b1bb8b1e3eab5abb86d4798876f81c781e9addc365a8e05a90a2f0a36b7485be8ded9653819225361b439c24f3c12e513e009aa777f94db7a43a2ec77813ea3abea8fbaca7cdb5114056edb21512e03afd7f5dba8060441a349db297996534c8bfd77ee260e89f215f0665d9fd05001623513f6efee331a8f7063c77073c8643a81c815aa8fd7dd26008dbbc0de639120cc6ecc188e86f8a9ff8bc8dbc0f34d8343530512703b8e300b5cfff13a7eea23f01af071d3c08d0154a25089a2fcb5a4181748903f819780cf8f1bbc11804421cc03e5764908e10fe005e0cbdb090e0d6ba09c968410c6c023ab080e0d1408f30091ef81a7819f5711bc09c029223f018f71c4d4da782c168b2337e049aaff8095c7f91b973760670a5c56ae0000000049454e44ae426082</data>
+</image>
+</xupdate:append-first>
+<xupdate:insert-after select="/UI[UI,1]/widget[QWidget,formProveedores]/vbox[vbox,1]/widget[QFrame,frame7]/hbox[hbox,1]/widget[QGroupBox,gbxNombre]" >
+<widget class="QGroupBox" >
+<property name="name" >
+<cstring>gbxNombreApellidos</cstring>
+</property>
+<property name="maximumSize" >
+<size>
+<width>32767</width>
+<height>50</height>
+</size>
+</property>
+<property name="title" >
+<string/>
+</property>
+<property name="alignment" >
+<set>AlignVCenter</set>
+</property>
+<hbox>
+<property name="name" >
+<cstring>unnamed</cstring>
+</property>
+<property name="margin" >
+<number>3</number>
+</property>
+<widget class="FLFieldDB" >
+<property name="name" >
+<cstring>fdbNombrePila</cstring>
+</property>
+<property name="sizePolicy" >
+<sizepolicy>
+<hsizetype>7</hsizetype>
+<vsizetype>0</vsizetype>
+<horstretch>0</horstretch>
+<verstretch>0</verstretch>
+</sizepolicy>
+</property>
+<property name="fieldName" >
+<string>nombrepila</string>
+</property>
+</widget>
+<widget class="QLayoutWidget" >
+<property name="name" >
+<cstring>layout27</cstring>
+</property>
+<vbox>
+<property name="name" >
+<cstring>unnamed</cstring>
+</property>
+<property name="margin" >
+<number>2</number>
+</property>
+<property name="spacing" >
+<number>1</number>
+</property>
+<widget class="QPushButton" >
+<property name="name" >
+<cstring>tbnInsertarNombre</cstring>
+</property>
+<property name="minimumSize" >
+<size>
+<width>32</width>
+<height>16</height>
+</size>
+</property>
+<property name="maximumSize" >
+<size>
+<width>32</width>
+<height>16</height>
+</size>
+</property>
+<property name="text" >
+<string/>
+</property>
+<property name="iconSet" >
+<iconset>persona_fisicaimage23051</iconset>
+</property>
+<property name="toolTip" stdset="0" >
+<string>Insertar nombre</string>
+</property>
+<property name="whatsThis" stdset="0" >
+<string/>
+</property>
+</widget>
+<widget class="QPushButton" >
+<property name="name" >
+<cstring>tbnEliminarNombre</cstring>
+</property>
+<property name="minimumSize" >
+<size>
+<width>32</width>
+<height>16</height>
+</size>
+</property>
+<property name="maximumSize" >
+<size>
+<width>32</width>
+<height>16</height>
+</size>
+</property>
+<property name="text" >
+<string/>
+</property>
+<property name="iconSet" >
+<iconset>persona_fisicaimage5014</iconset>
+</property>
+<property name="toolTip" stdset="0" >
+<string>Eliminar nombre</string>
+</property>
+<property name="whatsThis" stdset="0" >
+<string/>
+</property>
+</widget>
+</vbox>
+</widget>
+<widget class="FLFieldDB" >
+<property name="name" >
+<cstring>fdbApellidos</cstring>
+</property>
+<property name="sizePolicy" >
+<sizepolicy>
+<hsizetype>7</hsizetype>
+<vsizetype>0</vsizetype>
+<horstretch>0</horstretch>
+<verstretch>0</verstretch>
+</sizepolicy>
+</property>
+<property name="minimumSize" >
+<size>
+<width>112</width>
+<height>24</height>
+</size>
+</property>
+<property name="fieldName" >
+<string>apellidos</string>
+</property>
+</widget>
+</hbox>
+</widget>
+</xupdate:insert-after>
+<xupdate:insert-after select="/UI[UI,1]/widget[QWidget,formProveedores]/vbox[vbox,1]/widget[QFrame,frame7]/property[name]" >
+<property name="maximumSize" >
+<size>
+<width>32767</width>
+<height>70</height>
+</size>
+</property>
+</xupdate:insert-after>
+<xupdate:update select="/UI[UI,1]/widget[QWidget,formProveedores]/vbox[vbox,1]/widget[QTabWidget,tbwProveedor]/widget[QWidget,comercial]/vbox[vbox,1]/widget[QFrame,frmCuentas]/vbox[vbox,1]/widget[QLayoutWidget,layout17_2]/hbox[hbox,1]/widget[FLFieldDB,fdbCodCuentaRem]/property[minimumSize]/size[size,1]/height[height,1]/text()[1]" >22</xupdate:update>
+<xupdate:update select="/UI[UI,1]/widget[QWidget,formProveedores]/vbox[vbox,1]/widget[QTabWidget,tbwProveedor]/widget[QWidget,comercial]/vbox[vbox,1]/widget[QFrame,frmCuentas]/vbox[vbox,1]/widget[QLayoutWidget,layout17_2]/hbox[hbox,1]/widget[FLFieldDB,fdbCodCuentaRem]/property[minimumSize]/size[size,1]/width[width,1]/text()[1]" >25</xupdate:update>
+<xupdate:update select="/UI[UI,1]/widget[QWidget,formProveedores]/vbox[vbox,1]/widget[QTabWidget,tbwProveedor]/widget[QWidget,comercial]/vbox[vbox,1]/widget[QLayoutWidget,layout101]/hbox[hbox,1]/widget[QGroupBox,gbxComercial1]/vbox[vbox,1]/widget[QLayoutWidget,layout41]/hbox[hbox,1]/widget[FLFieldDB,fdbIrpfSerie]/property[minimumSize]/size[size,1]/height[height,1]/text()[1]" >22</xupdate:update>
+<xupdate:update select="/UI[UI,1]/widget[QWidget,formProveedores]/vbox[vbox,1]/widget[QTabWidget,tbwProveedor]/widget[QWidget,comercial]/vbox[vbox,1]/widget[QLayoutWidget,layout101]/hbox[hbox,1]/widget[QGroupBox,gbxComercial1]/vbox[vbox,1]/widget[QLayoutWidget,layout41]/hbox[hbox,1]/widget[FLFieldDB,fdbIrpfSerie]/property[minimumSize]/size[size,1]/width[width,1]/text()[1]" >25</xupdate:update>
+<xupdate:update select="/UI[UI,1]/widget[QWidget,formProveedores]/vbox[vbox,1]/widget[QTabWidget,tbwProveedor]/widget[QWidget,comercial]/vbox[vbox,1]/widget[QLayoutWidget,layout101]/hbox[hbox,1]/widget[QGroupBox,gbxComercial2]/vbox[vbox,1]/widget[FLFieldDB,fdbIvaPortes]/property[minimumSize]/size[size,1]/height[height,1]/text()[1]" >22</xupdate:update>
+<xupdate:update select="/UI[UI,1]/widget[QWidget,formProveedores]/vbox[vbox,1]/widget[QTabWidget,tbwProveedor]/widget[QWidget,comercial]/vbox[vbox,1]/widget[QLayoutWidget,layout101]/hbox[hbox,1]/widget[QGroupBox,gbxComercial2]/vbox[vbox,1]/widget[FLFieldDB,fdbIvaPortes]/property[minimumSize]/size[size,1]/width[width,1]/text()[1]" >25</xupdate:update>
+<xupdate:update select="/UI[UI,1]/widget[QWidget,formProveedores]/vbox[vbox,1]/widget[QTabWidget,tbwProveedor]/widget[QWidget,comercial]/vbox[vbox,1]/widget[QLayoutWidget,layout101]/hbox[hbox,1]/widget[QGroupBox,gbxComercial2]/vbox[vbox,1]/widget[FLFieldDB,fdbRecFinanciero]/property[minimumSize]/size[size,1]/height[height,1]/text()[1]" >22</xupdate:update>
+<xupdate:update select="/UI[UI,1]/widget[QWidget,formProveedores]/vbox[vbox,1]/widget[QTabWidget,tbwProveedor]/widget[QWidget,comercial]/vbox[vbox,1]/widget[QLayoutWidget,layout101]/hbox[hbox,1]/widget[QGroupBox,gbxComercial2]/vbox[vbox,1]/widget[FLFieldDB,fdbRecFinanciero]/property[minimumSize]/size[size,1]/width[width,1]/text()[1]" >25</xupdate:update>
+<xupdate:update select="/UI[UI,1]/widget[QWidget,formProveedores]/vbox[vbox,1]/widget[QTabWidget,tbwProveedor]/widget[QWidget,comercial]/vbox[vbox,1]/widget[QLayoutWidget,layout101]/hbox[hbox,1]/widget[QGroupBox,gbxComercial2]/vbox[vbox,1]/widget[FLFieldDB,fdbRegimenIva]/property[minimumSize]/size[size,1]/height[height,1]/text()[1]" >22</xupdate:update>
+<xupdate:update select="/UI[UI,1]/widget[QWidget,formProveedores]/vbox[vbox,1]/widget[QTabWidget,tbwProveedor]/widget[QWidget,comercial]/vbox[vbox,1]/widget[QLayoutWidget,layout101]/hbox[hbox,1]/widget[QGroupBox,gbxComercial2]/vbox[vbox,1]/widget[FLFieldDB,fdbRegimenIva]/property[minimumSize]/size[size,1]/width[width,1]/text()[1]" >25</xupdate:update>
+<xupdate:update select="/UI[UI,1]/widget[QWidget,formProveedores]/vbox[vbox,1]/widget[QTabWidget,tbwProveedor]/widget[QWidget,contabilidad]/vbox[vbox,1]/widget[QLayoutWidget,layout38]/hbox[hbox,1]/widget[FLFieldDB,fdbDebeSubcuenta]/property[minimumSize]/size[size,1]/height[height,1]/text()[1]" >22</xupdate:update>
+<xupdate:update select="/UI[UI,1]/widget[QWidget,formProveedores]/vbox[vbox,1]/widget[QTabWidget,tbwProveedor]/widget[QWidget,contabilidad]/vbox[vbox,1]/widget[QLayoutWidget,layout38]/hbox[hbox,1]/widget[FLFieldDB,fdbDebeSubcuenta]/property[minimumSize]/size[size,1]/width[width,1]/text()[1]" >25</xupdate:update>
+<xupdate:update select="/UI[UI,1]/widget[QWidget,formProveedores]/vbox[vbox,1]/widget[QTabWidget,tbwProveedor]/widget[QWidget,contabilidad]/vbox[vbox,1]/widget[QLayoutWidget,layout38]/hbox[hbox,1]/widget[FLFieldDB,fdbHaberSubcuenta]/property[minimumSize]/size[size,1]/height[height,1]/text()[1]" >22</xupdate:update>
+<xupdate:update select="/UI[UI,1]/widget[QWidget,formProveedores]/vbox[vbox,1]/widget[QTabWidget,tbwProveedor]/widget[QWidget,contabilidad]/vbox[vbox,1]/widget[QLayoutWidget,layout38]/hbox[hbox,1]/widget[FLFieldDB,fdbHaberSubcuenta]/property[minimumSize]/size[size,1]/width[width,1]/text()[1]" >25</xupdate:update>
+<xupdate:update select="/UI[UI,1]/widget[QWidget,formProveedores]/vbox[vbox,1]/widget[QTabWidget,tbwProveedor]/widget[QWidget,contabilidad]/vbox[vbox,1]/widget[QLayoutWidget,layout38]/hbox[hbox,1]/widget[FLFieldDB,fdbSaldoSubcuenta]/property[minimumSize]/size[size,1]/height[height,1]/text()[1]" >22</xupdate:update>
+<xupdate:update select="/UI[UI,1]/widget[QWidget,formProveedores]/vbox[vbox,1]/widget[QTabWidget,tbwProveedor]/widget[QWidget,contabilidad]/vbox[vbox,1]/widget[QLayoutWidget,layout38]/hbox[hbox,1]/widget[FLFieldDB,fdbSaldoSubcuenta]/property[minimumSize]/size[size,1]/width[width,1]/text()[1]" >25</xupdate:update>
+<xupdate:update select="/UI[UI,1]/widget[QWidget,formProveedores]/vbox[vbox,1]/widget[QTabWidget,tbwProveedor]/widget[QWidget,contabilidad]/vbox[vbox,1]/widget[QLayoutWidget,layout43]/hbox[hbox,1]/widget[FLFieldDB,fdbCodSubcuenta]/property[minimumSize]/size[size,1]/height[height,1]/text()[1]" >22</xupdate:update>
+<xupdate:update select="/UI[UI,1]/widget[QWidget,formProveedores]/vbox[vbox,1]/widget[QTabWidget,tbwProveedor]/widget[QWidget,contabilidad]/vbox[vbox,1]/widget[QLayoutWidget,layout43]/hbox[hbox,1]/widget[FLFieldDB,fdbCodSubcuenta]/property[minimumSize]/size[size,1]/width[width,1]/text()[1]" >25</xupdate:update>
+<xupdate:update select="/UI[UI,1]/widget[QWidget,formProveedores]/vbox[vbox,1]/widget[QTabWidget,tbwProveedor]/widget[QWidget,contabilidad]/vbox[vbox,1]/widget[QLayoutWidget,layout43]/hbox[hbox,1]/widget[FLFieldDB,fdbEjercicioSubcuenta]/property[minimumSize]/size[size,1]/height[height,1]/text()[1]" >22</xupdate:update>
+<xupdate:update select="/UI[UI,1]/widget[QWidget,formProveedores]/vbox[vbox,1]/widget[QTabWidget,tbwProveedor]/widget[QWidget,contabilidad]/vbox[vbox,1]/widget[QLayoutWidget,layout43]/hbox[hbox,1]/widget[FLFieldDB,fdbEjercicioSubcuenta]/property[minimumSize]/size[size,1]/width[width,1]/text()[1]" >25</xupdate:update>
+<xupdate:update select="/UI[UI,1]/widget[QWidget,formProveedores]/vbox[vbox,1]/widget[QTabWidget,tbwProveedor]/widget[QWidget,general]/vbox[vbox,1]/widget[QFrame,frmNombre]/vbox[vbox,1]/widget[FLFieldDB,fdbNombreComercial]/property[minimumSize]/size[size,1]/height[height,1]/text()[1]" >24</xupdate:update>
+<xupdate:update select="/UI[UI,1]/widget[QWidget,formProveedores]/vbox[vbox,1]/widget[QTabWidget,tbwProveedor]/widget[QWidget,general]/vbox[vbox,1]/widget[QFrame,frmNombre]/vbox[vbox,1]/widget[FLFieldDB,fdbNombreComercial]/property[minimumSize]/size[size,1]/width[width,1]/text()[1]" >167</xupdate:update>
+<xupdate:update select="/UI[UI,1]/widget[QWidget,formProveedores]/vbox[vbox,1]/widget[QTabWidget,tbwProveedor]/widget[QWidget,general]/vbox[vbox,1]/widget[QFrame,frmNombre]/vbox[vbox,1]/widget[QLayoutWidget,layoutIdFiscal]/hbox[hbox,1]/widget[FLFieldDB,fdbCifNif]/property[minimumSize]/size[size,1]/height[height,1]/text()[1]" >24</xupdate:update>
+<xupdate:update select="/UI[UI,1]/widget[QWidget,formProveedores]/vbox[vbox,1]/widget[QTabWidget,tbwProveedor]/widget[QWidget,general]/vbox[vbox,1]/widget[QFrame,frmNombre]/vbox[vbox,1]/widget[QLayoutWidget,layoutIdFiscal]/hbox[hbox,1]/widget[FLFieldDB,fdbCifNif]/property[minimumSize]/size[size,1]/width[width,1]/text()[1]" >86</xupdate:update>
+<xupdate:update select="/UI[UI,1]/widget[QWidget,formProveedores]/vbox[vbox,1]/widget[QTabWidget,tbwProveedor]/widget[QWidget,general]/vbox[vbox,1]/widget[QFrame,frmNombre]/vbox[vbox,1]/widget[QLayoutWidget,layoutIdFiscal]/hbox[hbox,1]/widget[FLFieldDB,fdbTipoIdFiscal]/property[minimumSize]/size[size,1]/height[height,1]/text()[1]" >24</xupdate:update>
+<xupdate:update select="/UI[UI,1]/widget[QWidget,formProveedores]/vbox[vbox,1]/widget[QTabWidget,tbwProveedor]/widget[QWidget,general]/vbox[vbox,1]/widget[QFrame,frmNombre]/vbox[vbox,1]/widget[QLayoutWidget,layoutIdFiscal]/hbox[hbox,1]/widget[FLFieldDB,fdbTipoIdFiscal]/property[minimumSize]/size[size,1]/width[width,1]/text()[1]" >125</xupdate:update>
+<xupdate:update select="/UI[UI,1]/widget[QWidget,formProveedores]/vbox[vbox,1]/widget[QTabWidget,tbwProveedor]/widget[QWidget,general]/vbox[vbox,1]/widget[QLayoutWidget,layout44]/hbox[hbox,1]/widget[QGroupBox,groupBox15]/vbox[vbox,1]/widget[FLFieldDB,fdbWeb]/property[minimumSize]/size[size,1]/height[height,1]/text()[1]" >24</xupdate:update>
+<xupdate:update select="/UI[UI,1]/widget[QWidget,formProveedores]/vbox[vbox,1]/widget[QTabWidget,tbwProveedor]/widget[QWidget,general]/vbox[vbox,1]/widget[QLayoutWidget,layout44]/hbox[hbox,1]/widget[QGroupBox,groupBox15]/vbox[vbox,1]/widget[FLFieldDB,fdbWeb]/property[minimumSize]/size[size,1]/width[width,1]/text()[1]" >80</xupdate:update>
+<xupdate:update select="/UI[UI,1]/widget[QWidget,formProveedores]/vbox[vbox,1]/widget[QTabWidget,tbwProveedor]/widget[QWidget,general]/vbox[vbox,1]/widget[QLayoutWidget,layout44]/hbox[hbox,1]/widget[QGroupBox,groupBox15]/vbox[vbox,1]/widget[QLayoutWidget,layout24]/hbox[hbox,1]/widget[FLFieldDB,fdbTelefono1]/property[minimumSize]/size[size,1]/height[height,1]/text()[1]" >24</xupdate:update>
+<xupdate:update select="/UI[UI,1]/widget[QWidget,formProveedores]/vbox[vbox,1]/widget[QTabWidget,tbwProveedor]/widget[QWidget,general]/vbox[vbox,1]/widget[QLayoutWidget,layout44]/hbox[hbox,1]/widget[QGroupBox,groupBox15]/vbox[vbox,1]/widget[QLayoutWidget,layout24]/hbox[hbox,1]/widget[FLFieldDB,fdbTelefono2]/property[minimumSize]/size[size,1]/height[height,1]/text()[1]" >24</xupdate:update>
+<xupdate:update select="/UI[UI,1]/widget[QWidget,formProveedores]/vbox[vbox,1]/widget[QTabWidget,tbwProveedor]/widget[QWidget,general]/vbox[vbox,1]/widget[QLayoutWidget,layout44]/hbox[hbox,1]/widget[QGroupBox,groupBox15]/vbox[vbox,1]/widget[QLayoutWidget,layout25]/hbox[hbox,1]/widget[FLFieldDB,fdbFax]/property[minimumSize]/size[size,1]/height[height,1]/text()[1]" >24</xupdate:update>
+<xupdate:update select="/UI[UI,1]/widget[QWidget,formProveedores]/vbox[vbox,1]/widget[QTabWidget,tbwProveedor]/widget[QWidget,general]/vbox[vbox,1]/widget[QLayoutWidget,layout44]/hbox[hbox,1]/widget[QGroupBox,groupBox15]/vbox[vbox,1]/widget[QLayoutWidget,layout25]/hbox[hbox,1]/widget[FLFieldDB,fdbFax]/property[minimumSize]/size[size,1]/width[width,1]/text()[1]" >74</xupdate:update>
+<xupdate:update select="/UI[UI,1]/widget[QWidget,formProveedores]/vbox[vbox,1]/widget[QTabWidget,tbwProveedor]/widget[QWidget,general]/vbox[vbox,1]/widget[QLayoutWidget,layout44]/hbox[hbox,1]/widget[QGroupBox,groupBox15]/vbox[vbox,1]/widget[QLayoutWidget,layout61]/hbox[hbox,1]/widget[FLFieldDB,fdbEmail]/property[minimumSize]/size[size,1]/height[height,1]/text()[1]" >24</xupdate:update>
+<xupdate:update select="/UI[UI,1]/widget[QWidget,formProveedores]/vbox[vbox,1]/widget[QTabWidget,tbwProveedor]/widget[QWidget,general]/vbox[vbox,1]/widget[QLayoutWidget,layout44]/hbox[hbox,1]/widget[QGroupBox,groupBox15]/vbox[vbox,1]/widget[QLayoutWidget,layout61]/hbox[hbox,1]/widget[FLFieldDB,fdbEmail]/property[minimumSize]/size[size,1]/width[width,1]/text()[1]" >90</xupdate:update>
+<xupdate:update select="/UI[UI,1]/widget[QWidget,formProveedores]/vbox[vbox,1]/widget[QTabWidget,tbwProveedor]/widget[QWidget,general]/vbox[vbox,1]/widget[QLayoutWidget,layout68]/hbox[hbox,1]/widget[FLFieldDB,fdbObservaciones]/property[minimumSize]/size[size,1]/height[height,1]/text()[1]" >24</xupdate:update>
+<xupdate:update select="/UI[UI,1]/widget[QWidget,formProveedores]/vbox[vbox,1]/widget[QTabWidget,tbwProveedor]/widget[QWidget,general]/vbox[vbox,1]/widget[QLayoutWidget,layout68]/hbox[hbox,1]/widget[FLFieldDB,fdbObservaciones]/property[minimumSize]/size[size,1]/width[width,1]/text()[1]" >147</xupdate:update>
+<xupdate:delete select="/UI[UI,1]/includehints[includehints,1]/includehint[flfielddb.h]" />
+<xupdate:delete select="/UI[UI,1]/includehints[includehints,1]/includehint[flfielddb.h]" />
+<xupdate:delete select="/UI[UI,1]/includehints[includehints,1]/includehint[flfielddb.h]" />
+<xupdate:delete select="/UI[UI,1]/includehints[includehints,1]/includehint[flfielddb.h]" />
+<xupdate:delete select="/UI[UI,1]/includehints[includehints,1]/includehint[flfielddb.h]" />
+<xupdate:delete select="/UI[UI,1]/includehints[includehints,1]/includehint[flfielddb.h]" />
+<xupdate:delete select="/UI[UI,1]/includehints[includehints,1]/includehint[flfielddb.h]" />
+<xupdate:delete select="/UI[UI,1]/includehints[includehints,1]/includehint[flfielddb.h]" />
+<xupdate:delete select="/UI[UI,1]/includehints[includehints,1]/includehint[flfielddb.h]" />
+<xupdate:delete select="/UI[UI,1]/includehints[includehints,1]/includehint[flfielddb.h]" />
+<xupdate:delete select="/UI[UI,1]/includehints[includehints,1]/includehint[flfielddb.h]" />
+<xupdate:delete select="/UI[UI,1]/includehints[includehints,1]/includehint[flfielddb.h]" />
+<xupdate:delete select="/UI[UI,1]/includehints[includehints,1]/includehint[flfielddb.h]" />
+<xupdate:delete select="/UI[UI,1]/includehints[includehints,1]/includehint[flfielddb.h]" />
+<xupdate:delete select="/UI[UI,1]/includehints[includehints,1]/includehint[flfielddb.h]" />
+<xupdate:delete select="/UI[UI,1]/includehints[includehints,1]/includehint[flfielddb.h]" />
+<xupdate:delete select="/UI[UI,1]/includehints[includehints,1]/includehint[flfielddb.h]" />
+<xupdate:delete select="/UI[UI,1]/includehints[includehints,1]/includehint[flfielddb.h]" />
+<xupdate:delete select="/UI[UI,1]/includehints[includehints,1]/includehint[flfielddb.h]" />
+<xupdate:delete select="/UI[UI,1]/includehints[includehints,1]/includehint[flfielddb.h]" />
+<xupdate:delete select="/UI[UI,1]/includehints[includehints,1]/includehint[flfielddb.h]" />
+<xupdate:delete select="/UI[UI,1]/includehints[includehints,1]/includehint[flfielddb.h]" />
+<xupdate:delete select="/UI[UI,1]/includehints[includehints,1]/includehint[flfielddb.h]" />
+<xupdate:delete select="/UI[UI,1]/includehints[includehints,1]/includehint[flfielddb.h]" />
+<xupdate:delete select="/UI[UI,1]/includehints[includehints,1]/includehint[flfielddb.h]" />
+<xupdate:delete select="/UI[UI,1]/includehints[includehints,1]/includehint[flfielddb.h]" />
+<xupdate:delete select="/UI[UI,1]/includehints[includehints,1]/includehint[flfielddb.h]" />
+<xupdate:delete select="/UI[UI,1]/includehints[includehints,1]/includehint[flfielddb.h]" />
+<xupdate:delete select="/UI[UI,1]/includehints[includehints,1]/includehint[flfielddb.h]" />
+<xupdate:delete select="/UI[UI,1]/includehints[includehints,1]/includehint[flfielddb.h]" />
+<xupdate:delete select="/UI[UI,1]/includehints[includehints,1]/includehint[flfielddb.h]" />
+<xupdate:update select="/UI[UI,1]/tabstops[tabstops,1]/tabstop[tabstop,1]/text()[1]" >fdbCodProveedor</xupdate:update>
+<xupdate:insert-after select="/UI[UI,1]/tabstops[tabstops,1]/tabstop[tabstop,1]" >
+<tabstop>fdbPersonaFisica</tabstop>
+</xupdate:insert-after>
+<xupdate:insert-after select="/UI[UI,1]/tabstops[tabstops,1]/tabstop[tabstop,2]" >
+<tabstop>fdbNombre</tabstop>
+</xupdate:insert-after>
+<xupdate:insert-after select="/UI[UI,1]/tabstops[tabstops,1]/tabstop[tabstop,3]" >
+<tabstop>fdbNombrePila</tabstop>
+</xupdate:insert-after>
+<xupdate:insert-after select="/UI[UI,1]/tabstops[tabstops,1]/tabstop[tabstop,4]" >
+<tabstop>fdbApellidos</tabstop>
+</xupdate:insert-after>
+<xupdate:insert-after select="/UI[UI,1]/tabstops[tabstops,1]/tabstop[tabstop,5]" >
+<tabstop>fdbTipoIdFiscal</tabstop>
+</xupdate:insert-after>
+<xupdate:insert-after select="/UI[UI,1]/tabstops[tabstops,1]/tabstop[tabstop,6]" >
+<tabstop>fdbCifNif</tabstop>
+</xupdate:insert-after>
+<xupdate:insert-after select="/UI[UI,1]/tabstops[tabstops,1]/tabstop[tabstop,7]" >
+<tabstop>fdbNombreComercial</tabstop>
+</xupdate:insert-after>
+<xupdate:insert-after select="/UI[UI,1]/tabstops[tabstops,1]/tabstop[tabstop,8]" >
+<tabstop>pbNuevaDireccion</tabstop>
+</xupdate:insert-after>
+<xupdate:insert-after select="/UI[UI,1]/tabstops[tabstops,1]/tabstop[tabstop,9]" >
+<tabstop>fdbCodContacto</tabstop>
+</xupdate:insert-after>
+<xupdate:insert-after select="/UI[UI,1]/tabstops[tabstops,1]/tabstop[tabstop,10]" >
+<tabstop>fdbContacto</tabstop>
+</xupdate:insert-after>
+<xupdate:insert-after select="/UI[UI,1]/tabstops[tabstops,1]/tabstop[tabstop,11]" >
+<tabstop>fdbTelefono1</tabstop>
+</xupdate:insert-after>
+<xupdate:insert-after select="/UI[UI,1]/tabstops[tabstops,1]/tabstop[tabstop,12]" >
+<tabstop>fdbTelefono2</tabstop>
+</xupdate:insert-after>
+<xupdate:insert-after select="/UI[UI,1]/tabstops[tabstops,1]/tabstop[tabstop,13]" >
+<tabstop>fdbFax</tabstop>
+</xupdate:insert-after>
+<xupdate:insert-after select="/UI[UI,1]/tabstops[tabstops,1]/tabstop[tabstop,14]" >
+<tabstop>fdbEmail</tabstop>
+</xupdate:insert-after>
+<xupdate:insert-after select="/UI[UI,1]/tabstops[tabstops,1]/tabstop[tabstop,15]" >
+<tabstop>fdbWeb</tabstop>
+</xupdate:insert-after>
+<xupdate:insert-after select="/UI[UI,1]/tabstops[tabstops,1]/tabstop[tabstop,16]" >
+<tabstop>fdbObservaciones</tabstop>
+</xupdate:insert-after>
+<xupdate:insert-after select="/UI[UI,1]/tabstops[tabstops,1]/tabstop[tabstop,17]" >
+<tabstop>tbwProveedor</tabstop>
+</xupdate:insert-after>
+<xupdate:insert-after select="/UI[UI,1]/tabstops[tabstops,1]/tabstop[tabstop,18]" >
+<tabstop>tbnInsertarNombre</tabstop>
+</xupdate:insert-after>
+<xupdate:insert-after select="/UI[UI,1]/tabstops[tabstops,1]/tabstop[tabstop,19]" >
+<tabstop>tbnEliminarNombre</tabstop>
+</xupdate:insert-after>
+<xupdate:insert-after select="/UI[UI,1]/tabstops[tabstops,1]/tabstop[tabstop,20]" >
+<tabstop>fdbCodPago</tabstop>
+</xupdate:insert-after>
+<xupdate:insert-after select="/UI[UI,1]/tabstops[tabstops,1]/tabstop[tabstop,21]" >
+<tabstop>fdbDesPago</tabstop>
+</xupdate:insert-after>
+<xupdate:insert-after select="/UI[UI,1]/tabstops[tabstops,1]/tabstop[tabstop,22]" >
+<tabstop>fdbCodDivisa</tabstop>
+</xupdate:insert-after>
+<xupdate:insert-after select="/UI[UI,1]/tabstops[tabstops,1]/tabstop[tabstop,23]" >
+<tabstop>fdbDesDivisa</tabstop>
+</xupdate:insert-after>
+<xupdate:insert-after select="/UI[UI,1]/tabstops[tabstops,1]/tabstop[tabstop,24]" >
+<tabstop>fdbCodSerie</tabstop>
+</xupdate:insert-after>
+<xupdate:insert-after select="/UI[UI,1]/tabstops[tabstops,1]/tabstop[tabstop,25]" >
+<tabstop>fdbIrpfSerie</tabstop>
+</xupdate:insert-after>
+<xupdate:insert-after select="/UI[UI,1]/tabstops[tabstops,1]/tabstop[tabstop,26]" >
+<tabstop>fdbRegimenIva</tabstop>
+</xupdate:insert-after>
+<xupdate:insert-after select="/UI[UI,1]/tabstops[tabstops,1]/tabstop[tabstop,27]" >
+<tabstop>fdbRecFinanciero</tabstop>
+</xupdate:insert-after>
+<xupdate:insert-after select="/UI[UI,1]/tabstops[tabstops,1]/tabstop[tabstop,28]" >
+<tabstop>fdbIvaPortes</tabstop>
+</xupdate:insert-after>
+<xupdate:insert-after select="/UI[UI,1]/tabstops[tabstops,1]/tabstop[tabstop,29]" >
+<tabstop>fdbCodCuentaRem</tabstop>
+</xupdate:insert-after>
+<xupdate:insert-after select="/UI[UI,1]/tabstops[tabstops,1]/tabstop[tabstop,30]" >
+<tabstop>fdbDesCtaRem</tabstop>
+</xupdate:insert-after>
+<xupdate:insert-after select="/UI[UI,1]/tabstops[tabstops,1]/tabstop[tabstop,31]" >
+<tabstop>tdbDescuentos</tabstop>
+</xupdate:insert-after>
+<xupdate:insert-after select="/UI[UI,1]/tabstops[tabstops,1]/tabstop[tabstop,32]" >
+<tabstop>tdbCuentas</tabstop>
+</xupdate:insert-after>
+<xupdate:insert-after select="/UI[UI,1]/tabstops[tabstops,1]/tabstop[tabstop,33]" >
+<tabstop>pbDireccion</tabstop>
+</xupdate:insert-after>
+<xupdate:insert-after select="/UI[UI,1]/tabstops[tabstops,1]/tabstop[tabstop,34]" >
+<tabstop>tdbDirecciones</tabstop>
+</xupdate:insert-after>
+<xupdate:insert-after select="/UI[UI,1]/tabstops[tabstops,1]/tabstop[tabstop,35]" >
+<tabstop>tdbContactos</tabstop>
+</xupdate:insert-after>
+<xupdate:insert-after select="/UI[UI,1]/tabstops[tabstops,1]/tabstop[tabstop,36]" >
+<tabstop>tbwDocumentos</tabstop>
+</xupdate:insert-after>
+<xupdate:insert-after select="/UI[UI,1]/tabstops[tabstops,1]/tabstop[tabstop,37]" >
+<tabstop>tdbPedidos</tabstop>
+</xupdate:insert-after>
+<xupdate:insert-after select="/UI[UI,1]/tabstops[tabstops,1]/tabstop[tabstop,38]" >
+<tabstop>tdbAlbaranes</tabstop>
+</xupdate:insert-after>
+<xupdate:insert-after select="/UI[UI,1]/tabstops[tabstops,1]/tabstop[tabstop,39]" >
+<tabstop>tdbFacturas</tabstop>
+</xupdate:insert-after>
+<xupdate:insert-after select="/UI[UI,1]/tabstops[tabstops,1]/tabstop[tabstop,40]" >
+<tabstop>lvwGDDocumentos</tabstop>
+</xupdate:insert-after>
+<xupdate:insert-after select="/UI[UI,1]/tabstops[tabstops,1]/tabstop[tabstop,41]" >
+<tabstop>fdbCodSubcuenta</tabstop>
+</xupdate:insert-after>
+<xupdate:insert-after select="/UI[UI,1]/tabstops[tabstops,1]/tabstop[tabstop,42]" >
+<tabstop>fdbIdSubcuenta</tabstop>
+</xupdate:insert-after>
+<xupdate:insert-after select="/UI[UI,1]/tabstops[tabstops,1]/tabstop[tabstop,43]" >
+<tabstop>fdbDesSubcuenta</tabstop>
+</xupdate:insert-after>
+<xupdate:insert-after select="/UI[UI,1]/tabstops[tabstops,1]/tabstop[tabstop,44]" >
+<tabstop>fdbEjercicioSubcuenta</tabstop>
+</xupdate:insert-after>
+<xupdate:insert-after select="/UI[UI,1]/tabstops[tabstops,1]/tabstop[tabstop,45]" >
+<tabstop>fdbDebeSubcuenta</tabstop>
+</xupdate:insert-after>
+<xupdate:insert-after select="/UI[UI,1]/tabstops[tabstops,1]/tabstop[tabstop,46]" >
+<tabstop>fdbHaberSubcuenta</tabstop>
+</xupdate:insert-after>
+<xupdate:insert-after select="/UI[UI,1]/tabstops[tabstops,1]/tabstop[tabstop,47]" >
+<tabstop>fdbSaldoSubcuenta</tabstop>
+</xupdate:insert-after>
+<xupdate:insert-after select="/UI[UI,1]/tabstops[tabstops,1]/tabstop[tabstop,48]" >
+<tabstop>tdbPartidas</tabstop>
+</xupdate:insert-after>
+<xupdate:insert-after select="/UI[UI,1]/tabstops[tabstops,1]/tabstop[tabstop,49]" >
+<tabstop>tdbSubcuentas</tabstop>
+</xupdate:insert-after>
+<xupdate:insert-after select="/UI[UI,1]/widget[QWidget,formProveedores]" >
+<customwidgets/>
+</xupdate:insert-after>
+</xupdate:modifications>

@@ -1,0 +1,35 @@
+<!DOCTYPE TMD>
+<TMD>
+    <name>tiposplegado</name>
+<!-- Tipos de plegado-->    <alias>QT_TRANSLATE_NOOP("MetaData","Tipos de plegado")</alias>
+    <field>
+        <name>codtipoplegado</name>
+<!-- Identificador interno-->        <alias>QT_TRANSLATE_NOOP("MetaData","Código")</alias>
+        <null>false</null>
+        <pk>true</pk>
+        <type>string</type>
+		<length>30</length>
+		
+		<relation>
+            <table>paramiptico</table>
+            <field>codtipoplegado</field>
+            <card>1M</card>
+        </relation>
+    </field>
+    <field>
+        <name>pliegueshor</name>
+<!-- Pliegues horizontales-->        <alias>QT_TRANSLATE_NOOP("MetaData","P. Horizontales")</alias>
+        <null>false</null>
+        <pk>false</pk>
+        <type>uint</type>
+        <default>0</default>
+    </field>
+	<field>
+        <name>plieguesver</name>
+<!-- Pliegues verticales-->        <alias>QT_TRANSLATE_NOOP("MetaData","P. Verticales")</alias>
+        <null>false</null>
+        <pk>false</pk>
+        <type>uint</type>
+        <default>0</default>
+    </field>
+</TMD>

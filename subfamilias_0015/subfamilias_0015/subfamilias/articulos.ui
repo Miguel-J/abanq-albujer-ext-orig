@@ -1,0 +1,95 @@
+<xupdate:modifications>
+<xupdate:insert-after select="/UI[UI,1]/widget[QWidget,formArticulos]/vbox[vbox,1]/widget[QTabWidget,tbwArticulo]/widget[QWidget,general]/vbox[vbox,1]/widget[QFrame,frmFamilia]" >
+<widget class="QFrame" >
+<property name="name" >
+<cstring>frmSubfamilia</cstring>
+</property>
+<property name="font" >
+<font>
+<bold>0</bold>
+</font>
+</property>
+<property name="frameShape" >
+<enum>GroupBoxPanel</enum>
+</property>
+<property name="frameShadow" >
+<enum>Sunken</enum>
+</property>
+<hbox>
+<property name="name" >
+<cstring>unnamed</cstring>
+</property>
+<widget class="FLFieldDB" >
+<property name="name" >
+<cstring>fdbCodSubfamilia</cstring>
+</property>
+<property name="sizePolicy" >
+<sizepolicy>
+<hsizetype>1</hsizetype>
+<vsizetype>0</vsizetype>
+<horstretch>0</horstretch>
+<verstretch>0</verstretch>
+</sizepolicy>
+</property>
+<property name="minimumSize" >
+<size>
+<width>38</width>
+<height>24</height>
+</size>
+</property>
+<property name="fieldName" >
+<string>codsubfamilia</string>
+</property>
+</widget>
+<widget class="FLFieldDB" >
+<property name="name" >
+<cstring>fdbdescsubfamilia</cstring>
+</property>
+<property name="sizePolicy" >
+<sizepolicy>
+<hsizetype>7</hsizetype>
+<vsizetype>0</vsizetype>
+<horstretch>0</horstretch>
+<verstretch>0</verstretch>
+</sizepolicy>
+</property>
+<property name="minimumSize" >
+<size>
+<width>4</width>
+<height>21</height>
+</size>
+</property>
+<property name="fieldName" >
+<string>descripcion</string>
+</property>
+<property name="tableName" >
+<string>subfamilias</string>
+</property>
+<property name="foreignField" >
+<string>codsubfamilia</string>
+</property>
+<property name="fieldRelation" >
+<string>codsubfamilia</string>
+</property>
+</widget>
+<spacer>
+<property name="name" >
+<cstring>spacersubfamilia</cstring>
+</property>
+<property name="orientation" >
+<enum>Horizontal</enum>
+</property>
+<property name="sizeType" >
+<enum>Expanding</enum>
+</property>
+<property name="sizeHint" >
+<size>
+<width>262</width>
+<height>20</height>
+</size>
+</property>
+</spacer>
+</hbox>
+</widget>
+</xupdate:insert-after>
+</xupdate:modifications>

@@ -1,0 +1,93 @@
+<xupdate:modifications>
+<xupdate:update select="/ACTIONS[ACTIONS,1]/action[clientes]/form[form,1]/text()[1]" >masterclientes</xupdate:update>
+<xupdate:update select="/ACTIONS[ACTIONS,1]/action[proveedores]/form[form,1]/text()[1]" >masterproveedores</xupdate:update>
+<xupdate:insert-after select="/ACTIONS[ACTIONS,1]/action[intervalos]" >
+<action>
+<name>comunicacionescli</name>
+<alias>QT_TRANSLATE_NOOP(&quot;MetaData&quot;,&quot;Comunicaciones de cliente&quot;)</alias>
+<description>QT_TRANSLATE_NOOP(&quot;MetaData&quot;,&quot;Comunicaciones de cliente&quot;)</description>
+<table>comunicacionescli</table>
+<form>mastercomunicaciones</form>
+<formrecord>comunicacionescli</formrecord>
+<scriptformrecord>comunicaciones</scriptformrecord>
+</action>
+</xupdate:insert-after>
+<xupdate:insert-after select="/ACTIONS[ACTIONS,1]/action[comunicacionescli]" >
+<action>
+<name>comunicacionesprov</name>
+<alias>QT_TRANSLATE_NOOP(&quot;MetaData&quot;,&quot;Comunicaciones de proveedor&quot;)</alias>
+<description>QT_TRANSLATE_NOOP(&quot;MetaData&quot;,&quot;Comunicaciones de proveedor&quot;)</description>
+<table>comunicacionesprov</table>
+<form>mastercomunicaciones</form>
+<formrecord>comunicacionesprov</formrecord>
+<scriptformrecord>comunicaciones</scriptformrecord>
+</action>
+</xupdate:insert-after>
+<xupdate:insert-after select="/ACTIONS[ACTIONS,1]/action[comunicacionesprov]" >
+<action>
+<name>factcomunicacionescli</name>
+<alias>QT_TRANSLATE_NOOP(&quot;MetaData&quot;,&quot;Comunicaciones desde facturación de clientes&quot;)</alias>
+<description>QT_TRANSLATE_NOOP(&quot;MetaData&quot;,&quot;Utilizado para acceder a una nueva comunicación desde un documento de facuración&quot;)</description>
+<table>comunicacionescli</table>
+<form>comunicacionescli</form>
+<formrecord>comunicacionescli</formrecord>
+<scriptform>comunicaciones</scriptform>
+</action>
+</xupdate:insert-after>
+<xupdate:insert-after select="/ACTIONS[ACTIONS,1]/action[factcomunicacionescli]" >
+<action>
+<name>factcomunicacionesprov</name>
+<alias>QT_TRANSLATE_NOOP(&quot;MetaData&quot;,&quot;Comunicaciones desde facturación de proveedores&quot;)</alias>
+<description>QT_TRANSLATE_NOOP(&quot;MetaData&quot;,&quot;Utilizado para acceder a una nueva comunicación desde un documento de facuración&quot;)</description>
+<table>comunicacionesprov</table>
+<form>comunicacionesprov</form>
+<formrecord>comunicacionesprov</formrecord>
+<scriptform>comunicaciones</scriptform>
+</action>
+</xupdate:insert-after>
+<xupdate:insert-after select="/ACTIONS[ACTIONS,1]/action[factcomunicacionesprov]" >
+<action>
+<name>comunicacionesopc</name>
+<alias>QT_TRANSLATE_NOOP(&quot;MetaData&quot;,&quot;Opciones de comunicaciones&quot;)</alias>
+<scriptform>comunicacionesopc</scriptform>
+<table>comunicacionesopc</table>
+<form>comunicacionesopc</form>
+<formrecord>comunicacionesopc</formrecord>
+<description/>
+</action>
+</xupdate:insert-after>
+<xupdate:insert-after select="/ACTIONS[ACTIONS,1]/action[comunicacionesopc]" >
+<action>
+<name>usuarios</name>
+<alias>QT_TRANSLATE_NOOP(&quot;MetaData&quot;,&quot;Usuarios de FacturaLUX&quot;)</alias>
+<description>QT_TRANSLATE_NOOP(&quot;MetaData&quot;,&quot;Usuarios de FacturaLUX&quot;)</description>
+<table>usuarios</table>
+<form>masterusuarios</form>
+<formrecord>usuarios</formrecord>
+<scriptform>masterusuarios</scriptform>
+<scriptformrecord>usuarios</scriptformrecord>
+</action>
+</xupdate:insert-after>
+<xupdate:insert-after select="/ACTIONS[ACTIONS,1]/action[usuarios]" >
+<action>
+<name>listadocomcli</name>
+<alias>QT_TRANSLATE_NOOP(&quot;MetaData&quot;,&quot;Resumen de comunicaciones de cliente&quot;)</alias>
+<description>QT_TRANSLATE_NOOP(&quot;MetaData&quot;,&quot;Resumen de comunicaciones de cliente&quot;)</description>
+<table>clientes</table>
+<form>mastercomunicaciones</form>
+<formrecord>listadocomcli</formrecord>
+<scriptformrecord>listadocomcli</scriptformrecord>
+</action>
+</xupdate:insert-after>
+<xupdate:insert-after select="/ACTIONS[ACTIONS,1]/action[listadocomcli]" >
+<action>
+<name>listadocomprov</name>
+<alias>QT_TRANSLATE_NOOP(&quot;MetaData&quot;,&quot;Resumen de comunicaciones de proveedor&quot;)</alias>
+<description>QT_TRANSLATE_NOOP(&quot;MetaData&quot;,&quot;Resumen de comunicaciones de proveedor&quot;)</description>
+<table>proveedores</table>
+<form>mastercomunicaciones</form>
+<formrecord>listadocomprov</formrecord>
+<scriptformrecord>listadocomprov</scriptformrecord>
+</action>
+</xupdate:insert-after>
+</xupdate:modifications>

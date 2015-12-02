@@ -1,0 +1,46 @@
+<xupdate:modifications>
+<xupdate:insert-after select="/TMD[TMD,1]/field[codtarifa]/relation[gruposclientes,codtarifa]" >
+<relation>
+<table>fo_centros</table>
+<field>codtarifatpv</field>
+<card>1M</card>
+</relation>
+</xupdate:insert-after>
+<xupdate:insert-after select="/TMD[TMD,1]/field[incporcentual]" >
+<field>
+<name>tipo</name>
+<alias>QT_TRANSLATE_NOOP(&quot;MetaData&quot;,&quot;Tipo&quot;)</alias>
+<null>true</null>
+<pk>false</pk>
+<type>string</type>
+<length>10</length>
+<optionslist>Diaria,Mensual</optionslist>
+<default>Diaria</default>
+</field>
+</xupdate:insert-after>
+<xupdate:insert-after select="/TMD[TMD,1]/field[tipo]" >
+<field>
+<name>beca</name>
+<alias>QT_TRANSLATE_NOOP(&quot;MetaData&quot;,&quot;Beca&quot;)</alias>
+<null>true</null>
+<pk>false</pk>
+<type>bool</type>
+<default>false</default>
+</field>
+</xupdate:insert-after>
+<xupdate:insert-after select="/TMD[TMD,1]/field[beca]" >
+<field>
+<name>codcentroesc</name>
+<alias>QT_TRANSLATE_NOOP(&quot;MetaData&quot;,&quot;C.Escolar&quot;)</alias>
+<null>true</null>
+<pk>false</pk>
+<type>string</type>
+<length>25</length>
+<relation>
+<table>fo_centros</table>
+<field>codcentro</field>
+<card>M1</card>
+</relation>
+</field>
+</xupdate:insert-after>
+</xupdate:modifications>

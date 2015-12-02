@@ -1,0 +1,13 @@
+<xupdate:modifications>
+<xupdate:update select="/TMD[TMD,1]/field[fabricacion]/alias[alias,1]/text()[1]" >QT_TRANSLATE_NOOP(&quot;MetaData&quot;,&quot;Fabricación&quot;)</xupdate:update>
+<xupdate:insert-after select="/TMD[TMD,1]/field[fabricacion]" >
+<field>
+<name>corte</name>
+<!--Indica si se trata de un proceso de corte--><alias>QT_TRANSLATE_NOOP(&quot;MetaData&quot;,&quot;Corte&quot;)</alias>
+<null>true</null>
+<pk>false</pk>
+<type>bool</type>
+<default>false</default>
+</field>
+</xupdate:insert-after>
+</xupdate:modifications>

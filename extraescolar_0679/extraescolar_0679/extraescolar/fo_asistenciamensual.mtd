@@ -1,0 +1,53 @@
+<!DOCTYPE TMD>
+<TMD>
+	<name>fo_asistenciamensual</name>
+	<alias>QT_TRANSLATE_NOOP("MetaData","Asistencia mensual")</alias>
+
+	<field>
+		<name>idasistencia</name>
+		<!--Id-->
+		<alias>QT_TRANSLATE_NOOP("MetaData","id")</alias>
+		<null>false</null>
+		<pk>true</pk>
+		<type>serial</type>
+		<visiblegrid>false</visiblegrid>
+	</field>
+
+	<field>
+		<name>idgrupo</name>
+		<!--Id-->
+		<alias>QT_TRANSLATE_NOOP("MetaData","Grupo")</alias>
+		<null>false</null>
+		<pk>false</pk>
+		<type>uint</type>
+		<visiblegrid>false</visiblegrid>
+		<relation>
+			<table>fo_gruposcurso</table>
+			<field>idgrupo</field>
+			<card>M1</card>
+		</relation>
+	</field>
+	
+	<field>
+		<name>fecha</name>
+		<alias>QT_TRANSLATE_NOOP("MetaData","Mes")</alias>
+		<null>false</null>
+		<pk>false</pk>
+		<type>date</type>
+	</field>
+
+	<field>
+		<name>codactividad</name>
+		<alias>QT_TRANSLATE_NOOP("MetaData","Actividad")</alias>
+		<null>true</null>
+		<pk>false</pk>
+		<type>string</type>
+		<length>25</length>
+		<ck>true</ck>
+		<relation>
+			<table>fo_actividades</table>
+			<field>codactividad</field>
+			<card>M1</card>
+		</relation>
+	</field>
+</TMD>

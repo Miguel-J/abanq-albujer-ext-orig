@@ -1,0 +1,64 @@
+<!DOCTYPE TMD>
+<TMD>
+	<name>grupospliegolibro</name>
+	<!--Grupos de pliegos asociados a un libro-->
+	<alias>QT_TRANSLATE_NOOP("MetaData","Grupos de pliegos asociados a un libro")</alias>
+
+	<field>
+		<name>idgrupo</name>
+		<!--Identificador interno de la tabla-->
+		<alias>QT_TRANSLATE_NOOP("MetaData","Identificador")</alias>
+		<null>false</null>
+		<pk>true</pk>
+		<type>serial</type>
+		<visiblegrid>false</visiblegrid>
+	</field>
+		
+	<field>
+		<name>idparamlibro</name>
+		<!--Identificador del registro de parámetros del libro asociado-->
+		<alias>QT_TRANSLATE_NOOP("MetaData","Libro")</alias>
+		<null>false</null>
+		<pk>false</pk>
+		<type>uint</type>
+		<visiblegrid>false</visiblegrid>
+		
+		<relation>
+			<table>paramlibro</table>
+			<field>id</field>
+			<card>M1</card>
+			<delC>true</delC>
+		</relation>
+	</field>
+
+	<field>
+		<name>nombre</name>
+		<!--Nombre del grupo-->
+		<alias>QT_TRANSLATE_NOOP("MetaData","Nombre")</alias>
+		<null>false</null>
+		<pk>false</pk>
+		<type>string</type>
+		<length>100</length>
+	</field>
+
+	<field>
+		<name>numpaginas</name>
+		<alias>QT_TRANSLATE_NOOP("MetaData","Páginas")</alias>
+		<null>false</null>
+		<pk>false</pk>
+		<type>uint</type>
+	</field>
+	
+	<field>
+        <name>colores</name>
+		<alias>QT_TRANSLATE_NOOP("MetaData","Tintas")</alias>
+        <null>true</null>
+        <pk>false</pk>
+        <type>string</type>
+        <length>20</length>
+		<optionslist>4+4,4+0,1+1,1+0,Sin definir</optionslist>
+		<default>4+4</default>
+    </field>
+	
+
+</TMD>

@@ -1,0 +1,42 @@
+<xupdate:modifications>
+<xupdate:insert-after select="/ACTIONS[ACTIONS,1]/action[in_dimfamilia]" >
+<action>
+<name>in_dimcatincidencias</name>
+<alias>QT_TRANSLATE_NOOP(&quot;MetaData&quot;,&quot;Selección de categorías&quot;)</alias>
+<description>QT_TRANSLATE_NOOP(&quot;MetaData&quot;,&quot;Selección de categorías&quot;)</description>
+<table>in_dimcatincidencias</table>
+<form>in_masterseleccion</form>
+<scriptform>in_masterseleccion</scriptform>
+</action>
+</xupdate:insert-after>
+<xupdate:insert-after select="/ACTIONS[ACTIONS,1]/action[in_dimcatincidencias]" >
+<action>
+<name>in_dimsubcatincidencias</name>
+<alias>QT_TRANSLATE_NOOP(&quot;MetaData&quot;,&quot;Selección de subcategorías&quot;)</alias>
+<description>QT_TRANSLATE_NOOP(&quot;MetaData&quot;,&quot;Selección de subcategorías&quot;)</description>
+<table>in_dimsubcatincidencias</table>
+<form>in_masterseleccion</form>
+<scriptform>in_masterseleccion</scriptform>
+</action>
+</xupdate:insert-after>
+<xupdate:insert-after select="/ACTIONS[ACTIONS,1]/action[in_dimsubcatincidencias]" >
+<action>
+<name>in_dimusuario</name>
+<alias>QT_TRANSLATE_NOOP(&quot;MetaData&quot;,&quot;Selección de empleados&quot;)</alias>
+<description>QT_TRANSLATE_NOOP(&quot;MetaData&quot;,&quot;Selección de empleados&quot;)</description>
+<table>in_dimusuario</table>
+<form>in_masterseleccion</form>
+<scriptform>in_masterseleccion</scriptform>
+</action>
+</xupdate:insert-after>
+<xupdate:insert-after select="/ACTIONS[ACTIONS,1]/action[in_dimusuario]" >
+<action>
+<name>in_dimdepartamento</name>
+<alias>QT_TRANSLATE_NOOP(&quot;MetaData&quot;,&quot;Selección de empleados&quot;)</alias>
+<description>QT_TRANSLATE_NOOP(&quot;MetaData&quot;,&quot;Selección de empleados&quot;)</description>
+<table>in_dimdepartamento</table>
+<form>in_masterseleccion</form>
+<scriptform>in_masterseleccion</scriptform>
+</action>
+</xupdate:insert-after>
+</xupdate:modifications>

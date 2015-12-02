@@ -1,0 +1,15 @@
+<flpatch:modifications name="backups" >
+    <flpatch:patchXml path="sistema/mantenimiento/" name="flmantppal.xml" />
+    <flpatch:patchXml path="sistema/mantenimiento/forms/" name="flmantppal.ui" />
+    <flpatch:addFile path="sistema/mantenimiento/forms/" name="mt_backups.ui" />
+    <flpatch:addFile path="sistema/mantenimiento/forms/" name="mt_basesdatos.ui" />
+    <flpatch:addFile path="sistema/mantenimiento/forms/" name="mt_comandos.ui" />
+    <flpatch:addFile path="sistema/mantenimiento/forms/" name="mt_opciones.ui" />
+    <flpatch:addFile path="sistema/mantenimiento/tables/" name="mt_backups.mtd" />
+    <flpatch:addFile path="sistema/mantenimiento/tables/" name="mt_basesdatos.mtd" />
+    <flpatch:addFile path="sistema/mantenimiento/tables/" name="mt_comandos.mtd" />
+    <flpatch:addFile path="sistema/mantenimiento/tables/" name="mt_opciones.mtd" />
+    <flpatch:addFile path="sistema/mantenimiento/scripts/" name="mt_backups.qs" />
+    <flpatch:addFile path="sistema/mantenimiento/scripts/" name="mt_opciones.qs" />
+    <flpatch:patchScript path="sistema/mantenimiento/scripts/" name="flmantppal.qs" />
+</flpatch:modifications>

@@ -1,0 +1,11 @@
+<flpatch:modifications name="pagares_prov2" >
+    <flpatch:patchXml path="facturacion/facturacion/tables/" name="facturasprov.mtd" />
+    <flpatch:addFile path="facturacion/tesoreria/forms/" name="agruparfacturasprov.ui" />
+    <flpatch:patchXml path="facturacion/tesoreria/forms/" name="masterrecibosprov.ui" />
+    <flpatch:addFile path="facturacion/tesoreria/scripts/" name="agruparfacturasprov.qs" />
+    <flpatch:patchScript path="facturacion/tesoreria/scripts/" name="masterrecibosprov.qs" />
+    <flpatch:addFile path="facturacion/tesoreria/tables/" name="agruparfacturasprov.mtd" />
+    <flpatch:patchXml path="facturacion/facturacion/" name="flfacturac.xml" />
+    <flpatch:patchXml path="facturacion/tesoreria/" name="flfactteso.xml" />
+    <flpatch:patchXml path="facturacion/tesoreria/tables/" name="recibosprov.mtd" />
+</flpatch:modifications>

@@ -1,0 +1,85 @@
+<!DOCTYPE TMD>
+<TMD>
+	<name>fo_alumnosactividad</name>
+	<!--Alumnos por actividad-->
+	<alias>QT_TRANSLATE_NOOP("MetaData","Alumnos por actividad")</alias>
+
+	<field>
+		<name>id</name>
+		<!--Id-->
+		<alias>QT_TRANSLATE_NOOP("MetaData","id")</alias>
+		<null>false</null>
+		<pk>true</pk>
+		<type>serial</type>
+		<visiblegrid>false</visiblegrid>
+	</field>
+
+	<field>
+		<name>codcontrato</name>
+		<alias>QT_TRANSLATE_NOOP("MetaData","Contrato")</alias>
+		<null>true</null>
+		<pk>false</pk>
+		<type>string</type>
+		<length>5</length>
+		<visiblegrid>false</visiblegrid>
+		<relation>
+			<table>contratos</table>
+			<field>codigo</field>
+			<card>M1</card>
+		</relation>
+	</field>
+
+	<field>
+		<name>codactividad</name>
+		<alias>QT_TRANSLATE_NOOP("MetaData","Actividad")</alias>
+		<null>true</null>
+		<pk>false</pk>
+		<type>string</type>
+		<length>25</length>
+		<relation>
+			<table>fo_actividades</table>
+			<field>codactividad</field>
+			<card>M1</card>
+		</relation>
+	</field>
+
+	<field>
+		<name>codalumno</name>
+		<alias>QT_TRANSLATE_NOOP("MetaData","Alumno")</alias>
+		<null>true</null>
+		<pk>false</pk>
+		<type>string</type>
+		<length>10</length>
+		<relation>
+			<table>fo_alumnos</table>
+			<field>codalumno</field>
+			<card>M1</card>
+		</relation>
+	</field>
+	<field>
+        <name>codtarifa</name>
+        <alias>QT_TRANSLATE_NOOP("MetaData","Tarifa")</alias>
+        <null>true</null>
+        <pk>false</pk>
+        <type>string</type>
+        <length>6</length>
+        <relation>
+            <table>tarifas</table>
+            <field>codtarifa</field>
+            <card>M1</card>
+        </relation>
+    </field>
+	<field>
+        <name>codbecador</name>
+        <alias>QT_TRANSLATE_NOOP("MetaData","Organismo becador")</alias>
+        <null>true</null>
+        <pk>false</pk>
+        <type>string</type>
+        <length>6</length>
+        <relation>
+            <table>clientes</table>
+            <field>codcliente</field>
+            <card>M1</card>
+        </relation>
+    </field>
+</TMD>

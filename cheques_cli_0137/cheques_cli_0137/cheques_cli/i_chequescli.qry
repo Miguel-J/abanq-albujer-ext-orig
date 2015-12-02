@@ -1,0 +1,33 @@
+<!DOCTYPE QRY>
+<QRY>
+	<name>qry_chequescli</name>
+
+	<tables>bancos,pagosdevolcli,reciboscli,empresa</tables>
+
+	<group>
+		<level>0</level>
+		<field>empresa.cifnif</field>
+	</group>
+
+	<select>
+		bancos.nombre,
+		pagosdevolcli.numerocheque, pagosdevolcli.fechavtocheque,
+		pagosdevolcli.entidadcheque, pagosdevolcli.idremesacheque,
+		reciboscli.importe,
+		reciboscli.codcliente, reciboscli.nombrecliente,
+		empresa.nombre, empresa.cifnif,
+		empresa.direccion, empresa.logo,
+		empresa.codpostal, empresa.ciudad,
+		empresa.provincia, empresa.apartado,
+		empresa.codpais
+	</select>
+
+	<from>
+		empresa, bancos 
+		INNER JOIN pagosdevolcli ON bancos.entidad = pagosdevolcli.entidadcheque
+		INNER JOIN reciboscli ON pagosdevolcli.idrecibo = reciboscli.idrecibo
+	</from>
+
+	<where>
+	</where>
+</QRY>

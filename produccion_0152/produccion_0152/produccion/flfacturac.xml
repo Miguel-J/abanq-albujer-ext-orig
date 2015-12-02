@@ -1,0 +1,44 @@
+<xupdate:modifications>
+<xupdate:insert-after select="/ACTIONS[ACTIONS,1]/action[trazadoc]" >
+<action>
+<name>roturastock</name>
+<description>QT_TRANSLATE_NOOP(&quot;MetaData&quot;,&quot;Los artículos con rotura de stock son artículos para los que se prevé que el stock correspondiente va a romperse (quedar por debajo de su stock mínimo). Este cálculo se hace en base a los movimientos de stock pendientes.&quot;)</description>
+<alias>QT_TRANSLATE_NOOP(&quot;MetaData&quot;,&quot;Artículos con rotura de stock&quot;)</alias>
+<table>roturastock</table>
+<form>roturastock</form>
+<scriptform>roturastock</scriptform>
+</action>
+</xupdate:insert-after>
+<xupdate:insert-after select="/ACTIONS[ACTIONS,1]/action[roturastock]" >
+<action>
+<name>calcunecesidades</name>
+<description>QT_TRANSLATE_NOOP(&quot;MetaData&quot;,&quot;El cálculo de necesidades de stock permite analizar los movimientos de stock previstos para determinar cuándo realizar los pedidos a proveedor y cuánta cantidad solicitar en los mismos.&quot;)</description>
+<alias>QT_TRANSLATE_NOOP(&quot;MetaData&quot;,&quot;Cálculo de necesidades de stock&quot;)</alias>
+<table>calcunecesidades</table>
+<form>calcunecesidades</form>
+<scriptform>calcunecesidades</scriptform>
+</action>
+</xupdate:insert-after>
+<xupdate:insert-after select="/ACTIONS[ACTIONS,1]/action[seleccionlineasrec]" >
+<action>
+<name>seleclote</name>
+<description>QT_TRANSLATE_NOOP(&quot;MetaData&quot;,&quot;Permite seleccionar o crear un lote para asociarlo a líneas de albaranes generados a partir de pedidos&quot;)</description>
+<alias>QT_TRANSLATE_NOOP(&quot;MetaData&quot;,&quot;Seleccionar Lote&quot;)</alias>
+<scriptform>seleclote</scriptform>
+<scriptformrecord>seleclote</scriptformrecord>
+<table>seleclote</table>
+<form>seleclote</form>
+<formrecord>seleclote</formrecord>
+</action>
+</xupdate:insert-after>
+<xupdate:insert-after select="/ACTIONS[ACTIONS,1]/action[seleclote]" >
+<action>
+<name>movistockalbaran</name>
+<description>QT_TRANSLATE_NOOP(&quot;MetaData&quot;,&quot;Edición de movimientos de stock desde albaranes&quot;)</description>
+<alias>QT_TRANSLATE_NOOP(&quot;MetaData&quot;,&quot;Edición de movimientos de stock desde albaranes&quot;)</alias>
+<table>movistock</table>
+<formrecord>movistockalbaran</formrecord>
+<scriptformrecord>movistockalbaran</scriptformrecord>
+</action>
+</xupdate:insert-after>
+</xupdate:modifications>

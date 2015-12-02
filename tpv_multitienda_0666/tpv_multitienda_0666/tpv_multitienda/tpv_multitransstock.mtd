@@ -1,0 +1,107 @@
+<!DOCTYPE TMD>
+<TMD>
+    <name>tpv_multitransstock</name>
+	<alias>QT_TRANSLATE_NOOP("MetaData","Multitransferencias de stock")</alias>
+    <field>
+			<name>codmultitransstock</name>
+			<alias>QT_TRANSLATE_NOOP("MetaData","Código")</alias>
+			<null>false</null>
+			<pk>true</pk>
+			<type>string</type>
+			<length>8</length>
+			<counter>true</counter>
+        
+		<relation>
+			<table>tpv_viajesmultitransstock</table>
+			<field>codmultitransstock</field>
+			<card>1M</card>
+		</relation>
+		 <relation>
+			<table>tpv_lineasmultitransstock</table>
+			<field>codmultitransstock</field>
+			<card>1M</card>
+		</relation>
+		 <relation>
+			<table>tpv_artmultitransstock</table>
+			<field>codmultitransstock</field>
+			<card>1M</card>
+		</relation>
+		<relation>
+			<table>tpv_almamultitransstock</table>
+			<field>codmultitransstock</field>
+			<card>1M</card>
+		</relation>
+	</field>
+    
+    <field>
+		<name>codalmaorigen</name>
+		<alias>QT_TRANSLATE_NOOP("MetaData","Al.Origen")</alias>
+		<null>true</null>
+		<pk>false</pk>
+		<type>string</type>
+		<length>4</length>
+
+		<relation>
+			<table>almacenes</table>
+			<field>codalmacen</field>
+			<card>M1</card>
+		</relation>
+	</field>
+	
+	<field>
+		<name>estado</name>
+		<alias>QT_TRANSLATE_NOOP("MetaData","Estado")</alias>
+		<null>true</null>
+		<pk>false</pk>
+		<type>string</type>
+		<length>20</length>
+		<optionslist>Pendiente,Aceptado</optionslist>
+		<default>Pendiente</default>
+		<editable>false</editable>
+	</field>
+	
+	<field>
+		<name>fecha</name>
+		<alias>QT_TRANSLATE_NOOP("MetaData","Fecha")</alias>
+		<null>false</null>
+		<pk>false</pk>
+		<type>date</type>
+		<visiblegrid>false</visiblegrid>
+	</field>
+	
+	<field>
+		<name>fdesderecom</name>
+		<alias>QT_TRANSLATE_NOOP("MetaData","Desde")</alias>
+		<null>false</null>
+		<pk>false</pk>
+		<type>date</type>
+		<visiblegrid>false</visiblegrid>
+	</field>
+	
+	<field>
+		<name>fhastarecom</name>
+		<alias>QT_TRANSLATE_NOOP("MetaData","Hasta")</alias>
+		<null>false</null>
+		<pk>false</pk>
+		<type>date</type>
+		<visiblegrid>false</visiblegrid>
+	</field>
+	
+	<field>
+		<name>solostockpos</name>
+		<alias>QT_TRANSLATE_NOOP("MetaData","Sólo artículos con stock")</alias>
+		<null>false</null>
+		<pk>false</pk>
+		<type>bool</type>
+		<default>true</default>
+	</field>
+	
+	<field>
+		<name>valorrecomendado</name>
+		<alias>QT_TRANSLATE_NOOP("MetaData","Establecer valor recomendado")</alias>
+		<null>false</null>
+		<pk>false</pk>
+		<type>bool</type>
+		<default>true</default>
+	</field>
+</TMD>

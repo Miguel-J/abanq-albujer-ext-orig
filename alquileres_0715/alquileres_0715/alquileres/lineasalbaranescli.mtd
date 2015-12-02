@@ -1,0 +1,53 @@
+<xupdate:modifications>
+<xupdate:insert-after select="/TMD[TMD,1]/field[porcomision]" >
+<field>
+<name>fechadesdealq</name>
+<alias>QT_TRANSLATE_NOOP(&quot;MetaData&quot;,&quot;F.Desde&quot;)</alias>
+<null>true</null>
+<pk>false</pk>
+<type>date</type>
+</field>
+</xupdate:insert-after>
+<xupdate:insert-after select="/TMD[TMD,1]/field[fechadesdealq]" >
+<field>
+<name>horadesdealq</name>
+<alias>QT_TRANSLATE_NOOP(&quot;MetaData&quot;,&quot;H.Desde&quot;)</alias>
+<null>true</null>
+<pk>false</pk>
+<type>time</type>
+</field>
+</xupdate:insert-after>
+<xupdate:insert-after select="/TMD[TMD,1]/field[horadesdealq]" >
+<field>
+<name>fechahastaalq</name>
+<alias>QT_TRANSLATE_NOOP(&quot;MetaData&quot;,&quot;F.Hasta&quot;)</alias>
+<null>true</null>
+<pk>false</pk>
+<type>date</type>
+</field>
+</xupdate:insert-after>
+<xupdate:insert-after select="/TMD[TMD,1]/field[fechahastaalq]" >
+<field>
+<name>horahastaalq</name>
+<alias>QT_TRANSLATE_NOOP(&quot;MetaData&quot;,&quot;H.Hasta&quot;)</alias>
+<null>true</null>
+<pk>false</pk>
+<type>time</type>
+</field>
+</xupdate:insert-after>
+<xupdate:insert-after select="/TMD[TMD,1]/field[horahastaalq]" >
+<field>
+<name>idperiodoalq</name>
+<alias>QT_TRANSLATE_NOOP(&quot;MetaData&quot;,&quot;Id.P.A.&quot;)</alias>
+<null>true</null>
+<pk>false</pk>
+<type>uint</type>
+<visiblegrid>false</visiblegrid>
+<relation>
+<table>alquilerarticulos</table>
+<field>idperiodoalq</field>
+<card>M1</card>
+</relation>
+</field>
+</xupdate:insert-after>
+</xupdate:modifications>

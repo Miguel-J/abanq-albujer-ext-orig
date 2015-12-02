@@ -1,0 +1,19 @@
+<flpatch:modifications name="modelo115" >
+    <flpatch:patchXml path="contabilidad/modelos/" name="flcontmode.xml" />
+    <flpatch:addFile path="contabilidad/modelos/forms/" name="co_modelo115.ui" />
+    <flpatch:patchXml path="contabilidad/modelos/forms/" name="flcontmode.ui" />
+    <flpatch:addFile path="contabilidad/modelos/tables/" name="co_modelo115.mtd" />
+    <flpatch:addFile path="contabilidad/modelos/tables/" name="co_tipodec115.mtd" />
+    <flpatch:patchXml path="facturacion/almacen/tables/" name="articulos.mtd" />
+    <flpatch:patchXml path="facturacion/almacen/forms/" name="articulos.ui" />
+    <flpatch:patchXml path="facturacion/facturacion/tables/" name="facturasprov.mtd" />
+    <flpatch:patchXml path="facturacion/facturacion/forms/" name="facturasprov.ui" />
+    <flpatch:patchScript path="facturacion/facturacion/scripts/" name="facturasprov.qs" />
+    <flpatch:addFile path="contabilidad/modelos/scripts/" name="co_modelo115.qs" />
+    <flpatch:patchScript path="contabilidad/modelos/scripts/" name="flcontmode.qs" />
+    <flpatch:addFile path="contabilidad/modelos/tables/" name="co_detalle115.mtd" />
+    <flpatch:addFile path="contabilidad/modelos/scripts/" name="co_mastermodelo115.qs" />
+    <flpatch:addFile path="contabilidad/modelos/scripts/" name="co_masterfacturasprov115.qs" />
+    <flpatch:addFile path="contabilidad/modelos/forms/" name="co_masterfacturasprov115.ui" />
+    <flpatch:patchScript path="facturacion/facturacion/scripts/" name="masterfacturasprov.qs" />
+</flpatch:modifications>

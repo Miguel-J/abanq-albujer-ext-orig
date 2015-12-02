@@ -1,0 +1,7709 @@
+<!DOCTYPE TMD>
+<TMD>
+	<name>co_modelo201</name>
+	<!--Modelo 201-->
+	
+	<alias>QT_TRANSLATE_NOOP("MetaData","Modelo 201")</alias>
+
+	<field>
+		<name>id</name>
+		<!--Identificador interno de la tabla-->
+		<alias>QT_TRANSLATE_NOOP("MetaData","ID")</alias>
+		<null>false</null>
+		<pk>true</pk>
+		<type>serial</type>
+		<visiblegrid>false</visiblegrid>
+	</field>
+	
+	<field>
+		<name>codadmon</name>
+		<!--Código de administración-->
+		<alias>QT_TRANSLATE_NOOP("MetaData","Admón.")</alias>
+		<null>true</null>
+		<pk>false</pk>
+		<type>string</type>
+		<length>5</length>
+		<regexp>\d{5}</regexp>
+	</field>
+	
+	<field>
+		<name>codejercicio</name>
+		<!--Ejercicio al que corresponde el período del modelo a generar-->
+		<alias>QT_TRANSLATE_NOOP("MetaData","Ejercicio")</alias>
+		<null>false</null>
+		<pk>false</pk>
+		<type>string</type>
+		<length>4</length>
+		
+		<relation>
+			<table>ejercicios</table>
+			<field>codejercicio</field>
+			<card>M1</card>
+		</relation>
+	</field>
+	
+	<field>
+		<name>tipoejercicio</name>
+		<!--Tipo de ejercicio-->
+		<alias>QT_TRANSLATE_NOOP("MetaData","Tipo ejercicio")</alias>
+		<null>true</null>
+		<pk>false</pk>
+		<type>string</type>
+		<length>10</length>
+	</field>
+	
+	<field>
+		<name>periodo</name>
+		<!--Período (trimestre) del modelo a generar-->
+		<alias>QT_TRANSLATE_NOOP("MetaData","Período")</alias>
+		<null>false</null>
+		<pk>false</pk>
+		<optionslist>1T,2T,3T,4T</optionslist>
+		<default>1T</default>
+		<type>string</type>
+		<length>2</length>
+	</field>
+	
+	<field>
+		<name>fechainicio</name>
+		<!--Fecha de inicio del período correspondiente al modelo a generar-->
+		<alias>QT_TRANSLATE_NOOP("MetaData","Inicio")</alias>
+		<null>true</null>
+		<pk>false</pk>
+		<type>date</type>
+	</field>
+	
+	<field>
+		<name>fechafin</name>
+		<!--Fecha de fin del período correspondiente al modelo a generar-->
+		<alias>QT_TRANSLATE_NOOP("MetaData","Fin")</alias>
+		<null>true</null>
+		<pk>false</pk>
+		<type>date</type>
+	</field>
+	
+	<field>
+		<name>nif</name>
+		<alias>QT_TRANSLATE_NOOP("MetaData","N.I.F")</alias>
+		<null>false</null>
+		<pk>false</pk>
+		<type>string</type>
+		<length>12</length>
+	</field>
+	
+	<field>
+		<name>nombre</name>
+		<!--Nombre o razón social-->
+		<alias>QT_TRANSLATE_NOOP("MetaData","Nombre o razón social")</alias>
+		<null>false</null>
+		<pk>false</pk>
+		<type>string</type>
+		<length>100</length>
+	</field>
+	
+	<field>
+		<name>baseimponible</name>
+		<!--Base imponible-->
+		<alias>QT_TRANSLATE_NOOP("MetaData","552")</alias>
+		<null>true</null>
+		<pk>false</pk>
+		<type>double</type>
+		<partI>12</partI>
+		<partD>2</partD>
+	</field>	
+	
+	<field>
+		<name>cuotainteg</name>
+		<!--Cuota íntegra-->
+		<alias>QT_TRANSLATE_NOOP("MetaData","562")</alias>
+		<null>true</null>
+		<pk>false</pk>
+		<type>double</type>
+		<partI>12</partI>
+		<partD>2</partD>
+	</field>	
+	
+	<field>
+		<name>liquido</name>
+		<!--Líquido a ingresar o a devolver-->
+		<alias>QT_TRANSLATE_NOOP("MetaData","621")</alias>
+		<null>true</null>
+		<pk>false</pk>
+		<type>double</type>
+		<partI>12</partI>
+		<partD>2</partD>
+	</field>	
+	
+	<field>
+		<name>importe</name>
+		<!--Importe devolución-->
+		<alias>QT_TRANSLATE_NOOP("MetaData","D")</alias>
+		<null>true</null>
+		<pk>false</pk>
+		<type>double</type>
+		<partI>12</partI>
+		<partD>2</partD>
+	</field>	
+	
+	<field>
+		<name>renuncia</name>
+		<!--Renuncia a la devolución-->
+		<alias>QT_TRANSLATE_NOOP("MetaData","Renuncia a la devolución")</alias>
+		<null>true</null>
+		<pk>false</pk>
+		<type>bool</type>
+	</field>	
+	
+	<field>
+		<name>devoltransferencia</name>
+		<!--Devolución por transferencia-->
+		<alias>QT_TRANSLATE_NOOP("MetaData","Devolución por transferencia")</alias>
+		<null>true</null>
+		<pk>false</pk>
+		<type>bool</type>
+	</field>	
+	
+	<field>
+		<name>codcuentadev</name>
+		 <!--Código de la cuenta bancaria de devolución-->
+		<alias>QT_TRANSLATE_NOOP("MetaData","Cuenta")</alias>
+		<null>true</null>
+		<pk>false</pk>
+		<type>string</type>
+		<length>6</length>
+		<visiblegrid>false</visiblegrid>
+
+		<relation>
+			<table>cuentasbanco</table>
+			<field>codcuenta</field>
+			<card>M1</card>
+		</relation>
+	</field>
+
+	<field>
+		<name>desctadev</name>
+		 <!--Descripción de la cuenta bancaria de devolución-->
+		<alias>QT_TRANSLATE_NOOP("MetaData","Descripción")</alias>
+		<null>true</null>
+		<pk>false</pk>
+		<type>string</type>
+		<length>100</length>
+		<editable>true</editable>
+	</field>
+
+	<field>
+		<name>ctaentidaddev</name>
+		 <!--Entidad de la cuenta bancaria de devolución-->
+		<alias>QT_TRANSLATE_NOOP("MetaData","Nº Entidad")</alias>
+		<null>true</null>
+		<pk>false</pk>
+		<type>string</type>
+		<length>4</length>
+		<editable>true</editable>
+	</field>
+
+	<field>
+		<name>ctaagenciadev</name>
+		 <!--Oficina de la cuenta bancaria de devolución-->
+		<alias>QT_TRANSLATE_NOOP("MetaData","Nº Oficina")</alias>
+		<null>true</null>
+		<pk>false</pk>
+		<type>string</type>
+		<length>4</length>
+		<editable>true</editable>
+	</field>
+
+	<field>
+		<name>dcdev</name>
+		<!--Dígitos de Control de la cuenta bancaria de devolución-->
+		<alias>QT_TRANSLATE_NOOP("MetaData","D.C.")</alias>
+		<null>true</null>
+		<pk>false</pk>
+		<type>string</type>
+		<length>2</length>
+		<calculated>true</calculated>
+		<editable>false</editable>
+	</field>
+
+	<field>
+		<name>cuentadev</name>
+		<!--Número de la cuenta bancaria de devolución-->
+		<alias>QT_TRANSLATE_NOOP("MetaData","Nº Cuenta")</alias>
+		<null>true</null>
+		<pk>false</pk>
+		<type>string</type>
+		<length>10</length>
+		<editable>true</editable>
+	</field>
+	
+	<field>
+		<name>enefectivo</name>
+		<!--En efectivo-->
+		<alias>QT_TRANSLATE_NOOP("MetaData","En efectivo")</alias>
+		<null>true</null>
+		<pk>false</pk>
+		<type>bool</type>
+	</field>	
+	
+	<field>
+		<name>adeudocta</name>
+		<!--DC adeudo en cuenta-->
+		<alias>QT_TRANSLATE_NOOP("MetaData","DC Adeudo en cuenta")</alias>
+		<null>true</null>
+		<pk>false</pk>
+		<type>bool</type>
+	</field>	
+
+	<field>
+		<name>importeing</name>
+		<!--Importe ingreso-->
+		<alias>QT_TRANSLATE_NOOP("MetaData","I")</alias>
+		<null>true</null>
+		<pk>false</pk>
+		<type>double</type>
+		<partI>12</partI>
+		<partD>2</partD>
+	</field>	
+	
+	<field>
+		<name>codcuentaingreso</name>
+		 <!--Código de la cuenta bancaria de ingreso-->
+		<alias>QT_TRANSLATE_NOOP("MetaData","Cuenta")</alias>
+		<null>true</null>
+		<pk>false</pk>
+		<type>string</type>
+		<length>6</length>
+		<visiblegrid>false</visiblegrid>
+
+		<relation>
+			<table>cuentasbanco</table>
+			<field>codcuenta</field>
+			<card>M1</card>
+		</relation>
+	</field>
+
+	<field>
+		<name>desctaingreso</name>
+		 <!--Descripción de la cuenta bancaria de ingreso-->
+		<alias>QT_TRANSLATE_NOOP("MetaData","Descripción")</alias>
+		<null>true</null>
+		<pk>false</pk>
+		<type>string</type>
+		<length>100</length>
+		<editable>true</editable>
+	</field>
+
+	<field>
+		<name>ctaentidadingreso</name>
+		 <!--Entidad de la cuenta bancaria de ingreso-->
+		<alias>QT_TRANSLATE_NOOP("MetaData","Nº Entidad")</alias>
+		<null>true</null>
+		<pk>false</pk>
+		<type>string</type>
+		<length>4</length>
+		<editable>true</editable>
+	</field>
+
+	<field>
+		<name>ctaagenciaingreso</name>
+		 <!--Oficina de la cuenta bancaria de ingreso-->
+		<alias>QT_TRANSLATE_NOOP("MetaData","Nº Oficina")</alias>
+		<null>true</null>
+		<pk>false</pk>
+		<type>string</type>
+		<length>4</length>
+		<editable>true</editable>
+	</field>
+
+	<field>
+		<name>dcingreso</name>
+		 <!--Dígitos de Control de la cuenta bancaria de ingreso-->
+		<alias>QT_TRANSLATE_NOOP("MetaData","D.C.")</alias>
+		<null>true</null>
+		<pk>false</pk>
+		<type>string</type>
+		<length>2</length>
+		<calculated>true</calculated>
+		<editable>false</editable>
+	</field>
+
+	<field>
+		<name>cuentaingreso</name>
+		 <!--Número de la cuenta bancaria de ingreso-->
+		<alias>QT_TRANSLATE_NOOP("MetaData","Nº Cuenta")</alias>
+		<null>true</null>
+		<pk>false</pk>
+		<type>string</type>
+		<length>10</length>
+		<editable>true</editable>
+	</field>
+	
+	<field>
+		<name>cuotacero</name>
+		<!--Cuota cero-->
+		<alias>QT_TRANSLATE_NOOP("MetaData","Cuota cero")</alias>
+		<null>true</null>
+		<pk>false</pk>
+		<type>bool</type>
+	</field>
+	
+	<field>
+		<name>fecha</name>
+		<!--Fecha-->
+		<alias>QT_TRANSLATE_NOOP("MetaData","Fecha")</alias>
+		<null>false</null>
+		<pk>false</pk>
+		<type>date</type>
+	</field>	
+	
+	<field>
+		<name>cnae</name>
+		<alias>QT_TRANSLATE_NOOP("MetaData","CNAE")</alias>
+		<null>true</null>
+		<pk>false</pk>
+		<type>string</type>
+		<length>10</length>
+	</field>
+	
+	<field>
+		<name>complementaria</name>
+		<!--Declaración complementaria-->
+		<alias>QT_TRANSLATE_NOOP("MetaData","Declaración complementaria")</alias>
+		<null>true</null>
+		<pk>false</pk>
+		<type>bool</type>
+	</field>
+	
+	<field>
+		<name>justificanteanterior</name>
+		<alias>QT_TRANSLATE_NOOP("MetaData","Nº de justificante de la declaración anterior ....")</alias>
+		<null>true</null>
+		<pk>false</pk>
+		<type>string</type>
+		<length>13</length>
+	</field>
+	
+	<field>
+		<name>entsinanimolucro</name>
+		<!--Entidad sin animo de lucro acogida regimen fiscal Titulo II Ley 49/2002-->
+		<alias>QT_TRANSLATE_NOOP("MetaData","001")</alias>
+		<null>true</null>
+		<pk>false</pk>
+		<type>bool</type>
+	</field>
+	
+	<field>
+		<name>entparcialmexenta</name>
+		<!--Entidad parcialmente exenta-->
+		<alias>QT_TRANSLATE_NOOP("MetaData","002")</alias>
+		<null>true</null>
+		<pk>false</pk>
+		<type>bool</type>
+	</field>
+	
+	<field>
+		<name>sociedadinvers</name>
+		<!--Sociedad de inversión de capital variable o fondo de inversión de caracter financiero -->
+		<alias>QT_TRANSLATE_NOOP("MetaData","003")</alias>
+		<null>true</null>
+		<pk>false</pk>
+		<type>bool</type>
+	</field>
+	
+	<field>
+		<name>sociedadinvinmob</name>
+		<!--Sociedad de inversión inmobiliaria o fondo de inversión inmobiliaria-->
+		<alias>QT_TRANSLATE_NOOP("MetaData","004")</alias>
+		<null>true</null>
+		<pk>false</pk>
+		<type>bool</type>
+	</field>
+	
+	<field>
+		<name>comunidadestitulares</name>
+		<!--Comunidades titulares de montes vecinales en mano común-->
+		<alias>QT_TRANSLATE_NOOP("MetaData","005")</alias>
+		<null>true</null>
+		<pk>false</pk>
+		<type>bool</type>
+	</field>
+	
+	<field>
+		<name>incentivosemp</name>
+		<!--Incentivos empresa de reducida dimensión (Cap.XII,tít.VII LIS) -->
+		<alias>QT_TRANSLATE_NOOP("MetaData","006")</alias>
+		<null>true</null>
+		<pk>false</pk>
+		<type>bool</type>
+	</field>
+	
+	<field>
+		<name>entidadtendencia</name>
+		<!--Entidad de tendencia de valores extranjeros-->
+		<alias>QT_TRANSLATE_NOOP("MetaData","011")</alias>
+		<null>true</null>
+		<pk>false</pk>
+		<type>bool</type>
+	</field>
+	
+	<field>
+		<name>agrupacionesp</name>
+		<!--Agrupación de interés económico española o Unión temporal de empresas-->
+		<alias>QT_TRANSLATE_NOOP("MetaData","013")</alias>
+		<null>true</null>
+		<pk>false</pk>
+		<type>bool</type>
+	</field>
+	
+	<field>
+		<name>agrupacioneurop</name>
+		<!--Agrupación europea de interés económico-->
+		<alias>QT_TRANSLATE_NOOP("MetaData","014")</alias>
+		<null>true</null>
+		<pk>false</pk>
+		<type>bool</type>
+	</field>
+	
+	<field>
+		<name>entidadzec</name>
+		<!--Entidad ZEC-->
+		<alias>QT_TRANSLATE_NOOP("MetaData","015")</alias>
+		<null>true</null>
+		<pk>false</pk>
+		<type>bool</type>
+	</field>
+	
+	<field>
+		<name>opcion</name>
+		<!--Opción art.51.2.b) LIS-->
+		<alias>QT_TRANSLATE_NOOP("MetaData","016")</alias>
+		<null>true</null>
+		<pk>false</pk>
+		<type>bool</type>
+	</field>
+	
+	<field>
+		<name>cooperativaproteg</name>
+		<!--Cooperativa protegida-->
+		<alias>QT_TRANSLATE_NOOP("MetaData","017")</alias>
+		<null>true</null>
+		<pk>false</pk>
+		<type>bool</type>
+	</field>
+	
+	<field>
+		<name>cooperativaespproteg</name>
+		<!--Cooperativa especialmente protegida-->
+		<alias>QT_TRANSLATE_NOOP("MetaData","018")</alias>
+		<null>true</null>
+		<pk>false</pk>
+		<type>bool</type>
+	</field>
+	
+	<field>
+		<name>restocooperativas</name>
+		<!--Resto cooperativas-->
+		<alias>QT_TRANSLATE_NOOP("MetaData","019")</alias>
+		<null>true</null>
+		<pk>false</pk>
+		<type>bool</type>
+	</field>
+	
+	<field>
+		<name>regespeciales</name>
+		<!--Otros regímenes especiales-->
+		<alias>QT_TRANSLATE_NOOP("MetaData","020")</alias>
+		<null>true</null>
+		<pk>false</pk>
+		<type>bool</type>
+	</field>
+	
+	<field>
+		<name>establecimientoperm</name>
+		<!--Establecimiento permanente-->
+		<alias>QT_TRANSLATE_NOOP("MetaData","021")</alias>
+		<null>true</null>
+		<pk>false</pk>
+		<type>bool</type>
+	</field>
+	
+	<field>
+		<name>entinactiva</name>
+		<!--Entidad inactiva-->
+		<alias>QT_TRANSLATE_NOOP("MetaData","026")</alias>
+		<null>true</null>
+		<pk>false</pk>
+		<type>bool</type>
+	</field>
+	
+	<field>
+		<name>baseimpneg</name>
+		<!--Base imponible negativa o cero-->
+		<alias>QT_TRANSLATE_NOOP("MetaData","027")</alias>
+		<null>true</null>
+		<pk>false</pk>
+		<type>bool</type>
+	</field>
+	
+	<field>
+		<name>regcanarias</name>
+		<!--Regimen especial de canarias -->
+		<alias>QT_TRANSLATE_NOOP("MetaData","029")</alias>
+		<null>true</null>
+		<pk>false</pk>
+		<type>bool</type>
+	</field>
+	
+	<field>
+		<name>transmisionelem</name>
+		<!--Transmisión elementos patrimoniales arts.26.2.d) y 84.1 LIS-->
+		<alias>QT_TRANSLATE_NOOP("MetaData","030")</alias>
+		<null>true</null>
+		<pk>false</pk>
+		<type>bool</type>
+	</field>
+	
+	<field>
+		<name>socfondocapital</name>
+		<!--Sociedades y fondo capital-riesgo-->
+		<alias>QT_TRANSLATE_NOOP("MetaData","031")</alias>
+		<null>true</null>
+		<pk>false</pk>
+		<type>bool</type>
+	</field>
+	
+	<field>
+		<name>socdesarrollo</name>
+		<!--Sociedades desarrollo industrial regional-->
+		<alias>QT_TRANSLATE_NOOP("MetaData","032")</alias>
+		<null>true</null>
+		<pk>false</pk>
+		<type>bool</type>
+	</field>
+	
+	<field>
+		<name>regespmineria</name>
+		<!--Regimen especial mineria-->
+		<alias>QT_TRANSLATE_NOOP("MetaData","033")</alias>
+		<null>true</null>
+		<pk>false</pk>
+		<type>bool</type>
+	</field>
+	
+	<field>
+		<name>regesphidrocarb</name>
+		<!--Regimen especial hidrocarburos-->
+		<alias>QT_TRANSLATE_NOOP("MetaData","034")</alias>
+		<null>true</null>
+		<pk>false</pk>
+		<type>bool</type>
+	</field>
+	
+	<field>
+		<name>opcionris</name>
+		<!--Opción art.43.1 RIS-->
+		<alias>QT_TRANSLATE_NOOP("MetaData","035")</alias>
+		<null>true</null>
+		<pk>false</pk>
+		<type>bool</type>
+	</field>
+	
+	<field>
+		<name>otraopcionris</name>
+		<!--Opción art.43.3 RIS-->
+		<alias>QT_TRANSLATE_NOOP("MetaData","037")</alias>
+		<null>true</null>
+		<pk>false</pk>
+		<type>bool</type>
+	</field>
+	
+	<field>
+		<name>arrendviviendas</name>
+		<!--Entidad dedicada al arrendamiento de viviendas-->
+		<alias>QT_TRANSLATE_NOOP("MetaData","038")</alias>
+		<null>true</null>
+		<pk>false</pk>
+		<type>bool</type>
+	</field>
+
+	
+	<field>
+		<name>grupomercantil</name>
+		<!--Entidad que forma parte de un grupo mercantil (art.42 del cód.comercio) -->
+		<alias>QT_TRANSLATE_NOOP("MetaData","039")</alias>
+		<null>true</null>
+		<pk>false</pk>
+		<type>bool</type>
+	</field>
+	
+	<field>
+		<name>obligacioninf</name>
+		<!--Obligación información art. 15 RIS-->
+		<alias>QT_TRANSLATE_NOOP("MetaData","043")</alias>
+		<null>true</null>
+		<pk>false</pk>
+		<type>bool</type>
+	</field>
+	
+	<field>
+		<name>obligacioninformacion</name>
+		<!--Obligación información art. 45 RIS-->
+		<alias>QT_TRANSLATE_NOOP("MetaData","044")</alias>
+		<null>true</null>
+		<pk>false</pk>
+		<type>bool</type>
+	</field>
+	
+	<field>
+		<name>inversionesanticip</name>
+		<!--Inversiones anticipadas-reserva inversiones en Canarias (art. 27.10 Ley 19/1994)-->
+		<alias>QT_TRANSLATE_NOOP("MetaData","045")</alias>
+		<null>true</null>
+		<pk>false</pk>
+		<type>bool</type>
+	</field>
+	
+	<field>
+		<name>fondopensiones</name>
+		<!--Fondo de Pensiones Real Decreto Legislativo 1/2002, de 29 de noviembre-->
+		<alias>QT_TRANSLATE_NOOP("MetaData","048")</alias>
+		<null>true</null>
+		<pk>false</pk>
+		<type>bool</type>
+	</field>
+	
+	<field>
+		<name>personalfijo</name>
+		<!--Personal fijo-->
+		<alias>QT_TRANSLATE_NOOP("MetaData","041")</alias>
+		<null>true</null>
+		<pk>false</pk>
+		<type>double</type>
+		<partI>4</partI>
+		<partD>2</partD>
+	</field>
+	
+	<field>
+		<name>personalnofijo</name>
+		<!--Personal no fijo-->
+		<alias>QT_TRANSLATE_NOOP("MetaData","042")</alias>
+		<null>true</null>
+		<pk>false</pk>
+		<type>double</type>
+		<partI>4</partI>
+		<partD>2</partD>
+	</field>
+	
+	<field>
+		<name>porcentajeimp</name>
+		<!--Porcentaje de imputación de bases imponibles y demás conceptos liquidatorios-->
+		<alias>QT_TRANSLATE_NOOP("MetaData","060")</alias>
+		<null>true</null>
+		<pk>false</pk>
+		<type>double</type>
+		<partI>12</partI>
+		<partD>2</partD>
+	</field>
+	
+	<field>
+		<name>resultcont</name>
+		<!--Resultado contable-->
+		<alias>QT_TRANSLATE_NOOP("MetaData","500")</alias>
+		<null>true</null>
+		<pk>false</pk>
+		<type>double</type>
+		<partI>12</partI>
+		<partD>2</partD>
+	</field>
+	
+	<field>
+		<name>baseimp</name>
+		<!--Base imponible-->
+		<alias>QT_TRANSLATE_NOOP("MetaData","552")</alias>
+		<null>true</null>
+		<pk>false</pk>
+		<type>double</type>
+		<partI>12</partI>
+		<partD>2</partD>
+	</field>
+	
+	<field>
+		<name>basebonif</name>
+		<!--Base de las bonificaciones-->
+		<alias>QT_TRANSLATE_NOOP("MetaData","")</alias>
+		<null>true</null>
+		<pk>false</pk>
+		<type>double</type>
+		<partI>12</partI>
+		<partD>2</partD>
+	</field>
+	
+	<field>
+		<name>basededucc</name>
+		<!--Base de las deducciones para incentivar la realización de determinadas actividades-->
+		<alias>QT_TRANSLATE_NOOP("MetaData","")</alias>
+		<null>true</null>
+		<pk>false</pk>
+		<type>double</type>
+		<partI>12</partI>
+		<partD>2</partD>
+	</field>
+	
+	<field>
+		<name>reting</name>
+		<!--Retenciones e ingresos a cuenta -->
+		<alias>QT_TRANSLATE_NOOP("MetaData","062")</alias>
+		<null>true</null>
+		<pk>false</pk>
+		<type>double</type>
+		<partI>12</partI>
+		<partD>2</partD>
+	</field>
+	
+	<field>
+		<name>notributado</name>
+		<!--a) de ejercicios en los que la sociedad no haya tributado en régimen especial-->
+		<alias>QT_TRANSLATE_NOOP("MetaData","")</alias>
+		<null>true</null>
+		<pk>false</pk>
+		<type>double</type>
+		<partI>12</partI>
+		<partD>2</partD>
+	</field>
+	
+	<field>
+		<name>sitributado</name>
+		<!--b) de ejercicios en los que la sociedad haya tributado en régimen especial-->
+		<alias>QT_TRANSLATE_NOOP("MetaData","")</alias>
+		<null>true</null>
+		<pk>false</pk>
+		<type>double</type>
+		<partI>12</partI>
+		<partD>2</partD>
+	</field>
+	
+	<field>
+		<name>impcifraneg</name>
+		<!--Importe neto de la cifra de negocios del conjunto de las entidades del grupo-->
+		<alias>QT_TRANSLATE_NOOP("MetaData","987")</alias>
+		<null>true</null>
+		<pk>false</pk>
+		<type>double</type>
+		<partI>12</partI>
+		<partD>2</partD>
+	</field>
+	
+	<field>
+		<name>nifentidad1</name>
+		<alias>QT_TRANSLATE_NOOP("MetaData","1")</alias>
+		<null>true</null>
+		<pk>false</pk>
+		<type>string</type>
+		<length>12</length>
+	</field>
+	
+	<field>
+		<name>nifentidad2</name>
+		<alias>QT_TRANSLATE_NOOP("MetaData","2")</alias>
+		<null>true</null>
+		<pk>false</pk>
+		<type>string</type>
+		<length>12</length>
+	</field>
+	
+	<field>
+		<name>nifentidad3</name>
+		<alias>QT_TRANSLATE_NOOP("MetaData","3")</alias>
+		<null>true</null>
+		<pk>false</pk>
+		<type>string</type>
+		<length>12</length>
+	</field>
+	
+	<field>
+		<name>nifentidad4</name>
+		<alias>QT_TRANSLATE_NOOP("MetaData","4")</alias>
+		<null>true</null>
+		<pk>false</pk>
+		<type>string</type>
+		<length>12</length>
+	</field>
+	
+	<field>
+		<name>nifentidad5</name>
+		<alias>QT_TRANSLATE_NOOP("MetaData","5")</alias>
+		<null>true</null>
+		<pk>false</pk>
+		<type>string</type>
+		<length>12</length>
+	</field>
+	
+	<field>
+		<name>nifentidad6</name>
+		<alias>QT_TRANSLATE_NOOP("MetaData","6")</alias>
+		<null>true</null>
+		<pk>false</pk>
+		<type>string</type>
+		<length>12</length>
+	</field>
+	
+	<field>
+		<name>nifentidad7</name>
+		<alias>QT_TRANSLATE_NOOP("MetaData","7")</alias>
+		<null>true</null>
+		<pk>false</pk>
+		<type>string</type>
+		<length>12</length>
+	</field>
+	
+	<field>
+		<name>nifentidad8</name>
+		<alias>QT_TRANSLATE_NOOP("MetaData","8")</alias>
+		<null>true</null>
+		<pk>false</pk>
+		<type>string</type>
+		<length>12</length>
+	</field>
+	
+	<field>
+		<name>nifentidad9</name>
+		<alias>QT_TRANSLATE_NOOP("MetaData","9")</alias>
+		<null>true</null>
+		<pk>false</pk>
+		<type>string</type>
+		<length>12</length>
+	</field>
+	
+	<field>
+		<name>impcifranegest</name>
+		<!--Importe neto de la cifra de negocios del conjunto de establecimientos permanentes de la misma persona física o entidad titular-->
+		<alias>QT_TRANSLATE_NOOP("MetaData","988")</alias>
+		<null>true</null>
+		<pk>false</pk>
+		<type>double</type>
+		<partI>12</partI>
+		<partD>2</partD>
+	</field>
+	
+	<field>
+		<name>numestablecimientos</name>
+		<!--Número de establecimientos permanentes a través de los que opera, en caso de persona física titular-->
+		<alias>QT_TRANSLATE_NOOP("MetaData","")</alias>
+		<null>true</null>
+		<pk>false</pk>
+		<type>int</type>
+	</field>
+	
+	<field>
+		<name>nifestablec1</name>
+		<alias>QT_TRANSLATE_NOOP("MetaData","1")</alias>
+		<null>true</null>
+		<pk>false</pk>
+		<type>string</type>
+		<length>12</length>
+	</field>
+	
+	<field>
+		<name>nifestablec2</name>
+		<alias>QT_TRANSLATE_NOOP("MetaData","2")</alias>
+		<null>true</null>
+		<pk>false</pk>
+		<type>string</type>
+		<length>12</length>
+	</field>
+	
+	<field>
+		<name>nifestablec3</name>
+		<alias>QT_TRANSLATE_NOOP("MetaData","3")</alias>
+		<null>true</null>
+		<pk>false</pk>
+		<type>string</type>
+		<length>12</length>
+	</field>
+	
+	<field>
+		<name>nifestablec4</name>
+		<alias>QT_TRANSLATE_NOOP("MetaData","4")</alias>
+		<null>true</null>
+		<pk>false</pk>
+		<type>string</type>
+		<length>12</length>
+	</field>
+	
+	<field>
+		<name>nifestablec5</name>
+		<alias>QT_TRANSLATE_NOOP("MetaData","5")</alias>
+		<null>true</null>
+		<pk>false</pk>
+		<type>string</type>
+		<length>12</length>
+	</field>
+	
+	<!--BALANCE-->
+		<!--activo-->
+	<field>
+		<name>noexigidos</name>
+		<!--Accionistas (socios) por desembolsos no exigidos-->
+		<alias>QT_TRANSLATE_NOOP("MetaData","101")</alias>
+		<null>true</null>
+		<pk>false</pk>
+		<type>double</type>
+		<partI>12</partI>
+		<partD>2</partD>
+	</field>
+	
+	<field>
+		<name>establecimiento</name>
+		<!--Gastos de establecimiento-->
+		<alias>QT_TRANSLATE_NOOP("MetaData","102")</alias>
+		<null>true</null>
+		<pk>false</pk>
+		<type>double</type>
+		<partI>12</partI>
+		<partD>2</partD>
+	</field>
+
+	<field>
+		<name>inmateriales</name>
+		<!--Inmobilizaciones inmateriales-->
+		<alias>QT_TRANSLATE_NOOP("MetaData","114")</alias>
+		<null>true</null>
+		<pk>false</pk>
+		<type>double</type>
+		<partI>12</partI>
+		<partD>2</partD>
+	</field>
+	
+	<field>
+		<name>materiales</name>
+		<!--Inmobilizaciones materiales-->
+		<alias>QT_TRANSLATE_NOOP("MetaData","134")</alias>
+		<null>true</null>
+		<pk>false</pk>
+		<type>double</type>
+		<partI>12</partI>
+		<partD>2</partD>
+	</field>
+	
+	<field>
+		<name>financieras</name>
+		<!--Inmobilizaciones financieras-->
+		<alias>QT_TRANSLATE_NOOP("MetaData","154")</alias>
+		<null>true</null>
+		<pk>false</pk>
+		<type>double</type>
+		<partI>12</partI>
+		<partD>2</partD>
+	</field>
+	
+	<field>
+		<name>accionespro</name>
+		<!--Acciones propias-->
+		<alias>QT_TRANSLATE_NOOP("MetaData","155")</alias>
+		<null>true</null>
+		<pk>false</pk>
+		<type>double</type>
+		<partI>12</partI>
+		<partD>2</partD>
+	</field>
+	
+	<field>
+		<name>deudoreslp</name>
+		<!--Deudores por operaciones de tráfico a largo plazo-->
+		<alias>QT_TRANSLATE_NOOP("MetaData","156")</alias>
+		<null>true</null>
+		<pk>false</pk>
+		<type>double</type>
+		<partI>12</partI>
+		<partD>2</partD>
+	</field>
+
+	<field>
+		<name>gastosvariosej</name>
+		<!--Gastos a distribuir en varios ejercicios-->
+		<alias>QT_TRANSLATE_NOOP("MetaData","157")</alias>
+		<null>true</null>
+		<pk>false</pk>
+		<type>double</type>
+		<partI>12</partI>
+		<partD>2</partD>
+	</field>
+
+	<field>
+		<name>exigidos</name>
+		<!--Accionistas por desembolsos exigidos-->
+		<alias>QT_TRANSLATE_NOOP("MetaData","158")</alias>
+		<null>true</null>
+		<pk>false</pk>
+		<type>double</type>
+		<partI>12</partI>
+		<partD>2</partD>
+	</field>
+
+	<field>
+		<name>existencias</name>
+		<!--Existencias-->
+		<alias>QT_TRANSLATE_NOOP("MetaData","166")</alias>
+		<null>true</null>
+		<pk>false</pk>
+		<type>double</type>
+		<partI>12</partI>
+		<partD>2</partD>
+	</field>
+
+	<field>
+		<name>deudores</name>
+		<!--Deudores-->
+		<alias>QT_TRANSLATE_NOOP("MetaData","175")</alias>
+		<null>true</null>
+		<pk>false</pk>
+		<type>double</type>
+		<partI>12</partI>
+		<partD>2</partD>
+	</field>
+
+	<field>
+		<name>inversionestemp</name>
+		<!--Inversiones financieras temporales-->
+		<alias>QT_TRANSLATE_NOOP("MetaData","185")</alias>
+		<null>true</null>
+		<pk>false</pk>
+		<type>double</type>
+		<partI>12</partI>
+		<partD>2</partD>
+	</field>
+
+	<field>
+		<name>accionescp</name>
+		<!--Acciones propias a corto plazo-->
+		<alias>QT_TRANSLATE_NOOP("MetaData","186")</alias>
+		<null>true</null>
+		<pk>false</pk>
+		<type>double</type>
+		<partI>12</partI>
+		<partD>2</partD>
+	</field>
+
+	<field>
+		<name>tesoreria</name>
+		<!--Tesorería-->
+		<alias>QT_TRANSLATE_NOOP("MetaData","188")</alias>
+		<null>true</null>
+		<pk>false</pk>
+		<type>double</type>
+		<partI>12</partI>
+		<partD>2</partD>
+	</field>
+
+	<field>
+		<name>ajustes</name>
+		<!--Ajustes por periodificación-->
+		<alias>QT_TRANSLATE_NOOP("MetaData","189")</alias>
+		<null>true</null>
+		<pk>false</pk>
+		<type>double</type>
+		<partI>12</partI>
+		<partD>2</partD>
+	</field>
+
+	<field>
+		<name>totalactivo</name>
+		<!--Total activo-->
+		<alias>QT_TRANSLATE_NOOP("MetaData","190")</alias>
+		<null>true</null>
+		<pk>false</pk>
+		<type>double</type>
+		<partI>12</partI>
+		<partD>2</partD>
+	</field>
+
+	<!--pasivo-->
+	<field>
+		<name>capitalsusc</name>
+		<!--Capital suscrito-->
+		<alias>QT_TRANSLATE_NOOP("MetaData","201")</alias>
+		<null>true</null>
+		<pk>false</pk>
+		<type>double</type>
+		<partI>12</partI>
+		<partD>2</partD>
+	</field>
+
+	<field>
+		<name>primaemision</name>
+		<!--Prima de emisión-->
+		<alias>QT_TRANSLATE_NOOP("MetaData","202")</alias>
+		<null>true</null>
+		<pk>false</pk>
+		<type>double</type>
+		<partI>12</partI>
+		<partD>2</partD>
+	</field>
+
+	<field>
+		<name>reservarev</name>
+		<!--Reserva de revalorización-->
+		<alias>QT_TRANSLATE_NOOP("MetaData","204")</alias>
+		<null>true</null>
+		<pk>false</pk>
+		<type>double</type>
+		<partI>12</partI>
+		<partD>2</partD>
+	</field>
+
+	<field>
+		<name>diferencias</name>
+		<!--Diferencias por ajuste del capital a euros-->
+		<alias>QT_TRANSLATE_NOOP("MetaData","203")</alias>
+		<null>true</null>
+		<pk>false</pk>
+		<type>double</type>
+		<partI>12</partI>
+		<partD>2</partD>
+	</field>
+
+	<field>
+		<name>reservacanarias</name>
+		<!--Reserva para inversiones en Canarias-->
+		<alias>QT_TRANSLATE_NOOP("MetaData","218")</alias>
+		<null>true</null>
+		<pk>false</pk>
+		<type>double</type>
+		<partI>12</partI>
+		<partD>2</partD>
+	</field>
+
+	<field>
+		<name>restoreserv</name>
+		<!--Resto de reservas-->
+		<alias>QT_TRANSLATE_NOOP("MetaData","210")</alias>
+		<null>true</null>
+		<pk>false</pk>
+		<type>double</type>
+		<partI>12</partI>
+		<partD>2</partD>
+	</field>
+
+	<field>
+		<name>resultados</name>
+		<!--Resultados de ejercicios anteriores-->
+		<alias>QT_TRANSLATE_NOOP("MetaData","214")</alias>
+		<null>true</null>
+		<pk>false</pk>
+		<type>double</type>
+		<partI>12</partI>
+		<partD>2</partD>
+	</field>
+
+	<field>
+		<name>pyg</name>
+		<!--Pérdidas y ganancias (beneficio o pérdida)-->
+		<alias>QT_TRANSLATE_NOOP("MetaData","215")</alias>
+		<null>true</null>
+		<pk>false</pk>
+		<type>double</type>
+		<partI>12</partI>
+		<partD>2</partD>
+	</field>
+
+	<field>
+		<name>dividendo</name>
+		<!--Dividendo a cuenta entregado en el ejercicio-->
+		<alias>QT_TRANSLATE_NOOP("MetaData","216")</alias>
+		<null>true</null>
+		<pk>false</pk>
+		<type>double</type>
+		<partI>12</partI>
+		<partD>2</partD>
+	</field>
+
+	<field>
+		<name>accionesred</name>
+		<!--Acciones propias para reducción de capital-->
+		<alias>QT_TRANSLATE_NOOP("MetaData","217")</alias>
+		<null>true</null>
+		<pk>false</pk>
+		<type>double</type>
+		<partI>12</partI>
+		<partD>2</partD>
+	</field>
+
+	<field>
+		<name>fondospropios</name>
+		<!--Fondos propios-->
+		<alias>QT_TRANSLATE_NOOP("MetaData","220")</alias>
+		<null>true</null>
+		<pk>false</pk>
+		<type>double</type>
+		<partI>12</partI>
+		<partD>2</partD>
+	</field>
+
+	<field>
+		<name>ingresosvariosej</name>
+		<!--Ingresos a distribuir en varios ejercicios-->
+		<alias>QT_TRANSLATE_NOOP("MetaData","225")</alias>
+		<null>true</null>
+		<pk>false</pk>
+		<type>double</type>
+		<partI>12</partI>
+		<partD>2</partD>
+	</field>
+
+	<field>
+		<name>provisiones</name>
+		<!--Provisiones para riesgos y gastos-->
+		<alias>QT_TRANSLATE_NOOP("MetaData","231")</alias>
+		<null>true</null>
+		<pk>false</pk>
+		<type>double</type>
+		<partI>12</partI>
+		<partD>2</partD>
+	</field>
+
+	<field>
+		<name>acreedoreslp</name>
+		<!--Acreedores a largo plazo-->
+		<alias>QT_TRANSLATE_NOOP("MetaData","248")</alias>
+		<null>true</null>
+		<pk>false</pk>
+		<type>double</type>
+		<partI>12</partI>
+		<partD>2</partD>
+	</field>
+
+	<field>
+		<name>acreedorescp</name>
+		<!--Acreedores a corto plazo -->
+		<alias>QT_TRANSLATE_NOOP("MetaData","271")</alias>
+		<null>true</null>
+		<pk>false</pk>
+		<type>double</type>
+		<partI>12</partI>
+		<partD>2</partD>
+	</field>
+
+	<field>
+		<name>provisionescp</name>
+		<!--Provisiones para riesgos y gastos a corto plazo-->
+		<alias>QT_TRANSLATE_NOOP("MetaData","272")</alias>
+		<null>true</null>
+		<pk>false</pk>
+		<type>double</type>
+		<partI>12</partI>
+		<partD>2</partD>
+	</field>
+
+	<field>
+		<name>totalpasivo</name>
+		<!--Total pasivo-->
+		<alias>QT_TRANSLATE_NOOP("MetaData","273")</alias>
+		<null>true</null>
+		<pk>false</pk>
+		<type>double</type>
+		<partI>12</partI>
+		<partD>2</partD>
+	</field>
+
+	<field>
+		<name>reservarevalor</name>
+		<!--Reserva de revalorización Real Decreto-ley 7/1996-->
+		<alias>QT_TRANSLATE_NOOP("MetaData","935")</alias>
+		<null>true</null>
+		<pk>false</pk>
+		<type>double</type>
+		<partI>12</partI>
+		<partD>2</partD>
+	</field>
+	
+	<!--CUENTA DE PERDIDAS Y GANANCIAS-->
+	
+	<!--debe-->
+	<field>
+		<name>consumos</name>
+		<!--Consumos de explotación-->
+		<alias>QT_TRANSLATE_NOOP("MetaData","306")</alias>
+		<null>true</null>
+		<pk>false</pk>
+		<type>double</type>
+		<partI>12</partI>
+		<partD>2</partD>
+	</field>
+	
+	<field>
+		<name>sueldosysalarios</name>
+		<!--Sueldos, salarios y asimilados-->
+		<alias>QT_TRANSLATE_NOOP("MetaData","312")</alias>
+		<null>true</null>
+		<pk>false</pk>
+		<type>double</type>
+		<partI>12</partI>
+		<partD>2</partD>
+	</field>
+
+	<field>
+		<name>cargassociales</name>
+		<!--Cargas sociales-->
+		<alias>QT_TRANSLATE_NOOP("MetaData","313")</alias>
+		<null>true</null>
+		<pk>false</pk>
+		<type>double</type>
+		<partI>12</partI>
+		<partD>2</partD>
+	</field>
+
+	<field>
+		<name>gastospersonal</name>
+		<!--Gastos de personal-->
+		<alias>QT_TRANSLATE_NOOP("MetaData","314")</alias>
+		<null>true</null>
+		<pk>false</pk>
+		<type>double</type>
+		<partI>12</partI>
+		<partD>2</partD>
+	</field>
+
+	<field>
+		<name>dotaciones</name>
+		<!--Dotaciones para amortizaciones del inmovilizado-->
+		<alias>QT_TRANSLATE_NOOP("MetaData","320")</alias>
+		<null>true</null>
+		<pk>false</pk>
+		<type>double</type>
+		<partI>12</partI>
+		<partD>2</partD>
+	</field>
+
+	<field>
+		<name>varprovisiones</name>
+		<!--Variación de las provisiones de tráfico y pérdidas de créditos incobrables-->
+		<alias>QT_TRANSLATE_NOOP("MetaData","326")</alias>
+		<null>true</null>
+		<pk>false</pk>
+		<type>double</type>
+		<partI>12</partI>
+		<partD>2</partD>
+	</field>
+
+	<field>
+		<name>otrosgastos</name>
+		<!--Otros gastos de explotación-->
+		<alias>QT_TRANSLATE_NOOP("MetaData","333")</alias>
+		<null>true</null>
+		<pk>false</pk>
+		<type>double</type>
+		<partI>12</partI>
+		<partD>2</partD>
+	</field>
+
+	<field>
+		<name>gastosfinancieros</name>
+		<!--Gastos financieros y gastos asimilados-->
+		<alias>QT_TRANSLATE_NOOP("MetaData","340")</alias>
+		<null>true</null>
+		<pk>false</pk>
+		<type>double</type>
+		<partI>12</partI>
+		<partD>2</partD>
+	</field>
+
+	<field>
+		<name>varprovfinancieras</name>
+		<!--Variación de las provisiones de inversiones financieras-->
+		<alias>QT_TRANSLATE_NOOP("MetaData","341")</alias>
+		<null>true</null>
+		<pk>false</pk>
+		<type>double</type>
+		<partI>12</partI>
+		<partD>2</partD>
+	</field>
+
+	<field>
+		<name>diferenciasneg</name>
+		<!--Diferencias negativas de cambio-->
+		<alias>QT_TRANSLATE_NOOP("MetaData","342")</alias>
+		<null>true</null>
+		<pk>false</pk>
+		<type>double</type>
+		<partI>12</partI>
+		<partD>2</partD>
+	</field>
+
+	<field>
+		<name>varprovinmovilizado</name>
+		<!--Variación de las provisiones de inmovilizado inmaterial, material y cartera de control-->
+		<alias>QT_TRANSLATE_NOOP("MetaData","343")</alias>
+		<null>true</null>
+		<pk>false</pk>
+		<type>double</type>
+		<partI>12</partI>
+		<partD>2</partD>
+	</field>
+
+	<field>
+		<name>perdidasinmovilizado</name>
+		<!--Pérdidas procedentes del inmovilizado inmaterial, material y cartera de control-->
+		<alias>QT_TRANSLATE_NOOP("MetaData","344")</alias>
+		<null>true</null>
+		<pk>false</pk>
+		<type>double</type>
+		<partI>12</partI>
+		<partD>2</partD>
+	</field>
+
+	<field>
+		<name>perdidasxoperac</name>
+		<!--Pérdidas por operaciones con acciones y obligaciones propias-->
+		<alias>QT_TRANSLATE_NOOP("MetaData","345")</alias>
+		<null>true</null>
+		<pk>false</pk>
+		<type>double</type>
+		<partI>12</partI>
+		<partD>2</partD>
+	</field>
+
+	<field>
+		<name>gastosextraordinarios</name>
+		<!--Gastos extraordinarios-->
+		<alias>QT_TRANSLATE_NOOP("MetaData","346")</alias>
+		<null>true</null>
+		<pk>false</pk>
+		<type>double</type>
+		<partI>12</partI>
+		<partD>2</partD>
+	</field>
+
+	<field>
+		<name>gastosotrosej</name>
+		<!--Gastos y pérdidas de otros ejercicios-->
+		<alias>QT_TRANSLATE_NOOP("MetaData","347")</alias>
+		<null>true</null>
+		<pk>false</pk>
+		<type>double</type>
+		<partI>12</partI>
+		<partD>2</partD>
+	</field>
+
+	<field>
+		<name>impuestosociedades</name>
+		<!--Impuesto sobre sociedades-->
+		<alias>QT_TRANSLATE_NOOP("MetaData","348")</alias>
+		<null>true</null>
+		<pk>false</pk>
+		<type>double</type>
+		<partI>12</partI>
+		<partD>2</partD>
+	</field>
+
+	<field>
+		<name>otrosimpuestos</name>
+		<!--Otros impuestos-->
+		<alias>QT_TRANSLATE_NOOP("MetaData","349")</alias>
+		<null>true</null>
+		<pk>false</pk>
+		<type>double</type>
+		<partI>12</partI>
+		<partD>2</partD>
+	</field>
+
+	<field>
+		<name>resultadoej</name>
+		<!--Resultado del ejercicio (beneficios)-->
+		<alias>QT_TRANSLATE_NOOP("MetaData","350")</alias>
+		<null>true</null>
+		<pk>false</pk>
+		<type>double</type>
+		<partI>12</partI>
+		<partD>2</partD>
+	</field>
+
+	<field>
+		<name>totaldebe</name>
+		<!--Total debe-->
+		<alias>QT_TRANSLATE_NOOP("MetaData","351")</alias>
+		<null>true</null>
+		<pk>false</pk>
+		<type>double</type>
+		<partI>12</partI>
+		<partD>2</partD>
+	</field>
+
+	<!--haber-->
+	<field>
+		<name>netonegocios</name>
+		<!--Importe neto de la cifra de negocios-->
+		<alias>QT_TRANSLATE_NOOP("MetaData","405")</alias>
+		<null>true</null>
+		<pk>false</pk>
+		<type>double</type>
+		<partI>12</partI>
+		<partD>2</partD>
+	</field>
+
+	<field>
+		<name>otrosingresos</name>
+		<!--Otros ingresos de explotación-->
+		<alias>QT_TRANSLATE_NOOP("MetaData","414")</alias>
+		<null>true</null>
+		<pk>false</pk>
+		<type>double</type>
+		<partI>12</partI>
+		<partD>2</partD>
+	</field>
+
+	<field>
+		<name>ingresosexplotac</name>
+		<!--Ingresos de explotación-->
+		<alias>QT_TRANSLATE_NOOP("MetaData","415")</alias>
+		<null>true</null>
+		<pk>false</pk>
+		<type>double</type>
+		<partI>12</partI>
+		<partD>2</partD>
+	</field>
+
+	<field>
+		<name>ingfinancieros</name>
+		<!--Ingresos financieros-->
+		<alias>QT_TRANSLATE_NOOP("MetaData","433")</alias>
+		<null>true</null>
+		<pk>false</pk>
+		<type>double</type>
+		<partI>12</partI>
+		<partD>2</partD>
+	</field>
+
+	<field>
+		<name>difpositivas</name>
+		<!--Diferencias positivas de cambio-->
+		<alias>QT_TRANSLATE_NOOP("MetaData","434")</alias>
+		<null>true</null>
+		<pk>false</pk>
+		<type>double</type>
+		<partI>12</partI>
+		<partD>2</partD>
+	</field>
+
+	<field>
+		<name>benefenajenacion</name>
+		<!--Beneficios en enajenación de inmovilizado inmaterial, material y cartera de control-->
+		<alias>QT_TRANSLATE_NOOP("MetaData","435")</alias>
+		<null>true</null>
+		<pk>false</pk>
+		<type>double</type>
+		<partI>12</partI>
+		<partD>2</partD>
+	</field>
+
+	<field>
+		<name>benefxoperaciones</name>
+		<!--Beneficios por operaciones con acciones y obligaciones propias-->
+		<alias>QT_TRANSLATE_NOOP("MetaData","436")</alias>
+		<null>true</null>
+		<pk>false</pk>
+		<type>double</type>
+		<partI>12</partI>
+		<partD>2</partD>
+	</field>
+
+	<field>
+		<name>suvbencionescap</name>
+		<!--Subvenciones de capital transferidas al resultado del ejercicio-->
+		<alias>QT_TRANSLATE_NOOP("MetaData","437")</alias>
+		<null>true</null>
+		<pk>false</pk>
+		<type>double</type>
+		<partI>12</partI>
+		<partD>2</partD>
+	</field>
+
+	<field>
+		<name>ingextraordinarios</name>
+		<!--Ingresos extraordinarios-->
+		<alias>QT_TRANSLATE_NOOP("MetaData","438")</alias>
+		<null>true</null>
+		<pk>false</pk>
+		<type>double</type>
+		<partI>12</partI>
+		<partD>2</partD>
+	</field>
+
+	<field>
+		<name>ingotrosej</name>
+		<!--Ingresos y beneficios de otros ejercicios-->
+		<alias>QT_TRANSLATE_NOOP("MetaData","439")</alias>
+		<null>true</null>
+		<pk>false</pk>
+		<type>double</type>
+		<partI>12</partI>
+		<partD>2</partD>
+	</field>
+
+	<field>
+		<name>resultadoperd</name>
+		<!--Resultado del ejercicio (Pérdidas)-->
+		<alias>QT_TRANSLATE_NOOP("MetaData","440")</alias>
+		<null>true</null>
+		<pk>false</pk>
+		<type>double</type>
+		<partI>12</partI>
+		<partD>2</partD>
+	</field>
+
+	<field>
+		<name>totalhaber</name>
+		<!--Total haber-->
+		<alias>QT_TRANSLATE_NOOP("MetaData","441")</alias>
+		<null>true</null>
+		<pk>false</pk>
+		<type>double</type>
+		<partI>12</partI>
+		<partD>2</partD>
+	</field>
+
+	<field>
+		<name>sueldos</name>
+		<!--Sueldos y salarios-->
+		<alias>QT_TRANSLATE_NOOP("MetaData","945")</alias>
+		<null>true</null>
+		<pk>false</pk>
+		<type>double</type>
+		<partI>12</partI>
+		<partD>2</partD>
+	</field>
+
+	<field>
+		<name>ssempresa</name>
+		<!--Seguridad Social a cargo de la empresa-->
+		<alias>QT_TRANSLATE_NOOP("MetaData","946")</alias>
+		<null>true</null>
+		<pk>false</pk>
+		<type>double</type>
+		<partI>12</partI>
+		<partD>2</partD>
+	</field>
+
+	<field>
+		<name>aportacpensiones</name>
+		<!--Aportaciones a planes de pensiones y otros sistemas complementarios-->
+		<alias>QT_TRANSLATE_NOOP("MetaData","947")</alias>
+		<null>true</null>
+		<pk>false</pk>
+		<type>double</type>
+		<partI>12</partI>
+		<partD>2</partD>
+	</field>
+
+	<field>
+		<name>indemnizaciones</name>
+		<!--Indemnizaciones-->
+		<alias>QT_TRANSLATE_NOOP("MetaData","948")</alias>
+		<null>true</null>
+		<pk>false</pk>
+		<type>double</type>
+		<partI>12</partI>
+		<partD>2</partD>
+	</field>
+
+	<field>
+		<name>otrosgastossoc</name>
+		<!--Otros gastos sociales-->
+		<alias>QT_TRANSLATE_NOOP("MetaData","949")</alias>
+		<null>true</null>
+		<pk>false</pk>
+		<type>double</type>
+		<partI>12</partI>
+		<partD>2</partD>
+	</field>
+
+	<field>
+		<name>ayudasmonetarias</name>
+		<!--Ayudas monetarias y otros gastos de gestión (sólo para entidades sin fines lucrativos)-->
+		<alias>QT_TRANSLATE_NOOP("MetaData","971")</alias>
+		<null>true</null>
+		<pk>false</pk>
+		<type>double</type>
+		<partI>12</partI>
+		<partD>2</partD>
+	</field>
+
+	<field>
+		<name>ingresospropios</name>
+		<!--Ingresos propios de la entidad (sólo para entidades sin fines lucrativos)-->
+		<alias>QT_TRANSLATE_NOOP("MetaData","972")</alias>
+		<null>true</null>
+		<pk>false</pk>
+		<type>double</type>
+		<partI>12</partI>
+		<partD>2</partD>
+	</field>
+
+	<field>
+		<name>ingarrendamientos</name>
+		<!--Ingresos por arrendamientos-->
+		<alias>QT_TRANSLATE_NOOP("MetaData","980")</alias>
+		<null>true</null>
+		<pk>false</pk>
+		<type>double</type>
+		<partI>12</partI>
+		<partD>2</partD>
+	</field>
+	
+	<!--Distribución de resultados-->
+	<field>
+		<name>perdygananc</name>
+		<!--perdidas y ganancias-->
+		<alias>QT_TRANSLATE_NOOP("MetaData","350")</alias>
+		<null>true</null>
+		<pk>false</pk>
+		<type>double</type>
+		<partI>12</partI>
+		<partD>2</partD>
+	</field>
+	
+	<field>
+		<name>remanente</name>
+		<!--Remanente-->
+		<alias>QT_TRANSLATE_NOOP("MetaData","452")</alias>
+		<null>true</null>
+		<pk>false</pk>
+		<type>double</type>
+		<partI>12</partI>
+		<partD>2</partD>
+	</field>
+	
+	<field>
+		<name>reservoluntarias</name>
+		<!--Reservas voluntarias-->
+		<alias>QT_TRANSLATE_NOOP("MetaData","453")</alias>
+		<null>true</null>
+		<pk>false</pk>
+		<type>double</type>
+		<partI>12</partI>
+		<partD>2</partD>
+	</field>
+	
+	<field>
+		<name>otrasreservas</name>
+		<!--Otras reservas-->
+		<alias>QT_TRANSLATE_NOOP("MetaData","454")</alias>
+		<null>true</null>
+		<pk>false</pk>
+		<type>double</type>
+		<partI>12</partI>
+		<partD>2</partD>
+	</field>
+	
+	<field>
+		<name>totalbase</name>
+		<!--Total de la base de reparto-->
+		<alias>QT_TRANSLATE_NOOP("MetaData","455")</alias>
+		<null>true</null>
+		<pk>false</pk>
+		<type>double</type>
+		<partI>12</partI>
+		<partD>2</partD>
+	</field>
+	
+	<!--DISTRIBUCIÓN-->
+	<field>
+		<name>areservalegal</name>
+		<!--A reserva legal-->
+		<alias>QT_TRANSLATE_NOOP("MetaData","456")</alias>
+		<null>true</null>
+		<pk>false</pk>
+		<type>double</type>
+		<partI>12</partI>
+		<partD>2</partD>
+	</field>
+	
+	<field>
+		<name>areservasesp</name>
+		<!--A reservas especiales-->
+		<alias>QT_TRANSLATE_NOOP("MetaData","457")</alias>
+		<null>true</null>
+		<pk>false</pk>
+		<type>double</type>
+		<partI>12</partI>
+		<partD>2</partD>
+	</field>
+	
+	<field>
+		<name>areservasvol</name>
+		<!--A reservas voluntarias-->
+		<alias>QT_TRANSLATE_NOOP("MetaData","458")</alias>
+		<null>true</null>
+		<pk>false</pk>
+		<type>double</type>
+		<partI>12</partI>
+		<partD>2</partD>
+	</field>
+	
+	<field>
+		<name>aotrasreservas</name>
+		<!--A otras reservas-->
+		<alias>QT_TRANSLATE_NOOP("MetaData","459")</alias>
+		<null>true</null>
+		<pk>false</pk>
+		<type>double</type>
+		<partI>12</partI>
+		<partD>2</partD>
+	</field>
+	
+	<field>
+		<name>adividendos</name>
+		<!--A dividendos-->
+		<alias>QT_TRANSLATE_NOOP("MetaData","460")</alias>
+		<null>true</null>
+		<pk>false</pk>
+		<type>double</type>
+		<partI>12</partI>
+		<partD>2</partD>
+	</field>
+	
+	<field>
+		<name>acompensacion</name>
+		<!--A compensación de pérdidas de ejercicios anteriores-->
+		<alias>QT_TRANSLATE_NOOP("MetaData","461")</alias>
+		<null>true</null>
+		<pk>false</pk>
+		<type>double</type>
+		<partI>12</partI>
+		<partD>2</partD>
+	</field>
+	
+	<field>
+		<name>aremanente</name>
+		<!--A remanente-->
+		<alias>QT_TRANSLATE_NOOP("MetaData","462")</alias>
+		<null>true</null>
+		<pk>false</pk>
+		<type>double</type>
+		<partI>12</partI>
+		<partD>2</partD>
+	</field>
+	
+	<field>
+		<name>aotrasaplic</name>
+		<!--A otras aplicaciones-->
+		<alias>QT_TRANSLATE_NOOP("MetaData","463")</alias>
+		<null>true</null>
+		<pk>false</pk>
+		<type>double</type>
+		<partI>12</partI>
+		<partD>2</partD>
+	</field>
+	
+	<field>
+		<name>totaldistr</name>
+		<!--Total distribución-->
+		<alias>QT_TRANSLATE_NOOP("MetaData","464")</alias>
+		<null>true</null>
+		<pk>false</pk>
+		<type>double</type>
+		<partI>12</partI>
+		<partD>2</partD>
+	</field>
+	
+	<!--liquidación (I)-->
+	<field>
+		<name>totalimporte</name>
+		<!--Total importe-->
+		<alias>QT_TRANSLATE_NOOP("MetaData","500")</alias>
+		<null>true</null>
+		<pk>false</pk>
+		<type>double</type>
+		<partI>12</partI>
+		<partD>2</partD>
+	</field>
+
+	<field>
+		<name>agrupacionesa</name>
+		<!--Agrupaciones de interés económico y uniones temporales de empresas (aumentos)-->
+		<alias>QT_TRANSLATE_NOOP("MetaData","501")</alias>
+		<null>true</null>
+		<pk>false</pk>
+		<type>double</type>
+		<partI>12</partI>
+		<partD>2</partD>
+	</field>
+	
+	<field>
+		<name>agrupacionesd</name>
+		<!--Agrupaciones de interés económico y uniones temporales de empresas (disminuciones)-->
+		<alias>QT_TRANSLATE_NOOP("MetaData","502")</alias>
+		<null>true</null>
+		<pk>false</pk>
+		<type>double</type>
+		<partI>12</partI>
+		<partD>2</partD>
+	</field>
+
+	<field>
+		<name>amortizacionlibrea</name>
+		<!--Amortización libre y acelerada (aumentos)-->
+		<alias>QT_TRANSLATE_NOOP("MetaData","503")</alias>
+		<null>true</null>
+		<pk>false</pk>
+		<type>double</type>
+		<partI>12</partI>
+		<partD>2</partD>
+	</field>
+
+	<field>
+		<name>amortizacionlibred</name>
+		<!--Amortización libre y acelerada (disminuciones)-->
+		<alias>QT_TRANSLATE_NOOP("MetaData","504")</alias>
+		<null>true</null>
+		<pk>false</pk>
+		<type>double</type>
+		<partI>12</partI>
+		<partD>2</partD>
+	</field>
+
+	<field>
+		<name>oparrendamientoa</name>
+		<!--Operaciones de arrendamiento financiero (aumentos)-->
+		<alias>QT_TRANSLATE_NOOP("MetaData","505")</alias>
+		<null>true</null>
+		<pk>false</pk>
+		<type>double</type>
+		<partI>12</partI>
+		<partD>2</partD>
+	</field>
+
+	<field>
+		<name>oparrendamientod</name>
+		<!--Operaciones de arrendamiento financiero (disminuciones)-->
+		<alias>QT_TRANSLATE_NOOP("MetaData","506")</alias>
+		<null>true</null>
+		<pk>false</pk>
+		<type>double</type>
+		<partI>12</partI>
+		<partD>2</partD>
+	</field>
+
+	<field>
+		<name>dotacionesconta</name>
+		<!--Dotaciones contables a provisiones no deducibles fiscalmente (aumentos)-->
+		<alias>QT_TRANSLATE_NOOP("MetaData","507")</alias>
+		<null>true</null>
+		<pk>false</pk>
+		<type>double</type>
+		<partI>12</partI>
+		<partD>2</partD>
+	</field>
+
+	<field>
+		<name>dotacionescontd</name>
+		<!--Dotaciones contables  a provisiones no deducibles fiscalmente (disminuciones)-->
+		<alias>QT_TRANSLATE_NOOP("MetaData","508")</alias>
+		<null>true</null>
+		<pk>false</pk>
+		<type>double</type>
+		<partI>12</partI>
+		<partD>2</partD>
+	</field>
+
+	<field>
+		<name>impsociedadesa</name>
+		<!--Impuesto sobre sociedades (aumentos)-->
+		<alias>QT_TRANSLATE_NOOP("MetaData","509")</alias>
+		<null>true</null>
+		<pk>false</pk>
+		<type>double</type>
+		<partI>12</partI>
+		<partD>2</partD>
+	</field>
+
+	<field>
+		<name>impsociedadesd</name>
+		<!--Impuesto sobre sociedades (disminuciones)-->
+		<alias>QT_TRANSLATE_NOOP("MetaData","510")</alias>
+		<null>true</null>
+		<pk>false</pk>
+		<type>double</type>
+		<partI>12</partI>
+		<partD>2</partD>
+	</field>
+
+	<field>
+		<name>otrosgastosa</name>
+		<!--Otros gastos contabilizados no deducibles fiscalmente (aumentos)-->
+		<alias>QT_TRANSLATE_NOOP("MetaData","511")</alias>
+		<null>true</null>
+		<pk>false</pk>
+		<type>double</type>
+		<partI>12</partI>
+		<partD>2</partD>
+	</field>
+
+	<field>
+		<name>valornormala</name>
+		<!--Aplicación del valor normal de mercado (aumentos)-->
+		<alias>QT_TRANSLATE_NOOP("MetaData","512")</alias>
+		<null>true</null>
+		<pk>false</pk>
+		<type>double</type>
+		<partI>12</partI>
+		<partD>2</partD>
+	</field>
+
+	<field>
+		<name>valornormald</name>
+		<!--Aplicación del valor normal de mercado (disminuciones)-->
+		<alias>QT_TRANSLATE_NOOP("MetaData","513")</alias>
+		<null>true</null>
+		<pk>false</pk>
+		<type>double</type>
+		<partI>12</partI>
+		<partD>2</partD>
+	</field>
+
+	<field>
+		<name>correcccionrentasd</name>
+		<!--Corrección de rentas por efecto de la depreciación monetaria (disminuciones)-->
+		<alias>QT_TRANSLATE_NOOP("MetaData","514")</alias>
+		<null>true</null>
+		<pk>false</pk>
+		<type>double</type>
+		<partI>12</partI>
+		<partD>2</partD>
+	</field>
+
+	<field>
+		<name>reinversionbenefa</name>
+		<!--Reinversión de beneficios extraordinarios (DT 3ª LIS) (aumentos)-->
+		<alias>QT_TRANSLATE_NOOP("MetaData","516")</alias>
+		<null>true</null>
+		<pk>false</pk>
+		<type>double</type>
+		<partI>12</partI>
+		<partD>2</partD>
+	</field>
+
+	<field>
+		<name>gastosingdifa</name>
+		<!--Gastos o ingresos contabilizados en ejercicios diferentes al de su devengo (aumentos)-->
+		<alias>QT_TRANSLATE_NOOP("MetaData","518")</alias>
+		<null>true</null>
+		<pk>false</pk>
+		<type>double</type>
+		<partI>12</partI>
+		<partD>2</partD>
+	</field>
+
+	<field>
+		<name>gastosingdifd</name>
+		<!--Gastos o ingresos contabilizados en ejercicios diferentes al de su devengo (disminuciones)-->
+		<alias>QT_TRANSLATE_NOOP("MetaData","519")</alias>
+		<null>true</null>
+		<pk>false</pk>
+		<type>double</type>
+		<partI>12</partI>
+		<partD>2</partD>
+	</field>
+
+	<field>
+		<name>opaplazoa</name>
+		<!--Operaciones a plazo o con precio aplazado (aumentos)-->
+		<alias>QT_TRANSLATE_NOOP("MetaData","520")</alias>
+		<null>true</null>
+		<pk>false</pk>
+		<type>double</type>
+		<partI>12</partI>
+		<partD>2</partD>
+	</field>
+
+	<field>
+		<name>opaplazod</name>
+		<!--Operaciones a plazo o con precio aplazado (disminuciones)-->
+		<alias>QT_TRANSLATE_NOOP("MetaData","521")</alias>
+		<null>true</null>
+		<pk>false</pk>
+		<type>double</type>
+		<partI>12</partI>
+		<partD>2</partD>
+	</field>
+
+	<field>
+		<name>subcapitalizaciona</name>
+		<!--Subcapitalización (aumentos)-->
+		<alias>QT_TRANSLATE_NOOP("MetaData","522")</alias>
+		<null>true</null>
+		<pk>false</pk>
+		<type>double</type>
+		<partI>12</partI>
+		<partD>2</partD>
+	</field>
+
+	<field>
+		<name>aportacycolaba</name>
+		<!--Aportaciones y colaboración a favor de entidades sin fines lucrativos (aumentos)-->
+		<alias>QT_TRANSLATE_NOOP("MetaData","523")</alias>
+		<null>true</null>
+		<pk>false</pk>
+		<type>double</type>
+		<partI>12</partI>
+		<partD>2</partD>
+	</field>
+
+	<field>
+		<name>aportacycolabd</name>
+		<!--Aportaciones y colaboración a favor de entidades sin fines lucrativos (disminuciones)-->
+		<alias>QT_TRANSLATE_NOOP("MetaData","524")</alias>
+		<null>true</null>
+		<pk>false</pk>
+		<type>double</type>
+		<partI>12</partI>
+		<partD>2</partD>
+	</field>
+
+	<field>
+		<name>regfiscala</name>
+		<!--Régimen fiscal de entidades sin fines lucrativos LEY 49/2002 (aumentos)-->
+		<alias>QT_TRANSLATE_NOOP("MetaData","525")</alias>
+		<null>true</null>
+		<pk>false</pk>
+		<type>double</type>
+		<partI>12</partI>
+		<partD>2</partD>
+	</field>
+
+	<field>
+		<name>regfiscald</name>
+		<!--Régimen fiscal de entidades sin fines lucrativos LEY 49/2002 (disminuciones)-->
+		<alias>QT_TRANSLATE_NOOP("MetaData","526")</alias>
+		<null>true</null>
+		<pk>false</pk>
+		<type>double</type>
+		<partI>12</partI>
+		<partD>2</partD>
+	</field>
+
+	<field>
+		<name>regfiscalcopama</name>
+		<!--Régimen fiscal Copa América DA 34ª Ley 62/2003 (aumentos)-->
+		<alias>QT_TRANSLATE_NOOP("MetaData","699")</alias>
+		<null>true</null>
+		<pk>false</pk>
+		<type>double</type>
+		<partI>12</partI>
+		<partD>2</partD>
+	</field>
+
+	<field>
+		<name>regfiscalcopamd</name>
+		<!--Régimen fiscal Copa América DA 34ª Ley 62/2003 (disminuciones)-->
+		<alias>QT_TRANSLATE_NOOP("MetaData","700")</alias>
+		<null>true</null>
+		<pk>false</pk>
+		<type>double</type>
+		<partI>12</partI>
+		<partD>2</partD>
+	</field>
+
+	<field>
+		<name>regfiscalentda</name>
+		<!--Régimen fiscal de entidades parcialmente exentas (aumentos)-->
+		<alias>QT_TRANSLATE_NOOP("MetaData","527")</alias>
+		<null>true</null>
+		<pk>false</pk>
+		<type>double</type>
+		<partI>12</partI>
+		<partD>2</partD>
+	</field>
+
+	<field>
+		<name>regfiscalentdd</name>
+		<!--Régimen fiscal de entidades parcialmente exentas (disminuciones)-->
+		<alias>QT_TRANSLATE_NOOP("MetaData","528")</alias>
+		<null>true</null>
+		<pk>false</pk>
+		<type>double</type>
+		<partI>12</partI>
+		<partD>2</partD>
+	</field>
+
+	<field>
+		<name>valoraciona</name>
+		<!--Valoración bienes y derechos (operaciones Cap.VIII Tít.VII LIS) (aumentos)-->
+		<alias>QT_TRANSLATE_NOOP("MetaData","531")</alias>
+		<null>true</null>
+		<pk>false</pk>
+		<type>double</type>
+		<partI>12</partI>
+		<partD>2</partD>
+	</field>
+
+	<field>
+		<name>valoraciond</name>
+		<!--Valoración bienes y derechos (operaciones Cap.VIII Tít.VII LIS) (disminuciones)-->
+		<alias>QT_TRANSLATE_NOOP("MetaData","532")</alias>
+		<null>true</null>
+		<pk>false</pk>
+		<type>double</type>
+		<partI>12</partI>
+		<partD>2</partD>
+	</field>
+
+	<field>
+		<name>regfisvaloresextranjd</name>
+		<!--Régimen fiscal entidades de tenencia de valores extranjeros (disminuciones)-->
+		<alias>QT_TRANSLATE_NOOP("MetaData","533")</alias>
+		<null>true</null>
+		<pk>false</pk>
+		<type>double</type>
+		<partI>12</partI>
+		<partD>2</partD>
+	</field>
+
+	<field>
+		<name>exenciondobled</name>
+		<!--Exención doble imposición (arts.21 y 22 LIS) (disminuciones)-->
+		<alias>QT_TRANSLATE_NOOP("MetaData","534")</alias>
+		<null>true</null>
+		<pk>false</pk>
+		<type>double</type>
+		<partI>12</partI>
+		<partD>2</partD>
+	</field>
+
+	<field>
+		<name>implantacionempa</name>
+		<!--Implantación de empresas en el extranjero (art.23 LIS) (aumentos)-->
+		<alias>QT_TRANSLATE_NOOP("MetaData","535")</alias>
+		<null>true</null>
+		<pk>false</pk>
+		<type>double</type>
+		<partI>12</partI>
+		<partD>2</partD>
+	</field>
+
+	<field>
+		<name>implantacionempd</name>
+		<!--Implantación de empresas en el extranjero (art.23 LIS) (disminuciones)-->
+		<alias>QT_TRANSLATE_NOOP("MetaData","536")</alias>
+		<null>true</null>
+		<pk>false</pk>
+		<type>double</type>
+		<partI>12</partI>
+		<partD>2</partD>
+	</field>
+
+	<field>
+		<name>difplusvaliasa</name>
+		<!--Diferimiento plusvalías procesos de concentración empresarial (DA 4ªLIS) (aumentos)-->
+		<alias>QT_TRANSLATE_NOOP("MetaData","539")</alias>
+		<null>true</null>
+		<pk>false</pk>
+		<type>double</type>
+		<partI>12</partI>
+		<partD>2</partD>
+	</field>
+
+	<field>
+		<name>difplusvaliasd</name>
+		<!--Diferimiento plusvalías procesos de concentración empresarial (DA 4ªLIS) (disminuciones)-->
+		<alias>QT_TRANSLATE_NOOP("MetaData","540")</alias>
+		<null>true</null>
+		<pk>false</pk>
+		<type>double</type>
+		<partI>12</partI>
+		<partD>2</partD>
+	</field>
+
+	<field>
+		<name>otrascorreccionesa</name>
+		<!--Otras correcciones (aumentos)-->
+		<alias>QT_TRANSLATE_NOOP("MetaData","543")</alias>
+		<null>true</null>
+		<pk>false</pk>
+		<type>double</type>
+		<partI>12</partI>
+		<partD>2</partD>
+	</field>
+
+	<field>
+		<name>otrascorreccionesd</name>
+		<!--Otras correcciones (disminuciones)-->
+		<alias>QT_TRANSLATE_NOOP("MetaData","544")</alias>
+		<null>true</null>
+		<pk>false</pk>
+		<type>double</type>
+		<partI>12</partI>
+		<partD>2</partD>
+	</field>
+
+	<field>
+		<name>cooperativasd</name>
+		<!--Cooperativas: 50% Dotación obligatoria al Fondo Reserva Obligatorio (disminuciones)-->
+		<alias>QT_TRANSLATE_NOOP("MetaData","550")</alias>
+		<null>true</null>
+		<pk>false</pk>
+		<type>double</type>
+		<partI>12</partI>
+		<partD>2</partD>
+	</field>
+
+	<field>
+		<name>reservainvcanariasa</name>
+		<!--Reducción base imponible: Reserva inversiones Canarias (Ley 19/1994) (aumentos)-->
+		<alias>QT_TRANSLATE_NOOP("MetaData","545")</alias>
+		<null>true</null>
+		<pk>false</pk>
+		<type>double</type>
+		<partI>12</partI>
+		<partD>2</partD>
+	</field>
+
+	<field>
+		<name>reservainvcanariasd</name>
+		<!--Reducción base imponible: Reserva inversiones Canarias (Ley 19/1994) (disminuciones)-->
+		<alias>QT_TRANSLATE_NOOP("MetaData","549")</alias>
+		<null>true</null>
+		<pk>false</pk>
+		<type>double</type>
+		<partI>12</partI>
+		<partD>2</partD>
+	</field>
+
+	<field>
+		<name>factoragotama</name>
+		<!--Reducción base imponible: Factor agotamiento (art. 98 y 103 LIS) (aumentos)-->
+		<alias>QT_TRANSLATE_NOOP("MetaData","546")</alias>
+		<null>true</null>
+		<pk>false</pk>
+		<type>double</type>
+		<partI>12</partI>
+		<partD>2</partD>
+	</field>
+
+	<field>
+		<name>factoragotamd</name>
+		<!--Reducción base imponible: Factor agotamiento (art. 98 y 103 LIS) (disminuciones)-->
+		<alias>QT_TRANSLATE_NOOP("MetaData","551")</alias>
+		<null>true</null>
+		<pk>false</pk>
+		<type>double</type>
+		<partI>12</partI>
+		<partD>2</partD>
+	</field>
+
+	<field>
+		<name>comunidadestitd</name>
+		<!--Reducción base imponible: Comunidades titulares de montes vecinales en mano común (art.123 LIS) (disminuciones)-->
+		<alias>QT_TRANSLATE_NOOP("MetaData","548")</alias>
+		<null>true</null>
+		<pk>false</pk>
+		<type>double</type>
+		<partI>12</partI>
+		<partD>2</partD>
+	</field>
+
+	<field>
+		<name>compensaciond</name>
+		<!--Compensación bases imponibles negativas períodos anteriores (disminuciones)-->
+		<alias>QT_TRANSLATE_NOOP("MetaData","547")</alias>
+		<null>true</null>
+		<pk>false</pk>
+		<type>double</type>
+		<partI>12</partI>
+		<partD>2</partD>
+	</field>
+	
+	<!--Base imponible-->
+	<field>
+		<name>totalimp</name>
+		<!--Total importe-->
+		<alias>QT_TRANSLATE_NOOP("MetaData","552")</alias>
+		<null>true</null>
+		<pk>false</pk>
+		<type>double</type>
+		<partI>12</partI>
+		<partD>2</partD>
+	</field>
+	
+	<field>
+		<name>resulcoop</name>
+		<!--Resultados cooperativos-->
+		<alias>QT_TRANSLATE_NOOP("MetaData","553")</alias>
+		<null>true</null>
+		<pk>false</pk>
+		<type>double</type>
+		<partI>12</partI>
+		<partD>2</partD>
+	</field>
+	
+	<field>
+		<name>resulextracoop</name>
+		<!--Resultados extracooperativos-->
+		<alias>QT_TRANSLATE_NOOP("MetaData","554")</alias>
+		<null>true</null>
+		<pk>false</pk>
+		<type>double</type>
+		<partI>12</partI>
+		<partD>2</partD>
+	</field>
+	
+	<field>
+		<name>sociosresid</name>
+		<!--Socios residentes-->
+		<alias>QT_TRANSLATE_NOOP("MetaData","555")</alias>
+		<null>true</null>
+		<pk>false</pk>
+		<type>double</type>
+		<partI>12</partI>
+		<partD>2</partD>
+	</field>
+	
+	<field>
+		<name>sociosnoresid</name>
+		<!--Socios no residentes-->
+		<alias>QT_TRANSLATE_NOOP("MetaData","556")</alias>
+		<null>true</null>
+		<pk>false</pk>
+		<type>double</type>
+		<partI>12</partI>
+		<partD>2</partD>
+	</field>
+	
+	<field>
+		<name>basetipogravamen</name>
+		<!--Base imponible a tipo de gravamen especial-->
+		<alias>QT_TRANSLATE_NOOP("MetaData","559")</alias>
+		<null>true</null>
+		<pk>false</pk>
+		<type>double</type>
+		<partI>12</partI>
+		<partD>2</partD>
+	</field>
+	
+	<field>
+		<name>tipogravamen</name>
+		<!--Tipo de gravamen-->
+		<alias>QT_TRANSLATE_NOOP("MetaData","558")</alias>
+		<null>true</null>
+		<pk>false</pk>
+		<type>double</type>
+		<partI>2</partI>
+		<partD>2</partD>
+	</field>
+	
+	<field>
+		<name>cuotaprevia</name>
+		<!--Cuota íntegra previa-->
+		<alias>QT_TRANSLATE_NOOP("MetaData","560")</alias>
+		<null>true</null>
+		<pk>false</pk>
+		<type>double</type>
+		<partI>12</partI>
+		<partD>2</partD>
+	</field>
+	
+	<field>
+		<name>compcuotas</name>
+		<!--Compensación de cuotas por pérdidas de cooperativas-->
+		<alias>QT_TRANSLATE_NOOP("MetaData","561")</alias>
+		<null>true</null>
+		<pk>false</pk>
+		<type>double</type>
+		<partI>12</partI>
+		<partD>2</partD>
+	</field>
+	
+	<field>
+		<name>cuotaintegra</name>
+		<!--Cuota íntegra-->
+		<alias>QT_TRANSLATE_NOOP("MetaData","562")</alias>
+		<null>true</null>
+		<pk>false</pk>
+		<type>double</type>
+		<partI>12</partI>
+		<partD>2</partD>
+	</field>
+	
+	<!--liquidación (II)-->
+	<field>
+		<name>bonifceutamelilla</name>
+		<!--Bonificación por rentas obtenidas en Ceuta y Melilla-->
+		<alias>QT_TRANSLATE_NOOP("MetaData","567")</alias>
+		<null>true</null>
+		<pk>false</pk>
+		<type>double</type>
+		<partI>12</partI>
+		<partD>2</partD>
+	</field>
+		
+	<field>
+		<name>bonifactexport</name>
+		<!--Bonificación actividades exportadoras y de prestación de servicios-->
+		<alias>QT_TRANSLATE_NOOP("MetaData","568")</alias>
+		<null>true</null>
+		<pk>false</pk>
+		<type>double</type>
+		<partI>12</partI>
+		<partD>2</partD>
+	</field>
+
+	<field>
+		<name>bonifrendimientos</name>
+		<!--Bonificación rendimientos por ventas bienes corporales producidos en Canarias-->
+		<alias>QT_TRANSLATE_NOOP("MetaData","563")</alias>
+		<null>true</null>
+		<pk>false</pk>
+		<type>double</type>
+		<partI>12</partI>
+		<partD>2</partD>
+	</field>
+	
+	<field>
+		<name>bonifsocicoop</name>
+		<!--Bonificaciones Sociedades Cooperativas-->
+		<alias>QT_TRANSLATE_NOOP("MetaData","566")</alias>
+		<null>true</null>
+		<pk>false</pk>
+		<type>double</type>
+		<partI>12</partI>
+		<partD>2</partD>
+	</field>
+	
+	<field>
+		<name>bonifentidades</name>
+		<!--Bonificaciones entidades dedicadas al arrendamiento de viviendas-->
+		<alias>QT_TRANSLATE_NOOP("MetaData","576")</alias>
+		<null>true</null>
+		<pk>false</pk>
+		<type>double</type>
+		<partI>12</partI>
+		<partD>2</partD>
+	</field>
+	
+	<field>
+		<name>otrasbonific</name>
+		<!--Otras bonificaciones-->
+		<alias>QT_TRANSLATE_NOOP("MetaData","569")</alias>
+		<null>true</null>
+		<pk>false</pk>
+		<type>double</type>
+		<partI>12</partI>
+		<partD>2</partD>
+	</field>
+	
+	<field>
+		<name>saldosptesdeduc</name>
+		<!--Saldos pendientes de deducción periodos anteriores-->
+		<alias>QT_TRANSLATE_NOOP("MetaData","580")</alias>
+		<null>true</null>
+		<pk>false</pk>
+		<type>double</type>
+		<partI>12</partI>
+		<partD>2</partD>
+	</field>
+	
+	<field>
+		<name>intersoccoop</name>
+		<!--Intersocietaria al 5/10% (cooperativas)-->
+		<alias>QT_TRANSLATE_NOOP("MetaData","571")</alias>
+		<null>true</null>
+		<pk>false</pk>
+		<type>double</type>
+		<partI>12</partI>
+		<partD>2</partD>
+	</field>
+	
+	<field>
+		<name>intersoccinc</name>
+		<!--Intersocietaria al 50% (art.30.1 y 3 LIS)-->
+		<alias>QT_TRANSLATE_NOOP("MetaData","572")</alias>
+		<null>true</null>
+		<pk>false</pk>
+		<type>double</type>
+		<partI>12</partI>
+		<partD>2</partD>
+	</field>
+
+	<field>
+		<name>intersoccien</name>
+		<!--Intersocietaria al 100% (art.30.2 y 3 LIS)-->
+		<alias>QT_TRANSLATE_NOOP("MetaData","573")</alias>
+		<null>true</null>
+		<pk>false</pk>
+		<type>double</type>
+		<partI>12</partI>
+		<partD>2</partD>
+	</field>
+
+	<field>
+		<name>plusvfuenteint</name>
+		<!--Plusvalías fuente interna (art.30.5 LIS)-->
+		<alias>QT_TRANSLATE_NOOP("MetaData","574")</alias>
+		<null>true</null>
+		<pk>false</pk>
+		<type>double</type>
+		<partI>12</partI>
+		<partD>2</partD>
+	</field>
+
+	<field>
+		<name>impsoportado</name>
+		<!--Internacional: Impuesto soportado por el sujeto pasivo (art. 31 LIS)-->
+		<alias>QT_TRANSLATE_NOOP("MetaData","575")</alias>
+		<null>true</null>
+		<pk>false</pk>
+		<type>double</type>
+		<partI>12</partI>
+		<partD>2</partD>
+	</field>
+
+	<field>
+		<name>dividyparticip</name>
+		<!--Internacional: dividendos y participaciones en beneficios (art.32 LIS)-->
+		<alias>QT_TRANSLATE_NOOP("MetaData","577")</alias>
+		<null>true</null>
+		<pk>false</pk>
+		<type>double</type>
+		<partI>12</partI>
+		<partD>2</partD>
+	</field>
+
+	<field>
+		<name>bonifnavieras</name>
+		<!--Bonificaciones empresas navieras en Canarias-->
+		<alias>QT_TRANSLATE_NOOP("MetaData","581")</alias>
+		<null>true</null>
+		<pk>false</pk>
+		<type>double</type>
+		<partI>12</partI>
+		<partD>2</partD>
+	</field>
+
+	<field>
+		<name>cuotaintegraajustada</name>
+		<!--Cuota íntegra ajustada positiva-->
+		<alias>QT_TRANSLATE_NOOP("MetaData","582")</alias>
+		<null>true</null>
+		<pk>false</pk>
+		<type>double</type>
+		<partI>12</partI>
+		<partD>2</partD>
+	</field>
+	
+	<!--Otras deducciones-->
+	<field>
+		<name>apoyofiscal</name>
+		<!--Apoyo fiscal a la inversión y otras-->
+		<alias>QT_TRANSLATE_NOOP("MetaData","583")</alias>
+		<null>true</null>
+		<pk>false</pk>
+		<type>double</type>
+		<partI>12</partI>
+		<partD>2</partD>
+	</field>
+	
+	<field>
+		<name>deduccionley</name>
+		<!--Deducción art.42 LIS y art. 36 ter Ley 43/1995-->
+		<alias>QT_TRANSLATE_NOOP("MetaData","585")</alias>
+		<null>true</null>
+		<pk>false</pk>
+		<type>double</type>
+		<partI>12</partI>
+		<partD>2</partD>
+	</field>
+	
+	<field>
+		<name>deducciondisposic</name>
+		<!--Deducciones disposición transitoria octava LIS-->
+		<alias>QT_TRANSLATE_NOOP("MetaData","584")</alias>
+		<null>true</null>
+		<pk>false</pk>
+		<type>double</type>
+		<partI>12</partI>
+		<partD>2</partD>
+	</field>
+	
+	<field>
+		<name>deduccioneslimite</name>
+		<!--Deducciones con limite del Capitulo IV titulo VI LIS-->
+		<alias>QT_TRANSLATE_NOOP("MetaData","588")</alias>
+		<null>true</null>
+		<pk>false</pk>
+		<type>double</type>
+		<partI>12</partI>
+		<partD>2</partD>
+	</field>
+	
+	<field>
+		<name>deduccionesdonac</name>
+		<!--Deducción donaciones a entidades sin fines de lucro-->
+		<alias>QT_TRANSLATE_NOOP("MetaData","565")</alias>
+		<null>true</null>
+		<pk>false</pk>
+		<type>double</type>
+		<partI>12</partI>
+		<partD>2</partD>
+	</field>
+	
+	<field>
+		<name>deduccionescartuja</name>
+		<!--Deducciones Proyecto Cartuja 93, saldos pendientes de periodos anteriores-->
+		<alias>QT_TRANSLATE_NOOP("MetaData","589")</alias>
+		<null>true</null>
+		<pk>false</pk>
+		<type>double</type>
+		<partI>12</partI>
+		<partD>2</partD>
+	</field>
+	
+	<field>
+		<name>deduccionescanarias</name>
+		<!--Deducciones inversión Canarias (Ley 20/1991)-->
+		<alias>QT_TRANSLATE_NOOP("MetaData","590")</alias>
+		<null>true</null>
+		<pk>false</pk>
+		<type>double</type>
+		<partI>12</partI>
+		<partD>2</partD>
+	</field>
+	
+	<field>
+		<name>cuotaliquidapos</name>
+		<!--Cuota líquida positiva-->
+		<alias>QT_TRANSLATE_NOOP("MetaData","592")</alias>
+		<null>true</null>
+		<pk>false</pk>
+		<type>double</type>
+		<partI>12</partI>
+		<partD>2</partD>
+	</field>
+	
+	<!--cuota del ejercicio a ingresar o a devolver-->
+	<field>
+		<name>prever</name>
+		<!--Deducción programa PREVER-->
+		<alias>QT_TRANSLATE_NOOP("MetaData","564")</alias>
+		<null>true</null>
+		<pk>false</pk>
+		<type>double</type>
+		<partI>12</partI>
+		<partD>2</partD>
+	</field>
+	
+	<field>
+		<name>retencionesing</name>
+		<!--Retenciones e ingresos a cuenta/pagos a cuenta participaciones IIC-->
+		<alias>QT_TRANSLATE_NOOP("MetaData","595")</alias>
+		<null>true</null>
+		<pk>false</pk>
+		<type>double</type>
+		<partI>12</partI>
+		<partD>2</partD>
+	</field>
+
+	<field>
+		<name>retencionesingimp</name>
+		<!--Retenciones e ingresos a cuenta/pagos a cuenta participaciones IIC imputados por agrupaciones de interés económico y uniones temporales de empresas-->
+		<alias>QT_TRANSLATE_NOOP("MetaData","596")</alias>
+		<null>true</null>
+		<pk>false</pk>
+		<type>double</type>
+		<partI>12</partI>
+		<partD>2</partD>
+	</field>
+
+	<field>
+		<name>cuotaejerc</name>
+		<!--Cuota del ejercicio a ingresar o a devolver-->
+		<alias>QT_TRANSLATE_NOOP("MetaData","599")</alias>
+		<null>true</null>
+		<pk>false</pk>
+		<type>double</type>
+		<partI>12</partI>
+		<partD>2</partD>
+	</field>
+
+	<!--pagos fraccionados-->
+	<field>
+		<name>primerpago</name>
+		<!--1º pago fraccionado-->
+		<alias>QT_TRANSLATE_NOOP("MetaData","601")</alias>
+		<null>true</null>
+		<pk>false</pk>
+		<type>double</type>
+		<partI>12</partI>
+		<partD>2</partD>
+	</field>
+	
+	<field>
+		<name>segundopago</name>
+		<!--2º pago fraccionado-->
+		<alias>QT_TRANSLATE_NOOP("MetaData","603")</alias>
+		<null>true</null>
+		<pk>false</pk>
+		<type>double</type>
+		<partI>12</partI>
+		<partD>2</partD>
+	</field>
+
+	<field>
+		<name>tercerpago</name>
+		<!--3º pago fraccionado-->
+		<alias>QT_TRANSLATE_NOOP("MetaData","605")</alias>
+		<null>true</null>
+		<pk>false</pk>
+		<type>double</type>
+		<partI>12</partI>
+		<partD>2</partD>
+	</field>
+
+	<field>
+		<name>cuotadiferencial</name>
+		<!--Cuota diferencial-->
+		<alias>QT_TRANSLATE_NOOP("MetaData","611")</alias>
+		<null>true</null>
+		<pk>false</pk>
+		<type>double</type>
+		<partI>12</partI>
+		<partD>2</partD>
+	</field>
+
+	<!--líquido a ingresar o a devolver-->
+	<field>
+		<name>incrementoperd</name>
+		<!--Incremento por pérdida beneficios fiscales periodos anteriores-->
+		<alias>QT_TRANSLATE_NOOP("MetaData","615")</alias>
+		<null>true</null>
+		<pk>false</pk>
+		<type>double</type>
+		<partI>12</partI>
+		<partD>2</partD>
+	</field>
+
+	<field>
+		<name>intdemora</name>
+		<!--Intereses de demora-->
+		<alias>QT_TRANSLATE_NOOP("MetaData","617")</alias>
+		<null>true</null>
+		<pk>false</pk>
+		<type>double</type>
+		<partI>12</partI>
+		<partD>2</partD>
+	</field>
+
+	<field>
+		<name>importeingdevol</name>
+		<!--Importe ingreso / devolución de la declaración originaria-->
+		<alias>QT_TRANSLATE_NOOP("MetaData","619")</alias>
+		<null>true</null>
+		<pk>false</pk>
+		<type>double</type>
+		<partI>12</partI>
+		<partD>2</partD>
+	</field>
+
+	<field>
+		<name>liquidoingdevol</name>
+		<!--Líquido a ingresar o a devolver-->
+		<alias>QT_TRANSLATE_NOOP("MetaData","621")</alias>
+		<null>true</null>
+		<pk>false</pk>
+		<type>double</type>
+		<partI>12</partI>
+		<partD>2</partD>
+	</field>
+	
+	<!--compensación-->
+	<field>
+		<name>primerano</name>
+		<!--Compensacion de base año-->
+		<alias>QT_TRANSLATE_NOOP("MetaData","725")</alias>
+		<null>true</null>
+		<pk>false</pk>
+		<type>int</type>
+		<length>4</length>
+	</field>
+	
+	<field>
+		<name>segundoano</name>
+		<!--Compensacion de base año-->
+		<alias>QT_TRANSLATE_NOOP("MetaData","726")</alias>
+		<null>true</null>
+		<pk>false</pk>
+		<type>int</type>
+		<length>4</length>
+	</field>
+	
+	<field>
+		<name>tercerano</name>
+		<!--Compensacion de base año-->
+		<alias>QT_TRANSLATE_NOOP("MetaData","727")</alias>
+		<null>true</null>
+		<pk>false</pk>
+		<type>int</type>
+		<length>4</length>
+	</field>
+
+	<field>
+		<name>cuartoano</name>
+		<!--Compensacion de base año-->
+		<alias>QT_TRANSLATE_NOOP("MetaData","728")</alias>
+		<null>true</null>
+		<pk>false</pk>
+		<type>int</type>
+		<length>4</length>
+	</field>
+
+	<field>
+		<name>quintoano</name>
+		<!--Compensacion de base año-->
+		<alias>QT_TRANSLATE_NOOP("MetaData","729")</alias>
+		<null>true</null>
+		<pk>false</pk>
+		<type>int</type>
+		<length>4</length>
+	</field>
+
+	<field>
+		<name>sextoano</name>
+		<!--Compensacion de base año-->
+		<alias>QT_TRANSLATE_NOOP("MetaData","730")</alias>
+		<null>true</null>
+		<pk>false</pk>
+		<type>int</type>
+		<length>4</length>
+	</field>
+
+	<field>
+		<name>septimoano</name>
+		<!--Compensacion de base año-->
+		<alias>QT_TRANSLATE_NOOP("MetaData","731")</alias>
+		<null>true</null>
+		<pk>false</pk>
+		<type>int</type>
+		<length>4</length>
+	</field>
+
+	<field>
+		<name>octavoano</name>
+		<!--Compensacion de base año-->
+		<alias>QT_TRANSLATE_NOOP("MetaData","732")</alias>
+		<null>true</null>
+		<pk>false</pk>
+		<type>int</type>
+		<length>4</length>
+	</field>
+
+	<field>
+		<name>novenoano</name>
+		<!--Compensacion de base año-->
+		<alias>QT_TRANSLATE_NOOP("MetaData","733")</alias>
+		<null>true</null>
+		<pk>false</pk>
+		<type>int</type>
+		<length>4</length>
+	</field>
+
+	<field>
+		<name>decimoano</name>
+		<!--Compensacion de base año-->
+		<alias>QT_TRANSLATE_NOOP("MetaData","734")</alias>
+		<null>true</null>
+		<pk>false</pk>
+		<type>int</type>
+		<length>4</length>
+	</field>
+
+	<field>
+		<name>undecimoano</name>
+		<!--Compensacion de base año-->
+		<alias>QT_TRANSLATE_NOOP("MetaData","742")</alias>
+		<null>true</null>
+		<pk>false</pk>
+		<type>int</type>
+		<length>4</length>
+	</field>
+
+	<field>
+		<name>duodecimoano</name>
+		<!--Compensacion de base año-->
+		<alias>QT_TRANSLATE_NOOP("MetaData","274")</alias>
+		<null>true</null>
+		<pk>false</pk>
+		<type>int</type>
+		<length>4</length>
+	</field>
+
+	<field>
+		<name>decimotercerano</name>
+		<!--Compensacion de base año-->
+		<alias>QT_TRANSLATE_NOOP("MetaData","607")</alias>
+		<null>true</null>
+		<pk>false</pk>
+		<type>int</type>
+		<length>4</length>
+	</field>
+
+	<field>
+		<name>decimocuartoano</name>
+		<!--Compensacion de base año-->
+		<alias>QT_TRANSLATE_NOOP("MetaData","057")</alias>
+		<null>true</null>
+		<pk>false</pk>
+		<type>int</type>
+		<length>4</length>
+	</field>
+
+	<field>
+		<name>primerpte</name>
+		<!--Compensación pendiente de aplicación -->
+		<alias>QT_TRANSLATE_NOOP("MetaData","640")</alias>
+		<null>true</null>
+		<pk>false</pk>
+		<type>double</type>
+		<partI>12</partI>
+		<partD>2</partD>
+	</field>
+
+	<field>
+		<name>primeraplicado</name>
+		<!--Compensación aplicada en esta liquidación-->
+		<alias>QT_TRANSLATE_NOOP("MetaData","641")</alias>
+		<null>true</null>
+		<pk>false</pk>
+		<type>double</type>
+		<partI>12</partI>
+		<partD>2</partD>
+	</field>
+
+	<field>
+		<name>primerfut</name>
+		<!--Compensación pendiente de aplicación en periodos futuros -->
+		<alias>QT_TRANSLATE_NOOP("MetaData","642")</alias>
+		<null>true</null>
+		<pk>false</pk>
+		<type>double</type>
+		<partI>12</partI>
+		<partD>2</partD>
+	</field>
+
+	<field>
+		<name>segundopte</name>
+		<!--Compensación pendiente de aplicación -->
+		<alias>QT_TRANSLATE_NOOP("MetaData","643")</alias>
+		<null>true</null>
+		<pk>false</pk>
+		<type>double</type>
+		<partI>12</partI>
+		<partD>2</partD>
+	</field>
+
+	<field>
+		<name>segundoaplicado</name>
+		<!--Compensación aplicada en esta liquidación-->
+		<alias>QT_TRANSLATE_NOOP("MetaData","644")</alias>
+		<null>true</null>
+		<pk>false</pk>
+		<type>double</type>
+		<partI>12</partI>
+		<partD>2</partD>
+	</field>
+
+	<field>
+		<name>segundofut</name>
+		<!--Compensación pendiente de aplicación en periodos futuros -->
+		<alias>QT_TRANSLATE_NOOP("MetaData","645")</alias>
+		<null>true</null>
+		<pk>false</pk>
+		<type>double</type>
+		<partI>12</partI>
+		<partD>2</partD>
+	</field>
+
+	<field>
+		<name>tercerpte</name>
+		<!--Compensación pendiente de aplicación -->
+		<alias>QT_TRANSLATE_NOOP("MetaData","646")</alias>
+		<null>true</null>
+		<pk>false</pk>
+		<type>double</type>
+		<partI>12</partI>
+		<partD>2</partD>
+	</field>
+
+	<field>
+		<name>terceraplicado</name>
+		<!--Compensación aplicada en esta liquidación-->
+		<alias>QT_TRANSLATE_NOOP("MetaData","647")</alias>
+		<null>true</null>
+		<pk>false</pk>
+		<type>double</type>
+		<partI>12</partI>
+		<partD>2</partD>
+	</field>
+
+	<field>
+		<name>tercerfut</name>
+		<!--Compensación pendiente de aplicación en periodos futuros -->
+		<alias>QT_TRANSLATE_NOOP("MetaData","648")</alias>
+		<null>true</null>
+		<pk>false</pk>
+		<type>double</type>
+		<partI>12</partI>
+		<partD>2</partD>
+	</field>
+
+	<field>
+		<name>cuartopte</name>
+		<!--Compensación pendiente de aplicación -->
+		<alias>QT_TRANSLATE_NOOP("MetaData","649")</alias>
+		<null>true</null>
+		<pk>false</pk>
+		<type>double</type>
+		<partI>12</partI>
+		<partD>2</partD>
+	</field>
+
+	<field>
+		<name>cuartoaplicado</name>
+		<!--Compensación aplicada en esta liquidación-->
+		<alias>QT_TRANSLATE_NOOP("MetaData","650")</alias>
+		<null>true</null>
+		<pk>false</pk>
+		<type>double</type>
+		<partI>12</partI>
+		<partD>2</partD>
+	</field>
+
+	<field>
+		<name>cuartofut</name>
+		<!--Compensación pendiente de aplicación en periodos futuros -->
+		<alias>QT_TRANSLATE_NOOP("MetaData","651")</alias>
+		<null>true</null>
+		<pk>false</pk>
+		<type>double</type>
+		<partI>12</partI>
+		<partD>2</partD>
+	</field>
+
+	<field>
+		<name>quintopte</name>
+		<!--Compensación pendiente de aplicación -->
+		<alias>QT_TRANSLATE_NOOP("MetaData","652")</alias>
+		<null>true</null>
+		<pk>false</pk>
+		<type>double</type>
+		<partI>12</partI>
+		<partD>2</partD>
+	</field>
+
+	<field>
+		<name>quintoaplicado</name>
+		<!--Compensación aplicada en esta liquidación-->
+		<alias>QT_TRANSLATE_NOOP("MetaData","653")</alias>
+		<null>true</null>
+		<pk>false</pk>
+		<type>double</type>
+		<partI>12</partI>
+		<partD>2</partD>
+	</field>
+
+	<field>
+		<name>quintofut</name>
+		<!--Compensación pendiente de aplicación en periodos futuros -->
+		<alias>QT_TRANSLATE_NOOP("MetaData","654")</alias>
+		<null>true</null>
+		<pk>false</pk>
+		<type>double</type>
+		<partI>12</partI>
+		<partD>2</partD>
+	</field>
+
+	<field>
+		<name>sextopte</name>
+		<!--Compensación pendiente de aplicación -->
+		<alias>QT_TRANSLATE_NOOP("MetaData","655")</alias>
+		<null>true</null>
+		<pk>false</pk>
+		<type>double</type>
+		<partI>12</partI>
+		<partD>2</partD>
+	</field>
+
+	<field>
+		<name>sextoaplicado</name>
+		<!--Compensación aplicada en esta liquidación-->
+		<alias>QT_TRANSLATE_NOOP("MetaData","656")</alias>
+		<null>true</null>
+		<pk>false</pk>
+		<type>double</type>
+		<partI>12</partI>
+		<partD>2</partD>
+	</field>
+
+	<field>
+		<name>sextofut</name>
+		<!--Compensación pendiente de aplicación en periodos futuros -->
+		<alias>QT_TRANSLATE_NOOP("MetaData","657")</alias>
+		<null>true</null>
+		<pk>false</pk>
+		<type>double</type>
+		<partI>12</partI>
+		<partD>2</partD>
+	</field>
+
+	<field>
+		<name>septimopte</name>
+		<!--Compensación pendiente de aplicación -->
+		<alias>QT_TRANSLATE_NOOP("MetaData","658")</alias>
+		<null>true</null>
+		<pk>false</pk>
+		<type>double</type>
+		<partI>12</partI>
+		<partD>2</partD>
+	</field>
+
+	<field>
+		<name>septimoaplicado</name>
+		<!--Compensación aplicada en esta liquidación-->
+		<alias>QT_TRANSLATE_NOOP("MetaData","659")</alias>
+		<null>true</null>
+		<pk>false</pk>
+		<type>double</type>
+		<partI>12</partI>
+		<partD>2</partD>
+	</field>
+
+	<field>
+		<name>septimofut</name>
+		<!--Compensación pendiente de aplicación en periodos futuros -->
+		<alias>QT_TRANSLATE_NOOP("MetaData","660")</alias>
+		<null>true</null>
+		<pk>false</pk>
+		<type>double</type>
+		<partI>12</partI>
+		<partD>2</partD>
+	</field>
+
+	<field>
+		<name>octavopte</name>
+		<!--Compensación pendiente de aplicación -->
+		<alias>QT_TRANSLATE_NOOP("MetaData","661")</alias>
+		<null>true</null>
+		<pk>false</pk>
+		<type>double</type>
+		<partI>12</partI>
+		<partD>2</partD>
+	</field>
+
+	<field>
+		<name>octavoaplicado</name>
+		<!--Compensación aplicada en esta liquidación-->
+		<alias>QT_TRANSLATE_NOOP("MetaData","662")</alias>
+		<null>true</null>
+		<pk>false</pk>
+		<type>double</type>
+		<partI>12</partI>
+		<partD>2</partD>
+	</field>
+
+	<field>
+		<name>octavofut</name>
+		<!--Compensación pendiente de aplicación en periodos futuros -->
+		<alias>QT_TRANSLATE_NOOP("MetaData","663")</alias>
+		<null>true</null>
+		<pk>false</pk>
+		<type>double</type>
+		<partI>12</partI>
+		<partD>2</partD>
+	</field>
+
+	<field>
+		<name>novenopte</name>
+		<!--Compensación pendiente de aplicación -->
+		<alias>QT_TRANSLATE_NOOP("MetaData","664")</alias>
+		<null>true</null>
+		<pk>false</pk>
+		<type>double</type>
+		<partI>12</partI>
+		<partD>2</partD>
+	</field>
+
+	<field>
+		<name>novenoaplicado</name>
+		<!--Compensación aplicada en esta liquidación-->
+		<alias>QT_TRANSLATE_NOOP("MetaData","665")</alias>
+		<null>true</null>
+		<pk>false</pk>
+		<type>double</type>
+		<partI>12</partI>
+		<partD>2</partD>
+	</field>
+
+	<field>
+		<name>novenofut</name>
+		<!--Compensación pendiente de aplicación en periodos futuros -->
+		<alias>QT_TRANSLATE_NOOP("MetaData","666")</alias>
+		<null>true</null>
+		<pk>false</pk>
+		<type>double</type>
+		<partI>12</partI>
+		<partD>2</partD>
+	</field>
+
+	<field>
+		<name>decimopte</name>
+		<!--Compensación pendiente de aplicación -->
+		<alias>QT_TRANSLATE_NOOP("MetaData","667")</alias>
+		<null>true</null>
+		<pk>false</pk>
+		<type>double</type>
+		<partI>12</partI>
+		<partD>2</partD>
+	</field>
+
+	<field>
+		<name>decimoaplicado</name>
+		<!--Compensación aplicada en esta liquidación-->
+		<alias>QT_TRANSLATE_NOOP("MetaData","668")</alias>
+		<null>true</null>
+		<pk>false</pk>
+		<type>double</type>
+		<partI>12</partI>
+		<partD>2</partD>
+	</field>
+
+	<field>
+		<name>decimofut</name>
+		<!--Compensación pendiente de aplicación en periodos futuros -->
+		<alias>QT_TRANSLATE_NOOP("MetaData","669")</alias>
+		<null>true</null>
+		<pk>false</pk>
+		<type>double</type>
+		<partI>12</partI>
+		<partD>2</partD>
+	</field>
+
+	<field>
+		<name>undecimopte</name>
+		<!--Compensación pendiente de aplicación -->
+		<alias>QT_TRANSLATE_NOOP("MetaData","743")</alias>
+		<null>true</null>
+		<pk>false</pk>
+		<type>double</type>
+		<partI>12</partI>
+		<partD>2</partD>
+	</field>
+
+	<field>
+		<name>undecimoaplicado</name>
+		<!--Compensación aplicada en esta liquidación-->
+		<alias>QT_TRANSLATE_NOOP("MetaData","747")</alias>
+		<null>true</null>
+		<pk>false</pk>
+		<type>double</type>
+		<partI>12</partI>
+		<partD>2</partD>
+	</field>
+
+	<field>
+		<name>undecimofut</name>
+		<!--Compensación pendiente de aplicación en periodos futuros -->
+		<alias>QT_TRANSLATE_NOOP("MetaData","748")</alias>
+		<null>true</null>
+		<pk>false</pk>
+		<type>double</type>
+		<partI>12</partI>
+		<partD>2</partD>
+	</field>
+
+	<field>
+		<name>duodecimopte</name>
+		<!--Compensación pendiente de aplicación -->
+		<alias>QT_TRANSLATE_NOOP("MetaData","275")</alias>
+		<null>true</null>
+		<pk>false</pk>
+		<type>double</type>
+		<partI>12</partI>
+		<partD>2</partD>
+	</field>
+
+	<field>
+		<name>duodecimoaplicado</name>
+		<!--Compensación aplicada en esta liquidación-->
+		<alias>QT_TRANSLATE_NOOP("MetaData","276")</alias>
+		<null>true</null>
+		<pk>false</pk>
+		<type>double</type>
+		<partI>12</partI>
+		<partD>2</partD>
+	</field>
+
+	<field>
+		<name>duodecimofut</name>
+		<!--Compensación pendiente de aplicación en periodos futuros -->
+		<alias>QT_TRANSLATE_NOOP("MetaData","277")</alias>
+		<null>true</null>
+		<pk>false</pk>
+		<type>double</type>
+		<partI>12</partI>
+		<partD>2</partD>
+	</field>
+
+	<field>
+		<name>decimotercerpte</name>
+		<!--Compensación pendiente de aplicación -->
+		<alias>QT_TRANSLATE_NOOP("MetaData","608")</alias>
+		<null>true</null>
+		<pk>false</pk>
+		<type>double</type>
+		<partI>12</partI>
+		<partD>2</partD>
+	</field>
+
+	<field>
+		<name>decimoterceraplicado</name>
+		<!--Compensación aplicada en esta liquidación-->
+		<alias>QT_TRANSLATE_NOOP("MetaData","609")</alias>
+		<null>true</null>
+		<pk>false</pk>
+		<type>double</type>
+		<partI>12</partI>
+		<partD>2</partD>
+	</field>
+
+	<field>
+		<name>decimotercerfut</name>
+		<!--Compensación pendiente de aplicación en periodos futuros -->
+		<alias>QT_TRANSLATE_NOOP("MetaData","610")</alias>
+		<null>true</null>
+		<pk>false</pk>
+		<type>double</type>
+		<partI>12</partI>
+		<partD>2</partD>
+	</field>
+
+	<field>
+		<name>decimocuartopte</name>
+		<!--Compensación pendiente de aplicación -->
+		<alias>QT_TRANSLATE_NOOP("MetaData","704")</alias>
+		<null>true</null>
+		<pk>false</pk>
+		<type>double</type>
+		<partI>12</partI>
+		<partD>2</partD>
+	</field>
+
+	<field>
+		<name>decimocuartoaplicado</name>
+		<!--Compensación aplicada en esta liquidación-->
+		<alias>QT_TRANSLATE_NOOP("MetaData","705")</alias>
+		<null>true</null>
+		<pk>false</pk>
+		<type>double</type>
+		<partI>12</partI>
+		<partD>2</partD>
+	</field>
+
+	<field>
+		<name>decimocuartofut</name>
+		<!--Compensación pendiente de aplicación en periodos futuros -->
+		<alias>QT_TRANSLATE_NOOP("MetaData","706")</alias>
+		<null>true</null>
+		<pk>false</pk>
+		<type>double</type>
+		<partI>12</partI>
+		<partD>2</partD>
+	</field>
+
+	<field>
+		<name>totalpte</name>
+		<!--Compensación pendiente de aplicación -->
+		<alias>QT_TRANSLATE_NOOP("MetaData","670")</alias>
+		<null>true</null>
+		<pk>false</pk>
+		<type>double</type>
+		<partI>12</partI>
+		<partD>2</partD>
+	</field>
+
+	<field>
+		<name>totalaplicado</name>
+		<!--Compensación aplicada en esta liquidación-->
+		<alias>QT_TRANSLATE_NOOP("MetaData","547")</alias>
+		<null>true</null>
+		<pk>false</pk>
+		<type>double</type>
+		<partI>12</partI>
+		<partD>2</partD>
+	</field>
+
+	<field>
+		<name>totalfut</name>
+		<!--Compensación pendiente de aplicación en periodos futuros -->
+		<alias>QT_TRANSLATE_NOOP("MetaData","671")</alias>
+		<null>true</null>
+		<pk>false</pk>
+		<type>double</type>
+		<partI>12</partI>
+		<partD>2</partD>
+	</field>
+	
+	<!--detalle de la compensación de cuotas por pérdidas de cooperativas-->
+	<field>
+		<name>primeracuota</name>
+		<!--Compensacion de base año-->
+		<alias>QT_TRANSLATE_NOOP("MetaData","735")</alias>
+		<null>true</null>
+		<pk>false</pk>
+		<type>int</type>
+		<length>4</length>
+	</field>
+
+	<field>
+		<name>segundacuota</name>
+		<!--Compensacion de base año-->
+		<alias>QT_TRANSLATE_NOOP("MetaData","736")</alias>
+		<null>true</null>
+		<pk>false</pk>
+		<type>int</type>
+		<length>4</length>
+	</field>
+
+	<field>
+		<name>terceracuota</name>
+		<!--Compensacion de base año-->
+		<alias>QT_TRANSLATE_NOOP("MetaData","737")</alias>
+		<null>true</null>
+		<pk>false</pk>
+		<type>int</type>
+		<length>4</length>
+	</field>
+
+	<field>
+		<name>cuartacuota</name>
+		<!--Compensacion de base año-->
+		<alias>QT_TRANSLATE_NOOP("MetaData","738")</alias>
+		<null>true</null>
+		<pk>false</pk>
+		<type>int</type>
+		<length>4</length>
+	</field>
+
+	<field>
+		<name>quintacuota</name>
+		<!--Compensacion de base año-->
+		<alias>QT_TRANSLATE_NOOP("MetaData","739")</alias>
+		<null>true</null>
+		<pk>false</pk>
+		<type>int</type>
+		<length>4</length>
+	</field>
+
+	<field>
+		<name>sextacuota</name>
+		<!--Compensacion de base año-->
+		<alias>QT_TRANSLATE_NOOP("MetaData","740")</alias>
+		<null>true</null>
+		<pk>false</pk>
+		<type>int</type>
+		<length>4</length>
+	</field>
+
+	<field>
+		<name>septimacuota</name>
+		<!--Compensacion de base año-->
+		<alias>QT_TRANSLATE_NOOP("MetaData","741")</alias>
+		<null>true</null>
+		<pk>false</pk>
+		<type>int</type>
+		<length>4</length>
+	</field>
+
+	<field>
+		<name>octavacuota</name>
+		<!--Compensacion de base año-->
+		<alias>QT_TRANSLATE_NOOP("MetaData","751")</alias>
+		<null>true</null>
+		<pk>false</pk>
+		<type>int</type>
+		<length>4</length>
+	</field>
+
+	<field>
+		<name>novenacuota</name>
+		<!--Compensacion de base año-->
+		<alias>QT_TRANSLATE_NOOP("MetaData","278")</alias>
+		<null>true</null>
+		<pk>false</pk>
+		<type>int</type>
+		<length>4</length>
+	</field>
+
+	<field>
+		<name>decimacuota</name>
+		<!--Compensacion de base año-->
+		<alias>QT_TRANSLATE_NOOP("MetaData","184")</alias>
+		<null>true</null>
+		<pk>false</pk>
+		<type>int</type>
+		<length>4</length>
+	</field>
+
+	<field>
+		<name>undecimacuota</name>
+		<!--Compensacion de base año-->
+		<alias>QT_TRANSLATE_NOOP("MetaData","058")</alias>
+		<null>true</null>
+		<pk>false</pk>
+		<type>int</type>
+		<length>4</length>
+	</field>
+	
+	<field>
+		<name>primeracuopte</name>
+		<!--Compensación pendiente de aplicación -->
+		<alias>QT_TRANSLATE_NOOP("MetaData","673")</alias>
+		<null>true</null>
+		<pk>false</pk>
+		<type>double</type>
+		<partI>12</partI>
+		<partD>2</partD>
+	</field>
+
+	<field>
+		<name>primeracuoapli</name>
+		<!--Compensación aplicada en esta liquidación-->
+		<alias>QT_TRANSLATE_NOOP("MetaData","674")</alias>
+		<null>true</null>
+		<pk>false</pk>
+		<type>double</type>
+		<partI>12</partI>
+		<partD>2</partD>
+	</field>
+
+	<field>
+		<name>primeracuofut</name>
+		<!--Compensación pendiente de aplicación en periodos futuros -->
+		<alias>QT_TRANSLATE_NOOP("MetaData","675")</alias>
+		<null>true</null>
+		<pk>false</pk>
+		<type>double</type>
+		<partI>12</partI>
+		<partD>2</partD>
+	</field>
+	
+	<field>
+		<name>segundacuopte</name>
+		<!--Compensación pendiente de aplicación -->
+		<alias>QT_TRANSLATE_NOOP("MetaData","676")</alias>
+		<null>true</null>
+		<pk>false</pk>
+		<type>double</type>
+		<partI>12</partI>
+		<partD>2</partD>
+	</field>
+
+	<field>
+		<name>segundacuoapli</name>
+		<!--Compensación aplicada en esta liquidación-->
+		<alias>QT_TRANSLATE_NOOP("MetaData","677")</alias>
+		<null>true</null>
+		<pk>false</pk>
+		<type>double</type>
+		<partI>12</partI>
+		<partD>2</partD>
+	</field>
+
+	<field>
+		<name>segundacuofut</name>
+		<!--Compensación pendiente de aplicación en periodos futuros -->
+		<alias>QT_TRANSLATE_NOOP("MetaData","678")</alias>
+		<null>true</null>
+		<pk>false</pk>
+		<type>double</type>
+		<partI>12</partI>
+		<partD>2</partD>
+	</field>
+
+	<field>
+		<name>terceracuopte</name>
+		<!--Compensación pendiente de aplicación -->
+		<alias>QT_TRANSLATE_NOOP("MetaData","679")</alias>
+		<null>true</null>
+		<pk>false</pk>
+		<type>double</type>
+		<partI>12</partI>
+		<partD>2</partD>
+	</field>
+
+	<field>
+		<name>terceracuoapli</name>
+		<!--Compensación aplicada en esta liquidación-->
+		<alias>QT_TRANSLATE_NOOP("MetaData","680")</alias>
+		<null>true</null>
+		<pk>false</pk>
+		<type>double</type>
+		<partI>12</partI>
+		<partD>2</partD>
+	</field>
+
+	<field>
+		<name>terceracuofut</name>
+		<!--Compensación pendiente de aplicación en periodos futuros -->
+		<alias>QT_TRANSLATE_NOOP("MetaData","681")</alias>
+		<null>true</null>
+		<pk>false</pk>
+		<type>double</type>
+		<partI>12</partI>
+		<partD>2</partD>
+	</field>
+
+	<field>
+		<name>cuartacuopte</name>
+		<!--Compensación pendiente de aplicación -->
+		<alias>QT_TRANSLATE_NOOP("MetaData","682")</alias>
+		<null>true</null>
+		<pk>false</pk>
+		<type>double</type>
+		<partI>12</partI>
+		<partD>2</partD>
+	</field>
+
+	<field>
+		<name>cuartacuoapli</name>
+		<!--Compensación aplicada en esta liquidación-->
+		<alias>QT_TRANSLATE_NOOP("MetaData","683")</alias>
+		<null>true</null>
+		<pk>false</pk>
+		<type>double</type>
+		<partI>12</partI>
+		<partD>2</partD>
+	</field>
+
+	<field>
+		<name>cuartacuofut</name>
+		<!--Compensación pendiente de aplicación en periodos futuros -->
+		<alias>QT_TRANSLATE_NOOP("MetaData","684")</alias>
+		<null>true</null>
+		<pk>false</pk>
+		<type>double</type>
+		<partI>12</partI>
+		<partD>2</partD>
+	</field>
+
+	<field>
+		<name>quintacuopte</name>
+		<!--Compensación pendiente de aplicación -->
+		<alias>QT_TRANSLATE_NOOP("MetaData","685")</alias>
+		<null>true</null>
+		<pk>false</pk>
+		<type>double</type>
+		<partI>12</partI>
+		<partD>2</partD>
+	</field>
+
+	<field>
+		<name>quintacuoapli</name>
+		<!--Compensación aplicada en esta liquidación-->
+		<alias>QT_TRANSLATE_NOOP("MetaData","686")</alias>
+		<null>true</null>
+		<pk>false</pk>
+		<type>double</type>
+		<partI>12</partI>
+		<partD>2</partD>
+	</field>
+
+	<field>
+		<name>quintacuofut</name>
+		<!--Compensación pendiente de aplicación en periodos futuros -->
+		<alias>QT_TRANSLATE_NOOP("MetaData","687")</alias>
+		<null>true</null>
+		<pk>false</pk>
+		<type>double</type>
+		<partI>12</partI>
+		<partD>2</partD>
+	</field>
+
+	<field>
+		<name>sextacuopte</name>
+		<!--Compensación pendiente de aplicación -->
+		<alias>QT_TRANSLATE_NOOP("MetaData","688")</alias>
+		<null>true</null>
+		<pk>false</pk>
+		<type>double</type>
+		<partI>12</partI>
+		<partD>2</partD>
+	</field>
+
+	<field>
+		<name>sextacuoapli</name>
+		<!--Compensación aplicada en esta liquidación-->
+		<alias>QT_TRANSLATE_NOOP("MetaData","689")</alias>
+		<null>true</null>
+		<pk>false</pk>
+		<type>double</type>
+		<partI>12</partI>
+		<partD>2</partD>
+	</field>
+
+	<field>
+		<name>sextacuofut</name>
+		<!--Compensación pendiente de aplicación en periodos futuros -->
+		<alias>QT_TRANSLATE_NOOP("MetaData","690")</alias>
+		<null>true</null>
+		<pk>false</pk>
+		<type>double</type>
+		<partI>12</partI>
+		<partD>2</partD>
+	</field>
+
+	<field>
+		<name>septimacuopte</name>
+		<!--Compensación pendiente de aplicación -->
+		<alias>QT_TRANSLATE_NOOP("MetaData","691")</alias>
+		<null>true</null>
+		<pk>false</pk>
+		<type>double</type>
+		<partI>12</partI>
+		<partD>2</partD>
+	</field>
+
+	<field>
+		<name>septimacuoapli</name>
+		<!--Compensación aplicada en esta liquidación-->
+		<alias>QT_TRANSLATE_NOOP("MetaData","692")</alias>
+		<null>true</null>
+		<pk>false</pk>
+		<type>double</type>
+		<partI>12</partI>
+		<partD>2</partD>
+	</field>
+
+	<field>
+		<name>septimacuofut</name>
+		<!--Compensación pendiente de aplicación en periodos futuros -->
+		<alias>QT_TRANSLATE_NOOP("MetaData","693")</alias>
+		<null>true</null>
+		<pk>false</pk>
+		<type>double</type>
+		<partI>12</partI>
+		<partD>2</partD>
+	</field>
+
+	<field>
+		<name>octavacuopte</name>
+		<!--Compensación pendiente de aplicación -->
+		<alias>QT_TRANSLATE_NOOP("MetaData","623")</alias>
+		<null>true</null>
+		<pk>false</pk>
+		<type>double</type>
+		<partI>12</partI>
+		<partD>2</partD>
+	</field>
+
+	<field>
+		<name>octavacuoapli</name>
+		<!--Compensación aplicada en esta liquidación-->
+		<alias>QT_TRANSLATE_NOOP("MetaData","624")</alias>
+		<null>true</null>
+		<pk>false</pk>
+		<type>double</type>
+		<partI>12</partI>
+		<partD>2</partD>
+	</field>
+
+	<field>
+		<name>octavacuofut</name>
+		<!--Compensación pendiente de aplicación en periodos futuros -->
+		<alias>QT_TRANSLATE_NOOP("MetaData","672")</alias>
+		<null>true</null>
+		<pk>false</pk>
+		<type>double</type>
+		<partI>12</partI>
+		<partD>2</partD>
+	</field>
+
+	<field>
+		<name>novenacuopte</name>
+		<!--Compensación pendiente de aplicación -->
+		<alias>QT_TRANSLATE_NOOP("MetaData","279")</alias>
+		<null>true</null>
+		<pk>false</pk>
+		<type>double</type>
+		<partI>12</partI>
+		<partD>2</partD>
+	</field>
+
+	<field>
+		<name>novenacuoapli</name>
+		<!--Compensación aplicada en esta liquidación-->
+		<alias>QT_TRANSLATE_NOOP("MetaData","280")</alias>
+		<null>true</null>
+		<pk>false</pk>
+		<type>double</type>
+		<partI>12</partI>
+		<partD>2</partD>
+	</field>
+
+	<field>
+		<name>novenacuofut</name>
+		<!--Compensación pendiente de aplicación en periodos futuros -->
+		<alias>QT_TRANSLATE_NOOP("MetaData","281")</alias>
+		<null>true</null>
+		<pk>false</pk>
+		<type>double</type>
+		<partI>12</partI>
+		<partD>2</partD>
+	</field>
+
+	<field>
+		<name>decimacuopte</name>
+		<!--Compensación pendiente de aplicación -->
+		<alias>QT_TRANSLATE_NOOP("MetaData","587")</alias>
+		<null>true</null>
+		<pk>false</pk>
+		<type>double</type>
+		<partI>12</partI>
+		<partD>2</partD>
+	</field>
+
+	<field>
+		<name>decimacuoapli</name>
+		<!--Compensación aplicada en esta liquidación-->
+		<alias>QT_TRANSLATE_NOOP("MetaData","515")</alias>
+		<null>true</null>
+		<pk>false</pk>
+		<type>double</type>
+		<partI>12</partI>
+		<partD>2</partD>
+	</field>
+
+	<field>
+		<name>decimacuofut</name>
+		<!--Compensación pendiente de aplicación en periodos futuros -->
+		<alias>QT_TRANSLATE_NOOP("MetaData","900")</alias>
+		<null>true</null>
+		<pk>false</pk>
+		<type>double</type>
+		<partI>12</partI>
+		<partD>2</partD>
+	</field>
+
+	<field>
+		<name>undecimacuopte</name>
+		<!--Compensación pendiente de aplicación -->
+		<alias>QT_TRANSLATE_NOOP("MetaData","059")</alias>
+		<null>true</null>
+		<pk>false</pk>
+		<type>double</type>
+		<partI>12</partI>
+		<partD>2</partD>
+	</field>
+
+	<field>
+		<name>undecimacuoapli</name>
+		<!--Compensación aplicada en esta liquidación-->
+		<alias>QT_TRANSLATE_NOOP("MetaData","099")</alias>
+		<null>true</null>
+		<pk>false</pk>
+		<type>double</type>
+		<partI>12</partI>
+		<partD>2</partD>
+	</field>
+
+	<field>
+		<name>undecimacuofut</name>
+		<!--Compensación pendiente de aplicación en periodos futuros -->
+		<alias>QT_TRANSLATE_NOOP("MetaData","100")</alias>
+		<null>true</null>
+		<pk>false</pk>
+		<type>double</type>
+		<partI>12</partI>
+		<partD>2</partD>
+	</field>
+
+	<field>
+		<name>totalcuopte</name>
+		<!--Compensación pendiente de aplicación -->
+		<alias>QT_TRANSLATE_NOOP("MetaData","694")</alias>
+		<null>true</null>
+		<pk>false</pk>
+		<type>double</type>
+		<partI>12</partI>
+		<partD>2</partD>
+	</field>
+
+	<field>
+		<name>totalcuoapli</name>
+		<!--Compensación aplicada en esta liquidación-->
+		<alias>QT_TRANSLATE_NOOP("MetaData","561")</alias>
+		<null>true</null>
+		<pk>false</pk>
+		<type>double</type>
+		<partI>12</partI>
+		<partD>2</partD>
+	</field>
+
+	<field>
+		<name>totalcuofut</name>
+		<!--Compensación pendiente de aplicación en periodos futuros -->
+		<alias>QT_TRANSLATE_NOOP("MetaData","695")</alias>
+		<null>true</null>
+		<pk>false</pk>
+		<type>double</type>
+		<partI>12</partI>
+		<partD>2</partD>
+	</field>
+	
+		<!--Regimen especial de la reserva para inversiones en Canarias-->
+	<field>
+		<name>primerareservadot</name>
+		<!--Importe dotaciones-->
+		<alias>QT_TRANSLATE_NOOP("MetaData","072")</alias>
+		<null>true</null>
+		<pk>false</pk>
+		<type>double</type>
+		<partI>12</partI>
+		<partD>2</partD>
+	</field>
+
+	<field>
+		<name>primerareservamat</name>
+		<!--Materializaciones 2006-->
+		<alias>QT_TRANSLATE_NOOP("MetaData","073")</alias>
+		<null>true</null>
+		<pk>false</pk>
+		<type>double</type>
+		<partI>12</partI>
+		<partD>2</partD>
+	</field>
+
+	<field>
+		<name>primerareservacl</name>
+		<!--Clave-->
+		<alias>QT_TRANSLATE_NOOP("MetaData","085")</alias>
+		<null>true</null>
+		<pk>false</pk>
+		<type>string</type>
+		<length>2</length>
+	</field>
+
+	<field>
+		<name>segundareservadot</name>
+		<!--Importe dotaciones-->
+		<alias>QT_TRANSLATE_NOOP("MetaData","075")</alias>
+		<null>true</null>
+		<pk>false</pk>
+		<type>double</type>
+		<partI>12</partI>
+		<partD>2</partD>
+	</field>
+
+	<field>
+		<name>segundareservamat</name>
+		<!--Materializaciones 2006-->
+		<alias>QT_TRANSLATE_NOOP("MetaData","076")</alias>
+		<null>true</null>
+		<pk>false</pk>
+		<type>double</type>
+		<partI>12</partI>
+		<partD>2</partD>
+	</field>
+
+	<field>
+		<name>segundareservacl</name>
+		<!--Clave-->
+		<alias>QT_TRANSLATE_NOOP("MetaData","086")</alias>
+		<null>true</null>
+		<pk>false</pk>
+		<type>string</type>
+		<length>2</length>
+	</field>
+	
+	<field>
+		<name>segundareservapte</name>
+		<!--Pendiente de materializar-->
+		<alias>QT_TRANSLATE_NOOP("MetaData","077")</alias>
+		<null>true</null>
+		<pk>false</pk>
+		<type>double</type>
+		<partI>12</partI>
+		<partD>2</partD>
+	</field>
+
+	<field>
+		<name>tercerareservadot</name>
+		<!--Importe dotaciones-->
+		<alias>QT_TRANSLATE_NOOP("MetaData","078")</alias>
+		<null>true</null>
+		<pk>false</pk>
+		<type>double</type>
+		<partI>12</partI>
+		<partD>2</partD>
+	</field>
+
+	<field>
+		<name>tercerareservamat</name>
+		<!--Materializaciones 2006-->
+		<alias>QT_TRANSLATE_NOOP("MetaData","079")</alias>
+		<null>true</null>
+		<pk>false</pk>
+		<type>double</type>
+		<partI>12</partI>
+		<partD>2</partD>
+	</field>
+
+	<field>
+		<name>tercerareservacl</name>
+		<!--Clave-->
+		<alias>QT_TRANSLATE_NOOP("MetaData","087")</alias>
+		<null>true</null>
+		<pk>false</pk>
+		<type>string</type>
+		<length>2</length>
+	</field>
+	
+	<field>
+		<name>tercerareservapte</name>
+		<!--Pendiente de materializar-->
+		<alias>QT_TRANSLATE_NOOP("MetaData","080")</alias>
+		<null>true</null>
+		<pk>false</pk>
+		<type>double</type>
+		<partI>12</partI>
+		<partD>2</partD>
+	</field>
+
+	<field>
+		<name>cuartareservadot</name>
+		<!--Importe dotaciones-->
+		<alias>QT_TRANSLATE_NOOP("MetaData","081")</alias>
+		<null>true</null>
+		<pk>false</pk>
+		<type>double</type>
+		<partI>12</partI>
+		<partD>2</partD>
+	</field>
+
+	<field>
+		<name>cuartareservamat</name>
+		<!--Materializaciones 2006-->
+		<alias>QT_TRANSLATE_NOOP("MetaData","082")</alias>
+		<null>true</null>
+		<pk>false</pk>
+		<type>double</type>
+		<partI>12</partI>
+		<partD>2</partD>
+	</field>
+
+	<field>
+		<name>cuartareservacl</name>
+		<!--Clave-->
+		<alias>QT_TRANSLATE_NOOP("MetaData","088")</alias>
+		<null>true</null>
+		<pk>false</pk>
+		<type>string</type>
+		<length>2</length>
+	</field>
+	
+	<field>
+		<name>cuartareservapte</name>
+		<!--Pendiente de materializar-->
+		<alias>QT_TRANSLATE_NOOP("MetaData","083")</alias>
+		<null>true</null>
+		<pk>false</pk>
+		<type>double</type>
+		<partI>12</partI>
+		<partD>2</partD>
+	</field>
+
+	<field>
+		<name>quintareservadot</name>
+		<!--Importe dotaciones-->
+		<alias>QT_TRANSLATE_NOOP("MetaData","094")</alias>
+		<null>true</null>
+		<pk>false</pk>
+		<type>double</type>
+		<partI>12</partI>
+		<partD>2</partD>
+	</field>
+
+	<field>
+		<name>quintareservamat</name>
+		<!--Materializaciones 2006-->
+		<alias>QT_TRANSLATE_NOOP("MetaData","095")</alias>
+		<null>true</null>
+		<pk>false</pk>
+		<type>double</type>
+		<partI>12</partI>
+		<partD>2</partD>
+	</field>
+
+	<field>
+		<name>quintareservacl</name>
+		<!--Clave-->
+		<alias>QT_TRANSLATE_NOOP("MetaData","089")</alias>
+		<null>true</null>
+		<pk>false</pk>
+		<type>string</type>
+		<length>2</length>
+	</field>
+	
+	<field>
+		<name>quintareservapte</name>
+		<!--Pendiente de materializar-->
+		<alias>QT_TRANSLATE_NOOP("MetaData","096")</alias>
+		<null>true</null>
+		<pk>false</pk>
+		<type>double</type>
+		<partI>12</partI>
+		<partD>2</partD>
+	</field>
+
+	<field>
+		<name>inversionesmat</name>
+		<!--Materializaciones 2006-->
+		<alias>QT_TRANSLATE_NOOP("MetaData","097")</alias>
+		<null>true</null>
+		<pk>false</pk>
+		<type>double</type>
+		<partI>12</partI>
+		<partD>2</partD>
+	</field>
+
+	<field>
+		<name>inversionescl</name>
+		<!--Clave-->
+		<alias>QT_TRANSLATE_NOOP("MetaData","098")</alias>
+		<null>true</null>
+		<pk>false</pk>
+		<type>string</type>
+		<length>2</length>
+	</field>
+	
+	<!--Deducciones-->
+	
+	<!--Por doble imposición-->
+	<field>
+		<name>deducciones99</name>
+		<!--Periodos anteriores, deducciones pendientes, periodo actual, deducción generada-->
+		<alias>QT_TRANSLATE_NOOP("MetaData","708")</alias>
+		<null>true</null>
+		<pk>false</pk>
+		<type>double</type>
+		<partI>12</partI>
+		<partD>2</partD>
+	</field>
+
+	<field>
+		<name>deducciones99apli</name>
+		<!--Aplicado en esta liquidación-->
+		<alias>QT_TRANSLATE_NOOP("MetaData","709")</alias>
+		<null>true</null>
+		<pk>false</pk>
+		<type>double</type>
+		<partI>12</partI>
+		<partD>2</partD>
+	</field>
+
+	<field>
+		<name>deducciones00</name>
+		<!--Periodos anteriores, deducciones pendientes, periodo actual, deducción generada-->
+		<alias>QT_TRANSLATE_NOOP("MetaData","711")</alias>
+		<null>true</null>
+		<pk>false</pk>
+		<type>double</type>
+		<partI>12</partI>
+		<partD>2</partD>
+	</field>
+
+	<field>
+		<name>deducciones00apli</name>
+		<!--Aplicado en esta liquidación-->
+		<alias>QT_TRANSLATE_NOOP("MetaData","712")</alias>
+		<null>true</null>
+		<pk>false</pk>
+		<type>double</type>
+		<partI>12</partI>
+		<partD>2</partD>
+	</field>
+	
+	<field>
+		<name>deducciones00pte</name>
+		<!--Pendiente de aplicación en periodos futuros-->
+		<alias>QT_TRANSLATE_NOOP("MetaData","713")</alias>
+		<null>true</null>
+		<pk>false</pk>
+		<type>double</type>
+		<partI>12</partI>
+		<partD>2</partD>
+	</field>
+
+	<field>
+		<name>deducinterna01</name>
+		<!--Periodos anteriores, deducciones pendientes, periodo actual, deducción generada-->
+		<alias>QT_TRANSLATE_NOOP("MetaData","696")</alias>
+		<null>true</null>
+		<pk>false</pk>
+		<type>double</type>
+		<partI>12</partI>
+		<partD>2</partD>
+	</field>
+
+	<field>
+		<name>deducinterna01apli</name>
+		<!--Aplicado en esta liquidación-->
+		<alias>QT_TRANSLATE_NOOP("MetaData","697")</alias>
+		<null>true</null>
+		<pk>false</pk>
+		<type>double</type>
+		<partI>12</partI>
+		<partD>2</partD>
+	</field>
+	
+	<field>
+		<name>deducinterna01pte</name>
+		<!--Pendiente de aplicación en periodos futuros-->
+		<alias>QT_TRANSLATE_NOOP("MetaData","698")</alias>
+		<null>true</null>
+		<pk>false</pk>
+		<type>double</type>
+		<partI>12</partI>
+		<partD>2</partD>
+	</field>
+
+	<field>
+		<name>deducinternacional01</name>
+		<!--Periodos anteriores, deducciones pendientes, periodo actual, deducción generada-->
+		<alias>QT_TRANSLATE_NOOP("MetaData","637")</alias>
+		<null>true</null>
+		<pk>false</pk>
+		<type>double</type>
+		<partI>12</partI>
+		<partD>2</partD>
+	</field>
+
+	<field>
+		<name>deducinternacional01apli</name>
+		<!--Aplicado en esta liquidación-->
+		<alias>QT_TRANSLATE_NOOP("MetaData","638")</alias>
+		<null>true</null>
+		<pk>false</pk>
+		<type>double</type>
+		<partI>12</partI>
+		<partD>2</partD>
+	</field>
+	
+	<field>
+		<name>deducinternacional01pte</name>
+		<!--Pendiente de aplicación en periodos futuros-->
+		<alias>QT_TRANSLATE_NOOP("MetaData","639")</alias>
+		<null>true</null>
+		<pk>false</pk>
+		<type>double</type>
+		<partI>12</partI>
+		<partD>2</partD>
+	</field>
+
+	<field>
+		<name>deducinterna02</name>
+		<!--Periodos anteriores, deducciones pendientes, periodo actual, deducción generada-->
+		<alias>QT_TRANSLATE_NOOP("MetaData","846")</alias>
+		<null>true</null>
+		<pk>false</pk>
+		<type>double</type>
+		<partI>12</partI>
+		<partD>2</partD>
+	</field>
+
+	<field>
+		<name>deducinterna02apli</name>
+		<!--Aplicado en esta liquidación-->
+		<alias>QT_TRANSLATE_NOOP("MetaData","847")</alias>
+		<null>true</null>
+		<pk>false</pk>
+		<type>double</type>
+		<partI>12</partI>
+		<partD>2</partD>
+	</field>
+	
+	<field>
+		<name>deducinterna02pte</name>
+		<!--Pendiente de aplicación en periodos futuros-->
+		<alias>QT_TRANSLATE_NOOP("MetaData","848")</alias>
+		<null>true</null>
+		<pk>false</pk>
+		<type>double</type>
+		<partI>12</partI>
+		<partD>2</partD>
+	</field>
+
+	<field>
+		<name>deducinternacional02</name>
+		<!--Periodos anteriores, deducciones pendientes, periodo actual, deducción generada-->
+		<alias>QT_TRANSLATE_NOOP("MetaData","849")</alias>
+		<null>true</null>
+		<pk>false</pk>
+		<type>double</type>
+		<partI>12</partI>
+		<partD>2</partD>
+	</field>
+
+	<field>
+		<name>deducinternacional02apli</name>
+		<!--Aplicado en esta liquidación-->
+		<alias>QT_TRANSLATE_NOOP("MetaData","894")</alias>
+		<null>true</null>
+		<pk>false</pk>
+		<type>double</type>
+		<partI>12</partI>
+		<partD>2</partD>
+	</field>
+	
+	<field>
+		<name>deducinternacional02pte</name>
+		<!--Pendiente de aplicación en periodos futuros-->
+		<alias>QT_TRANSLATE_NOOP("MetaData","197")</alias>
+		<null>true</null>
+		<pk>false</pk>
+		<type>double</type>
+		<partI>12</partI>
+		<partD>2</partD>
+	</field>
+
+	<field>
+		<name>deducinterna03</name>
+		<!--Periodos anteriores, deducciones pendientes, periodo actual, deducción generada-->
+		<alias>QT_TRANSLATE_NOOP("MetaData","282")</alias>
+		<null>true</null>
+		<pk>false</pk>
+		<type>double</type>
+		<partI>12</partI>
+		<partD>2</partD>
+	</field>
+
+	<field>
+		<name>deducinterna03apli</name>
+		<!--Aplicado en esta liquidación-->
+		<alias>QT_TRANSLATE_NOOP("MetaData","283")</alias>
+		<null>true</null>
+		<pk>false</pk>
+		<type>double</type>
+		<partI>12</partI>
+		<partD>2</partD>
+	</field>
+	
+	<field>
+		<name>deducinterna03pte</name>
+		<!--Pendiente de aplicación en periodos futuros-->
+		<alias>QT_TRANSLATE_NOOP("MetaData","284")</alias>
+		<null>true</null>
+		<pk>false</pk>
+		<type>double</type>
+		<partI>12</partI>
+		<partD>2</partD>
+	</field>
+
+	<field>
+		<name>deducinternacional03</name>
+		<!--Periodos anteriores, deducciones pendientes, periodo actual, deducción generada-->
+		<alias>QT_TRANSLATE_NOOP("MetaData","285")</alias>
+		<null>true</null>
+		<pk>false</pk>
+		<type>double</type>
+		<partI>12</partI>
+		<partD>2</partD>
+	</field>
+
+	<field>
+		<name>deducinternacional03apli</name>
+		<!--Aplicado en esta liquidación-->
+		<alias>QT_TRANSLATE_NOOP("MetaData","286")</alias>
+		<null>true</null>
+		<pk>false</pk>
+		<type>double</type>
+		<partI>12</partI>
+		<partD>2</partD>
+	</field>
+	
+	<field>
+		<name>deducinternacional03pte</name>
+		<!--Pendiente de aplicación en periodos futuros-->
+		<alias>QT_TRANSLATE_NOOP("MetaData","287")</alias>
+		<null>true</null>
+		<pk>false</pk>
+		<type>double</type>
+		<partI>12</partI>
+		<partD>2</partD>
+	</field>
+
+	<field>
+		<name>deducinterna04</name>
+		<!--Periodos anteriores, deducciones pendientes, periodo actual, deducción generada-->
+		<alias>QT_TRANSLATE_NOOP("MetaData","702")</alias>
+		<null>true</null>
+		<pk>false</pk>
+		<type>double</type>
+		<partI>12</partI>
+		<partD>2</partD>
+	</field>
+
+	<field>
+		<name>deducinterna04apli</name>
+		<!--Aplicado en esta liquidación-->
+		<alias>QT_TRANSLATE_NOOP("MetaData","703")</alias>
+		<null>true</null>
+		<pk>false</pk>
+		<type>double</type>
+		<partI>12</partI>
+		<partD>2</partD>
+	</field>
+	
+	<field>
+		<name>deducinterna04pte</name>
+		<!--Pendiente de aplicación en periodos futuros-->
+		<alias>QT_TRANSLATE_NOOP("MetaData","707")</alias>
+		<null>true</null>
+		<pk>false</pk>
+		<type>double</type>
+		<partI>12</partI>
+		<partD>2</partD>
+	</field>
+
+	<field>
+		<name>deducinternacional04</name>
+		<!--Periodos anteriores, deducciones pendientes, periodo actual, deducción generada-->
+		<alias>QT_TRANSLATE_NOOP("MetaData","825")</alias>
+		<null>true</null>
+		<pk>false</pk>
+		<type>double</type>
+		<partI>12</partI>
+		<partD>2</partD>
+	</field>
+
+	<field>
+		<name>deducinternacional04apli</name>
+		<!--Aplicado en esta liquidación-->
+		<alias>QT_TRANSLATE_NOOP("MetaData","826")</alias>
+		<null>true</null>
+		<pk>false</pk>
+		<type>double</type>
+		<partI>12</partI>
+		<partD>2</partD>
+	</field>
+	
+	<field>
+		<name>deducinternacional04pte</name>
+		<!--Pendiente de aplicación en periodos futuros-->
+		<alias>QT_TRANSLATE_NOOP("MetaData","826")</alias>
+		<null>true</null>
+		<pk>false</pk>
+		<type>double</type>
+		<partI>12</partI>
+		<partD>2</partD>
+	</field>
+
+	<field>
+		<name>deducinterna05</name>
+		<!--Periodos anteriores, deducciones pendientes, periodo actual, deducción generada-->
+		<alias>QT_TRANSLATE_NOOP("MetaData","071")</alias>
+		<null>true</null>
+		<pk>false</pk>
+		<type>double</type>
+		<partI>12</partI>
+		<partD>2</partD>
+	</field>
+
+	<field>
+		<name>deducinterna05apli</name>
+		<!--Aplicado en esta liquidación-->
+		<alias>QT_TRANSLATE_NOOP("MetaData","187")</alias>
+		<null>true</null>
+		<pk>false</pk>
+		<type>double</type>
+		<partI>12</partI>
+		<partD>2</partD>
+	</field>
+	
+	<field>
+		<name>deducinterna05pte</name>
+		<!--Pendiente de aplicación en periodos futuros-->
+		<alias>QT_TRANSLATE_NOOP("MetaData","300")</alias>
+		<null>true</null>
+		<pk>false</pk>
+		<type>double</type>
+		<partI>12</partI>
+		<partD>2</partD>
+	</field>
+
+	<field>
+		<name>deducinternacional05</name>
+		<!--Periodos anteriores, deducciones pendientes, periodo actual, deducción generada-->
+		<alias>QT_TRANSLATE_NOOP("MetaData","001")</alias>
+		<null>true</null>
+		<pk>false</pk>
+		<type>double</type>
+		<partI>12</partI>
+		<partD>2</partD>
+	</field>
+
+	<field>
+		<name>deducinternacional05apli</name>
+		<!--Aplicado en esta liquidación-->
+		<alias>QT_TRANSLATE_NOOP("MetaData","002")</alias>
+		<null>true</null>
+		<pk>false</pk>
+		<type>double</type>
+		<partI>12</partI>
+		<partD>2</partD>
+	</field>
+	
+	<field>
+		<name>deducinternacional05pte</name>
+		<!--Pendiente de aplicación en periodos futuros-->
+		<alias>QT_TRANSLATE_NOOP("MetaData","003")</alias>
+		<null>true</null>
+		<pk>false</pk>
+		<type>double</type>
+		<partI>12</partI>
+		<partD>2</partD>
+	</field>
+
+	<field>
+		<name>totaldeducperant</name>
+		<!--Periodos anteriores, deducciones pendientes, periodo actual, deducción generada-->
+		<alias>QT_TRANSLATE_NOOP("MetaData","720")</alias>
+		<null>true</null>
+		<pk>false</pk>
+		<type>double</type>
+		<partI>12</partI>
+		<partD>2</partD>
+	</field>
+
+	<field>
+		<name>totaldeducperantapli</name>
+		<!--Aplicado en esta liquidación-->
+		<alias>QT_TRANSLATE_NOOP("MetaData","580")</alias>
+		<null>true</null>
+		<pk>false</pk>
+		<type>double</type>
+		<partI>12</partI>
+		<partD>2</partD>
+	</field>
+	
+	<field>
+		<name>totaldeducperantpte</name>
+		<!--Pendiente de aplicación en periodos futuros-->
+		<alias>QT_TRANSLATE_NOOP("MetaData","721")</alias>
+		<null>true</null>
+		<pk>false</pk>
+		<type>double</type>
+		<partI>12</partI>
+		<partD>2</partD>
+	</field>
+
+	<field>
+		<name>deducinterna06</name>
+		<!--Periodos anteriores, deducciones pendientes, periodo actual, deducción generada-->
+		<alias>QT_TRANSLATE_NOOP("MetaData","714")</alias>
+		<null>true</null>
+		<pk>false</pk>
+		<type>double</type>
+		<partI>12</partI>
+		<partD>2</partD>
+	</field>
+
+	<field>
+		<name>deducinterna06apli</name>
+		<!--Aplicado en esta liquidación-->
+		<alias>QT_TRANSLATE_NOOP("MetaData","715")</alias>
+		<null>true</null>
+		<pk>false</pk>
+		<type>double</type>
+		<partI>12</partI>
+		<partD>2</partD>
+	</field>
+	
+	<field>
+		<name>deducinterna06pte</name>
+		<!--Pendiente de aplicación en periodos futuros-->
+		<alias>QT_TRANSLATE_NOOP("MetaData","716")</alias>
+		<null>true</null>
+		<pk>false</pk>
+		<type>double</type>
+		<partI>12</partI>
+		<partD>2</partD>
+	</field>
+
+	<field>
+		<name>deducinternacional06</name>
+		<!--Periodos anteriores, deducciones pendientes, periodo actual, deducción generada-->
+		<alias>QT_TRANSLATE_NOOP("MetaData","717")</alias>
+		<null>true</null>
+		<pk>false</pk>
+		<type>double</type>
+		<partI>12</partI>
+		<partD>2</partD>
+	</field>
+
+	<field>
+		<name>deducinternacional06apli</name>
+		<!--Aplicado en esta liquidación-->
+		<alias>QT_TRANSLATE_NOOP("MetaData","718")</alias>
+		<null>true</null>
+		<pk>false</pk>
+		<type>double</type>
+		<partI>12</partI>
+		<partD>2</partD>
+	</field>
+	
+	<field>
+		<name>deducinternacional06pte</name>
+		<!--Pendiente de aplicación en periodos futuros-->
+		<alias>QT_TRANSLATE_NOOP("MetaData","719")</alias>
+		<null>true</null>
+		<pk>false</pk>
+		<type>double</type>
+		<partI>12</partI>
+		<partD>2</partD>
+	</field>
+
+	<field>
+		<name>totaldeducdobimp</name>
+		<!--Periodos anteriores, deducciones pendientes, periodo actual, deducción generada-->
+		<alias>QT_TRANSLATE_NOOP("MetaData","722")</alias>
+		<null>true</null>
+		<pk>false</pk>
+		<type>double</type>
+		<partI>12</partI>
+		<partD>2</partD>
+	</field>
+
+	<field>
+		<name>totaldeducdobimpapli</name>
+		<!--Aplicado en esta liquidación-->
+		<alias>QT_TRANSLATE_NOOP("MetaData","723")</alias>
+		<null>true</null>
+		<pk>false</pk>
+		<type>double</type>
+		<partI>12</partI>
+		<partD>2</partD>
+	</field>
+	
+	<field>
+		<name>totaldeducdobimppte</name>
+		<!--Pendiente de aplicación en periodos futuros-->
+		<alias>QT_TRANSLATE_NOOP("MetaData","724")</alias>
+		<null>true</null>
+		<pk>false</pk>
+		<type>double</type>
+		<partI>12</partI>
+		<partD>2</partD>
+	</field>
+
+	<!--Art. 42 LIS Y Art. 36 TER LEY 43/1995-->
+	<field>
+		<name>deduc01</name>
+		<!--Periodos anteriores, deducciones pendientes, periodo actual, deducción generada-->
+		<alias>QT_TRANSLATE_NOOP("MetaData","835")</alias>
+		<null>true</null>
+		<pk>false</pk>
+		<type>double</type>
+		<partI>12</partI>
+		<partD>2</partD>
+	</field>
+
+	<field>
+		<name>deduc01apli</name>
+		<!--Aplicado en esta liquidación-->
+		<alias>QT_TRANSLATE_NOOP("MetaData","836")</alias>
+		<null>true</null>
+		<pk>false</pk>
+		<type>double</type>
+		<partI>12</partI>
+		<partD>2</partD>
+	</field>
+	
+	<field>
+		<name>deduc01pte</name>
+		<!--Pendiente de aplicación en periodos futuros-->
+		<alias>QT_TRANSLATE_NOOP("MetaData","837")</alias>
+		<null>true</null>
+		<pk>false</pk>
+		<type>double</type>
+		<partI>12</partI>
+		<partD>2</partD>
+	</field>
+
+	<field>
+		<name>deduc02</name>
+		<!--Periodos anteriores, deducciones pendientes, periodo actual, deducción generada-->
+		<alias>QT_TRANSLATE_NOOP("MetaData","838")</alias>
+		<null>true</null>
+		<pk>false</pk>
+		<type>double</type>
+		<partI>12</partI>
+		<partD>2</partD>
+	</field>
+
+	<field>
+		<name>deduc02apli</name>
+		<!--Aplicado en esta liquidación-->
+		<alias>QT_TRANSLATE_NOOP("MetaData","839")</alias>
+		<null>true</null>
+		<pk>false</pk>
+		<type>double</type>
+		<partI>12</partI>
+		<partD>2</partD>
+	</field>
+	
+	<field>
+		<name>deduc02pte</name>
+		<!--Pendiente de aplicación en periodos futuros-->
+		<alias>QT_TRANSLATE_NOOP("MetaData","840")</alias>
+		<null>true</null>
+		<pk>false</pk>
+		<type>double</type>
+		<partI>12</partI>
+		<partD>2</partD>
+	</field>
+	
+	<field>
+		<name>deduc03</name>
+		<!--Periodos anteriores, deducciones pendientes, periodo actual, deducción generada-->
+		<alias>QT_TRANSLATE_NOOP("MetaData","932")</alias>
+		<null>true</null>
+		<pk>false</pk>
+		<type>double</type>
+		<partI>12</partI>
+		<partD>2</partD>
+	</field>
+
+	<field>
+		<name>deduc03apli</name>
+		<!--Aplicado en esta liquidación-->
+		<alias>QT_TRANSLATE_NOOP("MetaData","933")</alias>
+		<null>true</null>
+		<pk>false</pk>
+		<type>double</type>
+		<partI>12</partI>
+		<partD>2</partD>
+	</field>
+	
+	<field>
+		<name>deduc03pte</name>
+		<!--Pendiente de aplicación en periodos futuros-->
+		<alias>QT_TRANSLATE_NOOP("MetaData","934")</alias>
+		<null>true</null>
+		<pk>false</pk>
+		<type>double</type>
+		<partI>12</partI>
+		<partD>2</partD>
+	</field>
+	
+	<field>
+		<name>deduc04</name>
+		<!--Periodos anteriores, deducciones pendientes, periodo actual, deducción generada-->
+		<alias>QT_TRANSLATE_NOOP("MetaData","297")</alias>
+		<null>true</null>
+		<pk>false</pk>
+		<type>double</type>
+		<partI>12</partI>
+		<partD>2</partD>
+	</field>
+
+	<field>
+		<name>deduc04apli</name>
+		<!--Aplicado en esta liquidación-->
+		<alias>QT_TRANSLATE_NOOP("MetaData","298")</alias>
+		<null>true</null>
+		<pk>false</pk>
+		<type>double</type>
+		<partI>12</partI>
+		<partD>2</partD>
+	</field>
+	
+	<field>
+		<name>deduc04pte</name>
+		<!--Pendiente de aplicación en periodos futuros-->
+		<alias>QT_TRANSLATE_NOOP("MetaData","299")</alias>
+		<null>true</null>
+		<pk>false</pk>
+		<type>double</type>
+		<partI>12</partI>
+		<partD>2</partD>
+	</field>
+
+	<field>
+		<name>deduc05</name>
+		<!--Periodos anteriores, deducciones pendientes, periodo actual, deducción generada-->
+		<alias>QT_TRANSLATE_NOOP("MetaData","090")</alias>
+		<null>true</null>
+		<pk>false</pk>
+		<type>double</type>
+		<partI>12</partI>
+		<partD>2</partD>
+	</field>
+
+	<field>
+		<name>deduc05apli</name>
+		<!--Aplicado en esta liquidación-->
+		<alias>QT_TRANSLATE_NOOP("MetaData","091")</alias>
+		<null>true</null>
+		<pk>false</pk>
+		<type>double</type>
+		<partI>12</partI>
+		<partD>2</partD>
+	</field>
+	
+	<field>
+		<name>deduc05pte</name>
+		<!--Pendiente de aplicación en periodos futuros-->
+		<alias>QT_TRANSLATE_NOOP("MetaData","092")</alias>
+		<null>true</null>
+		<pk>false</pk>
+		<type>double</type>
+		<partI>12</partI>
+		<partD>2</partD>
+	</field>
+
+	<field>
+		<name>deduc06</name>
+		<!--Periodos anteriores, deducciones pendientes, periodo actual, deducción generada-->
+		<alias>QT_TRANSLATE_NOOP("MetaData","004")</alias>
+		<null>true</null>
+		<pk>false</pk>
+		<type>double</type>
+		<partI>12</partI>
+		<partD>2</partD>
+	</field>
+
+	<field>
+		<name>deduc06apli</name>
+		<!--Aplicado en esta liquidación-->
+		<alias>QT_TRANSLATE_NOOP("MetaData","005")</alias>
+		<null>true</null>
+		<pk>false</pk>
+		<type>double</type>
+		<partI>12</partI>
+		<partD>2</partD>
+	</field>
+	
+	<field>
+		<name>deduc06pte</name>
+		<!--Pendiente de aplicación en periodos futuros-->
+		<alias>QT_TRANSLATE_NOOP("MetaData","006")</alias>
+		<null>true</null>
+		<pk>false</pk>
+		<type>double</type>
+		<partI>12</partI>
+		<partD>2</partD>
+	</field>
+
+	<field>
+		<name>totaldeducart</name>
+		<!--Periodos anteriores, deducciones pendientes, periodo actual, deducción generada-->
+		<alias>QT_TRANSLATE_NOOP("MetaData","841")</alias>
+		<null>true</null>
+		<pk>false</pk>
+		<type>double</type>
+		<partI>12</partI>
+		<partD>2</partD>
+	</field>
+
+	<field>
+		<name>totaldeducartapli</name>
+		<!--Aplicado en esta liquidación-->
+		<alias>QT_TRANSLATE_NOOP("MetaData","585")</alias>
+		<null>true</null>
+		<pk>false</pk>
+		<type>double</type>
+		<partI>12</partI>
+		<partD>2</partD>
+	</field>
+	
+	<field>
+		<name>totaldeducartpte</name>
+		<!--Pendiente de aplicación en periodos futuros-->
+		<alias>QT_TRANSLATE_NOOP("MetaData","843")</alias>
+		<null>true</null>
+		<pk>false</pk>
+		<type>double</type>
+		<partI>12</partI>
+		<partD>2</partD>
+	</field>
+
+	<!--Disposición transitoria octava LIS-->
+	<field>
+		<name>disp01</name>
+		<!--Periodos anteriores, deducciones pendientes-->
+		<alias>QT_TRANSLATE_NOOP("MetaData","749")</alias>
+		<null>true</null>
+		<pk>false</pk>
+		<type>double</type>
+		<partI>12</partI>
+		<partD>2</partD>
+	</field>
+
+	<field>
+		<name>disp01apli</name>
+		<!--Aplicado en esta liquidación-->
+		<alias>QT_TRANSLATE_NOOP("MetaData","750")</alias>
+		<null>true</null>
+		<pk>false</pk>
+		<type>double</type>
+		<partI>12</partI>
+		<partD>2</partD>
+	</field>
+	
+	<field>
+		<name>disp02</name>
+		<!--Periodos anteriores, deducciones pendientes-->
+		<alias>QT_TRANSLATE_NOOP("MetaData","752")</alias>
+		<null>true</null>
+		<pk>false</pk>
+		<type>double</type>
+		<partI>12</partI>
+		<partD>2</partD>
+	</field>
+
+	<field>
+		<name>disp02apli</name>
+		<!--Aplicado en esta liquidación-->
+		<alias>QT_TRANSLATE_NOOP("MetaData","753")</alias>
+		<null>true</null>
+		<pk>false</pk>
+		<type>double</type>
+		<partI>12</partI>
+		<partD>2</partD>
+	</field>
+	
+	<field>
+		<name>disp02pte</name>
+		<!--Pendiente de aplicación en periodos futuros-->
+		<alias>QT_TRANSLATE_NOOP("MetaData","754")</alias>
+		<null>true</null>
+		<pk>false</pk>
+		<type>double</type>
+		<partI>12</partI>
+		<partD>2</partD>
+	</field>
+
+	<field>
+		<name>disp03</name>
+		<!--Periodos anteriores, deducciones pendientes-->
+		<alias>QT_TRANSLATE_NOOP("MetaData","755")</alias>
+		<null>true</null>
+		<pk>false</pk>
+		<type>double</type>
+		<partI>12</partI>
+		<partD>2</partD>
+	</field>
+
+	<field>
+		<name>disp03apli</name>
+		<!--Aplicado en esta liquidación-->
+		<alias>QT_TRANSLATE_NOOP("MetaData","756")</alias>
+		<null>true</null>
+		<pk>false</pk>
+		<type>double</type>
+		<partI>12</partI>
+		<partD>2</partD>
+	</field>
+	
+	<field>
+		<name>disp03pte</name>
+		<!--Pendiente de aplicación en periodos futuros-->
+		<alias>QT_TRANSLATE_NOOP("MetaData","757")</alias>
+		<null>true</null>
+		<pk>false</pk>
+		<type>double</type>
+		<partI>12</partI>
+		<partD>2</partD>
+	</field>
+
+	<field>
+		<name>disp04</name>
+		<!--Periodos anteriores, deducciones pendientes-->
+		<alias>QT_TRANSLATE_NOOP("MetaData","758")</alias>
+		<null>true</null>
+		<pk>false</pk>
+		<type>double</type>
+		<partI>12</partI>
+		<partD>2</partD>
+	</field>
+
+	<field>
+		<name>disp04apli</name>
+		<!--Aplicado en esta liquidación-->
+		<alias>QT_TRANSLATE_NOOP("MetaData","759")</alias>
+		<null>true</null>
+		<pk>false</pk>
+		<type>double</type>
+		<partI>12</partI>
+		<partD>2</partD>
+	</field>
+	
+	<field>
+		<name>disp04pte</name>
+		<!--Pendiente de aplicación en periodos futuros-->
+		<alias>QT_TRANSLATE_NOOP("MetaData","760")</alias>
+		<null>true</null>
+		<pk>false</pk>
+		<type>double</type>
+		<partI>12</partI>
+		<partD>2</partD>
+	</field>
+
+	<field>
+		<name>disp05</name>
+		<!--Periodos anteriores, deducciones pendientes-->
+		<alias>QT_TRANSLATE_NOOP("MetaData","761")</alias>
+		<null>true</null>
+		<pk>false</pk>
+		<type>double</type>
+		<partI>12</partI>
+		<partD>2</partD>
+	</field>
+
+	<field>
+		<name>disp05apli</name>
+		<!--Aplicado en esta liquidación-->
+		<alias>QT_TRANSLATE_NOOP("MetaData","762")</alias>
+		<null>true</null>
+		<pk>false</pk>
+		<type>double</type>
+		<partI>12</partI>
+		<partD>2</partD>
+	</field>
+	
+	<field>
+		<name>disp05pte</name>
+		<!--Pendiente de aplicación en periodos futuros-->
+		<alias>QT_TRANSLATE_NOOP("MetaData","763")</alias>
+		<null>true</null>
+		<pk>false</pk>
+		<type>double</type>
+		<partI>12</partI>
+		<partD>2</partD>
+	</field>
+
+	<field>
+		<name>disp06</name>
+		<!--Periodos anteriores, deducciones pendientes-->
+		<alias>QT_TRANSLATE_NOOP("MetaData","744")</alias>
+		<null>true</null>
+		<pk>false</pk>
+		<type>double</type>
+		<partI>12</partI>
+		<partD>2</partD>
+	</field>
+
+	<field>
+		<name>disp06apli</name>
+		<!--Aplicado en esta liquidación-->
+		<alias>QT_TRANSLATE_NOOP("MetaData","745")</alias>
+		<null>true</null>
+		<pk>false</pk>
+		<type>double</type>
+		<partI>12</partI>
+		<partD>2</partD>
+	</field>
+	
+	<field>
+		<name>disp06pte</name>
+		<!--Pendiente de aplicación en periodos futuros-->
+		<alias>QT_TRANSLATE_NOOP("MetaData","746")</alias>
+		<null>true</null>
+		<pk>false</pk>
+		<type>double</type>
+		<partI>12</partI>
+		<partD>2</partD>
+	</field>
+
+	<field>
+		<name>totaldisp</name>
+		<!--Periodos anteriores, deducciones pendientes-->
+		<alias>QT_TRANSLATE_NOOP("MetaData","764")</alias>
+		<null>true</null>
+		<pk>false</pk>
+		<type>double</type>
+		<partI>12</partI>
+		<partD>2</partD>
+	</field>
+
+	<field>
+		<name>totaldispapli</name>
+		<!--Aplicado en esta liquidación-->
+		<alias>QT_TRANSLATE_NOOP("MetaData","584")</alias>
+		<null>true</null>
+		<pk>false</pk>
+		<type>double</type>
+		<partI>12</partI>
+		<partD>2</partD>
+	</field>
+	
+	<field>
+		<name>totaldisppte</name>
+		<!--Pendiente de aplicación en periodos futuros-->
+		<alias>QT_TRANSLATE_NOOP("MetaData","765")</alias>
+		<null>true</null>
+		<pk>false</pk>
+		<type>double</type>
+		<partI>12</partI>
+		<partD>2</partD>
+	</field>
+	
+	<!--Deducciones para incentivar determinadas actividades (cap. IV tit. VI ley 43/1995 LIS)-->
+	<field>
+		<name>suma96</name>
+		<!--Periodos anteriores, deducciones pendientes, periodo actual, deducciones generadas-->
+		<alias>QT_TRANSLATE_NOOP("MetaData","842")</alias>
+		<null>true</null>
+		<pk>false</pk>
+		<type>double</type>
+		<partI>12</partI>
+		<partD>2</partD>
+	</field>
+
+	<field>
+		<name>suma96apli</name>
+		<!--Aplicado en esta liquidación-->
+		<alias>QT_TRANSLATE_NOOP("MetaData","844")</alias>
+		<null>true</null>
+		<pk>false</pk>
+		<type>double</type>
+		<partI>12</partI>
+		<partD>2</partD>
+	</field>
+	
+	<field>
+		<name>suma96pte</name>
+		<!--Pendiente de aplicación en periodos futuros-->
+		<alias>QT_TRANSLATE_NOOP("MetaData","845")</alias>
+		<null>true</null>
+		<pk>false</pk>
+		<type>double</type>
+		<partI>12</partI>
+		<partD>2</partD>
+	</field>
+
+	<field>
+		<name>suma97</name>
+		<!--Periodos anteriores, deducciones pendientes, periodo actual, deducciones generadas-->
+		<alias>QT_TRANSLATE_NOOP("MetaData","768")</alias>
+		<null>true</null>
+		<pk>false</pk>
+		<type>double</type>
+		<partI>12</partI>
+		<partD>2</partD>
+	</field>
+
+	<field>
+		<name>suma97apli</name>
+		<!--Aplicado en esta liquidación-->
+		<alias>QT_TRANSLATE_NOOP("MetaData","769")</alias>
+		<null>true</null>
+		<pk>false</pk>
+		<type>double</type>
+		<partI>12</partI>
+		<partD>2</partD>
+	</field>
+	
+	<field>
+		<name>suma97pte</name>
+		<!--Pendiente de aplicación en periodos futuros-->
+		<alias>QT_TRANSLATE_NOOP("MetaData","770")</alias>
+		<null>true</null>
+		<pk>false</pk>
+		<type>double</type>
+		<partI>12</partI>
+		<partD>2</partD>
+	</field>
+
+	<field>
+		<name>dif97</name>
+		<!--Periodos anteriores, deducciones pendientes, periodo actual, deducciones generadas-->
+		<alias>QT_TRANSLATE_NOOP("MetaData","771")</alias>
+		<null>true</null>
+		<pk>false</pk>
+		<type>double</type>
+		<partI>12</partI>
+		<partD>2</partD>
+	</field>
+
+	<field>
+		<name>dif97apli</name>
+		<!--Aplicado en esta liquidación-->
+		<alias>QT_TRANSLATE_NOOP("MetaData","772")</alias>
+		<null>true</null>
+		<pk>false</pk>
+		<type>double</type>
+		<partI>12</partI>
+		<partD>2</partD>
+	</field>
+	
+	<field>
+		<name>dif97pte</name>
+		<!--Pendiente de aplicación en periodos futuros-->
+		<alias>QT_TRANSLATE_NOOP("MetaData","773")</alias>
+		<null>true</null>
+		<pk>false</pk>
+		<type>double</type>
+		<partI>12</partI>
+		<partD>2</partD>
+	</field>
+
+	<field>
+		<name>suma98</name>
+		<!--Periodos anteriores, deducciones pendientes, periodo actual, deducciones generadas-->
+		<alias>QT_TRANSLATE_NOOP("MetaData","774")</alias>
+		<null>true</null>
+		<pk>false</pk>
+		<type>double</type>
+		<partI>12</partI>
+		<partD>2</partD>
+	</field>
+
+	<field>
+		<name>suma98apli</name>
+		<!--Aplicado en esta liquidación-->
+		<alias>QT_TRANSLATE_NOOP("MetaData","775")</alias>
+		<null>true</null>
+		<pk>false</pk>
+		<type>double</type>
+		<partI>12</partI>
+		<partD>2</partD>
+	</field>
+	
+	<field>
+		<name>suma98pte</name>
+		<!--Pendiente de aplicación en periodos futuros-->
+		<alias>QT_TRANSLATE_NOOP("MetaData","776")</alias>
+		<null>true</null>
+		<pk>false</pk>
+		<type>double</type>
+		<partI>12</partI>
+		<partD>2</partD>
+	</field>
+
+	<field>
+		<name>dif98</name>
+		<!--Periodos anteriores, deducciones pendientes, periodo actual, deducciones generadas-->
+		<alias>QT_TRANSLATE_NOOP("MetaData","777")</alias>
+		<null>true</null>
+		<pk>false</pk>
+		<type>double</type>
+		<partI>12</partI>
+		<partD>2</partD>
+	</field>
+
+	<field>
+		<name>dif98apli</name>
+		<!--Aplicado en esta liquidación-->
+		<alias>QT_TRANSLATE_NOOP("MetaData","778")</alias>
+		<null>true</null>
+		<pk>false</pk>
+		<type>double</type>
+		<partI>12</partI>
+		<partD>2</partD>
+	</field>
+	
+	<field>
+		<name>dif98pte</name>
+		<!--Pendiente de aplicación en periodos futuros-->
+		<alias>QT_TRANSLATE_NOOP("MetaData","779")</alias>
+		<null>true</null>
+		<pk>false</pk>
+		<type>double</type>
+		<partI>12</partI>
+		<partD>2</partD>
+	</field>
+
+	<field>
+		<name>suma99</name>
+		<!--Periodos anteriores, deducciones pendientes, periodo actual, deducciones generadas-->
+		<alias>QT_TRANSLATE_NOOP("MetaData","780")</alias>
+		<null>true</null>
+		<pk>false</pk>
+		<type>double</type>
+		<partI>12</partI>
+		<partD>2</partD>
+	</field>
+
+	<field>
+		<name>suma99apli</name>
+		<!--Aplicado en esta liquidación-->
+		<alias>QT_TRANSLATE_NOOP("MetaData","781")</alias>
+		<null>true</null>
+		<pk>false</pk>
+		<type>double</type>
+		<partI>12</partI>
+		<partD>2</partD>
+	</field>
+	
+	<field>
+		<name>suma99pte</name>
+		<!--Pendiente de aplicación en periodos futuros-->
+		<alias>QT_TRANSLATE_NOOP("MetaData","782")</alias>
+		<null>true</null>
+		<pk>false</pk>
+		<type>double</type>
+		<partI>12</partI>
+		<partD>2</partD>
+	</field>
+
+	<field>
+		<name>dif99</name>
+		<!--Periodos anteriores, deducciones pendientes, periodo actual, deducciones generadas-->
+		<alias>QT_TRANSLATE_NOOP("MetaData","783")</alias>
+		<null>true</null>
+		<pk>false</pk>
+		<type>double</type>
+		<partI>12</partI>
+		<partD>2</partD>
+	</field>
+
+	<field>
+		<name>dif99apli</name>
+		<!--Aplicado en esta liquidación-->
+		<alias>QT_TRANSLATE_NOOP("MetaData","784")</alias>
+		<null>true</null>
+		<pk>false</pk>
+		<type>double</type>
+		<partI>12</partI>
+		<partD>2</partD>
+	</field>
+	
+	<field>
+		<name>dif99pte</name>
+		<!--Pendiente de aplicación en periodos futuros-->
+		<alias>QT_TRANSLATE_NOOP("MetaData","785")</alias>
+		<null>true</null>
+		<pk>false</pk>
+		<type>double</type>
+		<partI>12</partI>
+		<partD>2</partD>
+	</field>
+
+	<field>
+		<name>suma00</name>
+		<!--Periodos anteriores, deducciones pendientes, periodo actual, deducciones generadas-->
+		<alias>QT_TRANSLATE_NOOP("MetaData","786")</alias>
+		<null>true</null>
+		<pk>false</pk>
+		<type>double</type>
+		<partI>12</partI>
+		<partD>2</partD>
+	</field>
+
+	<field>
+		<name>suma00apli</name>
+		<!--Aplicado en esta liquidación-->
+		<alias>QT_TRANSLATE_NOOP("MetaData","787")</alias>
+		<null>true</null>
+		<pk>false</pk>
+		<type>double</type>
+		<partI>12</partI>
+		<partD>2</partD>
+	</field>
+	
+	<field>
+		<name>suma00pte</name>
+		<!--Pendiente de aplicación en periodos futuros-->
+		<alias>QT_TRANSLATE_NOOP("MetaData","788")</alias>
+		<null>true</null>
+		<pk>false</pk>
+		<type>double</type>
+		<partI>12</partI>
+		<partD>2</partD>
+	</field>
+
+	<field>
+		<name>dif00</name>
+		<!--Periodos anteriores, deducciones pendientes, periodo actual, deducciones generadas-->
+		<alias>QT_TRANSLATE_NOOP("MetaData","789")</alias>
+		<null>true</null>
+		<pk>false</pk>
+		<type>double</type>
+		<partI>12</partI>
+		<partD>2</partD>
+	</field>
+
+	<field>
+		<name>dif00apli</name>
+		<!--Aplicado en esta liquidación-->
+		<alias>QT_TRANSLATE_NOOP("MetaData","790")</alias>
+		<null>true</null>
+		<pk>false</pk>
+		<type>double</type>
+		<partI>12</partI>
+		<partD>2</partD>
+	</field>
+	
+	<field>
+		<name>dif00pte</name>
+		<!--Pendiente de aplicación en periodos futuros-->
+		<alias>QT_TRANSLATE_NOOP("MetaData","791")</alias>
+		<null>true</null>
+		<pk>false</pk>
+		<type>double</type>
+		<partI>12</partI>
+		<partD>2</partD>
+	</field>
+
+	<field>
+		<name>suma01</name>
+		<!--Periodos anteriores, deducciones pendientes, periodo actual, deducciones generadas-->
+		<alias>QT_TRANSLATE_NOOP("MetaData","766")</alias>
+		<null>true</null>
+		<pk>false</pk>
+		<type>double</type>
+		<partI>12</partI>
+		<partD>2</partD>
+	</field>
+
+	<field>
+		<name>suma01apli</name>
+		<!--Aplicado en esta liquidación-->
+		<alias>QT_TRANSLATE_NOOP("MetaData","767")</alias>
+		<null>true</null>
+		<pk>false</pk>
+		<type>double</type>
+		<partI>12</partI>
+		<partD>2</partD>
+	</field>
+	
+	<field>
+		<name>suma01pte</name>
+		<!--Pendiente de aplicación en periodos futuros-->
+		<alias>QT_TRANSLATE_NOOP("MetaData","833")</alias>
+		<null>true</null>
+		<pk>false</pk>
+		<type>double</type>
+		<partI>12</partI>
+		<partD>2</partD>
+	</field>
+
+	<field>
+		<name>dif01</name>
+		<!--Periodos anteriores, deducciones pendientes, periodo actual, deducciones generadas-->
+		<alias>QT_TRANSLATE_NOOP("MetaData","888")</alias>
+		<null>true</null>
+		<pk>false</pk>
+		<type>double</type>
+		<partI>12</partI>
+		<partD>2</partD>
+	</field>
+
+	<field>
+		<name>dif01apli</name>
+		<!--Aplicado en esta liquidación-->
+		<alias>QT_TRANSLATE_NOOP("MetaData","889")</alias>
+		<null>true</null>
+		<pk>false</pk>
+		<type>double</type>
+		<partI>12</partI>
+		<partD>2</partD>
+	</field>
+	
+	<field>
+		<name>dif01pte</name>
+		<!--Pendiente de aplicación en periodos futuros-->
+		<alias>QT_TRANSLATE_NOOP("MetaData","890")</alias>
+		<null>true</null>
+		<pk>false</pk>
+		<type>double</type>
+		<partI>12</partI>
+		<partD>2</partD>
+	</field>
+
+	<field>
+		<name>suma02</name>
+		<!--Periodos anteriores, deducciones pendientes, periodo actual, deducciones generadas-->
+		<alias>QT_TRANSLATE_NOOP("MetaData","198")</alias>
+		<null>true</null>
+		<pk>false</pk>
+		<type>double</type>
+		<partI>12</partI>
+		<partD>2</partD>
+	</field>
+
+	<field>
+		<name>suma02apli</name>
+		<!--Aplicado en esta liquidación-->
+		<alias>QT_TRANSLATE_NOOP("MetaData","896")</alias>
+		<null>true</null>
+		<pk>false</pk>
+		<type>double</type>
+		<partI>12</partI>
+		<partD>2</partD>
+	</field>
+	
+	<field>
+		<name>suma02pte</name>
+		<!--Pendiente de aplicación en periodos futuros-->
+		<alias>QT_TRANSLATE_NOOP("MetaData","897")</alias>
+		<null>true</null>
+		<pk>false</pk>
+		<type>double</type>
+		<partI>12</partI>
+		<partD>2</partD>
+	</field>
+
+	<field>
+		<name>dif02</name>
+		<!--Periodos anteriores, deducciones pendientes, periodo actual, deducciones generadas-->
+		<alias>QT_TRANSLATE_NOOP("MetaData","898")</alias>
+		<null>true</null>
+		<pk>false</pk>
+		<type>double</type>
+		<partI>12</partI>
+		<partD>2</partD>
+	</field>
+
+	<field>
+		<name>dif02apli</name>
+		<!--Aplicado en esta liquidación-->
+		<alias>QT_TRANSLATE_NOOP("MetaData","899")</alias>
+		<null>true</null>
+		<pk>false</pk>
+		<type>double</type>
+		<partI>12</partI>
+		<partD>2</partD>
+	</field>
+	
+	<field>
+		<name>dif02pte</name>
+		<!--Pendiente de aplicación en periodos futuros-->
+		<alias>QT_TRANSLATE_NOOP("MetaData","928")</alias>
+		<null>true</null>
+		<pk>false</pk>
+		<type>double</type>
+		<partI>12</partI>
+		<partD>2</partD>
+	</field>
+
+	<field>
+		<name>suma03</name>
+		<!--Periodos anteriores, deducciones pendientes, periodo actual, deducciones generadas-->
+		<alias>QT_TRANSLATE_NOOP("MetaData","288")</alias>
+		<null>true</null>
+		<pk>false</pk>
+		<type>double</type>
+		<partI>12</partI>
+		<partD>2</partD>
+	</field>
+
+	<field>
+		<name>suma03apli</name>
+		<!--Aplicado en esta liquidación-->
+		<alias>QT_TRANSLATE_NOOP("MetaData","289")</alias>
+		<null>true</null>
+		<pk>false</pk>
+		<type>double</type>
+		<partI>12</partI>
+		<partD>2</partD>
+	</field>
+	
+	<field>
+		<name>suma03pte</name>
+		<!--Pendiente de aplicación en periodos futuros-->
+		<alias>QT_TRANSLATE_NOOP("MetaData","290")</alias>
+		<null>true</null>
+		<pk>false</pk>
+		<type>double</type>
+		<partI>12</partI>
+		<partD>2</partD>
+	</field>
+
+	<field>
+		<name>dif03</name>
+		<!--Periodos anteriores, deducciones pendientes, periodo actual, deducciones generadas-->
+		<alias>QT_TRANSLATE_NOOP("MetaData","291")</alias>
+		<null>true</null>
+		<pk>false</pk>
+		<type>double</type>
+		<partI>12</partI>
+		<partD>2</partD>
+	</field>
+
+	<field>
+		<name>dif03apli</name>
+		<!--Aplicado en esta liquidación-->
+		<alias>QT_TRANSLATE_NOOP("MetaData","292")</alias>
+		<null>true</null>
+		<pk>false</pk>
+		<type>double</type>
+		<partI>12</partI>
+		<partD>2</partD>
+	</field>
+	
+	<field>
+		<name>dif03pte</name>
+		<!--Pendiente de aplicación en periodos futuros-->
+		<alias>QT_TRANSLATE_NOOP("MetaData","293")</alias>
+		<null>true</null>
+		<pk>false</pk>
+		<type>double</type>
+		<partI>12</partI>
+		<partD>2</partD>
+	</field>
+
+	<field>
+		<name>suma04</name>
+		<!--Periodos anteriores, deducciones pendientes, periodo actual, deducciones generadas-->
+		<alias>QT_TRANSLATE_NOOP("MetaData","466")</alias>
+		<null>true</null>
+		<pk>false</pk>
+		<type>double</type>
+		<partI>12</partI>
+		<partD>2</partD>
+	</field>
+
+	<field>
+		<name>suma04apli</name>
+		<!--Aplicado en esta liquidación-->
+		<alias>QT_TRANSLATE_NOOP("MetaData","467")</alias>
+		<null>true</null>
+		<pk>false</pk>
+		<type>double</type>
+		<partI>12</partI>
+		<partD>2</partD>
+	</field>
+	
+	<field>
+		<name>suma04pte</name>
+		<!--Pendiente de aplicación en periodos futuros-->
+		<alias>QT_TRANSLATE_NOOP("MetaData","468")</alias>
+		<null>true</null>
+		<pk>false</pk>
+		<type>double</type>
+		<partI>12</partI>
+		<partD>2</partD>
+	</field>
+
+	<field>
+		<name>dif04</name>
+		<!--Periodos anteriores, deducciones pendientes, periodo actual, deducciones generadas-->
+		<alias>QT_TRANSLATE_NOOP("MetaData","469")</alias>
+		<null>true</null>
+		<pk>false</pk>
+		<type>double</type>
+		<partI>12</partI>
+		<partD>2</partD>
+	</field>
+
+	<field>
+		<name>dif04apli</name>
+		<!--Aplicado en esta liquidación-->
+		<alias>QT_TRANSLATE_NOOP("MetaData","470")</alias>
+		<null>true</null>
+		<pk>false</pk>
+		<type>double</type>
+		<partI>12</partI>
+		<partD>2</partD>
+	</field>
+	
+	<field>
+		<name>dif04pte</name>
+		<!--Pendiente de aplicación en periodos futuros-->
+		<alias>QT_TRANSLATE_NOOP("MetaData","471")</alias>
+		<null>true</null>
+		<pk>false</pk>
+		<type>double</type>
+		<partI>12</partI>
+		<partD>2</partD>
+	</field>
+
+	<field>
+		<name>suma05</name>
+		<!--Periodos anteriores, deducciones pendientes, periodo actual, deducciones generadas-->
+		<alias>QT_TRANSLATE_NOOP("MetaData","061")</alias>
+		<null>true</null>
+		<pk>false</pk>
+		<type>double</type>
+		<partI>12</partI>
+		<partD>2</partD>
+	</field>
+
+	<field>
+		<name>suma05apli</name>
+		<!--Aplicado en esta liquidación-->
+		<alias>QT_TRANSLATE_NOOP("MetaData","498")</alias>
+		<null>true</null>
+		<pk>false</pk>
+		<type>double</type>
+		<partI>12</partI>
+		<partD>2</partD>
+	</field>
+	
+	<field>
+		<name>suma05pte</name>
+		<!--Pendiente de aplicación en periodos futuros-->
+		<alias>QT_TRANSLATE_NOOP("MetaData","586")</alias>
+		<null>true</null>
+		<pk>false</pk>
+		<type>double</type>
+		<partI>12</partI>
+		<partD>2</partD>
+	</field>
+
+	<field>
+		<name>dif05</name>
+		<!--Periodos anteriores, deducciones pendientes, periodo actual, deducciones generadas-->
+		<alias>QT_TRANSLATE_NOOP("MetaData","591")</alias>
+		<null>true</null>
+		<pk>false</pk>
+		<type>double</type>
+		<partI>12</partI>
+		<partD>2</partD>
+	</field>
+
+	<field>
+		<name>dif05apli</name>
+		<!--Aplicado en esta liquidación-->
+		<alias>QT_TRANSLATE_NOOP("MetaData","597")</alias>
+		<null>true</null>
+		<pk>false</pk>
+		<type>double</type>
+		<partI>12</partI>
+		<partD>2</partD>
+	</field>
+	
+	<field>
+		<name>dif05pte</name>
+		<!--Pendiente de aplicación en periodos futuros-->
+		<alias>QT_TRANSLATE_NOOP("MetaData","007")</alias>
+		<null>true</null>
+		<pk>false</pk>
+		<type>double</type>
+		<partI>12</partI>
+		<partD>2</partD>
+	</field>
+	
+	<field>
+		<name>medioamb</name>
+		<!--Periodos anteriores, deducciones pendientes, periodo actual, deducciones generadas-->
+		<alias>QT_TRANSLATE_NOOP("MetaData","792")</alias>
+		<null>true</null>
+		<pk>false</pk>
+		<type>double</type>
+		<partI>12</partI>
+		<partD>2</partD>
+	</field>
+
+	<field>
+		<name>medioambapli</name>
+		<!--Aplicado en esta liquidación-->
+		<alias>QT_TRANSLATE_NOOP("MetaData","793")</alias>
+		<null>true</null>
+		<pk>false</pk>
+		<type>double</type>
+		<partI>12</partI>
+		<partD>2</partD>
+	</field>
+	
+	<field>
+		<name>medioambpte</name>
+		<!--Pendiente de aplicación en periodos futuros-->
+		<alias>QT_TRANSLATE_NOOP("MetaData","794")</alias>
+		<null>true</null>
+		<pk>false</pk>
+		<type>double</type>
+		<partI>12</partI>
+		<partD>2</partD>
+	</field>
+
+	<field>
+		<name>empleominusv</name>
+		<!--Periodos anteriores, deducciones pendientes, periodo actual, deducciones generadas-->
+		<alias>QT_TRANSLATE_NOOP("MetaData","795")</alias>
+		<null>true</null>
+		<pk>false</pk>
+		<type>double</type>
+		<partI>12</partI>
+		<partD>2</partD>
+	</field>
+
+	<field>
+		<name>empleominusvapli</name>
+		<!--Aplicado en esta liquidación-->
+		<alias>QT_TRANSLATE_NOOP("MetaData","796")</alias>
+		<null>true</null>
+		<pk>false</pk>
+		<type>double</type>
+		<partI>12</partI>
+		<partD>2</partD>
+	</field>
+	
+	<field>
+		<name>empleominusvpte</name>
+		<!--Pendiente de aplicación en periodos futuros-->
+		<alias>QT_TRANSLATE_NOOP("MetaData","797")</alias>
+		<null>true</null>
+		<pk>false</pk>
+		<type>double</type>
+		<partI>12</partI>
+		<partD>2</partD>
+	</field>
+
+	<field>
+		<name>investdesar</name>
+		<!--Periodos anteriores, deducciones pendientes, periodo actual, deducciones generadas-->
+		<alias>QT_TRANSLATE_NOOP("MetaData","798")</alias>
+		<null>true</null>
+		<pk>false</pk>
+		<type>double</type>
+		<partI>12</partI>
+		<partD>2</partD>
+	</field>
+
+	<field>
+		<name>investdesarapli</name>
+		<!--Aplicado en esta liquidación-->
+		<alias>QT_TRANSLATE_NOOP("MetaData","799")</alias>
+		<null>true</null>
+		<pk>false</pk>
+		<type>double</type>
+		<partI>12</partI>
+		<partD>2</partD>
+	</field>
+	
+	<field>
+		<name>investdesarpte</name>
+		<!--Pendiente de aplicación en periodos futuros-->
+		<alias>QT_TRANSLATE_NOOP("MetaData","800")</alias>
+		<null>true</null>
+		<pk>false</pk>
+		<type>double</type>
+		<partI>12</partI>
+		<partD>2</partD>
+	</field>
+
+	<field>
+		<name>infcomunic</name>
+		<!--Periodos anteriores, deducciones pendientes, periodo actual, deducciones generadas-->
+		<alias>QT_TRANSLATE_NOOP("MetaData","801")</alias>
+		<null>true</null>
+		<pk>false</pk>
+		<type>double</type>
+		<partI>12</partI>
+		<partD>2</partD>
+	</field>
+
+	<field>
+		<name>infcomunicapli</name>
+		<!--Aplicado en esta liquidación-->
+		<alias>QT_TRANSLATE_NOOP("MetaData","802")</alias>
+		<null>true</null>
+		<pk>false</pk>
+		<type>double</type>
+		<partI>12</partI>
+		<partD>2</partD>
+	</field>
+	
+	<field>
+		<name>infcomunicpte</name>
+		<!--Pendiente de aplicación en periodos futuros-->
+		<alias>QT_TRANSLATE_NOOP("MetaData","803")</alias>
+		<null>true</null>
+		<pk>false</pk>
+		<type>double</type>
+		<partI>12</partI>
+		<partD>2</partD>
+	</field>
+
+	<field>
+		<name>transporte</name>
+		<!--Periodos anteriores, deducciones pendientes, periodo actual, deducciones generadas-->
+		<alias>QT_TRANSLATE_NOOP("MetaData","804")</alias>
+		<null>true</null>
+		<pk>false</pk>
+		<type>double</type>
+		<partI>12</partI>
+		<partD>2</partD>
+	</field>
+
+	<field>
+		<name>transporteapli</name>
+		<!--Aplicado en esta liquidación-->
+		<alias>QT_TRANSLATE_NOOP("MetaData","805")</alias>
+		<null>true</null>
+		<pk>false</pk>
+		<type>double</type>
+		<partI>12</partI>
+		<partD>2</partD>
+	</field>
+	
+	<field>
+		<name>transportepte</name>
+		<!--Pendiente de aplicación en periodos futuros-->
+		<alias>QT_TRANSLATE_NOOP("MetaData","806")</alias>
+		<null>true</null>
+		<pk>false</pk>
+		<type>double</type>
+		<partI>12</partI>
+		<partD>2</partD>
+	</field>
+
+	<field>
+		<name>prodcine</name>
+		<!--Periodos anteriores, deducciones pendientes, periodo actual, deducciones generadas-->
+		<alias>QT_TRANSLATE_NOOP("MetaData","807")</alias>
+		<null>true</null>
+		<pk>false</pk>
+		<type>double</type>
+		<partI>12</partI>
+		<partD>2</partD>
+	</field>
+
+	<field>
+		<name>prodcineapli</name>
+		<!--Aplicado en esta liquidación-->
+		<alias>QT_TRANSLATE_NOOP("MetaData","808")</alias>
+		<null>true</null>
+		<pk>false</pk>
+		<type>double</type>
+		<partI>12</partI>
+		<partD>2</partD>
+	</field>
+	
+	<field>
+		<name>prodcinepte</name>
+		<!--Pendiente de aplicación en periodos futuros-->
+		<alias>QT_TRANSLATE_NOOP("MetaData","809")</alias>
+		<null>true</null>
+		<pk>false</pk>
+		<type>double</type>
+		<partI>12</partI>
+		<partD>2</partD>
+	</field>
+
+	<field>
+		<name>cultural</name>
+		<!--Periodos anteriores, deducciones pendientes, periodo actual, deducciones generadas-->
+		<alias>QT_TRANSLATE_NOOP("MetaData","810")</alias>
+		<null>true</null>
+		<pk>false</pk>
+		<type>double</type>
+		<partI>12</partI>
+		<partD>2</partD>
+	</field>
+
+	<field>
+		<name>culturalapli</name>
+		<!--Aplicado en esta liquidación-->
+		<alias>QT_TRANSLATE_NOOP("MetaData","811")</alias>
+		<null>true</null>
+		<pk>false</pk>
+		<type>double</type>
+		<partI>12</partI>
+		<partD>2</partD>
+	</field>
+	
+	<field>
+		<name>culturalpte</name>
+		<!--Pendiente de aplicación en periodos futuros-->
+		<alias>QT_TRANSLATE_NOOP("MetaData","812")</alias>
+		<null>true</null>
+		<pk>false</pk>
+		<type>double</type>
+		<partI>12</partI>
+		<partD>2</partD>
+	</field>
+
+	<field>
+		<name>exportadoras</name>
+		<!--Periodos anteriores, deducciones pendientes, periodo actual, deducciones generadas-->
+		<alias>QT_TRANSLATE_NOOP("MetaData","813")</alias>
+		<null>true</null>
+		<pk>false</pk>
+		<type>double</type>
+		<partI>12</partI>
+		<partD>2</partD>
+	</field>
+
+	<field>
+		<name>exportadorasapli</name>
+		<!--Aplicado en esta liquidación-->
+		<alias>QT_TRANSLATE_NOOP("MetaData","814")</alias>
+		<null>true</null>
+		<pk>false</pk>
+		<type>double</type>
+		<partI>12</partI>
+		<partD>2</partD>
+	</field>
+	
+	<field>
+		<name>exportadoraspte</name>
+		<!--Pendiente de aplicación en periodos futuros-->
+		<alias>QT_TRANSLATE_NOOP("MetaData","815")</alias>
+		<null>true</null>
+		<pk>false</pk>
+		<type>double</type>
+		<partI>12</partI>
+		<partD>2</partD>
+	</field>
+
+	<field>
+		<name>formprof</name>
+		<!--Periodos anteriores, deducciones pendientes, periodo actual, deducciones generadas-->
+		<alias>QT_TRANSLATE_NOOP("MetaData","816")</alias>
+		<null>true</null>
+		<pk>false</pk>
+		<type>double</type>
+		<partI>12</partI>
+		<partD>2</partD>
+	</field>
+
+	<field>
+		<name>formprofapli</name>
+		<!--Aplicado en esta liquidación-->
+		<alias>QT_TRANSLATE_NOOP("MetaData","817")</alias>
+		<null>true</null>
+		<pk>false</pk>
+		<type>double</type>
+		<partI>12</partI>
+		<partD>2</partD>
+	</field>
+	
+	<field>
+		<name>formprofpte</name>
+		<!--Pendiente de aplicación en periodos futuros-->
+		<alias>QT_TRANSLATE_NOOP("MetaData","818")</alias>
+		<null>true</null>
+		<pk>false</pk>
+		<type>double</type>
+		<partI>12</partI>
+		<partD>2</partD>
+	</field>
+
+	<field>
+		<name>libros</name>
+		<!--Periodos anteriores, deducciones pendientes, periodo actual, deducciones generadas-->
+		<alias>QT_TRANSLATE_NOOP("MetaData","819")</alias>
+		<null>true</null>
+		<pk>false</pk>
+		<type>double</type>
+		<partI>12</partI>
+		<partD>2</partD>
+	</field>
+
+	<field>
+		<name>librosapli</name>
+		<!--Aplicado en esta liquidación-->
+		<alias>QT_TRANSLATE_NOOP("MetaData","820")</alias>
+		<null>true</null>
+		<pk>false</pk>
+		<type>double</type>
+		<partI>12</partI>
+		<partD>2</partD>
+	</field>
+	
+	<field>
+		<name>librospte</name>
+		<!--Pendiente de aplicación en periodos futuros-->
+		<alias>QT_TRANSLATE_NOOP("MetaData","821")</alias>
+		<null>true</null>
+		<pk>false</pk>
+		<type>double</type>
+		<partI>12</partI>
+		<partD>2</partD>
+	</field>
+
+	<field>
+		<name>planpens</name>
+		<!--Periodos anteriores, deducciones pendientes, periodo actual, deducciones generadas-->
+		<alias>QT_TRANSLATE_NOOP("MetaData","891")</alias>
+		<null>true</null>
+		<pk>false</pk>
+		<type>double</type>
+		<partI>12</partI>
+		<partD>2</partD>
+	</field>
+
+	<field>
+		<name>planpensapli</name>
+		<!--Aplicado en esta liquidación-->
+		<alias>QT_TRANSLATE_NOOP("MetaData","892")</alias>
+		<null>true</null>
+		<pk>false</pk>
+		<type>double</type>
+		<partI>12</partI>
+		<partD>2</partD>
+	</field>
+	
+	<field>
+		<name>planpenspte</name>
+		<!--Pendiente de aplicación en periodos futuros-->
+		<alias>QT_TRANSLATE_NOOP("MetaData","893")</alias>
+		<null>true</null>
+		<pk>false</pk>
+		<type>double</type>
+		<partI>12</partI>
+		<partD>2</partD>
+	</field>
+
+	<field>
+		<name>guarder</name>
+		<!--Periodos anteriores, deducciones pendientes, periodo actual, deducciones generadas-->
+		<alias>QT_TRANSLATE_NOOP("MetaData","822")</alias>
+		<null>true</null>
+		<pk>false</pk>
+		<type>double</type>
+		<partI>12</partI>
+		<partD>2</partD>
+	</field>
+
+	<field>
+		<name>guarderapli</name>
+		<!--Aplicado en esta liquidación-->
+		<alias>QT_TRANSLATE_NOOP("MetaData","823")</alias>
+		<null>true</null>
+		<pk>false</pk>
+		<type>double</type>
+		<partI>12</partI>
+		<partD>2</partD>
+	</field>
+	
+	<field>
+		<name>guarderpte</name>
+		<!--Pendiente de aplicación en periodos futuros-->
+		<alias>QT_TRANSLATE_NOOP("MetaData","824")</alias>
+		<null>true</null>
+		<pk>false</pk>
+		<type>double</type>
+		<partI>12</partI>
+		<partD>2</partD>
+	</field>
+
+	<field>
+		<name>quijote</name>
+		<!--Periodos anteriores, deducciones pendientes, periodo actual, deducciones generadas-->
+		<alias>QT_TRANSLATE_NOOP("MetaData","993")</alias>
+		<null>true</null>
+		<pk>false</pk>
+		<type>double</type>
+		<partI>12</partI>
+		<partD>2</partD>
+	</field>
+
+	<field>
+		<name>quijoteapli</name>
+		<!--Aplicado en esta liquidación-->
+		<alias>QT_TRANSLATE_NOOP("MetaData","994")</alias>
+		<null>true</null>
+		<pk>false</pk>
+		<type>double</type>
+		<partI>12</partI>
+		<partD>2</partD>
+	</field>
+	
+	<field>
+		<name>quijotepte</name>
+		<!--Pendiente de aplicación en periodos futuros-->
+		<alias>QT_TRANSLATE_NOOP("MetaData","995")</alias>
+		<null>true</null>
+		<pk>false</pk>
+		<type>double</type>
+		<partI>12</partI>
+		<partD>2</partD>
+	</field>
+
+	<field>
+		<name>copaamer</name>
+		<!--Periodos anteriores, deducciones pendientes, periodo actual, deducciones generadas-->
+		<alias>QT_TRANSLATE_NOOP("MetaData","996")</alias>
+		<null>true</null>
+		<pk>false</pk>
+		<type>double</type>
+		<partI>12</partI>
+		<partD>2</partD>
+	</field>
+
+	<field>
+		<name>copaamerapli</name>
+		<!--Aplicado en esta liquidación-->
+		<alias>QT_TRANSLATE_NOOP("MetaData","997")</alias>
+		<null>true</null>
+		<pk>false</pk>
+		<type>double</type>
+		<partI>12</partI>
+		<partD>2</partD>
+	</field>
+	
+	<field>
+		<name>copaamerpte</name>
+		<!--Pendiente de aplicación en periodos futuros-->
+		<alias>QT_TRANSLATE_NOOP("MetaData","998")</alias>
+		<null>true</null>
+		<pk>false</pk>
+		<type>double</type>
+		<partI>12</partI>
+		<partD>2</partD>
+	</field>
+
+	<field>
+		<name>salamanca</name>
+		<!--Periodos anteriores, deducciones pendientes, periodo actual, deducciones generadas-->
+		<alias>QT_TRANSLATE_NOOP("MetaData","472")</alias>
+		<null>true</null>
+		<pk>false</pk>
+		<type>double</type>
+		<partI>12</partI>
+		<partD>2</partD>
+	</field>
+
+	<field>
+		<name>salamancaapli</name>
+		<!--Aplicado en esta liquidación-->
+		<alias>QT_TRANSLATE_NOOP("MetaData","473")</alias>
+		<null>true</null>
+		<pk>false</pk>
+		<type>double</type>
+		<partI>12</partI>
+		<partD>2</partD>
+	</field>
+	
+	<field>
+		<name>salamancapte</name>
+		<!--Pendiente de aplicación en periodos futuros-->
+		<alias>QT_TRANSLATE_NOOP("MetaData","478")</alias>
+		<null>true</null>
+		<pk>false</pk>
+		<type>double</type>
+		<partI>12</partI>
+		<partD>2</partD>
+	</field>
+
+	<field>
+		<name>galicia</name>
+		<!--Periodos anteriores, deducciones pendientes, periodo actual, deducciones generadas-->
+		<alias>QT_TRANSLATE_NOOP("MetaData","479")</alias>
+		<null>true</null>
+		<pk>false</pk>
+		<type>double</type>
+		<partI>12</partI>
+		<partD>2</partD>
+	</field>
+
+	<field>
+		<name>galiciaapli</name>
+		<!--Aplicado en esta liquidación-->
+		<alias>QT_TRANSLATE_NOOP("MetaData","480")</alias>
+		<null>true</null>
+		<pk>false</pk>
+		<type>double</type>
+		<partI>12</partI>
+		<partD>2</partD>
+	</field>
+	
+	<field>
+		<name>galiciapte</name>
+		<!--Pendiente de aplicación en periodos futuros-->
+		<alias>QT_TRANSLATE_NOOP("MetaData","481")</alias>
+		<null>true</null>
+		<pk>false</pk>
+		<type>double</type>
+		<partI>12</partI>
+		<partD>2</partD>
+	</field>
+
+	<field>
+		<name>pekin</name>
+		<!--Periodos anteriores, deducciones pendientes, periodo actual, deducciones generadas-->
+		<alias>QT_TRANSLATE_NOOP("MetaData","063")</alias>
+		<null>true</null>
+		<pk>false</pk>
+		<type>double</type>
+		<partI>12</partI>
+		<partD>2</partD>
+	</field>
+
+	<field>
+		<name>pekinapli</name>
+		<!--Aplicado en esta liquidación-->
+		<alias>QT_TRANSLATE_NOOP("MetaData","064")</alias>
+		<null>true</null>
+		<pk>false</pk>
+		<type>double</type>
+		<partI>12</partI>
+		<partD>2</partD>
+	</field>
+	
+	<field>
+		<name>pekinpte</name>
+		<!--Pendiente de aplicación en periodos futuros-->
+		<alias>QT_TRANSLATE_NOOP("MetaData","065")</alias>
+		<null>true</null>
+		<pk>false</pk>
+		<type>double</type>
+		<partI>12</partI>
+		<partD>2</partD>
+	</field>
+
+	<field>
+		<name>lebaniego</name>
+		<!--Periodos anteriores, deducciones pendientes, periodo actual, deducciones generadas-->
+		<alias>QT_TRANSLATE_NOOP("MetaData","633")</alias>
+		<null>true</null>
+		<pk>false</pk>
+		<type>double</type>
+		<partI>12</partI>
+		<partD>2</partD>
+	</field>
+
+	<field>
+		<name>lebaniegoapli</name>
+		<!--Aplicado en esta liquidación-->
+		<alias>QT_TRANSLATE_NOOP("MetaData","067")</alias>
+		<null>true</null>
+		<pk>false</pk>
+		<type>double</type>
+		<partI>12</partI>
+		<partD>2</partD>
+	</field>
+	
+	<field>
+		<name>lebaniegopte</name>
+		<!--Pendiente de aplicación en periodos futuros-->
+		<alias>QT_TRANSLATE_NOOP("MetaData","068")</alias>
+		<null>true</null>
+		<pk>false</pk>
+		<type>double</type>
+		<partI>12</partI>
+		<partD>2</partD>
+	</field>
+
+	<field>
+		<name>zaragoza</name>
+		<!--Periodos anteriores, deducciones pendientes, periodo actual, deducciones generadas-->
+		<alias>QT_TRANSLATE_NOOP("MetaData","069")</alias>
+		<null>true</null>
+		<pk>false</pk>
+		<type>double</type>
+		<partI>12</partI>
+		<partD>2</partD>
+	</field>
+
+	<field>
+		<name>zaragozaapli</name>
+		<!--Aplicado en esta liquidación-->
+		<alias>QT_TRANSLATE_NOOP("MetaData","070")</alias>
+		<null>true</null>
+		<pk>false</pk>
+		<type>double</type>
+		<partI>12</partI>
+		<partD>2</partD>
+	</field>
+	
+	<field>
+		<name>zaragozapte</name>
+		<!--Pendiente de aplicación en periodos futuros-->
+		<alias>QT_TRANSLATE_NOOP("MetaData","093")</alias>
+		<null>true</null>
+		<pk>false</pk>
+		<type>double</type>
+		<partI>12</partI>
+		<partD>2</partD>
+	</field>
+
+	<field>
+		<name>diferimiento</name>
+		<!--Periodos anteriores, deducciones pendientes, periodo actual, deducciones generadas-->
+		<alias>QT_TRANSLATE_NOOP("MetaData","828")</alias>
+		<null>true</null>
+		<pk>false</pk>
+		<type>double</type>
+		<partI>12</partI>
+		<partD>2</partD>
+	</field>
+
+	<field>
+		<name>diferimientoapli</name>
+		<!--Aplicado en esta liquidación-->
+		<alias>QT_TRANSLATE_NOOP("MetaData","829")</alias>
+		<null>true</null>
+		<pk>false</pk>
+		<type>double</type>
+		<partI>12</partI>
+		<partD>2</partD>
+	</field>
+	
+	<field>
+		<name>diferimientopte</name>
+		<!--Pendiente de aplicación en periodos futuros-->
+		<alias>QT_TRANSLATE_NOOP("MetaData","830")</alias>
+		<null>true</null>
+		<pk>false</pk>
+		<type>double</type>
+		<partI>12</partI>
+		<partD>2</partD>
+	</field>
+
+	<field>
+		<name>totaldeducciones</name>
+		<!--Periodos anteriores, deducciones pendientes, periodo actual, deducciones generadas-->
+		<alias>QT_TRANSLATE_NOOP("MetaData","831")</alias>
+		<null>true</null>
+		<pk>false</pk>
+		<type>double</type>
+		<partI>12</partI>
+		<partD>2</partD>
+	</field>
+
+	<field>
+		<name>totaldeduccionesapli</name>
+		<!--Aplicado en esta liquidación-->
+		<alias>QT_TRANSLATE_NOOP("MetaData","588")</alias>
+		<null>true</null>
+		<pk>false</pk>
+		<type>double</type>
+		<partI>12</partI>
+		<partD>2</partD>
+	</field>
+	
+	<field>
+		<name>totaldeduccionespte</name>
+		<!--Pendiente de aplicación en periodos futuros-->
+		<alias>QT_TRANSLATE_NOOP("MetaData","832")</alias>
+		<null>true</null>
+		<pk>false</pk>
+		<type>double</type>
+		<partI>12</partI>
+		<partD>2</partD>
+	</field>
+	
+	<!--Deducción donativos a entidades sin fines de lucro. ley 49/2002-->
+	<field>
+		<name>donaciones02</name>
+		<!--Periodos anteriores, deducciones pendientes, periodo actual, deducciones generadas-->
+		<alias>QT_TRANSLATE_NOOP("MetaData","929")</alias>
+		<null>true</null>
+		<pk>false</pk>
+		<type>double</type>
+		<partI>12</partI>
+		<partD>2</partD>
+	</field>
+
+	<field>
+		<name>donaciones02apli</name>
+		<!--Aplicado en esta liquidación-->
+		<alias>QT_TRANSLATE_NOOP("MetaData","930")</alias>
+		<null>true</null>
+		<pk>false</pk>
+		<type>double</type>
+		<partI>12</partI>
+		<partD>2</partD>
+	</field>
+	
+	<field>
+		<name>donaciones02pte</name>
+		<!--Pendiente de aplicación en periodos futuros-->
+		<alias>QT_TRANSLATE_NOOP("MetaData","931")</alias>
+		<null>true</null>
+		<pk>false</pk>
+		<type>double</type>
+		<partI>12</partI>
+		<partD>2</partD>
+	</field>
+
+	<field>
+		<name>donaciones03</name>
+		<!--Periodos anteriores, deducciones pendientes, periodo actual, deducciones generadas-->
+		<alias>QT_TRANSLATE_NOOP("MetaData","942")</alias>
+		<null>true</null>
+		<pk>false</pk>
+		<type>double</type>
+		<partI>12</partI>
+		<partD>2</partD>
+	</field>
+
+	<field>
+		<name>donaciones03apli</name>
+		<!--Aplicado en esta liquidación-->
+		<alias>QT_TRANSLATE_NOOP("MetaData","943")</alias>
+		<null>true</null>
+		<pk>false</pk>
+		<type>double</type>
+		<partI>12</partI>
+		<partD>2</partD>
+	</field>
+	
+	<field>
+		<name>donaciones03pte</name>
+		<!--Pendiente de aplicación en periodos futuros-->
+		<alias>QT_TRANSLATE_NOOP("MetaData","944")</alias>
+		<null>true</null>
+		<pk>false</pk>
+		<type>double</type>
+		<partI>12</partI>
+		<partD>2</partD>
+	</field>
+
+	<field>
+		<name>donaciones04</name>
+		<!--Periodos anteriores, deducciones pendientes, periodo actual, deducciones generadas-->
+		<alias>QT_TRANSLATE_NOOP("MetaData","294")</alias>
+		<null>true</null>
+		<pk>false</pk>
+		<type>double</type>
+		<partI>12</partI>
+		<partD>2</partD>
+	</field>
+
+	<field>
+		<name>donaciones04apli</name>
+		<!--Aplicado en esta liquidación-->
+		<alias>QT_TRANSLATE_NOOP("MetaData","295")</alias>
+		<null>true</null>
+		<pk>false</pk>
+		<type>double</type>
+		<partI>12</partI>
+		<partD>2</partD>
+	</field>
+	
+	<field>
+		<name>donaciones04pte</name>
+		<!--Pendiente de aplicación en periodos futuros-->
+		<alias>QT_TRANSLATE_NOOP("MetaData","296")</alias>
+		<null>true</null>
+		<pk>false</pk>
+		<type>double</type>
+		<partI>12</partI>
+		<partD>2</partD>
+	</field>
+
+	<field>
+		<name>donaciones05</name>
+		<!--Periodos anteriores, deducciones pendientes, periodo actual, deducciones generadas-->
+		<alias>QT_TRANSLATE_NOOP("MetaData","066")</alias>
+		<null>true</null>
+		<pk>false</pk>
+		<type>double</type>
+		<partI>12</partI>
+		<partD>2</partD>
+	</field>
+
+	<field>
+		<name>donaciones05apli</name>
+		<!--Aplicado en esta liquidación-->
+		<alias>QT_TRANSLATE_NOOP("MetaData","074")</alias>
+		<null>true</null>
+		<pk>false</pk>
+		<type>double</type>
+		<partI>12</partI>
+		<partD>2</partD>
+	</field>
+	
+	<field>
+		<name>donaciones05pte</name>
+		<!--Pendiente de aplicación en periodos futuros-->
+		<alias>QT_TRANSLATE_NOOP("MetaData","084")</alias>
+		<null>true</null>
+		<pk>false</pk>
+		<type>double</type>
+		<partI>12</partI>
+		<partD>2</partD>
+	</field>
+
+	<field>
+		<name>donaciones06</name>
+		<!--Periodos anteriores, deducciones pendientes, periodo actual, deducciones generadas-->
+		<alias>QT_TRANSLATE_NOOP("MetaData","008")</alias>
+		<null>true</null>
+		<pk>false</pk>
+		<type>double</type>
+		<partI>12</partI>
+		<partD>2</partD>
+	</field>
+
+	<field>
+		<name>donaciones06apli</name>
+		<!--Aplicado en esta liquidación-->
+		<alias>QT_TRANSLATE_NOOP("MetaData","009")</alias>
+		<null>true</null>
+		<pk>false</pk>
+		<type>double</type>
+		<partI>12</partI>
+		<partD>2</partD>
+	</field>
+	
+	<field>
+		<name>donaciones06pte</name>
+		<!--Pendiente de aplicación en periodos futuros-->
+		<alias>QT_TRANSLATE_NOOP("MetaData","010")</alias>
+		<null>true</null>
+		<pk>false</pk>
+		<type>double</type>
+		<partI>12</partI>
+		<partD>2</partD>
+	</field>
+
+	<field>
+		<name>totaldonaciones</name>
+		<!--Periodos anteriores, deducciones pendientes, periodo actual, deducciones generadas-->
+		<alias>QT_TRANSLATE_NOOP("MetaData","598")</alias>
+		<null>true</null>
+		<pk>false</pk>
+		<type>double</type>
+		<partI>12</partI>
+		<partD>2</partD>
+	</field>
+
+	<field>
+		<name>totaldonacionesapli</name>
+		<!--Aplicado en esta liquidación-->
+		<alias>QT_TRANSLATE_NOOP("MetaData","565")</alias>
+		<null>true</null>
+		<pk>false</pk>
+		<type>double</type>
+		<partI>12</partI>
+		<partD>2</partD>
+	</field>
+	
+	<field>
+		<name>totaldonacionespte</name>
+		<!--Pendiente de aplicación en periodos futuros-->
+		<alias>QT_TRANSLATE_NOOP("MetaData","895")</alias>
+		<null>true</null>
+		<pk>false</pk>
+		<type>double</type>
+		<partI>12</partI>
+		<partD>2</partD>
+	</field>
+
+	<field>
+		<name>donacperiodimp</name>
+		<!--Donaciones del periodo impositivo efectuadas a entidades sin fines de lucro (ley 49/2002)-->
+		<alias>QT_TRANSLATE_NOOP("MetaData","974")</alias>
+		<null>true</null>
+		<pk>false</pk>
+		<type>double</type>
+		<partI>12</partI>
+		<partD>2</partD>
+	</field>
+	
+	<!--Deducciones proyecto cartuja 93. ley 31/1992-->
+	<field>
+		<name>deducejerant</name>
+		<!--Periodos anteriores, deducciones pendientes-->
+		<alias>QT_TRANSLATE_NOOP("MetaData","850")</alias>
+		<null>true</null>
+		<pk>false</pk>
+		<type>double</type>
+		<partI>12</partI>
+		<partD>2</partD>
+	</field>
+
+	<field>
+		<name>deducejerantapli</name>
+		<!--Aplicado en esta liquidación-->
+		<alias>QT_TRANSLATE_NOOP("MetaData","589")</alias>
+		<null>true</null>
+		<pk>false</pk>
+		<type>double</type>
+		<partI>12</partI>
+		<partD>2</partD>
+	</field>
+	
+	<!--Deducciones inversión en Canarias-->
+
+	<field>
+		<name>activofijo01</name>
+		<!--Periodos anteriores, deducciones pendientes, periodo actual, deducciones generadas-->
+		<alias>QT_TRANSLATE_NOOP("MetaData","854")</alias>
+		<null>true</null>
+		<pk>false</pk>
+		<type>double</type>
+		<partI>12</partI>
+		<partD>2</partD>
+	</field>
+
+	<field>
+		<name>activofijo01apli</name>
+		<!--Aplicado en esta liquidación-->
+		<alias>QT_TRANSLATE_NOOP("MetaData","855")</alias>
+		<null>true</null>
+		<pk>false</pk>
+		<type>double</type>
+		<partI>12</partI>
+		<partD>2</partD>
+	</field>
+	
+	<field>
+		<name>activofijo02</name>
+		<!--Periodos anteriores, deducciones pendientes, periodo actual, deducciones generadas-->
+		<alias>QT_TRANSLATE_NOOP("MetaData","857")</alias>
+		<null>true</null>
+		<pk>false</pk>
+		<type>double</type>
+		<partI>12</partI>
+		<partD>2</partD>
+	</field>
+
+	<field>
+		<name>activofijo02apli</name>
+		<!--Aplicado en esta liquidación-->
+		<alias>QT_TRANSLATE_NOOP("MetaData","858")</alias>
+		<null>true</null>
+		<pk>false</pk>
+		<type>double</type>
+		<partI>12</partI>
+		<partD>2</partD>
+	</field>
+	
+	<field>
+		<name>activofijo02pte</name>
+		<!--Pendiente de aplicación en periodos futuros-->
+		<alias>QT_TRANSLATE_NOOP("MetaData","859")</alias>
+		<null>true</null>
+		<pk>false</pk>
+		<type>double</type>
+		<partI>12</partI>
+		<partD>2</partD>
+	</field>
+
+	<field>
+		<name>activofijo03</name>
+		<!--Periodos anteriores, deducciones pendientes, periodo actual, deducciones generadas-->
+		<alias>QT_TRANSLATE_NOOP("MetaData","860")</alias>
+		<null>true</null>
+		<pk>false</pk>
+		<type>double</type>
+		<partI>12</partI>
+		<partD>2</partD>
+	</field>
+
+	<field>
+		<name>activofijo03apli</name>
+		<!--Aplicado en esta liquidación-->
+		<alias>QT_TRANSLATE_NOOP("MetaData","861")</alias>
+		<null>true</null>
+		<pk>false</pk>
+		<type>double</type>
+		<partI>12</partI>
+		<partD>2</partD>
+	</field>
+	
+	<field>
+		<name>activofijo03pte</name>
+		<!--Pendiente de aplicación en periodos futuros-->
+		<alias>QT_TRANSLATE_NOOP("MetaData","862")</alias>
+		<null>true</null>
+		<pk>false</pk>
+		<type>double</type>
+		<partI>12</partI>
+		<partD>2</partD>
+	</field>
+
+	<field>
+		<name>activofijo04</name>
+		<!--Periodos anteriores, deducciones pendientes, periodo actual, deducciones generadas-->
+		<alias>QT_TRANSLATE_NOOP("MetaData","863")</alias>
+		<null>true</null>
+		<pk>false</pk>
+		<type>double</type>
+		<partI>12</partI>
+		<partD>2</partD>
+	</field>
+
+	<field>
+		<name>activofijo04apli</name>
+		<!--Aplicado en esta liquidación-->
+		<alias>QT_TRANSLATE_NOOP("MetaData","864")</alias>
+		<null>true</null>
+		<pk>false</pk>
+		<type>double</type>
+		<partI>12</partI>
+		<partD>2</partD>
+	</field>
+	
+	<field>
+		<name>activofijo04pte</name>
+		<!--Pendiente de aplicación en periodos futuros-->
+		<alias>QT_TRANSLATE_NOOP("MetaData","865")</alias>
+		<null>true</null>
+		<pk>false</pk>
+		<type>double</type>
+		<partI>12</partI>
+		<partD>2</partD>
+	</field>
+
+	<field>
+		<name>activofijo05</name>
+		<!--Periodos anteriores, deducciones pendientes, periodo actual, deducciones generadas-->
+		<alias>QT_TRANSLATE_NOOP("MetaData","883")</alias>
+		<null>true</null>
+		<pk>false</pk>
+		<type>double</type>
+		<partI>12</partI>
+		<partD>2</partD>
+	</field>
+
+	<field>
+		<name>activofijo05apli</name>
+		<!--Aplicado en esta liquidación-->
+		<alias>QT_TRANSLATE_NOOP("MetaData","884")</alias>
+		<null>true</null>
+		<pk>false</pk>
+		<type>double</type>
+		<partI>12</partI>
+		<partD>2</partD>
+	</field>
+	
+	<field>
+		<name>activofijo05pte</name>
+		<!--Pendiente de aplicación en periodos futuros-->
+		<alias>QT_TRANSLATE_NOOP("MetaData","885")</alias>
+		<null>true</null>
+		<pk>false</pk>
+		<type>double</type>
+		<partI>12</partI>
+		<partD>2</partD>
+	</field>
+
+	<field>
+		<name>sumadeduccid</name>
+		<!--Periodos anteriores, deducciones pendientes, periodo actual, deducciones generadas-->
+		<alias>QT_TRANSLATE_NOOP("MetaData","194")</alias>
+		<null>true</null>
+		<pk>false</pk>
+		<type>double</type>
+		<partI>12</partI>
+		<partD>2</partD>
+	</field>
+
+	<field>
+		<name>sumadeduccidapli</name>
+		<!--Aplicado en esta liquidación-->
+		<alias>QT_TRANSLATE_NOOP("MetaData","195")</alias>
+		<null>true</null>
+		<pk>false</pk>
+		<type>double</type>
+		<partI>12</partI>
+		<partD>2</partD>
+	</field>
+	
+	<field>
+		<name>sumadeduccidpte</name>
+		<!--Pendiente de aplicación en periodos futuros-->
+		<alias>QT_TRANSLATE_NOOP("MetaData","196")</alias>
+		<null>true</null>
+		<pk>false</pk>
+		<type>double</type>
+		<partI>12</partI>
+		<partD>2</partD>
+	</field>
+
+	<field>
+		<name>invcanarias97</name>
+		<!--Periodos anteriores, deducciones pendientes, periodo actual, deducciones generadas-->
+		<alias>QT_TRANSLATE_NOOP("MetaData","868")</alias>
+		<null>true</null>
+		<pk>false</pk>
+		<type>double</type>
+		<partI>12</partI>
+		<partD>2</partD>
+	</field>
+
+	<field>
+		<name>invcanarias97apli</name>
+		<!--Aplicado en esta liquidación-->
+		<alias>QT_TRANSLATE_NOOP("MetaData","869")</alias>
+		<null>true</null>
+		<pk>false</pk>
+		<type>double</type>
+		<partI>12</partI>
+		<partD>2</partD>
+	</field>
+	
+	<field>
+		<name>invcanarias97pte</name>
+		<!--Pendiente de aplicación en periodos futuros-->
+		<alias>QT_TRANSLATE_NOOP("MetaData","834")</alias>
+		<null>true</null>
+		<pk>false</pk>
+		<type>double</type>
+		<partI>12</partI>
+		<partD>2</partD>
+	</field>
+
+	<field>
+		<name>invcanarias98</name>
+		<!--Periodos anteriores, deducciones pendientes, periodo actual, deducciones generadas-->
+		<alias>QT_TRANSLATE_NOOP("MetaData","871")</alias>
+		<null>true</null>
+		<pk>false</pk>
+		<type>double</type>
+		<partI>12</partI>
+		<partD>2</partD>
+	</field>
+
+	<field>
+		<name>invcanarias98apli</name>
+		<!--Aplicado en esta liquidación-->
+		<alias>QT_TRANSLATE_NOOP("MetaData","872")</alias>
+		<null>true</null>
+		<pk>false</pk>
+		<type>double</type>
+		<partI>12</partI>
+		<partD>2</partD>
+	</field>
+	
+	<field>
+		<name>invcanarias98pte</name>
+		<!--Pendiente de aplicación en periodos futuros-->
+		<alias>QT_TRANSLATE_NOOP("MetaData","873")</alias>
+		<null>true</null>
+		<pk>false</pk>
+		<type>double</type>
+		<partI>12</partI>
+		<partD>2</partD>
+	</field>
+
+	<field>
+		<name>invcanarias99</name>
+		<!--Periodos anteriores, deducciones pendientes, periodo actual, deducciones generadas-->
+		<alias>QT_TRANSLATE_NOOP("MetaData","874")</alias>
+		<null>true</null>
+		<pk>false</pk>
+		<type>double</type>
+		<partI>12</partI>
+		<partD>2</partD>
+	</field>
+
+	<field>
+		<name>invcanarias99apli</name>
+		<!--Aplicado en esta liquidación-->
+		<alias>QT_TRANSLATE_NOOP("MetaData","875")</alias>
+		<null>true</null>
+		<pk>false</pk>
+		<type>double</type>
+		<partI>12</partI>
+		<partD>2</partD>
+	</field>
+	
+	<field>
+		<name>invcanarias99pte</name>
+		<!--Pendiente de aplicación en periodos futuros-->
+		<alias>QT_TRANSLATE_NOOP("MetaData","876")</alias>
+		<null>true</null>
+		<pk>false</pk>
+		<type>double</type>
+		<partI>12</partI>
+		<partD>2</partD>
+	</field>
+
+	<field>
+		<name>invcanarias00</name>
+		<!--Periodos anteriores, deducciones pendientes, periodo actual, deducciones generadas-->
+		<alias>QT_TRANSLATE_NOOP("MetaData","877")</alias>
+		<null>true</null>
+		<pk>false</pk>
+		<type>double</type>
+		<partI>12</partI>
+		<partD>2</partD>
+	</field>
+
+	<field>
+		<name>invcanarias00apli</name>
+		<!--Aplicado en esta liquidación-->
+		<alias>QT_TRANSLATE_NOOP("MetaData","878")</alias>
+		<null>true</null>
+		<pk>false</pk>
+		<type>double</type>
+		<partI>12</partI>
+		<partD>2</partD>
+	</field>
+	
+	<field>
+		<name>invcanarias00pte</name>
+		<!--Pendiente de aplicación en periodos futuros-->
+		<alias>QT_TRANSLATE_NOOP("MetaData","879")</alias>
+		<null>true</null>
+		<pk>false</pk>
+		<type>double</type>
+		<partI>12</partI>
+		<partD>2</partD>
+	</field>
+
+	<field>
+		<name>invcanarias01</name>
+		<!--Periodos anteriores, deducciones pendientes, periodo actual, deducciones generadas-->
+		<alias>QT_TRANSLATE_NOOP("MetaData","880")</alias>
+		<null>true</null>
+		<pk>false</pk>
+		<type>double</type>
+		<partI>12</partI>
+		<partD>2</partD>
+	</field>
+
+	<field>
+		<name>invcanarias01apli</name>
+		<!--Aplicado en esta liquidación-->
+		<alias>QT_TRANSLATE_NOOP("MetaData","881")</alias>
+		<null>true</null>
+		<pk>false</pk>
+		<type>double</type>
+		<partI>12</partI>
+		<partD>2</partD>
+	</field>
+	
+	<field>
+		<name>invcanarias01pte</name>
+		<!--Pendiente de aplicación en periodos futuros-->
+		<alias>QT_TRANSLATE_NOOP("MetaData","882")</alias>
+		<null>true</null>
+		<pk>false</pk>
+		<type>double</type>
+		<partI>12</partI>
+		<partD>2</partD>
+	</field>
+
+	<field>
+		<name>invcanarias02</name>
+		<!--Periodos anteriores, deducciones pendientes, periodo actual, deducciones generadas-->
+		<alias>QT_TRANSLATE_NOOP("MetaData","866")</alias>
+		<null>true</null>
+		<pk>false</pk>
+		<type>double</type>
+		<partI>12</partI>
+		<partD>2</partD>
+	</field>
+
+	<field>
+		<name>invcanarias02apli</name>
+		<!--Aplicado en esta liquidación-->
+		<alias>QT_TRANSLATE_NOOP("MetaData","867")</alias>
+		<null>true</null>
+		<pk>false</pk>
+		<type>double</type>
+		<partI>12</partI>
+		<partD>2</partD>
+	</field>
+	
+	<field>
+		<name>invcanarias02pte</name>
+		<!--Pendiente de aplicación en periodos futuros-->
+		<alias>QT_TRANSLATE_NOOP("MetaData","870")</alias>
+		<null>true</null>
+		<pk>false</pk>
+		<type>double</type>
+		<partI>12</partI>
+		<partD>2</partD>
+	</field>
+
+	<field>
+		<name>invcanarias03</name>
+		<!--Periodos anteriores, deducciones pendientes, periodo actual, deducciones generadas-->
+		<alias>QT_TRANSLATE_NOOP("MetaData","939")</alias>
+		<null>true</null>
+		<pk>false</pk>
+		<type>double</type>
+		<partI>12</partI>
+		<partD>2</partD>
+	</field>
+
+	<field>
+		<name>invcanarias03apli</name>
+		<!--Aplicado en esta liquidación-->
+		<alias>QT_TRANSLATE_NOOP("MetaData","940")</alias>
+		<null>true</null>
+		<pk>false</pk>
+		<type>double</type>
+		<partI>12</partI>
+		<partD>2</partD>
+	</field>
+	
+	<field>
+		<name>invcanarias03pte</name>
+		<!--Pendiente de aplicación en periodos futuros-->
+		<alias>QT_TRANSLATE_NOOP("MetaData","941")</alias>
+		<null>true</null>
+		<pk>false</pk>
+		<type>double</type>
+		<partI>12</partI>
+		<partD>2</partD>
+	</field>
+
+	<field>
+		<name>invcanarias04</name>
+		<!--Periodos anteriores, deducciones pendientes, periodo actual, deducciones generadas-->
+		<alias>QT_TRANSLATE_NOOP("MetaData","191")</alias>
+		<null>true</null>
+		<pk>false</pk>
+		<type>double</type>
+		<partI>12</partI>
+		<partD>2</partD>
+	</field>
+
+	<field>
+		<name>invcanarias04apli</name>
+		<!--Aplicado en esta liquidación-->
+		<alias>QT_TRANSLATE_NOOP("MetaData","192")</alias>
+		<null>true</null>
+		<pk>false</pk>
+		<type>double</type>
+		<partI>12</partI>
+		<partD>2</partD>
+	</field>
+	
+	<field>
+		<name>invcanarias04pte</name>
+		<!--Pendiente de aplicación en periodos futuros-->
+		<alias>QT_TRANSLATE_NOOP("MetaData","193")</alias>
+		<null>true</null>
+		<pk>false</pk>
+		<type>double</type>
+		<partI>12</partI>
+		<partD>2</partD>
+	</field>
+
+	<field>
+		<name>invcanarias05</name>
+		<!--Periodos anteriores, deducciones pendientes, periodo actual, deducciones generadas-->
+		<alias>QT_TRANSLATE_NOOP("MetaData","613")</alias>
+		<null>true</null>
+		<pk>false</pk>
+		<type>double</type>
+		<partI>12</partI>
+		<partD>2</partD>
+	</field>
+
+	<field>
+		<name>invcanarias05apli</name>
+		<!--Aplicado en esta liquidación-->
+		<alias>QT_TRANSLATE_NOOP("MetaData","614")</alias>
+		<null>true</null>
+		<pk>false</pk>
+		<type>double</type>
+		<partI>12</partI>
+		<partD>2</partD>
+	</field>
+	
+	<field>
+		<name>invcanarias05pte</name>
+		<!--Pendiente de aplicación en periodos futuros-->
+		<alias>QT_TRANSLATE_NOOP("MetaData","701")</alias>
+		<null>true</null>
+		<pk>false</pk>
+		<type>double</type>
+		<partI>12</partI>
+		<partD>2</partD>
+	</field>
+
+	<field>
+		<name>invcanarias06</name>
+		<!--Periodos anteriores, deducciones pendientes, periodo actual, deducciones generadas-->
+		<alias>QT_TRANSLATE_NOOP("MetaData","200")</alias>
+		<null>true</null>
+		<pk>false</pk>
+		<type>double</type>
+		<partI>12</partI>
+		<partD>2</partD>
+	</field>
+
+	<field>
+		<name>invcanarias06apli</name>
+		<!--Aplicado en esta liquidación-->
+		<alias>QT_TRANSLATE_NOOP("MetaData","257")</alias>
+		<null>true</null>
+		<pk>false</pk>
+		<type>double</type>
+		<partI>12</partI>
+		<partD>2</partD>
+	</field>
+	
+	<field>
+		<name>invcanarias06pte</name>
+		<!--Pendiente de aplicación en periodos futuros-->
+		<alias>QT_TRANSLATE_NOOP("MetaData","011")</alias>
+		<null>true</null>
+		<pk>false</pk>
+		<type>double</type>
+		<partI>12</partI>
+		<partD>2</partD>
+	</field>
+
+	<field>
+		<name>activofijo06</name>
+		<!--Periodos anteriores, deducciones pendientes, periodo actual, deducciones generadas-->
+		<alias>QT_TRANSLATE_NOOP("MetaData","852")</alias>
+		<null>true</null>
+		<pk>false</pk>
+		<type>double</type>
+		<partI>12</partI>
+		<partD>2</partD>
+	</field>
+
+	<field>
+		<name>activofijo06apli</name>
+		<!--Aplicado en esta liquidación-->
+		<alias>QT_TRANSLATE_NOOP("MetaData","853")</alias>
+		<null>true</null>
+		<pk>false</pk>
+		<type>double</type>
+		<partI>12</partI>
+		<partD>2</partD>
+	</field>
+	
+	<field>
+		<name>activofijo06pte</name>
+		<!--Pendiente de aplicación en periodos futuros-->
+		<alias>QT_TRANSLATE_NOOP("MetaData","856")</alias>
+		<null>true</null>
+		<pk>false</pk>
+		<type>double</type>
+		<partI>12</partI>
+		<partD>2</partD>
+	</field>
+
+	<field>
+		<name>totalinvcanarias</name>
+		<!--Periodos anteriores, deducciones pendientes, periodo actual, deducciones generadas-->
+		<alias>QT_TRANSLATE_NOOP("MetaData","886")</alias>
+		<null>true</null>
+		<pk>false</pk>
+		<type>double</type>
+		<partI>12</partI>
+		<partD>2</partD>
+	</field>
+
+	<field>
+		<name>totalinvcanariasapli</name>
+		<!--Aplicado en esta liquidación-->
+		<alias>QT_TRANSLATE_NOOP("MetaData","590")</alias>
+		<null>true</null>
+		<pk>false</pk>
+		<type>double</type>
+		<partI>12</partI>
+		<partD>2</partD>
+	</field>
+	
+	<field>
+		<name>totalinvcanariaspte</name>
+		<!--Pendiente de aplicación en periodos futuros-->
+		<alias>QT_TRANSLATE_NOOP("MetaData","887")</alias>
+		<null>true</null>
+		<pk>false</pk>
+		<type>double</type>
+		<partI>12</partI>
+		<partD>2</partD>
+	</field>
+	
+	<!--Determinación de la base imponible de las cooperativas-->
+	<field>
+		<name>ingcompcoop</name>
+		<!--Resultados cooperativos-->
+		<alias>QT_TRANSLATE_NOOP("MetaData","C1")</alias>
+		<null>true</null>
+		<pk>false</pk>
+		<type>double</type>
+		<partI>12</partI>
+		<partD>2</partD>
+	</field>
+	
+	<field>
+		<name>ingcompexcoop</name>
+		<!--Resultados extracooperativos-->
+		<alias>QT_TRANSLATE_NOOP("MetaData","E1")</alias>
+		<null>true</null>
+		<pk>false</pk>
+		<type>double</type>
+		<partI>12</partI>
+		<partD>2</partD>
+	</field>
+	
+	<field>
+		<name>gastosespcoop</name>
+		<!--Resultados cooperativos-->
+		<alias>QT_TRANSLATE_NOOP("MetaData","C2")</alias>
+		<null>true</null>
+		<pk>false</pk>
+		<type>double</type>
+		<partI>12</partI>
+		<partD>2</partD>
+	</field>
+	
+	<field>
+		<name>gastosespexcoop</name>
+		<!--Resultados extracooperativos-->
+		<alias>QT_TRANSLATE_NOOP("MetaData","E2")</alias>
+		<null>true</null>
+		<pk>false</pk>
+		<type>double</type>
+		<partI>12</partI>
+		<partD>2</partD>
+	</field>
+	
+	<field>
+		<name>gastosgenecoop</name>
+		<!--Resultados cooperativos-->
+		<alias>QT_TRANSLATE_NOOP("MetaData","C3")</alias>
+		<null>true</null>
+		<pk>false</pk>
+		<type>double</type>
+		<partI>12</partI>
+		<partD>2</partD>
+	</field>
+	
+	<field>
+		<name>gastosgeneexcoop</name>
+		<!--Resultados extracooperativos-->
+		<alias>QT_TRANSLATE_NOOP("MetaData","E3")</alias>
+		<null>true</null>
+		<pk>false</pk>
+		<type>double</type>
+		<partI>12</partI>
+		<partD>2</partD>
+	</field>
+	
+	<field>
+		<name>incydismexcoop</name>
+		<!--Resultados extracooperativos-->
+		<alias>QT_TRANSLATE_NOOP("MetaData","E4")</alias>
+		<null>true</null>
+		<pk>false</pk>
+		<type>double</type>
+		<partI>12</partI>
+		<partD>2</partD>
+	</field>
+	
+	<field>
+		<name>resultadocoop</name>
+		<!--Resultados cooperativos-->
+		<alias>QT_TRANSLATE_NOOP("MetaData","C5")</alias>
+		<null>true</null>
+		<pk>false</pk>
+		<type>double</type>
+		<partI>12</partI>
+		<partD>2</partD>
+	</field>
+	
+	<field>
+		<name>resultadosexcoop</name>
+		<!--Resultados extracooperativos-->
+		<alias>QT_TRANSLATE_NOOP("MetaData","E5")</alias>
+		<null>true</null>
+		<pk>false</pk>
+		<type>double</type>
+		<partI>12</partI>
+		<partD>2</partD>
+	</field>
+
+	<field>
+		<name>aumentoscoop</name>
+		<!--Resultados cooperativos-->
+		<alias>QT_TRANSLATE_NOOP("MetaData","C6")</alias>
+		<null>true</null>
+		<pk>false</pk>
+		<type>double</type>
+		<partI>12</partI>
+		<partD>2</partD>
+	</field>
+	
+	<field>
+		<name>aumentosexcoop</name>
+		<!--Resultados extracooperativos-->
+		<alias>QT_TRANSLATE_NOOP("MetaData","E6")</alias>
+		<null>true</null>
+		<pk>false</pk>
+		<type>double</type>
+		<partI>12</partI>
+		<partD>2</partD>
+	</field>
+
+	<field>
+		<name>disminucionescoop</name>
+		<!--Resultados cooperativos-->
+		<alias>QT_TRANSLATE_NOOP("MetaData","C7")</alias>
+		<null>true</null>
+		<pk>false</pk>
+		<type>double</type>
+		<partI>12</partI>
+		<partD>2</partD>
+	</field>
+	
+	<field>
+		<name>disminucionesexcoop</name>
+		<!--Resultados extracooperativos-->
+		<alias>QT_TRANSLATE_NOOP("MetaData","E7")</alias>
+		<null>true</null>
+		<pk>false</pk>
+		<type>double</type>
+		<partI>12</partI>
+		<partD>2</partD>
+	</field>
+
+	<field>
+		<name>dotobligatoriacoop</name>
+		<!--Resultados cooperativos-->
+		<alias>QT_TRANSLATE_NOOP("MetaData","C8")</alias>
+		<null>true</null>
+		<pk>false</pk>
+		<type>double</type>
+		<partI>12</partI>
+		<partD>2</partD>
+	</field>
+	
+	<field>
+		<name>dotobligatoriaexcoop</name>
+		<!--Resultados extracooperativos-->
+		<alias>QT_TRANSLATE_NOOP("MetaData","E8")</alias>
+		<null>true</null>
+		<pk>false</pk>
+		<type>double</type>
+		<partI>12</partI>
+		<partD>2</partD>
+	</field>
+
+	<field>
+		<name>reservacoop</name>
+		<!--Resultados cooperativos-->
+		<alias>QT_TRANSLATE_NOOP("MetaData","C9")</alias>
+		<null>true</null>
+		<pk>false</pk>
+		<type>double</type>
+		<partI>12</partI>
+		<partD>2</partD>
+	</field>
+	
+	<field>
+		<name>agotamientocoop</name>
+		<!--Resultados cooperativos-->
+		<alias>QT_TRANSLATE_NOOP("MetaData","C10")</alias>
+		<null>true</null>
+		<pk>false</pk>
+		<type>double</type>
+		<partI>12</partI>
+		<partD>2</partD>
+	</field>
+	
+	<field>
+		<name>agotamientoexcoop</name>
+		<!--Resultados extracooperativos-->
+		<alias>QT_TRANSLATE_NOOP("MetaData","E10")</alias>
+		<null>true</null>
+		<pk>false</pk>
+		<type>double</type>
+		<partI>12</partI>
+		<partD>2</partD>
+	</field>
+
+	<field>
+		<name>baseimpcoop</name>
+		<!--Resultados cooperativos-->
+		<alias>QT_TRANSLATE_NOOP("MetaData","553")</alias>
+		<null>true</null>
+		<pk>false</pk>
+		<type>double</type>
+		<partI>12</partI>
+		<partD>2</partD>
+	</field>
+	
+	<field>
+		<name>baseimpexcoop</name>
+		<!--Resultados extracooperativos-->
+		<alias>QT_TRANSLATE_NOOP("MetaData","554")</alias>
+		<null>true</null>
+		<pk>false</pk>
+		<type>double</type>
+		<partI>12</partI>
+		<partD>2</partD>
+	</field>
+
+	<!--Regimen especial de las fusiones, escisiones, aportaciones de activo y canje de valores-->
+	<field>
+		<name>tipooperacion</name>
+		<!--Resultados extracooperativos-->
+		<alias>QT_TRANSLATE_NOOP("MetaData","")</alias>
+		<null>true</null>
+		<pk>false</pk>
+		<type>string</type>
+		<length>5</length>
+		<optionslist>QT_TRANSLATE_NOOP("MetaData","A");QT_TRANSLATE_NOOP("MetaData","B");QT_TRANSLATE_NOOP("MetaData","C")</optionslist>
+		<default>QT_TRANSLATE_NOOP("MetaData","A")</default>
+	</field>
+
+	<field>
+		<name>niftransmitente</name>
+		<alias>QT_TRANSLATE_NOOP("MetaData","NIF")</alias>
+		<null>true</null>
+		<pk>false</pk>
+		<type>string</type>
+		<length>12</length>
+	</field>
+
+	<field>
+		<name>denomtransmitente</name>
+		<alias>QT_TRANSLATE_NOOP("MetaData","Denominación social")</alias>
+		<null>true</null>
+		<pk>false</pk>
+		<type>string</type>
+		<length>100</length>
+	</field>
+
+	<field>
+		<name>nifadquirente</name>
+		<alias>QT_TRANSLATE_NOOP("MetaData","NIF")</alias>
+		<null>true</null>
+		<pk>false</pk>
+		<type>string</type>
+		<length>12</length>
+	</field>
+
+	<field>
+		<name>denomadquirente</name>
+		<alias>QT_TRANSLATE_NOOP("MetaData","Denominación social")</alias>
+		<null>true</null>
+		<pk>false</pk>
+		<type>string</type>
+		<length>100</length>
+	</field>
+
+	<field>
+		<name>fechaacuerdos</name>
+		<alias>QT_TRANSLATE_NOOP("MetaData","")</alias>
+		<null>true</null>
+		<pk>false</pk>
+		<type>string</type>
+		<length>100</length>
+	</field>
+
+	<field>
+		<name>accionesentregadas</name>
+		<!--Valor de las acciones entregadas -->
+		<alias>QT_TRANSLATE_NOOP("MetaData","634")</alias>
+		<null>true</null>
+		<pk>false</pk>
+		<type>double</type>
+		<partI>12</partI>
+		<partD>2</partD>
+	</field>
+
+	<field>
+		<name>accionesrecibidas</name>
+		<!--Valor de las acciones recibidas -->
+		<alias>QT_TRANSLATE_NOOP("MetaData","635")</alias>
+		<null>true</null>
+		<pk>false</pk>
+		<type>double</type>
+		<partI>12</partI>
+		<partD>2</partD>
+	</field>
+
+	<field>
+		<name>importerentas</name>
+		<!--Importe de las rentas no integradas en la base imponible de declarante-->
+		<alias>QT_TRANSLATE_NOOP("MetaData","636")</alias>
+		<null>true</null>
+		<pk>false</pk>
+		<type>double</type>
+		<partI>12</partI>
+		<partD>2</partD>
+	</field>
+
+</TMD>

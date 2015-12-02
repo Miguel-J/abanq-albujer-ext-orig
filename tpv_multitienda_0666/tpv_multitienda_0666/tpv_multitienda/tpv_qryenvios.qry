@@ -1,0 +1,11 @@
+<!DOCTYPE QRY>
+<QRY>
+	<name>tpv_qryrecepciones</name>
+
+	<tables>tpv_lineasmultitransstock</tables>
+
+	<select>tpv_lineasmultitransstock.*</select>
+
+	<from>tpv_lineasmultitransstock INNER JOIN tpv_viajesmultitransstock ON tpv_lineasmultitransstock.idviajemultitrans = tpv_viajesmultitransstock.idviajemultitrans</from>
+
+</QRY>

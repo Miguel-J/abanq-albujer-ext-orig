@@ -1,0 +1,81 @@
+<xupdate:modifications>
+<xupdate:update select="/UI[UI,1]/widget[QWidget,Form1]/property[geometry]/rect[rect,1]/height[height,1]/text()[1]" >313</xupdate:update>
+<xupdate:update select="/UI[UI,1]/widget[QWidget,Form1]/property[geometry]/rect[rect,1]/width[width,1]/text()[1]" >755</xupdate:update>
+<xupdate:update select="/UI[UI,1]/widget[QWidget,Form1]/vbox[vbox,1]/widget[QLayoutWidget,layout204]/hbox[hbox,1]/widget[FLFieldDB,fdbCifNif]/property[minimumSize]/size[size,1]/height[height,1]/text()[1]" >24</xupdate:update>
+<xupdate:update select="/UI[UI,1]/widget[QWidget,Form1]/vbox[vbox,1]/widget[QLayoutWidget,layout204]/hbox[hbox,1]/widget[FLFieldDB,fdbCifNif]/property[minimumSize]/size[size,1]/width[width,1]/text()[1]" >86</xupdate:update>
+<xupdate:update select="/UI[UI,1]/widget[QWidget,Form1]/vbox[vbox,1]/widget[QLayoutWidget,layout204]/hbox[hbox,1]/widget[FLFieldDB,fdbPersonaFisica]/property[minimumSize]/size[size,1]/height[height,1]/text()[1]" >24</xupdate:update>
+<xupdate:update select="/UI[UI,1]/widget[QWidget,Form1]/vbox[vbox,1]/widget[QLayoutWidget,layout204]/hbox[hbox,1]/widget[FLFieldDB,fdbPersonaFisica]/property[minimumSize]/size[size,1]/width[width,1]/text()[1]" >140</xupdate:update>
+<xupdate:delete select="/UI[UI,1]/widget[QWidget,Form1]/vbox[vbox,1]/widget[QLayoutWidget,layout205]" />
+<xupdate:insert-after select="/UI[UI,1]/widget[QWidget,Form1]/vbox[vbox,1]/widget[FLFieldDB,fdbApellidosRS]" >
+<widget class="QLayoutWidget" >
+<property name="name" >
+<cstring>layout268</cstring>
+</property>
+<hbox>
+<property name="name" >
+<cstring>unnamed</cstring>
+</property>
+<widget class="FLFieldDB" >
+<property name="name" >
+<cstring>fdbApellidosPF</cstring>
+</property>
+<property name="minimumSize" >
+<size>
+<width>125</width>
+<height>24</height>
+</size>
+</property>
+<property name="maximumSize" >
+<size>
+<width>32767</width>
+<height>32767</height>
+</size>
+</property>
+<property name="fieldName" >
+<string>apellidospf</string>
+</property>
+</widget>
+<widget class="FLFieldDB" >
+<property name="name" >
+<cstring>fdbApellidosPF_2</cstring>
+</property>
+<property name="minimumSize" >
+<size>
+<width>133</width>
+<height>24</height>
+</size>
+</property>
+<property name="maximumSize" >
+<size>
+<width>32767</width>
+<height>32767</height>
+</size>
+</property>
+<property name="fieldName" >
+<string>apellidospf2</string>
+</property>
+</widget>
+<widget class="FLFieldDB" >
+<property name="name" >
+<cstring>fdbNombrePF</cstring>
+</property>
+<property name="minimumSize" >
+<size>
+<width>116</width>
+<height>24</height>
+</size>
+</property>
+<property name="maximumSize" >
+<size>
+<width>32767</width>
+<height>32767</height>
+</size>
+</property>
+<property name="fieldName" >
+<string>nombrepf</string>
+</property>
+</widget>
+</hbox>
+</widget>
+</xupdate:insert-after>
+</xupdate:modifications>

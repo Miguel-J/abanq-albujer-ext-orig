@@ -1,0 +1,14 @@
+<xupdate:modifications>
+<xupdate:insert-after select="/ACTIONS[ACTIONS,1]/action[co_i_cuentasanuales]" >
+<action>
+<name>co_libroscontables</name>
+<description>QT_TRANSLATE_NOOP(&quot;MetaData&quot;,&quot;Libros contables&quot;)</description>
+<alias>QT_TRANSLATE_NOOP(&quot;MetaData&quot;,&quot;Libros contables&quot;)</alias>
+<table>co_i_cuentasanuales</table>
+<form>co_masterlibroscontables</form>
+<formrecord>co_libroscontables</formrecord>
+<scriptform>co_masterlibroscontables</scriptform>
+<scriptformrecord>co_libroscontables</scriptformrecord>
+</action>
+</xupdate:insert-after>
+</xupdate:modifications>

@@ -1,0 +1,91 @@
+<xupdate:modifications>
+<xupdate:insert-after select="/TMD[TMD,1]/field[codtienda]/relation[tpv_agentes,codtienda]" >
+<relation>
+<table>tpv_datosgenerales</table>
+<field>codtiendalocal</field>
+<card>1M</card>
+</relation>
+</xupdate:insert-after>
+<xupdate:insert-after select="/TMD[TMD,1]/field[observaciones]" >
+<field>
+<name>basedatos</name>
+<alias>QT_TRANSLATE_NOOP(&quot;MetaData&quot;,&quot;Base de datos&quot;)</alias>
+<null>true</null>
+<pk>false</pk>
+<type>string</type>
+<length>50</length>
+</field>
+</xupdate:insert-after>
+<xupdate:insert-after select="/TMD[TMD,1]/field[basedatos]" >
+<field>
+<name>driver</name>
+<alias>QT_TRANSLATE_NOOP(&quot;MetaData&quot;,&quot;Driver&quot;)</alias>
+<null>false</null>
+<pk>false</pk>
+<type>string</type>
+<length>50</length>
+<optionslist>PostgreSQL,MySQL</optionslist>
+<default>PostgreSQL</default>
+</field>
+</xupdate:insert-after>
+<xupdate:insert-after select="/TMD[TMD,1]/field[driver]" >
+<field>
+<name>puerto</name>
+<alias>QT_TRANSLATE_NOOP(&quot;MetaData&quot;,&quot;Puerto&quot;)</alias>
+<null>true</null>
+<pk>false</pk>
+<type>string</type>
+<length>4</length>
+</field>
+</xupdate:insert-after>
+<xupdate:insert-after select="/TMD[TMD,1]/field[puerto]" >
+<field>
+<name>servidor</name>
+<alias>QT_TRANSLATE_NOOP(&quot;MetaData&quot;,&quot;Servidor&quot;)</alias>
+<null>true</null>
+<pk>false</pk>
+<type>string</type>
+<length>50</length>
+</field>
+</xupdate:insert-after>
+<xupdate:insert-after select="/TMD[TMD,1]/field[servidor]" >
+<field>
+<name>usuario</name>
+<alias>QT_TRANSLATE_NOOP(&quot;MetaData&quot;,&quot;Usuario&quot;)</alias>
+<null>true</null>
+<pk>false</pk>
+<type>string</type>
+<length>50</length>
+</field>
+</xupdate:insert-after>
+<xupdate:insert-after select="/TMD[TMD,1]/field[usuario]" >
+<field>
+<name>contrasena</name>
+<alias>QT_TRANSLATE_NOOP(&quot;MetaData&quot;,&quot;Contraseña&quot;)</alias>
+<null>true</null>
+<pk>false</pk>
+<type>string</type>
+<length>50</length>
+</field>
+</xupdate:insert-after>
+<xupdate:insert-after select="/TMD[TMD,1]/field[contrasena]" >
+<field>
+<name>sincrocatauto</name>
+<alias>QT_TRANSLATE_NOOP(&quot;MetaData&quot;,&quot;Sincronizar catálogo al entrar en TPV&quot;)</alias>
+<null>true</null>
+<pk>false</pk>
+<type>bool</type>
+<default>false</default>
+</field>
+</xupdate:insert-after>
+<xupdate:insert-after select="/TMD[TMD,1]/field[sincrocatauto]" >
+<field>
+<name>ultsincrocat</name>
+<alias>QT_TRANSLATE_NOOP(&quot;MetaData&quot;,&quot;Última Sincro.&quot;)</alias>
+<null>true</null>
+<pk>false</pk>
+<type>date</type>
+<editable>false</editable>
+</field>
+</xupdate:insert-after>
+</xupdate:modifications>

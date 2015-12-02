@@ -1,0 +1,10 @@
+<flpatch:modifications name="eti_articulo" >
+    <flpatch:patchScript path="facturacion/almacen/scripts/" name="flfactalma.qs" />
+    <flpatch:patchScript path="facturacion/facturacion/scripts/" name="masteralbaranesprov.qs" />
+    <flpatch:addFile path="facturacion/informes/reports/" name="i_a4_4x11.kut" />
+    <flpatch:patchXml path="facturacion/facturacion/forms/" name="masteralbaranesprov.ui" />
+    <flpatch:patchScript path="facturacion/almacen/scripts/" name="masterarticulos.qs" />
+    <flpatch:patchXml path="facturacion/almacen/forms/" name="masterarticulos.ui" />
+    <flpatch:patchXml path="facturacion/facturacion/forms/" name="masterpedidosprov.ui" />
+    <flpatch:patchScript path="facturacion/facturacion/scripts/" name="masterpedidosprov.qs" />
+</flpatch:modifications>

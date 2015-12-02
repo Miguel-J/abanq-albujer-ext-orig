@@ -1,0 +1,237 @@
+<xupdate:modifications>
+<xupdate:update select="/UI[UI,1]/widget[QWidget,lotesstock]/property[property,2]/rect[rect,1]/height[height,1]/text()[1]" >572</xupdate:update>
+<xupdate:insert-after select="/UI[UI,1]/widget[QWidget,lotesstock]/vbox[vbox,1]/widget[QGroupBox,gbxCantidad]/hbox[hbox,1]/property[property,1]" >
+<property name="margin" >
+<number>4</number>
+</property>
+</xupdate:insert-after>
+<xupdate:insert-after select="/UI[UI,1]/widget[QWidget,lotesstock]/vbox[vbox,1]/widget[QGroupBox,gbxCantidad]/hbox[hbox,1]/property[property,2]" >
+<property name="spacing" >
+<number>3</number>
+</property>
+</xupdate:insert-after>
+<xupdate:insert-after select="/UI[UI,1]/widget[QWidget,lotesstock]/vbox[vbox,1]/widget[QGroupBox,gbxLote]/vbox[vbox,1]/property[property,1]" >
+<property name="margin" >
+<number>4</number>
+</property>
+</xupdate:insert-after>
+<xupdate:insert-after select="/UI[UI,1]/widget[QWidget,lotesstock]/vbox[vbox,1]/widget[QGroupBox,gbxLote]/vbox[vbox,1]/property[property,2]" >
+<property name="spacing" >
+<number>3</number>
+</property>
+</xupdate:insert-after>
+<xupdate:insert-after select="/UI[UI,1]/widget[QWidget,lotesstock]/vbox[vbox,1]/widget[QTabWidget,tbwLotesStock]/widget[QWidget,TabPageEstado]/vbox[vbox,1]/widget[QGroupBox,gbxEstado]/vbox[vbox,1]/property[property,1]" >
+<property name="margin" >
+<number>4</number>
+</property>
+</xupdate:insert-after>
+<xupdate:insert-after select="/UI[UI,1]/widget[QWidget,lotesstock]/vbox[vbox,1]/widget[QTabWidget,tbwLotesStock]/widget[QWidget,TabPageEstado]/vbox[vbox,1]/widget[QGroupBox,gbxEstado]/vbox[vbox,1]/property[property,2]" >
+<property name="spacing" >
+<number>3</number>
+</property>
+</xupdate:insert-after>
+<xupdate:insert-after select="/UI[UI,1]/widget[QWidget,lotesstock]/vbox[vbox,1]/widget[QTabWidget,tbwLotesStock]/widget[QWidget,consumos]/vbox[vbox,1]/widget[QGroupBox,gbxMoviStock_2]/vbox[vbox,1]/property[property,1]" >
+<property name="margin" >
+<number>4</number>
+</property>
+</xupdate:insert-after>
+<xupdate:insert-after select="/UI[UI,1]/widget[QWidget,lotesstock]/vbox[vbox,1]/widget[QTabWidget,tbwLotesStock]/widget[QWidget,consumos]/vbox[vbox,1]/widget[QGroupBox,gbxMoviStock_2]/vbox[vbox,1]/property[property,2]" >
+<property name="spacing" >
+<number>3</number>
+</property>
+</xupdate:insert-after>
+<xupdate:insert-after select="/UI[UI,1]/widget[QWidget,lotesstock]/vbox[vbox,1]/widget[QTabWidget,tbwLotesStock]/widget[QWidget,movimientos]/vbox[vbox,1]/widget[QGroupBox,gbxMoviStock]/vbox[vbox,1]/property[property,1]" >
+<property name="margin" >
+<number>4</number>
+</property>
+</xupdate:insert-after>
+<xupdate:insert-after select="/UI[UI,1]/widget[QWidget,lotesstock]/vbox[vbox,1]/widget[QTabWidget,tbwLotesStock]/widget[QWidget,movimientos]/vbox[vbox,1]/widget[QGroupBox,gbxMoviStock]/vbox[vbox,1]/property[property,2]" >
+<property name="spacing" >
+<number>3</number>
+</property>
+</xupdate:insert-after>
+<xupdate:insert-after select="/UI[UI,1]/widget[QWidget,lotesstock]/vbox[vbox,1]/property[property,1]" >
+<property name="spacing" >
+<number>3</number>
+</property>
+</xupdate:insert-after>
+<xupdate:insert-after select="/UI[UI,1]/widget[QWidget,lotesstock]/vbox[vbox,1]/widget[QGroupBox,gbxCantidad]" >
+<widget class="QGroupBox" >
+<property name="name" >
+<cstring>gbxSofa</cstring>
+</property>
+<property name="font" >
+<font>
+<bold>1</bold>
+<italic>1</italic>
+</font>
+</property>
+<property name="title" >
+<string>&amp;Pedido</string>
+</property>
+<hbox>
+<property name="name" >
+<cstring>unnamed</cstring>
+</property>
+<property name="margin" >
+<number>4</number>
+</property>
+<property name="spacing" >
+<number>3</number>
+</property>
+<widget class="QLabel" >
+<property name="name" >
+<cstring>lblPedido</cstring>
+</property>
+<property name="text" >
+<string/>
+</property>
+<property name="alignment" >
+<set>AlignCenter</set>
+</property>
+</widget>
+</hbox>
+</widget>
+</xupdate:insert-after>
+<xupdate:insert-after select="/UI[UI,1]/widget[QWidget,lotesstock]/vbox[vbox,1]/widget[QGroupBox,gbxSofa]" >
+<widget class="QGroupBox" >
+<property name="name" >
+<cstring>gbxObservaciones</cstring>
+</property>
+<property name="font" >
+<font>
+<bold>1</bold>
+<italic>1</italic>
+</font>
+</property>
+<property name="title" >
+<string>&amp;Observaciones</string>
+</property>
+<vbox>
+<property name="name" >
+<cstring>unnamed</cstring>
+</property>
+<property name="margin" >
+<number>4</number>
+</property>
+<property name="spacing" >
+<number>3</number>
+</property>
+<widget class="FLFieldDB" >
+<property name="name" >
+<cstring>fdbObservMontaje</cstring>
+</property>
+<property name="sizePolicy" >
+<sizepolicy>
+<hsizetype>1</hsizetype>
+<vsizetype>0</vsizetype>
+<horstretch>0</horstretch>
+<verstretch>0</verstretch>
+</sizepolicy>
+</property>
+<property name="minimumSize" >
+<size>
+<width>150</width>
+<height>25</height>
+</size>
+</property>
+<property name="font" >
+<font>
+<bold>0</bold>
+<italic>0</italic>
+</font>
+</property>
+<property name="fieldName" >
+<string>observacionesmontaje</string>
+</property>
+</widget>
+<widget class="FLFieldDB" >
+<property name="name" >
+<cstring>fdbObservCorte</cstring>
+</property>
+<property name="sizePolicy" >
+<sizepolicy>
+<hsizetype>1</hsizetype>
+<vsizetype>0</vsizetype>
+<horstretch>0</horstretch>
+<verstretch>0</verstretch>
+</sizepolicy>
+</property>
+<property name="minimumSize" >
+<size>
+<width>150</width>
+<height>25</height>
+</size>
+</property>
+<property name="font" >
+<font>
+<bold>0</bold>
+<italic>0</italic>
+</font>
+</property>
+<property name="fieldName" >
+<string>observacionescorte</string>
+</property>
+</widget>
+</vbox>
+</widget>
+</xupdate:insert-after>
+<xupdate:delete select="/UI[UI,1]/includehints[includehints,1]/includehint[FLFieldDB.h]" />
+<xupdate:delete select="/UI[UI,1]/includehints[includehints,1]/includehint[FLFieldDB.h]" />
+<xupdate:delete select="/UI[UI,1]/includehints[includehints,1]/includehint[FLFieldDB.h]" />
+<xupdate:delete select="/UI[UI,1]/includehints[includehints,1]/includehint[FLFieldDB.h]" />
+<xupdate:delete select="/UI[UI,1]/includehints[includehints,1]/includehint[FLFieldDB.h]" />
+<xupdate:delete select="/UI[UI,1]/includehints[includehints,1]/includehint[FLFieldDB.h]" />
+<xupdate:delete select="/UI[UI,1]/includehints[includehints,1]/includehint[FLFieldDB.h]" />
+<xupdate:delete select="/UI[UI,1]/includehints[includehints,1]/includehint[FLFieldDB.h]" />
+<xupdate:delete select="/UI[UI,1]/includehints[includehints,1]/includehint[FLFieldDB.h]" />
+<xupdate:delete select="/UI[UI,1]/includehints[includehints,1]/includehint[FLFieldDB.h]" />
+<xupdate:delete select="/UI[UI,1]/includehints[includehints,1]/includehint[FLFieldDB.h]" />
+<xupdate:delete select="/UI[UI,1]/includehints[includehints,1]/includehint[FLTableDB.h]" />
+<xupdate:delete select="/UI[UI,1]/includehints[includehints,1]/includehint[FLTableDB.h]" />
+<xupdate:append-first select="/UI[UI,1]/includehints[includehints,1]" >
+<includehint>flfielddb.h</includehint>
+</xupdate:append-first>
+<xupdate:insert-after select="/UI[UI,1]/includehints[includehints,1]/includehint[flfielddb.h]" >
+<includehint>flfielddb.h</includehint>
+</xupdate:insert-after>
+<xupdate:insert-after select="/UI[UI,1]/includehints[includehints,1]/includehint[flfielddb.h]" >
+<includehint>flfielddb.h</includehint>
+</xupdate:insert-after>
+<xupdate:insert-after select="/UI[UI,1]/includehints[includehints,1]/includehint[flfielddb.h]" >
+<includehint>flfielddb.h</includehint>
+</xupdate:insert-after>
+<xupdate:insert-after select="/UI[UI,1]/includehints[includehints,1]/includehint[flfielddb.h]" >
+<includehint>flfielddb.h</includehint>
+</xupdate:insert-after>
+<xupdate:insert-after select="/UI[UI,1]/includehints[includehints,1]/includehint[flfielddb.h]" >
+<includehint>flfielddb.h</includehint>
+</xupdate:insert-after>
+<xupdate:insert-after select="/UI[UI,1]/includehints[includehints,1]/includehint[flfielddb.h]" >
+<includehint>flfielddb.h</includehint>
+</xupdate:insert-after>
+<xupdate:insert-after select="/UI[UI,1]/includehints[includehints,1]/includehint[flfielddb.h]" >
+<includehint>flfielddb.h</includehint>
+</xupdate:insert-after>
+<xupdate:insert-after select="/UI[UI,1]/includehints[includehints,1]/includehint[flfielddb.h]" >
+<includehint>flfielddb.h</includehint>
+</xupdate:insert-after>
+<xupdate:insert-after select="/UI[UI,1]/includehints[includehints,1]/includehint[flfielddb.h]" >
+<includehint>flfielddb.h</includehint>
+</xupdate:insert-after>
+<xupdate:insert-after select="/UI[UI,1]/includehints[includehints,1]/includehint[flfielddb.h]" >
+<includehint>flfielddb.h</includehint>
+</xupdate:insert-after>
+<xupdate:insert-after select="/UI[UI,1]/includehints[includehints,1]/includehint[flfielddb.h]" >
+<includehint>flfielddb.h</includehint>
+</xupdate:insert-after>
+<xupdate:insert-after select="/UI[UI,1]/includehints[includehints,1]/includehint[flfielddb.h]" >
+<includehint>flfielddb.h</includehint>
+</xupdate:insert-after>
+<xupdate:insert-after select="/UI[UI,1]/includehints[includehints,1]/includehint[flfielddb.h]" >
+<includehint>fltabledb.h</includehint>
+</xupdate:insert-after>
+<xupdate:insert-after select="/UI[UI,1]/includehints[includehints,1]/includehint[fltabledb.h]" >
+<includehint>fltabledb.h</includehint>
+</xupdate:insert-after>
+</xupdate:modifications>

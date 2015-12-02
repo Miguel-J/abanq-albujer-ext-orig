@@ -1,0 +1,26 @@
+<xupdate:modifications>
+<xupdate:insert-after select="/TMD[TMD,1]/field[codcliente]" >
+<field>
+<name>codruta</name>
+<alias>QT_TRANSLATE_NOOP(&quot;MetaData&quot;,&quot;Ruta&quot;)</alias>
+<null>true</null>
+<pk>false</pk>
+<type>string</type>
+<length>15</length>
+<relation>
+<table>rutas</table>
+<field>codruta</field>
+<card>M1</card>
+</relation>
+</field>
+</xupdate:insert-after>
+<xupdate:insert-after select="/TMD[TMD,1]/field[codruta]" >
+<field>
+<name>ordenruta</name>
+<alias>QT_TRANSLATE_NOOP(&quot;MetaData&quot;,&quot;Orden&quot;)</alias>
+<null>true</null>
+<pk>false</pk>
+<type>uint</type>
+</field>
+</xupdate:insert-after>
+</xupdate:modifications>

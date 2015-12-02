@@ -1,0 +1,50 @@
+<xupdate:modifications>
+<xupdate:update select="/TMD[TMD,1]/field[descripcion]/length[length,1]/text()[1]" >200</xupdate:update>
+<xupdate:insert-after select="/TMD[TMD,1]/field[idlinea]/visiblegrid[visiblegrid,1]" >
+<relation>
+<table>lineasfacturabeca</table>
+<field>idlineafactura</field>
+<card>1M</card>
+</relation>
+</xupdate:insert-after>
+<xupdate:insert-after select="/TMD[TMD,1]/field[idalbaran]" >
+<field>
+<name>codalumno</name>
+<alias>QT_TRANSLATE_NOOP(&quot;MetaData&quot;,&quot;Alumno&quot;)</alias>
+<null>true</null>
+<pk>false</pk>
+<type>string</type>
+<length>10</length>
+</field>
+</xupdate:insert-after>
+<xupdate:insert-after select="/TMD[TMD,1]/field[codalumno]" >
+<field>
+<name>codactividad</name>
+<alias>QT_TRANSLATE_NOOP(&quot;MetaData&quot;,&quot;Actividad&quot;)</alias>
+<null>true</null>
+<pk>false</pk>
+<type>string</type>
+<length>25</length>
+</field>
+</xupdate:insert-after>
+<xupdate:insert-after select="/TMD[TMD,1]/field[codactividad]" >
+<field>
+<name>codbecador</name>
+<alias>QT_TRANSLATE_NOOP(&quot;MetaData&quot;,&quot;Becador&quot;)</alias>
+<null>true</null>
+<pk>false</pk>
+<type>string</type>
+<length>6</length>
+</field>
+</xupdate:insert-after>
+<xupdate:insert-after select="/TMD[TMD,1]/field[codbecador]" >
+<field>
+<name>codtarifa</name>
+<alias>QT_TRANSLATE_NOOP(&quot;MetaData&quot;,&quot;Tarifa&quot;)</alias>
+<null>true</null>
+<pk>false</pk>
+<type>string</type>
+<length>6</length>
+</field>
+</xupdate:insert-after>
+</xupdate:modifications>

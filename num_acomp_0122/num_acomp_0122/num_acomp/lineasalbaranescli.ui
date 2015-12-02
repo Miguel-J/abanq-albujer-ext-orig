@@ -1,0 +1,508 @@
+<xupdate:modifications>
+<xupdate:update select="/UI[UI,1]/widget[QWidget,formLineasAlbaranesCli]/property[property,2]/rect[rect,1]/height[height,1]/text()[1]" >557</xupdate:update>
+<xupdate:delete select="/UI[UI,1]/widget[QWidget,formLineasAlbaranesCli]/vbox[vbox,1]/widget[QGroupBox,groupBox7_2]/hbox[hbox,1]" />
+<xupdate:update select="/UI[UI,1]/widget[QWidget,formLineasAlbaranesCli]/vbox[vbox,1]/widget[QGroupBox,groupBox7_2]/property[property,3]/string[string,1]/text()[1]" >Números de Serie</xupdate:update>
+<xupdate:insert-after select="/UI[UI,1]/widget[QWidget,formLineasAlbaranesCli]/vbox[vbox,1]/widget[QGroupBox,groupBox7_2]/property[property,3]" >
+<vbox>
+<property name="name" >
+<cstring>unnamed</cstring>
+</property>
+<widget class="QLayoutWidget" >
+<property name="name" >
+<cstring>layout35</cstring>
+</property>
+<hbox>
+<property name="name" >
+<cstring>unnamed</cstring>
+</property>
+<widget class="FLFieldDB" >
+<property name="name" >
+<cstring>fdbNumSerie</cstring>
+</property>
+<property name="sizePolicy" >
+<sizepolicy>
+<hsizetype>1</hsizetype>
+<vsizetype>0</vsizetype>
+<horstretch>0</horstretch>
+<verstretch>0</verstretch>
+</sizepolicy>
+</property>
+<property name="minimumSize" >
+<size>
+<width>400</width>
+<height>25</height>
+</size>
+</property>
+<property name="font" >
+<font>
+<bold>0</bold>
+<italic>0</italic>
+</font>
+</property>
+<property name="fieldName" >
+<string>numserie</string>
+</property>
+</widget>
+<spacer>
+<property name="name" >
+<cstring>spcNumSerie</cstring>
+</property>
+<property name="orientation" >
+<enum>Horizontal</enum>
+</property>
+<property name="sizeType" >
+<enum>Expanding</enum>
+</property>
+<property name="sizeHint" >
+<size>
+<width>146</width>
+<height>20</height>
+</size>
+</property>
+</spacer>
+</hbox>
+</widget>
+<widget class="QGroupBox" >
+<property name="name" >
+<cstring>gbxNumSerieComp</cstring>
+</property>
+<property name="palette" >
+<palette>
+<active>
+<color>
+<red>0</red>
+<green>0</green>
+<blue>0</blue>
+</color>
+<color>
+<red>211</red>
+<green>211</green>
+<blue>211</blue>
+</color>
+<color>
+<red>255</red>
+<green>255</green>
+<blue>255</blue>
+</color>
+<color>
+<red>233</red>
+<green>233</green>
+<blue>233</blue>
+</color>
+<color>
+<red>105</red>
+<green>105</green>
+<blue>105</blue>
+</color>
+<color>
+<red>140</red>
+<green>140</green>
+<blue>140</blue>
+</color>
+<color>
+<red>0</red>
+<green>0</green>
+<blue>0</blue>
+</color>
+<color>
+<red>255</red>
+<green>255</green>
+<blue>255</blue>
+</color>
+<color>
+<red>0</red>
+<green>0</green>
+<blue>0</blue>
+</color>
+<color>
+<red>255</red>
+<green>255</green>
+<blue>255</blue>
+</color>
+<color>
+<red>195</red>
+<green>195</green>
+<blue>195</blue>
+</color>
+<color>
+<red>0</red>
+<green>0</green>
+<blue>0</blue>
+</color>
+<color>
+<red>0</red>
+<green>0</green>
+<blue>128</blue>
+</color>
+<color>
+<red>255</red>
+<green>255</green>
+<blue>255</blue>
+</color>
+<color>
+<red>0</red>
+<green>0</green>
+<blue>0</blue>
+</color>
+<color>
+<red>0</red>
+<green>0</green>
+<blue>0</blue>
+</color>
+</active>
+<disabled>
+<color>
+<red>128</red>
+<green>128</green>
+<blue>128</blue>
+</color>
+<color>
+<red>211</red>
+<green>211</green>
+<blue>211</blue>
+</color>
+<color>
+<red>255</red>
+<green>255</green>
+<blue>255</blue>
+</color>
+<color>
+<red>242</red>
+<green>242</green>
+<blue>242</blue>
+</color>
+<color>
+<red>105</red>
+<green>105</green>
+<blue>105</blue>
+</color>
+<color>
+<red>140</red>
+<green>140</green>
+<blue>140</blue>
+</color>
+<color>
+<red>128</red>
+<green>128</green>
+<blue>128</blue>
+</color>
+<color>
+<red>255</red>
+<green>255</green>
+<blue>255</blue>
+</color>
+<color>
+<red>128</red>
+<green>128</green>
+<blue>128</blue>
+</color>
+<color>
+<red>255</red>
+<green>255</green>
+<blue>255</blue>
+</color>
+<color>
+<red>195</red>
+<green>195</green>
+<blue>195</blue>
+</color>
+<color>
+<red>0</red>
+<green>0</green>
+<blue>0</blue>
+</color>
+<color>
+<red>0</red>
+<green>0</green>
+<blue>128</blue>
+</color>
+<color>
+<red>255</red>
+<green>255</green>
+<blue>255</blue>
+</color>
+<color>
+<red>0</red>
+<green>0</green>
+<blue>238</blue>
+</color>
+<color>
+<red>192</red>
+<green>0</green>
+<blue>0</blue>
+</color>
+</disabled>
+<inactive>
+<color>
+<red>0</red>
+<green>0</green>
+<blue>0</blue>
+</color>
+<color>
+<red>211</red>
+<green>211</green>
+<blue>211</blue>
+</color>
+<color>
+<red>255</red>
+<green>255</green>
+<blue>255</blue>
+</color>
+<color>
+<red>242</red>
+<green>242</green>
+<blue>242</blue>
+</color>
+<color>
+<red>105</red>
+<green>105</green>
+<blue>105</blue>
+</color>
+<color>
+<red>140</red>
+<green>140</green>
+<blue>140</blue>
+</color>
+<color>
+<red>0</red>
+<green>0</green>
+<blue>0</blue>
+</color>
+<color>
+<red>255</red>
+<green>255</green>
+<blue>255</blue>
+</color>
+<color>
+<red>0</red>
+<green>0</green>
+<blue>0</blue>
+</color>
+<color>
+<red>255</red>
+<green>255</green>
+<blue>255</blue>
+</color>
+<color>
+<red>195</red>
+<green>195</green>
+<blue>195</blue>
+</color>
+<color>
+<red>0</red>
+<green>0</green>
+<blue>0</blue>
+</color>
+<color>
+<red>0</red>
+<green>0</green>
+<blue>128</blue>
+</color>
+<color>
+<red>255</red>
+<green>255</green>
+<blue>255</blue>
+</color>
+<color>
+<red>0</red>
+<green>0</green>
+<blue>238</blue>
+</color>
+<color>
+<red>192</red>
+<green>0</green>
+<blue>0</blue>
+</color>
+</inactive>
+</palette>
+</property>
+<property name="lineWidth" >
+<number>0</number>
+</property>
+<property name="title" >
+<string/>
+</property>
+<vbox>
+<property name="name" >
+<cstring>unnamed</cstring>
+</property>
+<property name="margin" >
+<number>4</number>
+</property>
+<widget class="QLayoutWidget" >
+<property name="name" >
+<cstring>layout44</cstring>
+</property>
+<hbox>
+<property name="name" >
+<cstring>unnamed</cstring>
+</property>
+<widget class="QLabel" >
+<property name="name" >
+<cstring>textLabel1</cstring>
+</property>
+<property name="font" >
+<font>
+<bold>0</bold>
+<italic>0</italic>
+</font>
+</property>
+<property name="frameShadow" >
+<enum>Plain</enum>
+</property>
+<property name="text" >
+<string>De los componentes:</string>
+</property>
+<property name="alignment" >
+<set>AlignBottom</set>
+</property>
+</widget>
+<spacer>
+<property name="name" >
+<cstring>spacer23</cstring>
+</property>
+<property name="orientation" >
+<enum>Horizontal</enum>
+</property>
+<property name="sizeType" >
+<enum>Expanding</enum>
+</property>
+<property name="sizeHint" >
+<size>
+<width>110</width>
+<height>20</height>
+</size>
+</property>
+</spacer>
+</hbox>
+</widget>
+<widget class="FLTableDB" >
+<property name="name" >
+<cstring>tdbLineasAlbaranesCliNS</cstring>
+</property>
+<property name="sizePolicy" >
+<sizepolicy>
+<hsizetype>1</hsizetype>
+<vsizetype>5</vsizetype>
+<horstretch>0</horstretch>
+<verstretch>0</verstretch>
+</sizepolicy>
+</property>
+<property name="minimumSize" >
+<size>
+<width>0</width>
+<height>120</height>
+</size>
+</property>
+<property name="font" >
+<font>
+<bold>0</bold>
+</font>
+</property>
+<property name="tableName" >
+<string>lineasalbaranesclins</string>
+</property>
+<property name="foreignField" >
+<string>idlinea</string>
+</property>
+<property name="fieldRelation" >
+<string>idlineaalbaran</string>
+</property>
+</widget>
+</vbox>
+</widget>
+</vbox>
+</xupdate:insert-after>
+<xupdate:delete select="/UI[UI,1]/widget[QWidget,formLineasAlbaranesCli]/vbox[vbox,1]/widget[QLayoutWidget,layout65]/hbox[hbox,1]/widget[QGroupBox,groupBox8]/vbox[vbox,1]/widget[QLayoutWidget,layout35]" />
+<xupdate:insert-after select="/UI[UI,1]/widget[QWidget,formLineasAlbaranesCli]/vbox[vbox,1]/widget[QLayoutWidget,layout65]/hbox[hbox,1]/widget[QGroupBox,groupBox8]/vbox[vbox,1]/widget[QLayoutWidget,layout39]/hbox[hbox,1]/widget[FLFieldDB,fdbPvpTotal]/property[property,4]/font[font,1]/pointsize[pointsize,1]" >
+<bold>0</bold>
+</xupdate:insert-after>
+<xupdate:insert-after select="/UI[UI,1]/widget[QWidget,formLineasAlbaranesCli]/vbox[vbox,1]/widget[QLayoutWidget,layout65]/hbox[hbox,1]/widget[QGroupBox,groupBox8]/vbox[vbox,1]/property[property,1]" >
+<widget class="QLayoutWidget" >
+<property name="name" >
+<cstring>layout35_2</cstring>
+</property>
+<hbox>
+<property name="name" >
+<cstring>unnamed</cstring>
+</property>
+<widget class="FLFieldDB" >
+<property name="name" >
+<cstring>fdbPvpUnitario</cstring>
+</property>
+<property name="sizePolicy" >
+<sizepolicy>
+<hsizetype>1</hsizetype>
+<vsizetype>0</vsizetype>
+<horstretch>0</horstretch>
+<verstretch>0</verstretch>
+</sizepolicy>
+</property>
+<property name="minimumSize" >
+<size>
+<width>170</width>
+<height>25</height>
+</size>
+</property>
+<property name="font" >
+<font>
+<bold>0</bold>
+<italic>0</italic>
+</font>
+</property>
+<property name="fieldName" >
+<string>pvpunitario</string>
+</property>
+</widget>
+<widget class="FLFieldDB" >
+<property name="name" >
+<cstring>fdbPvpSinDto</cstring>
+</property>
+<property name="sizePolicy" >
+<sizepolicy>
+<hsizetype>1</hsizetype>
+<vsizetype>0</vsizetype>
+<horstretch>0</horstretch>
+<verstretch>0</verstretch>
+</sizepolicy>
+</property>
+<property name="minimumSize" >
+<size>
+<width>170</width>
+<height>25</height>
+</size>
+</property>
+<property name="font" >
+<font>
+<bold>0</bold>
+<italic>0</italic>
+</font>
+</property>
+<property name="fieldName" >
+<string>pvpsindto</string>
+</property>
+</widget>
+</hbox>
+</widget>
+</xupdate:insert-after>
+<xupdate:delete select="/UI[UI,1]/tabstops[tabstops,1]/tabstop[tabstop,1]" />
+<xupdate:delete select="/UI[UI,1]/tabstops[tabstops,1]/tabstop[tabstop,2]" />
+<xupdate:delete select="/UI[UI,1]/tabstops[tabstops,1]/tabstop[tabstop,3]" />
+<xupdate:delete select="/UI[UI,1]/tabstops[tabstops,1]/tabstop[tabstop,4]" />
+<xupdate:delete select="/UI[UI,1]/tabstops[tabstops,1]/tabstop[tabstop,5]" />
+<xupdate:delete select="/UI[UI,1]/tabstops[tabstops,1]/tabstop[tabstop,6]" />
+<xupdate:delete select="/UI[UI,1]/tabstops[tabstops,1]/tabstop[tabstop,7]" />
+<xupdate:delete select="/UI[UI,1]/tabstops[tabstops,1]/tabstop[tabstop,8]" />
+<xupdate:delete select="/UI[UI,1]/tabstops[tabstops,1]/tabstop[tabstop,9]" />
+<xupdate:delete select="/UI[UI,1]/tabstops[tabstops,1]/tabstop[tabstop,10]" />
+<xupdate:delete select="/UI[UI,1]/tabstops[tabstops,1]/tabstop[tabstop,11]" />
+<xupdate:delete select="/UI[UI,1]/tabstops[tabstops,1]/tabstop[tabstop,12]" />
+<xupdate:insert-after select="/UI[UI,1]/widget[QWidget,formLineasAlbaranesCli]" >
+<customwidgets/>
+</xupdate:insert-after>
+<xupdate:insert-after select="/UI[UI,1]/layoutdefaults[layoutdefaults,1]" >
+<includehints>
+<includehint>FLTableDB.h</includehint>
+</includehints>
+</xupdate:insert-after>
+</xupdate:modifications>

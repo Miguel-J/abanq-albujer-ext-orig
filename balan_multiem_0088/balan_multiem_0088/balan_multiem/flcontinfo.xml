@@ -1,0 +1,56 @@
+<xupdate:modifications>
+<xupdate:insert-after select="/ACTIONS[ACTIONS,1]/action[co_i_facturasrec]" >
+<action>
+<name>co_empresas</name>
+<description>QT_TRANSLATE_NOOP(&quot;MetaData&quot;,&quot;Listado de empresas que pueden entrar el un balance&quot;)</description>
+<alias>QT_TRANSLATE_NOOP(&quot;MetaData&quot;,&quot;Empresas&quot;)</alias>
+<table>co_empresas</table>
+<form>master</form>
+<formrecord>co_empresas</formrecord>
+<scriptformrecord>co_empresas</scriptformrecord>
+</action>
+</xupdate:insert-after>
+<xupdate:insert-after select="/ACTIONS[ACTIONS,1]/action[co_empresas]" >
+<action>
+<name>co_ejerciciosempresas</name>
+<description>QT_TRANSLATE_NOOP(&quot;MetaData&quot;,&quot;Ejercicios por empresa para el balance de sumas y saldos&quot;)</description>
+<alias>QT_TRANSLATE_NOOP(&quot;MetaData&quot;,&quot;Ejercicios por empresa&quot;)</alias>
+<table>co_ejerciciosempresas</table>
+<form>master</form>
+<formrecord>co_ejerciciosempresas</formrecord>
+</action>
+</xupdate:insert-after>
+<xupdate:insert-after select="/ACTIONS[ACTIONS,1]/action[co_ejerciciosempresas]" >
+<action>
+<name>co_ejerciciosempresas_sis</name>
+<description>QT_TRANSLATE_NOOP(&quot;MetaData&quot;,&quot;Ejercicios por empresa para el balance de sumas y saldos&quot;)</description>
+<alias>QT_TRANSLATE_NOOP(&quot;MetaData&quot;,&quot;Ejercicios por empresa SiS&quot;)</alias>
+<table>co_ejerciciosempresas_sis</table>
+<form>master</form>
+<formrecord>co_ejerciciosempresas_bal</formrecord>
+<scriptformrecord>co_ejerciciosempresas_bal</scriptformrecord>
+</action>
+</xupdate:insert-after>
+<xupdate:insert-after select="/ACTIONS[ACTIONS,1]/action[co_ejerciciosempresas_sis]" >
+<action>
+<name>co_ejerciciosempresas_sit</name>
+<description>QT_TRANSLATE_NOOP(&quot;MetaData&quot;,&quot;Ejercicios por empresa para el balance de situación&quot;)</description>
+<alias>QT_TRANSLATE_NOOP(&quot;MetaData&quot;,&quot;Ejercicios por empresa Sit&quot;)</alias>
+<table>co_ejerciciosempresas_sit</table>
+<form>master</form>
+<formrecord>co_ejerciciosempresas_bal</formrecord>
+<scriptformrecord>co_ejerciciosempresas_bal</scriptformrecord>
+</action>
+</xupdate:insert-after>
+<xupdate:insert-after select="/ACTIONS[ACTIONS,1]/action[co_ejerciciosempresas_sit]" >
+<action>
+<name>co_ejerciciosempresas_pyg</name>
+<description>QT_TRANSLATE_NOOP(&quot;MetaData&quot;,&quot;Ejercicios por empresa para el balance de pérdidas y ganancias&quot;)</description>
+<alias>QT_TRANSLATE_NOOP(&quot;MetaData&quot;,&quot;Ejercicios por empresa PyG&quot;)</alias>
+<table>co_ejerciciosempresas_pyg</table>
+<form>master</form>
+<formrecord>co_ejerciciosempresas_bal</formrecord>
+<scriptformrecord>co_ejerciciosempresas_bal</scriptformrecord>
+</action>
+</xupdate:insert-after>
+</xupdate:modifications>

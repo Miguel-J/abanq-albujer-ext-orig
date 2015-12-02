@@ -1,0 +1,106 @@
+<xupdate:modifications>
+<xupdate:update select="/UI[UI,1]/widget[QWidget,formLineasFacturasCli]/property[geometry]/rect[rect,1]/height[height,1]/text()[1]" >386</xupdate:update>
+<xupdate:update select="/UI[UI,1]/widget[QWidget,formLineasFacturasCli]/property[geometry]/rect[rect,1]/width[width,1]/text()[1]" >282</xupdate:update>
+<xupdate:update select="/UI[UI,1]/widget[QWidget,formLineasFacturasCli]/vbox[vbox,1]/widget[QGroupBox,gbxTotales]/hbox[hbox,1]/widget[FLFieldDB,fdbPvpSinDtoIva]/property[minimumSize]/size[size,1]/height[height,1]/text()[1]" >22</xupdate:update>
+<xupdate:update select="/UI[UI,1]/widget[QWidget,formLineasFacturasCli]/vbox[vbox,1]/widget[QGroupBox,gbxTotales]/hbox[hbox,1]/widget[FLFieldDB,fdbPvpSinDtoIva]/property[minimumSize]/size[size,1]/width[width,1]/text()[1]" >26</xupdate:update>
+<xupdate:update select="/UI[UI,1]/widget[QWidget,formLineasFacturasCli]/vbox[vbox,1]/widget[QGroupBox,gbxTotales]/hbox[hbox,1]/widget[FLFieldDB,fdbPvpTotalIva]/property[minimumSize]/size[size,1]/height[height,1]/text()[1]" >22</xupdate:update>
+<xupdate:update select="/UI[UI,1]/widget[QWidget,formLineasFacturasCli]/vbox[vbox,1]/widget[QGroupBox,gbxTotales]/hbox[hbox,1]/widget[FLFieldDB,fdbPvpTotalIva]/property[minimumSize]/size[size,1]/width[width,1]/text()[1]" >26</xupdate:update>
+<xupdate:update select="/UI[UI,1]/widget[QWidget,formLineasFacturasCli]/vbox[vbox,1]/widget[QGroupBox,gbxTotales]/hbox[hbox,1]/widget[FLFieldDB,fdbPvpUnitarioIva]/property[minimumSize]/size[size,1]/height[height,1]/text()[1]" >22</xupdate:update>
+<xupdate:update select="/UI[UI,1]/widget[QWidget,formLineasFacturasCli]/vbox[vbox,1]/widget[QGroupBox,gbxTotales]/hbox[hbox,1]/widget[FLFieldDB,fdbPvpUnitarioIva]/property[minimumSize]/size[size,1]/width[width,1]/text()[1]" >26</xupdate:update>
+<xupdate:update select="/UI[UI,1]/widget[QWidget,formLineasFacturasCli]/vbox[vbox,1]/widget[QGroupBox,groupBox7]/hbox[hbox,1]/widget[FLFieldDB,fdbCosteUnitario]/property[minimumSize]/size[size,1]/height[height,1]/text()[1]" >22</xupdate:update>
+<xupdate:update select="/UI[UI,1]/widget[QWidget,formLineasFacturasCli]/vbox[vbox,1]/widget[QGroupBox,groupBox7]/hbox[hbox,1]/widget[FLFieldDB,fdbCosteUnitario]/property[minimumSize]/size[size,1]/width[width,1]/text()[1]" >26</xupdate:update>
+<xupdate:insert-after select="/UI[UI,1]/widget[QWidget,formLineasFacturasCli]/vbox[vbox,1]/widget[QGroupBox,groupBox7]/hbox[hbox,1]/widget[FLFieldDB,fdbReferencia]/property[fieldName]" >
+<property name="foreignField" >
+<string/>
+</property>
+</xupdate:insert-after>
+<xupdate:insert-after select="/UI[UI,1]/widget[QWidget,formLineasFacturasCli]/vbox[vbox,1]/widget[QGroupBox,groupBox7]/hbox[hbox,1]/widget[FLFieldDB,fdbReferencia]/property[foreignField]" >
+<property name="fieldRelation" >
+<string/>
+</property>
+</xupdate:insert-after>
+<xupdate:insert-after select="/UI[UI,1]/widget[QWidget,formLineasFacturasCli]/vbox[vbox,1]/widget[QGroupBox,gbxTotales]" >
+<widget class="QGroupBox" >
+<property name="name" >
+<cstring>gbxPuntos</cstring>
+</property>
+<property name="font" >
+<font>
+<bold>1</bold>
+<italic>1</italic>
+</font>
+</property>
+<property name="title" >
+<string>Puntos</string>
+</property>
+<hbox>
+<property name="name" >
+<cstring>unnamed</cstring>
+</property>
+<spacer>
+<property name="name" >
+<cstring>spacerTotales_2</cstring>
+</property>
+<property name="orientation" >
+<enum>Horizontal</enum>
+</property>
+<property name="sizeType" >
+<enum>Expanding</enum>
+</property>
+<property name="sizeHint" >
+<size>
+<width>21</width>
+<height>20</height>
+</size>
+</property>
+</spacer>
+<widget class="FLFieldDB" >
+<property name="name" >
+<cstring>fdbCanPuntos</cstring>
+</property>
+<property name="sizePolicy" >
+<sizepolicy>
+<hsizetype>1</hsizetype>
+<vsizetype>0</vsizetype>
+<horstretch>0</horstretch>
+<verstretch>0</verstretch>
+</sizepolicy>
+</property>
+<property name="minimumSize" >
+<size>
+<width>38</width>
+<height>24</height>
+</size>
+</property>
+<property name="font" >
+<font>
+<bold>0</bold>
+<italic>0</italic>
+</font>
+</property>
+<property name="fieldName" >
+<string>canpuntos</string>
+</property>
+<property name="tableName" >
+<string/>
+</property>
+</widget>
+</hbox>
+</widget>
+</xupdate:insert-after>
+<xupdate:insert-after select="/UI[UI,1]/includehints[includehints,1]/includehint[flfielddb.h]" >
+<includehint>flfielddb.h</includehint>
+</xupdate:insert-after>
+<xupdate:insert-after select="/UI[UI,1]/includehints[includehints,1]/includehint[flfielddb.h]" >
+<includehint>flfielddb.h</includehint>
+</xupdate:insert-after>
+<xupdate:insert-after select="/UI[UI,1]/includehints[includehints,1]/includehint[flfielddb.h]" >
+<includehint>flfielddb.h</includehint>
+</xupdate:insert-after>
+<xupdate:insert-after select="/UI[UI,1]/includehints[includehints,1]/includehint[flfielddb.h]" >
+<includehint>flfielddb.h</includehint>
+</xupdate:insert-after>
+<xupdate:insert-after select="/UI[UI,1]/includehints[includehints,1]/includehint[flfielddb.h]" >
+<includehint>flfielddb.h</includehint>
+</xupdate:insert-after>
+</xupdate:modifications>

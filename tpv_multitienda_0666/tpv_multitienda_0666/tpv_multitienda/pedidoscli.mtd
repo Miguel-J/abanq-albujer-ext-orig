@@ -1,0 +1,33 @@
+<xupdate:modifications>
+<xupdate:insert-after select="/TMD[TMD,1]/field[numero]" >
+<field>
+<name>codmultitransstock</name>
+<!-- Identificador --><alias>QT_TRANSLATE_NOOP(&quot;MetaData&quot;,&quot;Multi.T.&quot;)</alias>
+<null>true</null>
+<pk>false</pk>
+<type>string</type>
+<length>8</length>
+<relation>
+<table>tpv_multitransstock</table>
+<field>codmultitransstock</field>
+<card>M1</card>
+</relation>
+</field>
+</xupdate:insert-after>
+<xupdate:insert-after select="/TMD[TMD,1]/field[codmultitransstock]" >
+<field>
+<name>idviajemultitrans</name>
+<alias>QT_TRANSLATE_NOOP(&quot;MetaData&quot;,&quot;Viaje&quot;)</alias>
+<null>true</null>
+<pk>false</pk>
+<type>string</type>
+<length>8</length>
+<relation>
+<table>tpv_viajesmultitransstock</table>
+<field>idviajemultitrans</field>
+<card>M1</card>
+<delC>true</delC>
+</relation>
+</field>
+</xupdate:insert-after>
+</xupdate:modifications>

@@ -1,0 +1,30 @@
+<flpatch:modifications name="gimnasios" >
+    <flpatch:patchXml path="facturacion/principal/forms/" name="clientes.ui" />
+    <flpatch:patchScript path="facturacion/principal/scripts/" name="clientes.qs" />
+    <flpatch:patchXml path="facturacion/principal/tables/" name="clientes.mtd" />
+    <flpatch:patchXml path="facturacion/facturacion/tables/" name="facturascli.mtd" />
+    <flpatch:patchXml path="facturacion/almacen/tables/" name="articulos.mtd" />
+    <flpatch:addFile path="facturacion/principal/forms/" name="bonosgym.ui" />
+    <flpatch:patchXml path="facturacion/principal/" name="flfactppal.xml" />
+    <flpatch:addFile path="facturacion/principal/tables/" name="bonosgym.mtd" />
+    <flpatch:patchXml path="facturacion/principal/tables/" name="formaspago.mtd" />
+    <flpatch:patchXml path="facturacion/principal/forms/" name="flfactppal.ui" />
+    <flpatch:addFile path="facturacion/principal/scripts/" name="bonosgym.qs" />
+    <flpatch:patchScript path="facturacion/facturacion/scripts/" name="masteralbaranescli.qs" />
+    <flpatch:patchScript path="facturacion/principal/scripts/" name="flfactppal.qs" />
+    <flpatch:patchXml path="facturacion/almacen/forms/" name="articulos.ui" />
+    <flpatch:patchScript path="facturacion/almacen/scripts/" name="articulos.qs" />
+    <flpatch:patchXml path="facturacion/facturacion/tables/" name="tiposcontrato.mtd" />
+    <flpatch:patchXml path="facturacion/facturacion/tables/" name="contratos.mtd" />
+    <flpatch:patchScript path="facturacion/facturacion/scripts/" name="mastercontratos.qs" />
+    <flpatch:patchXml path="formacion/principal/tables/" name="fo_sesionesalumno.mtd" />
+    <flpatch:patchScript path="formacion/principal/scripts/" name="flformppal.qs" />
+    <flpatch:patchScript path="formacion/principal/scripts/" name="fo_sesionesalumno.qs" />
+    <flpatch:patchXml path="formacion/principal/forms/" name="fo_sesionesalumno.ui" />
+    <flpatch:patchScript path="formacion/principal/scripts/" name="fo_sesiones.qs" />
+    <flpatch:patchXml path="facturacion/principal/forms/" name="empresa.ui" />
+    <flpatch:patchXml path="facturacion/principal/tables/" name="empresa.mtd" />
+    <flpatch:patchXml path="formacion/principal/forms/" name="fo_alumnos.ui" />
+    <flpatch:patchXml path="formacion/principal/tables/" name="fo_alumnos.mtd" />
+    <flpatch:addFile path="facturacion/principal/scripts/" name="masterbonosgym.qs" />
+</flpatch:modifications>

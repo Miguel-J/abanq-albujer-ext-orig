@@ -1,0 +1,58 @@
+<xupdate:modifications>
+<xupdate:update select="/UI[UI,1]/widget[QWidget,co_mastersubcuentas]/vbox[vbox,1]/widget[QFrame,barraBotones]/hbox[hbox,1]/spacer[Spacer2]/property[property,4]/size[size,1]/width[width,1]/text()[1]" >100</xupdate:update>
+<xupdate:append-first select="/UI[UI,1]/images[images,1]" >
+<image name="traspaso_subctaimage5" >
+<data format="PNG" length="1530" >89504e470d0a1a0a0000000d4948445200000020000000200806000000737a7af4000005c149444154789cc5974f6823d71dc73fbb8ccb6f600a6fa8974ac50b1e88612528d4a217a9b9ac219038cd454b2fde5bdc9b0b3decd1bb277b6fbbb7e4d012e5d2ac6f6b0a21a2d056caa18c73920259326e77cb082298095599012bcca37a717b18492bc9deb5d336e409f1fe49effbfb7edfeff77befc1775cae4c1ad557ab56fdadfa5f3dcfbbce88536d34588001b184ffa53f5b1abf6bfca6fda7f6af277d6bd2104b2c6fc5fbe1ad5fdc5afa361937ffd0fcd16c7f6a401cc7a7c0bfffef88a399b6019de9d3d9e9ab93865882467f7be04046862cc9dcd8d4006d34c2fce4cb4a92254427d1c5e026ff6626cb7146f324ff6b05ba7197fd8ff7f9e8e94764a3ec7c70002b676e63e7c62c78d8d4072ea380ff858fdff3494d4aa2138aaa48f35993f693367bafef61dbf63c73727078aec0e2b6cc46c10b15089390c6a70dc234cc8d342008a109911361abba350f3e616e72e65370c3191fb850814ed4e1fe5feea3471a6514956285cd1b9b2426e1fe1fefb3fbda2e15af7286391673e093f5177de0a50a442711f7daf7488609252971f7b5bb78450f80425660ef8d3dcad7cb39f8d258def18aad5e0b65292a850a894e9e27a76fe2030f3f794827ee50712a3c78eb01aeeb928d32e23426310922422bcc818a52a4a88a53f0ed0fb7292f97f9e08d0f1019831bcef8c00ba3204c421e7df60831c2eecddd2978eb590b3ff609d3906edc45598a6818d18a5bf87d3f5f0bc1b66cfcbecfc1b3036cec29b94be781c7c78f890731e5e532b5b51a00074f0e68f69a048380a3fe1118f0963dba832eddbecfe1f1219db8436dad46bd5427d5298d6e834427b90280ce2e9907824100066eae5581dc1f1e7df688de30c01f34094d87da6a0dd776293a4522d3c3ff478bc3e343c860ebc616e240900679f45879f43cdff40b7c20d531384cf7d5effb74876d14800d41029949f83c4968f4ef12263168684590e95d8ae2525a5ea5dbef11e98892294d712ea580120502da1a8f8dadb75d40e0f65a9df2b50aaee5b2ae6ab8d700674c466bb004111b1ca647b3363a57e2323ee0290f043a83160025a78472f27aa77087faeadb3c886eb11fbfc9e68d4dc401f93e946c0f575cd2614a4a84b2a068b9b951132297516073b54ec181a3b445741252f6ca6cba5bacafac13175a34f42f39d24db46468adf11c45d1126ebfb203167cae3b24a4786a95a278e76cfa050a540a1536aedd243429fbc7bf8211ecfff41dd201790eb0044f9510b109a449c15a6767f91daa2b55329d71103f442f41d5ada19cc2340f2cfac08b33e112dcf9c93edd4f7e863dcc3dd8552e7b37dee368d022313d301960a353d874aa940a256ccba611dfa56b8e28226cafeec0240439eb03735130574650b95ee33dfd67d60bd5fc4c331958b05178731adb8989f054650c907030b847433f040d3bcbbb78aa8436fa5cf0330a4c1d64f4bcaead6d303e51c92647acc970c5e55dbd4dc1f27071098c4f53bf4b8723f410de963b6cbdb2831e7f94a81c6d69fedaf7620566c066fbdae45c0ff43d3ab4707139e280d08468a3b163c56d6b97cd95ed1c5a6b4404244fd14992ccdd5ee615589839ef3c772d9bc7fdf7f19dc7b8ca052d2431786603cf54b959a85394620e6e727011c1755da22f22d0fceb6205ccd99bcc244a129db0b1bc85c405dac3f7f1a4c48eec209620a2d026cdf77c16dc710188e2e8d455eedf2e546072879bbbc9308e92f1636363e516e5b442468272d4d8c834af5900b7f36582a78106828b153887f9e27caa239428c4cc9cf593df9f030e101e8719165fcdae339f09cd42ba5c64cec2f8ac51d60c734772ff98050f42825e60c496ef9dab8028b92a965c01b02597dfb6f27a0236bdd92cbc0127f3ca518848fe7f9d11f7623a4f3a5f07dd60143c0b34d0d399ee9d6f802544fda8d3f86de3c7dae8afa7a0d67c3d57c627e4c4d8f103e4344dd393244dbe8c07f1578ce8015f8a2d7f073e3dfcfde1d3d925aeccb4afd67f5ebfa6d13f10e454a3a7f27fc3faaa5872a28dfe6736cc4edb1fb75ffadaf90f46b24ac7a6366ae40000000049454e44ae426082</data>
+</image>
+</xupdate:append-first>
+<xupdate:insert-after select="/UI[UI,1]/widget[QWidget,co_mastersubcuentas]/vbox[vbox,1]/widget[QFrame,barraBotones]/hbox[hbox,1]/spacer[Spacer2]" >
+<widget class="QPushButton" >
+<property name="name" >
+<cstring>pbnTraspaso</cstring>
+</property>
+<property name="minimumSize" >
+<size>
+<width>0</width>
+<height>32</height>
+</size>
+</property>
+<property name="font" >
+<font>
+<bold>1</bold>
+<italic>1</italic>
+</font>
+</property>
+<property name="text" >
+<string>&amp;Traspaso</string>
+</property>
+<property name="accel" >
+<string>Alt+T</string>
+</property>
+<property name="iconSet" >
+<iconset>traspaso_subctaimage5</iconset>
+</property>
+</widget>
+</xupdate:insert-after>
+<xupdate:insert-after select="/UI[UI,1]/widget[QWidget,co_mastersubcuentas]/vbox[vbox,1]/widget[QFrame,barraBotones]/hbox[hbox,1]/widget[QPushButton,pbnTraspaso]" >
+<spacer>
+<property name="name" >
+<cstring>spcTraspaso</cstring>
+</property>
+<property name="orientation" >
+<enum>Horizontal</enum>
+</property>
+<property name="sizeType" >
+<enum>Fixed</enum>
+</property>
+<property name="sizeHint" >
+<size>
+<width>31</width>
+<height>20</height>
+</size>
+</property>
+</spacer>
+</xupdate:insert-after>
+<xupdate:insert-after select="/UI[UI,1]/widget[QWidget,co_mastersubcuentas]" >
+<customwidgets/>
+</xupdate:insert-after>
+</xupdate:modifications>

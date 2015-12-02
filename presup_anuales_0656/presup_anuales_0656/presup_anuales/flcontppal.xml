@@ -1,0 +1,22 @@
+<xupdate:modifications>
+<xupdate:insert-after select="/ACTIONS[ACTIONS,1]/action[co_partidascc]" >
+<action>
+<name>co_presupuestosanuales</name>
+<alias>QT_TRANSLATE_NOOP(&quot;MetaData&quot;,&quot;Presupuestos Anuales&quot;)</alias>
+<table>co_presupuestosanuales</table>
+<form>master</form>
+<formrecord>co_presupuestosanuales</formrecord>
+<scriptformrecord>co_presupuestosanuales</scriptformrecord>
+</action>
+</xupdate:insert-after>
+<xupdate:insert-after select="/ACTIONS[ACTIONS,1]/action[co_presupuestosanuales]" >
+<action>
+<name>co_crearpresupuesto</name>
+<alias>QT_TRANSLATE_NOOP(&quot;MetaData&quot;,&quot;Crear presupuestos&quot;)</alias>
+<table>co_crearpresupuesto</table>
+<form>master</form>
+<formrecord>co_crearpresupuesto</formrecord>
+<scriptformrecord>co_crearpresupuesto</scriptformrecord>
+</action>
+</xupdate:insert-after>
+</xupdate:modifications>

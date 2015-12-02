@@ -1,0 +1,12 @@
+<xupdate:modifications>
+<xupdate:insert-after select="/TMD[TMD,1]/field[recargo]" >
+<field>
+<name>idpresupuesto</name>
+<!--Identificador del presupuesto del que proviene la línea de pedido--><alias>QT_TRANSLATE_NOOP(&quot;MetaData&quot;,&quot;Id Presupuesto&quot;)</alias>
+<null>true</null>
+<pk>false</pk>
+<type>uint</type>
+<visiblegrid>false</visiblegrid>
+</field>
+</xupdate:insert-after>
+</xupdate:modifications>

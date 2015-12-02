@@ -1,0 +1,42 @@
+<xupdate:modifications>
+<xupdate:insert-after select="/TMD[TMD,1]/field[nogenerarasiento]" >
+<field>
+<name>comercio</name>
+<!-- Numero de comercio en ServiRed --><alias>QT_TRANSLATE_NOOP(&quot;MetaData&quot;,&quot;Código comercio&quot;)</alias>
+<null>true</null>
+<pk>false</pk>
+<type>string</type>
+<length>9</length>
+</field>
+</xupdate:insert-after>
+<xupdate:insert-after select="/TMD[TMD,1]/field[comercio]" >
+<field>
+<name>clavecomercio</name>
+<!-- Clave de comercio en ServiRed --><alias>QT_TRANSLATE_NOOP(&quot;MetaData&quot;,&quot;Clave comercio&quot;)</alias>
+<null>true</null>
+<pk>false</pk>
+<type>string</type>
+<length>30</length>
+</field>
+</xupdate:insert-after>
+<xupdate:insert-after select="/TMD[TMD,1]/field[clavecomercio]" >
+<field>
+<name>terminal</name>
+<!-- Teminal Punto Venta para ServiRed --><alias>QT_TRANSLATE_NOOP(&quot;MetaData&quot;,&quot;Terminal&quot;)</alias>
+<null>true</null>
+<pk>false</pk>
+<type>string</type>
+<length>2</length>
+</field>
+</xupdate:insert-after>
+<xupdate:insert-after select="/TMD[TMD,1]/field[terminal]" >
+<field>
+<name>cvc2</name>
+<!-- CVC2 para ServiRed --><alias>QT_TRANSLATE_NOOP(&quot;MetaData&quot;,&quot;CVC2&quot;)</alias>
+<null>true</null>
+<pk>false</pk>
+<type>string</type>
+<length>3</length>
+</field>
+</xupdate:insert-after>
+</xupdate:modifications>

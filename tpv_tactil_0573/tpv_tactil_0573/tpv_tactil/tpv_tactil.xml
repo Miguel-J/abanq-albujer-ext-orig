@@ -1,0 +1,31 @@
+<flpatch:modifications name="tpv_tactil" >
+    <flpatch:patchXml path="facturacion/tpv/" name="flfact_tpv.xml" />
+    <flpatch:addFile path="facturacion/tpv/forms/" name="tpv_comandastactil.ui" />
+    <flpatch:addFile path="facturacion/tpv/scripts/" name="tpv_comandastactil.qs" />
+    <flpatch:addFile path="facturacion/tpv/forms/" name="tpv_comandastactil.ui.h" />
+    <flpatch:patchXml path="facturacion/tpv/tables/" name="tpv_datosgenerales.mtd" />
+    <flpatch:patchXml path="facturacion/tpv/forms/" name="tpv_datosgenerales.ui" />
+    <flpatch:addFile path="facturacion/almacen/tables/" name="nivelestpv.mtd" />
+    <flpatch:addFile path="facturacion/almacen/forms/" name="nivelestpv.ui" />
+    <flpatch:patchXml path="facturacion/almacen/forms/" name="flfactalma.ui" />
+    <flpatch:patchXml path="facturacion/almacen/" name="flfactalma.xml" />
+    <flpatch:patchXml path="facturacion/almacen/tables/" name="articulos.mtd" />
+    <flpatch:patchXml path="facturacion/almacen/forms/" name="articulos.ui" />
+    <flpatch:patchXml path="facturacion/tpv/forms/" name="flfact_tpv.ui" />
+    <flpatch:addFile path="facturacion/tpv/forms/" name="tpv_mastercomandastactil.ui" />
+    <flpatch:addFile path="facturacion/tpv/scripts/" name="tpv_mastercomandastactil.qs" />
+    <flpatch:addFile path="facturacion/tpv/forms/" name="tpv_pagarcomanda.ui" />
+    <flpatch:addFile path="facturacion/tpv/scripts/" name="tpv_pagarcomanda.qs" />
+    <flpatch:patchXml path="facturacion/almacen/tables/" name="tarifas.mtd" />
+    <flpatch:addFile path="facturacion/tpv/forms/" name="tpv_preciolibre.ui" />
+    <flpatch:addFile path="facturacion/tpv/tables/" name="tpv_pagolibre.mtd" />
+    <flpatch:addFile path="facturacion/tpv/scripts/" name="tpv_pagolibre.qs" />
+    <flpatch:addFile path="facturacion/tpv/forms/" name="tpv_pagolibre.ui" />
+    <flpatch:addFile path="facturacion/tpv/forms/" name="tpv_tecladoletras.ui" />
+    <flpatch:addFile path="facturacion/tpv/tables/" name="tpv_tecladoletras.mtd" />
+    <flpatch:addFile path="facturacion/tpv/scripts/" name="tpv_tecladoletras.qs" />
+    <flpatch:patchXml path="facturacion/tpv/tables/" name="tpv_comandas.mtd" />
+    <flpatch:addFile path="facturacion/tpv/forms/" name="tpv_dtocomandatactil.ui" />
+    <flpatch:addFile path="facturacion/tpv/tables/" name="tpv_dtocomandatactil.mtd" />
+    <flpatch:addFile path="facturacion/tpv/scripts/" name="tpv_dtocomandatactil.qs" />
+</flpatch:modifications>

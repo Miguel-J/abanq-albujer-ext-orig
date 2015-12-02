@@ -1,0 +1,217 @@
+<xupdate:modifications>
+<xupdate:insert-after select="/ACTIONS[ACTIONS,1]/action[calcunecesidades]" >
+<action>
+<name>productoslp</name>
+<description>QT_TRANSLATE_NOOP(&quot;MetaData&quot;,&quot;Los productos por línea de presupuesto son los productos y sus componentes que hay que parametrizar y para los cuales hay que calcular su mejor itinerario&quot;)</description>
+<alias>QT_TRANSLATE_NOOP(&quot;MetaData&quot;,&quot;Productos por línea de presupuesto&quot;)</alias>
+<table>productoslp</table>
+<form>master</form>
+</action>
+</xupdate:insert-after>
+<xupdate:insert-after select="/ACTIONS[ACTIONS,1]/action[productoslp]" >
+<action>
+<name>itinerarioslp</name>
+<description>QT_TRANSLATE_NOOP(&quot;MetaData&quot;,&quot;Los itinerarios de productos por línea de presupuesto son los distintos circuitos de máquinas y materiales por los que un determinado producto puede ser fabricado&quot;)</description>
+<alias>QT_TRANSLATE_NOOP(&quot;MetaData&quot;,&quot;Itinerarios por producto&quot;)</alias>
+<table>productoslp</table>
+<form>master</form>
+<formrecord>itinerarioslp</formrecord>
+<scriptformrecord>itinerarioslp</scriptformrecord>
+</action>
+</xupdate:insert-after>
+<xupdate:insert-after select="/ACTIONS[ACTIONS,1]/action[itinerarioslp]" >
+<action>
+<name>tareaslp</name>
+<description>QT_TRANSLATE_NOOP(&quot;MetaData&quot;,&quot;Las tareas por itinerario de productos por línea de presupuesto son las tareas en las que se divide un determinado itinerario&quot;)</description>
+<alias>QT_TRANSLATE_NOOP(&quot;MetaData&quot;,&quot;Tareas por itinerario&quot;)</alias>
+<table>productoslp</table>
+<form>master</form>
+<formrecord>tareaslp</formrecord>
+<scriptformrecord>tareaslp</scriptformrecord>
+</action>
+</xupdate:insert-after>
+<xupdate:insert-after select="/ACTIONS[ACTIONS,1]/action[tareaslp]" >
+<action>
+<name>consumoslp</name>
+<description>QT_TRANSLATE_NOOP(&quot;MetaData&quot;,&quot;Los consumos por tarea son el desglose de consumos de material que se producen en una tarea&quot;)</description>
+<alias>QT_TRANSLATE_NOOP(&quot;MetaData&quot;,&quot;Consumos por tarea&quot;)</alias>
+<table>consumoslp</table>
+<form>master</form>
+<formrecord>consumoslp</formrecord>
+<scriptformrecord>consumoslp</scriptformrecord>
+</action>
+</xupdate:insert-after>
+<xupdate:insert-after select="/ACTIONS[ACTIONS,1]/action[consumoslp]" >
+<action>
+<name>logag</name>
+<description>QT_TRANSLATE_NOOP(&quot;MetaData&quot;,&quot;Log que informa al usuario de los pasos que el sistema va dando al realizar cálculos de itinerarios y costes&quot;)</description>
+<alias>QT_TRANSLATE_NOOP(&quot;MetaData&quot;,&quot;Log de artes gráficas&quot;)</alias>
+<table>logag</table>
+<form>logag</form>
+<scriptform>logag</scriptform>
+</action>
+</xupdate:insert-after>
+<xupdate:insert-after select="/ACTIONS[ACTIONS,1]/action[cambiarejer]" >
+<action>
+<name>paramiptico</name>
+<description>QT_TRANSLATE_NOOP(&quot;MetaData&quot;,&quot;Formulario de edición de parámetros de un íptico&quot;)</description>
+<alias>QT_TRANSLATE_NOOP(&quot;MetaData&quot;,&quot;Parámetros de íptico&quot;)</alias>
+<table>paramiptico</table>
+<formrecord>paramiptico</formrecord>
+<scriptformrecord>paramiptico</scriptformrecord>
+</action>
+</xupdate:insert-after>
+<xupdate:insert-after select="/ACTIONS[ACTIONS,1]/action[paramiptico]" >
+<action>
+<name>paramenvio</name>
+<description>QT_TRANSLATE_NOOP(&quot;MetaData&quot;,&quot;Formulario de edición de parámetros de envío&quot;)</description>
+<alias>QT_TRANSLATE_NOOP(&quot;MetaData&quot;,&quot;Parámetros de envío&quot;)</alias>
+<table>paramenvio</table>
+<formrecord>paramenvio</formrecord>
+<scriptformrecord>paramenvio</scriptformrecord>
+</action>
+</xupdate:insert-after>
+<xupdate:insert-after select="/ACTIONS[ACTIONS,1]/action[paramenvio]" >
+<action>
+<name>paramtareamanual</name>
+<description>QT_TRANSLATE_NOOP(&quot;MetaData&quot;,&quot;Formulario de edición de tareas manuales&quot;)</description>
+<alias>QT_TRANSLATE_NOOP(&quot;MetaData&quot;,&quot;Parámetros de tarea manual&quot;)</alias>
+<table>paramtareamanual</table>
+<formrecord>paramtareamanual</formrecord>
+<scriptformrecord>paramtareamanual</scriptformrecord>
+</action>
+</xupdate:insert-after>
+<xupdate:insert-after select="/ACTIONS[ACTIONS,1]/action[paramtareamanual]" >
+<action>
+<name>paramlibro</name>
+<description>QT_TRANSLATE_NOOP(&quot;MetaData&quot;,&quot;Formulario de edición de parámetros de un libro&quot;)</description>
+<alias>QT_TRANSLATE_NOOP(&quot;MetaData&quot;,&quot;Parámetros de libro&quot;)</alias>
+<table>paramlibro</table>
+<formrecord>paramlibro</formrecord>
+<scriptformrecord>paramlibro</scriptformrecord>
+</action>
+</xupdate:insert-after>
+<xupdate:insert-after select="/ACTIONS[ACTIONS,1]/action[paramlibro]" >
+<action>
+<name>paramtaco</name>
+<description>QT_TRANSLATE_NOOP(&quot;MetaData&quot;,&quot;Formulario de edición de parámetros de un taco&quot;)</description>
+<alias>QT_TRANSLATE_NOOP(&quot;MetaData&quot;,&quot;Parámetros de taco&quot;)</alias>
+<table>paramtaco</table>
+<formrecord>paramtaco</formrecord>
+<scriptformrecord>paramtaco</scriptformrecord>
+</action>
+</xupdate:insert-after>
+<xupdate:insert-after select="/ACTIONS[ACTIONS,1]/action[paramtaco]" >
+<action>
+<name>parampliego</name>
+<description>QT_TRANSLATE_NOOP(&quot;MetaData&quot;,&quot;Detalle de de parámetros de un pliego de impresión&quot;)</description>
+<alias>QT_TRANSLATE_NOOP(&quot;MetaData&quot;,&quot;Parámetros de pliego&quot;)</alias>
+<scriptform>parampliego</scriptform>
+<table>parampliego</table>
+<form>parampliego</form>
+</action>
+</xupdate:insert-after>
+<xupdate:insert-after select="/ACTIONS[ACTIONS,1]/action[parampliego]" >
+<action>
+<name>paramcolor</name>
+<description>QT_TRANSLATE_NOOP(&quot;MetaData&quot;,&quot;Detalle de de parámetros de color&quot;)</description>
+<alias>QT_TRANSLATE_NOOP(&quot;MetaData&quot;,&quot;Parámetros de color&quot;)</alias>
+<table>paramcolor</table>
+<formrecord>paramcolor</formrecord>
+<scriptformrecord>paramcolor</scriptformrecord>
+</action>
+</xupdate:insert-after>
+<xupdate:insert-after select="/ACTIONS[ACTIONS,1]/action[paramcolor]" >
+<action>
+<name>paramcantidad</name>
+<description>QT_TRANSLATE_NOOP(&quot;MetaData&quot;,&quot;Detalle de de parámetros de cantidad&quot;)</description>
+<alias>QT_TRANSLATE_NOOP(&quot;MetaData&quot;,&quot;Parámetros de cantidad&quot;)</alias>
+<table>paramcantidad</table>
+<formrecord>paramcantidad</formrecord>
+<scriptformrecord>paramcantidad</scriptformrecord>
+</action>
+</xupdate:insert-after>
+<xupdate:insert-after select="/ACTIONS[ACTIONS,1]/action[paramcantidad]" >
+<action>
+<name>coloresconf</name>
+<description>QT_TRANSLATE_NOOP(&quot;MetaData&quot;,&quot;Colores por configuración&quot;)</description>
+<alias>QT_TRANSLATE_NOOP(&quot;MetaData&quot;,&quot;Colores por configuración&quot;)</alias>
+<scriptform>coloresconf</scriptform>
+<table>coloresconf</table>
+<form>master</form>
+<formrecord>coloresconf</formrecord>
+</action>
+</xupdate:insert-after>
+<xupdate:insert-after select="/ACTIONS[ACTIONS,1]/action[coloresconf]" >
+<action>
+<name>coloresag</name>
+<description>QT_TRANSLATE_NOOP(&quot;MetaData&quot;,&quot;Colores de Artes Gráficas&quot;)</description>
+<alias>QT_TRANSLATE_NOOP(&quot;MetaData&quot;,&quot;Colores de Artes Gráficas&quot;)</alias>
+<table>coloresag</table>
+<form>master</form>
+<formrecord>coloresag</formrecord>
+</action>
+</xupdate:insert-after>
+<xupdate:insert-after select="/ACTIONS[ACTIONS,1]/action[coloresag]" >
+<action>
+<name>numcopiasag</name>
+<description>QT_TRANSLATE_NOOP(&quot;MetaData&quot;,&quot;Número de copias&quot;)</description>
+<alias>QT_TRANSLATE_NOOP(&quot;MetaData&quot;,&quot;Número de copias&quot;)</alias>
+<table>numcopiasag</table>
+<form>master</form>
+<formrecord>numcopiasag</formrecord>
+</action>
+</xupdate:insert-after>
+<xupdate:insert-after select="/ACTIONS[ACTIONS,1]/action[numcopiasag]" >
+<action>
+<name>selnumcopiasag</name>
+<description>QT_TRANSLATE_NOOP(&quot;MetaData&quot;,&quot;Número de copias&quot;)</description>
+<alias>QT_TRANSLATE_NOOP(&quot;MetaData&quot;,&quot;Número de copias&quot;)</alias>
+<table>numcopiasag</table>
+<form>masterselnumcopiasag</form>
+<scriptform>masterselnumcopiasag</scriptform>
+<formrecord>numcopiasag</formrecord>
+</action>
+</xupdate:insert-after>
+<xupdate:insert-after select="/ACTIONS[ACTIONS,1]/action[selnumcopiasag]" >
+<action>
+<name>grupospliegolibro</name>
+<description>QT_TRANSLATE_NOOP(&quot;MetaData&quot;,&quot;Grupos de pliego por libro&quot;)</description>
+<alias>QT_TRANSLATE_NOOP(&quot;MetaData&quot;,&quot;Grupos de pliego por libro&quot;)</alias>
+<table>grupospliegolibro</table>
+<scriptformrecord>grupospliegolibro</scriptformrecord>
+<formrecord>grupospliegolibro</formrecord>
+</action>
+</xupdate:insert-after>
+<xupdate:insert-after select="/ACTIONS[ACTIONS,1]/action[grupospliegolibro]" >
+<action>
+<name>trabexternolibro</name>
+<description>QT_TRANSLATE_NOOP(&quot;MetaData&quot;,&quot;Trabajos externos por libro&quot;)</description>
+<alias>QT_TRANSLATE_NOOP(&quot;MetaData&quot;,&quot;Trabajos externos por libro&quot;)</alias>
+<table>trabexternolibro</table>
+<formrecord>trabexternolibro</formrecord>
+<scriptformrecord>trabexternolibro</scriptformrecord>
+</action>
+</xupdate:insert-after>
+<xupdate:insert-after select="/ACTIONS[ACTIONS,1]/action[busprescli]" >
+<action>
+<name>tareasmanuales</name>
+<description>QT_TRANSLATE_NOOP(&quot;MetaData&quot;,&quot;Tareas manuales&quot;)</description>
+<alias>QT_TRANSLATE_NOOP(&quot;MetaData&quot;,&quot;Tareas manuales&quot;)</alias>
+<table>tareasmanuales</table>
+<form>master</form>
+<formrecord>tareasmanuales</formrecord>
+</action>
+</xupdate:insert-after>
+<xupdate:insert-after select="/ACTIONS[ACTIONS,1]/action[tareasmanuales]" >
+<action>
+<name>consumostareamanual</name>
+<description>QT_TRANSLATE_NOOP(&quot;MetaData&quot;,&quot;Consumos tarea manual&quot;)</description>
+<alias>QT_TRANSLATE_NOOP(&quot;MetaData&quot;,&quot;Consumos tarea manual&quot;)</alias>
+<table>consumostareamanual</table>
+<form>master</form>
+<formrecord>consumostareamanual</formrecord>
+<scriptformrecord>consumostareamanual</scriptformrecord>
+</action>
+</xupdate:insert-after>
+</xupdate:modifications>

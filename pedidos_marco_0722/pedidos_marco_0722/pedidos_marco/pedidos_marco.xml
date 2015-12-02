@@ -1,0 +1,20 @@
+<flpatch:modifications name="pedidos_marco" >
+    <flpatch:patchXml path="facturacion/facturacion/" name="flfacturac.xml" />
+    <flpatch:addFile path="facturacion/facturacion/forms/" name="lineaspedidomarcocli.ui" />
+    <flpatch:addFile path="facturacion/facturacion/forms/" name="pedidosmarcocli.ui" />
+    <flpatch:addFile path="facturacion/facturacion/scripts/" name="lineaspedidomarcocli.qs" />
+    <flpatch:addFile path="facturacion/facturacion/scripts/" name="masterpedidosmarcocli.qs" />
+    <flpatch:addFile path="facturacion/facturacion/scripts/" name="pedidosmarcocli.qs" />
+    <flpatch:addFile path="facturacion/facturacion/tables/" name="lineaspedidomarcocli.mtd" />
+    <flpatch:addFile path="facturacion/facturacion/tables/" name="pedidosmarcocli.mtd" />
+    <flpatch:patchXml path="facturacion/facturacion/forms/" name="flfacturac.ui" />
+    <flpatch:patchXml path="facturacion/facturacion/forms/" name="lineaspedidoscli.ui" />
+    <flpatch:patchXml path="facturacion/facturacion/tables/" name="lineaspedidoscli.mtd" />
+    <flpatch:patchXml path="facturacion/facturacion/forms/" name="lineaspresupuestoscli.ui" />
+    <flpatch:patchXml path="facturacion/facturacion/tables/" name="lineaspresupuestoscli.mtd" />
+    <flpatch:patchScript path="facturacion/facturacion/scripts/" name="lineaspedidoscli.qs" />
+    <flpatch:patchScript path="facturacion/facturacion/scripts/" name="masterpresupuestoscli.qs" />
+    <flpatch:patchScript path="facturacion/facturacion/scripts/" name="flfacturac.qs" />
+    <flpatch:addFile path="facturacion/facturacion/queries/" name="qry_lineaspedidoscli.qry" />
+    <flpatch:addFile path="facturacion/facturacion/tables/" name="qry_lineaspedidoscli.mtd" />
+</flpatch:modifications>

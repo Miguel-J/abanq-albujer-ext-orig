@@ -1,0 +1,65 @@
+<!DOCTYPE QRY>
+<QRY>
+	<name>presupuestoscli</name>
+
+	<tables>empresa,presupuestoscli</tables>
+
+	<group>
+		<level>0</level>
+		<field>presupuestoscli.idpresupuesto</field>
+	</group>
+
+	<group>
+		<level>1</level>
+		<field>lineaspresupuestoscli.referencia</field>
+	</group>
+	
+	<group>
+		<level>2</level>
+		<field>lineaspresupuestoscli.pvpunitario</field>
+	</group>
+
+	<group>
+		<level>3</level>
+		<field>lineaspresupuestoscli.dtopor</field>
+	</group>
+
+	
+
+	<select>
+		presupuestoscli.idpresupuesto, presupuestoscli.codigo, presupuestoscli.codserie,
+		presupuestoscli.fecha, presupuestoscli.total,
+		presupuestoscli.totaliva, presupuestoscli.totalrecargo,
+		presupuestoscli.irpf, presupuestoscli.totalirpf,
+		presupuestoscli.neto, presupuestoscli.coddivisa,
+		presupuestoscli.codejercicio, presupuestoscli.codpago,
+		presupuestoscli.codalmacen, presupuestoscli.codcliente,
+		presupuestoscli.nombrecliente, presupuestoscli.cifnif,
+		presupuestoscli.tasaconv, presupuestoscli.coddir,
+		presupuestoscli.direccion, presupuestoscli.codpostal,
+		presupuestoscli.ciudad, presupuestoscli.provincia,
+		presupuestoscli.apartado, presupuestoscli.codpais,
+		lineaspresupuestoscli.referencia, lineaspresupuestoscli.idpresupuesto,
+		lineaspresupuestoscli.descripcion, sum(lineaspresupuestoscli.cantidad),
+		lineaspresupuestoscli.pvpunitario, lineaspresupuestoscli.dtopor, sum(lineaspresupuestoscli.pvptotal),
+		lineaspresupuestoscli.codimpuesto, lineaspresupuestoscli.iva,
+		lineaspresupuestoscli.color,
+		empresa.nombre, empresa.cifnif,
+		empresa.direccion, empresa.logo,
+		empresa.codpostal, empresa.ciudad,
+		empresa.provincia, empresa.apartado,
+		empresa.codpais, paises.nombre
+	</select>
+
+	<from>
+		empresa,presupuestoscli INNER JOIN lineaspresupuestoscli ON presupuestoscli.idpresupuesto = lineaspresupuestoscli.idpresupuesto
+		LEFT OUTER JOIN paises ON presupuestoscli.codpais = paises.codpais
+	</from>
+
+	<where>
+	</where>
+	
+	<order>
+		lineaspresupuestoscli.referencia,lineaspresupuestoscli.pvpunitario,lineaspresupuestoscli.dtopor
+	</order>
+</QRY>

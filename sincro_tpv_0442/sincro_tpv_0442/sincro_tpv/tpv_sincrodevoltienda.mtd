@@ -1,0 +1,57 @@
+<!DOCTYPE TMD>
+<TMD>
+	<name>tpv_sincrodevoltienda</name>
+	<alias>QT_TRANSLATE_NOOP("MetaData","Sincronización de stock de tiendas")</alias>
+	
+	<field>
+		<name>idsincrodt</name>
+		<alias>QT_TRANSLATE_NOOP("MetaData","Id")</alias>
+		<null>false</null>
+		<pk>true</pk>
+		<type>serial</type>
+		<visiblegrid>false</visiblegrid>
+	</field>
+	
+	<field>
+		<name>idtpv_comanda</name>
+		<alias>QT_TRANSLATE_NOOP("MetaData","Id.Comanda")</alias>
+		<null>false</null>
+		<pk>false</pk>
+		<ck>true</ck>
+		<type>uint</type>
+		<visiblegrid>false</visiblegrid>
+		
+		<relation>
+			<table>tpv_comandas</table>
+			<field>idtpv_comanda</field>
+			<card>M1</card>
+			<delC>true</delC>
+		</relation>
+	</field>
+	
+	<field>
+		<name>codtienda</name>
+		<!-- Código-->
+		<alias>QT_TRANSLATE_NOOP("MetaData","Tienda")</alias>
+		<null>false</null>
+		<pk>false</pk>
+		<ck>true</ck>
+		<type>string</type>
+		<length>20</length>
+		
+		<relation>
+			<table>tpv_tiendas</table>
+			<field>codtienda</field>
+			<card>M1</card>
+			<delC>true</delC>
+		</relation>
+	</field>
+	
+	<field>
+		<name>sincronizado</name>
+		<alias>QT_TRANSLATE_NOOP("MetaData","Sincronizado")</alias>
+		<null>false</null>
+		<pk>false</pk>
+		<type>bool</type>
+	</field>
+</TMD>

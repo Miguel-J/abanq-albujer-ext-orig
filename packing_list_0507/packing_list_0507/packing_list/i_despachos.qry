@@ -1,0 +1,57 @@
+<!DOCTYPE QRY>
+<QRY>
+	<name>i_despachos</name>
+
+	<tables>empresa,despachos</tables>
+
+	<group>
+		<level>0</level>
+		<field>despachos.iddespacho</field>
+	</group>
+	<group>
+		<level>1</level>
+		<field>bultosdespacho.idbulto</field>
+	</group>
+
+	<select>
+		despachos.coddespacho, despachos.fecha,
+		despachos.totalpesoneto, despachos.totalpesobruto,
+		despachos.canbultos, despachos.totalvolumen,
+		despachos.iddespacho,
+		empresa.nombre, empresa.cifnif, empresa.telefono, empresa.email,
+		empresa.logo, empresa.direccion || '  ' || empresa.codpostal,
+		empresa.ciudad || '  ' || empresa.provincia, empresa.apartado,
+		empresa.codpais, empresa.fax, empresa.web,
+		clientes.codcliente, clientes.nombre, clientes.cifnif, clientes.email, clientes.telefono1, 
+		clientes.fax,
+		pf.nombre, pe.nombre, df.ciudad || '  ' || df.provincia,
+		de.ciudad || '  ' || de.provincia,
+		bultosdespacho.numero, bultosdespacho.largo, bultosdespacho.ancho, 
+		bultosdespacho.alto, bultosdespacho.volumen, bultosdespacho.pesoneto,
+		bultosdespacho.pesobruto, bultosdespacho.idbulto,
+		lineasbulto.referencia, lineasbulto.descripcion, lineasbulto.codalbaran,
+		lineasbulto.cantidad,lineasbulto.barcode,lineasbulto.talla,lineasbulto.color,
+		articulos.codunidad, pesosmedidas.factorconv
+	</select>
+
+	<from>
+		empresa, despachos
+		INNER JOIN clientes ON despachos.codcliente = clientes.codcliente
+		LEFT OUTER JOIN dirclientes df ON despachos.codcliente = df.codcliente AND df.domfacturacion = true
+		LEFT OUTER JOIN dirclientes de ON despachos.codcliente = de.codcliente AND de.domenvio = true
+		LEFT OUTER JOIN paises pf ON df.codpais = pf.codpais
+		LEFT OUTER JOIN paises pe ON de.codpais = pe.codpais
+		LEFT OUTER JOIN bultosdespacho ON despachos.iddespacho = bultosdespacho.iddespacho
+		LEFT OUTER JOIN lineasbulto ON bultosdespacho.idbulto = lineasbulto.idbulto
+		LEFT OUTER JOIN articulos ON lineasbulto.referencia = articulos.referencia
+		LEFT OUTER JOIN pesosmedidas ON articulos.codunidad = pesosmedidas.codunidad
+	</from>
+
+
+	<where>
+	</where>
+	
+	<order>
+		bultosdespacho.numero
+	</order>
+</QRY>

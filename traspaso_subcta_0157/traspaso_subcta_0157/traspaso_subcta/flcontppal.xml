@@ -1,0 +1,13 @@
+<xupdate:modifications>
+<xupdate:insert-after select="/ACTIONS[ACTIONS,1]/action[co_secuencias]" >
+<action>
+<name>co_traspasosubcta</name>
+<description>QT_TRANSLATE_NOOP(&quot;MetaData&quot;,&quot;Traspaso de movimientos contables de una subcuenta a otra&quot;)</description>
+<alias>QT_TRANSLATE_NOOP(&quot;MetaData&quot;,&quot;Traspaso de subcuenta&quot;)</alias>
+<table>co_traspasosubcta</table>
+<form>co_traspasosubcta</form>
+<formrecord>co_traspasosubcta</formrecord>
+<scriptform>co_traspasosubcta</scriptform>
+</action>
+</xupdate:insert-after>
+</xupdate:modifications>

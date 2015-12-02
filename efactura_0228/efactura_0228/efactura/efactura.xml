@@ -1,0 +1,13 @@
+<flpatch:modifications name="efactura" >
+    <flpatch:patchXml path="facturacion/facturacion/forms/" name="masterfacturascli.ui" />
+    <flpatch:patchScript path="facturacion/facturacion/scripts/" name="masterfacturascli.qs" />
+    <flpatch:patchScript path="facturacion/facturacion/scripts/" name="masterfacturasprov.qs" />
+    <flpatch:patchXml path="facturacion/facturacion/forms/" name="masterfacturasprov.ui" />
+    <flpatch:patchScript path="facturacion/facturacion/scripts/" name="facturasprov.qs" />
+    <flpatch:patchXml path="facturacion/facturacion/tables/" name="facturasprov.mtd" />
+    <flpatch:patchXml path="facturacion/principal/tables/" name="empresa.mtd" />
+    <flpatch:patchXml path="facturacion/principal/forms/" name="empresa.ui" />
+    <flpatch:patchXml path="facturacion/principal/forms/" name="paises.ui" />
+    <flpatch:patchXml path="facturacion/principal/tables/" name="paises.mtd" />
+    <flpatch:patchScript path="facturacion/principal/scripts/" name="empresa.qs" />
+</flpatch:modifications>

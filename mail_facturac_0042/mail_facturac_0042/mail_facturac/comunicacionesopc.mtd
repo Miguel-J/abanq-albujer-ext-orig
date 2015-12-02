@@ -1,0 +1,97 @@
+<!DOCTYPE TMD>
+<TMD>
+	<name>comunicacionesopc</name>
+	<!--Opciones de las comunicaciones-->
+	
+	<alias>QT_TRANSLATE_NOOP("MetaData","Opciones")</alias>
+	
+	<field>
+		<name>id</name>
+		<alias>QT_TRANSLATE_NOOP("MetaData","Código")</alias>
+		<null>false</null>
+		<pk>true</pk>
+		<type>serial</type>
+	</field>
+	
+	<field>
+		<name>comandomail</name>
+		<!-- Texto del mensaje -->
+		<alias>QT_TRANSLATE_NOOP("MetaData","Comando")</alias>
+		<null>true</null>
+		<pk>false</pk>
+		<type>string</type>
+		<length>40</length>
+		<default>mail</default>
+	</field>
+	
+	<field>
+		<name>opcionasunto</name>
+		<alias>QT_TRANSLATE_NOOP("MetaData","Asunto")</alias>
+		<null>true</null>
+		<pk>false</pk>
+		<type>string</type>
+		<length>40</length>
+		<default>-s</default>
+	</field>
+	
+	<field>
+		<name>opcioncc</name>
+		<alias>QT_TRANSLATE_NOOP("MetaData","CC")</alias>
+		<null>true</null>
+		<pk>false</pk>
+		<type>string</type>
+		<length>40</length>
+		<default>-c</default>
+	</field>
+	
+	<field>
+		<name>opcionbcc</name>
+		<alias>QT_TRANSLATE_NOOP("MetaData","BCC")</alias>
+		<null>true</null>
+		<pk>false</pk>
+		<type>string</type>
+		<length>40</length>
+		<default>-b</default>
+	</field>
+	
+	<field>
+		<name>opcionadjunto</name>
+		<alias>QT_TRANSLATE_NOOP("MetaData","Adjunto")</alias>
+		<null>true</null>
+		<pk>false</pk>
+		<type>string</type>
+		<length>40</length>
+		<default>-a</default>
+	</field>
+	
+	<field>
+		<name>opcionremite</name>
+		<alias>QT_TRANSLATE_NOOP("MetaData","Remitente")</alias>
+		<null>true</null>
+		<pk>false</pk>
+		<type>string</type>
+		<length>40</length>
+		<default>-r</default>
+	</field>
+	
+	<field>
+		<name>cabecera</name>
+		<!-- Texto del mensaje -->
+		<alias>QT_TRANSLATE_NOOP("MetaData","Cabecera general")</alias>
+		<null>true</null>
+		<pk>false</pk>
+		<type>stringlist</type>
+		<visiblegrid>false</visiblegrid>
+	</field>
+	
+	<field>
+		<name>pie</name>
+		<!-- Texto del mensaje -->
+		<alias>QT_TRANSLATE_NOOP("MetaData","Pie general")</alias>
+		<null>true</null>
+		<pk>false</pk>
+		<type>stringlist</type>
+		<visiblegrid>false</visiblegrid>
+	</field>
+	
+</TMD>

@@ -1,0 +1,686 @@
+<xupdate:modifications>
+<xupdate:update select="/UI[UI,1]/widget[QWidget,jl_selectart]/property[geometry]/rect[rect,1]/height[height,1]/text()[1]" >532</xupdate:update>
+<xupdate:update select="/UI[UI,1]/widget[QWidget,jl_selectart]/property[geometry]/rect[rect,1]/width[width,1]/text()[1]" >814</xupdate:update>
+<xupdate:insert-after select="/UI[UI,1]/widget[QWidget,jl_selectart]/vbox[vbox,1]/widget[FLTableDB,tableDBRecords]/property[name]" >
+<property name="sizePolicy" >
+<sizepolicy>
+<hsizetype>5</hsizetype>
+<vsizetype>7</vsizetype>
+<horstretch>0</horstretch>
+<verstretch>0</verstretch>
+</sizepolicy>
+</property>
+</xupdate:insert-after>
+<xupdate:insert-after select="/UI[UI,1]/widget[QWidget,jl_selectart]/vbox[vbox,1]/property[spacing]" >
+<widget class="QGroupBox" >
+<property name="name" >
+<cstring>gbxFiltrosArticulos</cstring>
+</property>
+<property name="sizePolicy" >
+<sizepolicy>
+<hsizetype>5</hsizetype>
+<vsizetype>1</vsizetype>
+<horstretch>0</horstretch>
+<verstretch>0</verstretch>
+</sizepolicy>
+</property>
+<property name="title" >
+<string/>
+</property>
+<vbox>
+<property name="name" >
+<cstring>unnamed</cstring>
+</property>
+<property name="margin" >
+<number>0</number>
+</property>
+<property name="spacing" >
+<number>7</number>
+</property>
+<widget class="QLayoutWidget" >
+<property name="name" >
+<cstring>layout7</cstring>
+</property>
+<hbox>
+<property name="name" >
+<cstring>unnamed</cstring>
+</property>
+<widget class="QGroupBox" >
+<property name="name" >
+<cstring>gbxTiposPrenda</cstring>
+</property>
+<property name="sizePolicy" >
+<sizepolicy>
+<hsizetype>5</hsizetype>
+<vsizetype>1</vsizetype>
+<horstretch>0</horstretch>
+<verstretch>0</verstretch>
+</sizepolicy>
+</property>
+<property name="font" >
+<font>
+<bold>1</bold>
+<italic>1</italic>
+</font>
+</property>
+<property name="title" >
+<string>Tipos prenda</string>
+</property>
+<vbox>
+<property name="name" >
+<cstring>unnamed</cstring>
+</property>
+<property name="margin" >
+<number>0</number>
+</property>
+<property name="spacing" >
+<number>2</number>
+</property>
+<widget class="FLTableDB" >
+<property name="name" >
+<cstring>tdbTiposPrenda</cstring>
+</property>
+<property name="sizePolicy" >
+<sizepolicy>
+<hsizetype>5</hsizetype>
+<vsizetype>3</vsizetype>
+<horstretch>0</horstretch>
+<verstretch>0</verstretch>
+</sizepolicy>
+</property>
+<property name="minimumSize" >
+<size>
+<width>0</width>
+<height>120</height>
+</size>
+</property>
+<property name="maximumSize" >
+<size>
+<width>32767</width>
+<height>120</height>
+</size>
+</property>
+<property name="font" >
+<font>
+<bold>0</bold>
+<italic>0</italic>
+</font>
+</property>
+<property name="tableName" >
+<string>tiposprenda</string>
+</property>
+<property name="checkColumnEnabled" >
+<bool>true</bool>
+</property>
+<property name="findHidden" >
+<bool>true</bool>
+</property>
+<property name="filterHidden" >
+<bool>true</bool>
+</property>
+<property name="showAllPixmaps" >
+<bool>true</bool>
+</property>
+</widget>
+</vbox>
+</widget>
+<widget class="QGroupBox" >
+<property name="name" >
+<cstring>gbxFamilias</cstring>
+</property>
+<property name="sizePolicy" >
+<sizepolicy>
+<hsizetype>5</hsizetype>
+<vsizetype>1</vsizetype>
+<horstretch>0</horstretch>
+<verstretch>0</verstretch>
+</sizepolicy>
+</property>
+<property name="font" >
+<font>
+<bold>1</bold>
+<italic>1</italic>
+</font>
+</property>
+<property name="title" >
+<string>Familias</string>
+</property>
+<vbox>
+<property name="name" >
+<cstring>unnamed</cstring>
+</property>
+<property name="margin" >
+<number>0</number>
+</property>
+<property name="spacing" >
+<number>2</number>
+</property>
+<widget class="FLTableDB" >
+<property name="name" >
+<cstring>tdbFamilias</cstring>
+</property>
+<property name="sizePolicy" >
+<sizepolicy>
+<hsizetype>5</hsizetype>
+<vsizetype>3</vsizetype>
+<horstretch>0</horstretch>
+<verstretch>0</verstretch>
+</sizepolicy>
+</property>
+<property name="minimumSize" >
+<size>
+<width>0</width>
+<height>120</height>
+</size>
+</property>
+<property name="maximumSize" >
+<size>
+<width>32767</width>
+<height>120</height>
+</size>
+</property>
+<property name="font" >
+<font>
+<bold>0</bold>
+<italic>0</italic>
+</font>
+</property>
+<property name="tableName" >
+<string>familias</string>
+</property>
+<property name="checkColumnEnabled" >
+<bool>true</bool>
+</property>
+<property name="findHidden" >
+<bool>true</bool>
+</property>
+<property name="filterHidden" >
+<bool>true</bool>
+</property>
+<property name="showAllPixmaps" >
+<bool>true</bool>
+</property>
+</widget>
+</vbox>
+</widget>
+<widget class="QGroupBox" >
+<property name="name" >
+<cstring>gbxSubfamilias</cstring>
+</property>
+<property name="sizePolicy" >
+<sizepolicy>
+<hsizetype>5</hsizetype>
+<vsizetype>1</vsizetype>
+<horstretch>0</horstretch>
+<verstretch>0</verstretch>
+</sizepolicy>
+</property>
+<property name="font" >
+<font>
+<bold>1</bold>
+<italic>1</italic>
+</font>
+</property>
+<property name="title" >
+<string>Subfamilias</string>
+</property>
+<vbox>
+<property name="name" >
+<cstring>unnamed</cstring>
+</property>
+<property name="margin" >
+<number>0</number>
+</property>
+<property name="spacing" >
+<number>2</number>
+</property>
+<widget class="FLTableDB" >
+<property name="name" >
+<cstring>tdbSubfamilias</cstring>
+</property>
+<property name="sizePolicy" >
+<sizepolicy>
+<hsizetype>5</hsizetype>
+<vsizetype>3</vsizetype>
+<horstretch>0</horstretch>
+<verstretch>0</verstretch>
+</sizepolicy>
+</property>
+<property name="minimumSize" >
+<size>
+<width>0</width>
+<height>120</height>
+</size>
+</property>
+<property name="maximumSize" >
+<size>
+<width>32767</width>
+<height>120</height>
+</size>
+</property>
+<property name="font" >
+<font>
+<bold>0</bold>
+<italic>0</italic>
+</font>
+</property>
+<property name="tableName" >
+<string>subfamilias</string>
+</property>
+<property name="checkColumnEnabled" >
+<bool>true</bool>
+</property>
+<property name="findHidden" >
+<bool>true</bool>
+</property>
+<property name="filterHidden" >
+<bool>true</bool>
+</property>
+<property name="showAllPixmaps" >
+<bool>true</bool>
+</property>
+</widget>
+</vbox>
+</widget>
+</hbox>
+</widget>
+<widget class="QLayoutWidget" >
+<property name="name" >
+<cstring>layout8</cstring>
+</property>
+<hbox>
+<property name="name" >
+<cstring>unnamed</cstring>
+</property>
+<widget class="QGroupBox" >
+<property name="name" >
+<cstring>gbxGrupos</cstring>
+</property>
+<property name="font" >
+<font>
+<bold>1</bold>
+<italic>1</italic>
+</font>
+</property>
+<property name="title" >
+<string>Grupo</string>
+</property>
+<vbox>
+<property name="name" >
+<cstring>unnamed</cstring>
+</property>
+<property name="margin" >
+<number>0</number>
+</property>
+<property name="spacing" >
+<number>2</number>
+</property>
+<widget class="FLTableDB" >
+<property name="name" >
+<cstring>tdbGruposTC</cstring>
+</property>
+<property name="sizePolicy" >
+<sizepolicy>
+<hsizetype>5</hsizetype>
+<vsizetype>3</vsizetype>
+<horstretch>0</horstretch>
+<verstretch>0</verstretch>
+</sizepolicy>
+</property>
+<property name="minimumSize" >
+<size>
+<width>0</width>
+<height>120</height>
+</size>
+</property>
+<property name="maximumSize" >
+<size>
+<width>32767</width>
+<height>120</height>
+</size>
+</property>
+<property name="font" >
+<font>
+<bold>0</bold>
+<italic>0</italic>
+</font>
+</property>
+<property name="tableName" >
+<string>grupostc</string>
+</property>
+<property name="checkColumnEnabled" >
+<bool>true</bool>
+</property>
+<property name="findHidden" >
+<bool>true</bool>
+</property>
+<property name="filterHidden" >
+<bool>true</bool>
+</property>
+<property name="showAllPixmaps" >
+<bool>true</bool>
+</property>
+</widget>
+</vbox>
+</widget>
+<widget class="QGroupBox" >
+<property name="name" >
+<cstring>gbxGenero</cstring>
+</property>
+<property name="sizePolicy" >
+<sizepolicy>
+<hsizetype>5</hsizetype>
+<vsizetype>1</vsizetype>
+<horstretch>0</horstretch>
+<verstretch>0</verstretch>
+</sizepolicy>
+</property>
+<property name="font" >
+<font>
+<bold>1</bold>
+<italic>1</italic>
+</font>
+</property>
+<property name="title" >
+<string>Grupo Moda</string>
+</property>
+<vbox>
+<property name="name" >
+<cstring>unnamed</cstring>
+</property>
+<property name="margin" >
+<number>0</number>
+</property>
+<property name="spacing" >
+<number>2</number>
+</property>
+<widget class="FLTableDB" >
+<property name="name" >
+<cstring>tdbGruposModa</cstring>
+</property>
+<property name="sizePolicy" >
+<sizepolicy>
+<hsizetype>5</hsizetype>
+<vsizetype>3</vsizetype>
+<horstretch>0</horstretch>
+<verstretch>0</verstretch>
+</sizepolicy>
+</property>
+<property name="minimumSize" >
+<size>
+<width>0</width>
+<height>120</height>
+</size>
+</property>
+<property name="maximumSize" >
+<size>
+<width>32767</width>
+<height>100</height>
+</size>
+</property>
+<property name="font" >
+<font>
+<bold>0</bold>
+<italic>0</italic>
+</font>
+</property>
+<property name="tableName" >
+<string>gruposmoda</string>
+</property>
+<property name="checkColumnEnabled" >
+<bool>true</bool>
+</property>
+<property name="findHidden" >
+<bool>true</bool>
+</property>
+<property name="filterHidden" >
+<bool>true</bool>
+</property>
+</widget>
+</vbox>
+</widget>
+<widget class="QGroupBox" >
+<property name="name" >
+<cstring>gbxAnio</cstring>
+</property>
+<property name="font" >
+<font>
+<bold>1</bold>
+<italic>1</italic>
+</font>
+</property>
+<property name="title" >
+<string>Año</string>
+</property>
+<vbox>
+<property name="name" >
+<cstring>unnamed</cstring>
+</property>
+<property name="margin" >
+<number>0</number>
+</property>
+<property name="spacing" >
+<number>2</number>
+</property>
+<widget class="FLTableDB" >
+<property name="name" >
+<cstring>tdbAnnosTC</cstring>
+</property>
+<property name="sizePolicy" >
+<sizepolicy>
+<hsizetype>5</hsizetype>
+<vsizetype>3</vsizetype>
+<horstretch>0</horstretch>
+<verstretch>0</verstretch>
+</sizepolicy>
+</property>
+<property name="minimumSize" >
+<size>
+<width>0</width>
+<height>120</height>
+</size>
+</property>
+<property name="maximumSize" >
+<size>
+<width>32767</width>
+<height>120</height>
+</size>
+</property>
+<property name="font" >
+<font>
+<bold>0</bold>
+<italic>0</italic>
+</font>
+</property>
+<property name="tableName" >
+<string>annostc</string>
+</property>
+<property name="checkColumnEnabled" >
+<bool>true</bool>
+</property>
+<property name="findHidden" >
+<bool>true</bool>
+</property>
+<property name="filterHidden" >
+<bool>true</bool>
+</property>
+<property name="showAllPixmaps" >
+<bool>true</bool>
+</property>
+</widget>
+</vbox>
+</widget>
+<widget class="QGroupBox" >
+<property name="name" >
+<cstring>gbxTemporda</cstring>
+</property>
+<property name="sizePolicy" >
+<sizepolicy>
+<hsizetype>5</hsizetype>
+<vsizetype>1</vsizetype>
+<horstretch>0</horstretch>
+<verstretch>0</verstretch>
+</sizepolicy>
+</property>
+<property name="font" >
+<font>
+<bold>1</bold>
+<italic>1</italic>
+</font>
+</property>
+<property name="title" >
+<string>Temporada</string>
+</property>
+<vbox>
+<property name="name" >
+<cstring>unnamed</cstring>
+</property>
+<property name="margin" >
+<number>0</number>
+</property>
+<property name="spacing" >
+<number>2</number>
+</property>
+<widget class="FLTableDB" >
+<property name="name" >
+<cstring>tdbTemporadas</cstring>
+</property>
+<property name="sizePolicy" >
+<sizepolicy>
+<hsizetype>5</hsizetype>
+<vsizetype>3</vsizetype>
+<horstretch>0</horstretch>
+<verstretch>0</verstretch>
+</sizepolicy>
+</property>
+<property name="minimumSize" >
+<size>
+<width>0</width>
+<height>120</height>
+</size>
+</property>
+<property name="maximumSize" >
+<size>
+<width>32767</width>
+<height>100</height>
+</size>
+</property>
+<property name="font" >
+<font>
+<bold>0</bold>
+<italic>0</italic>
+</font>
+</property>
+<property name="tableName" >
+<string>temporadas</string>
+</property>
+<property name="checkColumnEnabled" >
+<bool>true</bool>
+</property>
+<property name="findHidden" >
+<bool>true</bool>
+</property>
+<property name="filterHidden" >
+<bool>true</bool>
+</property>
+<property name="showAllPixmaps" >
+<bool>true</bool>
+</property>
+</widget>
+</vbox>
+</widget>
+</hbox>
+</widget>
+<widget class="QGroupBox" >
+<property name="name" >
+<cstring>gbxCriteriosBusqueda</cstring>
+</property>
+<property name="font" >
+<font>
+<bold>1</bold>
+<italic>1</italic>
+</font>
+</property>
+<property name="title" >
+<string/>
+</property>
+<vbox>
+<property name="name" >
+<cstring>unnamed</cstring>
+</property>
+<property name="margin" >
+<number>0</number>
+</property>
+<property name="spacing" >
+<number>2</number>
+</property>
+</vbox>
+</widget>
+</vbox>
+</widget>
+</xupdate:insert-after>
+<xupdate:append-first select="/UI[UI,1]" >
+<images/>
+</xupdate:append-first>
+<xupdate:append-first select="/UI[UI,1]/images[images,1]" >
+<image name="tpv_multi_tcimage34479" >
+<data format="PNG" length="884" >89504e470d0a1a0a0000000d4948445200000016000000160806000000c4b46c3b0000033b49444154789cad954d4fe3561486df6bc7619cd8c9a41ea4361223b18be8a2330b10425551372c5137fd09acbaa5a8bfa0dbfe802c9a0508966d1112447c4480102a108850d3ca504a433eec08e238c6f970ae7dbb98b8a234cc64c1918e74ef95dee7bebabae71cc218c3c3989d9dfd726c6cec8ba9a9a9b782207c542e9783a669720018a5d4b06dbbd46c3675cbb26a9665999665d9aeebe6d6d6d67e7bc8213e78626242999c9cfc767a7a3a148bc5944422f1b96559a2aaaaf2d5d55557d3b4bae338b568345a5414e5af9191115592a4bf0194979696707979f9dab2ac9d6c366b0040c0bf21180c46e2f1f8902ccbad959595d7e974fa95200821cff3a069da8b66b329031801f099af098542954422919c9f9f4fe9ba1eb16d3b0cc0f88f6300585858f85a5194af8e8f8fdf148bc54f745d973b9d0ecf711cb9bfbf07630cb22c83e338caf37c4b14c5522412398fc562bf1e1e1efe54abd52e7dd6bf8e01e0e4e4e4706e6eeed3f1f1f11680f8e8e8e81b49929470382c341a8d8e699ae6eded6db6d3e9e401940194cecece1c55558b994cc678c8e21e6eb6b6b66ed6d7d733dd6ed703e01a86d1104591088240a2d1283f3c3c1c104531008007c0d7ebf530a534b0bbbb7bdf6c36ef9e0403402a95caeceded6501b8a6695afe79efc908638c00e03dcfe3abd5aa72707050cfe7f3bf3fe6fc0f0c00abababa97c3eaf32c65c4dd36c4a293ccf03630caeeb3200bcaeebaf2e2e2eaa474747bbfd18817e87b95cae3d3333f37d381cfe78686828ae284a14804729f55cd785e3382f6e6e6e4a9b9b9b3f974aa54e3f465fc700904ea7ebe974fabb42a17051abd5bc76bbcd1cc77129a5ecfafadad9d9d9f93197cbd59fd23f090680e5e5e5f2f6f6f6378542e1b6dd6eb356ab452b954a777f7fff878d8d8dcafbb4ef0503403299fce3eeeeae188bc58286619062b1682e2e2eaa1fd27d100c008c318fe779224912388e23836806027b9ee7972737a86660c70008009e10f27c60d77559af30fc7c1e30a5d45ff2836a0675ec114218004208e19f0ddc6b4a608c3dafe3deaff01d0ff4c67d7bc5e3d0342d59a95442e7e7e77f9e9e9efe3288863c1ea678674b0020f73202e025de8d2509800ea00aa0d14b0380cd1e81fe010a28b4e288aec25a0000000049454e44ae426082</data>
+</image>
+</xupdate:append-first>
+<xupdate:insert-after select="/UI[UI,1]/widget[QWidget,jl_selectart]/vbox[vbox,1]/widget[QGroupBox,gbxFiltrosArticulos]" >
+<widget class="QPushButton" >
+<property name="name" >
+<cstring>pbnFiltro</cstring>
+</property>
+<property name="maximumSize" >
+<size>
+<width>32767</width>
+<height>24</height>
+</size>
+</property>
+<property name="text" >
+<string/>
+</property>
+<property name="toggleButton" >
+<bool>true</bool>
+</property>
+<property name="on" >
+<bool>true</bool>
+</property>
+<property name="iconSet" >
+<iconset>tpv_multi_tcimage34479</iconset>
+</property>
+</widget>
+</xupdate:insert-after>
+<xupdate:insert-after select="/UI[UI,1]/includehints[includehints,1]/includehint[fltabledb.h]" >
+<includehint>fltabledb.h</includehint>
+</xupdate:insert-after>
+<xupdate:insert-after select="/UI[UI,1]/includehints[includehints,1]/includehint[fltabledb.h]" >
+<includehint>fltabledb.h</includehint>
+</xupdate:insert-after>
+<xupdate:insert-after select="/UI[UI,1]/includehints[includehints,1]/includehint[fltabledb.h]" >
+<includehint>fltabledb.h</includehint>
+</xupdate:insert-after>
+<xupdate:insert-after select="/UI[UI,1]/includehints[includehints,1]/includehint[fltabledb.h]" >
+<includehint>fltabledb.h</includehint>
+</xupdate:insert-after>
+<xupdate:insert-after select="/UI[UI,1]/includehints[includehints,1]/includehint[fltabledb.h]" >
+<includehint>fltabledb.h</includehint>
+</xupdate:insert-after>
+<xupdate:insert-after select="/UI[UI,1]/includehints[includehints,1]/includehint[fltabledb.h]" >
+<includehint>fltabledb.h</includehint>
+</xupdate:insert-after>
+<xupdate:insert-after select="/UI[UI,1]/includehints[includehints,1]/includehint[fltabledb.h]" >
+<includehint>fltabledb.h</includehint>
+</xupdate:insert-after>
+<xupdate:insert-after select="/UI[UI,1]/images[images,1]" >
+<connections>
+<connection>
+<sender>pbnFiltro</sender>
+<signal>toggled(bool)</signal>
+<receiver>gbxFiltrosArticulos</receiver>
+<slot>setShown(bool)</slot>
+</connection>
+</connections>
+</xupdate:insert-after>
+</xupdate:modifications>

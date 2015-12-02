@@ -1,0 +1,42 @@
+
+/** @class_declaration funChile */
+/////////////////////////////////////////////////////////////////
+//// FUN_CHILE //////////////////////////////////////////////////
+
+class funChile extends oficial
+{
+  function funChile(context)
+  {
+    oficial(context);
+  }
+
+  function init()
+  {
+    this.ctx.funChile_init();
+  }
+}
+
+//// FUN_CHILE //////////////////////////////////////////////////
+/////////////////////////////////////////////////////////////////
+
+/** @class_definition funChile */
+/////////////////////////////////////////////////////////////////
+//// FUN_CHILE //////////////////////////////////////////////////
+
+function funChile_init()
+{
+  this.iface.__init();
+
+  var mainFilter: String = this.cursor().mainFilter();
+
+  if (mainFilter.find("codserie='BO'") != -1) {
+    this.child("fdbCodSerie").setValue("BO");
+    this.child("fdbCodSerie").setDisabled(true);
+    this.child("fdbCodSerie").setFieldRelation("");
+    this.child("fdbCodCliente").setFocus();
+  } else
+    this.child("fdbCodSerie").setFilter("codserie<>'BO'");
+}
+
+//// FUN_CHILE //////////////////////////////////////////////////
+/////////////////////////////////////////////////////////////////

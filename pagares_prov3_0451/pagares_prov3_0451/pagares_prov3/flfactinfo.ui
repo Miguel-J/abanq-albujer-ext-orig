@@ -1,0 +1,45 @@
+<xupdate:modifications>
+<xupdate:insert-after select="/UI[UI,1]/actions[actions,1]/action[i_resrecibosprov]" >
+<action>
+<property name="name" >
+<cstring>tesoreraPagarsAction</cstring>
+</property>
+<property name="text" >
+<string>&amp;Pagarés</string>
+</property>
+<property name="menuText" >
+<string>&amp;Pagarés</string>
+</property>
+</action>
+</xupdate:insert-after>
+<xupdate:insert-after select="/UI[UI,1]/actions[actions,1]/action[tesoreraPagarsAction]" >
+<action>
+<property name="name" >
+<cstring>i_pagaresprov</cstring>
+</property>
+<property name="text" >
+<string>P. Proveedor</string>
+</property>
+<property name="menuText" >
+<string>P. Proveedor</string>
+</property>
+</action>
+</xupdate:insert-after>
+<xupdate:insert-after select="/UI[UI,1]/connections[connections,1]/connection[connection,20]" >
+<connection>
+<sender>i_pagaresprov</sender>
+<signal>activated()</signal>
+<receiver>FLWidgetApplication</receiver>
+<slot>openDefaultForm()</slot>
+</connection>
+</xupdate:insert-after>
+<xupdate:insert-after select="/UI[UI,1]/menubar[menubar,1]/item[item,3]/item[item,1]" >
+<action name="tesoreraPagarsAction" />
+</xupdate:insert-after>
+<xupdate:insert-after select="/UI[UI,1]/menubar[menubar,1]/item[item,3]/action[tesoreraPagarsAction]" >
+<item accel="" name="popupMenu_29" text="&amp;Pagarés" >
+<action name="i_pagaresprov" />
+</item>
+</xupdate:insert-after>
+<xupdate:update select="/UI[UI,1]/menubar[menubar,1]/property[property,2]/rect[rect,1]/height[height,1]/text()[1]" >25</xupdate:update>
+</xupdate:modifications>

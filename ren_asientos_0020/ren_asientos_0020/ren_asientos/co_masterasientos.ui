@@ -1,0 +1,53 @@
+<xupdate:modifications>
+<xupdate:update select="/UI[UI,1]/widget[QWidget,co_masterasientos]/vbox[vbox,1]/widget[QFrame,barraBotones]/hbox[hbox,1]/spacer[Spacer2]/property[property,4]/size[size,1]/width[width,1]/text()[1]" >170</xupdate:update>
+<xupdate:append-first select="/UI[UI,1]/images[images,1]" >
+<image name="ren_asientosimage4" >
+<data format="PNG" length="562" >89504e470d0a1a0a0000000d4948445200000018000000180806000000e0773df8000001f949444154789ce594b16b144114c67fb34ec2115482c4226aa7e9144c9b4238c1c6ff206d429a04fc07f22f2495701672d819905c27161617b50c2c04524448b129e42e8d7848b297d34b3e8bd971f7ee76cf3b4ca51f0c3b3bf378ef7ddfbcf7e05f8201ae0036f99a023b0d5b92ea59e320e37c02e802d780a9e43fe80b1c30264cb22681333584b96500e68016709a64d606a6811f92de256745281b637ad84f026a341a0aeba1e238f674ef03b733f4ef0237f98344f44965814eb81bd2fcdca4ba5565b9bb8c6261a6cc3ee0f700334057d247e0620475ca7e7303d0eacaaac27aa8a5952585ef4385bba1144bdb6fb67d564f807b459916c1e21e76aef2b2728885b5c535aa5b55161e2e70707840b41779db092090f40938cfcbb428c019ee411f545e54f68f9bc7ac3f5b67f3d526255ba2644bde360030c63ccaf1231c9d1d63cce33c06a7c03780daeb1a1bcf3798bf334fd48a98bd3adbebc931b820bf9206d858523dbf2816b5b735a2a3c885b510b57e4b2440c698a7405c106000be79da80af96227470da9f8ce2d8cb65718d368d2bc319e03a6917fbcc3b3809dba338ef6720e027f01d27cc577a478292ccdbc089a40f8c264f19d2511190ca95376f7c90f32499f422a772b23005fbec5936dbbcc61a983d7f8b91c6b4871ddbbbb4537035b4a3c78a316cf533b94c061e97c6e43fc12f3782f7649eea35230000000049454e44ae426082</data>
+</image>
+</xupdate:append-first>
+<xupdate:insert-after select="/UI[UI,1]/widget[QWidget,co_masterasientos]/vbox[vbox,1]/widget[QFrame,barraBotones]/hbox[hbox,1]/spacer[Spacer2]" >
+<widget class="QPushButton" >
+<property name="name" >
+<cstring>pbnRenum</cstring>
+</property>
+<property name="sizePolicy" >
+<sizepolicy>
+<hsizetype>1</hsizetype>
+<vsizetype>1</vsizetype>
+<horstretch>0</horstretch>
+<verstretch>0</verstretch>
+</sizepolicy>
+</property>
+<property name="minimumSize" >
+<size>
+<width>32</width>
+<height>32</height>
+</size>
+</property>
+<property name="maximumSize" >
+<size>
+<width>32</width>
+<height>32</height>
+</size>
+</property>
+<property name="focusPolicy" >
+<enum>NoFocus</enum>
+</property>
+<property name="text" >
+<string/>
+</property>
+<property name="accel" >
+<string>R</string>
+</property>
+<property name="iconSet" >
+<iconset>ren_asientosimage4</iconset>
+</property>
+<property name="toolTip" stdset="0" >
+<string>Renumerar asientos (R)</string>
+</property>
+<property name="whatsThis" stdset="0" >
+<string>Renumera los asientos por fecha</string>
+</property>
+</widget>
+</xupdate:insert-after>
+</xupdate:modifications>

@@ -1,0 +1,26 @@
+<flpatch:modifications name="magento" >
+    <flpatch:patchXml path="facturacion/almacen/" name="flfactalma.xml" />
+    <flpatch:patchXml path="facturacion/almacen/forms/" name="articulos.ui" />
+    <flpatch:patchXml path="facturacion/almacen/forms/" name="flfactalma.ui" />
+    <flpatch:addFile path="facturacion/almacen/forms/" name="mg_importexport.ui" />
+    <flpatch:addFile path="facturacion/almacen/forms/" name="mg_storeviews.ui" />
+    <flpatch:addFile path="facturacion/almacen/forms/" name="mg_websites.ui" />
+    <flpatch:patchScript path="facturacion/almacen/scripts/" name="articulos.qs" />
+    <flpatch:addFile path="facturacion/almacen/scripts/" name="mg_importexport.qs" />
+    <flpatch:patchXml path="facturacion/almacen/tables/" name="almacenes.mtd" />
+    <flpatch:patchXml path="facturacion/almacen/tables/" name="articulos.mtd" />
+    <flpatch:addFile path="facturacion/almacen/tables/" name="mg_artwebsite.mtd" />
+    <flpatch:addFile path="facturacion/almacen/tables/" name="mg_importexport.mtd" />
+    <flpatch:addFile path="facturacion/almacen/tables/" name="mg_importfiles.mtd" />
+    <flpatch:addFile path="facturacion/almacen/tables/" name="mg_storeviews.mtd" />
+    <flpatch:addFile path="facturacion/almacen/tables/" name="mg_websites.mtd" />
+    <flpatch:patchXml path="facturacion/principal/tables/" name="idiomas.mtd" />
+    <flpatch:addFile path="facturacion/almacen/tables/" name="mg_customers.mtd" />
+    <flpatch:addFile path="facturacion/almacen/forms/" name="mg_importfiles.ui" />
+    <flpatch:patchXml path="facturacion/facturacion/tables/" name="albaranescli.mtd" />
+    <flpatch:patchXml path="facturacion/facturacion/forms/" name="albaranescli.ui" />
+    <flpatch:patchXml path="facturacion/facturacion/tables/" name="lineasalbaranescli.mtd" />
+    <flpatch:addFile path="facturacion/almacen/tables/" name="mg_formaspago.mtd" />
+    <flpatch:addFile path="facturacion/almacen/forms/" name="mg_formaspago.ui" />
+    <flpatch:patchXml path="facturacion/principal/tables/" name="formaspago.mtd" />
+</flpatch:modifications>

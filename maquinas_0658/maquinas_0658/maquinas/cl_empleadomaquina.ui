@@ -1,0 +1,94 @@
+<!DOCTYPE UI><UI version="3.3" stdsetdef="1">
+<class>cl_EmpleadoMaquina</class>
+<widget class="QWidget">
+    <property name="name">
+        <cstring>cl_EmpleadoMaquina</cstring>
+    </property>
+    <property name="geometry">
+        <rect>
+            <x>0</x>
+            <y>0</y>
+            <width>624</width>
+            <height>66</height>
+        </rect>
+    </property>
+    <property name="caption">
+        <string>cl_empleadomaquina</string>
+    </property>
+    <vbox>
+        <property name="name">
+            <cstring>unnamed</cstring>
+        </property>
+        <widget class="QGroupBox">
+            <property name="name">
+                <cstring>gbxEmpleadoMaquina</cstring>
+            </property>
+            <property name="title">
+                <string></string>
+            </property>
+            <hbox>
+                <property name="name">
+                    <cstring>unnamed</cstring>
+                </property>
+                <widget class="FLFieldDB">
+                    <property name="name">
+                        <cstring>fdbCodEmpleado</cstring>
+                    </property>
+                    <property name="maximumSize">
+                        <size>
+                            <width>200</width>
+                            <height>32767</height>
+                        </size>
+                    </property>
+                    <property name="fieldName">
+                        <string>codempleado</string>
+                    </property>
+                </widget>
+                <widget class="FLFieldDB">
+                    <property name="name">
+                        <cstring>fdbNombre</cstring>
+                    </property>
+                    <property name="maximumSize">
+                        <size>
+                            <width>350</width>
+                            <height>32767</height>
+                        </size>
+                    </property>
+                    <property name="fieldName">
+                        <string>nombre</string>
+                    </property>
+                    <property name="tableName">
+                        <string></string>
+                    </property>
+                    <property name="foreignField">
+                        <string>nombre</string>
+                    </property>
+                    <property name="fieldRelation">
+                        <string>codempleado</string>
+                    </property>
+                </widget>
+                <widget class="FLFieldDB">
+                    <property name="name">
+                        <cstring>fdbApellidos</cstring>
+                    </property>
+                    <property name="fieldName">
+                        <string>apellidos</string>
+                    </property>
+                    <property name="foreignField">
+                        <string>apellidos</string>
+                    </property>
+                    <property name="fieldRelation">
+                        <string>codempleado</string>
+                    </property>
+                </widget>
+            </hbox>
+        </widget>
+    </vbox>
+</widget>
+<layoutdefaults spacing="6" margin="11"/>
+<includehints>
+    <includehint>flfielddb.h</includehint>
+    <includehint>flfielddb.h</includehint>
+    <includehint>flfielddb.h</includehint>
+</includehints>
+</UI>

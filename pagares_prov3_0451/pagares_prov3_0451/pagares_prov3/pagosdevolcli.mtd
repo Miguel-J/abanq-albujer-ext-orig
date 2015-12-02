@@ -1,0 +1,13 @@
+<xupdate:modifications>
+<xupdate:insert-after select="/TMD[TMD,1]/field[idremesa]" >
+<field>
+<name>numero</name>
+<!-- Número de pagaré--><alias>QT_TRANSLATE_NOOP(&quot;MetaData&quot;,&quot;Número&quot;)</alias>
+<null>true</null>
+<pk>false</pk>
+<type>string</type>
+<length>13</length>
+<editable>false</editable>
+</field>
+</xupdate:insert-after>
+</xupdate:modifications>

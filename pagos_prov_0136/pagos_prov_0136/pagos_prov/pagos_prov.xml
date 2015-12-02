@@ -1,0 +1,8 @@
+<flpatch:modifications name="pagos_prov" >
+    <flpatch:patchXml path="facturacion/tesoreria/" name="flfactteso.xml" />
+    <flpatch:patchXml path="facturacion/tesoreria/forms/" name="flfactteso.ui" />
+    <flpatch:addFile path="facturacion/tesoreria/forms/" name="pagosprov.ui" />
+    <flpatch:addFile path="facturacion/tesoreria/tables/" name="pagosprov.mtd" />
+    <flpatch:addFile path="facturacion/tesoreria/tables/" name="pagosprov.qs" />
+    <flpatch:addFile path="facturacion/tesoreria/scripts/" name="pagosprov.qs" />
+</flpatch:modifications>

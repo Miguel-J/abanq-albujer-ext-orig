@@ -1,0 +1,23 @@
+<!DOCTYPE TMD>
+<TMD>
+	<name>modbase</name>
+	<alias>QT_TRANSLATE_NOOP("MetaData","Módulos base")</alias>
+
+	<field>
+		<name>idmodbase</name>
+		<alias>QT_TRANSLATE_NOOP("MetaData","Identificador")</alias>
+		<null>false</null>
+		<pk>true</pk>
+		<type>string</type>
+		<length>1</length>
+	</field>
+
+	<field>
+		<name>descripcion</name>
+		<alias>QT_TRANSLATE_NOOP("MetaData","Descripción")</alias>
+		<null>false</null>
+		<pk>false</pk>
+		<type>string</type>
+		<length>50</length>
+	</field>
+</TMD>

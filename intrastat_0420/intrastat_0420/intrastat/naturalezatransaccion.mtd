@@ -1,0 +1,73 @@
+<!DOCTYPE TMD>
+<TMD>
+	<name>naturalezatransaccion</name>
+	<!--Listado de naturalezas de la transacción-->
+	<alias>QT_TRANSLATE_NOOP("MetaData","Naturaleza de la transacción")</alias>
+
+	<field>
+		<name>codigo</name>
+		<!--Código de la naturaleza-->
+		<alias>QT_TRANSLATE_NOOP("MetaData","Código")</alias>
+		<null>false</null>
+		<pk>true</pk>
+		<type>string</type>
+		<length>4</length>
+		<editable>false</editable>
+
+		<relation>
+            <table>lineasintrastatcli</table>
+            <field>codnaturaleza</field>
+            <card>1M</card>
+        </relation>
+	
+		<relation>
+            <table>lineasintrastatprov</table>
+            <field>codnaturaleza</field>
+            <card>1M</card>
+        </relation>
+	</field>
+	
+	<field>
+		<name>codnaturalezaa</name>
+		<alias>QT_TRANSLATE_NOOP("MetaData","Cod.A")</alias>
+		<null>false</null>
+		<pk>false</pk>
+		<type>string</type>
+		<length>1</length>
+		
+		<relation>
+			<table>naturalezatransacciona</table>
+			<field>codnaturalezaa</field>
+			<card>M1</card>
+		</relation>
+	</field>
+	
+	<field>
+		<name>descripciona</name>
+		<alias>QT_TRANSLATE_NOOP("MetaData","Descripción")</alias>
+		<null>true</null>
+		<pk>false</pk>
+		<type>string</type>
+		<length>250</length>
+		<editable>false</editable>
+	</field>
+	
+	<field>
+		<name>codnaturalezab</name>
+		<alias>QT_TRANSLATE_NOOP("MetaData","Cod.B")</alias>
+		<null>false</null>
+		<pk>false</pk>
+		<type>string</type>
+		<length>1</length>
+	</field>
+
+	<field>
+		<name>descripcionb</name>
+		<alias>QT_TRANSLATE_NOOP("MetaData","Descripción ")</alias>
+		<null>true</null>
+		<pk>false</pk>
+		<type>string</type>
+		<length>250</length>
+	</field>
+
+</TMD>

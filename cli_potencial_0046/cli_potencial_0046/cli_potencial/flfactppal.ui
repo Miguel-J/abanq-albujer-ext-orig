@@ -1,0 +1,49 @@
+<xupdate:modifications>
+<xupdate:append-first select="/UI[UI,1]/images[images,1]" >
+<image name="cli_potencialimage17" >
+<data format="PNG" length="1302" >89504e470d0a1a0a0000000d4948445200000016000000160806000000c4b46c3b000004dd49444154789cb595416c5c671585bf8cafadfb6026f95ff1b4ef05a7e4215234a9129896d2360b50ad5288590049c5a26dc402a9482dac8a587583dab261096ca02081d448089a2eaa4e114136426057c5ca1462f12a9cf68d642b6fd0b8bc5fe4d1b94c7e4d588c5150c596bb393a9ba3f31ffdf79e03dffda2c36338141f0cd7d256a4f65ce278105154dcbbc33abad049caef54e68945210002558058b8c90d629d61c3301ce03154c0c6769706cef89a8e063a28773bd1477b6fb89fc52895190095193160e1bfb8dcc4b9a74e0bf32d38f601885ab8f4103f2ebcdd1982f0cf105069121f8edb996bc5bffb0b7f4d6fb16dffaed152e51ad012c1a6d05a10aa09c43ac3b9e56ea0d910ea09e894afb1608f9f3cb9c25ead543bbbec5d379a8d080eba43d1c4bf83845f69c31130e2065453a385504d8c586e6203730c3d9841e1492d38baf79fe1c96f3f4f76cf0a36827cbbc0bc071765480743675906669903b1ea8cefe3dc89a3201365680133e2f968f1cca9cf7fa581c0c97b1f828508b91ed81eee60ffb03ffd6b32fce511f55c9bce9cd9d490ffe178ee534b829f046402955979e263cb8f1eef9e3884194c6bb2bb973979cf2719bd397867f056ff89631fe42a0d6e8d17e4781538d85a90a94d19bf37e386b6135c3b43db0959fb68e5bdbd4530f039d406bb7d608cb7f19fb3b66e1af630b05999bd1e415e99ad2b9c7defaf90ce83dfa7d31a90ba318aa77731df190f0aa224863a87660a5772acb6dfa8da5187fed08c5855190788543f5a05fb69acba5319afc7aa5406730f9d7d923aa4f4eb36329f10bd4f2fe65bfd4f1fb94d6f9f5785dab3fa87edcd9dbffff18938d4e77c902f28504f61e5dcf3ccc747a8dfee2f8c2636694da5379a406b0a0d27fb1b17395677e085adce759facbcb2d1f7bcb256b07ed9c8e5d480e4e903267aa76b2ade8cee7d8f107d6499ecf433e8521785cf54705b2c5001e28347453f5494651be371c2f0b3163a873b5f5ac10cd4296ed71e5edbe89fd63a3b70ea81fb495dca585308255c33d2ce0ac59b1b7738e5c3a5f13705c4452e298ae259331e0338f5890e08e45b2563315297a2a2ac3cd079ff8baf95400a494684c25e018b0aa312a76070870a1b16a0311c95f716037b4c1d644b298891c60e74266a56e28739bd5f3ccbb0f4e4450e28f8028287bd3ee56e9fc16cc90ef97a7694c469dc4686a42e03d17d51485c462480a6bcf8d2d7f1977b204ab1758971a74b94a4b057527963f58d8218c584a10a5880860fd52d88c3305c4b198b91b818c450a7e8a2e3ecb96770c7ba68804bdb03363656c12ac62817d656f1a3e1700cdfab6a7db9972b4fbfac349cc4699640b2fffc6c312552255d4c711291362392a5e374ee7b8a222444daa524826644b494d2fdf83265387a351f75369ebba8b7ae5f71f81a445bfc9addf873e75fea1f74cd84480a9cc698806b3aa2a60f9736576fcfb7d7818cd24007b3c30e46efb53eebc3f8ae58399f2da5572b5ffd56856f48dc74aff6c95f4d5d822ab8660a02a92abddf9f67f5e20b5ff67ef873e71cce39228dc845a11e838de9f70b068302af0a701878c4cc2e49651e25a60a258e140b152a293ff8d137e96fad017c15c07b8fd536731a1cc59502d74cb9b0994300bfdf2cfbf32d89d50139b1388c3199cbe8adfde43fa200978123c87e0d0528871ec611f9a898f51dfbd10450512cd8db076edcb8c1ff63fe0d325e631ad08d3ead0000000049454e44ae426082</data>
+</image>
+</xupdate:append-first>
+<xupdate:insert-after select="/UI[UI,1]/actions[actions,1]/action[tiposrappel]" >
+<action>
+<property name="name" >
+<cstring>clientespot</cstring>
+</property>
+<property name="iconSet" >
+<iconset>cli_potencialimage17</iconset>
+</property>
+<property name="text" >
+<string>Clientes potenciales</string>
+</property>
+<property name="menuText" >
+<string>Clientes potenciales</string>
+</property>
+</action>
+</xupdate:insert-after>
+<xupdate:delete select="/UI[UI,1]/connections[connections,1]/connection[gruposclientes,activated(),FLWidgetApplication,openDefaultForm()]" />
+<xupdate:insert-after select="/UI[UI,1]/connections[connections,1]/connection[gruposclientes,activated(),FLWidgetApplication,openDefaultForm()]" >
+<connection>
+<sender>clientespot</sender>
+<signal>activated()</signal>
+<receiver>FLWidgetApplication</receiver>
+<slot>openDefaultForm()</slot>
+</connection>
+</xupdate:insert-after>
+<xupdate:insert-after select="/UI[UI,1]/connections[connections,1]/connection[tiposrappel,activated(),FLWidgetApplication,openDefaultForm()]" >
+<connection>
+<sender>clientespot</sender>
+<signal>activated()</signal>
+<receiver>FLWidgetApplication</receiver>
+<slot>openDefaultForm()</slot>
+</connection>
+</xupdate:insert-after>
+<xupdate:insert-after select="/UI[UI,1]/menubar[menubar,1]/item[item,1]/action[proveedores]" >
+<action name="clientespot" />
+</xupdate:insert-after>
+<xupdate:insert-after select="/UI[UI,1]/toolbars[toolbars,1]/toolbar[toolBar]/action[paises]" >
+<separator/>
+</xupdate:insert-after>
+<xupdate:insert-after select="/UI[UI,1]/toolbars[toolbars,1]/toolbar[toolBar]/separator[separator,7]" >
+<action name="clientespot" />
+</xupdate:insert-after>
+</xupdate:modifications>

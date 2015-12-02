@@ -1,0 +1,30 @@
+<xupdate:modifications>
+<xupdate:insert-after select="/TMD[TMD,1]/field[codtarifa]/relation[gruposclientes,codtarifa]" >
+<relation>
+<table>presupuestoscli</table>
+<field>codtarifa</field>
+<card>1M</card>
+</relation>
+</xupdate:insert-after>
+<xupdate:insert-after select="/TMD[TMD,1]/field[codtarifa]/relation[presupuestoscli,codtarifa]" >
+<relation>
+<table>pedidoscli</table>
+<field>codtarifa</field>
+<card>1M</card>
+</relation>
+</xupdate:insert-after>
+<xupdate:insert-after select="/TMD[TMD,1]/field[codtarifa]/relation[pedidoscli,codtarifa]" >
+<relation>
+<table>albaranescli</table>
+<field>codtarifa</field>
+<card>1M</card>
+</relation>
+</xupdate:insert-after>
+<xupdate:insert-after select="/TMD[TMD,1]/field[codtarifa]/relation[albaranescli,codtarifa]" >
+<relation>
+<table>facturascli</table>
+<field>codtarifa</field>
+<card>1M</card>
+</relation>
+</xupdate:insert-after>
+</xupdate:modifications>

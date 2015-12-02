@@ -1,0 +1,383 @@
+<!DOCTYPE TMD>
+<TMD>
+    <name>presupuestosprov</name>
+	<alias>QT_TRANSLATE_NOOP("MetaData","Ofertas de proveedores")</alias>
+    
+    <field>
+        <name>idpresupuesto</name>
+		<!--Identificador interno de la tabla-->        <alias>QT_TRANSLATE_NOOP("MetaData","Identificador")</alias>
+        <null>false</null>
+        <pk>true</pk>
+        <type>serial</type>
+        <visiblegrid>false</visiblegrid>
+      <relation>
+            <table>lineaspresupuestosprov</table>
+            <field>idpresupuesto</field>
+            <card>1M</card>
+        </relation>
+      <relation>
+            <table>datosoferta</table>
+            <field>idpresupuestoprov</field>
+            <card>1M</card>
+        </relation>
+      <relation>
+            <table>lineassolpresupuestosprov</table>
+            <field>idpresupuestoprov</field>
+            <card>1M</card>
+        </relation>
+    </field>
+    <field>
+        <name>codigo</name>
+		<!--Código asociado al presupuesto-->
+		<alias>QT_TRANSLATE_NOOP("MetaData","Nº oferta")</alias>
+        <null>false</null>
+        <pk>false</pk>
+        <type>string</type>
+        <length>12</length>
+        <default>0</default>
+        <editable>false</editable>
+        <relation>
+            <table>i_presupuestosprov</table>
+            <field>d_presupuestosprov_codigo</field>
+            <card>1M</card>
+        </relation>
+        <relation>
+            <table>i_presupuestosprov</table>
+            <field>h_presupuestosprov_codigo</field>
+            <card>1M</card>
+        </relation>
+    </field>
+	
+    <field>
+        <name>idpresupuestocli</name>
+		<!--Identificador del presupuesto de cliente relacionado con la oferta-->        <alias>QT_TRANSLATE_NOOP("MetaData","Presupuesto")</alias>
+        <null>true</null>
+        <pk>false</pk>
+        <type>uint</type>
+		<visiblegrid>false</visiblegrid>
+      <relation>
+            <table>presupuestoscli</table>
+            <field>idpresupuesto</field>
+            <card>M1</card>
+        </relation>
+    </field>
+    
+	<field>
+        <name>codpresupuestocli</name>
+		<!--Código asociado al presupuesto de cliente-->        <alias>QT_TRANSLATE_NOOP("MetaData","Presupuesto de cliente")</alias>
+        <null>true</null>
+        <pk>false</pk>
+        <type>string</type>
+        <length>12</length>
+    </field>
+    
+	<field>
+        <name>codproveedor</name>
+		<!--Código del proveedor-->        <alias>QT_TRANSLATE_NOOP("MetaData","Cod.Proveedor")</alias>
+        <null>true</null>
+        <pk>false</pk>
+        <type>string</type>
+        <length>6</length>
+        <relation>
+            <table>proveedores</table>
+            <field>codproveedor</field>
+            <card>M1</card>
+        </relation>
+    </field>
+	
+    <field>
+        <name>nombreproveedor</name>
+        <alias>QT_TRANSLATE_NOOP("MetaData","Nombre Proveedor")</alias>
+        <null>true</null>
+        <pk>false</pk>
+        <type>string</type>
+        <length>100</length>
+    </field>
+    
+	<field>
+        <name>femision</name>
+		<!--Fecha en la que se crea la solicitud de oferta-->
+        <alias>QT_TRANSLATE_NOOP("MetaData","Fecha emisión")</alias>
+        <null>false</null>
+        <pk>false</pk>
+        <type>date</type>
+    </field>
+    
+	<field>
+        <name>frecepcion</name>
+		<!--Fecha en la que se recibe la oferta-->        <alias>QT_TRANSLATE_NOOP("MetaData","Fecha recepción")</alias>
+        <null>true</null>
+        <pk>false</pk>
+        <type>date</type>
+    </field>
+    
+	<field>
+        <name>estado</name>
+        <alias>QT_TRANSLATE_NOOP("MetaData","Estado")</alias>
+        <null>true</null>
+        <pk>false</pk>
+        <type>string</type>
+        <length>10</length>
+        <optionslist>Pendiente,Enviada,Recibida,Anulada</optionslist>
+		<default>Pendiente</default>
+    </field>
+	
+	<field>
+        <name>tipoemision</name>
+		<!--Tipo de emisión-->
+		<alias>QT_TRANSLATE_NOOP("MetaData","Tipo emisión")</alias>
+        <null>true</null>
+        <pk>false</pk>
+        <type>string</type>
+        <length>20</length>
+        <optionslist>Fax,Correo electrónico,Teléfono,Otros</optionslist>
+    </field>
+	
+	<field>
+        <name>idusuario</name>
+        <alias>QT_TRANSLATE_NOOP("MetaData","Usuario")</alias>
+        <null>true</null>
+        <pk>false</pk>
+        <type>string</type>
+        <length>30</length>
+	      <relation>
+            <table>usuarios</table>
+            <field>idusuario</field>
+            <card>M1</card>
+        </relation>
+    </field>
+    
+	<field>
+        <name>observaciones</name>
+        <alias>QT_TRANSLATE_NOOP("MetaData","Observaciones")</alias>
+        <null>true</null>
+        <pk>false</pk>
+        <type>stringlist</type>
+    </field>
+    
+	<field>
+        <name>numofertaprov</name>
+		<!--Número de oferta del proveedor-->
+        <alias>QT_TRANSLATE_NOOP("MetaData","Nº Oferta Prov.")</alias>
+        <null>true</null>
+        <pk>false</pk>
+        <type>string</type>
+        <length>20</length>
+    </field>
+	
+	<field>
+        <name>codcontacto</name>
+        <alias>QT_TRANSLATE_NOOP("MetaData","Contacto")</alias>
+        <null>true</null>
+        <pk>false</pk>
+        <type>string</type>
+        <length>6</length>
+		<relation>
+            <table>crm_contactos</table>
+            <field>codcontacto</field>
+            <card>M1</card>
+        </relation>
+    </field>
+	
+	<field>
+        <name>contacto</name>
+		<!--Persona de contacto-->
+        <alias>QT_TRANSLATE_NOOP("MetaData","Nombre")</alias>
+        <null>true</null>
+        <pk>false</pk>
+        <type>string</type>
+        <length>100</length>
+    </field>
+    
+    <field>
+        <name>coddir</name>
+		<!--Código de la dirección asociada al proveedor-->        <alias>QT_TRANSLATE_NOOP("MetaData","Dir.")</alias>
+        <null>true</null>
+        <pk>false</pk>
+        <type>uint</type>
+        <visiblegrid>false</visiblegrid>
+        
+		<associated>
+            <with>codproveedor</with>
+            <by>codproveedor</by>
+        </associated>
+        
+		<relation>
+            <table>dirproveedores</table>
+            <field>id</field>
+            <card>M1</card>
+        </relation>
+    </field>
+	
+	<field>
+        <name>direccion</name>
+		<!--Domicilio de la persona de contacto-->
+        <alias>QT_TRANSLATE_NOOP("MetaData","Dirección")</alias>
+        <null>true</null>
+        <pk>false</pk>
+        <type>string</type>
+		<length>100</length>
+    </field>
+
+	<field>
+		<name>num</name>
+		<alias>QT_TRANSLATE_NOOP("MetaData","Nº")</alias>
+		<null>true</null>
+		<pk>false</pk>
+		<type>string</type>
+		<length>4</length>
+	</field>
+	
+	<field>
+		<name>apartado</name>
+		<alias>QT_TRANSLATE_NOOP("MetaData","Apdo. de correos")</alias>
+		<null>true</null>
+		<pk>false</pk>
+		<type>string</type>
+		<length>10</length>
+	</field>
+
+	<field>
+		<name>codpostal</name>
+		<alias>QT_TRANSLATE_NOOP("MetaData","Código Postal")</alias>
+		<null>true</null>
+		<pk>false</pk>
+		<type>string</type>
+		<length>10</length>
+	</field>
+
+	<field>
+		<name>ciudad</name>
+		<alias>QT_TRANSLATE_NOOP("MetaData","Ciudad")</alias>
+		<null>true</null>
+		<pk>false</pk>
+		<type>string</type>
+		<length>100</length>
+	</field>
+
+	<field>
+		<name>idprovincia</name>
+		<alias>QT_TRANSLATE_NOOP("MetaData","")</alias>
+		<null>true</null>
+		<pk>false</pk>
+		<type>uint</type>
+		<visiblegrid>false</visiblegrid>
+		
+		<relation>
+			<table>provincias</table>
+			<field>idprovincia</field>
+			<card>M1</card>
+		</relation>
+	</field>
+	
+	<field>
+		<name>provincia</name>
+		<alias>QT_TRANSLATE_NOOP("MetaData","Provincia")</alias>
+		<null>true</null>
+		<pk>false</pk>
+		<type>string</type>
+		<length>100</length>
+	</field>
+
+	<field>
+		<name>codpais</name>
+		<alias>QT_TRANSLATE_NOOP("MetaData","Pais")</alias>
+		<null>true</null>
+		<pk>false</pk>
+		<type>string</type>
+		<length>20</length>
+
+		<relation>
+			<table>paises</table>
+			<field>codpais</field>
+			<card>M1</card>
+		</relation>
+	</field>
+
+	<field>
+		<name>telefono1</name>
+		<alias>QT_TRANSLATE_NOOP("MetaData","Teléfono 1")</alias>
+		<null>true</null>
+		<pk>false</pk>
+		<type>string</type>
+		<length>30</length>
+	</field>
+
+	<field>
+		<name>fax</name>
+		<alias>QT_TRANSLATE_NOOP("MetaData","Fax")</alias>
+		<null>true</null>
+		<pk>false</pk>
+		<type>string</type>
+		<length>30</length>
+	</field>
+
+	<field>
+		<name>email</name>
+		<alias>QT_TRANSLATE_NOOP("MetaData","E-mail")</alias>
+		<null>true</null>
+		<pk>false</pk>
+		<type>string</type>
+		<length>50</length>
+	</field>
+
+	<field>
+		<name>codsolicitud</name>
+		<alias>QT_TRANSLATE_NOOP("MetaData","Solicitud")</alias>
+		<null>true</null>
+		<pk>false</pk>
+		<type>string</type>
+		<length>8</length>
+		<visiblegrid>false</visiblegrid>
+
+		<relation>
+			<table>solpresupuestosprov</table>
+			<field>codsolicitud</field>
+			<card>M1</card>
+		</relation>
+	</field>
+   
+	<field>
+        <name>codserie</name>
+		<alias>QT_TRANSLATE_NOOP("MetaData","Serie")</alias>
+        <null>false</null>
+        <ck>true</ck>
+        <pk>false</pk>
+        <type>string</type>
+        <length>2</length>
+        <relation>
+            <table>series</table>
+            <field>codserie</field>
+            <card>M1</card>
+        </relation>
+    </field>
+
+   <field>
+        <name>numero</name>
+		<alias>QT_TRANSLATE_NOOP("MetaData","Número")</alias>
+        <null>false</null>
+        <pk>false</pk>
+        <ck>true</ck>
+        <type>string</type>
+        <length>12</length>
+        <default>0</default>
+        <editable>false</editable>
+        <visiblegrid>false</visiblegrid>
+   </field>
+
+   <field>
+        <name>codejercicio</name>
+        <alias>QT_TRANSLATE_NOOP("MetaData","Ejercicio")</alias>
+        <null>false</null>
+        <pk>false</pk>
+        <ck>true</ck>
+        <type>string</type>
+        <length>4</length>
+        <editable>false</editable>
+        <relation>
+            <table>ejercicios</table>
+            <field>codejercicio</field>
+            <card>M1</card>
+        </relation>
+   </field>
+</TMD>

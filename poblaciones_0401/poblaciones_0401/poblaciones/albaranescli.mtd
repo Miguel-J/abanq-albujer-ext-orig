@@ -1,0 +1,17 @@
+<xupdate:modifications>
+<xupdate:insert-after select="/TMD[TMD,1]/field[codpostal]" >
+<field>
+<name>idpoblacion</name>
+<alias>QT_TRANSLATE_NOOP(&quot;MetaData&quot;,&quot;&quot;)</alias>
+<null>true</null>
+<pk>false</pk>
+<type>uint</type>
+<visiblegrid>false</visiblegrid>
+<relation>
+<table>poblaciones</table>
+<field>idpoblacion</field>
+<card>M1</card>
+</relation>
+</field>
+</xupdate:insert-after>
+</xupdate:modifications>

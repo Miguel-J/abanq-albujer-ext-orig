@@ -1,0 +1,5 @@
+<xupdate:modifications>
+<xupdate:update select="/TMD[TMD,1]/field[referencia]/alias[alias,1]/text()[1]" >QT_TRANSLATE_NOOP(&quot;MetaData&quot;,&quot;Ref/N.S.&quot;)</xupdate:update>
+<xupdate:delete select="/TMD[TMD,1]/field[referencia]/relation[articulos,referencia]" />
+<xupdate:update select="/TMD[TMD,1]/field[referencia]/length[length,1]/text()[1]" >25</xupdate:update>
+</xupdate:modifications>

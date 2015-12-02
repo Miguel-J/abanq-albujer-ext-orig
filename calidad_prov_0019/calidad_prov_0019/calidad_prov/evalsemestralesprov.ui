@@ -1,0 +1,693 @@
+<!DOCTYPE UI><UI version="3.3" stdsetdef="1">
+<class>formEvaluacionesSemestrales</class>
+<widget class="QWidget">
+    <property name="name">
+        <cstring>formEvaluacionesSemestrales</cstring>
+    </property>
+    <property name="geometry">
+        <rect>
+            <x>0</x>
+            <y>0</y>
+            <width>828</width>
+            <height>606</height>
+        </rect>
+    </property>
+    <property name="caption">
+        <string>Evaluaciones Semestrales</string>
+    </property>
+    <vbox>
+        <property name="name">
+            <cstring>unnamed</cstring>
+        </property>
+        <widget class="QGroupBox">
+            <property name="name">
+                <cstring>groupBox6</cstring>
+            </property>
+            <property name="font">
+                <font>
+                </font>
+            </property>
+            <property name="title">
+                <string></string>
+            </property>
+            <vbox>
+                <property name="name">
+                    <cstring>unnamed</cstring>
+                </property>
+                <widget class="QLayoutWidget">
+                    <property name="name">
+                        <cstring>layout8</cstring>
+                    </property>
+                    <hbox>
+                        <property name="name">
+                            <cstring>unnamed</cstring>
+                        </property>
+                        <widget class="FLFieldDB">
+                            <property name="name">
+                                <cstring>fdbPeriodo</cstring>
+                            </property>
+                            <property name="fieldName">
+                                <string>periodo</string>
+                            </property>
+                        </widget>
+                        <widget class="FLFieldDB">
+                            <property name="name">
+                                <cstring>fdbFechaDesdeEvaluacion</cstring>
+                            </property>
+                            <property name="fieldName">
+                                <string>fechadesdeevaluacion</string>
+                            </property>
+                        </widget>
+                        <widget class="FLFieldDB">
+                            <property name="name">
+                                <cstring>fdbFechaEvaluacion</cstring>
+                            </property>
+                            <property name="fieldName">
+                                <string>fechaevaluacion</string>
+                            </property>
+                        </widget>
+                        <widget class="QPushButton">
+                            <property name="name">
+                                <cstring>pbnGenerarSeguimientos</cstring>
+                            </property>
+                            <property name="text">
+                                <string>Evaluación Automática</string>
+                            </property>
+                            <property name="iconSet">
+                                <iconset>image28004</iconset>
+                            </property>
+                        </widget>
+                    </hbox>
+                </widget>
+                <widget class="QLayoutWidget">
+                    <property name="name">
+                        <cstring>layout15</cstring>
+                    </property>
+                    <hbox>
+                        <property name="name">
+                            <cstring>unnamed</cstring>
+                        </property>
+                        <widget class="FLFieldDB">
+                            <property name="name">
+                                <cstring>fdbEvaluadoPor</cstring>
+                            </property>
+                            <property name="maximumSize">
+                                <size>
+                                    <width>200</width>
+                                    <height>32767</height>
+                                </size>
+                            </property>
+                            <property name="fieldName">
+                                <string>evaluadopor</string>
+                            </property>
+                        </widget>
+                        <widget class="FLFieldDB">
+                            <property name="name">
+                                <cstring>fdbNombreEvaluadoPor</cstring>
+                            </property>
+                            <property name="sizePolicy">
+                                <sizepolicy>
+                                    <hsizetype>7</hsizetype>
+                                    <vsizetype>0</vsizetype>
+                                    <horstretch>0</horstretch>
+                                    <verstretch>0</verstretch>
+                                </sizepolicy>
+                            </property>
+                            <property name="fieldName">
+                                <string>nombre</string>
+                            </property>
+                            <property name="tableName">
+                                <string>usuarioscalidad</string>
+                            </property>
+                            <property name="foreignField">
+                                <string>evaluadopor</string>
+                            </property>
+                            <property name="fieldRelation">
+                                <string>codigo</string>
+                            </property>
+                        </widget>
+                    </hbox>
+                </widget>
+                <widget class="QLayoutWidget">
+                    <property name="name">
+                        <cstring>layout32</cstring>
+                    </property>
+                    <hbox>
+                        <property name="name">
+                            <cstring>unnamed</cstring>
+                        </property>
+                        <widget class="FLFieldDB">
+                            <property name="name">
+                                <cstring>fdbExigenciaSubida</cstring>
+                            </property>
+                            <property name="fieldName">
+                                <string>exigenciasubida</string>
+                            </property>
+                        </widget>
+                        <spacer>
+                            <property name="name">
+                                <cstring>spacer58</cstring>
+                            </property>
+                            <property name="orientation">
+                                <enum>Horizontal</enum>
+                            </property>
+                            <property name="sizeType">
+                                <enum>Fixed</enum>
+                            </property>
+                            <property name="sizeHint">
+                                <size>
+                                    <width>21</width>
+                                    <height>20</height>
+                                </size>
+                            </property>
+                        </spacer>
+                        <widget class="FLFieldDB">
+                            <property name="name">
+                                <cstring>fdbExigenciaBajada</cstring>
+                            </property>
+                            <property name="fieldName">
+                                <string>exigenciabajada</string>
+                            </property>
+                        </widget>
+                        <spacer>
+                            <property name="name">
+                                <cstring>spacer59</cstring>
+                            </property>
+                            <property name="orientation">
+                                <enum>Horizontal</enum>
+                            </property>
+                            <property name="sizeType">
+                                <enum>Expanding</enum>
+                            </property>
+                            <property name="sizeHint">
+                                <size>
+                                    <width>71</width>
+                                    <height>20</height>
+                                </size>
+                            </property>
+                        </spacer>
+                    </hbox>
+                </widget>
+                <widget class="FLFieldDB">
+                    <property name="name">
+                        <cstring>fdbDescripcion</cstring>
+                    </property>
+                    <property name="sizePolicy">
+                        <sizepolicy>
+                            <hsizetype>1</hsizetype>
+                            <vsizetype>0</vsizetype>
+                            <horstretch>0</horstretch>
+                            <verstretch>0</verstretch>
+                        </sizepolicy>
+                    </property>
+                    <property name="minimumSize">
+                        <size>
+                            <width>127</width>
+                            <height>24</height>
+                        </size>
+                    </property>
+                    <property name="maximumSize">
+                        <size>
+                            <width>32767</width>
+                            <height>50</height>
+                        </size>
+                    </property>
+                    <property name="fieldName">
+                        <string>descripcion</string>
+                    </property>
+                </widget>
+            </vbox>
+        </widget>
+        <widget class="QTabWidget">
+            <property name="name">
+                <cstring>twgSeg</cstring>
+            </property>
+            <property name="font">
+                <font>
+                    <bold>1</bold>
+                </font>
+            </property>
+            <widget class="QWidget">
+                <property name="name">
+                    <cstring>TabPage</cstring>
+                </property>
+                <attribute name="title">
+                    <string>&amp;Proveedores</string>
+                </attribute>
+                <vbox>
+                    <property name="name">
+                        <cstring>unnamed</cstring>
+                    </property>
+                    <widget class="QGroupBox">
+                        <property name="name">
+                            <cstring>gbxRecibos</cstring>
+                        </property>
+                        <property name="minimumSize">
+                            <size>
+                                <width>0</width>
+                                <height>350</height>
+                            </size>
+                        </property>
+                        <property name="font">
+                            <font>
+                            </font>
+                        </property>
+                        <property name="title">
+                            <string></string>
+                        </property>
+                        <vbox>
+                            <property name="name">
+                                <cstring>unnamed</cstring>
+                            </property>
+                            <widget class="QFrame">
+                                <property name="name">
+                                    <cstring>bbarRecibos</cstring>
+                                </property>
+                                <property name="sizePolicy">
+                                    <sizepolicy>
+                                        <hsizetype>5</hsizetype>
+                                        <vsizetype>0</vsizetype>
+                                        <horstretch>0</horstretch>
+                                        <verstretch>0</verstretch>
+                                    </sizepolicy>
+                                </property>
+                                <property name="minimumSize">
+                                    <size>
+                                        <width>0</width>
+                                        <height>40</height>
+                                    </size>
+                                </property>
+                                <property name="focusPolicy">
+                                    <enum>NoFocus</enum>
+                                </property>
+                                <property name="frameShape">
+                                    <enum>NoFrame</enum>
+                                </property>
+                                <property name="frameShadow">
+                                    <enum>Raised</enum>
+                                </property>
+                                <hbox>
+                                    <property name="name">
+                                        <cstring>unnamed</cstring>
+                                    </property>
+                                    <property name="margin">
+                                        <number>4</number>
+                                    </property>
+                                    <property name="spacing">
+                                        <number>2</number>
+                                    </property>
+                                    <widget class="QToolButton">
+                                        <property name="name">
+                                            <cstring>tbInsert</cstring>
+                                        </property>
+                                        <property name="sizePolicy">
+                                            <sizepolicy>
+                                                <hsizetype>1</hsizetype>
+                                                <vsizetype>1</vsizetype>
+                                                <horstretch>0</horstretch>
+                                                <verstretch>0</verstretch>
+                                            </sizepolicy>
+                                        </property>
+                                        <property name="minimumSize">
+                                            <size>
+                                                <width>32</width>
+                                                <height>32</height>
+                                            </size>
+                                        </property>
+                                        <property name="focusPolicy">
+                                            <enum>NoFocus</enum>
+                                        </property>
+                                        <property name="text">
+                                            <string></string>
+                                        </property>
+                                        <property name="iconSet">
+                                            <iconset>image49477</iconset>
+                                        </property>
+                                        <property name="toolTip" stdset="0">
+                                            <string>Agregar proveedor</string>
+                                        </property>
+                                    </widget>
+                                    <widget class="QToolButton">
+                                        <property name="name">
+                                            <cstring>tbDelete</cstring>
+                                        </property>
+                                        <property name="sizePolicy">
+                                            <sizepolicy>
+                                                <hsizetype>1</hsizetype>
+                                                <vsizetype>1</vsizetype>
+                                                <horstretch>0</horstretch>
+                                                <verstretch>0</verstretch>
+                                            </sizepolicy>
+                                        </property>
+                                        <property name="minimumSize">
+                                            <size>
+                                                <width>32</width>
+                                                <height>32</height>
+                                            </size>
+                                        </property>
+                                        <property name="focusPolicy">
+                                            <enum>NoFocus</enum>
+                                        </property>
+                                        <property name="text">
+                                            <string></string>
+                                        </property>
+                                        <property name="iconSet">
+                                            <iconset>image16808</iconset>
+                                        </property>
+                                        <property name="toolTip" stdset="0">
+                                            <string>Quitar proveedor</string>
+                                        </property>
+                                    </widget>
+                                    <spacer>
+                                        <property name="name">
+                                            <cstring>spacer12</cstring>
+                                        </property>
+                                        <property name="orientation">
+                                            <enum>Horizontal</enum>
+                                        </property>
+                                        <property name="sizeType">
+                                            <enum>Expanding</enum>
+                                        </property>
+                                        <property name="sizeHint">
+                                            <size>
+                                                <width>51</width>
+                                                <height>20</height>
+                                            </size>
+                                        </property>
+                                    </spacer>
+                                    <widget class="QToolButton">
+                                        <property name="name">
+                                            <cstring>tbDeleteAll</cstring>
+                                        </property>
+                                        <property name="sizePolicy">
+                                            <sizepolicy>
+                                                <hsizetype>1</hsizetype>
+                                                <vsizetype>1</vsizetype>
+                                                <horstretch>0</horstretch>
+                                                <verstretch>0</verstretch>
+                                            </sizepolicy>
+                                        </property>
+                                        <property name="minimumSize">
+                                            <size>
+                                                <width>32</width>
+                                                <height>32</height>
+                                            </size>
+                                        </property>
+                                        <property name="focusPolicy">
+                                            <enum>NoFocus</enum>
+                                        </property>
+                                        <property name="text">
+                                            <string> Quitar todos </string>
+                                        </property>
+                                        <property name="iconSet">
+                                            <iconset></iconset>
+                                        </property>
+                                        <property name="toolTip" stdset="0">
+                                            <string>Quitar todos los proveedores</string>
+                                        </property>
+                                    </widget>
+                                </hbox>
+                            </widget>
+                            <widget class="FLTableDB">
+                                <property name="name">
+                                    <cstring>tdbProveedores</cstring>
+                                </property>
+                                <property name="font">
+                                    <font>
+                                        <bold>0</bold>
+                                    </font>
+                                </property>
+                                <property name="tableName">
+                                    <string>proveedoreseval</string>
+                                </property>
+                                <property name="foreignField">
+                                    <string>id</string>
+                                </property>
+                                <property name="fieldRelation">
+                                    <string>idevaluacion</string>
+                                </property>
+                            </widget>
+                        </vbox>
+                    </widget>
+                </vbox>
+            </widget>
+            <widget class="QWidget">
+                <property name="name">
+                    <cstring>tab</cstring>
+                </property>
+                <attribute name="title">
+                    <string>Todos</string>
+                </attribute>
+                <vbox>
+                    <property name="name">
+                        <cstring>unnamed</cstring>
+                    </property>
+                    <widget class="FLTableDB">
+                        <property name="name">
+                            <cstring>tdbSegTodos</cstring>
+                        </property>
+                        <property name="sizePolicy">
+                            <sizepolicy>
+                                <hsizetype>1</hsizetype>
+                                <vsizetype>7</vsizetype>
+                                <horstretch>0</horstretch>
+                                <verstretch>0</verstretch>
+                            </sizepolicy>
+                        </property>
+                        <property name="minimumSize">
+                            <size>
+                                <width>700</width>
+                                <height>220</height>
+                            </size>
+                        </property>
+                        <property name="font">
+                            <font>
+                                <bold>0</bold>
+                            </font>
+                        </property>
+                        <property name="tableName">
+                            <string>seguimientosprov</string>
+                        </property>
+                        <property name="foreignField">
+                            <string>id</string>
+                        </property>
+                        <property name="fieldRelation">
+                            <string>idevaluacion</string>
+                        </property>
+                    </widget>
+                </vbox>
+            </widget>
+            <widget class="QWidget">
+                <property name="name">
+                    <cstring>tab</cstring>
+                </property>
+                <attribute name="title">
+                    <string>Suben</string>
+                </attribute>
+                <vbox>
+                    <property name="name">
+                        <cstring>unnamed</cstring>
+                    </property>
+                    <widget class="FLTableDB">
+                        <property name="name">
+                            <cstring>tdbSegSuben</cstring>
+                        </property>
+                        <property name="sizePolicy">
+                            <sizepolicy>
+                                <hsizetype>1</hsizetype>
+                                <vsizetype>7</vsizetype>
+                                <horstretch>0</horstretch>
+                                <verstretch>0</verstretch>
+                            </sizepolicy>
+                        </property>
+                        <property name="minimumSize">
+                            <size>
+                                <width>700</width>
+                                <height>220</height>
+                            </size>
+                        </property>
+                        <property name="font">
+                            <font>
+                                <bold>0</bold>
+                            </font>
+                        </property>
+                        <property name="tableName">
+                            <string>seguimientosprov</string>
+                        </property>
+                        <property name="foreignField">
+                            <string>id</string>
+                        </property>
+                        <property name="fieldRelation">
+                            <string>idevaluacion</string>
+                        </property>
+                    </widget>
+                </vbox>
+            </widget>
+            <widget class="QWidget">
+                <property name="name">
+                    <cstring>TabPage</cstring>
+                </property>
+                <attribute name="title">
+                    <string>Bajan</string>
+                </attribute>
+                <vbox>
+                    <property name="name">
+                        <cstring>unnamed</cstring>
+                    </property>
+                    <widget class="FLTableDB">
+                        <property name="name">
+                            <cstring>tdbSegBajan</cstring>
+                        </property>
+                        <property name="sizePolicy">
+                            <sizepolicy>
+                                <hsizetype>1</hsizetype>
+                                <vsizetype>7</vsizetype>
+                                <horstretch>0</horstretch>
+                                <verstretch>0</verstretch>
+                            </sizepolicy>
+                        </property>
+                        <property name="minimumSize">
+                            <size>
+                                <width>700</width>
+                                <height>220</height>
+                            </size>
+                        </property>
+                        <property name="font">
+                            <font>
+                                <bold>0</bold>
+                            </font>
+                        </property>
+                        <property name="tableName">
+                            <string>seguimientosprov</string>
+                        </property>
+                        <property name="foreignField">
+                            <string>id</string>
+                        </property>
+                        <property name="fieldRelation">
+                            <string>idevaluacion</string>
+                        </property>
+                    </widget>
+                </vbox>
+            </widget>
+            <widget class="QWidget">
+                <property name="name">
+                    <cstring>TabPage</cstring>
+                </property>
+                <attribute name="title">
+                    <string>Se mantienen</string>
+                </attribute>
+                <vbox>
+                    <property name="name">
+                        <cstring>unnamed</cstring>
+                    </property>
+                    <widget class="FLTableDB">
+                        <property name="name">
+                            <cstring>tdbSegMantienen</cstring>
+                        </property>
+                        <property name="sizePolicy">
+                            <sizepolicy>
+                                <hsizetype>1</hsizetype>
+                                <vsizetype>7</vsizetype>
+                                <horstretch>0</horstretch>
+                                <verstretch>0</verstretch>
+                            </sizepolicy>
+                        </property>
+                        <property name="minimumSize">
+                            <size>
+                                <width>700</width>
+                                <height>220</height>
+                            </size>
+                        </property>
+                        <property name="font">
+                            <font>
+                                <bold>0</bold>
+                            </font>
+                        </property>
+                        <property name="tableName">
+                            <string>seguimientosprov</string>
+                        </property>
+                        <property name="foreignField">
+                            <string>id</string>
+                        </property>
+                        <property name="fieldRelation">
+                            <string>idevaluacion</string>
+                        </property>
+                    </widget>
+                </vbox>
+            </widget>
+            <widget class="QWidget">
+                <property name="name">
+                    <cstring>TabPage</cstring>
+                </property>
+                <attribute name="title">
+                    <string>Son baja</string>
+                </attribute>
+                <vbox>
+                    <property name="name">
+                        <cstring>unnamed</cstring>
+                    </property>
+                    <widget class="FLTableDB">
+                        <property name="name">
+                            <cstring>tdbSegSonBaja</cstring>
+                        </property>
+                        <property name="sizePolicy">
+                            <sizepolicy>
+                                <hsizetype>1</hsizetype>
+                                <vsizetype>7</vsizetype>
+                                <horstretch>0</horstretch>
+                                <verstretch>0</verstretch>
+                            </sizepolicy>
+                        </property>
+                        <property name="minimumSize">
+                            <size>
+                                <width>700</width>
+                                <height>220</height>
+                            </size>
+                        </property>
+                        <property name="font">
+                            <font>
+                                <bold>0</bold>
+                            </font>
+                        </property>
+                        <property name="tableName">
+                            <string>seguimientosprov</string>
+                        </property>
+                        <property name="foreignField">
+                            <string>id</string>
+                        </property>
+                        <property name="fieldRelation">
+                            <string>idevaluacion</string>
+                        </property>
+                    </widget>
+                </vbox>
+            </widget>
+        </widget>
+    </vbox>
+</widget>
+<customwidgets>
+</customwidgets>
+<images>
+    <image name="image28004">
+        <data format="PNG" length="1584">89504e470d0a1a0a0000000d4948445200000020000000200806000000737a7af4000005f749444154789cc5977f6c5b5715c73fee5c7adfea75cf9aa1cfd48c17d4411e0a6a934622ee36049506894102129058c50f9122a445e30f14061b5bc4a6259abad22144c2141133467f682b6b2ab55b865635935ae26cb475b62eb303447e56169cd7d6d8de96d98f35f4f08793b629769a1641cf3fe749efdc7b3ee7fbeebbf75c8f88703d6dc575cd0e78171e3cbf071cc0a8e0d380b7048e0bba0bd9242a14be5d79b56f2983d5ee4422efce16a65c7d7392177f7e9213f739f80c9875964c2e2278163e81e7f1127835985bc2a3c1c47e38d6074e72adaa8b3c667dbdfb3b357706579005370f76369fcb4fbaaf3aa30fed667c703f6ee19fcb03584a814b7d00182fc11b83f05acf2a425bbf69b4743eb2ad455b37e34283017107fc0aa27f181e2d1c887632bd77f4bf57c02d01da2a2835ea3eed2e5d67931f6ad55c5e575eff6a34b49af540015400c8821b80d1c333ef259fbab793f1c1fe6b57609a1b8ddbf87e0ddcb3c5e436bb806773081205d81c82b12c583e4866c10a94156808403c5bf67d2fc3d893dd3f62bc6be7d5298006941a3e77a7d66fcdd14800dc2cf8cd7285960ec3e3256c5b7bd7b24a5aa44ef30ea7419b57c00a4072be88e14333ff1afb45db77991eddb53c0502a0cff295eebbf85d22cbcd3581f24f501f80c19771ed743c651feefb6b617cf8b8321bf4ddc3fbef1b9b2ebf1f75ca8ac4d2e5359128404308ba9f8c9d4effaaad05d7195b5a0134746fe9cbdb5ab467f2d328b51eb402240fe7ff1e3b74efab85134347700baf03363ef36ceb41fbd92d757c35e1c0d8a1587e66c29d72ec3d33ccba05c0a387226b83f5412b58bb65edf0aeee17dc3f767d0d7045a44c2122f0b4c07681a8a076caa6818464db5f1219c888740cc97b46d3a3cf02df003e01280002167a543edb1197f3eddbdf9c5466f8d7a0ee063e0d84001df001b780daa8ea5a1f36ba52a731eab72d287011607bb10cd0535cdd1a93d1f69744766744b6f69f740898ddc006e0031756d01d1da87e41df99e9d6eb227dc017810f73c9e656d174a349d5b5fe04f02f06880af408ad07e5fe8e61918194c8d6fe910c3ee3c780b96812af423df026fc70c4ab425b6f053e04dcb064e245e3598397358b017a8ab05dd6b51e944c4742a47d5fea6d02e6cf808f5e3e5e7915caa7e69f51f575f56b4dd30c2aafd2960dc1e59fa05f307e29f7ef3825d27954c4d8d8f95be093d506b737b6d7f4eeec7d42ce485232322befc86c662833d1dbd5db6b9ae6ed80e7ea001ec9ad0c3f2dc73b6322e11f8cc4812f5045d6c8972291dc99dc69a960b93339c9c4337391e6480f57580f8b0054bf6c88ec9373bd47e5bc0a580f03b754acbca9bd517292ab94fc2285482e9193f01de19f2e1fa027f7bdf6b848fd3d03a780cf541bf4dcbee70e8888c8fb9573178b451111c94c65e448df91334aa9c6a5002e34247ac8bf8134d8c792af007fa93420dc18ded8d6dcd64c09585979524dd3200f412348bd55ff41abd68a2ca5c2c58e285bfa94f3161426a327805ca5e0a011fcbcedd8aa7c44549eb0f46e09fc604fdba8f50a5dd73fc6c2c6b5148032b49b66d22ffc03b79006ce550acebbf9b76b540de4299f5397479540bb49031b6a7c358c4d8f61619da7aa5e9700b8e919c7cd6aef0067ab0527c7932fee39b6c7c107f9b37958395ff142e51ad8b60d3e884fc7091264283d94aa56d06200c78ee7dde439a0582dd8719c29fb15fb99c44402bfcf0f6f81a6349899f77f2b571e4fc7b1748be8a1682a9d4ec780f7af085080932e56912b74ca3dbfe9797cf0c0e0586222013e484c26c00b89890428884dc6b0748bbd87f796a2bba251e01470beea84177ec3a61d4175f7c09ff0aaf0520000ba4fafededea3df2fcc1e7a5982a4af1cf4529a68a3272744452b1943cf8c0835366c87c88f21952b5a0c5fd80c7836a7ef409f7c4de37c8269fba1204a09bebcdb686ba8616e323c6adccb1c299714ec75f8b1f9f97fd75caeba96af58bb762805078138d3b1e03562d0360c16ea45ce9c78175c06a9679e1f94f0080bac8b709984d570170cd561940e96ba88d34a3f49baf0fc002846e84f81fdf1dab030078d50d5c4d97738d009e8ac9ff8ff66fa3fa8d9b466d3de70000000049454e44ae426082</data>
+    </image>
+    <image name="image49477">
+        <data format="PNG" length="1671">89504e470d0a1a0a0000000d4948445200000020000000200806000000737a7af40000064e49444154789cc5975f681cd715c67f5246f82a28a0e95397b660953cc44b42354b523a6adc6297145a3b0f4ed0831c96b223a6e94eea9204b5d0d4181aff8162e3d0363269d41575a963a82a19dcca2d35bb6ec6785d6c34b6644b869058ae0d59e3861d3551bd9768abd387995d6b25ad6443a1dfcbb7f79ebbe79ef3cd993bf7c0ff192d0fb2d8ca4a17cc6c81643704dd9002829698a7203545b578c6e6d8071abd383c342cff9328adec74a65c9477adac885d14b1b2d3522e8a58bb44ec0b22d6ae6929fb225656c4f645acecc4b9b22f59cff536882fad6bf95e53012b2b16ccbc01c9afc30ca824181554473b898e0aa3afb67368a484ae24387503b40674097402088054856a71c0e6d86f345a0f0f0d2fde77d6765132f54c5f11b1df13f9f52989f071cc9f2ee30f23f20645ec40c4ca4e44cab83226be7cc6711de3be14b0b2928199618c2474407000664b15ba12ed849f80f908ebf2f8f99023674c4ab767a1da05d5e294cdb16f6af43fd754a29ef90591e77e1665f4e6c938c3f283f19b2745e46e542bb112e3e24b87e33af5ba6850207ee6014692c4672b8cbfd6be22c09a12ebf1520cbc0d85abb112baf0ac6d8c1634bab2e22db1b2d397cb4511ebc7b236ae47347dbdc978357c58af8909cff53e27beb4352860652732901a468504874d826b15529b562a5043cdbe9c9b61f47cc8fe1326cc07504dedb1e8ffa5427d5c5f50f6a3f75c6e8ae48338eaa9759488edf975d6d5ec7b8fd5ce91894be2cb46cff536b4c6cfbeeb1bc783afa1e0d0df4b6cb560fc62084fc4dc0cb17deb13cd97d4ecb93f97d80de8911290ea4e0d8d6f0254ad1ab7a8be142818e84d307a16b63d653670336c7bca6c6a1b3c01db1e37e9791d8e3d9aa0e77dc8671200a8ccb6af6a747b2d806e7d3c20d109b9d321cf6f5e9d1f04b9d321e127d0731014a08fc7018f44ac8f171f53a85a0041773e9da25341ff3326837f6ccef7834323d0ffa4c9ec3ca8346820df17d9541a60867cbae75140b5005859f1316637db8f7791304ba8de048c9418e84d3078a2c44b3b567233f4ff226476ce441367bec4561beb8f001d4cd9e4d2c4019cb52f88383f17914f457e7234e2fa0918e3e0ef45a42ce20cae5eedf64f45ee5e8f78f9fc9678feee7bf157d49749c775ba6b0a9c8599a7bb3626e9542118265443723f5859603dafdfcba4b867fdf9d5ecfa36500da66c72dfa9d5c054be2f49a821b7c3e4f67cc4aba1b80730209f8e9cd69ce7d3cd3787c88e01aa0f20209f4e7d002cd614781182b7e84cd1d9d1f8c7c26bab3b5c9ad15a99036c3d70eff7dc3c3007e8c221db181d8e14a87246f5a54043211d6f1c33b756775adc1357f73a9957661bfde57b2356bd5b038dd62d009eeb3d74dee8f721d593f83c2805ba0acab8c7a3af3657a2d9e6cf1f6ef40350ba310324af58d5feef29d4f556008d5eccf7a57e075079163a0d18771b9926e750b3cd0957fa09e740f52541174ee7d2b97f0395fad7d0719d0d978cdcdf20f88af5580aa5420631798990764c2a4463bedb64c32518789bfafadaff4bf321d7de37a11a5cb1c9edd2e87f2854a97e33c9a5730b548b3fcaf7a5b87603063326bb55c44add1bb3b0ceee0b34ac1fcc98280366379b4040be37f51630974be7e6347aa1e146e4b95edb795ef83e46cf61a566f8f69349a0c4ee9d09f6bd53829d0978271aaf867d50b7d7d7ffb644e16a82b9e81ef08645ff8842ddd4e83bc343c38de978aed722be3c6cb9e77e58f645ec57a213f1e0587c122ee3e5586edf7b5464cb85f8265490c39eeb3d2dbe7cd1719d87c59716808796067031b8c82de3d67fbab836b97fcafc5775f10bcffcea2f01d5c504b3774a0cec7884c113212fef6867f044c8973735726dfee51dedbc706096b33326fa7294f995abfd630646696c6aec8e4255b6efdadebc6bf25caf557ce9b032f9ed655f26ac6cd401eddcdff88da8f50935de7b54446e8ad8bbe20ec99d982aff553ccff5ec38f38ee59d52d3cec8719d5685521a6d5e22e740f01c46aa3bee78504640a23305cc10ce2799d3d17c6cbf822e9cb68dd1931a3da7501f6974a850fac8d091fbef8ee29a68735ca7537cd968a5fff42dbb20fb2cf7dc1fcabe5cb65c99b47d99b4dc89c9b22f6356460edaa7a4cf719d1ef1e54b9eeb6d145f3a1dd769ab3df3e5b8afeed873bd568d6e8b156957a8768d560ad5a6d1ad0a85462f2ad482466b85aa687445a1b4462facd509fd1752c615a7f5e3d9a40000000049454e44ae426082</data>
+    </image>
+    <image name="image16808">
+        <data format="PNG" length="1648">89504e470d0a1a0a0000000d4948445200000020000000200806000000737a7af40000063749444154789cc5977f685bd715c73f5625721d3c900683890e668f151a41a89fb63ff64cb32e0e1bec47a069e81f4e10c3cfbcad7a9eff4848615bb34293ac506a520875d8e6c92cdd52ffe13865dd9cc182e4ee8dc8a5ad9e1b6556205be32e2d53d615c96c5e745984cffe784ff22fc98961b0f3cf57efbe7bee39dfef39efea5ef83f5bc776261b69e981d25e48f482d70b49c0eb08b008c922f5fcacc9f9f7347a65627c42fe27591ae985c14a5efe60a445ccbc88915e904a5ec4181131df12314616a4e28a186911d31531d2852b1557d28eedec1057425badbda502465a0c28bd0489c7a0042a01e11aaaab9378578de9a39d8c4e95d1b53897de07ad015d061d073c2059a39e3f6672fe171aad27c62756ee9bb59997c126d32322e60d919f5f12dffee9c305773dcadf7c70c6444c4fc448177c656cb928ae7cd2b2adf07d2960a465104a138413d005def3b058aed113efa4fa2f887d02a667ab1cdc1b6bfa349e1bef67e6aa9c9d8d51bebd08f51ea8e78b26e7bfa6d1ffd8528926f3b7449e78216056598f4dc61bac39de987f4b44eef8bd12283123ae7459b6d5ec8b0736d6bc5e2c5d229ce0f247357efdfd088be51ab14fade2f46c95838f75b64c3ef1595f89c4ae4e7ffe83114a1fd6585a8ef0dc1b8b40eca19fbe939beb09fdf983dd5fd85d9ff7e6374abff06e252f62fcc027b070336072736be6ed9468fadff0fb23e88982633b0f8a2b910dc10b83465ac438e2eb5728dd5987177215d98e35e637fdf315319ef693306cf991655b51c776563fd18aeb7fe7724b24eb05ab14b7c77c5312815f3658e7e4f9c63e52981757ba1ddbd9110a6adfb36fd2fb320a46df2cd36fc0ccdb55d81d74f79eb63debcf6b6307f7f8fefdbb21f3bb32c7013d550692bdc9f1995d806a349f65baabb5dff47ddf83e1bde699cf89ecbde163a518ec98393965d9d6a71b35e8d5931ef128642efb8c1bd8ced6be6fcc6f67f967414ffabfbf39e5a39ecc3fac509d41025e6f369524aa60e8ab31c67ee3633b6bf5bee1d7ceb2033eaa1440896caaeff3800a1248b26f7291a8825353656afb6174aadc3af86b6586f7b70ee27d004367aaf49f583fde7702f64dfa05d7934038c1be5f7a1d40a451820e95ea416b38fe789ca557e0d8e3f126a3068e4ec1f057e26d59661c78797f0c0df42ffa816b8babccf53a25926874a803c048cb1fa1f4684f7782a8aa423806f5f578fd639f41eed9b6f19bd67fc20fa6688dfa3650f78a26996f377aa0981d4850d5903910e3f6f266cc0fde5f708224b301e326f31410063500e0914d25df03561a0a7c17bc9f104d12ed6ab3e80f5b8ff79df0bb7c4b25d6fc092f2d034b80ce8d9ae1e9095f813ab36a20091a72a920e01adc2a7836e563cba40325d6ae977dd247f564bfa7d1ba03c0b19d07e6c2432e24fbe29f01a540d7fdcca78fb60fbeb1b6ed943878da5f0fa0fc7e09485c33ea434f29d4cd108046af640792bf02a8ed87681866ecf6c187ce407e047aa2eb71e84cebf9d347fdf5aa4ba00612a0739733a9ccbf815af34464d9d68ef970e60df0be643c9c44a92a63dfd9bc190dffac4a27316a541923c6309b9f5bf91d3e5de5fa5f6250f7ae99644634faaf0ab5bad9882b21c3beb2a7e28a984744e43f22cf9c5bbfa73f736ecdf8bd70ad5f26383da70b52f9bd388eed3c22ae442ddb0aad3b133ab61399e3f0f708f79d56aac437be9800ca1c3f14e7d4ab6538148757b7f9fc4a99dc9fe22c2d7b504fbe643034a550b734faa389f189bb6c48a0435cd969d8579e5eabc48b177d26dbc593e744f63698e7e4b4633b8f8a2b9fb36c6ba7b8d2012d4ec5966d85146ae71c871dc27d2f80c7aeee24c643658e1d8833f65a95e103b17be2e1e717b9fe610fd0647e51a1ca1afd7785ba7376fc6cfb93b1633b2171a5cb18cc7eabe24ac148fb353cf4635f91975ff71936ee090d3c794e446e899823c10dc92e14839a9b01f3ae8d37a5b637a34009a5d1b1793216784f104ef606371e54d8231e4d0225aacb0996b43f1ebcbf86ce5d36c3d3af6bf492427dacd15585d25b326fa14487b812b16c2b2aae741ba9df7eddccc929c3be72a1e2cabb862d574d57ae1a76e16ac5958bc6a0bc685e9201cbb6fac495471cdbe90eba3dd2a8f946bbafdbb1633b218d8e048a742a54a7462b858a687448a1d0e81585baabd15aa16a1a5d5328add177b7ba09fd17a2d29b15e0597e960000000049454e44ae426082</data>
+    </image>
+</images>
+<slots>
+    <slot>eliminarGruposImpuestos()</slot>
+    <slot>traspasarGruposImpuestos()</slot>
+</slots>
+<layoutdefaults spacing="6" margin="11"/>
+<includehints>
+    <includehint>fltabledb.h</includehint>
+    <includehint>fltabledb.h</includehint>
+    <includehint>fltabledb.h</includehint>
+    <includehint>fltabledb.h</includehint>
+    <includehint>fltabledb.h</includehint>
+    <includehint>fltabledb.h</includehint>
+</includehints>
+</UI>

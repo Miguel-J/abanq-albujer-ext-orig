@@ -1,0 +1,19 @@
+<!DOCTYPE QRY>
+<QRY>
+
+	<name>i_pegasunidadesstock</name>
+	<tables>lotesstock,lineasalbaranesprov</tables>
+
+	<select>
+	lotesstock.referencia, lotesstock.canlote, lotesstock.codlote,
+	 articulos.descripcion
+	</select>
+
+	<from>
+		lotesstock
+		INNER JOIN articulos ON lotesstock.referencia = articulos.referencia
+	</from>
+
+	<where>
+	</where>
+</QRY>

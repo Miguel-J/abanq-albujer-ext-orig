@@ -1,0 +1,22 @@
+<!DOCTYPE QRY>
+<QRY>
+	<name>co_datos347</name>
+
+	<tables>empresa,co_modelo347_tipo2d</tables>
+	
+	<select>
+		empresa.nombre, empresa.cifnif, empresa.direccion,
+		empresa.codpostal, empresa.ciudad,
+		f.nifdeclarado, f.apellidosnombrers, f.importe, f.importet1, f.importet2, f.importet3, f.importet4,
+		d.direccion, d.ciudad, d.codpostal, d.provincia, d.codpostal || '  ' || d.ciudad
+	</select>
+	
+	<from>
+		empresa, co_modelo347_tipo2d f 
+		LEFT OUTER JOIN dirclientes d ON (f.codclienteprov = d.codcliente AND d.domfacturacion)
+	</from>
+
+	<where>
+	</where>
+
+</QRY>

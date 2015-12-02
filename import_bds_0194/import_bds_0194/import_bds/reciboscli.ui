@@ -1,0 +1,35 @@
+<xupdate:modifications>
+<xupdate:update select="/UI[UI,1]/widget[QWidget,formRecibosCli]/property[property,2]/rect[rect,1]/height[height,1]/text()[1]" >569</xupdate:update>
+<xupdate:update select="/UI[UI,1]/widget[QWidget,formRecibosCli]/vbox[vbox,1]/widget[QGroupBox,gbxPagDev]/vbox[vbox,1]/widget[QFrame,barraBotones_3]/hbox[hbox,1]/spacer[Spacer2_3_3]/property[property,4]/size[size,1]/width[width,1]/text()[1]" >270</xupdate:update>
+<xupdate:insert-after select="/UI[UI,1]/widget[QWidget,formRecibosCli]/vbox[vbox,1]/widget[QGroupBox,gbxPagDev]/vbox[vbox,1]/widget[QFrame,barraBotones_3]/hbox[hbox,1]/spacer[Spacer2_3_3]" >
+<widget class="QLabel" >
+<property name="name" >
+<cstring>lePR</cstring>
+</property>
+<property name="minimumSize" >
+<size>
+<width>200</width>
+<height>0</height>
+</size>
+</property>
+<property name="paletteForegroundColor" >
+<color>
+<red>159</red>
+<green>48</green>
+<blue>4</blue>
+</color>
+</property>
+<property name="font" >
+<font>
+<italic>0</italic>
+</font>
+</property>
+<property name="text" >
+<string/>
+</property>
+<property name="alignment" >
+<set>AlignCenter</set>
+</property>
+</widget>
+</xupdate:insert-after>
+</xupdate:modifications>

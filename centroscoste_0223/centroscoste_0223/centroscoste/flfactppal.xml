@@ -1,0 +1,74 @@
+<xupdate:modifications>
+<xupdate:insert-after select="/ACTIONS[ACTIONS,1]/action[secuencias]" >
+<action>
+<name>centroscoste</name>
+<alias>QT_TRANSLATE_NOOP(&quot;MetaData&quot;,&quot;Centros de coste&quot;)</alias>
+<description>QT_TRANSLATE_NOOP(&quot;MetaData&quot;,&quot;Centros de coste&quot;)</description>
+<table>centroscoste</table>
+<form>master</form>
+<formrecord>centroscoste</formrecord>
+<scriptform>mastercentroscoste</scriptform>
+<scriptformrecord>centroscoste</scriptformrecord>
+</action>
+</xupdate:insert-after>
+<xupdate:insert-after select="/ACTIONS[ACTIONS,1]/action[centroscoste]" >
+<action>
+<name>subcentroscoste</name>
+<alias>QT_TRANSLATE_NOOP(&quot;MetaData&quot;,&quot;Subcentros de coste&quot;)</alias>
+<description>QT_TRANSLATE_NOOP(&quot;MetaData&quot;,&quot;Subcentros de coste&quot;)</description>
+<table>subcentroscoste</table>
+<form>master</form>
+<formrecord>subcentroscoste</formrecord>
+</action>
+</xupdate:insert-after>
+<xupdate:insert-after select="/ACTIONS[ACTIONS,1]/action[wg_widget]" >
+<action>
+<name>gruposusuarioscc</name>
+<alias>QT_TRANSLATE_NOOP(&quot;MetaData&quot;,&quot;Widget&quot;)</alias>
+<table>gruposusuarioscc</table>
+<formrecord>gruposusuarioscc</formrecord>
+</action>
+</xupdate:insert-after>
+<xupdate:insert-after select="/ACTIONS[ACTIONS,1]/action[gruposusuarioscc]" >
+<action>
+<name>articuloscc</name>
+<description>QT_TRANSLATE_NOOP(&quot;MetaData&quot;,&quot;Centros de coste&quot;)</description>
+<alias>QT_TRANSLATE_NOOP(&quot;MetaData&quot;,&quot;Centros de coste&quot;)</alias>
+<table>articuloscc</table>
+<form>master_print</form>
+<formrecord>articuloscc</formrecord>
+</action>
+</xupdate:insert-after>
+<xupdate:insert-after select="/ACTIONS[ACTIONS,1]/action[articuloscc]" >
+<action>
+<name>criteriosdistcc</name>
+<description>QT_TRANSLATE_NOOP(&quot;MetaData&quot;,&quot;Criterios de distribución por centros de coste&quot;)</description>
+<alias>QT_TRANSLATE_NOOP(&quot;MetaData&quot;,&quot;Criterios de distribución&quot;)</alias>
+<table>criteriosdistcc</table>
+<form>master</form>
+<formrecord>criteriosdistcc</formrecord>
+<scriptformrecord>criteriosdistcc</scriptformrecord>
+</action>
+</xupdate:insert-after>
+<xupdate:insert-after select="/ACTIONS[ACTIONS,1]/action[criteriosdistcc]" >
+<action>
+<name>pesoscriteriocc</name>
+<description>QT_TRANSLATE_NOOP(&quot;MetaData&quot;,&quot;Pesos por criterio&quot;)</description>
+<alias>QT_TRANSLATE_NOOP(&quot;MetaData&quot;,&quot;Pesos por criterio&quot;)</alias>
+<table>pesoscriteriocc</table>
+<form>master</form>
+<formrecord>pesoscriteriocc</formrecord>
+</action>
+</xupdate:insert-after>
+<xupdate:insert-after select="/ACTIONS[ACTIONS,1]/action[pesoscriteriocc]" >
+<action>
+<name>subcuentascriteriocc</name>
+<description>QT_TRANSLATE_NOOP(&quot;MetaData&quot;,&quot;Subcuentas por criterio&quot;)</description>
+<alias>QT_TRANSLATE_NOOP(&quot;MetaData&quot;,&quot;Subcuentas por criterio&quot;)</alias>
+<table>subcuentascriteriocc</table>
+<form>master</form>
+<formrecord>subcuentascriteriocc</formrecord>
+<scriptformrecord>subcuentascriteriocc</scriptformrecord>
+</action>
+</xupdate:insert-after>
+</xupdate:modifications>

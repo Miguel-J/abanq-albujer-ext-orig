@@ -1,0 +1,7 @@
+<flpatch:modifications name="pagos_multi_rec" >
+    <flpatch:patchXml path="facturacion/tesoreria/" name="flfactteso.xml" />
+    <flpatch:addFile path="facturacion/tesoreria/tables/" name="pagosmultirec.mtd" />
+    <flpatch:addFile path="facturacion/tesoreria/forms/" name="pagosmultirec.ui" />
+    <flpatch:patchXml path="facturacion/tesoreria/forms/" name="flfactteso.ui" />
+    <flpatch:addFile path="facturacion/tesoreria/scripts/" name="pagosmultirec.qs" />
+</flpatch:modifications>

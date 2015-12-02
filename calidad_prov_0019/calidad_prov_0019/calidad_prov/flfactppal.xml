@@ -1,0 +1,79 @@
+<xupdate:modifications>
+<xupdate:insert-after select="/ACTIONS[ACTIONS,1]/action[tiposrappel]" >
+<action>
+<name>seguimientoprov</name>
+<alias>QT_TRANSLATE_NOOP(&quot;MetaData&quot;,&quot;Seguimiento de Proveedores&quot;)</alias>
+<description>QT_TRANSLATE_NOOP(&quot;MetaData&quot;,&quot;&quot;)</description>
+<table>proveedores</table>
+<form>masterseguimientoprov</form>
+<formrecord>seguimientoprov</formrecord>
+<scriptform>masterseguimientoprov</scriptform>
+<scriptformrecord>seguimientoprov</scriptformrecord>
+</action>
+</xupdate:insert-after>
+<xupdate:insert-after select="/ACTIONS[ACTIONS,1]/action[seguimientoprov]" >
+<action>
+<name>incidenciasprov</name>
+<alias>QT_TRANSLATE_NOOP(&quot;MetaData&quot;,&quot;Incidencias de Proveedores&quot;)</alias>
+<description>QT_TRANSLATE_NOOP(&quot;MetaData&quot;,&quot;&quot;)</description>
+<table>incidenciasprov</table>
+<form>master</form>
+<formrecord>incidenciasprov</formrecord>
+<scriptformrecord>incidenciasprov</scriptformrecord>
+</action>
+</xupdate:insert-after>
+<xupdate:insert-after select="/ACTIONS[ACTIONS,1]/action[incidenciasprov]" >
+<action>
+<name>noconformidadesprov</name>
+<alias>QT_TRANSLATE_NOOP(&quot;MetaData&quot;,&quot;No Conformidades de Proveedores&quot;)</alias>
+<description>QT_TRANSLATE_NOOP(&quot;MetaData&quot;,&quot;&quot;)</description>
+<table>noconformidadesprov</table>
+<form>master</form>
+<formrecord>noconformidadesprov</formrecord>
+<scriptformrecord>noconformidadesprov</scriptformrecord>
+</action>
+</xupdate:insert-after>
+<xupdate:insert-after select="/ACTIONS[ACTIONS,1]/action[noconformidadesprov]" >
+<action>
+<name>seguimientosprov</name>
+<alias>QT_TRANSLATE_NOOP(&quot;MetaData&quot;,&quot;Seguimientos de Proveedores&quot;)</alias>
+<description>QT_TRANSLATE_NOOP(&quot;MetaData&quot;,&quot;&quot;)</description>
+<table>seguimientosprov</table>
+<form>master</form>
+<formrecord>seguimientosprov</formrecord>
+<scriptformrecord>seguimientosprov</scriptformrecord>
+</action>
+</xupdate:insert-after>
+<xupdate:insert-after select="/ACTIONS[ACTIONS,1]/action[seguimientosprov]" >
+<action>
+<name>usuarioscalidad</name>
+<alias>QT_TRANSLATE_NOOP(&quot;MetaData&quot;,&quot;Usuarios del sistema de Calidad&quot;)</alias>
+<description>QT_TRANSLATE_NOOP(&quot;MetaData&quot;,&quot;&quot;)</description>
+<table>usuarioscalidad</table>
+<form>master</form>
+<formrecord>usuarioscalidad</formrecord>
+</action>
+</xupdate:insert-after>
+<xupdate:insert-after select="/ACTIONS[ACTIONS,1]/action[usuarioscalidad]" >
+<action>
+<name>evalsemestralesprov</name>
+<alias>QT_TRANSLATE_NOOP(&quot;MetaData&quot;,&quot;Evaluaciones Semestrales de Calidad&quot;)</alias>
+<description>QT_TRANSLATE_NOOP(&quot;MetaData&quot;,&quot;&quot;)</description>
+<table>evalsemestralesprov</table>
+<form>master_print</form>
+<formrecord>evalsemestralesprov</formrecord>
+<scriptform>masterevalsemestralesprov</scriptform>
+<scriptformrecord>evalsemestralesprov</scriptformrecord>
+</action>
+</xupdate:insert-after>
+<xupdate:insert-after select="/ACTIONS[ACTIONS,1]/action[contactos]" >
+<action>
+<name>seleccionproveedoreseval</name>
+<description>QT_TRANSLATE_NOOP(&quot;MetaData&quot;,&quot;Esta acción proporciona un formulario para seleccionar múltiples proveedores que incluir en la evaluación&quot;)</description>
+<alias>QT_TRANSLATE_NOOP(&quot;MetaData&quot;,&quot;Selección de proveedores&quot;)</alias>
+<table>seleccionproveedoreseval</table>
+<form>seleccionproveedoreseval</form>
+<scriptform>seleccionproveedoreseval</scriptform>
+</action>
+</xupdate:insert-after>
+</xupdate:modifications>

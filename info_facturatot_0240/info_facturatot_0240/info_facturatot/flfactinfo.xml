@@ -1,0 +1,26 @@
+<xupdate:modifications>
+<xupdate:insert-after select="/ACTIONS[ACTIONS,1]/action[i_resreciboscli]" >
+<action>
+<name>i_totalfacturascli</name>
+<alias>QT_TRANSLATE_NOOP(&quot;MetaData&quot;,&quot;Total de facturas de clientes&quot;)</alias>
+<description>QT_TRANSLATE_NOOP(&quot;MetaData&quot;,&quot;Informe que contiene el total diario, mensual o trimestral de las facturas. Al final del informe se añade la línea de totales&quot;)</description>
+<table>i_totalfacturascli</table>
+<form>i_mastertotalfacturas</form>
+<formrecord>i_totalfacturascli</formrecord>
+<scriptform>i_mastertotalfacturascli</scriptform>
+<scriptformrecord>i_totalfacturascli</scriptformrecord>
+</action>
+</xupdate:insert-after>
+<xupdate:insert-after select="/ACTIONS[ACTIONS,1]/action[i_totalfacturascli]" >
+<action>
+<name>i_totalfacturasprov</name>
+<alias>QT_TRANSLATE_NOOP(&quot;MetaData&quot;,&quot;Total de facturas de proveedores&quot;)</alias>
+<description>QT_TRANSLATE_NOOP(&quot;MetaData&quot;,&quot;Informe que contiene el total diario, mensual o trimestral de las facturas. Al final del informe se añade la línea de totales&quot;)</description>
+<table>i_totalfacturasprov</table>
+<form>i_mastertotalfacturas</form>
+<formrecord>i_totalfacturasprov</formrecord>
+<scriptform>i_mastertotalfacturasprov</scriptform>
+<scriptformrecord>i_totalfacturasprov</scriptformrecord>
+</action>
+</xupdate:insert-after>
+</xupdate:modifications>

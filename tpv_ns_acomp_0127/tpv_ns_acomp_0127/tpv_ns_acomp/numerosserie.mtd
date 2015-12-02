@@ -1,0 +1,13 @@
+<xupdate:modifications>
+<xupdate:insert-after select="/TMD[TMD,1]/field[idfacturaventa]" >
+<field>
+<name>idcomandaventa</name>
+<!--Identificador de la comanda de venta en TPV--><alias>QT_TRANSLATE_NOOP(&quot;MetaData&quot;,&quot;Comanda TPV&quot;)</alias>
+<null>true</null>
+<pk>false</pk>
+<type>int</type>
+<visiblegrid>false</visiblegrid>
+<editable>false</editable>
+</field>
+</xupdate:insert-after>
+</xupdate:modifications>

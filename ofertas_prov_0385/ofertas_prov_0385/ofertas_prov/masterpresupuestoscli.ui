@@ -1,0 +1,76 @@
+<xupdate:modifications>
+<xupdate:update select="/UI[UI,1]/widget[QWidget,FLWidgetMasterTable]/vbox[vbox,1]/widget[QFrame,barraBotones]/hbox[hbox,1]/spacer[Spacer2]/property[property,4]/size[size,1]/width[width,1]/text()[1]" >30</xupdate:update>
+<xupdate:append-first select="/UI[UI,1]/images[images,1]" >
+<image name="ofertas_provimage6" >
+<data format="PNG" length="1248" >89504e470d0a1a0a0000000d4948445200000020000000200806000000737a7af4000004a749444154789cad964168154718c77fcfce93192bb85b0cec82852e289834812a426bda1e1a146a24070dbd68b148db43f1eab1d243af0a3d547a68630f365ec484626329a149a936165a5e04690c4478011f6c5a03b3c5e04ccdc6d7c3ee26ebcbdbe445fdc3e36376decefce6cff77db3a57abd4ea3266eeb50c24b168b44962c208174cc3ae37fa285e8e79efdc107ab166ea2523380ca6daddb77bb8e2aaf7ec11820066bc1a69118741a2dfa915d884adaea6f249c3a7c70efea0d72dad4eca1c5d26c7300a540099012a400470202dc742c855cf23cafec0a7912b838323ef5c28601241216d7784b259b4a998b2460601fbb52e1791d12218fdad80e8f8c56366f08002851e0c032430e42e661845448f01d08b6772857b807809f46c6a7b66c04606d07320891442956602c7693230109ae038e132884fbba8dedaf23a3956d2d01582ceb39004019547a7267c5012ce06e4d805c07fcad817285db05fc3e323ed5965fa2a80aa2bdbbdd6d2d41002c8249ab229cd754e722e6e6755a9aa9e2e5e3dd95a6da7efcc4f19884b9f8742dab9ce4251602cfa563970b041803d5bb69a90a8822436566accd977c069c8167cc8146a9dc718c81ea6ce28acce74a839e2d07f22a0322cd894598ab0131b80b21c46639515b0258b70fac016162a8d692a86a1378d171fcd1377339d00240b6d886a535d1f079980f1327ee8da1deedc77da71d6c080282f99b657f7ae8d5f5009636ecc02284df9ec63f14e2d53ec2cc56d2090322a906ffe669fafbf4969efdf6c89583a57d6b016c3136bd785a003106f43cd897bbc15ad4915e82e80ccc4d020a62f0fff894a04f415707fa9e7e746d967bc50022c9deec96330f40eb343e48a2d1c94fdf07bb909cd079eb43aa5781b08a3ad28bd7a51307a4c4ef732108d01706eb43737b2e0dccd4ff2e068857daab9b95507ae1c8743eb375b9c4a2103b3d82b3ab97f0ab4a0ad10f65059ded10b4632e0c32311d3c0a4424c363a543fa44e9c5e69df08e7ed8fe8aab9448b33939c7325c5e3606a6c790f139d46b7b9e9c77fd0c191e84b06057e6ad457f3d582b74206b2ad9ada7440292f57e95774680b2409c36ded8ae5a12211be62536b64bcd5b71f6b49c8b8b2bcf979d118933b2b38770d6835b556c6c9137cfe17fdc9dfc7951a76b2accf50a437fbaff49c1553939f4dd85bbfc56e4407d551f28e77e8dce08f07776e0bc7118effe24fe27dde0b7632e0d020a6e4d42ad8a3ad6cfd17d76338ef7efe1d1faf757aaf5f9c22a58b3fcca05f1c600eaa085b6007d7990a8e693654ff5470d3355d47bbda55e6ff2c4f9b74b2eac51052d77c21c849d9900213197af60779e45eed843d6079cbeb354c781e92968f3cb8e606731c07a0e14c83df925e10d1fbb6f00bf736f0a97d58f45f67dcec0b0fbf0da7586dfff854a3140b31c68454ae1f79dc20d022883dcdd0d3f5c231cbf83bbdd4f3076f4c4b6f3e85ff57a7d098a3e4832079e0622cfd3d583d91ee01cf040815c00131b9cdcaecd01369203eb41f8c113bba9861d9f6b0eb422d3d0499f6f0eb42025540b0022bd8a9fb7e224071ab65a2d1bdbf8fcc5b1c7604aa0b018240a62034261638314ad8eb30f53059825d5709d35059048cf97e1178082287dfab4918271a2ff0157ecee14baf7a6da0000000049454e44ae426082</data>
+</image>
+</xupdate:append-first>
+<xupdate:insert-after select="/UI[UI,1]/widget[QWidget,FLWidgetMasterTable]/vbox[vbox,1]/widget[QFrame,barraBotones]/hbox[hbox,1]/spacer[Spacer2]" >
+<widget class="QPushButton" >
+<property name="name" >
+<cstring>tbnOferta</cstring>
+</property>
+<property name="sizePolicy" >
+<sizepolicy>
+<hsizetype>1</hsizetype>
+<vsizetype>1</vsizetype>
+<horstretch>0</horstretch>
+<verstretch>0</verstretch>
+</sizepolicy>
+</property>
+<property name="minimumSize" >
+<size>
+<width>32</width>
+<height>32</height>
+</size>
+</property>
+<property name="maximumSize" >
+<size>
+<width>32</width>
+<height>32</height>
+</size>
+</property>
+<property name="focusPolicy" >
+<enum>NoFocus</enum>
+</property>
+<property name="text" >
+<string/>
+</property>
+<property name="accel" >
+<string/>
+</property>
+<property name="iconSet" >
+<iconset>ofertas_provimage6</iconset>
+</property>
+<property name="toolTip" stdset="0" >
+<string>Mostrar oferta asociada</string>
+</property>
+</widget>
+</xupdate:insert-after>
+<xupdate:insert-after select="/UI[UI,1]/widget[QWidget,FLWidgetMasterTable]/vbox[vbox,1]/widget[QFrame,barraBotones]/hbox[hbox,1]/widget[QPushButton,tbnOferta]" >
+<spacer>
+<property name="name" >
+<cstring>spacer22</cstring>
+</property>
+<property name="orientation" >
+<enum>Horizontal</enum>
+</property>
+<property name="sizeType" >
+<enum>Expanding</enum>
+</property>
+<property name="sizeHint" >
+<size>
+<width>41</width>
+<height>20</height>
+</size>
+</property>
+</spacer>
+</xupdate:insert-after>
+<xupdate:delete select="/UI[UI,1]/includehints[includehints,1]/includehint[FLTableDB.h]" />
+<xupdate:append-first select="/UI[UI,1]/includehints[includehints,1]" >
+<includehint>fltabledb.h</includehint>
+</xupdate:append-first>
+<xupdate:insert-after select="/UI[UI,1]/widget[QWidget,FLWidgetMasterTable]" >
+<customwidgets/>
+</xupdate:insert-after>
+</xupdate:modifications>

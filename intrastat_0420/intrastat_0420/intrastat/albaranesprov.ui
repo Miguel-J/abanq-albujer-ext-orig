@@ -1,0 +1,585 @@
+<xupdate:modifications>
+<xupdate:update select="/UI[UI,1]/widget[QWidget,formalbaranesprov]/property[geometry]/rect[rect,1]/height[height,1]/text()[1]" >647</xupdate:update>
+<xupdate:update select="/UI[UI,1]/widget[QWidget,formalbaranesprov]/vbox[vbox,1]/widget[QGroupBox,groupBox21]/grid[grid,1]/widget[FLFieldDB,fdbNeto]/property[minimumSize]/size[size,1]/height[height,1]/text()[1]" >24</xupdate:update>
+<xupdate:update select="/UI[UI,1]/widget[QWidget,formalbaranesprov]/vbox[vbox,1]/widget[QGroupBox,groupBox21]/grid[grid,1]/widget[FLFieldDB,fdbNeto]/property[minimumSize]/size[size,1]/width[width,1]/text()[1]" >82</xupdate:update>
+<xupdate:insert-after select="/UI[UI,1]/widget[QWidget,formalbaranesprov]/vbox[vbox,1]/widget[QTabWidget,tabWidget8]/widget[QWidget,proveedor]/vbox[vbox,1]/widget[QGroupBox,groupBox30_2_2_2]/hbox[hbox,1]/widget[FLFieldDB,fdbPteFactura]/property[fieldName]" >
+<property name="fieldAlias" >
+<string>ptefactura</string>
+</property>
+</xupdate:insert-after>
+<xupdate:insert-after select="/UI[UI,1]/widget[QWidget,formalbaranesprov]/vbox[vbox,1]/widget[QTabWidget,tabWidget8]/widget[QWidget,observaciones]" >
+<widget class="QWidget" >
+<property name="name" >
+<cstring>intrastat</cstring>
+</property>
+<attribute name="title" >
+<string>&amp;Intrastat</string>
+</attribute>
+<vbox>
+<property name="name" >
+<cstring>unnamed</cstring>
+</property>
+<widget class="QLayoutWidget" >
+<property name="name" >
+<cstring>layout21_2</cstring>
+</property>
+<hbox>
+<property name="name" >
+<cstring>unnamed</cstring>
+</property>
+<widget class="FLFieldDB" >
+<property name="name" >
+<cstring>fdbNoIntrastat</cstring>
+</property>
+<property name="maximumSize" >
+<size>
+<width>300</width>
+<height>32767</height>
+</size>
+</property>
+<property name="font" >
+<font>
+<bold>0</bold>
+</font>
+</property>
+<property name="fieldName" >
+<string>nointrastat</string>
+</property>
+</widget>
+<spacer>
+<property name="name" >
+<cstring>spacer16</cstring>
+</property>
+<property name="orientation" >
+<enum>Horizontal</enum>
+</property>
+<property name="sizeType" >
+<enum>Expanding</enum>
+</property>
+<property name="sizeHint" >
+<size>
+<width>91</width>
+<height>21</height>
+</size>
+</property>
+</spacer>
+</hbox>
+</widget>
+<widget class="QGroupBox" >
+<property name="name" >
+<cstring>gbxIntrastat</cstring>
+</property>
+<property name="title" >
+<string/>
+</property>
+<vbox>
+<property name="name" >
+<cstring>unnamed</cstring>
+</property>
+<widget class="QLayoutWidget" >
+<property name="name" >
+<cstring>layout78</cstring>
+</property>
+<hbox>
+<property name="name" >
+<cstring>unnamed</cstring>
+</property>
+<widget class="FLFieldDB" >
+<property name="name" >
+<cstring>fdbCodPais</cstring>
+</property>
+<property name="minimumSize" >
+<size>
+<width>103</width>
+<height>24</height>
+</size>
+</property>
+<property name="maximumSize" >
+<size>
+<width>90</width>
+<height>32767</height>
+</size>
+</property>
+<property name="font" >
+<font>
+<bold>0</bold>
+</font>
+</property>
+<property name="fieldName" >
+<string>codpais</string>
+</property>
+</widget>
+<spacer>
+<property name="name" >
+<cstring>spacerNumero</cstring>
+</property>
+<property name="orientation" >
+<enum>Horizontal</enum>
+</property>
+<property name="sizeType" >
+<enum>Expanding</enum>
+</property>
+<property name="sizeHint" >
+<size>
+<width>340</width>
+<height>21</height>
+</size>
+</property>
+</spacer>
+<widget class="FLFieldDB" >
+<property name="name" >
+<cstring>fdbIdIntrastat</cstring>
+</property>
+<property name="minimumSize" >
+<size>
+<width>120</width>
+<height>24</height>
+</size>
+</property>
+<property name="maximumSize" >
+<size>
+<width>250</width>
+<height>32767</height>
+</size>
+</property>
+<property name="font" >
+<font>
+<bold>0</bold>
+</font>
+</property>
+<property name="fieldName" >
+<string>idintrastat</string>
+</property>
+<property name="showAlias" >
+<bool>true</bool>
+</property>
+</widget>
+</hbox>
+</widget>
+<widget class="QLayoutWidget" >
+<property name="name" >
+<cstring>layout19</cstring>
+</property>
+<hbox>
+<property name="name" >
+<cstring>unnamed</cstring>
+</property>
+<widget class="FLFieldDB" >
+<property name="name" >
+<cstring>fdbCodProvincia</cstring>
+</property>
+<property name="sizePolicy" >
+<sizepolicy>
+<hsizetype>5</hsizetype>
+<vsizetype>5</vsizetype>
+<horstretch>0</horstretch>
+<verstretch>0</verstretch>
+</sizepolicy>
+</property>
+<property name="minimumSize" >
+<size>
+<width>136</width>
+<height>24</height>
+</size>
+</property>
+<property name="maximumSize" >
+<size>
+<width>150</width>
+<height>32767</height>
+</size>
+</property>
+<property name="font" >
+<font>
+<bold>0</bold>
+</font>
+</property>
+<property name="fieldName" >
+<string>codprovincia</string>
+</property>
+<property name="showAlias" >
+<bool>true</bool>
+</property>
+</widget>
+<spacer>
+<property name="name" >
+<cstring>spacer26</cstring>
+</property>
+<property name="orientation" >
+<enum>Horizontal</enum>
+</property>
+<property name="sizeType" >
+<enum>Maximum</enum>
+</property>
+<property name="sizeHint" >
+<size>
+<width>150</width>
+<height>20</height>
+</size>
+</property>
+</spacer>
+<widget class="FLFieldDB" >
+<property name="name" >
+<cstring>fdbCodCondicionEntrega</cstring>
+</property>
+<property name="minimumSize" >
+<size>
+<width>188</width>
+<height>24</height>
+</size>
+</property>
+<property name="maximumSize" >
+<size>
+<width>200</width>
+<height>32767</height>
+</size>
+</property>
+<property name="font" >
+<font>
+<bold>0</bold>
+</font>
+</property>
+<property name="fieldName" >
+<string>codcondicionentrega</string>
+</property>
+<property name="foreignField" >
+<string/>
+</property>
+<property name="fieldRelation" >
+<string/>
+</property>
+</widget>
+<widget class="FLFieldDB" >
+<property name="name" >
+<cstring>fdbCodCondicionEntrega_2</cstring>
+</property>
+<property name="minimumSize" >
+<size>
+<width>28</width>
+<height>24</height>
+</size>
+</property>
+<property name="font" >
+<font>
+<bold>0</bold>
+</font>
+</property>
+<property name="fieldName" >
+<string>significado</string>
+</property>
+<property name="tableName" >
+<string>condicionesentrega</string>
+</property>
+<property name="foreignField" >
+<string>codcondicionentrega</string>
+</property>
+<property name="fieldRelation" >
+<string>codcondicionentrega</string>
+</property>
+<property name="showAlias" >
+<bool>false</bool>
+</property>
+</widget>
+</hbox>
+</widget>
+<widget class="QLayoutWidget" >
+<property name="name" >
+<cstring>layout20_2</cstring>
+</property>
+<hbox>
+<property name="name" >
+<cstring>unnamed</cstring>
+</property>
+<widget class="FLFieldDB" >
+<property name="name" >
+<cstring>fdbNaturalezaTransaccion</cstring>
+</property>
+<property name="minimumSize" >
+<size>
+<width>145</width>
+<height>24</height>
+</size>
+</property>
+<property name="maximumSize" >
+<size>
+<width>180</width>
+<height>32767</height>
+</size>
+</property>
+<property name="font" >
+<font>
+<bold>0</bold>
+</font>
+</property>
+<property name="fieldName" >
+<string>codnaturaleza</string>
+</property>
+<property name="foreignField" >
+<string/>
+</property>
+<property name="fieldRelation" >
+<string/>
+</property>
+</widget>
+<widget class="FLFieldDB" >
+<property name="name" >
+<cstring>fdbNaturalezaTransaccion_2</cstring>
+</property>
+<property name="minimumSize" >
+<size>
+<width>28</width>
+<height>24</height>
+</size>
+</property>
+<property name="font" >
+<font>
+<bold>0</bold>
+</font>
+</property>
+<property name="fieldName" >
+<string>descripciona</string>
+</property>
+<property name="tableName" >
+<string>naturalezatransaccion</string>
+</property>
+<property name="foreignField" >
+<string>codnaturaleza</string>
+</property>
+<property name="fieldRelation" >
+<string>codigo</string>
+</property>
+<property name="showAlias" >
+<bool>false</bool>
+</property>
+</widget>
+<spacer>
+<property name="name" >
+<cstring>spacer26_2</cstring>
+</property>
+<property name="orientation" >
+<enum>Horizontal</enum>
+</property>
+<property name="sizeType" >
+<enum>Maximum</enum>
+</property>
+<property name="sizeHint" >
+<size>
+<width>10</width>
+<height>21</height>
+</size>
+</property>
+</spacer>
+<widget class="FLFieldDB" >
+<property name="name" >
+<cstring>fdbModoTransporte</cstring>
+</property>
+<property name="maximumSize" >
+<size>
+<width>180</width>
+<height>32767</height>
+</size>
+</property>
+<property name="font" >
+<font>
+<bold>0</bold>
+</font>
+</property>
+<property name="fieldName" >
+<string>codmodotransporte</string>
+</property>
+<property name="foreignField" >
+<string/>
+</property>
+<property name="fieldRelation" >
+<string/>
+</property>
+</widget>
+<widget class="FLFieldDB" >
+<property name="name" >
+<cstring>fdbModoTransporte_2</cstring>
+</property>
+<property name="minimumSize" >
+<size>
+<width>28</width>
+<height>24</height>
+</size>
+</property>
+<property name="font" >
+<font>
+<bold>0</bold>
+</font>
+</property>
+<property name="fieldName" >
+<string>descripcion</string>
+</property>
+<property name="tableName" >
+<string>modotransporte</string>
+</property>
+<property name="foreignField" >
+<string>codmodotransporte</string>
+</property>
+<property name="fieldRelation" >
+<string>codmodotransporte</string>
+</property>
+<property name="showAlias" >
+<bool>false</bool>
+</property>
+</widget>
+</hbox>
+</widget>
+<widget class="QLayoutWidget" >
+<property name="name" >
+<cstring>layout21_3</cstring>
+</property>
+<hbox>
+<property name="name" >
+<cstring>unnamed</cstring>
+</property>
+<widget class="FLFieldDB" >
+<property name="name" >
+<cstring>fdbCodPuerto</cstring>
+</property>
+<property name="minimumSize" >
+<size>
+<width>118</width>
+<height>24</height>
+</size>
+</property>
+<property name="maximumSize" >
+<size>
+<width>200</width>
+<height>32767</height>
+</size>
+</property>
+<property name="font" >
+<font>
+<bold>0</bold>
+</font>
+</property>
+<property name="fieldName" >
+<string>codpuerto</string>
+</property>
+<property name="foreignField" >
+<string/>
+</property>
+<property name="fieldRelation" >
+<string/>
+</property>
+</widget>
+<widget class="FLFieldDB" >
+<property name="name" >
+<cstring>fdbCodPuerto_2</cstring>
+</property>
+<property name="minimumSize" >
+<size>
+<width>28</width>
+<height>24</height>
+</size>
+</property>
+<property name="font" >
+<font>
+<bold>0</bold>
+</font>
+</property>
+<property name="fieldName" >
+<string>recinto</string>
+</property>
+<property name="tableName" >
+<string>puertosaeropuertos</string>
+</property>
+<property name="foreignField" >
+<string>codpuerto</string>
+</property>
+<property name="fieldRelation" >
+<string>codpuerto</string>
+</property>
+<property name="showAlias" >
+<bool>false</bool>
+</property>
+</widget>
+<spacer>
+<property name="name" >
+<cstring>spacer81</cstring>
+</property>
+<property name="orientation" >
+<enum>Horizontal</enum>
+</property>
+<property name="sizeType" >
+<enum>Maximum</enum>
+</property>
+<property name="sizeHint" >
+<size>
+<width>16</width>
+<height>20</height>
+</size>
+</property>
+</spacer>
+<widget class="FLFieldDB" >
+<property name="name" >
+<cstring>fdbCodRegimen</cstring>
+</property>
+<property name="minimumSize" >
+<size>
+<width>130</width>
+<height>24</height>
+</size>
+</property>
+<property name="maximumSize" >
+<size>
+<width>180</width>
+<height>32767</height>
+</size>
+</property>
+<property name="font" >
+<font>
+<bold>0</bold>
+</font>
+</property>
+<property name="fieldName" >
+<string>codregimen</string>
+</property>
+<property name="foreignField" >
+<string/>
+</property>
+<property name="fieldRelation" >
+<string/>
+</property>
+</widget>
+<widget class="FLFieldDB" >
+<property name="name" >
+<cstring>fdbCodRegimen_2</cstring>
+</property>
+<property name="minimumSize" >
+<size>
+<width>28</width>
+<height>24</height>
+</size>
+</property>
+<property name="font" >
+<font>
+<bold>0</bold>
+</font>
+</property>
+<property name="fieldName" >
+<string>descripcion</string>
+</property>
+<property name="tableName" >
+<string>regimenesestadisticos</string>
+</property>
+<property name="foreignField" >
+<string>codregimen</string>
+</property>
+<property name="fieldRelation" >
+<string>codregimen</string>
+</property>
+<property name="showAlias" >
+<bool>false</bool>
+</property>
+</widget>
+</hbox>
+</widget>
+</vbox>
+</widget>
+</vbox>
+</widget>
+</xupdate:insert-after>
+</xupdate:modifications>

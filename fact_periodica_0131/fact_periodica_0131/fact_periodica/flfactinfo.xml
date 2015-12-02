@@ -1,0 +1,14 @@
+<xupdate:modifications>
+<xupdate:insert-after select="/ACTIONS[ACTIONS,1]/action[customviewer]" >
+<action>
+<name>i_contratos</name>
+<alias>QT_TRANSLATE_NOOP(&quot;MetaData&quot;,&quot;Listado de contratos&quot;)</alias>
+<description>QT_TRANSLATE_NOOP(&quot;MetaData&quot;,&quot;Listado de contratos&quot;)</description>
+<table>i_contratos</table>
+<form>i_master</form>
+<formrecord>i_contratos</formrecord>
+<scriptform>i_mastercontratos</scriptform>
+<scriptformrecord>i_contratos</scriptformrecord>
+</action>
+</xupdate:insert-after>
+</xupdate:modifications>

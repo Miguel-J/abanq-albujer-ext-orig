@@ -1,0 +1,30 @@
+<xupdate:modifications>
+<xupdate:insert-after select="/TMD[TMD,1]/field[tasaconv]" >
+<field>
+<!-- Identificador de operación en modelo 349--><name>idoperacion349</name>
+<alias>QT_TRANSLATE_NOOP(&quot;MetaData&quot;,&quot;Operación 349&quot;)</alias>
+<null>true</null>
+<pk>false</pk>
+<type>uint</type>
+<relation>
+<table>co_operaciones349</table>
+<field>id</field>
+<card>M1</card>
+</relation>
+</field>
+</xupdate:insert-after>
+<xupdate:insert-after select="/TMD[TMD,1]/field[idoperacion349]" >
+<field>
+<!-- Identificador de rectificación en modelo 349--><name>idrectificacion349</name>
+<alias>QT_TRANSLATE_NOOP(&quot;MetaData&quot;,&quot;Rectificacón 349&quot;)</alias>
+<null>true</null>
+<pk>false</pk>
+<type>uint</type>
+<relation>
+<table>co_rectificaciones349</table>
+<field>id</field>
+<card>M1</card>
+</relation>
+</field>
+</xupdate:insert-after>
+</xupdate:modifications>

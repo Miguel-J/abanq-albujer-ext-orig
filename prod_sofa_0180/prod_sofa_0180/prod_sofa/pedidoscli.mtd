@@ -1,0 +1,22 @@
+<xupdate:modifications>
+<xupdate:insert-after select="/TMD[TMD,1]/field[codigo]" >
+<field>
+<name>estado</name>
+<!--Estado del pedido (estado menos avanzado de las unidades de producto que incluye)--><alias>QT_TRANSLATE_NOOP(&quot;MetaData&quot;,&quot;Estado&quot;)</alias>
+<null>true</null>
+<pk>false</pk>
+<type>string</type>
+<length>15</length>
+</field>
+</xupdate:insert-after>
+<xupdate:insert-after select="/TMD[TMD,1]/field[nombrecliente]" >
+<field>
+<name>refcliente</name>
+<alias>QT_TRANSLATE_NOOP(&quot;MetaData&quot;,&quot;Su ref.&quot;)</alias>
+<null>true</null>
+<pk>false</pk>
+<type>string</type>
+<length>25</length>
+</field>
+</xupdate:insert-after>
+</xupdate:modifications>

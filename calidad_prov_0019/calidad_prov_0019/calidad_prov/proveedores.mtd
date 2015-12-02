@@ -1,0 +1,131 @@
+<xupdate:modifications>
+<xupdate:insert-after select="/TMD[TMD,1]/field[codproveedor]/relation[i_facturasprov,i_facturasprov_codproveedor]" >
+<relation>
+<table>incidenciasprov</table>
+<field>codproveedor</field>
+<card>1M</card>
+</relation>
+</xupdate:insert-after>
+<xupdate:insert-after select="/TMD[TMD,1]/field[codproveedor]/relation[incidenciasprov,codproveedor]" >
+<relation>
+<table>noconformidadesprov</table>
+<field>codproveedor</field>
+<card>1M</card>
+</relation>
+</xupdate:insert-after>
+<xupdate:insert-after select="/TMD[TMD,1]/field[codproveedor]/relation[noconformidadesprov,codproveedor]" >
+<relation>
+<table>seguimientosprov</table>
+<field>codproveedor</field>
+<card>1M</card>
+</relation>
+</xupdate:insert-after>
+<xupdate:insert-after select="/TMD[TMD,1]/field[codproveedor]/relation[bancos,codproveedor]" >
+<relation>
+<table>proveedoreseval</table>
+<field>codproveedor</field>
+<card>1M</card>
+</relation>
+</xupdate:insert-after>
+<xupdate:insert-after select="/TMD[TMD,1]/field[idsubcuenta]" >
+<field>
+<name>nivelactual</name>
+<!-- Indica el nivel de calidad actual asignado al proveedor --><alias>QT_TRANSLATE_NOOP(&quot;MetaData&quot;,&quot;Nivel Actual&quot;)</alias>
+<null>true</null>
+<pk>false</pk>
+<type>string</type>
+<optionslist>A,B,Baja</optionslist>
+<default>A</default>
+</field>
+</xupdate:insert-after>
+<xupdate:insert-after select="/TMD[TMD,1]/field[nivelactual]" >
+<field>
+<name>criteriohomol</name>
+<alias>QT_TRANSLATE_NOOP(&quot;MetaData&quot;,&quot;Criterio de homologación&quot;)</alias>
+<null>true</null>
+<pk>false</pk>
+<type>string</type>
+<length>100</length>
+</field>
+</xupdate:insert-after>
+<xupdate:insert-after select="/TMD[TMD,1]/field[criteriohomol]" >
+<field>
+<name>fechainiciohomol</name>
+<alias>QT_TRANSLATE_NOOP(&quot;MetaData&quot;,&quot;Inicio de la homologación&quot;)</alias>
+<null>true</null>
+<pk>false</pk>
+<type>date</type>
+</field>
+</xupdate:insert-after>
+<xupdate:insert-after select="/TMD[TMD,1]/field[fechainiciohomol]" >
+<field>
+<name>fechafinhomol</name>
+<!-- Fecha límite de validez del certificado --><alias>QT_TRANSLATE_NOOP(&quot;MetaData&quot;,&quot;Válido hasta&quot;)</alias>
+<null>true</null>
+<pk>false</pk>
+<type>date</type>
+</field>
+</xupdate:insert-after>
+<xupdate:insert-after select="/TMD[TMD,1]/field[fechafinhomol]" >
+<field>
+<name>numcertificado</name>
+<alias>QT_TRANSLATE_NOOP(&quot;MetaData&quot;,&quot;Certificado Nº&quot;)</alias>
+<null>true</null>
+<pk>false</pk>
+<type>string</type>
+<length>15</length>
+</field>
+</xupdate:insert-after>
+<xupdate:insert-after select="/TMD[TMD,1]/field[numcertificado]" >
+<field>
+<name>pshomologados</name>
+<alias>QT_TRANSLATE_NOOP(&quot;MetaData&quot;,&quot;Productos o servicios homologados&quot;)</alias>
+<null>true</null>
+<pk>false</pk>
+<type>stringlist</type>
+</field>
+</xupdate:insert-after>
+<xupdate:insert-after select="/TMD[TMD,1]/field[pshomologados]" >
+<field>
+<name>suspendidahomol</name>
+<!-- Causas de la suspensión de la homologación --><alias>QT_TRANSLATE_NOOP(&quot;MetaData&quot;,&quot;Homologación suspendida&quot;)</alias>
+<null>false</null>
+<pk>false</pk>
+<type>bool</type>
+<default>false</default>
+</field>
+</xupdate:insert-after>
+<xupdate:insert-after select="/TMD[TMD,1]/field[suspendidahomol]" >
+<field>
+<name>causassuspendidahomol</name>
+<alias>QT_TRANSLATE_NOOP(&quot;MetaData&quot;,&quot;Causas&quot;)</alias>
+<null>true</null>
+<pk>false</pk>
+<type>stringlist</type>
+</field>
+</xupdate:insert-after>
+<xupdate:insert-after select="/TMD[TMD,1]/field[causassuspendidahomol]" >
+<field>
+<name>fechasuspendidahomol</name>
+<!-- Fecha límite de la suspensión de la mologación --><alias>QT_TRANSLATE_NOOP(&quot;MetaData&quot;,&quot;Suspendida hasta&quot;)</alias>
+<null>true</null>
+<pk>false</pk>
+<type>date</type>
+</field>
+</xupdate:insert-after>
+<xupdate:insert-after select="/TMD[TMD,1]/field[fechasuspendidahomol]" >
+<field>
+<name>aprobadopor</name>
+<!-- Usuario que ha aprobado la homologación --><alias>QT_TRANSLATE_NOOP(&quot;MetaData&quot;,&quot;Aprobado por&quot;)</alias>
+<null>true</null>
+<pk>false</pk>
+<type>string</type>
+<length>15</length>
+<relation>
+<table>usuarioscalidad</table>
+<field>codigo</field>
+<card>M1</card>
+</relation>
+</field>
+</xupdate:insert-after>
+</xupdate:modifications>

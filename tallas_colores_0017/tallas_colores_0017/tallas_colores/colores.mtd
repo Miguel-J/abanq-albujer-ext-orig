@@ -1,0 +1,28 @@
+<!DOCTYPE TMD>
+<TMD>
+	<name>colores</name>
+	<!-- Listado de colores de los artículos -->
+	<alias>QT_TRANSLATE_NOOP("MetaData","Colores")</alias>
+
+	<field>
+		<name>color</name>
+		<alias>QT_TRANSLATE_NOOP("MetaData","Color")</alias>
+		<null>false</null>
+		<pk>true</pk>
+		<type>string</type>
+		<length>50</length>
+
+		<relation>
+			<table>articuloscolores</table>
+			<field>color</field>
+			<card>1M</card>
+		</relation>
+
+		<relation>
+			<table>stocks</table>
+			<field>color</field>
+			<card>1M</card>
+		</relation>
+	</field>
+	
+</TMD>

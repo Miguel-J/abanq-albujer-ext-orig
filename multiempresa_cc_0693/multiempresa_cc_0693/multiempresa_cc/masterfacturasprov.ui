@@ -1,0 +1,75 @@
+<xupdate:modifications>
+<xupdate:update select="/UI[UI,1]/widget[QWidget,masterfacturasprov]/property[geometry]/rect[rect,1]/height[height,1]/text()[1]" >357</xupdate:update>
+<xupdate:update select="/UI[UI,1]/widget[QWidget,masterfacturasprov]/property[geometry]/rect[rect,1]/width[width,1]/text()[1]" >662</xupdate:update>
+<xupdate:update select="/UI[UI,1]/widget[QWidget,masterfacturasprov]/vbox[vbox,1]/widget[QFrame,barraBotones]/hbox[hbox,1]/spacer[Spacer2]/property[sizeHint]/size[size,1]/width[width,1]/text()[1]" >20</xupdate:update>
+<xupdate:append-first select="/UI[UI,1]/images[images,1]" >
+<image name="multiempresa_ccimage35846" >
+<data format="PNG" length="1251" >89504e470d0a1a0a0000000d4948445200000020000000200806000000737a7af4000004aa49444154789cb596cb6f5b5510c67f73af1b47b2e3a449030dad93544a436937b42c8c5a5a42ab16e8536cfac7f007b067cda642bc944d9180880a0909d890b2a0a9d40d4aa5aa2129b2d3d84eeac48f7bceb0b80ffbfa59a08c74e4abeb73e7fbcecc37334768b19b376fb2bebe3e9ccd6633aeebf222cd18c3dadadaf6a14387aa8b8b8bd17b091f72b91ccbcbcb89a5a5a50f4f9c38f18188e88b24a0aaf2e0c183db972f5ffe2897cb79cbcbcb00245a3690cd665393939397b2d9ecebaa2f141f11219fcf57b2d9ecc7aa5a0edf47048c310062ad15630cf420a03edbe7456d8658046bad001260c5094400aad1ea768a72a9c4cafdfb789e878874ec69f5333d3dcddcdc1caa8a04efdaed1f114015711c52a914d6da9ee0a125878662fb9e8b00aaa8b55d372b904ea5989f9fa7582c0e24904ea77d3faa20d2357571023220028115f279eeadacf40557558ececd713c93898055b5a5eeda08f88082aa62fb1150656a6a8ab1fdfb07a6a135054d0d48cc772c024270fa1e2908cd755d36d6d779f4e811e238dd795acbec9123cc1f3d1a9c5c0231c6fdc60828cf970280b1b131666666fcdc7665a08c8d8e7688b0dd6b9b088314f48940b55a657d63232aad7efd22f4057e098729e8494000db878088b0b7b7c7dada5ad4077ad5b7aaa233338c8f8ffb6445b021e9de110055db3702e9749a377339448452a948ad5ee7e5970ea2da2948c771c20e1b44a0cb9e0e02d68f40afa5aa388e43c24d50d8dce4f32f3e63f5e11fb8ae8bebba388e132d20feaded3c540b018dfa403b6037612a7e381faf3de6d6a7b7b8fbdb5d8c311ddfb7fb0a84d39902ffbfb8084504630c9ee7b5ad06aa50d82c00c2d6d6165f2d7e49b154e4dc5be718da3784551bcd8ad0972f5c89e9b6430336d040f8e1dede1e85cd02f97c9e7c214f21f8ddded98ec884e2fcf6bb6f28168bbc77e95d52a934c69826b008b68b063a45683556bbd65abc46837abd46b55aa5b2bbcbceb367ececec4429094fea791e3ffff213a55289eb57af333131118b66370d749d86ed04a2d61c94516b29b58ee4f0b4f7567e677ba7cc8dab37387c381bbdef5659f12a90660adad51b09b1a397c54d441011565757b9f3c31d7677779bbed4f61e46017e8f0834a3a04a5f0a21d1d9d923bcb3709ea196811475cfee048249156a20e89a7e04e25168957198dff019e0b563c7b9f2fe15262727a303353520f42c43085ab1fa8051ff16c1711d12fb122493430c0f0fd3f01a1863a8d7eb11b0e3389c3af906172f5c646464246ad7aa8a387e2b6ec5ea4881ff679877105112890407260e309a1965767a9686d7c0f33cd42aeb1b7fb2f4fd12f57a9de45092d3a7cf70f6cc5992c9640cdcef31dab51577de886cf33ee033151289048984bf350cb7e338d46a550052a914e7172e70eae4295cd70dc0db06a50d523058841663fa5f4842029ef118df3fcec2db0b1c7bf518105def3b2c1c4603a6a1f41dc7ada66ac98c64b876e51a5353af604cffeb59388efbdf07249c056620018091911132990cc67803f7b6b6e4ae046ab51a4fb7b64ca552a9371a8d810eff8d552a95fad3ada726994c7612d8d8d8a05c2e576edffefa935fa70e3ea4432effd9f4c993bf7e2c97ca95d64ed60dc40192ff0701a006c4c4f237979fa094184612cd0000000049454e44ae426082</data>
+</image>
+</xupdate:append-first>
+<xupdate:insert-after select="/UI[UI,1]/widget[QWidget,masterfacturasprov]/vbox[vbox,1]/widget[QFrame,barraBotones]/hbox[hbox,1]/spacer[Spacer2]" >
+<widget class="QPushButton" >
+<property name="name" >
+<cstring>tbnFacturaEmpresa</cstring>
+</property>
+<property name="sizePolicy" >
+<sizepolicy>
+<hsizetype>1</hsizetype>
+<vsizetype>1</vsizetype>
+<horstretch>0</horstretch>
+<verstretch>0</verstretch>
+</sizepolicy>
+</property>
+<property name="minimumSize" >
+<size>
+<width>32</width>
+<height>32</height>
+</size>
+</property>
+<property name="maximumSize" >
+<size>
+<width>32</width>
+<height>32</height>
+</size>
+</property>
+<property name="focusPolicy" >
+<enum>NoFocus</enum>
+</property>
+<property name="text" >
+<string/>
+</property>
+<property name="accel" >
+<string>Ctrl+F</string>
+</property>
+<property name="iconSet" >
+<iconset>multiempresa_ccimage35846</iconset>
+</property>
+<property name="toolTip" stdset="0" >
+<string>Facturar a empresas</string>
+</property>
+</widget>
+</xupdate:insert-after>
+<xupdate:insert-after select="/UI[UI,1]/widget[QWidget,masterfacturasprov]/vbox[vbox,1]/widget[QFrame,barraBotones]/hbox[hbox,1]/widget[QPushButton,tbnFacturaEmpresa]" >
+<spacer>
+<property name="name" >
+<cstring>Spacer2_3</cstring>
+</property>
+<property name="orientation" >
+<enum>Horizontal</enum>
+</property>
+<property name="sizeType" >
+<enum>Expanding</enum>
+</property>
+<property name="sizeHint" >
+<size>
+<width>20</width>
+<height>16</height>
+</size>
+</property>
+</spacer>
+</xupdate:insert-after>
+<xupdate:delete select="/UI[UI,1]/includehints[includehints,1]/includehint[FLTableDB.h]" />
+<xupdate:append-first select="/UI[UI,1]/includehints[includehints,1]" >
+<includehint>fltabledb.h</includehint>
+</xupdate:append-first>
+</xupdate:modifications>

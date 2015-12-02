@@ -1,0 +1,773 @@
+<xupdate:modifications>
+<xupdate:update select="/UI[UI,1]/widget[QWidget,pr_ordenesproduccion]/property[property,2]/rect[rect,1]/height[height,1]/text()[1]" >588</xupdate:update>
+<xupdate:delete select="/UI[UI,1]/widget[QWidget,pr_ordenesproduccion]/vbox[vbox,1]/widget[QTabWidget,tbwOrdenes]/widget[QWidget,buscar]/vbox[vbox,1]/widget[QGroupBox,gbxBotonesOP]/hbox[hbox,1]" />
+<xupdate:append-first select="/UI[UI,1]/images[images,1]" >
+<image name="prod_sofaimage0" >
+<data format="PNG" length="1180" >89504e470d0a1a0a0000000d4948445200000024000000240806000000e10098980000046349444154789cbd9851685b551cc6bfda54ce43953357f104f3701fee83b7444866070d82106da1660535e0c33a4512f161298223ab30c21e4a29225570b00e06adac105f6a16a1cb2a0889aed20de652bb4982144cb730621d588b94ae8ceae7c3bd499b74b6699be4bcfc7349b8f7c7effccf97732e48a24143029857521236991742bd03400078a2ec570d029200e6a5548c5e3c4f9274777a295ab5cbd677cd8d049200e69923a35f25e8ed6169787bfc146dee9f20940ea0a5114012c0bcffed20330bcb24c9e0c90839ba09157cd74fa13cb7003c07a0a59e4025335cb09efe80d674f9cd0f852449d2d7e5a370f00a8067eb05b4cd4ce1c11a4972d9aa9acbcfd0072172618c648846879f42793faa07d07633857243d178c6820a927992d93192a4d0834bb506da662697b76aceac63931972821c194d939f929e9e212a6790d1d1212a17594ba0ed667256b5aea393a699918be6757878d6eca14094d2490a3db4584ba03233c59abe53d86ee61c191e4e323c4806071234ba48a187ee42a81335031236513291ce5a666eee6c263840ba2d1821d409009db53364132b9c20d373a691e44c6e6f66804e00f6da00d9e425e53068b8bc24c9448a9b30d59a01ec009e6c2289a6a6a603c118baf15e782082f837713cdc0052df8e63fceb2cde7fd88ecf56e7707ae3084eafa6808d57f1d7ea55dcf8f91816eff6df5bbf1f8f607de93700f700fc09e0d1c10cd9e425c3e96522659a60967477929e9ed09ecd94eeb96fa00a986212c7a666a939fbe8ee0a939f57d1335b61f60d5469c64ae0596b5585ce44697492ca1522d7aa34b36fa00a985cde3493bc5e2027c8a173b3e459b2efc3314abd8f420f52b9aa30b32fa04a3356ee246758de3383496a2e5238fc3f007843b4793e06f01a808e1d61f604540193be632671e2bb5c59ce840693d43ac2459863005e02a001781ec0211437620702b2c92fcacc58bd129b7e8c990e6e857103386c413403d83d5faa02126a263695b6a6c74ce2e8546637334598e61defbd4fa004f39b095cdccf5461666f3000764f6aa10252dabfb42b3bbcdd5771e4687902f7afa4307d651a4b4b8bd7d6efc747001400e401ac00f867af403b1b6ad5025291b129d384d1e127ffae8f99dd81840a28ddc3c474b177320c9d2285e6a3ef38193a93a84dcf5405d4aa05e82279ddca19ab064f4529755228df4da993c2e1ffbea6308f05122a60387da5259e489939131e4c50ea7d84745f00f03a805700bc0ce0c59ac194806cf22d21d40a84a254e4d84479ce9830a468735f00d00da01de6c1ee1900ad3583290109752d164f327296f41f8f984bdbdae95598e906f00280a751f992a0c6403f161358695e468663ff67a6be304520d1aa9d34ace36d74729652f7d1fbe65063cd6c050220449b3bebed0d9324cf8f939e2e5238fc04d00bc0d910982d0f78b4befa7bef8d5b730bed9e7e647f058ca397019b5803b00e6019c02a807feb0db475d9b700b00be519140edf6da9f117d1e6f904e686ea50dd41ac51f95fd602736a0e03780a00619e06fe8069aaeee33fc2dcd60d1f17f32c0000000049454e44ae426082</data>
+</image>
+</xupdate:append-first>
+<xupdate:insert-after select="/UI[UI,1]/widget[QWidget,pr_ordenesproduccion]/vbox[vbox,1]/widget[QTabWidget,tbwOrdenes]/widget[QWidget,buscar]/vbox[vbox,1]/widget[QGroupBox,gbxBotonesOP]/property[property,4]" >
+<widget class="QToolButton" >
+<property name="name" >
+<cstring>tbnBuscar</cstring>
+</property>
+<property name="geometry" >
+<rect>
+<x>11</x>
+<y>11</y>
+<width>32</width>
+<height>32</height>
+</rect>
+</property>
+<property name="minimumSize" >
+<size>
+<width>32</width>
+<height>32</height>
+</size>
+</property>
+<property name="font" >
+<font>
+<bold>0</bold>
+<italic>0</italic>
+</font>
+</property>
+<property name="text" >
+<string/>
+</property>
+<property name="iconSet" >
+<iconset>prod_sofaimage0</iconset>
+</property>
+<property name="toolTip" stdset="0" >
+<string>Buscar</string>
+</property>
+<property name="whatsThis" stdset="0" >
+<string>Busca las unidades de producto que cumplen los criterios establecidos</string>
+</property>
+</widget>
+</xupdate:insert-after>
+<xupdate:append-first select="/UI[UI,1]/images[images,1]" >
+<image name="prod_sofaimage1" >
+<data format="PNG" length="742" >89504e470d0a1a0a0000000d4948445200000016000000160806000000c4b46c3b000002ad49444154789c8d94cf6b134118865fb5600f7af0ae908039b4e0a18142137a0ad843d3832478e88a88fd0ff4e05fd20ada4d21b2eba16c2bd4a4655b92424b5688740b1b760f0da4d0c3623d3450837808be1e663666d3fc9acbbbb359be3cf3cccc77075d2312892c34779a6f6bad5ada53bd74fd773ded6c38e9fa9f7ada51fb64ab9e763e3ae9da656da179ddbc6cb55a3fd06f649632ef57d756c91ca9e6555227b54d8d2469f4a4a66ba44eaa39955c23137389377d8b02b89559caac93a4eb974892fc29c26d14c4836790242b32e988d43655728eef86162e1d898faf7822b3228a3982b4545565712d9489b9c4f0c224c946402ac983f9999c9f8938392b74f424e6c3856f874a4f00fa271d8802e58332a6a32958871610058a7b454cc752b08e2d2006940fcb88c7d2281f9491fdf502680fe2ed434c5b927aae78a84ad2ea49686ee80639cfe1c4b98d5c87103392746a1a5b5fb68059b192f86cbc332f7e2d22dbca22d94e0e265e5c5a5cef7658da974e2f24a92d493d86dc1bba31dcf1e4c424b63e6f0131c0ab79483d4dc13eb58147d2e94c1ce7f573604a90220a78a71eb2edec788e038785ed4298b42ca2725409ed8196d36e38be51d8d816e7d8bff0431b17fc59302f958526dff7479fe38ee323e96e53de304b446157dec0fd30b9fa411d7d4102e24643ec4cc36b0c27bef0497dcc9b17382dec0842d776c38ead1ec7f9518e9f65d683e5bb4ed86d4018bc0fb4b88e4be6c7752ccf6769b7a737547bcef195dc0bdd18ad42cb6ba18d09961d68e9ac405e1ebf31c6a9b8d12bae7bd29119fcde45dcdb8f077637ebd802ee03d63791c5bd22f004b0bfdb4014a2573c10df65db592491e42062441e475ed1a2a92c2b26ab3495978a499be6caeb15938e4cfb7f2acb8a498ba6f25c29461e461642cbefa97d17c0bd3eef478dbf00aed1d531fe0140ecde89f6063c4c0000000049454e44ae426082</data>
+</image>
+</xupdate:append-first>
+<xupdate:insert-after select="/UI[UI,1]/widget[QWidget,pr_ordenesproduccion]/vbox[vbox,1]/widget[QTabWidget,tbwOrdenes]/widget[QWidget,buscar]/vbox[vbox,1]/widget[QGroupBox,gbxBotonesOP]/widget[QToolButton,tbnBuscar]" >
+<widget class="QToolButton" >
+<property name="name" >
+<cstring>tbnCalcular</cstring>
+</property>
+<property name="geometry" >
+<rect>
+<x>49</x>
+<y>11</y>
+<width>32</width>
+<height>32</height>
+</rect>
+</property>
+<property name="sizePolicy" >
+<sizepolicy>
+<hsizetype>1</hsizetype>
+<vsizetype>1</vsizetype>
+<horstretch>0</horstretch>
+<verstretch>0</verstretch>
+</sizepolicy>
+</property>
+<property name="minimumSize" >
+<size>
+<width>32</width>
+<height>32</height>
+</size>
+</property>
+<property name="font" >
+<font/>
+</property>
+<property name="focusPolicy" >
+<enum>NoFocus</enum>
+</property>
+<property name="text" >
+<string/>
+</property>
+<property name="iconSet" >
+<iconset>prod_sofaimage1</iconset>
+</property>
+<property name="toolTip" stdset="0" >
+<string>Calcular datos (C)</string>
+</property>
+<property name="whatsThis" stdset="0" >
+<string>Calcula algunos de los datos del modelo a partir de la información del módulo de contabilidad</string>
+</property>
+</widget>
+</xupdate:insert-after>
+<xupdate:append-first select="/UI[UI,1]/images[images,1]" >
+<image name="prod_sofaimage2" >
+<data format="PNG" length="1428" >89504e470d0a1a0a0000000d4948445200000020000000200806000000737a7af40000055b49444154789cd5974f681c6518c67f8d933ad144b6d0c3ac149d40940cd4d2ad06dcd88a39082554acbd487350ccd62a198bd811ac96d0628bb4362b289d624be3a1901ea4f4d0f650d022222dc2222a29acd8d08dba98211d369f9ba11993e9be1e26bb49d33ff977f281650fc36fdfe77dbeefdbef9d1522c2ff591b80d5cbe09f5b4ef117813f80c797c87703bf2eb5f866400111905c029f016e01bf2fa5f8cb4039914808505e82811e5dd36f4df383758b845f054e9ba6d984b64832d66ec06d369b6b751763e035e094d5623dd4dcd21c87bf38ed45239b5a9bc25863d4f8851a780bf8ca34cd95e94d6992ab928461b898e207d03868b558a437a569d01b50a15a30fc2e1a15abd592ee37ba45fe16e978a143745d5fe81ee8d3355d526b53e2bce788fc29925a9faaf283f315ff000da91517910be72e88d56a2dc4401d7054d77449ad4f49cfae1e11113979fca498a62968cc6b605fd579f79b71711191eb5f5f17abd59244e37d4f81069cd4755dd2cfa4e3ce45446e8afce4fe24568b356f02af0362b558d2b5bd4be466adbe6cdbba4d526b53f325b00fa6939b655e4a229d9b3be304b57b1b780d98304d332e5e9ee18f1c3e22970f5f96d4dad4fd12f8a8b66cb38b8bc8dedebd7269eba5d94b3838f734ef045cd334b5f6743b03c707a0297ee01e7351be223b9c05208cee7a0a3e46a3b7badbfb4ff4d71eb85fb88461888b7b1b3ffb18ee02be344d536b6f6b67a07fa678ff897eba9abb00709e750809d135bdca4d4d7f1f41a3d732ef5ebceb8998b7b1016abc36fd71d03864ae3169dfd4cec0a981dbe0313586ebb9d89acd3b3fbe33bb830aa0035934765b2d161d1d1db8c7dc1adff7591f6110e2e65c1c1c76443bee48a0133894684c9034921cdd7e14be036e40dfa77d33ced3366ee4e23ce34054ebe05fe07d60b79130300c0377bb0b3f007fc1c14f0e92b13231df6693258ba3ddc6b302480087819d8661d0bca699a491445fa593349224f4048eee908db2844148fe5a9efc6f790ac305c230fc07781ed80fbc62ac99e113ab12245727d11b751c2de655a0c80fe6290c15c80fe721e26a1df1b5fa36f0b9e779148a0546d408f67a9b8970824c2a4336cae2a4e3b5b7b1998826aa1dd4c5bdd2059cf18a1e23c511c6d418f67a9b300cb15336d9288bdd6643043df4cce67960d626bc08e841106c8c2623064b83343dd8c415ef0af52bebc9fd9d23733343afd7cb8dd20d3cdf830a93c071600c380f98aaacd61141ae94436fd0c97939744d27578cf93da37b502585af7ca8303af732fa10d8ef795e1cf35f0532ad19c220eec4c5a5879edbd610a80e9521f006d03f5c1ca63054c01bf1e86ae942050abbcda68f3e1c1cc22844e7ce04aafa1e581904c1a6300cf9b9f433fa83712700678b6751bec22ffbd5048e02c1345b012e002d4aa97553d114574b57d1ea35725e8efa4a3da78ba751be42dd54774da0aafdc029cff36a9d74b77603e068d31dcc24305715e2ff946f878bc314860ba81baac6ebe87182f749a0fa23e7014329f5f45434c52ffe2f343634f24df00d23c51154590177245055089ca3c253beef3f4925de138d4d8df8259fe2689120080046efd545552b80cf01314d533a3777cae5c397c5308cea753adf3cf0307086e98b6ddb966d7269eb2549ac4ed4aee37b25305b178106a5d4c6f1709ca1f210e164883feadf2f81aaa6807340b35ff2d74d4c4e30941862bc3c8e2a2980d1851800f8165811948317a626a7687aa409e52ba24a349f0188a7bff3c0a34aa90d1a1af52bebf17d1f16b00473b50710c330446f5cf0485655ddb4d9985fe0487637bd0b54163113ce551fb02c03104fc9b7882fa3a5bc191d24fe03cb2fd500c4af5765e0b125f207806bcb3100b0053096c1bff41fbbecd2650ea346fe0000000049454e44ae426082</data>
+</image>
+</xupdate:append-first>
+<xupdate:insert-after select="/UI[UI,1]/widget[QWidget,pr_ordenesproduccion]/vbox[vbox,1]/widget[QTabWidget,tbwOrdenes]/widget[QWidget,buscar]/vbox[vbox,1]/widget[QGroupBox,gbxBotonesOP]/widget[QToolButton,tbnCalcular]" >
+<widget class="QToolButton" >
+<property name="name" >
+<cstring>tbnEstadoAtras</cstring>
+</property>
+<property name="geometry" >
+<rect>
+<x>343</x>
+<y>11</y>
+<width>32</width>
+<height>32</height>
+</rect>
+</property>
+<property name="sizePolicy" >
+<sizepolicy>
+<hsizetype>1</hsizetype>
+<vsizetype>1</vsizetype>
+<horstretch>0</horstretch>
+<verstretch>0</verstretch>
+</sizepolicy>
+</property>
+<property name="minimumSize" >
+<size>
+<width>32</width>
+<height>32</height>
+</size>
+</property>
+<property name="maximumSize" >
+<size>
+<width>32767</width>
+<height>32</height>
+</size>
+</property>
+<property name="focusPolicy" >
+<enum>NoFocus</enum>
+</property>
+<property name="text" >
+<string/>
+</property>
+<property name="iconSet" >
+<iconset>prod_sofaimage2</iconset>
+</property>
+<property name="toolTip" stdset="0" >
+<string>Pasar al estado anterior</string>
+</property>
+</widget>
+</xupdate:insert-after>
+<xupdate:insert-after select="/UI[UI,1]/widget[QWidget,pr_ordenesproduccion]/vbox[vbox,1]/widget[QTabWidget,tbwOrdenes]/widget[QWidget,buscar]/vbox[vbox,1]/widget[QGroupBox,gbxBotonesOP]/widget[QToolButton,tbnEstadoAtras]" >
+<spacer>
+<property name="name" >
+<cstring>spacer5</cstring>
+</property>
+<property name="orientation" >
+<enum>Horizontal</enum>
+</property>
+<property name="sizeType" >
+<enum>Expanding</enum>
+</property>
+<property name="sizeHint" >
+<size>
+<width>128</width>
+<height>20</height>
+</size>
+</property>
+<property name="geometry" >
+<rect>
+<x>381</x>
+<y>17</y>
+<width>128</width>
+<height>20</height>
+</rect>
+</property>
+</spacer>
+</xupdate:insert-after>
+<xupdate:append-first select="/UI[UI,1]/images[images,1]" >
+<image name="prod_sofaimage3" >
+<data format="PNG" length="562" >89504e470d0a1a0a0000000d4948445200000020000000200806000000737a7af4000001f949444154789ced97b16bdb4014c63f42078d1e1dc8a025d0832e075d0c1d5ac81fd0d990a1810eca9ad163aaa9cd10b087823308942d74321d0cee560f29cd66073cd89041940e2ed860b2fd3a5cdc3ac56925d9b549e9703cdea0bbef7df7d3dd3b01a287d615d5eff605a8d3ed085879beb6ca7f389047b924ee1a59e7cba5dc7f1ae31f83ff22c6afb95878d440122b61c006508aa0740af604ec5b28ec1c20899530600398007b09589c80e24e92cf813c0cd8001a231802e6fcb6032b61c006005049a0bea0031b83cb81b42d752fbbd2b6942a97f46a2c7ddb946a9f2449bad691a494dfcfe4f79781fa08faeb66e0f53a1978339606ff02031b992a9fe6926a63c9db94ae7f7120eb7cf79781d3b1f4655d0c985de7c0fedf3e077e77efb7be0e99cc3907ee1ab9ce011382ff044abb31931eec45319f7b508e62000e661830ef6ef707c5e71324e13df058a81f306142f9081a57cef6ba0b1c4ea00cd873b01198c8455b0313821f9ca5ea0fd2ed7908f51368246ef12a104f17bf8975c0b6c15e40e171d9f1b0ccbbc08409e563a8349d88cac83960a622debbadf01e3ec3dbb2a93ba36cf487d0b980b87b2362082dc036c1b4c17f7996baf2d40ccc73c206f071f4733b56de139a105a4d38fce044785b16af58cd54796606e639b11f41b54daeca17ea07669df8d37fbe7406febf0d979d7f0782b1614e5bcfa8de0000000049454e44ae426082</data>
+</image>
+</xupdate:append-first>
+<xupdate:insert-after select="/UI[UI,1]/widget[QWidget,pr_ordenesproduccion]/vbox[vbox,1]/widget[QTabWidget,tbwOrdenes]/widget[QWidget,buscar]/vbox[vbox,1]/widget[QGroupBox,gbxBotonesOP]/spacer[spacer5]" >
+<widget class="QToolButton" >
+<property name="name" >
+<cstring>tbnBajar</cstring>
+</property>
+<property name="geometry" >
+<rect>
+<x>515</x>
+<y>11</y>
+<width>32</width>
+<height>32</height>
+</rect>
+</property>
+<property name="minimumSize" >
+<size>
+<width>32</width>
+<height>32</height>
+</size>
+</property>
+<property name="text" >
+<string/>
+</property>
+<property name="iconSet" >
+<iconset>prod_sofaimage3</iconset>
+</property>
+<property name="toolTip" stdset="0" >
+<string>Bajar prioridad</string>
+</property>
+<property name="whatsThis" stdset="0" >
+<string>Bajar prioridad</string>
+</property>
+</widget>
+</xupdate:insert-after>
+<xupdate:append-first select="/UI[UI,1]/images[images,1]" >
+<image name="prod_sofaimage4" >
+<data format="PNG" length="576" >89504e470d0a1a0a0000000d4948445200000020000000200806000000737a7af40000020749444154789ced973168136114c7ffe7943163840a59029eb87c9bdd1c3a6574ac3834e090aedd74122f93cd209a21d00ed6c6a5824b70b3b8d4a185e0922f50e4020e2938a49080095d7e0e77673be4427281bb4187e3f1e0e3bdf7fff37bdfc70910e728ab28dffa02d4b55d01a9e79929ffebc02a4adc1a48621527124f6e8e617b1fe07a88d418706b507e012f477002e4d60cb94231911389949b6aa0bc1d044c130a1b83444e2cadbcd2089a1e5ec100285b3023705ffb14abcb33b194f2cd3a0c87c10043e0910f7b803905f30bdc26e4efb7c9ad99859d5858b9fb3468fc25b47dbd03266a0eb8a760aec03420ffa0b2b0130b2b8f6c07781b3ab0f9331ce21decd9209a0eb83528ee2fb61db76ccf4a25a9dfeb4b25e9667eef485c3cdb55ffbbe41db4747c243d3e68e9db07e9f36422ef8e343d933495bcf71d5d7e952edeb434f9214d3f799224c77188abaf92e63b2089b80fe0d52064e0c616cc393fdb81b8c96ccf0a707ceb3b80d3b55d27cacd16da1d4bfddb52e34c92a4a9ea92a459e70127cee9443761740fec0c4206d2ba07a2dc54e16404bf23fa9b90dfd84112a9bc05a61a34afcc6060d97a731988cd25d5c7526e0603cbd65b8981ed7f9a81680b3263c01b4b932c1988b6203306daa3e041ca9481e75933709925031fcf61bd05c666c040f121149e1c52dcba8eb9bbe5f41848f2eec73af0ffdf302be551fe07b1d15107f9a562c20000000049454e44ae426082</data>
+</image>
+</xupdate:append-first>
+<xupdate:insert-after select="/UI[UI,1]/widget[QWidget,pr_ordenesproduccion]/vbox[vbox,1]/widget[QTabWidget,tbwOrdenes]/widget[QWidget,buscar]/vbox[vbox,1]/widget[QGroupBox,gbxBotonesOP]/widget[QToolButton,tbnBajar]" >
+<widget class="QToolButton" >
+<property name="name" >
+<cstring>tbnSubir</cstring>
+</property>
+<property name="geometry" >
+<rect>
+<x>553</x>
+<y>11</y>
+<width>32</width>
+<height>32</height>
+</rect>
+</property>
+<property name="minimumSize" >
+<size>
+<width>32</width>
+<height>32</height>
+</size>
+</property>
+<property name="text" >
+<string/>
+</property>
+<property name="iconSet" >
+<iconset>prod_sofaimage4</iconset>
+</property>
+<property name="toolTip" stdset="0" >
+<string>Subir prioridad</string>
+</property>
+<property name="whatsThis" stdset="0" >
+<string>Subir prioridad</string>
+</property>
+</widget>
+</xupdate:insert-after>
+<xupdate:insert-after select="/UI[UI,1]/widget[QWidget,pr_ordenesproduccion]/vbox[vbox,1]/widget[QTabWidget,tbwOrdenes]/widget[QWidget,buscar]/vbox[vbox,1]/widget[QGroupBox,gbxBotonesOP]/widget[QToolButton,tbnSubir]" >
+<spacer>
+<property name="name" >
+<cstring>spacer5_2</cstring>
+</property>
+<property name="orientation" >
+<enum>Horizontal</enum>
+</property>
+<property name="sizeType" >
+<enum>Expanding</enum>
+</property>
+<property name="sizeHint" >
+<size>
+<width>128</width>
+<height>20</height>
+</size>
+</property>
+<property name="geometry" >
+<rect>
+<x>591</x>
+<y>17</y>
+<width>128</width>
+<height>20</height>
+</rect>
+</property>
+</spacer>
+</xupdate:insert-after>
+<xupdate:append-first select="/UI[UI,1]/images[images,1]" >
+<image name="prod_sofaimage5" >
+<data format="PNG" length="1906" >89504e470d0a1a0a0000000d4948445200000020000000200806000000737a7af40000073949444154789cb596616c556719c77f94b3f05e7acd4eb7c24e67630e7a97b4f54e7b9118ba74099dfb00ac2ae9b218606a4449b404135370c132e3ec3643da9a108b5a6d8728fdb0ad60520b1aa06d6450b6ba5bb6cedb6e6c699b8e5c48dd6e2b74f79e75f7debf1feebda5ad1631b22779f3e42427e7ff7b9ee7ffbeef818f214a03a525b1aed8c1eeaeee7e4d68a07677edef43c1d046206ffe7b926ebf78cd969a5d92a6948d582c26cd4a2d875a54535df30b60e5c70650b3a56687e6c7642685fbc3d26806a2a7bae7d7c01db71da0625dc59724cd2ca85c526c3293cff79f97daa586a71a661dc7f9ea6d05705db754d2c45ce5f16cbe96cdd14cea3ed92d0d48559555bf0156dc1600bbd0be5b51bdb2583c1e8f2fe840742243d1d6daa69aea9abf00abff6f0063194bfd3a36273eab8591eb40ae379732ab6a43d53160d5ff04602c96db162b8cc54a63916fc017fd41b4794e7491f8e20ee43cd172b0456eb1fb04e09784355fc4b529ec700876d8049afc141f2fe09eed1bb8ebc4abdcf9c8974d3e7f239f07cd4a5e9a366cea5949a0e8ee8c9f612e67c3e7f3c17528585590c905059cf8f30942a7437de397c74f011f002c0370fcac68dac453db83f64efce62eec02b00c541978d5c0061f9c032a0dbc0c046dc6bc3ad6dc57b664c71289043e9f8fc4f504be4ff8e8bfd04ffb6fdb879f3bfcdc5ea00f48cc8da06d0b3fd56c581aa8976261e9d40e49a3d2409da49834549f71d750bd148f2b3218d62d45d69091e18862c7635163cc37803b73907300da6a3a74bc46bab6232b5e270d66c587eb253548971a24c515eeefb935edac07a21351351e68bc6e17da7b80d5f3bb340750eaf0805acd651d70a5d19e2c444e3c7e43fc6ce7ad559e33644cd225a5dc80db047c6af198347f17184370c73a5abbbf65ded70157eaa892e2b57363089f6cfbcf22ff567936c7a2d21129b4aee228509af3db9200d9b06cc3173697f033359bb7b5cf91062a14ee5a249edbdf8bb7602e4f46a4a14e6d5b6f0f81791016eeb69b01e4220f704385ec6c7b72dbd5f9dab97d1dbf16cf561c5ff0acc13669a242b143216d0b7206b86729918523b0c09059ae05213f543dbcf93149a939f5d15c85f3663c3f9fad97263aa568b7341a56dd7a2e00f7de14a065a341d536471f36a8d8d06d838210abe45eeddc76a6e7ec7949526428926118cd50e4cef668347bd39caa956235d26ce6bd786b951aab791bf8ec4d01d4e1a0dd366a75906b906390cb5714e4156d70533a2b751ecfba7f385be9a5451de9cd9e1f390f0cd64913611ddd6aa68c45e5cd00f206cf79000c9ff3c0227425e91d619ae713e37c9197c769fff1431afbc7a31cfbe30908c0e0c541b80f86df18863570e58d5e78b71798ce1cc717f740c886d70eb1dd18bfb1285c0a204371c8415fb751b55d777483fd96d6d9113944e52715b148ca32a9c6eacd690d489d2f74664eb7814ca19151499331a9abe646e5b973e3daa87abe67abad90efdeb403ed2f7af02ef987925c1d2b32df6cf77be558e6d9418bbc3243dea0e569cfb9936afae15a8d8c8cd0fe620704a0ffa57ecad640ff1f1e87a929786917840c8c3c03f7ed87579b78c8189af96f1da8b4e9acb451a54d77b94141b3a2c7e5577290fca46593ea099052d0a4ba034e5aad11351e6c9126a4b6f6a3693557fd53fbec94ae456edc19971aa4d9a8b4d755954b138bfe861798f07cc0a012c37997a01c73b8a79821054caac721ad4252e142527248478a333061434a25a56ad8b239b1f9e1cd5db50ecf6803bd3a5221299a8568907a6b7300adc08a25015462a380f9a48acd6bf2a3ec4ac9e6a34826a765b2cb262d87a40c929f3e07ee8d0559dde850aa0efb759ddca61bb76654e1bdae7a02fc0ec85fd203278c07f0b5e169eff340ea4a9259209d00ca40534984457aca264d254a382cc7cf875370ac08a2df798fc9e3338cac7d62fa49debe98a26f0fdc5f0767f6b336094f27c95b6a0400798f60e887509931114aa82b5a4f1f3bc9f31d248f7254e0226c9615ac0736219f0d78bc55e0377f1db4616c1a2eccc0c5cb743dfda7915f527c11faf643791d27663c3cb80ea49704e8c5e30178770cef476ca285eff3213f278f55e4616101cb718007811948bc0324199ff2bc37c1f06d03a526f3b1e673fca4bdfec259462e307cf8711eb9329d18b94a18985d0a00056d546c2ab4d1b83ac55a5d23aa83481b795f36a7b58ebf6b37d210d27a92b28de4a751c6203beb21d71032190adbb07a5b39cdd14ade287568043ebda4b604e1a041ebcd723dc3321de0737a8c1754c207821764c8974591d671245e8ee437af47fd3c2bdbac89da20d7703e6096a9dc5ed6e29af9dfbe03280656b1c4559c03b0d6066c867dd3a9b2fb81d37cc056c6f093c698cff08e978f315778d3dbe7b3cc650c934596791ecbbb5a6465041fb00cc76cd85568d3f4de55c66700f808b8bc64dbe785f5349eb51f939cbae85110648c118ee260e1f72ee337b1310bd618131df6a82f9bc13f55e8a50b6c432209be69e84f7a7ad43274e051600ce333deade8cec5bf00b2dd50ae58f543a00000000049454e44ae426082</data>
+</image>
+</xupdate:append-first>
+<xupdate:insert-after select="/UI[UI,1]/widget[QWidget,pr_ordenesproduccion]/vbox[vbox,1]/widget[QTabWidget,tbwOrdenes]/widget[QWidget,buscar]/vbox[vbox,1]/widget[QGroupBox,gbxBotonesOP]/spacer[spacer5_2]" >
+<widget class="QToolButton" >
+<property name="name" >
+<cstring>tbnLanzarOrden</cstring>
+</property>
+<property name="geometry" >
+<rect>
+<x>725</x>
+<y>11</y>
+<width>32</width>
+<height>32</height>
+</rect>
+</property>
+<property name="sizePolicy" >
+<sizepolicy>
+<hsizetype>1</hsizetype>
+<vsizetype>1</vsizetype>
+<horstretch>0</horstretch>
+<verstretch>0</verstretch>
+</sizepolicy>
+</property>
+<property name="minimumSize" >
+<size>
+<width>32</width>
+<height>32</height>
+</size>
+</property>
+<property name="maximumSize" >
+<size>
+<width>32767</width>
+<height>32</height>
+</size>
+</property>
+<property name="focusPolicy" >
+<enum>NoFocus</enum>
+</property>
+<property name="text" >
+<string/>
+</property>
+<property name="iconSet" >
+<iconset>prod_sofaimage5</iconset>
+</property>
+<property name="toolTip" stdset="0" >
+<string>Lanzar procesos de fabricación</string>
+</property>
+</widget>
+</xupdate:insert-after>
+<xupdate:append-first select="/UI[UI,1]/images[images,1]" >
+<image name="prod_sofaimage6" >
+<data format="PNG" length="857" >89504e470d0a1a0a0000000d4948445200000020000000200806000000737a7af40000032049444154789cc596bf8be24014c7fd3b058b15b6112c24582c6221c1220c2984a4088c85101b095b2ce18a856cb1108b83dde2408b2d2caeb0d8628b2bb6b8e673c54b8c5927f1d771573dc799ccbcf7fd7edf8f06d060490368a4cbb4f1afd7bb3fff97bdc473aaf6f55473ee7d473d8c1611f2e80a006f1251739e97ef1b98154e9e84c041248106808d18d662ec712c3f2a90e14db6a37ba843ea240de8a9449e3c6eb2c853dab70ae57866049e05a1f8db06e610ce56101c47a296a3f881dde37c42b335304616cea2ec7139afa72fd977c791a8e6e839bf24a1d385f68d4db355115100ca4dc0cd9c0d32277c504e0c7e351266cf9ef7225983d557f0b143a0323bacbe86df45e43a9020941362386fd640742f428b1f36b46f6c793cdbb747aa9ed349e6c4a840c2f35359fbe514add300e912f814d84f55f3fef7836128f4f982843d8ee137c6ec39cce3d72d903d3e3c3d9fbf22a19c1826428372c0ea9bb3a71449f224a9a45c600ddec4abe3fc28129e9f16f76dcdf77d2da392c7c31dfc17d778cf8f8a6c70c1ea7928e710d112fc3c096783bb10b666cece5813cec81048e01d06c3320d250d448b048070be6270079dee7508a4cbb4c14cee532e74ba9e515325cef2ca678f22783f5bfd07eb70bea7819f3018aa6a0d84f302011ce8748bfcbfc2123f6cc0154d99ea48e970b42873f6b5789c8bc40ed1710c6b0e1a5949033a088b2ee6673418547b090256af3aab4a1ac8bb980ef6b470451d4897724ffbc6860fb3a60eba9a0e5ec8ad728f4e409536797cd905d16c1dc26fec059e2f7dddf3cb48e8e03c24c2b9dc132d807591d2c77b4120fd9f49e6c434a3655a38511df92a3b2f15357dde42cefde4bc7900e5e4910b127945f3fcfa9970f543b67915934f5067cd843ad0302e7733a6929a561fec91b9afa74be9a2c9e30682eabc3f651e6878be86cf620a566e02dbe333613e0ddbe3183eea23376b60cf2a47434f1a93d5cf1ebfabe07206d1fd0a2660f534ed5b9b666b40a75b3d09d569a04062e2c1267bfc0d3cdf3c1fe4237cb3358035b46f6df805f6f8f83c71425fd7d02f1a89f19c0b564f38cf878e53ebc52515eeafaeafed7657db3f92c098feea3d3d1f0000000049454e44ae426082</data>
+</image>
+</xupdate:append-first>
+<xupdate:insert-after select="/UI[UI,1]/widget[QWidget,pr_ordenesproduccion]/vbox[vbox,1]/widget[QTabWidget,tbwOrdenes]/widget[QWidget,buscar]/vbox[vbox,1]/widget[QGroupBox,gbxBotonesOP]/widget[QToolButton,tbnLanzarOrden]" >
+<widget class="QToolButton" >
+<property name="name" >
+<cstring>tbnEditarLote</cstring>
+</property>
+<property name="geometry" >
+<rect>
+<x>763</x>
+<y>11</y>
+<width>32</width>
+<height>32</height>
+</rect>
+</property>
+<property name="sizePolicy" >
+<sizepolicy>
+<hsizetype>1</hsizetype>
+<vsizetype>1</vsizetype>
+<horstretch>0</horstretch>
+<verstretch>0</verstretch>
+</sizepolicy>
+</property>
+<property name="minimumSize" >
+<size>
+<width>32</width>
+<height>32</height>
+</size>
+</property>
+<property name="maximumSize" >
+<size>
+<width>32767</width>
+<height>32</height>
+</size>
+</property>
+<property name="focusPolicy" >
+<enum>NoFocus</enum>
+</property>
+<property name="text" >
+<string/>
+</property>
+<property name="iconSet" >
+<iconset>prod_sofaimage6</iconset>
+</property>
+<property name="toolTip" stdset="0" >
+<string>Editar el lote seleccionado</string>
+</property>
+</widget>
+</xupdate:insert-after>
+<xupdate:insert-after select="/UI[UI,1]/widget[QWidget,pr_ordenesproduccion]/vbox[vbox,1]/widget[QTabWidget,tbwOrdenes]/widget[QWidget,buscar]/vbox[vbox,1]/widget[QGroupBox,gbxBotonesOP]/widget[QToolButton,tbnEditarLote]" >
+<widget class="QLabel" >
+<property name="name" >
+<cstring>lblEstado</cstring>
+</property>
+<property name="geometry" >
+<rect>
+<x>87</x>
+<y>11</y>
+<width>250</width>
+<height>32</height>
+</rect>
+</property>
+<property name="minimumSize" >
+<size>
+<width>250</width>
+<height>0</height>
+</size>
+</property>
+<property name="alignment" >
+<set>AlignVCenter|AlignLeft</set>
+</property>
+</widget>
+</xupdate:insert-after>
+<xupdate:delete select="/UI[UI,1]/widget[QWidget,pr_ordenesproduccion]/vbox[vbox,1]/widget[QTabWidget,tbwOrdenes]/widget[QWidget,buscar]/vbox[vbox,1]/widget[QGroupBox,gbxFiltros]/hbox[hbox,1]" />
+<xupdate:insert-after select="/UI[UI,1]/widget[QWidget,pr_ordenesproduccion]/vbox[vbox,1]/widget[QTabWidget,tbwOrdenes]/widget[QWidget,buscar]/vbox[vbox,1]/widget[QGroupBox,gbxFiltros]/property[property,3]" >
+<vbox>
+<property name="name" >
+<cstring>unnamed</cstring>
+</property>
+<widget class="QLayoutWidget" >
+<property name="name" >
+<cstring>layoutCriterios</cstring>
+</property>
+<hbox>
+<property name="name" >
+<cstring>unnamed</cstring>
+</property>
+<widget class="QLayoutWidget" >
+<property name="name" >
+<cstring>layoutBusqueda</cstring>
+</property>
+<vbox>
+<property name="name" >
+<cstring>unnamed</cstring>
+</property>
+<widget class="QLayoutWidget" >
+<property name="name" >
+<cstring>layoutAF</cstring>
+</property>
+<vbox>
+<property name="name" >
+<cstring>unnamed</cstring>
+</property>
+<widget class="QLayoutWidget" >
+<property name="name" >
+<cstring>layoutFamilia</cstring>
+</property>
+<hbox>
+<property name="name" >
+<cstring>unnamed</cstring>
+</property>
+<widget class="FLFieldDB" >
+<property name="name" >
+<cstring>fdbCodFamilia</cstring>
+</property>
+<property name="minimumSize" >
+<size>
+<width>150</width>
+<height>0</height>
+</size>
+</property>
+<property name="font" >
+<font>
+<bold>0</bold>
+<italic>0</italic>
+</font>
+</property>
+<property name="fieldName" >
+<string>codfamilia</string>
+</property>
+</widget>
+<widget class="FLFieldDB" >
+<property name="name" >
+<cstring>fdbDesFamilia</cstring>
+</property>
+<property name="minimumSize" >
+<size>
+<width>200</width>
+<height>0</height>
+</size>
+</property>
+<property name="font" >
+<font>
+<bold>0</bold>
+<italic>0</italic>
+</font>
+</property>
+<property name="fieldName" >
+<string>descripcion</string>
+</property>
+<property name="tableName" >
+<string>familias</string>
+</property>
+<property name="foreignField" >
+<string>codfamilia</string>
+</property>
+<property name="fieldRelation" >
+<string>codfamilia</string>
+</property>
+<property name="showAlias" >
+<bool>false</bool>
+</property>
+</widget>
+</hbox>
+</widget>
+<widget class="QLayoutWidget" >
+<property name="name" >
+<cstring>layoutReferencia</cstring>
+</property>
+<hbox>
+<property name="name" >
+<cstring>unnamed</cstring>
+</property>
+<widget class="FLFieldDB" >
+<property name="name" >
+<cstring>fdbReferencia</cstring>
+</property>
+<property name="minimumSize" >
+<size>
+<width>150</width>
+<height>0</height>
+</size>
+</property>
+<property name="font" >
+<font>
+<bold>0</bold>
+<italic>0</italic>
+</font>
+</property>
+<property name="fieldName" >
+<string>referencia</string>
+</property>
+</widget>
+<widget class="FLFieldDB" >
+<property name="name" >
+<cstring>fdbDescripcion</cstring>
+</property>
+<property name="minimumSize" >
+<size>
+<width>200</width>
+<height>0</height>
+</size>
+</property>
+<property name="font" >
+<font>
+<bold>0</bold>
+<italic>0</italic>
+</font>
+</property>
+<property name="fieldName" >
+<string>descripcion</string>
+</property>
+<property name="tableName" >
+<string>articulos</string>
+</property>
+<property name="foreignField" >
+<string>referencia</string>
+</property>
+<property name="fieldRelation" >
+<string>referencia</string>
+</property>
+<property name="showAlias" >
+<bool>false</bool>
+</property>
+</widget>
+</hbox>
+</widget>
+</vbox>
+</widget>
+<widget class="QLayoutWidget" >
+<property name="name" >
+<cstring>layoutRuta</cstring>
+</property>
+<hbox>
+<property name="name" >
+<cstring>unnamed</cstring>
+</property>
+<widget class="FLFieldDB" >
+<property name="name" >
+<cstring>fdbCodRuta</cstring>
+</property>
+<property name="minimumSize" >
+<size>
+<width>150</width>
+<height>0</height>
+</size>
+</property>
+<property name="font" >
+<font>
+<bold>0</bold>
+<italic>0</italic>
+</font>
+</property>
+<property name="fieldName" >
+<string>codruta</string>
+</property>
+</widget>
+<widget class="FLFieldDB" >
+<property name="name" >
+<cstring>fdbDescRuta</cstring>
+</property>
+<property name="minimumSize" >
+<size>
+<width>200</width>
+<height>0</height>
+</size>
+</property>
+<property name="font" >
+<font>
+<bold>0</bold>
+<italic>0</italic>
+</font>
+</property>
+<property name="fieldName" >
+<string>descripcion</string>
+</property>
+<property name="tableName" >
+<string>rutas</string>
+</property>
+<property name="foreignField" >
+<string>codruta</string>
+</property>
+<property name="fieldRelation" >
+<string>codruta</string>
+</property>
+<property name="showAlias" >
+<bool>false</bool>
+</property>
+</widget>
+</hbox>
+</widget>
+</vbox>
+</widget>
+<spacer>
+<property name="name" >
+<cstring>spacerFiltros</cstring>
+</property>
+<property name="orientation" >
+<enum>Horizontal</enum>
+</property>
+<property name="sizeType" >
+<enum>Preferred</enum>
+</property>
+<property name="sizeHint" >
+<size>
+<width>16</width>
+<height>20</height>
+</size>
+</property>
+</spacer>
+<widget class="QGroupBox" >
+<property name="name" >
+<cstring>gbxFechaFabricacion</cstring>
+</property>
+<property name="title" >
+<string>Fecha de fabricación</string>
+</property>
+<vbox>
+<property name="name" >
+<cstring>unnamed</cstring>
+</property>
+<widget class="QLayoutWidget" >
+<property name="name" >
+<cstring>layoutFechas</cstring>
+</property>
+<hbox>
+<property name="name" >
+<cstring>unnamed</cstring>
+</property>
+<widget class="FLFieldDB" >
+<property name="name" >
+<cstring>fdbFechaDesde</cstring>
+</property>
+<property name="sizePolicy" >
+<sizepolicy>
+<hsizetype>1</hsizetype>
+<vsizetype>0</vsizetype>
+<horstretch>0</horstretch>
+<verstretch>0</verstretch>
+</sizepolicy>
+</property>
+<property name="minimumSize" >
+<size>
+<width>180</width>
+<height>25</height>
+</size>
+</property>
+<property name="font" >
+<font>
+<bold>0</bold>
+<italic>0</italic>
+</font>
+</property>
+<property name="fieldName" >
+<string>fechadesde</string>
+</property>
+</widget>
+<widget class="FLFieldDB" >
+<property name="name" >
+<cstring>fdbFechaHasta</cstring>
+</property>
+<property name="sizePolicy" >
+<sizepolicy>
+<hsizetype>1</hsizetype>
+<vsizetype>0</vsizetype>
+<horstretch>0</horstretch>
+<verstretch>0</verstretch>
+</sizepolicy>
+</property>
+<property name="minimumSize" >
+<size>
+<width>180</width>
+<height>25</height>
+</size>
+</property>
+<property name="font" >
+<font>
+<bold>0</bold>
+<italic>0</italic>
+</font>
+</property>
+<property name="fieldName" >
+<string>fechahasta</string>
+</property>
+</widget>
+</hbox>
+</widget>
+</vbox>
+</widget>
+</hbox>
+</widget>
+<widget class="QLayoutWidget" >
+<property name="name" >
+<cstring>layoutChecks</cstring>
+</property>
+<hbox>
+<property name="name" >
+<cstring>unnamed</cstring>
+</property>
+<widget class="QCheckBox" >
+<property name="name" >
+<cstring>chkCompletos</cstring>
+</property>
+<property name="font" >
+<font/>
+</property>
+<property name="text" >
+<string>Sólo lotes de pedidos completos</string>
+</property>
+</widget>
+<widget class="QCheckBox" >
+<property name="name" >
+<cstring>chkConTela</cstring>
+</property>
+<property name="font" >
+<font/>
+</property>
+<property name="text" >
+<string>Sólo lotes con tela</string>
+</property>
+</widget>
+</hbox>
+</widget>
+</vbox>
+</xupdate:insert-after>
+<xupdate:insert-after select="/UI[UI,1]/widget[QWidget,pr_ordenesproduccion]/vbox[vbox,1]/property[property,1]" >
+<property name="margin" >
+<number>3</number>
+</property>
+</xupdate:insert-after>
+<xupdate:insert-after select="/UI[UI,1]/includehints[includehints,1]/includehint[FLTableDB.h]" >
+<includehint>FLFieldDB.h</includehint>
+</xupdate:insert-after>
+<xupdate:insert-after select="/UI[UI,1]/includehints[includehints,1]/includehint[FLFieldDB.h]" >
+<includehint>FLFieldDB.h</includehint>
+</xupdate:insert-after>
+</xupdate:modifications>

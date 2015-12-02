@@ -1,0 +1,36 @@
+<xupdate:modifications>
+<xupdate:update select="/UI[UI,1]/widget[QWidget,masterfacturascli]/vbox[vbox,1]/widget[QFrame,barraBotones]/hbox[hbox,1]/spacer[Spacer2]/property[property,4]/size[size,1]/height[height,1]/text()[1]" >20</xupdate:update>
+<xupdate:update select="/UI[UI,1]/widget[QWidget,masterfacturascli]/vbox[vbox,1]/widget[QFrame,barraBotones]/hbox[hbox,1]/spacer[Spacer2]/property[property,4]/size[size,1]/width[width,1]/text()[1]" >170</xupdate:update>
+<xupdate:insert-after select="/UI[UI,1]/widget[QWidget,masterfacturascli]/vbox[vbox,1]/widget[QFrame,barraBotones]/hbox[hbox,1]/widget[QLayoutWidget,layout12]" >
+<widget class="QLabel" >
+<property name="name" >
+<cstring>leFB</cstring>
+</property>
+<property name="minimumSize" >
+<size>
+<width>75</width>
+<height>0</height>
+</size>
+</property>
+<property name="paletteForegroundColor" >
+<color>
+<red>188</red>
+<green>64</green>
+<blue>1</blue>
+</color>
+</property>
+<property name="font" >
+<font>
+<pointsize>7</pointsize>
+<bold>1</bold>
+</font>
+</property>
+<property name="text" >
+<string/>
+</property>
+<property name="alignment" >
+<set>AlignCenter</set>
+</property>
+</widget>
+</xupdate:insert-after>
+</xupdate:modifications>

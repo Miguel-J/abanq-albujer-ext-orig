@@ -1,0 +1,13 @@
+<xupdate:modifications>
+<xupdate:insert-after select="/ACTIONS[ACTIONS,1]/action[busfactprov]" >
+<action>
+<name>venfacturascli</name>
+<description>QT_TRANSLATE_NOOP(&quot;MetaData&quot;,&quot;Vencimientos personalizados para facturas de cliente&quot;)</description>
+<alias>QT_TRANSLATE_NOOP(&quot;MetaData&quot;,&quot;Vencimientos en facturas de cliente&quot;)</alias>
+<table>venfacturascli</table>
+<form>master</form>
+<formrecord>venfacturascli</formrecord>
+<scriptformrecord>venfacturascli</scriptformrecord>
+</action>
+</xupdate:insert-after>
+</xupdate:modifications>

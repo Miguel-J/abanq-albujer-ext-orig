@@ -1,0 +1,64 @@
+<!DOCTYPE QRY>
+<QRY>
+	<name>pedidosprov</name>
+
+	<tables>empresa,pedidosprov</tables>
+
+	<group>
+		<level>0</level>
+		<field>pedidosprov.idpedido</field>
+	</group>
+
+	<group>
+		<level>1</level>
+		<field>lineaspedidosprov.referencia</field>
+	</group>
+	
+	<group>
+		<level>2</level>
+		<field>lineaspedidosprov.pvpunitario</field>
+	</group>
+
+	<group>
+		<level>3</level>
+		<field>lineaspedidosprov.dtopor</field>
+	</group>
+
+	
+
+	<select>
+		pedidosprov.idpedido, pedidosprov.codigo, pedidosprov.codserie,
+		pedidosprov.fecha, pedidosprov.total,
+		pedidosprov.totaliva, pedidosprov.totalrecargo,
+		pedidosprov.irpf, pedidosprov.totalirpf,
+		pedidosprov.neto, pedidosprov.coddivisa,
+		pedidosprov.codejercicio, pedidosprov.codpago,
+		pedidosprov.codalmacen, pedidosprov.codproveedor,
+		pedidosprov.nombre, pedidosprov.cifnif,
+		pedidosprov.tasaconv,
+		dirproveedores.direccion,dirproveedores.codpostal, dirproveedores.provincia,dirproveedores.ciudad,
+		dirproveedores.apartado, dirproveedores.codpais, paises.nombre,
+		lineaspedidosprov.referencia, lineaspedidosprov.idpedido,
+		lineaspedidosprov.descripcion, sum(lineaspedidosprov.cantidad),
+		lineaspedidosprov.pvpunitario, lineaspedidosprov.dtopor, sum(lineaspedidosprov.pvptotal),
+		lineaspedidosprov.codimpuesto, lineaspedidosprov.iva,
+		lineaspedidosprov.color, articulosprov.refproveedor,
+		empresa.nombre, empresa.cifnif,
+		empresa.direccion, empresa.logo,
+		empresa.codpostal, empresa.ciudad,
+		empresa.provincia, empresa.apartado,
+		empresa.codpais
+	</select>
+
+	<from>
+		empresa,pedidosprov INNER JOIN lineaspedidosprov ON pedidosprov.idpedido = lineaspedidosprov.idpedido  LEFT OUTER JOIN dirproveedores ON pedidosprov.codproveedor = dirproveedores.codproveedor LEFT OUTER JOIN articulosprov ON articulosprov.referencia = lineaspedidosprov.referencia
+		LEFT OUTER JOIN paises ON dirproveedores.codpais = paises.codpais
+	</from>
+
+	<where>
+	</where>
+	
+	<order>
+		lineaspedidosprov.referencia,lineaspedidosprov.pvpunitario,lineaspedidosprov.dtopor
+	</order>
+</QRY>

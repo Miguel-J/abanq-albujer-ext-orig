@@ -1,0 +1,90 @@
+<xupdate:modifications>
+<xupdate:update select="/UI[UI,1]/widget[QWidget,Comandas]/property[geometry]/rect[rect,1]/height[height,1]/text()[1]" >711</xupdate:update>
+<xupdate:update select="/UI[UI,1]/widget[QWidget,Comandas]/property[geometry]/rect[rect,1]/width[width,1]/text()[1]" >858</xupdate:update>
+<xupdate:update select="/UI[UI,1]/widget[QWidget,Comandas]/vbox[vbox,1]/widget[QGroupBox,gbxBotonesLineas_2]/hbox[hbox,1]/widget[QPushButton,tbnPrintQuick]/property[accel]/string[string,1]/text()[1]" >Ctrl+Q, Ctrl+C</xupdate:update>
+<xupdate:insert-after select="/UI[UI,1]/widget[QWidget,Comandas]/vbox[vbox,1]/widget[QGroupBox,gbxBotonesLineas_2]/hbox[hbox,1]/widget[QPushButton,pbnDevolucion]" >
+<spacer>
+<property name="name" >
+<cstring>spacer26_2_2</cstring>
+</property>
+<property name="orientation" >
+<enum>Horizontal</enum>
+</property>
+<property name="sizeType" >
+<enum>Expanding</enum>
+</property>
+<property name="sizeHint" >
+<size>
+<width>30</width>
+<height>21</height>
+</size>
+</property>
+</spacer>
+</xupdate:insert-after>
+<xupdate:append-first select="/UI[UI,1]/images[images,1]" >
+<image name="tpv_tarj_regimage55700" >
+<data format="XPM.GZ" length="5617" >789c8597d96e1cbb1186effd1482ebce08787a5f10e442cb68b1b58e7605b9a862776b19c99634238da420ef9eeafad92d2708724cd89e6f4856156b23e78f6f2b17877b2bdffef8325ff0e2d6aff81b7e5ef9d6bc3c3cbcfffd1f7ffbe797af69b292442b4991ae245ffff2e5abfc5af12b1475511b75c6cf3d27927022c69d7193f8a431763da75ddaa4b6de5df49cc791fee9991be324d2d133ed1ba7caa9ed7f30cef238cf8cd78c8b3ccd0bdbdf1a57511e19d39e713dc8a79fc63cc8a37b63afd3b1c9f3e0bccebdd9f7a3e72289240297c6699445a6df9d1b1791c73ccf8dcb419f6c1ad74551d4367f65ec8baab0f5b46bdc0ceb9dd96fdbc1b5711627b1e9233b7f594431fcc30be3522300ff6f83cbb42c6dffa9312779027b2fc1a9a4161fb70bce75d8fe55635109364f87c63e4ac3798bc0c1bfae03276962f6b8efc68dcee7661fe6bbc15eb27ca9a2a8882a63324e922a013f06f609fc6df1aab2317e47c6f9901f6e277019d979b906577165fae9ceb8f797c5d755c6a5fac3ec976be3aaca2ad3cf625c0ffe741fe0b88d8d690aced20cf93707ab468b2f597e57acfa10bf33f0a08f2c9f2a9f24f017fbc025ceef4ec0a906d0e433b82a2bf823376ec6fa98054e91cfbc05568bacde1cfcdd26598279cb8faaeb87b19dbffeac3fabdfbaf73ff2631b9ce7a8375a03735ee13c07c6a9c613febe05eb79603f788c1fef06f611fac1ab713ed6cb06b88e6ae48f9db72ec67ab802977989f917e34aeb09fa26e03aad114fabffbad6fcc2bcc5a3e63aab91ef56bfb5d71da85ff377dd0cf1761958e367fac4f2a7eef47cc89fab91213f0d5c61de9b3c6d3705e67d1b78587f37b2d92b7b81077b9723233fdec14557b466afd523c7da61116feccf74c03f4fc6f9d07fc9fcc9859438af587db1360846fd58fd71957705e275635c6b3aa2df8359e5c37f567f2cda3e2c5fd8fa35fb222e506f0db86c4bd4cf05583c237f2dbfb81561e4d77c64b3df1df72c711555268f0ab08f18f5f6669cf918fac5ea570a8904f969f193d26782feb16e5cf91ccc9171aded10f25ec1ba1ee7857e964cecbc7406f625e69df54b11e9c4e2411558e7d11fcc9fe2d522f4fb77f0304f5781abb0defaa7b452057997605f87f36c0416b1781d59ff57ed3a6c7e13acebd14f9781c37ab2fb4b2fab46102fbb1f7cac2742bcec7ef189761ccb173e03eb89e08f69600f76fbe07e98fc28b0c779d9fa9db6b3b644fe25609d47fe5a7fd2ebb0853e5a807de711af177013077f583ff67ac1c05e4a03c7582fd68fbc36548ff36f819b0ceb19f6d76a01e239013729ecf7761f79ae04fd56a08f87f56e2d3083d9f2cb8b765cacbf1c19e73907ab7ccb676ff5d0871bf392040eeba50c1cfc21bb23c35f31d8971efaec3ef48d7a0cfaacdff856bf015bfdab7734056dbfd9a3def00dee735bdfe4fd30fb5ce002cc96cf8dc6a3c17d2fe07e987eeb678dc6a341ff38089c05f93e7019f6d3c8586ff5a6878f1bbcef9e4646bfbb095c04be0e5c378887d5bf921ed8ec877daceb115faba7463423701f9c809bb441bf5804cec034cc77d04735b88d827ebbcf545b0e7d6cfdac69559fc5474e029760b71eb80513ced3a9bf709f45e0561fd0367f1c380ebc13386d900f264fada931ef2cffdb442dc6790e076e519fd67fdab4cd5bc4d3fcdf66437cd8f4b5b96a40bf7d020febdd56606d49b6defa4baba76dd18f4ec16ddd429ef9bb653d0fded3d82f6a01de131b81833cc17eaff3f0e76d6055607c1fb80dfbed7d62ee447efbc05d8b7abc1b19fdf61aac3f50c03232ee4bcbbfd6fed87e17b803cbcbc8782fd97dd9cf86f5c9c8782f4c030feb119f4ef5e17d6efd50a9ed70ff3c040eebdd0cdc0f9bff64c4731238c6bc3b18d9fced7de004ec2c1ffad561fd7264cc27810779f391311f8f8cfe3e7012ec5b8e8cfbc1fa5b97b40ce677f0a08f574786bc2ef0a0ef6864cc37235b7f707781833e6a47c6fb762770d121dfad3f74a9eac3fcc7c8c8d7327019d8f2b3cb3462b88fdf4786bc75f0286f6d64f4bbfbc029989e47c6fb78357011e45b3d76b96624de971781dbc045e041ffd1c8e8a70bb0fa07eb119f42e5a13fdf076e03e781833cb73932e6f7c11d77a827e44f39ece7c9c8e8df97813bb0c0dfa5eeb7f7944423e3bd588f8cfa9f0516cc3bab37fd711275780f6781c3faa38523c73ac479d7b8d675eedae8cfc78dbb75b7b883dc9d9be9b873f7eec1fd74bfdca37b72cf6eaedffcd958b817dc83baffd52df59b37f7ae323edcaa5b73eb6e43a5fcff31d1bf9ba38c99d296db763beebbfbe176dd9edb575bfa7507b6b25f3f093b0ff5bb83f079e68e461953fdf6d89db85377e6cedd85bb74572eb2357317071d4b97d837b17e3ad4cf09f8b7b3a42e73b92b5ce92a57932322ee359190a7865a37a15647e762ba7607d4b8233d7bdcaff8944137744b7734a37b7aa09ff48b1e49cf42cf34a705bdd02b2de98ddee98356698dd6698326b4495bb44d3b9f67a1eff48376698ff6e9800ee988a674dc47864ee894cee89c2ee892ae28a298124a29a39c0a2aa9a27a90a1e9d1ff42d1272d37ac8d88aff9866fcd93331b53be0b9ffa6f263ce37b7e50bf3cbb8dcfb3f04ffec58ffcc4cf3ce705bff02b2f75ed1bbfb939bfbb23fee0555ed3b1ce1bbce13679a26393b778fb379fce7987bff30fdee53ddee70395307789ca38e423dd71c8533ee6133ee533dd7bce17fadd255f71c4f178968453f549d7ff9ee3824b8be1c42d55e744d7f6a3e25ad3bbff8da28f7469f852afd64eaee5e6d31f6ac92b3f7026b77227338bfca4b7d8f4e9907b79909ff6e9973cdaff4ff22c7359fc26632a2f26e35596f20619fc26ef831df221abb226ebb22113d9942dfb6e5b76e47b90b1941f66c9a1ecaa1d7bb21f72f9f0f32c72208772245339b6cf27fadd444ee54cce073be402f92c976ac795444355691c26388fc4fd27fc1b864ad699e4d3a75a31539591a88c54b2b13297bc2a39e460e8af361b1ab155cd0f8dff6f3537ede32ba59ea592fab7ea9e5996ace98ec97f0d95df0fbcb3e1539531f124af9e4719a8d7d9b0e73f7ac7526db133e1adab3a7a0953fd3dd0a88cf6d31fa1faffc7d03d9b88fbd77ffdf5cbbf012040540b</data>
+</image>
+</xupdate:append-first>
+<xupdate:insert-after select="/UI[UI,1]/widget[QWidget,Comandas]/vbox[vbox,1]/widget[QGroupBox,gbxBotonesLineas_2]/hbox[hbox,1]/spacer[spacer26_2_2]" >
+<widget class="QPushButton" >
+<property name="name" >
+<cstring>tbnTarjetaRegalo</cstring>
+</property>
+<property name="sizePolicy" >
+<sizepolicy>
+<hsizetype>1</hsizetype>
+<vsizetype>1</vsizetype>
+<horstretch>0</horstretch>
+<verstretch>0</verstretch>
+</sizepolicy>
+</property>
+<property name="minimumSize" >
+<size>
+<width>32</width>
+<height>32</height>
+</size>
+</property>
+<property name="maximumSize" >
+<size>
+<width>32</width>
+<height>32</height>
+</size>
+</property>
+<property name="focusPolicy" >
+<enum>NoFocus</enum>
+</property>
+<property name="text" >
+<string/>
+</property>
+<property name="accel" >
+<string>Ctrl+T</string>
+</property>
+<property name="iconSet" >
+<iconset>tpv_tarj_regimage55700</iconset>
+</property>
+<property name="toolTip" stdset="0" >
+<string>Pagar con tarjeta regalo</string>
+</property>
+<property name="whatsThis" stdset="0" >
+<string>Paga con una tarjeta regalo, introduciendo una línea negativa por el valor de la tarjeta. Si el pendiente fuera negativo se crearía un vale.</string>
+</property>
+</widget>
+</xupdate:insert-after>
+<xupdate:update select="/UI[UI,1]/widget[QWidget,Comandas]/vbox[vbox,1]/widget[QTabWidget,tbwComanda]/widget[QWidget,masdatos]/vbox[vbox,1]/widget[QGroupBox,gbxMas]/vbox[vbox,1]/widget[QLayoutWidget,layout15]/hbox[hbox,1]/widget[FLFieldDB,fdbEstado]/property[minimumSize]/size[size,1]/width[width,1]/text()[1]" >27</xupdate:update>
+<xupdate:update select="/UI[UI,1]/widget[QWidget,Comandas]/vbox[vbox,1]/widget[QTabWidget,tbwComanda]/widget[QWidget,masdatos]/vbox[vbox,1]/widget[QGroupBox,gbxMas]/vbox[vbox,1]/widget[QLayoutWidget,layout16]/hbox[hbox,1]/widget[FLFieldDB,fdbCodAlmacen]/property[minimumSize]/size[size,1]/width[width,1]/text()[1]" >27</xupdate:update>
+<xupdate:update select="/UI[UI,1]/widget[QWidget,Comandas]/vbox[vbox,1]/widget[QTabWidget,tbwComanda]/widget[QWidget,masdatos]/vbox[vbox,1]/widget[QGroupBox,gbxMas]/vbox[vbox,1]/widget[QLayoutWidget,layout16]/hbox[hbox,1]/widget[FLFieldDB,fdbCodTpvPuntoventa]/property[minimumSize]/size[size,1]/width[width,1]/text()[1]" >27</xupdate:update>
+<xupdate:update select="/UI[UI,1]/widget[QWidget,Comandas]/vbox[vbox,1]/widget[QTabWidget,tbwComanda]/widget[QWidget,masdatos]/vbox[vbox,1]/widget[QGroupBox,gbxMas]/vbox[vbox,1]/widget[QLayoutWidget,layout17]/hbox[hbox,1]/widget[FLFieldDB,fdbCodPago]/property[minimumSize]/size[size,1]/width[width,1]/text()[1]" >27</xupdate:update>
+<xupdate:update select="/UI[UI,1]/widget[QWidget,Comandas]/vbox[vbox,1]/widget[QTabWidget,tbwComanda]/widget[QWidget,masdatos]/vbox[vbox,1]/widget[QGroupBox,gbxMas]/vbox[vbox,1]/widget[QLayoutWidget,layout17]/hbox[hbox,1]/widget[FLFieldDB,fdbTarifa]/property[minimumSize]/size[size,1]/width[width,1]/text()[1]" >27</xupdate:update>
+<xupdate:update select="/UI[UI,1]/widget[QWidget,Comandas]/vbox[vbox,1]/widget[QTabWidget,tbwComanda]/widget[QWidget,masdatos]/vbox[vbox,1]/widget[QGroupBox,gbxMas]/vbox[vbox,1]/widget[QLayoutWidget,layout17]/hbox[hbox,1]/widget[FLFieldDB,fdbTipoPago]/property[minimumSize]/size[size,1]/width[width,1]/text()[1]" >27</xupdate:update>
+<xupdate:update select="/UI[UI,1]/widget[QWidget,Comandas]/vbox[vbox,1]/widget[QTabWidget,tbwComanda]/widget[QWidget,recibos]/vbox[vbox,1]/widget[QGroupBox,gbxFactura]/vbox[vbox,1]/widget[QLayoutWidget,layoutCliente]/hbox[hbox,1]/widget[FLFieldDB,fdbCifNif]/property[minimumSize]/size[size,1]/width[width,1]/text()[1]" >27</xupdate:update>
+<xupdate:update select="/UI[UI,1]/widget[QWidget,Comandas]/vbox[vbox,1]/widget[QTabWidget,tbwComanda]/widget[QWidget,recibos]/vbox[vbox,1]/widget[QGroupBox,gbxFactura]/vbox[vbox,1]/widget[QLayoutWidget,layoutCliente]/hbox[hbox,1]/widget[FLFieldDB,fdbCodCliente]/property[minimumSize]/size[size,1]/width[width,1]/text()[1]" >27</xupdate:update>
+<xupdate:update select="/UI[UI,1]/widget[QWidget,Comandas]/vbox[vbox,1]/widget[QTabWidget,tbwComanda]/widget[QWidget,recibos]/vbox[vbox,1]/widget[QGroupBox,gbxFactura]/vbox[vbox,1]/widget[QLayoutWidget,layoutCliente]/hbox[hbox,1]/widget[FLFieldDB,fdbNombreCliente]/property[minimumSize]/size[size,1]/width[width,1]/text()[1]" >27</xupdate:update>
+<xupdate:update select="/UI[UI,1]/widget[QWidget,Comandas]/vbox[vbox,1]/widget[QTabWidget,tbwComanda]/widget[QWidget,recibos]/vbox[vbox,1]/widget[QGroupBox,gbxFactura]/vbox[vbox,1]/widget[QLayoutWidget,layoutDir1]/hbox[hbox,1]/widget[FLFieldDB,fdbCodDir]/property[minimumSize]/size[size,1]/width[width,1]/text()[1]" >27</xupdate:update>
+<xupdate:update select="/UI[UI,1]/widget[QWidget,Comandas]/vbox[vbox,1]/widget[QTabWidget,tbwComanda]/widget[QWidget,recibos]/vbox[vbox,1]/widget[QGroupBox,gbxFactura]/vbox[vbox,1]/widget[QLayoutWidget,layoutDir1]/hbox[hbox,1]/widget[FLFieldDB,fdbDireccion]/property[minimumSize]/size[size,1]/width[width,1]/text()[1]" >27</xupdate:update>
+<xupdate:update select="/UI[UI,1]/widget[QWidget,Comandas]/vbox[vbox,1]/widget[QTabWidget,tbwComanda]/widget[QWidget,recibos]/vbox[vbox,1]/widget[QGroupBox,gbxFactura]/vbox[vbox,1]/widget[QLayoutWidget,layoutDir2]/hbox[hbox,1]/widget[FLFieldDB,fdbCiudad]/property[minimumSize]/size[size,1]/width[width,1]/text()[1]" >27</xupdate:update>
+<xupdate:update select="/UI[UI,1]/widget[QWidget,Comandas]/vbox[vbox,1]/widget[QTabWidget,tbwComanda]/widget[QWidget,recibos]/vbox[vbox,1]/widget[QGroupBox,gbxFactura]/vbox[vbox,1]/widget[QLayoutWidget,layoutDir2]/hbox[hbox,1]/widget[FLFieldDB,fdbProvincia]/property[minimumSize]/size[size,1]/width[width,1]/text()[1]" >27</xupdate:update>
+<xupdate:update select="/UI[UI,1]/widget[QWidget,Comandas]/vbox[vbox,1]/widget[QTabWidget,tbwComanda]/widget[QWidget,recibos]/vbox[vbox,1]/widget[QGroupBox,gbxFactura]/vbox[vbox,1]/widget[QLayoutWidget,layoutDir3]/hbox[hbox,1]/widget[FLFieldDB,fdbBandera]/property[minimumSize]/size[size,1]/width[width,1]/text()[1]" >27</xupdate:update>
+<xupdate:update select="/UI[UI,1]/widget[QWidget,Comandas]/vbox[vbox,1]/widget[QTabWidget,tbwComanda]/widget[QWidget,recibos]/vbox[vbox,1]/widget[QGroupBox,gbxFactura]/vbox[vbox,1]/widget[QLayoutWidget,layoutDir3]/hbox[hbox,1]/widget[FLFieldDB,fdbCodPais]/property[minimumSize]/size[size,1]/width[width,1]/text()[1]" >27</xupdate:update>
+<xupdate:update select="/UI[UI,1]/widget[QWidget,Comandas]/vbox[vbox,1]/widget[QTabWidget,tbwComanda]/widget[QWidget,recibos]/vbox[vbox,1]/widget[QGroupBox,gbxFactura]/vbox[vbox,1]/widget[QLayoutWidget,layoutDir3]/hbox[hbox,1]/widget[FLFieldDB,fdbCodPostal]/property[minimumSize]/size[size,1]/width[width,1]/text()[1]" >27</xupdate:update>
+</xupdate:modifications>

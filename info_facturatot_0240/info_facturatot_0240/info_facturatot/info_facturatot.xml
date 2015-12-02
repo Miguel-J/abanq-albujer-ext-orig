@@ -1,0 +1,15 @@
+<flpatch:modifications name="info_facturatot" >
+    <flpatch:patchXml path="facturacion/informes/" name="flfactinfo.xml" />
+    <flpatch:patchXml path="facturacion/informes/forms/" name="flfactinfo.ui" />
+    <flpatch:addFile path="facturacion/informes/forms/" name="i_mastertotalfacturas.ui" />
+    <flpatch:addFile path="facturacion/informes/queries/" name="i_totalfacturas.qry" />
+    <flpatch:addFile path="facturacion/informes/reports/" name="i_totalfacturas.kut" />
+    <flpatch:addFile path="facturacion/informes/scripts/" name="i_mastertotalfacturascli.qs" />
+    <flpatch:addFile path="facturacion/informes/scripts/" name="i_mastertotalfacturasprov.qs" />
+    <flpatch:addFile path="facturacion/informes/tables/" name="i_totalfacturas_buffer.mtd" />
+    <flpatch:addFile path="facturacion/informes/scripts/" name="i_totalfacturascli.qs" />
+    <flpatch:addFile path="facturacion/informes/forms/" name="i_totalfacturascli.ui" />
+    <flpatch:addFile path="facturacion/informes/tables/" name="i_totalfacturascli.mtd" />
+    <flpatch:addFile path="facturacion/informes/tables/" name="i_totalfacturasprov.mtd" />
+    <flpatch:addFile path="facturacion/informes/forms/" name="i_totalfacturasprov.ui" />
+</flpatch:modifications>

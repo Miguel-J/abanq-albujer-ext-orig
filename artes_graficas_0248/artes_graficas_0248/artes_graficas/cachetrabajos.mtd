@@ -1,0 +1,63 @@
+<!DOCTYPE TMD>
+<TMD>
+    <name>cachetrabajos</name>
+	<!--Caché de trabajos-->
+	<alias>QT_TRANSLATE_NOOP("MetaData","")</alias>
+    <field>
+        <name>id</name>
+		<!--Identificador interno de la tabla-->        <alias>QT_TRANSLATE_NOOP("MetaData","Identificador")</alias>
+        <null>false</null>
+        <pk>true</pk>
+        <type>string</type>
+        <length>255</length>
+    </field>
+	
+	<field>
+		<name>problema</name>
+		<!--XML con el problema-->
+		<alias>QT_TRANSLATE_NOOP("MetaData","Problema")</alias>
+		<null>false</null>
+		<pk>false</pk>
+		<type>stringlist</type>
+		<visiblegrid>false</visiblegrid>
+	</field>
+	
+	<field>
+		<name>solucion</name>
+		<!--XML con la solución-->
+		<alias>QT_TRANSLATE_NOOP("MetaData","Solución")</alias>
+		<null>false</null>
+		<pk>false</pk>
+		<type>stringlist</type>
+	</field>
+	
+    <field>
+		<name>tipotrabajo</name>
+		<!--Tipo de trabajo-->
+		<alias>QT_TRANSLATE_NOOP("MetaData","Tipo trabajo")</alias>
+		<null>true</null>
+		<pk>false</pk>
+		<type>string</type>
+		<length>25</length>
+	</field>
+	
+	<field>
+		<name>idparametros</name>
+		<!--Identificador del registro de parámetros del íptico asociado-->
+		<alias>QT_TRANSLATE_NOOP("MetaData","Parámetros")</alias>
+		<null>true</null>
+		<pk>false</pk>
+		<type>uint</type>
+		<visiblegrid>false</visiblegrid>
+	</field>
+	
+	<field>
+		<name>usos</name>
+		<!--Número de veces que se ha usado-->
+		<alias>QT_TRANSLATE_NOOP("MetaData","Usos")</alias>
+		<null>true</null>
+		<pk>false</pk>
+		<type>uint</type>
+		<default>0</default>
+	</field>
+</TMD>

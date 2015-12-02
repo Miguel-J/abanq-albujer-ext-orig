@@ -1,0 +1,14 @@
+<flpatch:modifications name="libros_conta" >
+    <flpatch:patchXml path="contabilidad/informes/" name="flcontinfo.xml" />
+    <flpatch:addFile path="contabilidad/informes/forms/" name="co_libroscontables.ui" />
+    <flpatch:patchXml path="contabilidad/informes/forms/" name="flcontinfo.ui" />
+    <flpatch:addFile path="contabilidad/informes/tables/" name="co_libroscontables.mtd" />
+    <flpatch:patchScript path="contabilidad/informes/scripts/" name="flcontinfo.qs" />
+    <flpatch:addFile path="contabilidad/informes/scripts/" name="co_libroscontables.qs" />
+    <flpatch:patchXml path="contabilidad/principal/tables/" name="co_codbalances08.mtd" />
+    <flpatch:addFile path="contabilidad/informes/scripts/" name="co_masterlibroscontables.qs" />
+    <flpatch:addFile path="contabilidad/informes/forms/" name="co_masterlibroscontables.ui" />
+    <flpatch:patchScript path="contabilidad/principal/scripts/" name="co_codbalances08.qs" />
+    <flpatch:addFile path="contabilidad/principal/tables/" name="co_xbrlbalances08.mtd" />
+    <flpatch:addFile path="contabilidad/informes/tables/" name="co_xbrlbalances08_datos.mtd" />
+</flpatch:modifications>

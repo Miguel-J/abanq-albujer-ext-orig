@@ -1,0 +1,69 @@
+<xupdate:modifications>
+<xupdate:update select="/TMD[TMD,1]/field[apellidospf]/length[length,1]/text()[1]" >30</xupdate:update>
+<xupdate:insert-after select="/TMD[TMD,1]/field[letraseti]" >
+<field>
+<name>porcentajes123</name>
+<alias>QT_TRANSLATE_NOOP(&quot;MetaData&quot;,&quot;Porcentajes casillas 1, 2 y 3&quot;)</alias>
+<null>true</null>
+<pk>false</pk>
+<type>string</type>
+<length>50</length>
+<default>16,18,21</default>
+</field>
+</xupdate:insert-after>
+<xupdate:insert-after select="/TMD[TMD,1]/field[porcentajes123]" >
+<field>
+<name>porcentajes456</name>
+<alias>QT_TRANSLATE_NOOP(&quot;MetaData&quot;,&quot;Porcentajes casillas 4, 5 y 6&quot;)</alias>
+<null>true</null>
+<pk>false</pk>
+<type>string</type>
+<length>50</length>
+<default>7,8,10</default>
+</field>
+</xupdate:insert-after>
+<xupdate:insert-after select="/TMD[TMD,1]/field[porcentajes456]" >
+<field>
+<name>porcentajes789</name>
+<alias>QT_TRANSLATE_NOOP(&quot;MetaData&quot;,&quot;Porcentajes casillas 7, 8 y 9&quot;)</alias>
+<null>true</null>
+<pk>false</pk>
+<type>string</type>
+<length>50</length>
+<default>4</default>
+</field>
+</xupdate:insert-after>
+<xupdate:insert-after select="/TMD[TMD,1]/field[porcentajes789]" >
+<field>
+<name>porcentajesrecargo123</name>
+<alias>QT_TRANSLATE_NOOP(&quot;MetaData&quot;,&quot;Porcentajes casillas 10, 11 y 12&quot;)</alias>
+<null>true</null>
+<pk>false</pk>
+<type>string</type>
+<length>50</length>
+<default>4,5.2</default>
+</field>
+</xupdate:insert-after>
+<xupdate:insert-after select="/TMD[TMD,1]/field[porcentajesrecargo123]" >
+<field>
+<name>porcentajesrecargo456</name>
+<alias>QT_TRANSLATE_NOOP(&quot;MetaData&quot;,&quot;Porcentajes casillas 13, 14 y 15&quot;)</alias>
+<null>true</null>
+<pk>false</pk>
+<type>string</type>
+<length>50</length>
+<default>1,1.4</default>
+</field>
+</xupdate:insert-after>
+<xupdate:insert-after select="/TMD[TMD,1]/field[porcentajesrecargo456]" >
+<field>
+<name>porcentajesrecargo789</name>
+<alias>QT_TRANSLATE_NOOP(&quot;MetaData&quot;,&quot;Porcentajes casillas 16, 17 y 18&quot;)</alias>
+<null>true</null>
+<pk>false</pk>
+<type>string</type>
+<length>50</length>
+<default>0.5</default>
+</field>
+</xupdate:insert-after>
+</xupdate:modifications>

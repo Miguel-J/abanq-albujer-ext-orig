@@ -1,0 +1,27 @@
+<xupdate:modifications>
+<xupdate:insert-after select="/TMD[TMD,1]/field[dtopor]" >
+<field>
+<name>codsubcuenta</name>
+<!-- Código de la subcuenta de contabilidad asociada a la línea de venta--><alias>QT_TRANSLATE_NOOP(&quot;MetaData&quot;,&quot;Subcuenta&quot;)</alias>
+<null>true</null>
+<pk>false</pk>
+<type>string</type>
+<length>15</length>
+</field>
+</xupdate:insert-after>
+<xupdate:insert-after select="/TMD[TMD,1]/field[codsubcuenta]" >
+<field>
+<name>idsubcuenta</name>
+<!-- Identificador interno de la subcuenta --><alias>QT_TRANSLATE_NOOP(&quot;MetaData&quot;,&quot;ID&quot;)</alias>
+<null>true</null>
+<pk>false</pk>
+<type>uint</type>
+<visiblegrid>false</visiblegrid>
+<relation>
+<table>co_subcuentas</table>
+<field>idsubcuenta</field>
+<card>M1</card>
+</relation>
+</field>
+</xupdate:insert-after>
+</xupdate:modifications>

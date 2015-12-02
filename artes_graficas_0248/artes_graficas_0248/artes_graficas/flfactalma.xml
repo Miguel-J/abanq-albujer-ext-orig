@@ -1,0 +1,77 @@
+<xupdate:modifications>
+<xupdate:insert-after select="/ACTIONS[ACTIONS,1]/action[articulos]" >
+<action>
+<name>papeles</name>
+<description>QT_TRANSLATE_NOOP(&quot;MetaData&quot;,&quot;Papeles&quot;)</description>
+<alias>QT_TRANSLATE_NOOP(&quot;MetaData&quot;,&quot;Papeles&quot;)</alias>
+<scriptformrecord>articulos</scriptformrecord>
+<scriptform>masterpapeles</scriptform>
+<table>articulos</table>
+<form>master</form>
+<formrecord>articulos</formrecord>
+</action>
+</xupdate:insert-after>
+<xupdate:insert-after select="/ACTIONS[ACTIONS,1]/action[consumoprod]" >
+<action>
+<name>formatospapel</name>
+<description>QT_TRANSLATE_NOOP(&quot;MetaData&quot;,&quot;Esta acción permite definir los distintos formatos de papel (normal, sobres, etc).&quot;)</description>
+<alias>QT_TRANSLATE_NOOP(&quot;MetaData&quot;,&quot;Formatos de papel&quot;)</alias>
+<table>formatospapel</table>
+<form>master</form>
+<formrecord>formatospapel</formrecord>
+</action>
+</xupdate:insert-after>
+<xupdate:insert-after select="/ACTIONS[ACTIONS,1]/action[secuenciaslotes]" >
+<action>
+<name>gramajes</name>
+<description>QT_TRANSLATE_NOOP(&quot;MetaData&quot;,&quot;Gramajes de papel y sus características.&quot;)</description>
+<alias>QT_TRANSLATE_NOOP(&quot;MetaData&quot;,&quot;Gramajes de papel&quot;)</alias>
+<table>gramajes</table>
+<form>master</form>
+<formrecord>gramajes</formrecord>
+<scriptformrecord>gramajes</scriptformrecord>
+</action>
+</xupdate:insert-after>
+<xupdate:insert-after select="/ACTIONS[ACTIONS,1]/action[gramajes]" >
+<action>
+<name>marcaspapel</name>
+<description>QT_TRANSLATE_NOOP(&quot;MetaData&quot;,&quot;Marcas de papel&quot;)</description>
+<alias>QT_TRANSLATE_NOOP(&quot;MetaData&quot;,&quot;Marcas de papel&quot;)</alias>
+<table>marcaspapel</table>
+<form>master</form>
+<formrecord>marcaspapel</formrecord>
+</action>
+</xupdate:insert-after>
+<xupdate:insert-after select="/ACTIONS[ACTIONS,1]/action[marcaspapel]" >
+<action>
+<name>calidadespapel</name>
+<description>QT_TRANSLATE_NOOP(&quot;MetaData&quot;,&quot;Calidades de papel&quot;)</description>
+<alias>QT_TRANSLATE_NOOP(&quot;MetaData&quot;,&quot;Calidades de papel&quot;)</alias>
+<table>calidadespapel</table>
+<form>mastercalidadespapel</form>
+<formrecord>calidadespapel</formrecord>
+<scriptform>mastercalidadespapel</scriptform>
+</action>
+</xupdate:insert-after>
+<xupdate:insert-after select="/ACTIONS[ACTIONS,1]/action[mostrarlistadoms]" >
+<action>
+<name>tiposplegado</name>
+<description>QT_TRANSLATE_NOOP(&quot;MetaData&quot;,&quot;Esta acción permite indicar los posibles tipos de plegado.&quot;)</description>
+<alias>QT_TRANSLATE_NOOP(&quot;MetaData&quot;,&quot;Tipos de plegado&quot;)</alias>
+<table>tiposplegado</table>
+<form>master</form>
+<formrecord>tiposplegado</formrecord>
+</action>
+</xupdate:insert-after>
+<xupdate:insert-after select="/ACTIONS[ACTIONS,1]/action[tiposplegado]" >
+<action>
+<name>gramajescalidad</name>
+<description>QT_TRANSLATE_NOOP(&quot;MetaData&quot;,&quot;Gramajes por calidad&quot;)</description>
+<alias>QT_TRANSLATE_NOOP(&quot;MetaData&quot;,&quot;Gramajes por calidad&quot;)</alias>
+<table>gramajescalidad</table>
+<form>master</form>
+<formrecord>gramajescalidad</formrecord>
+<scriptformrecord>gramajescalidad</scriptformrecord>
+</action>
+</xupdate:insert-after>
+</xupdate:modifications>

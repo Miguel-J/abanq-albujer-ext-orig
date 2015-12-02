@@ -1,0 +1,21 @@
+<xupdate:modifications>
+<xupdate:insert-after select="/TMD[TMD,1]/field[codagencia]/length[length,1]" >
+<relation>
+<table>zonastrans</table>
+<field>codagencia</field>
+<card>1M</card>
+</relation>
+</xupdate:insert-after>
+<xupdate:insert-after select="/TMD[TMD,1]/field[descripcion]" >
+<field>
+<name>tipoprecios</name>
+<alias>QT_TRANSLATE_NOOP(&quot;MetaData&quot;,&quot;Tipo precio en tramos&quot;)</alias>
+<null>false</null>
+<pk>false</pk>
+<type>string</type>
+<length>15</length>
+<optionslist>Total,Por Kilo</optionslist>
+<default>Total</default>
+</field>
+</xupdate:insert-after>
+</xupdate:modifications>

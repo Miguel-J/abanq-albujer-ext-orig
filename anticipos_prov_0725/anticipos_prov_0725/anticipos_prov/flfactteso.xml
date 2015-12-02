@@ -1,0 +1,24 @@
+<xupdate:modifications>
+<xupdate:insert-after select="/ACTIONS[ACTIONS,1]/action[pagosdevolrem]" >
+<action>
+<name>anticiposprov</name>
+<description>QT_TRANSLATE_NOOP(&quot;MetaData&quot;,&quot;Anticipos a proveedores&quot;)</description>
+<alias>QT_TRANSLATE_NOOP(&quot;MetaData&quot;,&quot;Anticipos a proveedores&quot;)</alias>
+<table>anticiposprov</table>
+<form>masteranticiposprov</form>
+<formrecord>anticiposprov</formrecord>
+<scriptform>masteranticiposprov</scriptform>
+<scriptformrecord>anticiposprov</scriptformrecord>
+</action>
+</xupdate:insert-after>
+<xupdate:insert-after select="/ACTIONS[ACTIONS,1]/action[recibosfacturacli]" >
+<action>
+<name>seleccionrecibosanticiposprov</name>
+<description>QT_TRANSLATE_NOOP(&quot;MetaData&quot;,&quot;Selección de los recibos de proveedor que se van a incluir en un anticipo (pago a cuenta)&quot;)</description>
+<alias>QT_TRANSLATE_NOOP(&quot;MetaData&quot;,&quot;Recibos de proveedores&quot;)</alias>
+<table>recibosprov</table>
+<form>seleccionrecibosanticiposprov</form>
+<scriptform>seleccionrecibosanticiposprov</scriptform>
+</action>
+</xupdate:insert-after>
+</xupdate:modifications>

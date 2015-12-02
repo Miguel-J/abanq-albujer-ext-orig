@@ -1,0 +1,53 @@
+<xupdate:modifications>
+<xupdate:update select="/UI[UI,1]/actions[actions,1]/action[co_codbalances08]/property[iconSet]/iconset[iconset,1]/text()[1]" >image1187</xupdate:update>
+<xupdate:update select="/UI[UI,1]/actions[actions,1]/action[co_correspondenciascc]/property[iconSet]/iconset[iconset,1]/text()[1]" >image41804</xupdate:update>
+<xupdate:update select="/UI[UI,1]/actions[actions,1]/action[co_gruposepigrafes]/property[iconSet]/iconset[iconset,1]/text()[1]" >image40663</xupdate:update>
+<xupdate:insert-after select="/UI[UI,1]/actions[actions,1]/action[wg_widget]" >
+<action>
+<property name="name" >
+<cstring>co_presupuestosanuales</cstring>
+</property>
+<property name="text" >
+<string>Presupuestos Anuales</string>
+</property>
+<property name="menuText" >
+<string>Presupuestos Anuales</string>
+</property>
+</action>
+</xupdate:insert-after>
+<xupdate:insert-after select="/UI[UI,1]/actions[actions,1]/action[co_contppal_general]" >
+<action>
+<property name="name" >
+<cstring>co_crearpresupuesto</cstring>
+</property>
+<property name="text" >
+<string>Creación de presupuestos</string>
+</property>
+<property name="menuText" >
+<string>Creación de presupuestos</string>
+</property>
+</action>
+</xupdate:insert-after>
+<xupdate:insert-after select="/UI[UI,1]/connections[connections,1]/connection[wg_widget,activated(),FLWidgetApplication,execDefaultScript()]" >
+<connection>
+<sender>co_presupuestosanuales</sender>
+<signal>activated()</signal>
+<receiver>FLWidgetApplication</receiver>
+<slot>openDefaultForm()</slot>
+</connection>
+</xupdate:insert-after>
+<xupdate:insert-after select="/UI[UI,1]/connections[connections,1]/connection[co_contppal_general,activated(),FLWidgetApplication,execDefaultScript()]" >
+<connection>
+<sender>co_crearpresupuesto</sender>
+<signal>activated()</signal>
+<receiver>FLWidgetApplication</receiver>
+<slot>openDefaultForm()</slot>
+</connection>
+</xupdate:insert-after>
+<xupdate:insert-after select="/UI[UI,1]/menubar[menubar,1]/item[Principal]" >
+<item name="Presupuestaria" text="Presupuestaria" >
+<action name="co_presupuestosanuales" />
+<action name="co_crearpresupuesto" />
+</item>
+</xupdate:insert-after>
+</xupdate:modifications>

@@ -1,0 +1,36 @@
+<xupdate:modifications>
+<xupdate:insert-after select="/TMD[TMD,1]/field[estado]" >
+<field>
+<name>situacion</name>
+<!-- Indica si el recibo está en remesa o en cartera --><alias>QT_TRANSLATE_NOOP(&quot;MetaData&quot;,&quot;Situación&quot;)</alias>
+<null>false</null>
+<pk>false</pk>
+<type>string</type>
+<length>20</length>
+<default>En cartera</default>
+<editable>false</editable>
+</field>
+</xupdate:insert-after>
+<xupdate:insert-after select="/TMD[TMD,1]/field[numero]" >
+<field>
+<name>gastos</name>
+<alias>QT_TRANSLATE_NOOP(&quot;MetaData&quot;,&quot;Gastos&quot;)</alias>
+<null>false</null>
+<pk>false</pk>
+<type>string</type>
+<optionslist>QT_TRANSLATE_NOOP(&quot;MetaData&quot;,&quot;Ordenante&quot;);QT_TRANSLATE_NOOP(&quot;MetaData&quot;,&quot;Beneficiario&quot;)</optionslist>
+<default>QT_TRANSLATE_NOOP(&quot;MetaData&quot;,&quot;Ordenante&quot;)</default>
+</field>
+</xupdate:insert-after>
+<xupdate:insert-after select="/TMD[TMD,1]/field[gastos]" >
+<field>
+<name>tipooperacion</name>
+<alias>QT_TRANSLATE_NOOP(&quot;MetaData&quot;,&quot;Tipo de operación&quot;)</alias>
+<null>false</null>
+<pk>false</pk>
+<type>string</type>
+<optionslist>QT_TRANSLATE_NOOP(&quot;MetaData&quot;,&quot;Nóminas y Transferencias&quot;);QT_TRANSLATE_NOOP(&quot;MetaData&quot;,&quot;Cheques bancarios&quot;);QT_TRANSLATE_NOOP(&quot;MetaData&quot;,&quot;Pagarés&quot;);QT_TRANSLATE_NOOP(&quot;MetaData&quot;,&quot;Pagos certificados&quot;)</optionslist>
+<default>QT_TRANSLATE_NOOP(&quot;MetaData&quot;,&quot;Nóminas y Transferencias&quot;)</default>
+</field>
+</xupdate:insert-after>
+</xupdate:modifications>

@@ -1,0 +1,163 @@
+<xupdate:modifications>
+<xupdate:insert-after select="/UI[UI,1]/widget[QWidget,formCuentasBanco]vbox[vbox,1]/widget[QTabWidget,tbwCuentasBancarias]/widget[QWidget,datos]/vbox[vbox,1]/widget[QGroupBox,gbxContabilidad]" >
+<widget class="QGroupBox" >
+<property name="name" >
+<cstring>gbxPagares</cstring>
+</property>
+<property name="font" >
+<font>
+<bold>1</bold>
+<italic>1</italic>
+</font>
+</property>
+<property name="title" >
+<string>&amp;Pagarés</string>
+</property>
+<vbox>
+<property name="name" >
+<cstring>unnamed</cstring>
+</property>
+<widget class="QLayoutWidget" >
+<property name="name" >
+<cstring>layoutSCP</cstring>
+</property>
+<hbox>
+<property name="name" >
+<cstring>unnamed</cstring>
+</property>
+<widget class="FLFieldDB" >
+<property name="name" >
+<cstring>fdbCodSubcuentaP</cstring>
+</property>
+<property name="sizePolicy" >
+<sizepolicy>
+<hsizetype>1</hsizetype>
+<vsizetype>0</vsizetype>
+<horstretch>0</horstretch>
+<verstretch>0</verstretch>
+</sizepolicy>
+</property>
+<property name="minimumSize" >
+<size>
+<width>138</width>
+<height>29</height>
+</size>
+</property>
+<property name="font" >
+<font>
+<bold>0</bold>
+<italic>0</italic>
+</font>
+</property>
+<property name="fieldName" >
+<string>codsubcuentap</string>
+</property>
+<property name="foreignField" >
+<string>codsubcuenta</string>
+</property>
+<property name="fieldRelation" >
+<string>idsubcuentap</string>
+</property>
+</widget>
+<widget class="FLFieldDB" >
+<property name="name" >
+<cstring>fdbIdSubcuentaP</cstring>
+</property>
+<property name="sizePolicy" >
+<sizepolicy>
+<hsizetype>1</hsizetype>
+<vsizetype>0</vsizetype>
+<horstretch>0</horstretch>
+<verstretch>0</verstretch>
+</sizepolicy>
+</property>
+<property name="minimumSize" >
+<size>
+<width>22</width>
+<height>22</height>
+</size>
+</property>
+<property name="maximumSize" >
+<size>
+<width>79</width>
+<height>32767</height>
+</size>
+</property>
+<property name="font" >
+<font>
+<bold>0</bold>
+<italic>0</italic>
+</font>
+</property>
+<property name="focusPolicy" >
+<enum>StrongFocus</enum>
+</property>
+<property name="fieldName" >
+<string>idsubcuentap</string>
+</property>
+<property name="showAlias" >
+<bool>false</bool>
+</property>
+</widget>
+<widget class="FLFieldDB" >
+<property name="name" >
+<cstring>fdbDesSubcuentaP</cstring>
+</property>
+<property name="sizePolicy" >
+<sizepolicy>
+<hsizetype>1</hsizetype>
+<vsizetype>0</vsizetype>
+<horstretch>250</horstretch>
+<verstretch>25</verstretch>
+</sizepolicy>
+</property>
+<property name="minimumSize" >
+<size>
+<width>30</width>
+<height>31</height>
+</size>
+</property>
+<property name="font" >
+<font>
+<bold>0</bold>
+<italic>0</italic>
+</font>
+</property>
+<property name="fieldName" >
+<string>descripcion</string>
+</property>
+<property name="tableName" >
+<string>co_subcuentas</string>
+</property>
+<property name="foreignField" >
+<string>idsubcuentap</string>
+</property>
+<property name="fieldRelation" >
+<string>idsubcuenta</string>
+</property>
+<property name="showAlias" >
+<bool>false</bool>
+</property>
+</widget>
+</hbox>
+</widget>
+</vbox>
+</widget>
+</xupdate:insert-after>
+<xupdate:insert-after select="/UI[UI,1]/connections[connections,1]/connection[fdbCodSubcuenta,textChanged(const QString&amp;),fdbIdSubcuenta,setMapValue(const QString&amp;)]" >
+<connection>
+<sender>fdbCodSubcuentaP</sender>
+<signal>keyF2Pressed()</signal>
+<receiver>fdbIdSubcuentaP</receiver>
+<slot>searchValue()</slot>
+</connection>
+</xupdate:insert-after>
+<xupdate:insert-after select="/UI[UI,1]/connections[connections,1]/connection[fdbCodSubcuentaP,keyF2Pressed(),fdbIdSubcuentaP,searchValue()]" >
+<connection>
+<sender>fdbCodSubcuentaP</sender>
+<signal>textChanged(const QString&amp;)</signal>
+<receiver>fdbIdSubcuentaP</receiver>
+<slot>setMapValue(const QString&amp;)</slot>
+</connection>
+</xupdate:insert-after>
+</xupdate:modifications>

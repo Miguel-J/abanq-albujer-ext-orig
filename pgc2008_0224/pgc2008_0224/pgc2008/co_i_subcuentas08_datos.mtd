@@ -1,0 +1,83 @@
+<!DOCTYPE TMD>
+<TMD>
+	<name>co_i_subcuentas08_datos</name>
+	
+	<alias>QT_TRANSLATE_NOOP("MetaData","Buffer de subcuentas balance general")</alias>
+
+	<field>
+		<name>id</name>
+		<alias>QT_TRANSLATE_NOOP("MetaData","ID")</alias>
+		<null>false</null>
+		<pk>true</pk>
+		<type>serial</type>
+		<visiblegrid>false</visiblegrid>
+	</field>
+
+	<field>
+		<name>idbalance</name>
+		<alias>QT_TRANSLATE_NOOP("MetaData","ID balance")</alias>
+		<null>false</null>
+		<pk>false</pk>
+		<type>int</type>
+		<visiblegrid>false</visiblegrid>
+		<ck>true</ck>
+		<relation>
+			<table>co_i_cuentasanuales</table>
+			<field>id</field>
+			<card>M1</card>
+			<delC>true</delC>
+		</relation>
+	</field>
+	
+	<field>
+		<name>codbalance</name>
+		<alias>QT_TRANSLATE_NOOP("MetaData","Código de balance")</alias>
+		<null>true</null>
+		<pk>false</pk>
+		<ck>true</ck>
+		<type>string</type>
+		<length>20</length>
+	</field>
+	
+	<field>
+		<name>codsubcuenta</name>
+		<alias>QT_TRANSLATE_NOOP("MetaData","Subcuenta")</alias>
+		<null>false</null>
+		<pk>false</pk>
+		<ck>true</ck>
+		<type>string</type>
+		<length>20</length>
+	</field>
+
+	<field>
+		<name>descripcion</name>
+		<alias>QT_TRANSLATE_NOOP("MetaData","Descripción")</alias>
+		<null>true</null>
+		<pk>false</pk>
+		<type>string</type>
+		<length>100</length>
+	</field>
+	
+	<field>
+		<name>saldoact</name>
+		<alias>QT_TRANSLATE_NOOP("MetaData","Saldo ejercicio actual")</alias>
+		<null>false</null>
+		<pk>false</pk>
+		<type>double</type>
+		<partI>12</partI>
+		<partD>2</partD>
+		<default>0</default>
+	</field>
+	
+	<field>
+		<name>saldoant</name>
+		<alias>QT_TRANSLATE_NOOP("MetaData","Saldo ejercicio anterior")</alias>
+		<null>false</null>
+		<pk>false</pk>
+		<type>double</type>
+		<partI>12</partI>
+		<partD>2</partD>
+		<default>0</default>
+	</field>
+</TMD>
+

@@ -1,0 +1,25 @@
+<xupdate:modifications>
+<xupdate:insert-after select="/ACTIONS[ACTIONS,1]/action[seleccionreciboscli]" >
+<action>
+<name>remesasprov</name>
+<description>QT_TRANSLATE_NOOP(&quot;MetaData&quot;,&quot;Las remesas de recibos de proveedor permiten crear listados de recibos pendientes de cobro para ser enviados al banco&quot;)</description>
+<alias>QT_TRANSLATE_NOOP(&quot;MetaData&quot;,&quot;Remesas de recibos&quot;)</alias>
+<table>remesasprov</table>
+<form>masterremesasprov</form>
+<formrecord>remesasprov</formrecord>
+<scriptformrecord>remesasprov</scriptformrecord>
+<scriptform>masterremesasprov</scriptform>
+</action>
+</xupdate:insert-after>
+<xupdate:insert-after select="/ACTIONS[ACTIONS,1]/action[pagosdevolrem]" >
+<action>
+<name>pagosdevolremprov</name>
+<description>QT_TRANSLATE_NOOP(&quot;MetaData&quot;,&quot;Esta acción permite gestionar pagos de las remesas de recibos de proveedor&quot;)</description>
+<alias>QT_TRANSLATE_NOOP(&quot;MetaData&quot;,&quot;Pagos de remesas de recibos de proveedor&quot;)</alias>
+<table>pagosdevolremprov</table>
+<form>master</form>
+<formrecord>pagosdevolremprov</formrecord>
+<scriptformrecord>pagosdevolremprov</scriptformrecord>
+</action>
+</xupdate:insert-after>
+</xupdate:modifications>

@@ -1,0 +1,45 @@
+<xupdate:modifications>
+<xupdate:insert-after select="/TMD[TMD,1]/field[codinventario]" >
+<field>
+<name>idsincro</name>
+<alias>QT_TRANSLATE_NOOP(&quot;MetaData&quot;,&quot;Id.Sincro&quot;)</alias>
+<null>true</null>
+<pk>false</pk>
+<type>string</type>
+<length>60</length>
+<unique>true</unique>
+<editable>false</editable>
+</field>
+</xupdate:insert-after>
+<xupdate:insert-after select="/TMD[TMD,1]/field[idsincro]" >
+<field>
+<name>idsincrostock</name>
+<alias>QT_TRANSLATE_NOOP(&quot;MetaData&quot;,&quot;Id.Sincro.Stock&quot;)</alias>
+<null>true</null>
+<pk>false</pk>
+<type>string</type>
+<length>60</length>
+<editable>false</editable>
+</field>
+</xupdate:insert-after>
+<xupdate:insert-after select="/TMD[TMD,1]/field[idsincrostock]" >
+<field>
+<name>sincronizado</name>
+<!-- hora de la transferencia --><alias>QT_TRANSLATE_NOOP(&quot;MetaData&quot;,&quot;Sincronizado&quot;)</alias>
+<null>false</null>
+<pk>false</pk>
+<type>bool</type>
+<default>false</default>
+</field>
+</xupdate:insert-after>
+<xupdate:insert-after select="/TMD[TMD,1]/field[sincronizado]" >
+<field>
+<name>ptecalculo</name>
+<!-- hora de la transferencia --><alias>QT_TRANSLATE_NOOP(&quot;MetaData&quot;,&quot;Pte.Calculo&quot;)</alias>
+<null>false</null>
+<pk>false</pk>
+<type>bool</type>
+<default>true</default>
+</field>
+</xupdate:insert-after>
+</xupdate:modifications>

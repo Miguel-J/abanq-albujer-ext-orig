@@ -1,0 +1,56 @@
+<xupdate:modifications>
+<xupdate:insert-after select="/ACTIONS[ACTIONS,1]/action[cambiarejer]" >
+<action>
+<name>solpresupuestosprov</name>
+<description>QT_TRANSLATE_NOOP(&quot;MetaData&quot;,&quot;Solicitudes de oferta para ciertos artículo o para los artículos de un presupuesto de cliente&quot;)</description>
+<alias>QT_TRANSLATE_NOOP(&quot;MetaData&quot;,&quot;Solicitues de oferta&quot;)</alias>
+<scriptform>mastersolpresupuestosprov</scriptform>
+<scriptformrecord>solpresupuestosprov</scriptformrecord>
+<table>solpresupuestosprov</table>
+<form>master</form>
+<formrecord>solpresupuestosprov</formrecord>
+</action>
+</xupdate:insert-after>
+<xupdate:insert-after select="/ACTIONS[ACTIONS,1]/action[solpresupuestosprov]" >
+<action>
+<name>lineassolpresupuestosprov</name>
+<description>QT_TRANSLATE_NOOP(&quot;MetaData&quot;,&quot;Líneas de solicitudes de oferta para ciertos artículo o para los artículos de un presupuesto de cliente&quot;)</description>
+<alias>QT_TRANSLATE_NOOP(&quot;MetaData&quot;,&quot;Líneas de solicitues de oferta&quot;)</alias>
+<table>lineassolpresupuestosprov</table>
+<formrecord>lineassolpresupuestosprov</formrecord>
+<scriptformrecord>lineassolpresupuestosprov</scriptformrecord>
+</action>
+</xupdate:insert-after>
+<xupdate:insert-after select="/ACTIONS[ACTIONS,1]/action[lineassolpresupuestosprov]" >
+<action>
+<name>presupuestosprov</name>
+<description>QT_TRANSLATE_NOOP(&quot;MetaData&quot;,&quot;Ofertas de proveedores)</description>
+<alias>QT_TRANSLATE_NOOP(&quot;MetaData&quot;,&quot;Ofertas de proveedores&quot;)</alias>
+<table>presupuestosprov</table>
+<form>masterpresupuestosprov</form>
+<scriptform>masterpresupuestosprov</scriptform>
+<formrecord>presupuestosprov</formrecord>
+<scriptformrecord>presupuestosprov</scriptformrecord>
+</action>
+</xupdate:insert-after>
+<xupdate:insert-after select="/ACTIONS[ACTIONS,1]/action[presupuestosprov]" >
+<action>
+<name>lineaspresupuestosprov</name>
+<description>QT_TRANSLATE_NOOP(&quot;MetaData&quot;,&quot;Lineas de ofertas de proveedores)</description>
+<alias>QT_TRANSLATE_NOOP(&quot;MetaData&quot;,&quot;Lineas de ofertas de proveedores&quot;)</alias>
+<table>lineaspresupuestosprov</table>
+<form>master</form>
+<formrecord>lineaspresupuestosprov</formrecord>
+<scriptformrecord>lineaspresupuestosprov</scriptformrecord>
+</action>
+</xupdate:insert-after>
+<xupdate:insert-after select="/ACTIONS[ACTIONS,1]/action[lineaspresupuestosprov]" >
+<action>
+<name>altamasivadtoprov</name>
+<description>QT_TRANSLATE_NOOP(&quot;MetaData&quot;,&quot;Inserción masiva de descuentos a proveedores&quot;)</description>
+<alias>QT_TRANSLATE_NOOP(&quot;MetaData&quot;,&quot;Esta acción permite actualizar de manera rápida los descuentos en los datos del proveedor habitual de cada artículo que cumpla los criterios indicados.&quot;)</alias>
+<table>altamasivadtoprov</table>
+<form>masteraltamasivadtoprov</form>
+</action>
+</xupdate:insert-after>
+</xupdate:modifications>

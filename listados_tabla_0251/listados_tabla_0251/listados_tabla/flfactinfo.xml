@@ -1,0 +1,33 @@
+<xupdate:modifications>
+<xupdate:insert-after select="/ACTIONS[ACTIONS,1]/action[i_resreciboscli]" >
+<action>
+<name>listadotabla</name>
+<alias>QT_TRANSLATE_NOOP(&quot;MetaData&quot;,&quot;Exportar Tabla&quot;)</alias>
+<description>QT_TRANSLATE_NOOP(&quot;MetaData&quot;,&quot;Exporta una tabla a un fichero cvs&quot;)</description>
+<table>listadotabla</table>
+<form>masterlistadotabla</form>
+<formrecord>listadotabla</formrecord>
+<scriptformrecord>listadotabla</scriptformrecord>
+<scriptform>masterlistadotabla</scriptform>
+</action>
+</xupdate:insert-after>
+<xupdate:insert-after select="/ACTIONS[ACTIONS,1]/action[listadotabla]" >
+<action>
+<name>listadocampos</name>
+<alias>QT_TRANSLATE_NOOP(&quot;MetaData&quot;,&quot;Campos&quot;)</alias>
+<description>QT_TRANSLATE_NOOP(&quot;MetaData&quot;,&quot;Campos que se exportarán&quot;)</description>
+<table>listadocampos</table>
+</action>
+</xupdate:insert-after>
+<xupdate:insert-after select="/ACTIONS[ACTIONS,1]/action[listadocampos]" >
+<action>
+<name>seleccionartabla</name>
+<alias>QT_TRANSLATE_NOOP(&quot;MetaData&quot;,&quot;Tablas&quot;)</alias>
+<description>QT_TRANSLATE_NOOP(&quot;MetaData&quot;,&quot;Tablas&quot;)</description>
+<table>flfiles</table>
+<form>master</form>
+<formrecord>flfiles</formrecord>
+<scriptformrecord>flfiles</scriptformrecord>
+</action>
+</xupdate:insert-after>
+</xupdate:modifications>

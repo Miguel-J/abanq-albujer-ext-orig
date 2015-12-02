@@ -1,0 +1,89 @@
+<!DOCTYPE TMD>
+<TMD>
+	<name>gramajes</name>
+	<!-- Gramajes-->
+	<alias>QT_TRANSLATE_NOOP("MetaData","Gramajes")</alias>
+
+	<field>
+		<name>gramaje</name>
+		<!-- Gramaje-->
+		<alias>QT_TRANSLATE_NOOP("MetaData","Gramaje")</alias>
+		<null>false</null>
+		<pk>true</pk>
+		<type>uint</type>
+
+		<relation>
+			<table>gramajescalidad</table>
+			<field>gramaje</field>
+			<card>1M</card>
+		</relation>
+		
+		<relation>
+			<table>articulos</table>
+			<field>gramaje</field>
+			<card>1M</card>
+		</relation>
+		
+		<relation>
+			<table>paramiptico</table>
+			<field>gramaje</field>
+			<card>1M</card>
+		</relation>
+		
+		<relation>
+			<table>paramlibro</table>
+			<field>gramaje</field>
+			<card>1M</card>
+		</relation>
+
+		<relation>
+			<table>paramlibro</table>
+			<field>gramajetapa</field>
+			<card>1M</card>
+		</relation>
+	</field>
+
+	<field>
+		<name>codmarcapapel</name>
+		<!-- Marca por defecto-->
+		<alias>QT_TRANSLATE_NOOP("MetaData","Marca por defecto")</alias>
+		<null>false</null>
+		<pk>false</pk>
+		<type>string</type>
+		<length>25</length>
+
+		<relation>
+			<table>marcaspapel</table>
+			<field>codmarcapapel</field>
+			<card>M1</card>
+		</relation>
+	</field>
+
+	<field>
+        <name>grosorunidad</name>
+        <alias>QT_TRANSLATE_NOOP("MetaData","Cms/unidad")</alias>
+        <null>true</null>
+        <pk>false</pk>
+        <type>double</type>
+        <partI>1</partI>
+        <partD>6</partD>
+    </field>
+	
+    <field>
+        <name>unidadesgr</name>
+        <alias>QT_TRANSLATE_NOOP("MetaData","Cantidad")</alias>
+        <null>true</null>
+        <pk>false</pk>
+        <type>uint</type>
+    </field>
+	
+    <field>
+        <name>cmsgr</name>
+        <alias>QT_TRANSLATE_NOOP("MetaData","Cms")</alias>
+        <null>true</null>
+        <pk>false</pk>
+        <type>double</type>
+        <partI>2</partI>
+        <partD>2</partD>
+    </field>
+</TMD>

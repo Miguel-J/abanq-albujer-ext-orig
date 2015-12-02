@@ -1,0 +1,87 @@
+<!DOCTYPE UI><UI version="3.3" stdsetdef="1">
+<class>t1_accioneselementoentos</class>
+<widget class="QWidget">
+    <property name="name">
+        <cstring>t1_accioneselementoentos</cstring>
+    </property>
+    <property name="geometry">
+        <rect>
+            <x>0</x>
+            <y>0</y>
+            <width>487</width>
+            <height>195</height>
+        </rect>
+    </property>
+    <property name="caption">
+        <string>t1_accioneselemento</string>
+    </property>
+    <vbox>
+        <property name="name">
+            <cstring>unnamed</cstring>
+        </property>
+        <property name="spacing">
+            <number>0</number>
+        </property>
+        <widget class="QGroupBox">
+            <property name="name">
+                <cstring>gbxElemento</cstring>
+            </property>
+            <property name="title">
+                <string></string>
+            </property>
+            <hbox>
+                <property name="name">
+                    <cstring>unnamed</cstring>
+                </property>
+                <widget class="FLFieldDB">
+                    <property name="name">
+                        <cstring>fdbAccion</cstring>
+                    </property>
+                    <property name="fieldName">
+                        <string>accion</string>
+                    </property>
+                </widget>
+                <spacer>
+                    <property name="name">
+                        <cstring>spacer1</cstring>
+                    </property>
+                    <property name="orientation">
+                        <enum>Horizontal</enum>
+                    </property>
+                    <property name="sizeType">
+                        <enum>Expanding</enum>
+                    </property>
+                    <property name="sizeHint">
+                        <size>
+                            <width>100</width>
+                            <height>21</height>
+                        </size>
+                    </property>
+                </spacer>
+                <widget class="FLFieldDB">
+                    <property name="name">
+                        <cstring>fdbTecla</cstring>
+                    </property>
+                    <property name="fieldName">
+                        <string>tecla</string>
+                    </property>
+                </widget>
+            </hbox>
+        </widget>
+        <widget class="FLFieldDB">
+            <property name="name">
+                <cstring>fdbIcono</cstring>
+            </property>
+            <property name="fieldName">
+                <string>icono</string>
+            </property>
+        </widget>
+    </vbox>
+</widget>
+<layoutdefaults spacing="6" margin="11"/>
+<includehints>
+    <includehint>flfielddb.h</includehint>
+    <includehint>flfielddb.h</includehint>
+    <includehint>flfielddb.h</includehint>
+</includehints>
+</UI>

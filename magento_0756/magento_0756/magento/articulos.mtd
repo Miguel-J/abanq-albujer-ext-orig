@@ -1,0 +1,79 @@
+<xupdate:modifications>
+<xupdate:insert-after select="/TMD[TMD,1]/field[pvpvariable]" >
+<field>
+<name>mgvisibleweb</name>
+<alias>QT_TRANSLATE_NOOP(&quot;MetaData&quot;,&quot;Visible web&quot;)</alias>
+<null>true</null>
+<pk>false</pk>
+<type>bool</type>
+</field>
+</xupdate:insert-after>
+<xupdate:insert-after select="/TMD[TMD,1]/field[mgvisibleweb]" >
+<field>
+<name>mgnuevodesde</name>
+<alias>QT_TRANSLATE_NOOP(&quot;MetaData&quot;,&quot;Nuevo desde&quot;)</alias>
+<null>true</null>
+<pk>false</pk>
+<type>date</type>
+</field>
+</xupdate:insert-after>
+<xupdate:insert-after select="/TMD[TMD,1]/field[mgnuevodesde]" >
+<field>
+<name>mgnuevohasta</name>
+<alias>QT_TRANSLATE_NOOP(&quot;MetaData&quot;,&quot;Nuevo hasta&quot;)</alias>
+<null>true</null>
+<pk>false</pk>
+<type>date</type>
+</field>
+</xupdate:insert-after>
+<xupdate:insert-after select="/TMD[TMD,1]/field[mgnuevohasta]" >
+<field>
+<name>mgimagen1</name>
+<alias>QT_TRANSLATE_NOOP(&quot;MetaData&quot;,&quot;Imagen 1&quot;)</alias>
+<null>true</null>
+<pk>false</pk>
+<type>string</type>
+<length>100</length>
+</field>
+</xupdate:insert-after>
+<xupdate:insert-after select="/TMD[TMD,1]/field[mgimagen1]" >
+<field>
+<name>mgimagen2</name>
+<alias>QT_TRANSLATE_NOOP(&quot;MetaData&quot;,&quot;Imagen 2&quot;)</alias>
+<null>true</null>
+<pk>false</pk>
+<type>string</type>
+<length>100</length>
+</field>
+</xupdate:insert-after>
+<xupdate:insert-after select="/TMD[TMD,1]/field[mgimagen2]" >
+<field>
+<name>mgimagen3</name>
+<alias>QT_TRANSLATE_NOOP(&quot;MetaData&quot;,&quot;Imagen 3&quot;)</alias>
+<null>true</null>
+<pk>false</pk>
+<type>string</type>
+<length>100</length>
+</field>
+</xupdate:insert-after>
+<xupdate:insert-after select="/TMD[TMD,1]/field[mgimagen3]" >
+<field>
+<name>mgimagen4</name>
+<alias>QT_TRANSLATE_NOOP(&quot;MetaData&quot;,&quot;Imagen 4&quot;)</alias>
+<null>true</null>
+<pk>false</pk>
+<type>string</type>
+<length>100</length>
+</field>
+</xupdate:insert-after>
+<xupdate:insert-after select="/TMD[TMD,1]/field[mgimagen4]" >
+<field>
+<name>mgcategorias</name>
+<alias>QT_TRANSLATE_NOOP(&quot;MetaData&quot;,&quot;Categorías&quot;)</alias>
+<null>true</null>
+<pk>false</pk>
+<type>string</type>
+<length>200</length>
+</field>
+</xupdate:insert-after>
+</xupdate:modifications>

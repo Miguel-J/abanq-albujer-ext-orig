@@ -1,0 +1,17 @@
+<!DOCTYPE QRY>
+<QRY>
+	<name>qry_lineaspedidoscli</name>
+	
+	<tables>lineaspedidoscli,pedidoscli</tables>
+	
+	<select>
+		pedidoscli.codigo,pedidoscli.fecha, lineaspedidoscli.*
+	</select>
+	
+	<from>
+		pedidoscli INNER JOIN lineaspedidoscli ON pedidoscli.idpedido = lineaspedidoscli.idpedido
+	</from>
+	
+	<where>
+	</where>
+</QRY>

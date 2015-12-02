@@ -1,0 +1,170 @@
+<xupdate:modifications>
+<xupdate:insert-after select="/TMD[TMD,1]/field[tarifa]" >
+<field>
+<name>tarifaesp</name>
+<!-- Tarifa que se aplicará por defecto --><alias>QT_TRANSLATE_NOOP(&quot;MetaData&quot;,&quot;Tarifa Especial&quot;)</alias>
+<null>true</null>
+<pk>false</pk>
+<type>string</type>
+<length>6</length>
+<editable>true</editable>
+<relation>
+<table>tarifas</table>
+<field>codtarifa</field>
+<card>M1</card>
+</relation>
+</field>
+</xupdate:insert-after>
+<xupdate:insert-after select="/TMD[TMD,1]/field[irultrarrapida]" >
+<field>
+<name>nfilas</name>
+<!-- Número de filas a mostrar en la tabla de artículos del tpv táctil--><alias>QT_TRANSLATE_NOOP(&quot;MetaData&quot;,&quot;Filas&quot;)</alias>
+<null>false</null>
+<pk>false</pk>
+<type>uint</type>
+<default>4</default>
+</field>
+</xupdate:insert-after>
+<xupdate:insert-after select="/TMD[TMD,1]/field[nfilas]" >
+<field>
+<name>ncolumnas</name>
+<!-- Número de columnas a mostrar en la tabla de artículos del tpv táctil--><alias>QT_TRANSLATE_NOOP(&quot;MetaData&quot;,&quot;Columnas&quot;)</alias>
+<null>false</null>
+<pk>false</pk>
+<type>uint</type>
+<default>4</default>
+</field>
+</xupdate:insert-after>
+<xupdate:insert-after select="/TMD[TMD,1]/field[ncolumnas]" >
+<field>
+<name>codnivel</name>
+<alias>QT_TRANSLATE_NOOP(&quot;MetaData&quot;,&quot;Nivel base&quot;)</alias>
+<null>true</null>
+<pk>false</pk>
+<type>string</type>
+<length>10</length>
+<relation>
+<table>nivelestpv</table>
+<field>codnivel</field>
+<card>M1</card>
+</relation>
+</field>
+</xupdate:insert-after>
+<xupdate:insert-after select="/TMD[TMD,1]/field[codnivel]" >
+<field>
+<name>volvernivelbase</name>
+<alias>QT_TRANSLATE_NOOP(&quot;MetaData&quot;,&quot;Volver al nivel base al insertar línea&quot;)</alias>
+<null>false</null>
+<pk>false</pk>
+<type>bool</type>
+<default>false</default>
+</field>
+</xupdate:insert-after>
+<xupdate:insert-after select="/TMD[TMD,1]/field[volvernivelbase]" >
+<field>
+<name>secuencialinea</name>
+<alias>QT_TRANSLATE_NOOP(&quot;MetaData&quot;,&quot;Secuencia para selección de artículo&quot;)</alias>
+<null>false</null>
+<pk>false</pk>
+<type>string</type>
+<length>20</length>
+<optionslist>Cantidad_Referencia,Referencia_Cantidad</optionslist>
+<default>Cantidad_Referencia</default>
+</field>
+</xupdate:insert-after>
+<xupdate:insert-after select="/TMD[TMD,1]/field[secuencialinea]" >
+<field>
+<name>codimpuestogen</name>
+<!--Código del impuesto--><alias>QT_TRANSLATE_NOOP(&quot;MetaData&quot;,&quot;I.V.A. General&quot;)</alias>
+<null>true</null>
+<pk>false</pk>
+<type>string</type>
+<length>10</length>
+<relation>
+<table>impuestos</table>
+<field>codimpuesto</field>
+<card>M1</card>
+</relation>
+</field>
+</xupdate:insert-after>
+<xupdate:insert-after select="/TMD[TMD,1]/field[codimpuestogen]" >
+<field>
+<name>codimpuestored</name>
+<!--Código del impuesto--><alias>QT_TRANSLATE_NOOP(&quot;MetaData&quot;,&quot;I.V.A. Reducido&quot;)</alias>
+<null>true</null>
+<pk>false</pk>
+<type>string</type>
+<length>10</length>
+<relation>
+<table>impuestos</table>
+<field>codimpuesto</field>
+<card>M1</card>
+</relation>
+</field>
+</xupdate:insert-after>
+<xupdate:insert-after select="/TMD[TMD,1]/field[codimpuestored]" >
+<field>
+<name>codimpuestosred</name>
+<!--Código del impuesto--><alias>QT_TRANSLATE_NOOP(&quot;MetaData&quot;,&quot;I.V.A. Superreducido&quot;)</alias>
+<null>true</null>
+<pk>false</pk>
+<type>string</type>
+<length>10</length>
+<relation>
+<table>impuestos</table>
+<field>codimpuesto</field>
+<card>M1</card>
+</relation>
+</field>
+</xupdate:insert-after>
+<xupdate:insert-after select="/TMD[TMD,1]/field[codimpuestosred]" >
+<field>
+<name>geofija</name>
+<alias>QT_TRANSLATE_NOOP(&quot;MetaData&quot;,&quot;Geometría fija&quot;)</alias>
+<null>true</null>
+<pk>false</pk>
+<type>bool</type>
+<default>false</default>
+</field>
+</xupdate:insert-after>
+<xupdate:insert-after select="/TMD[TMD,1]/field[geofija]" >
+<field>
+<name>xtactil</name>
+<alias>QT_TRANSLATE_NOOP(&quot;MetaData&quot;,&quot;X&quot;)</alias>
+<null>true</null>
+<pk>false</pk>
+<type>uint</type>
+<default>0</default>
+</field>
+</xupdate:insert-after>
+<xupdate:insert-after select="/TMD[TMD,1]/field[xtactil]" >
+<field>
+<name>ytactil</name>
+<alias>QT_TRANSLATE_NOOP(&quot;MetaData&quot;,&quot;Y&quot;)</alias>
+<null>true</null>
+<pk>false</pk>
+<type>uint</type>
+<default>0</default>
+</field>
+</xupdate:insert-after>
+<xupdate:insert-after select="/TMD[TMD,1]/field[ytactil]" >
+<field>
+<name>wtactil</name>
+<alias>QT_TRANSLATE_NOOP(&quot;MetaData&quot;,&quot;Anchura&quot;)</alias>
+<null>true</null>
+<pk>false</pk>
+<type>uint</type>
+<default>800</default>
+</field>
+</xupdate:insert-after>
+<xupdate:insert-after select="/TMD[TMD,1]/field[wtactil]" >
+<field>
+<name>htactil</name>
+<alias>QT_TRANSLATE_NOOP(&quot;MetaData&quot;,&quot;Altura&quot;)</alias>
+<null>true</null>
+<pk>false</pk>
+<type>uint</type>
+<default>600</default>
+</field>
+</xupdate:insert-after>
+</xupdate:modifications>

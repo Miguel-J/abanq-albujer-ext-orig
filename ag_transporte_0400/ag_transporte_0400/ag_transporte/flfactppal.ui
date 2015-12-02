@@ -1,0 +1,27 @@
+<xupdate:modifications>
+<xupdate:insert-after select="/UI[UI,1]/actions[actions,1]/action[agenciastrans]" >
+<action>
+<property name="name" >
+<cstring>zonastrans</cstring>
+</property>
+<property name="text" >
+<string>Zonas</string>
+</property>
+<property name="menuText" >
+<string>&amp;Zonas</string>
+</property>
+</action>
+</xupdate:insert-after>
+<xupdate:insert-after select="/UI[UI,1]/connections[connections,1]/connection[provincias,activated(),FLWidgetApplication,openDefaultForm()]" >
+<connection>
+<sender>zonastrans</sender>
+<signal>activated()</signal>
+<receiver>FLWidgetApplication</receiver>
+<slot>openDefaultForm()</slot>
+</connection>
+</xupdate:insert-after>
+<xupdate:insert-after select="/UI[UI,1]/menubar[menubar,1]/item[Transporte]/action[agenciastrans]" >
+<action name="zonastrans" />
+</xupdate:insert-after>
+<xupdate:update select="/UI[UI,1]/menubar[menubar,1]/property[geometry]/rect[rect,1]/height[height,1]/text()[1]" >26</xupdate:update>
+</xupdate:modifications>

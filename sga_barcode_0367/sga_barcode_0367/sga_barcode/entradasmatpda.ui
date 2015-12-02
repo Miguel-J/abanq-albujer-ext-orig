@@ -1,0 +1,37 @@
+<xupdate:modifications>
+<xupdate:update select="/UI[UI,1]/widget[QWidget,entradasmatpda]/property[property,2]/rect[rect,1]/height[height,1]/text()[1]" >276</xupdate:update>
+<xupdate:insert-after select="/UI[UI,1]/widget[QWidget,entradasmatpda]/vbox[vbox,1]/widget[QFrame,frame4]/vbox[vbox,1]/widget[QLayoutWidget,layout75]" >
+<widget class="QLayoutWidget" >
+<property name="name" >
+<cstring>layout25</cstring>
+</property>
+<hbox>
+<property name="name" >
+<cstring>unnamed</cstring>
+</property>
+<widget class="QLineEdit" >
+<property name="name" >
+<cstring>ledTalla</cstring>
+</property>
+<property name="enabled" >
+<bool>false</bool>
+</property>
+<property name="text" >
+<string/>
+</property>
+</widget>
+<widget class="QLineEdit" >
+<property name="name" >
+<cstring>ledColor</cstring>
+</property>
+<property name="enabled" >
+<bool>false</bool>
+</property>
+<property name="text" >
+<string/>
+</property>
+</widget>
+</hbox>
+</widget>
+</xupdate:insert-after>
+</xupdate:modifications>

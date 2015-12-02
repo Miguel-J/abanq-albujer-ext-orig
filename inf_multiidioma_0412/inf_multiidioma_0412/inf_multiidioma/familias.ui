@@ -1,0 +1,123 @@
+<xupdate:modifications>
+<xupdate:delete select="/UI[UI,1]/widget[QWidget,formFamilias]/vbox[vbox,1]/widget[QFrame,frmFamilia]/vbox[vbox,1]" />
+<xupdate:append-first select="/UI[UI,1]/images[images,1]" >
+<image name="inf_multiidiomaimage54846" >
+<data format="PNG" length="1203" >89504e470d0a1a0a0000000d4948445200000016000000160806000000c4b46c3b0000047a49444154789c95947f6894751cc75fdb6edb7372da7372379fa35bdd81da4e74edb4b22b33b655e46628138d1afde132c8f947844a88a99418980e9234111d83ccc46a337268a49eb0b5cd9c7ae58f9d6c871b6edd3de8b97bdacedb639b7efae31c489d686ff8fef385f79bf7f7fd797fbe59fc0fc806ac23160a5edc4dff760d4bcc86ab6c96e7e9f33d7a95ae9bc93511d618262680e55104536b5170f02a49566c394e6be34bbe514afce5651e5fe9482e5633547778c525731370fb911c46d7912d3fe1971d7c2ff5ca486aad3f292dcd71b970524444a42b2a275ff79c50c0fdc8cfbebc877cd9c3fbd13a252a3b02926ad929329412b9764e249512e96e93d4ba0adda33037133f6314b28725585886e95bec5ab0330f8b0fab06e81de0f0412408d8d9d5da7ec18450268d9c7f5fb4d51128cc560e259ccbe658dfd89e433206936d69d1c98510ed04c54be2c856cae7789f703d1693f66eb32d39c6dd070aef7b0fe7a222f510539679ac651fc190130a9ca01f078717e22198e485483b56630c5e9e9f535c3e7f5e6febd1df3aa3443246b16d1e13ab1cda67096759b1bdc407912670f8c1007c3510ae4bc730100415624608575119c43b72ec1acf003f7f3395ec5e1b13140b589a4bc832a751bc64b16f33ceb717241cd5595c69048f0b064ea5c562064cad80be7af0cc80b35db83c0a9c0d02d63bedbfd31ffd505b18537d6f56dbecd3dfdddbf4b5c51a6063e5525f2d0e7f41cc7881ba865dac7f2b807da0091c4adae14c0d9206683ac4752852a007b084091e090d1d581a58a92ead2e71cdaccaaf5f55de7eb48fe66cd586054b6f011ab8dc8d6cffa402bb7614342fe83aa82ee83b0576172413e04e801903af9791831d94b97daa6bf9aab9d6a28a7c0e7f3c7ce054ef56dde45a96c7467ee34ab6cd7e87954c552dc401cd05bf02aa0203405100d43e70f64222018a097b0d886bf0ea2af0281037e96df8f6f48c2fc30b4c30b2fb92dc5ed1c0bade4eea3118a5508164186c618884c0918048073883301a06bb0e71035c0aa8f6b489b80e6e178d46e2bc09c300d900a138b72a57b3b6eba0f1c5483f238c69a0036e0574031c21183521f75e85c6b8471fb9832d0cfe001066b6aadc84749fb3c7eb163618aedcc4c65083be9e48758ae77f00c30baa992ee5b828c025150ab5bb6b8ef4ed67207893d10e7056117378270259993611057206eb4af7cbd57d22836d22c15211f18808e9d3a2887457c8e52d6a2ce06646ed3c16a6829e6e19ac1569af096a36ac19577a0ce4c690716551e5b335242fe6e2790dae03f6f5d06f03f70770b545ceb4471a3e0f72a827ca95a6634693eddc8d3f7fb96a4c725d374e770e8efd95d1f5be5794bccb07fc7fc8608d48778dc8f50a91f35522a9cd225d5577a31b94731e95e919a879e3db9cf177ab3b6b8eb62df736631ac54cf343bf4ed7b160abeb78539ea1305addc0a77d063d19a87f67747a3f6a17aa8fcb99d216195a7d47a4564eeef27d07d80107f70dfd41f84fc6e3e8ec36872f86cd13b3263c97eb1c32a68ca4e296af7ed47703b70079a8b3874155c8f579d42735074ff1a02a65c03f76e1f2048eae1bf00000000049454e44ae426082</data>
+</image>
+</xupdate:append-first>
+<xupdate:insert-after select="/UI[UI,1]/widget[QWidget,formFamilias]/vbox[vbox,1]/widget[QFrame,frmFamilia]/property[frameShadow]" >
+<hbox>
+<property name="name" >
+<cstring>unnamed</cstring>
+</property>
+<widget class="QLayoutWidget" >
+<property name="name" >
+<cstring>layout1</cstring>
+</property>
+<hbox>
+<property name="name" >
+<cstring>unnamed</cstring>
+</property>
+<widget class="FLFieldDB" >
+<property name="name" >
+<cstring>fdbCodFamilia</cstring>
+</property>
+<property name="sizePolicy" >
+<sizepolicy>
+<hsizetype>1</hsizetype>
+<vsizetype>0</vsizetype>
+<horstretch>0</horstretch>
+<verstretch>0</verstretch>
+</sizepolicy>
+</property>
+<property name="minimumSize" >
+<size>
+<width>134</width>
+<height>26</height>
+</size>
+</property>
+<property name="maximumSize" >
+<size>
+<width>150</width>
+<height>32767</height>
+</size>
+</property>
+<property name="fieldName" >
+<string>codfamilia</string>
+</property>
+</widget>
+<spacer>
+<property name="name" >
+<cstring>spacer119</cstring>
+</property>
+<property name="orientation" >
+<enum>Horizontal</enum>
+</property>
+<property name="sizeType" >
+<enum>Fixed</enum>
+</property>
+<property name="sizeHint" >
+<size>
+<width>16</width>
+<height>20</height>
+</size>
+</property>
+</spacer>
+<widget class="FLFieldDB" >
+<property name="name" >
+<cstring>fdbDescripcion</cstring>
+</property>
+<property name="sizePolicy" >
+<sizepolicy>
+<hsizetype>1</hsizetype>
+<vsizetype>0</vsizetype>
+<horstretch>0</horstretch>
+<verstretch>0</verstretch>
+</sizepolicy>
+</property>
+<property name="minimumSize" >
+<size>
+<width>139</width>
+<height>26</height>
+</size>
+</property>
+<property name="fieldName" >
+<string>descripcion</string>
+</property>
+</widget>
+</hbox>
+</widget>
+<widget class="QPushButton" >
+<property name="name" >
+<cstring>pbnTradDescripcion</cstring>
+</property>
+<property name="minimumSize" >
+<size>
+<width>25</width>
+<height>25</height>
+</size>
+</property>
+<property name="maximumSize" >
+<size>
+<width>25</width>
+<height>25</height>
+</size>
+</property>
+<property name="text" >
+<string/>
+</property>
+<property name="iconSet" >
+<iconset>inf_multiidiomaimage54846</iconset>
+</property>
+<property name="toolTip" stdset="0" >
+<string>Traducciones</string>
+</property>
+</widget>
+</hbox>
+</xupdate:insert-after>
+<xupdate:delete select="/UI[UI,1]/includehints[includehints,1]/includehint[flfielddb.h]" />
+<xupdate:delete select="/UI[UI,1]/includehints[includehints,1]/includehint[flfielddb.h]" />
+<xupdate:insert-after select="/UI[UI,1]/widget[QWidget,formFamilias]" >
+<customwidgets/>
+</xupdate:insert-after>
+</xupdate:modifications>

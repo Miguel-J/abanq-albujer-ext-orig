@@ -1,0 +1,16 @@
+<flpatch:modifications name="digit_contable" >
+    <flpatch:patchXml path="contabilidad/informes/" name="flcontinfo.xml" />
+    <flpatch:patchXml path="contabilidad/informes/forms/" name="flcontinfo.ui" />
+    <flpatch:addFile path="contabilidad/informes/scripts/" name="co_i_masterdigitconta.qs" />
+    <flpatch:addFile path="contabilidad/informes/tables/" name="co_i_digitconta.mtd" />
+    <flpatch:addFile path="contabilidad/informes/forms/" name="co_i_digitconta.ui" />
+    <flpatch:addFile path="contabilidad/informes/scripts/" name="co_i_digitconta.qs" />
+    <flpatch:patchScript path="contabilidad/informes/scripts/" name="flcontinfo.qs" />
+    <flpatch:replaceFile path="contabilidad/informes/reports/" name="co_i_balancesit.kut" />
+    <flpatch:replaceFile path="contabilidad/informes/reports/" name="co_i_balancesit_08.kut" />
+    <flpatch:replaceFile path="contabilidad/informes/reports/" name="co_i_balancesit_08_abr.kut" />
+    <flpatch:replaceFile path="contabilidad/informes/queries/" name="co_i_balancepyg_08.qry" />
+    <flpatch:replaceFile path="contabilidad/informes/reports/" name="co_i_balancepyg_08_abr.kut" />
+    <flpatch:replaceFile path="contabilidad/informes/reports/" name="co_i_balancepyg_08.kut" />
+    <flpatch:patchScript path="contabilidad/informes/scripts/" name="co_i_masterbalancesis.qs" />
+</flpatch:modifications>

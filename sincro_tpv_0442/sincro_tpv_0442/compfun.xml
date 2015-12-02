@@ -1,0 +1,15 @@
+<mvproject brief="TPV Multitienda. Sincronización de ventas de TPV a una central" versionmin="" version="" code="0442" name="sincro_tpv" >
+    <modules>
+        <module section="OFICIAL" version="" area="F" name="flfactppal" />
+        <module section="OFICIAL" version="" area="F" name="flfactalma" />
+        <module section="OFICIAL" version="" area="F" name="flfacturac" />
+        <module section="OFICIAL" version="" area="F" name="flfactteso" />
+        <module section="OFICIAL" version="" area="F" name="flfact_tpv" />
+    </modules>
+    <extensions>
+        <extension version="" code="0003" name="pesos_medidas" pos="0" />
+        <extension version="" code="0031" name="articulos_comp" pos="100" />
+        <extension version="" code="0661" name="sincro_catalogo" pos="100" />
+        <extension version="" code="0666" name="tpv_multitienda" pos="200" />
+    </extensions>
+</mvproject>

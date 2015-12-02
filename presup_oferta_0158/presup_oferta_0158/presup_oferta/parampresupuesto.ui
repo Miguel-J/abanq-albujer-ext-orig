@@ -1,0 +1,258 @@
+<!DOCTYPE UI><UI version="3.3" stdsetdef="1">
+<class>formLineasFacturasCli</class>
+<widget class="QWidget">
+    <property name="name">
+        <cstring>formLineasFacturasCli</cstring>
+    </property>
+    <property name="geometry">
+        <rect>
+            <x>0</x>
+            <y>0</y>
+            <width>522</width>
+            <height>305</height>
+        </rect>
+    </property>
+    <property name="sizePolicy">
+        <sizepolicy>
+            <hsizetype>1</hsizetype>
+            <vsizetype>1</vsizetype>
+            <horstretch>0</horstretch>
+            <verstretch>0</verstretch>
+        </sizepolicy>
+    </property>
+    <property name="caption">
+        <string>Parámetros de presupuesto</string>
+    </property>
+    <vbox>
+        <property name="name">
+            <cstring>unnamed</cstring>
+        </property>
+        <widget class="QGroupBox">
+            <property name="name">
+                <cstring>groupBox7</cstring>
+            </property>
+            <property name="font">
+                <font>
+                    <bold>1</bold>
+                    <italic>1</italic>
+                </font>
+            </property>
+            <property name="title">
+                <string></string>
+            </property>
+            <hbox>
+                <property name="name">
+                    <cstring>unnamed</cstring>
+                </property>
+                <widget class="FLFieldDB">
+                    <property name="name">
+                        <cstring>fdbCodigo</cstring>
+                    </property>
+                    <property name="sizePolicy">
+                        <sizepolicy>
+                            <hsizetype>1</hsizetype>
+                            <vsizetype>0</vsizetype>
+                            <horstretch>0</horstretch>
+                            <verstretch>0</verstretch>
+                        </sizepolicy>
+                    </property>
+                    <property name="minimumSize">
+                        <size>
+                            <width>300</width>
+                            <height>25</height>
+                        </size>
+                    </property>
+                    <property name="font">
+                        <font>
+                            <bold>0</bold>
+                            <italic>0</italic>
+                        </font>
+                    </property>
+                    <property name="fieldName">
+                        <string>codparametro</string>
+                    </property>
+                </widget>
+                <spacer>
+                    <property name="name">
+                        <cstring>spacer38</cstring>
+                    </property>
+                    <property name="orientation">
+                        <enum>Horizontal</enum>
+                    </property>
+                    <property name="sizeType">
+                        <enum>Expanding</enum>
+                    </property>
+                    <property name="sizeHint">
+                        <size>
+                            <width>16</width>
+                            <height>20</height>
+                        </size>
+                    </property>
+                </spacer>
+            </hbox>
+        </widget>
+        <widget class="QGroupBox">
+            <property name="name">
+                <cstring>groupBox7_2</cstring>
+            </property>
+            <property name="minimumSize">
+                <size>
+                    <width>500</width>
+                    <height>0</height>
+                </size>
+            </property>
+            <property name="font">
+                <font>
+                    <bold>1</bold>
+                    <italic>1</italic>
+                </font>
+            </property>
+            <property name="title">
+                <string></string>
+            </property>
+            <hbox>
+                <property name="name">
+                    <cstring>unnamed</cstring>
+                </property>
+                <widget class="QLabel">
+                    <property name="name">
+                        <cstring>leTipo</cstring>
+                    </property>
+                    <property name="minimumSize">
+                        <size>
+                            <width>220</width>
+                            <height>0</height>
+                        </size>
+                    </property>
+                    <property name="paletteForegroundColor">
+                        <color>
+                            <red>0</red>
+                            <green>0</green>
+                            <blue>127</blue>
+                        </color>
+                    </property>
+                    <property name="font">
+                        <font>
+                            <italic>0</italic>
+                        </font>
+                    </property>
+                    <property name="text">
+                        <string>Parámetro tipo</string>
+                    </property>
+                </widget>
+                <spacer>
+                    <property name="name">
+                        <cstring>spacer8</cstring>
+                    </property>
+                    <property name="orientation">
+                        <enum>Horizontal</enum>
+                    </property>
+                    <property name="sizeType">
+                        <enum>Expanding</enum>
+                    </property>
+                    <property name="sizeHint">
+                        <size>
+                            <width>90</width>
+                            <height>20</height>
+                        </size>
+                    </property>
+                </spacer>
+                <widget class="QPushButton">
+                    <property name="name">
+                        <cstring>pbnCambiarRutaFichero</cstring>
+                    </property>
+                    <property name="minimumSize">
+                        <size>
+                            <width>32</width>
+                            <height>32</height>
+                        </size>
+                    </property>
+                    <property name="font">
+                        <font>
+                            <bold>0</bold>
+                            <italic>0</italic>
+                        </font>
+                    </property>
+                    <property name="text">
+                        <string>Seleccionar gráfico</string>
+                    </property>
+                    <property name="iconSet">
+                        <iconset>image0</iconset>
+                    </property>
+                    <property name="toolTip" stdset="0">
+                        <string>Cambiar el directorio de los modulos a documentar</string>
+                    </property>
+                    <property name="whatsThis" stdset="0">
+                        <string>Cambia o establece el directorio en el que se encuentran los modulos. Bajo este directorio deben encontrarse directamente los directorios de area, y dentro de estos los de modulos: en el caso de '/home/usuario/facturalux/modulos/facturacion/principal' deberiamos indicar '/home/usuario/facturalux/modulos'</string>
+                    </property>
+                </widget>
+            </hbox>
+        </widget>
+        <widget class="QGroupBox">
+            <property name="name">
+                <cstring>groupBox22</cstring>
+            </property>
+            <property name="sizePolicy">
+                <sizepolicy>
+                    <hsizetype>7</hsizetype>
+                    <vsizetype>5</vsizetype>
+                    <horstretch>0</horstretch>
+                    <verstretch>0</verstretch>
+                </sizepolicy>
+            </property>
+            <property name="minimumSize">
+                <size>
+                    <width>0</width>
+                    <height>170</height>
+                </size>
+            </property>
+            <property name="font">
+                <font>
+                    <bold>1</bold>
+                </font>
+            </property>
+            <property name="title">
+                <string>Valor de texto / Fichero de gráfico</string>
+            </property>
+            <vbox>
+                <property name="name">
+                    <cstring>unnamed</cstring>
+                </property>
+                <widget class="FLFieldDB">
+                    <property name="name">
+                        <cstring>fdbValor</cstring>
+                    </property>
+                    <property name="sizePolicy">
+                        <sizepolicy>
+                            <hsizetype>7</hsizetype>
+                            <vsizetype>7</vsizetype>
+                            <horstretch>0</horstretch>
+                            <verstretch>0</verstretch>
+                        </sizepolicy>
+                    </property>
+                    <property name="font">
+                        <font>
+                            <bold>0</bold>
+                        </font>
+                    </property>
+                    <property name="fieldName">
+                        <string>valor</string>
+                    </property>
+                    <property name="showAlias">
+                        <bool>false</bool>
+                    </property>
+                </widget>
+            </vbox>
+        </widget>
+    </vbox>
+</widget>
+<images>
+    <image name="image0">
+        <data format="PNG" length="939">89504e470d0a1a0a0000000d4948445200000016000000160806000000c4b46c3b0000037249444154789c8d95c16bdc4618479f8b4c4764035ad80589da60410ad990406d72884d7268c0179512b0ff03434f368562875076738a53d2da29b4e05349e8a57b6b7a08f131a514ec43c136d8588106e66083161cac810af451ab550fab5def66ddd6df65c468e6e9374f23cd509ee7746aeddbb53b9cbfc6971697be0162002c1011babc3ccfc9f39c95c72b77f2f3d69f797e7c7c9cd7efd6ef011794a5c06ac33bbc773a8fb72dfbdc51e324263a8c587eb8fc68f1b3c579c9c45628c84ec774c1ddce93ff6f150a93180056bf5efdb27eb7fea964d297ec146c15edf0395aab1d441f6ad23f52eaf7eb8fe63e995b002ebc8d23cdd2d3641d089046103e87a805e1b518af02c10765fc110f7d18a15f6b001a9f37bed2bfeb23e0fb3e70d771077a022f1e406b13fc49f0af81b80a6d8485ef34533587b91b3e92c598c4e0fb3efea8ffde40e25ef190b2716f9d969e25f8029c0a88805db199c026b85ae6f1f398adf809ab1fcfe05a2e0092c95f8360ab87fbd312536321fef4047ad36ff72908df8fc15290d9041f6a9eeefdc0da5e4463b2c1dbd57d795dc77a03767f86510f4f96a1f5926807f40ee80308356c991f596fade13a1ecddd26fb47fbff0eee3ade7b06590c4711c42153971b28eb059186c82874f694cdf83e2f77d769fefa8cf05548f35573003ce8586fb585be09a1a440091f5d5fc0248666a2099387881148e86ebbb015fe07b873d502b60d548bcf5429b00cc1f5064b044836090ea0ec76982c4598ec0f7796e3b4e28300a9b46f88c025a066b8ed34187366519532380e945cc0a3e6d4cee1f8d60cf80aca0a147053c134a81107af0a41751ebf348ee308aa2438230ec148b173904130199082199b22bd114045c14d176e095400075c5751ae40505d64bc7a1bc75304b52b4c56bc02a2ce769c66292a03997e80fc16519e16505780141b9f9a554c141bdfccb371f884e5ab019209362067254eb3142c30c6a005b64797d9d8f1889318ac2950334c546cbc120831e9eb0d169d71d25684490ae009bd397b1c67454f22b82517512b6cef6ce39434aa24986c9f58044c4470c94732e95b7e6ff5ed635bd9388e835b718b49a02efb8880490c650b6a4aa1540d1141590a4150055c0daba1331d330ce56ab9bd024effdbf6452857fb4f18fba23d304e1fe8aee4a1cee1e78d7ab3e68d7917f8bb8f50e891ac48d8db729a58108b8c5ff23c3f00f8070b14a965574315c20000000049454e44ae426082</data>
+    </image>
+</images>
+<tabstops>
+    <tabstop>fdbCodigo</tabstop>
+</tabstops>
+<layoutdefaults spacing="6" margin="11"/>
+</UI>

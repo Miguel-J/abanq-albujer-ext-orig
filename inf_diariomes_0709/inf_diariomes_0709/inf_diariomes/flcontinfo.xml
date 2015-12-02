@@ -1,0 +1,14 @@
+<xupdate:modifications>
+<xupdate:insert-after select="/ACTIONS[ACTIONS,1]/action[co_i_patrimonio]" >
+<action>
+<name>co_i_diariomes</name>
+<description>QT_TRANSLATE_NOOP(&quot;MetaData&quot;,&quot; El libro diario agrupado por mes refleja un listado las cantidades debe y haber de las subcuentas agrupadas por los 4 primeros dígitos. Este listado puede filtrarse u ordenarse por ejercicio y fecha.&quot;)</description>
+<alias>QT_TRANSLATE_NOOP(&quot;MetaData&quot;,&quot;Libro Diario agrupado por mes&quot;)</alias>
+<scriptform>co_i_masterdiariomes</scriptform>
+<scriptformrecord>co_i_diariomes</scriptformrecord>
+<table>co_i_diariomes</table>
+<form>co_i_master</form>
+<formrecord>co_i_diariomes</formrecord>
+</action>
+</xupdate:insert-after>
+</xupdate:modifications>

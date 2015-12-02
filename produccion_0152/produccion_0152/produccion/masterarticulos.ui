@@ -1,0 +1,88 @@
+<xupdate:modifications>
+<xupdate:update select="/UI[UI,1]/widget[QWidget,masterarticulos]/property[geometry]/rect[rect,1]/height[height,1]/text()[1]" >469</xupdate:update>
+<xupdate:update select="/UI[UI,1]/widget[QWidget,masterarticulos]/property[geometry]/rect[rect,1]/width[width,1]/text()[1]" >556</xupdate:update>
+<xupdate:update select="/UI[UI,1]/widget[QWidget,masterarticulos]/vbox[vbox,1]/widget[QFrame,barraBotones]/hbox[hbox,1]/spacer[Spacer2]/property[sizeHint]/size[size,1]/height[height,1]/text()[1]" >20</xupdate:update>
+<xupdate:update select="/UI[UI,1]/widget[QWidget,masterarticulos]/vbox[vbox,1]/widget[QFrame,barraBotones]/hbox[hbox,1]/spacer[Spacer2]/property[sizeHint]/size[size,1]/width[width,1]/text()[1]" >40</xupdate:update>
+<xupdate:insert-after select="/UI[UI,1]/widget[QWidget,masterarticulos]/vbox[vbox,1]/widget[QFrame,barraBotones]/hbox[hbox,1]/widget[QToolButton,toolButtonCopy]" >
+<spacer>
+<property name="name" >
+<cstring>spacer4</cstring>
+</property>
+<property name="orientation" >
+<enum>Horizontal</enum>
+</property>
+<property name="sizeType" >
+<enum>MinimumExpanding</enum>
+</property>
+<property name="sizeHint" >
+<size>
+<width>80</width>
+<height>20</height>
+</size>
+</property>
+</spacer>
+</xupdate:insert-after>
+<xupdate:append-first select="/UI[UI,1]/images[images,1]" >
+<image name="produccionimage5" >
+<data format="PNG" length="1616" >89504e470d0a1a0a0000000d4948445200000020000000200806000000737a7af40000061749444154789cbd976f681cd715c57f6a46f6dba0b4b3c50d232ad35d484206e4362b12a8424b2b5343b310b711e4432342a8c15fec84b6c4b8d8720aaea5baae6cfa4febb644a150470ed846c166bb2d49b4126971fa2f56492d4f8a15afb0dddd415eef4c2365e7a61afcfa61a4d526b6e4954a7ae1f1d8e5cd3de7dd39f7bc374d5a6b009a9a9a68242ccbc2f7fd7584ac13e40e854210ad50a18422c08d46f22ce21ab75ba85ad45da9f6d443f626fba18ef68efbac8dd6c6645b7203061f57865a27a13411322f22ef15ae14ae15a60a579d29e7a2f30fe79c33e5fc49e6e4fa4af99b96ab40aa3db5a9fb1bdddb7b1eeff97a3291dc483378d73c4a574bb8659740026456a2c5cd106f89636e3069b55a01f07c8f89bf4e14f3e3f9d3b95773bf745df7ad5b55e026024aa958ef9edeefed7c66e7b7e3f1b8bae05cc039ef50b858c09ff311110209f07d1f99153cf140c0171fc2a8a6f6bd36a907536ceedc8c203813cedcf0c9e1feb1f1b1c344ab6e4d402975e75066e8a59e6d3d5bbd9247eed51cca50d00c1248b47bd7a5542ee17b3ede9c0721c89c2044c41022a2a16059163bb7efe4e1ce87712e3a0c1f1b3e34363eb617b8b1888bd6bac6e6c0fe03035a6b5dbc5cd4a74e9cd2c5cb453df9d6a41eca0ce9279e7c42777da14b27ee4968cbb2b4699a5ab528ad543430d0ca501a96e6c5d1bba7578fe647f5c0a101b12cebd17adc9a081389c467ba1febde0690fb5d0efb5e1bcff738fed271f263794a574bf8be0f808482522aaace42068582309a251494a110893492f94586f49634c9b6e47afb7efb31d7757f0fcc435d1724ef497e5642f964100414ae16e83bd80721b865b70668591671334eeb8656d45d0a5399601081850221f8b33e9eef51982ee097fd9a6e24145a5b5b89a99805dc09fcfb0304fcb23f5b724bbaa3bda329bd254de6e799da8e217acfd3d3d3f8caa7a00a35f09811abada90972410391dc20fd689ad4032926ce4fe0f9de0cf55e51d380813ab0ffc0d9ca4c456badf5e82ba3da6eb73ff02e573b94a1f4b66f6ed3c5cb455da954f4c09181eb4aa91e607d0db75e84e606f3738399c142f5ddaad65aeb6aa5aa875e18d25d5feed2668bd93068a22da1776cdfa1475f19d5d56a55ebff689d1dc9ce2712891f009faedff84d3e6059d6970e1f3a7ca2fbf1eebb63460c9aa34a95ae9438f7f773388e83ebba78be571399699ac4cd38c94412dbb649b5a788c56378d73c30c039eff0f48ea75f98383f71087867d936aceb88af65cf64dfad56abba3253d13a2a48c351bc5cd4a3b9519d3d93d56ffee54d9dfe4afa34f040bde696adc062d8f7db4f0d1e1d7cbef3f39dcdbe1b89ca6c31514a116b59125e200122129993eb53b852a0e49688b5c4e8fa6217fd03fd678f1f3bbe07f833f07e3d0158e12c00e87cb0f35b8347077f62b7dbb8d36ee47c5053b8cc09411811905989661194a94877a5c93c9f79bb7fa07f372179e0bdfadc8bb81fbb09b52edef8db1b3fddb57bd7f70b5305ac360ba596fa5d440808a2df2c14d720027f24cdc8cb23a5233f3ef243425eff30787dac4800606c7c6cff737b9ffb995b76696d6b8ddc0f6e9a019452743fd2cdd93f9e9ded3bd8775844722c18ce9a09003746b223dfddd7bbef98cc09c9b624406de712ca82a9427a4b9a89b727c25d7b771d75cbee49a07cbbe48d100090919323cff41deccb6240321191a8793fc2e6aecd94ca25f6eddef79be9a9e95f03ff22f28695e3566db85c2843ddfdec779e7dbd582ceac90b933a7b26ab5f1c7e514f5e98d4972e5dd2e9afa64f031d3470d3baa5133612a669da43bf1aba5699a9e862b1a88b978a5a6bad4f9d38751dd80aac6f24cf226ea3afa016fe9c5f1091b2effbd191dc128950e6250466a8ebf546e2b6a5fa702843dd013441e40300cc836a562cfeff91129050c0881c102008034c319140569b6a6d049411dd7c089748d4cce8ff416011cc177f898cac9dc4da2a00911dd79341adf0d4f2b1ea2e58006daa3f1316c8ac5a80b0b60adc0824783f980b6a4f077301848d7d13fecf04442418fbc3d86fe3667c9319372302d301b9f1dc3b80f7911300c8bf96ff11219fb237d95b95a19a1dc7f967feb57c0628ae36d78a1792db845286ba4f904f105201ae00b3347200b17421f92f3f70ea5c6cfd0f910000000049454e44ae426082</data>
+</image>
+</xupdate:append-first>
+<xupdate:insert-after select="/UI[UI,1]/widget[QWidget,masterarticulos]/vbox[vbox,1]/widget[QFrame,barraBotones]/hbox[hbox,1]/spacer[spacer4]" >
+<widget class="QToolButton" >
+<property name="name" >
+<cstring>tbnFiltroFamilia</cstring>
+</property>
+<property name="sizePolicy" >
+<sizepolicy>
+<hsizetype>1</hsizetype>
+<vsizetype>1</vsizetype>
+<horstretch>0</horstretch>
+<verstretch>0</verstretch>
+</sizepolicy>
+</property>
+<property name="minimumSize" >
+<size>
+<width>32</width>
+<height>32</height>
+</size>
+</property>
+<property name="focusPolicy" >
+<enum>NoFocus</enum>
+</property>
+<property name="text" >
+<string/>
+</property>
+<property name="accel" >
+<string>C</string>
+</property>
+<property name="toggleButton" >
+<bool>true</bool>
+</property>
+<property name="iconSet" >
+<iconset>produccionimage5</iconset>
+</property>
+<property name="toolTip" stdset="0" >
+<string>Filtro por familia</string>
+</property>
+<property name="whatsThis" stdset="0" >
+<string>Permite filtrar los artículos por familia</string>
+</property>
+</widget>
+</xupdate:insert-after>
+<xupdate:insert-after select="/UI[UI,1]/widget[QWidget,masterarticulos]/vbox[vbox,1]/widget[QFrame,barraBotones]/hbox[hbox,1]/widget[QToolButton,tbnFiltroFamilia]" >
+<widget class="QLabel" >
+<property name="name" >
+<cstring>lblFiltroActual</cstring>
+</property>
+<property name="minimumSize" >
+<size>
+<width>200</width>
+<height>0</height>
+</size>
+</property>
+<property name="text" >
+<string/>
+</property>
+</widget>
+</xupdate:insert-after>
+</xupdate:modifications>

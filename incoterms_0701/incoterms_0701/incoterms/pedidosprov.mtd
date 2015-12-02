@@ -1,0 +1,18 @@
+<xupdate:modifications>
+<xupdate:insert-after select="/TMD[TMD,1]/field[irpf]" >
+<field>
+<name>incoterm</name>
+<alias>QT_TRANSLATE_NOOP(&quot;MetaData&quot;,&quot;Incoterm&quot;)</alias>
+<null>true</null>
+<pk>false</pk>
+<type>string</type>
+<length>3</length>
+<relation>
+<table>incoterms</table>
+<field>incoterm</field>
+<card>M1</card>
+</relation>
+<field/>
+</field>
+</xupdate:insert-after>
+</xupdate:modifications>

@@ -1,0 +1,15 @@
+<flpatch:modifications name="informes_odt" >
+    <flpatch:patchScript path="facturacion/informes/scripts/" name="flfactinfo.qs" />
+    <flpatch:replaceFile path="facturacion/informes/queries/" name="i_facturascli.qry" />
+    <flpatch:patchXml path="facturacion/informes/forms/" name="flfactinfo.ui" />
+    <flpatch:patchXml path="facturacion/informes/" name="flfactinfo.xml" />
+    <flpatch:addFile path="facturacion/informes/scripts/" name="i_opcionesodt.qs" />
+    <flpatch:addFile path="facturacion/informes/forms/" name="i_opcionesodt.ui" />
+    <flpatch:addFile path="facturacion/informes/tables/" name="i_opcionesodt.mtd" />
+    <flpatch:addFile path="facturacion/informes/scripts/" name="i_plantillasodt.qs" />
+    <flpatch:addFile path="facturacion/informes/tables/" name="i_plantillasodt.mtd" />
+    <flpatch:addFile path="facturacion/informes/forms/" name="i_plantillasodt.ui" />
+    <flpatch:patchScript path="contabilidad/informes/scripts/" name="flcontinfo.qs" />
+    <flpatch:addFile path="facturacion/informes/scripts/" name="i_masterplantillasodt.qs" />
+    <flpatch:addFile path="facturacion/informes/reports/" name="i_facturascli.aor.kut" />
+</flpatch:modifications>

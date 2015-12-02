@@ -1,0 +1,34 @@
+<xupdate:modifications>
+<xupdate:insert-after select="/TMD[TMD,1]/field[regularizacion]" >
+<field>
+<name>idlineatto</name>
+<!-- Identificador de la línea de transferencia entre tiendas (origen)--><alias>QT_TRANSLATE_NOOP(&quot;MetaData&quot;,&quot;Id. línea de transferencia entre tiendas (origen)&quot;)</alias>
+<null>true</null>
+<pk>false</pk>
+<type>uint</type>
+<visiblegrid>false</visiblegrid>
+<relation>
+<field>idlinea</field>
+<table>tpv_lineasmultitransstock</table>
+<card>M1</card>
+<checkIn>false</checkIn>
+</relation>
+</field>
+</xupdate:insert-after>
+<xupdate:insert-after select="/TMD[TMD,1]/field[idlineatto]" >
+<field>
+<name>idlineattd</name>
+<!-- Identificador de la línea de transferencia entre tiendas (destino)--><alias>QT_TRANSLATE_NOOP(&quot;MetaData&quot;,&quot;Id. línea de transferencia entre tiendas (destino)&quot;)</alias>
+<null>true</null>
+<pk>false</pk>
+<type>uint</type>
+<visiblegrid>false</visiblegrid>
+<relation>
+<field>idlinea</field>
+<table>tpv_lineasmultitransstock</table>
+<card>M1</card>
+<checkIn>false</checkIn>
+</relation>
+</field>
+</xupdate:insert-after>
+</xupdate:modifications>

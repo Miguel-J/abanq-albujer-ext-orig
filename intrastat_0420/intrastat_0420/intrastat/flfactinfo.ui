@@ -1,0 +1,179 @@
+<xupdate:modifications>
+<xupdate:insert-after select="/UI[UI,1]/actions[actions,1]/action[tesoreraRecibosAction]" >
+<action>
+<property name="name" >
+<cstring>intrastat</cstring>
+</property>
+<property name="text" >
+<string>&amp;Intrastat</string>
+</property>
+<property name="menuText" >
+<string>&amp;Intrastat</string>
+</property>
+</action>
+</xupdate:insert-after>
+<xupdate:insert-after select="/UI[UI,1]/actions[actions,1]/action[intrastat]" >
+<action>
+<property name="name" >
+<cstring>partidasintrastat</cstring>
+</property>
+<property name="text" >
+<string>Partidas</string>
+</property>
+<property name="menuText" >
+<string>&amp;Partidas</string>
+</property>
+</action>
+</xupdate:insert-after>
+<xupdate:insert-after select="/UI[UI,1]/actions[actions,1]/action[partidasintrastat]" >
+<action>
+<property name="name" >
+<cstring>condicionesentrega</cstring>
+</property>
+<property name="text" >
+<string>Condiciones de Entrega</string>
+</property>
+<property name="menuText" >
+<string>&amp;Condiciones de Entrega</string>
+</property>
+</action>
+</xupdate:insert-after>
+<xupdate:insert-after select="/UI[UI,1]/actions[actions,1]/action[condicionesentrega]" >
+<action>
+<property name="name" >
+<cstring>naturalezatransaccion</cstring>
+</property>
+<property name="text" >
+<string>Naturaleza de la transacción</string>
+</property>
+<property name="menuText" >
+<string>&amp;Naturaleza de la transacción</string>
+</property>
+</action>
+</xupdate:insert-after>
+<xupdate:insert-after select="/UI[UI,1]/actions[actions,1]/action[naturalezatransaccion]" >
+<action>
+<property name="name" >
+<cstring>modotransporte</cstring>
+</property>
+<property name="text" >
+<string>Modo transporte</string>
+</property>
+</action>
+</xupdate:insert-after>
+<xupdate:insert-after select="/UI[UI,1]/actions[actions,1]/action[modotransporte]" >
+<action>
+<property name="name" >
+<cstring>puertosaeropuertos</cstring>
+</property>
+<property name="text" >
+<string>Puertos/Aeropuertos</string>
+</property>
+<property name="menuText" >
+<string>&amp;Puertos/Aeropuertos</string>
+</property>
+</action>
+</xupdate:insert-after>
+<xupdate:insert-after select="/UI[UI,1]/actions[actions,1]/action[puertosaeropuertos]" >
+<action>
+<property name="name" >
+<cstring>regimenesestadisticos</cstring>
+</property>
+<property name="text" >
+<string>Regímenes estadísticos</string>
+</property>
+<property name="menuText" >
+<string>&amp;Regímenes estadísticos</string>
+</property>
+</action>
+</xupdate:insert-after>
+<xupdate:insert-after select="/UI[UI,1]/actions[actions,1]/action[regimenesestadisticos]" >
+<action>
+<property name="name" >
+<cstring>codigomercancias</cstring>
+</property>
+<property name="text" >
+<string>Códigos mercancías</string>
+</property>
+<property name="menuText" >
+<string>Códigos mercancías</string>
+</property>
+</action>
+</xupdate:insert-after>
+<xupdate:insert-after select="/UI[UI,1]/connections[connections,1]/connection[i_reciboscli,activated(),FLWidgetApplication,openDefaultForm()]" >
+<connection>
+<sender>intrastat</sender>
+<signal>activated()</signal>
+<receiver>FLWidgetApplication</receiver>
+<slot>openDefaultForm()</slot>
+</connection>
+</xupdate:insert-after>
+<xupdate:insert-after select="/UI[UI,1]/connections[connections,1]/connection[intrastat,activated(),FLWidgetApplication,openDefaultForm()]" >
+<connection>
+<sender>partidasintrastat</sender>
+<signal>activated()</signal>
+<receiver>FLWidgetApplication</receiver>
+<slot>openDefaultForm()</slot>
+</connection>
+</xupdate:insert-after>
+<xupdate:insert-after select="/UI[UI,1]/connections[connections,1]/connection[partidasintrastat,activated(),FLWidgetApplication,openDefaultForm()]" >
+<connection>
+<sender>condicionesentrega</sender>
+<signal>activated()</signal>
+<receiver>FLWidgetApplication</receiver>
+<slot>openDefaultForm()</slot>
+</connection>
+</xupdate:insert-after>
+<xupdate:insert-after select="/UI[UI,1]/connections[connections,1]/connection[condicionesentrega,activated(),FLWidgetApplication,openDefaultForm()]" >
+<connection>
+<sender>naturalezatransaccion</sender>
+<signal>activated()</signal>
+<receiver>FLWidgetApplication</receiver>
+<slot>openDefaultForm()</slot>
+</connection>
+</xupdate:insert-after>
+<xupdate:insert-after select="/UI[UI,1]/connections[connections,1]/connection[naturalezatransaccion,activated(),FLWidgetApplication,openDefaultForm()]" >
+<connection>
+<sender>modotransporte</sender>
+<signal>activated()</signal>
+<receiver>FLWidgetApplication</receiver>
+<slot>openDefaultForm()</slot>
+</connection>
+</xupdate:insert-after>
+<xupdate:insert-after select="/UI[UI,1]/connections[connections,1]/connection[modotransporte,activated(),FLWidgetApplication,openDefaultForm()]" >
+<connection>
+<sender>puertosaeropuertos</sender>
+<signal>activated()</signal>
+<receiver>FLWidgetApplication</receiver>
+<slot>openDefaultForm()</slot>
+</connection>
+</xupdate:insert-after>
+<xupdate:insert-after select="/UI[UI,1]/connections[connections,1]/connection[puertosaeropuertos,activated(),FLWidgetApplication,openDefaultForm()]" >
+<connection>
+<sender>regimenesestadisticos</sender>
+<signal>activated()</signal>
+<receiver>FLWidgetApplication</receiver>
+<slot>openDefaultForm()</slot>
+</connection>
+</xupdate:insert-after>
+<xupdate:insert-after select="/UI[UI,1]/connections[connections,1]/connection[regimenesestadisticos,activated(),FLWidgetApplication,openDefaultForm()]" >
+<connection>
+<sender>codigomercancias</sender>
+<signal>activated()</signal>
+<receiver>FLWidgetApplication</receiver>
+<slot>openDefaultForm()</slot>
+</connection>
+</xupdate:insert-after>
+<xupdate:update select="/UI[UI,1]/menubar[menubar,1]/property[geometry]/rect[rect,1]/height[height,1]/text()[1]" >23</xupdate:update>
+<xupdate:insert-after select="/UI[UI,1]/menubar[menubar,1]/item[Almacn]" >
+<item name="Intrastat" text="&amp;Intrastat" >
+<action name="intrastat" />
+<action name="condicionesentrega" />
+<action name="naturalezatransaccion" />
+<action name="modotransporte" />
+<action name="puertosaeropuertos" />
+<action name="regimenesestadisticos" />
+<action name="codigomercancias" />
+</item>
+</xupdate:insert-after>
+</xupdate:modifications>

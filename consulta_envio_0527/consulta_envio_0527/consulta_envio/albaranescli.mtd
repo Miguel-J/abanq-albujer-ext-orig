@@ -1,0 +1,27 @@
+<xupdate:modifications>
+<xupdate:insert-after select="/TMD[TMD,1]/field[hora]" >
+<field>
+<name>numexpedicion</name>
+<!--Número de expedición--><alias>QT_TRANSLATE_NOOP(&quot;MetaData&quot;,&quot;Número de expedición&quot;)</alias>
+<null>true</null>
+<pk>false</pk>
+<type>string</type>
+<length>25</length>
+</field>
+</xupdate:insert-after>
+<xupdate:insert-after select="/TMD[TMD,1]/field[numexpedicion]" >
+<field>
+<name>codagencia</name>
+<alias>QT_TRANSLATE_NOOP(&quot;MetaData&quot;,&quot;A.Transporte&quot;)</alias>
+<null>true</null>
+<pk>false</pk>
+<type>string</type>
+<length>40</length>
+<relation>
+<table>agenciastrans</table>
+<field>codagencia</field>
+<card>M1</card>
+</relation>
+</field>
+</xupdate:insert-after>
+</xupdate:modifications>

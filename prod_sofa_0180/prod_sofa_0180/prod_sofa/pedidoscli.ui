@@ -1,0 +1,239 @@
+<xupdate:modifications>
+<xupdate:update select="/UI[UI,1]/widget[QWidget,formPedidosCli]/property[property,2]/rect[rect,1]/height[height,1]/text()[1]" >619</xupdate:update>
+<xupdate:update select="/UI[UI,1]/widget[QWidget,formPedidosCli]/property[property,2]/rect[rect,1]/width[width,1]/text()[1]" >927</xupdate:update>
+<xupdate:update select="/UI[UI,1]/widget[QWidget,formPedidosCli]/vbox[vbox,1]/widget[QGroupBox,groupBox14]/vbox[vbox,1]/widget[QFrame,barraBotones_2_2]/hbox[hbox,1]/spacer[spacer23]/property[property,4]/size[size,1]/width[width,1]/text()[1]" >260</xupdate:update>
+<xupdate:insert-after select="/UI[UI,1]/widget[QWidget,formPedidosCli]/vbox[vbox,1]/widget[QGroupBox,groupBox14]/vbox[vbox,1]/widget[QFrame,barraBotones_2_2]/hbox[hbox,1]/widget[QToolButton,toolButtonZoom]" >
+<spacer>
+<property name="name" >
+<cstring>spacerLinea</cstring>
+</property>
+<property name="orientation" >
+<enum>Horizontal</enum>
+</property>
+<property name="sizeType" >
+<enum>Preferred</enum>
+</property>
+<property name="sizeHint" >
+<size>
+<width>60</width>
+<height>20</height>
+</size>
+</property>
+</spacer>
+</xupdate:insert-after>
+<xupdate:append-first select="/UI[UI,1]/images[images,1]" >
+<image name="prod_sofaimage5" >
+<data format="PNG" length="1783" >89504e470d0a1a0a0000000d4948445200000020000000200806000000737a7af4000006be49444154789cc59741681dd71586bf71aeca99f254ee04b9bd1704d5800c7ec2013fe150f48821113505411736685107d345e8a6258b926ebac8a6a4b490886e9c5268124a4d93854159c5861a3b05377a29b5f5020e1e8303a362c11db0dab9d453e68227551723c99225db7229f4eeee7066ce39df3dff3f33d1fafa3affcfa51ebe10455124225f0b4d78469444a10988124213a28dfdba88fe4a10fb0d1afe26d4ff087ee5a9136f36beab0011193dfbf6d94fe68ecf8d872a7c2922910b0e2b362270800e94a18c8ab5387ee3fcf2df7327d7821f5c0babd925bf72e12f34a1799a42a2878f201a899ebdbc78f9d6cc8b3307e3d198baae89e3186a20a6ddab1857e494ab35af9f1fb05c74498cfe3781e5fcaf0beff8cf173f20f87fee87c0815d0494e04ab71e3731dc8558c570af4d4e4d5b4c05b69362c7e0ad33b3bc7c2427ac650744383677e6dddff47ef0c97573f487df079e7912815d058426a0d1910b0e3a5057358cb69d1303f78104caa604b1b8e0387da2c7dc614f7e3b23fb6289747c6ab27fe6addf75cf5cbe2863dde79faa005182c7633b1602c49df841e7f78191b6884427d080154be10b4ecf74e9a79ed207b29525a48197be3d7be2f44fafff5126e7e69f9600ae722050876d9d8f6c048db4d74504171c5adaf8b94903c141a3197e3164f899038d3ef5e38f7eaf0f9f3af3df1118dd18c0919d71f1684c08612b2e118b684faa35751340847c75892b7f1ae06e2d4b77feecaf657ce6c5fd12885cb53103f7b611d8b6ea7b1b0436489595c32696d01484d2c19d01dd4e60bab38c25c3fac54ef7d8dc2f51f2f5edcfd9ed034aa22d0215c449bc13ff3602f55a8dd5967c35c7ea947c2da73f61e88d17cc1e9e0002f6609f4040ab2e5786836fb96be63bc5eacab9271160078191bd09a063ca5062c60cbef1a426e5a51ebc72a2872490da94b229d11d4d5081540c109edddef8de33d0f8c8ca0681d14713888b65928f2f4088494d0a0aa6c6a710254c99298204a6c6a74848b0da5250204a0e00d1fe08c8a3090030bc82fbedeb143796a805d2f1945a6aacb1d4aa261d4ba99b1ad1d2925286d004802dfbdd934041f14005b23701003e5fa47f5228cf2f908826918429d312484d8a20586d294389ed583c7e93c0d6da9380c190fb1c14945509bea4be5bee88ab2ffd013a8efab8309d0cc9ae2ec241282941812f32c0e32a472209b9cfd168421376e4dc4b051414d1acccb6fad609ee173fc25e7c0f3a29747ba084786d08df4b8895c71c067eb5009f5e2009c09d0c1f1c4b275f63eac42bad5f882523db3f81a22aa8554d5995c8fc4fb8a2049ecfe0c8fba0de83a33918a0d1c49342fadd12c697e18565ca3467515218ebe33648bacaa1d1d03c18c03d0bd89c012d1a2a4848484c4afab38fb8794343029c1038aec197303907070d9cec422fc6152b2cde10ccc9d748d39454a76d72d1783c28f6a582d609372a07d0c77ac4f3ef70f33c7037404860bc0fc1c3641f1a4b9de52c5d02997985a49b926869cf5e690a5fb4041ecaf9281f205109a10a68a5a9ab9a44c598ae656a720eba73204023201a8240931337811403477a744ddbb9154bf0a125d078acb28f3f821d3ea0a0f03941202f6e125f5c80930694030f54393401f0b0e6e190607b05e99fdf255bcd11956ca9c97987561ad7b82712883cad13862aa0c5e27c4e7aeee7601cf821e58743eadb4358198012185ca1cc32ca61402640c2c770f502b9afdba495235109bef1c4123f5e869b04729f93ea94bc72d88b6fb3fce1fb84e70cf9b9801eeb9204477f3e507fb6885ff52c5dd5201a1f3c46027eb08088253f348195e4810ad839847bfa80c7332dd35b26b23c66f1f36fe29a40fa4297a203c9a703b8b500470bca5be0bba70947a6314ac85673e2e73c7575932eddade764641865a28c6cfd91056caa20f739461b5ce5487b2f53548edec6204deb943c06f781a6144f7e5b531eb3ccf67ab8cad34f5372ef98b89fe06b87c5e26ad7fa4b53443c4e869b2a3062a002ad34be72a41d4bdcc4d88ea5f40e73b88f1b9f255c84e1a13edd437d086045538692545bc248891db5b8c6a163bdf936dcf1a5bcb70a94a6a88a5605558156ed4cd4aa265fcb5bb35acbe1f029064cc0d119023500f95adefe37dc7524f7135ce9d08da6280b0c8640d89f0ab4e8ade4ad1a5a3331625a5d2bc159cdc4ab6f604d8aed2438dfeabeac4a923879d07953a03b2d01a3cc0e1fd8350300bad10c6f0fd18d2627c728d3de8c61c000a30c1e8f465300064d7627c360c89a0c8d266bdafd8a5f695555e558b178bc7a7c010dff5a38b7f06642f2cdb229d7514003894ada57edc64a78ea7d54521e7085bbceb621dcfd6f18459b53fad5ed81ffc3b50ed4ebebeb5f02fc07584977a2320250f00000000049454e44ae426082</data>
+</image>
+</xupdate:append-first>
+<xupdate:insert-after select="/UI[UI,1]/widget[QWidget,formPedidosCli]/vbox[vbox,1]/widget[QGroupBox,groupBox14]/vbox[vbox,1]/widget[QFrame,barraBotones_2_2]/hbox[hbox,1]/spacer[spacerLinea]" >
+<widget class="QPushButton" >
+<property name="name" >
+<cstring>pbnInsertarLineaAuto</cstring>
+</property>
+<property name="minimumSize" >
+<size>
+<width>32</width>
+<height>32</height>
+</size>
+</property>
+<property name="maximumSize" >
+<size>
+<width>32</width>
+<height>32</height>
+</size>
+</property>
+<property name="text" >
+<string/>
+</property>
+<property name="iconSet" >
+<iconset>prod_sofaimage5</iconset>
+</property>
+<property name="toolTip" stdset="0" >
+<string>Insertar Línea Automática</string>
+</property>
+<property name="whatsThis" stdset="0" >
+<string>Inserta una línea copiando los valores de la línea seleccionada</string>
+</property>
+</widget>
+</xupdate:insert-after>
+<xupdate:update select="/UI[UI,1]/widget[QWidget,formPedidosCli]/vbox[vbox,1]/widget[QTabWidget,tabWidget3]/widget[QWidget,cliente]/vbox[vbox,1]/widget[QGroupBox,groupBox30]/vbox[vbox,1]/widget[QLayoutWidget,layoutDir2]/hbox[hbox,1]/widget[FLFieldDB,fdbIdProvincia]/property[property,6]/enum[enum,1]/text()[1]" >StrongFocus</xupdate:update>
+<xupdate:insert-after select="/UI[UI,1]/widget[QWidget,formPedidosCli]/vbox[vbox,1]/widget[QTabWidget,tabWidget3]/widget[QWidget,cliente]/vbox[vbox,1]/widget[QGroupBox,groupBox30_2]/hbox[hbox,1]/widget[FLFieldDB,fdbCifNif]" >
+<widget class="FLFieldDB" >
+<property name="name" >
+<cstring>fdbRefCliente</cstring>
+</property>
+<property name="sizePolicy" >
+<sizepolicy>
+<hsizetype>1</hsizetype>
+<vsizetype>0</vsizetype>
+<horstretch>0</horstretch>
+<verstretch>0</verstretch>
+</sizepolicy>
+</property>
+<property name="minimumSize" >
+<size>
+<width>180</width>
+<height>0</height>
+</size>
+</property>
+<property name="font" >
+<font/>
+</property>
+<property name="fieldName" >
+<string>refcliente</string>
+</property>
+</widget>
+</xupdate:insert-after>
+<xupdate:delete select="/UI[UI,1]/includehints[includehints,1]/includehint[FLFieldDB.h]" />
+<xupdate:delete select="/UI[UI,1]/includehints[includehints,1]/includehint[FLFieldDB.h]" />
+<xupdate:delete select="/UI[UI,1]/includehints[includehints,1]/includehint[FLFieldDB.h]" />
+<xupdate:delete select="/UI[UI,1]/includehints[includehints,1]/includehint[FLFieldDB.h]" />
+<xupdate:delete select="/UI[UI,1]/includehints[includehints,1]/includehint[FLFieldDB.h]" />
+<xupdate:delete select="/UI[UI,1]/includehints[includehints,1]/includehint[FLFieldDB.h]" />
+<xupdate:delete select="/UI[UI,1]/includehints[includehints,1]/includehint[FLFieldDB.h]" />
+<xupdate:delete select="/UI[UI,1]/includehints[includehints,1]/includehint[FLFieldDB.h]" />
+<xupdate:delete select="/UI[UI,1]/includehints[includehints,1]/includehint[FLFieldDB.h]" />
+<xupdate:delete select="/UI[UI,1]/includehints[includehints,1]/includehint[FLFieldDB.h]" />
+<xupdate:delete select="/UI[UI,1]/includehints[includehints,1]/includehint[FLFieldDB.h]" />
+<xupdate:delete select="/UI[UI,1]/includehints[includehints,1]/includehint[FLFieldDB.h]" />
+<xupdate:delete select="/UI[UI,1]/includehints[includehints,1]/includehint[FLFieldDB.h]" />
+<xupdate:delete select="/UI[UI,1]/includehints[includehints,1]/includehint[FLFieldDB.h]" />
+<xupdate:delete select="/UI[UI,1]/includehints[includehints,1]/includehint[FLFieldDB.h]" />
+<xupdate:delete select="/UI[UI,1]/includehints[includehints,1]/includehint[FLFieldDB.h]" />
+<xupdate:delete select="/UI[UI,1]/includehints[includehints,1]/includehint[FLFieldDB.h]" />
+<xupdate:delete select="/UI[UI,1]/includehints[includehints,1]/includehint[FLFieldDB.h]" />
+<xupdate:delete select="/UI[UI,1]/includehints[includehints,1]/includehint[FLFieldDB.h]" />
+<xupdate:delete select="/UI[UI,1]/includehints[includehints,1]/includehint[FLFieldDB.h]" />
+<xupdate:delete select="/UI[UI,1]/includehints[includehints,1]/includehint[FLFieldDB.h]" />
+<xupdate:delete select="/UI[UI,1]/includehints[includehints,1]/includehint[FLFieldDB.h]" />
+<xupdate:delete select="/UI[UI,1]/includehints[includehints,1]/includehint[FLFieldDB.h]" />
+<xupdate:delete select="/UI[UI,1]/includehints[includehints,1]/includehint[FLFieldDB.h]" />
+<xupdate:delete select="/UI[UI,1]/includehints[includehints,1]/includehint[FLFieldDB.h]" />
+<xupdate:delete select="/UI[UI,1]/includehints[includehints,1]/includehint[FLFieldDB.h]" />
+<xupdate:delete select="/UI[UI,1]/includehints[includehints,1]/includehint[FLFieldDB.h]" />
+<xupdate:delete select="/UI[UI,1]/includehints[includehints,1]/includehint[FLFieldDB.h]" />
+<xupdate:delete select="/UI[UI,1]/includehints[includehints,1]/includehint[FLFieldDB.h]" />
+<xupdate:delete select="/UI[UI,1]/includehints[includehints,1]/includehint[FLFieldDB.h]" />
+<xupdate:delete select="/UI[UI,1]/includehints[includehints,1]/includehint[FLFieldDB.h]" />
+<xupdate:delete select="/UI[UI,1]/includehints[includehints,1]/includehint[FLFieldDB.h]" />
+<xupdate:delete select="/UI[UI,1]/includehints[includehints,1]/includehint[FLFieldDB.h]" />
+<xupdate:delete select="/UI[UI,1]/includehints[includehints,1]/includehint[FLFieldDB.h]" />
+<xupdate:delete select="/UI[UI,1]/includehints[includehints,1]/includehint[FLFieldDB.h]" />
+<xupdate:delete select="/UI[UI,1]/includehints[includehints,1]/includehint[FLTableDB.h]" />
+<xupdate:delete select="/UI[UI,1]/includehints[includehints,1]/includehint[FLTableDB.h]" />
+<xupdate:append-first select="/UI[UI,1]/includehints[includehints,1]" >
+<includehint>flfielddb.h</includehint>
+</xupdate:append-first>
+<xupdate:insert-after select="/UI[UI,1]/includehints[includehints,1]/includehint[flfielddb.h]" >
+<includehint>flfielddb.h</includehint>
+</xupdate:insert-after>
+<xupdate:insert-after select="/UI[UI,1]/includehints[includehints,1]/includehint[flfielddb.h]" >
+<includehint>flfielddb.h</includehint>
+</xupdate:insert-after>
+<xupdate:insert-after select="/UI[UI,1]/includehints[includehints,1]/includehint[flfielddb.h]" >
+<includehint>flfielddb.h</includehint>
+</xupdate:insert-after>
+<xupdate:insert-after select="/UI[UI,1]/includehints[includehints,1]/includehint[flfielddb.h]" >
+<includehint>flfielddb.h</includehint>
+</xupdate:insert-after>
+<xupdate:insert-after select="/UI[UI,1]/includehints[includehints,1]/includehint[flfielddb.h]" >
+<includehint>flfielddb.h</includehint>
+</xupdate:insert-after>
+<xupdate:insert-after select="/UI[UI,1]/includehints[includehints,1]/includehint[flfielddb.h]" >
+<includehint>flfielddb.h</includehint>
+</xupdate:insert-after>
+<xupdate:insert-after select="/UI[UI,1]/includehints[includehints,1]/includehint[flfielddb.h]" >
+<includehint>flfielddb.h</includehint>
+</xupdate:insert-after>
+<xupdate:insert-after select="/UI[UI,1]/includehints[includehints,1]/includehint[flfielddb.h]" >
+<includehint>flfielddb.h</includehint>
+</xupdate:insert-after>
+<xupdate:insert-after select="/UI[UI,1]/includehints[includehints,1]/includehint[flfielddb.h]" >
+<includehint>flfielddb.h</includehint>
+</xupdate:insert-after>
+<xupdate:insert-after select="/UI[UI,1]/includehints[includehints,1]/includehint[flfielddb.h]" >
+<includehint>flfielddb.h</includehint>
+</xupdate:insert-after>
+<xupdate:insert-after select="/UI[UI,1]/includehints[includehints,1]/includehint[flfielddb.h]" >
+<includehint>flfielddb.h</includehint>
+</xupdate:insert-after>
+<xupdate:insert-after select="/UI[UI,1]/includehints[includehints,1]/includehint[flfielddb.h]" >
+<includehint>flfielddb.h</includehint>
+</xupdate:insert-after>
+<xupdate:insert-after select="/UI[UI,1]/includehints[includehints,1]/includehint[flfielddb.h]" >
+<includehint>flfielddb.h</includehint>
+</xupdate:insert-after>
+<xupdate:insert-after select="/UI[UI,1]/includehints[includehints,1]/includehint[flfielddb.h]" >
+<includehint>flfielddb.h</includehint>
+</xupdate:insert-after>
+<xupdate:insert-after select="/UI[UI,1]/includehints[includehints,1]/includehint[flfielddb.h]" >
+<includehint>flfielddb.h</includehint>
+</xupdate:insert-after>
+<xupdate:insert-after select="/UI[UI,1]/includehints[includehints,1]/includehint[flfielddb.h]" >
+<includehint>flfielddb.h</includehint>
+</xupdate:insert-after>
+<xupdate:insert-after select="/UI[UI,1]/includehints[includehints,1]/includehint[flfielddb.h]" >
+<includehint>flfielddb.h</includehint>
+</xupdate:insert-after>
+<xupdate:insert-after select="/UI[UI,1]/includehints[includehints,1]/includehint[flfielddb.h]" >
+<includehint>flfielddb.h</includehint>
+</xupdate:insert-after>
+<xupdate:insert-after select="/UI[UI,1]/includehints[includehints,1]/includehint[flfielddb.h]" >
+<includehint>flfielddb.h</includehint>
+</xupdate:insert-after>
+<xupdate:insert-after select="/UI[UI,1]/includehints[includehints,1]/includehint[flfielddb.h]" >
+<includehint>flfielddb.h</includehint>
+</xupdate:insert-after>
+<xupdate:insert-after select="/UI[UI,1]/includehints[includehints,1]/includehint[flfielddb.h]" >
+<includehint>flfielddb.h</includehint>
+</xupdate:insert-after>
+<xupdate:insert-after select="/UI[UI,1]/includehints[includehints,1]/includehint[flfielddb.h]" >
+<includehint>flfielddb.h</includehint>
+</xupdate:insert-after>
+<xupdate:insert-after select="/UI[UI,1]/includehints[includehints,1]/includehint[flfielddb.h]" >
+<includehint>flfielddb.h</includehint>
+</xupdate:insert-after>
+<xupdate:insert-after select="/UI[UI,1]/includehints[includehints,1]/includehint[flfielddb.h]" >
+<includehint>flfielddb.h</includehint>
+</xupdate:insert-after>
+<xupdate:insert-after select="/UI[UI,1]/includehints[includehints,1]/includehint[flfielddb.h]" >
+<includehint>flfielddb.h</includehint>
+</xupdate:insert-after>
+<xupdate:insert-after select="/UI[UI,1]/includehints[includehints,1]/includehint[flfielddb.h]" >
+<includehint>flfielddb.h</includehint>
+</xupdate:insert-after>
+<xupdate:insert-after select="/UI[UI,1]/includehints[includehints,1]/includehint[flfielddb.h]" >
+<includehint>flfielddb.h</includehint>
+</xupdate:insert-after>
+<xupdate:insert-after select="/UI[UI,1]/includehints[includehints,1]/includehint[flfielddb.h]" >
+<includehint>flfielddb.h</includehint>
+</xupdate:insert-after>
+<xupdate:insert-after select="/UI[UI,1]/includehints[includehints,1]/includehint[flfielddb.h]" >
+<includehint>flfielddb.h</includehint>
+</xupdate:insert-after>
+<xupdate:insert-after select="/UI[UI,1]/includehints[includehints,1]/includehint[flfielddb.h]" >
+<includehint>flfielddb.h</includehint>
+</xupdate:insert-after>
+<xupdate:insert-after select="/UI[UI,1]/includehints[includehints,1]/includehint[flfielddb.h]" >
+<includehint>fltabledb.h</includehint>
+</xupdate:insert-after>
+<xupdate:insert-after select="/UI[UI,1]/includehints[includehints,1]/includehint[fltabledb.h]" >
+<includehint>flfielddb.h</includehint>
+</xupdate:insert-after>
+<xupdate:insert-after select="/UI[UI,1]/includehints[includehints,1]/includehint[flfielddb.h]" >
+<includehint>flfielddb.h</includehint>
+</xupdate:insert-after>
+<xupdate:insert-after select="/UI[UI,1]/includehints[includehints,1]/includehint[flfielddb.h]" >
+<includehint>flfielddb.h</includehint>
+</xupdate:insert-after>
+<xupdate:insert-after select="/UI[UI,1]/includehints[includehints,1]/includehint[flfielddb.h]" >
+<includehint>flfielddb.h</includehint>
+</xupdate:insert-after>
+<xupdate:insert-after select="/UI[UI,1]/includehints[includehints,1]/includehint[flfielddb.h]" >
+<includehint>flfielddb.h</includehint>
+</xupdate:insert-after>
+<xupdate:insert-after select="/UI[UI,1]/includehints[includehints,1]/includehint[flfielddb.h]" >
+<includehint>fltabledb.h</includehint>
+</xupdate:insert-after>
+</xupdate:modifications>

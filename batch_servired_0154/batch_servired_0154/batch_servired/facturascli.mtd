@@ -1,0 +1,66 @@
+<xupdate:modifications>
+<xupdate:insert-after select="/TMD[TMD,1]/field[idpagodevol]" >
+<field>
+<name>tipocc</name>
+<alias>QT_TRANSLATE_NOOP(&quot;MetaData&quot;,&quot;Tipo Tarjeta&quot;)</alias>
+<null>true</null>
+<pk>false</pk>
+<type>string</type>
+<length>100</length>
+</field>
+</xupdate:insert-after>
+<xupdate:insert-after select="/TMD[TMD,1]/field[tipocc]" >
+<field>
+<name>numerocc</name>
+<alias>QT_TRANSLATE_NOOP(&quot;MetaData&quot;,&quot;Número Tarjeta&quot;)</alias>
+<null>true</null>
+<pk>false</pk>
+<type>string</type>
+<length>20</length>
+<regexp>^[0-9]{16,16}$</regexp>
+</field>
+</xupdate:insert-after>
+<xupdate:insert-after select="/TMD[TMD,1]/field[numerocc]" >
+<field>
+<name>cvvcc</name>
+<alias>QT_TRANSLATE_NOOP(&quot;MetaData&quot;,&quot;CVV Tarjeta&quot;)</alias>
+<null>true</null>
+<pk>false</pk>
+<type>string</type>
+<length>5</length>
+<regexp>^[0-9]{3,3}$</regexp>
+</field>
+</xupdate:insert-after>
+<xupdate:insert-after select="/TMD[TMD,1]/field[cvvcc]" >
+<field>
+<name>titularcc</name>
+<alias>QT_TRANSLATE_NOOP(&quot;MetaData&quot;,&quot;Titular Tarjeta&quot;)</alias>
+<null>true</null>
+<pk>false</pk>
+<type>string</type>
+<length>150</length>
+</field>
+</xupdate:insert-after>
+<xupdate:insert-after select="/TMD[TMD,1]/field[titularcc]" >
+<field>
+<name>mescc</name>
+<alias>QT_TRANSLATE_NOOP(&quot;MetaData&quot;,&quot;Mes caducidad&quot;)</alias>
+<null>true</null>
+<pk>false</pk>
+<type>string</type>
+<length>2</length>
+<regexp>^[0-9]{2,2}$</regexp>
+</field>
+</xupdate:insert-after>
+<xupdate:insert-after select="/TMD[TMD,1]/field[mescc]" >
+<field>
+<name>anocc</name>
+<alias>QT_TRANSLATE_NOOP(&quot;MetaData&quot;,&quot;Año caducidad&quot;)</alias>
+<null>true</null>
+<pk>false</pk>
+<type>string</type>
+<length>4</length>
+<regexp>^[0-9]{4,4}$</regexp>
+</field>
+</xupdate:insert-after>
+</xupdate:modifications>

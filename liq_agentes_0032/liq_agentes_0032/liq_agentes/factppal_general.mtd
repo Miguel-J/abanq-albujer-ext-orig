@@ -1,0 +1,24 @@
+<xupdate:modifications>
+<xupdate:insert-after select="/TMD[TMD,1]/field[id]" >
+<field>
+<name>docliquidacion</name>
+<alias>QT_TRANSLATE_NOOP(&quot;MetaData&quot;,&quot;Documentos base para liquidar&quot;)</alias>
+<null>false</null>
+<pk>false</pk>
+<type>string</type>
+<length>20</length>
+<optionslist>Facturas,Albaranes</optionslist>
+<default>Facturas</default>
+</field>
+</xupdate:insert-after>
+<xupdate:insert-after select="/TMD[TMD,1]/field[docliquidacion]" >
+<field>
+<name>liqpagadas</name>
+<alias>QT_TRANSLATE_NOOP(&quot;MetaData&quot;,&quot;Sólo liquidar facturas pagadas&quot;)</alias>
+<null>false</null>
+<pk>false</pk>
+<type>bool</type>
+<default>false</default>
+</field>
+</xupdate:insert-after>
+</xupdate:modifications>

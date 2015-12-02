@@ -1,0 +1,76 @@
+<?xml version = '1.0' encoding = 'UTF-8'?> <!DOCTYPE KugarTemplate SYSTEM "kugartemplate.dtd"> 
+<KugarTemplate BottomMargin="30" TopMargin="10" RightMargin="10" LeftMargin="20" PageOrientation="0" PageSize="0" >
+	
+<ReportHeader Height="35" PrintFrequency="1">
+</ReportHeader>
+
+<DetailHeader Height="95" Level="0">  
+	
+<Label WordWrap="0" Width="490" X="0" Y="1" BorderStyle="0" Height="20" HAlignment="0" BorderColor="0,0,0" BackgroundColor="220,220,220" VAlignment="1" ForegroundColor="0,0,0" Text=" Cuenta de Explotación" FontWeight="75" FontSize="12" BorderWidth="0" fontfamily="arial narrow" />
+<!--fecha -->
+<CalculatedField WordWrap="0" CalculationType="6" Width="100" X="490" Y="1" BorderStyle="0" NegValueColor="0,0,0" Height="20" HAlignment="2" DataType="0" FunctionName="flcontinfo.pub_cabeceraInforme" Field="fecha" DateFormat="11" Currency="32" BorderColor="0,0,0" BackgroundColor="220,220,220" VAlignment="1" ForegroundColor="20,20,20" CommaSeparator="44" Text="" FontWeight="50" FontSize="10" BorderWidth="0" Precision="2" FontFamily="Arial Narrow" />
+
+<!--empresa-->
+<Field WordWrap="0" Width="390" X="0" Y="24" BorderStyle="0" NegValueColor="0,0,0" Height="20" HAlignment="0" DataType="" Field="empresa.nombre" DateFormat="11" Currency="32" BorderColor="0,0,0" BackgroundColor="255,255,255" VAlignment="1" ForegroundColor="0,0,0" CommaSeparator="44" Text="" FontWeight="50" FontSize="10" BorderWidth="1" Precision="2" FontFamily="Arial Narrow" />
+
+<!--criterios -->
+<CalculatedField WordWrap="1" CalculationType="6" Width="590" X="0" Y="44" BorderStyle="0" NegValueColor="0,0,0" Height="20" HAlignment="0" DataType="0" FunctionName="flcontinfo.pub_cabeceraInformeCE" Field="cuentaexp" DateFormat="11" Currency="32" BorderColor="0,0,0" BackgroundColor="255,255,255" VAlignment="1" ForegroundColor="20,20,20" CommaSeparator="44" Text="" FontWeight="50" FontSize="10" BorderWidth="1" Precision="2" FontFamily="Arial Narrow" />
+
+<Line Width="3" Y1="68" Y2="68" X1="0" X2="590" Style="1" Color="220,220,220" />
+
+<!-- encabezados -->
+<Label WordWrap="0" Width="29" X="0" Y="75" BorderStyle="0" Height="15" HAlignment="0" BorderColor="0,0,0" BackgroundColor="220,220,220" VAlignment="1" ForegroundColor="0,0,0" Text="" FontWeight="65" FontSize="10" BorderWidth="0" fontfamily="arial narrow" />
+<Label WordWrap="0" Width="199" X="30" Y="75" BorderStyle="0" Height="15" HAlignment="0" BorderColor="0,0,0" BackgroundColor="220,220,220" VAlignment="1" ForegroundColor="0,0,0" Text=" Concepto" FontWeight="65" FontSize="10" BorderWidth="0" fontfamily="arial narrow" />
+<CalculatedField Width="79" X="230" Y="75" WordWrap="0" CalculationType="6" BorderStyle="0" NegValueColor="0,0,0" Height="15" HAlignment="1" DataType="0" FunctionName="flcontinfo.pub_cabeceraCE" Field="act" DateFormat="11" Currency="32" BorderColor="0,0,0" BackgroundColor="220,220,220" FontItalic="0" VAlignment="1" ForegroundColor="0,0,0" CommaSeparator="44" Text="" FontWeight="65" FontSize="10" BorderWidth="1" Precision="2" FontFamily="Arial Narrow" />
+<Label WordWrap="0" Width="39" X="310" Y="75" BorderStyle="0" Height="15" HAlignment="1" BorderColor="0,0,0" BackgroundColor="220,220,220" VAlignment="1" ForegroundColor="0,0,0" Text="%" FontWeight="65" FontSize="10" BorderWidth="0" fontfamily="arial narrow" />
+
+</DetailHeader>
+
+<AddOnHeader Height="95" Level="0">  
+	
+	<Label WordWrap="0" Width="490" X="0" Y="1" BorderStyle="0" Height="20" HAlignment="0" BorderColor="0,0,0" BackgroundColor="220,220,220" VAlignment="1" ForegroundColor="0,0,0" Text=" Cuenta de Explotación" FontWeight="75" FontSize="12" BorderWidth="0" fontfamily="arial narrow" />
+	<!--fecha -->
+	<CalculatedField WordWrap="0" CalculationType="6" Width="100" X="490" Y="1" BorderStyle="0" NegValueColor="0,0,0" Height="20" HAlignment="2" DataType="0" FunctionName="flcontinfo.pub_cabeceraInforme" Field="fecha" DateFormat="11" Currency="32" BorderColor="0,0,0" BackgroundColor="220,220,220" VAlignment="1" ForegroundColor="20,20,20" CommaSeparator="44" Text="" FontWeight="50" FontSize="10" BorderWidth="0" Precision="2" FontFamily="Arial Narrow" />
+	
+	<!--empresa-->
+	<Field WordWrap="0" Width="390" X="0" Y="24" BorderStyle="0" NegValueColor="0,0,0" Height="20" HAlignment="0" DataType="" Field="empresa.nombre" DateFormat="11" Currency="32" BorderColor="0,0,0" BackgroundColor="255,255,255" VAlignment="1" ForegroundColor="0,0,0" CommaSeparator="44" Text="" FontWeight="50" FontSize="10" BorderWidth="1" Precision="2" FontFamily="Arial Narrow" />
+	
+	<!--criterios -->
+	<CalculatedField WordWrap="1" CalculationType="6" Width="590" X="0" Y="44" BorderStyle="0" NegValueColor="0,0,0" Height="20" HAlignment="0" DataType="0" FunctionName="flcontinfo.pub_cabeceraInformeCE" Field="cuentaexp" DateFormat="11" Currency="32" BorderColor="0,0,0" BackgroundColor="255,255,255" VAlignment="1" ForegroundColor="20,20,20" CommaSeparator="44" Text="" FontWeight="50" FontSize="10" BorderWidth="1" Precision="2" FontFamily="Arial Narrow" />
+	
+	<Line Width="3" Y1="68" Y2="68" X1="0" X2="590" Style="1" Color="220,220,220" />
+	
+	<!-- encabezados -->
+	<Label WordWrap="0" Width="29" X="0" Y="75" BorderStyle="0" Height="15" HAlignment="0" BorderColor="0,0,0" BackgroundColor="220,220,220" VAlignment="1" ForegroundColor="0,0,0" Text="" FontWeight="65" FontSize="10" BorderWidth="0" fontfamily="arial narrow" />
+	<Label WordWrap="0" Width="199" X="30" Y="75" BorderStyle="0" Height="15" HAlignment="0" BorderColor="0,0,0" BackgroundColor="220,220,220" VAlignment="1" ForegroundColor="0,0,0" Text=" Concepto" FontWeight="65" FontSize="10" BorderWidth="0" fontfamily="arial narrow" />
+	<CalculatedField Width="79" X="230" Y="75" WordWrap="0" CalculationType="6" BorderStyle="0" NegValueColor="0,0,0" Height="15" HAlignment="1" DataType="0" FunctionName="flcontinfo.pub_cabeceraCE" Field="act" DateFormat="11" Currency="32" BorderColor="0,0,0" BackgroundColor="220,220,220" FontItalic="0" VAlignment="1" ForegroundColor="0,0,0" CommaSeparator="44" Text="" FontWeight="65" FontSize="10" BorderWidth="1" Precision="2" FontFamily="Arial Narrow" />
+	<Label WordWrap="0" Width="39" X="310" Y="75" BorderStyle="0" Height="15" HAlignment="1" BorderColor="0,0,0" BackgroundColor="220,220,220" VAlignment="1" ForegroundColor="0,0,0" Text="%" FontWeight="65" FontSize="10" BorderWidth="0" fontfamily="arial narrow" />
+	
+</AddOnHeader>
+
+
+<Detail Level="0" Height="0"></Detail>
+
+<DetailHeader Level="1" Height="0">
+	<Field WordWrap="0" Width="279" X="0" Y="0" BorderStyle="0" NegValueColor="0,0,0" Height="15" HAlignment="0" DataType="0" Field="buf.desccuenta1" DateFormat="11" Currency="32" BorderColor="0,0,0" BackgroundColor="210,210,210" FontItalic="0" VAlignment="1" ForegroundColor="0,0,0" CommaSeparator="44" Text="" FontWeight="65" FontSize="10" BorderWidth="1" Precision="2" FontFamily="Arial" />
+</DetailHeader>
+
+<Detail Level="1" Height="13">  
+	<Field WordWrap="0" Width="30" X="0" Y="0" BorderStyle="0" NegValueColor="0,0,0" Height="13" HAlignment="0" DataType="0" Field="buf.codcuenta2" DateFormat="11" Currency="32" BorderColor="0,0,0" BackgroundColor="255,255,255" FontItalic="0" VAlignment="1" ForegroundColor="0,0,0" CommaSeparator="44" Text="" FontWeight="55" FontSize="10" BorderWidth="1" Precision="2" FontFamily="Arial Narrow" />
+	<Field WordWrap="0" Width="200" X="30" Y="0" BorderStyle="0" NegValueColor="0,0,0" Height="13" HAlignment="0" DataType="0" Field="buf.desccuenta2" DateFormat="11" Currency="32" BorderColor="0,0,0" BackgroundColor="255,255,255" FontItalic="0" VAlignment="1" ForegroundColor="0,0,0" CommaSeparator="44" Text="" FontWeight="55" FontSize="10" BorderWidth="1" Precision="2" FontFamily="Arial Narrow" />
+	<Field WordWrap="0" Width="80" X="230" Y="0" BorderStyle="0" NegValueColor="0,0,0" Height="13" HAlignment="2" DataType="2" Field="buf.sumaact" DateFormat="11" Currency="32" BorderColor="0,0,0" BackgroundColor="255,255,255" FontItalic="0" VAlignment="1" ForegroundColor="0,0,0" CommaSeparator="44" Text="" FontWeight="55" FontSize="10" BorderWidth="1" Precision="0" FontFamily="Arial Narrow" />
+	<Field WordWrap="0" Width="40" X="310" Y="0" BorderStyle="0" NegValueColor="0,0,0" Height="13" HAlignment="2" DataType="2" Field="buf.poract" DateFormat="11" Currency="32" BorderColor="0,0,0" BackgroundColor="255,255,255" FontItalic="0" VAlignment="1" ForegroundColor="0,0,0" CommaSeparator="44" Text="" FontWeight="55" FontSize="10" BorderWidth="1" Precision="2" FontFamily="Arial Narrow" />
+</Detail>
+
+<DetailFooter Level="1" Height="28">
+	<CalculatedField Width="230" X="0" Y="0" WordWrap="0" CalculationType="5" BorderStyle="0" NegValueColor="0,0,0" Height="13" HAlignment="0" DataType="0" Field="buf.desccuenta1" DateFormat="11" Currency="32" BorderColor="0,0,0" BackgroundColor="210,210,210" FontItalic="0" VAlignment="1" ForegroundColor="0,0,0" CommaSeparator="44" Text="" FontWeight="65" FontSize="10" BorderWidth="1" Precision="2" FontFamily="Arial" />	
+	<CalculatedField Width="80" X="230" Y="0" WordWrap="0" CalculationType="6" FunctionName="flcontinfo.pub_valorCE" BorderStyle="0" NegValueColor="0,0,0" Height="13" HAlignment="2" DataType="2" Field="suma" DateFormat="11" Currency="32" BorderColor="0,0,0" BackgroundColor="210,210,210" FontItalic="0" VAlignment="1" ForegroundColor="0,0,0" CommaSeparator="44" Text="" FontWeight="65" FontSize="10" BorderWidth="1" Precision="0" FontFamily="Arial Narrow" />
+	<CalculatedField Width="40" X="310" Y="0" WordWrap="0" CalculationType="6" FunctionName="flcontinfo.pub_valorCE" BorderStyle="0" NegValueColor="0,0,0" Height="13" HAlignment="2" DataType="2" Field="porsuma" DateFormat="11" Currency="32" BorderColor="0,0,0" BackgroundColor="210,210,210" FontItalic="0" VAlignment="1" ForegroundColor="0,0,0" CommaSeparator="44" Text="" FontWeight="65" FontSize="10" BorderWidth="1" Precision="2" FontFamily="Arial Narrow" />
+	
+	<CalculatedField Width="230" X="0" Y="15" WordWrap="0" CalculationType="6" FunctionName="flcontinfo.pub_valorCE" BorderStyle="0" NegValueColor="0,0,0" Height="13" HAlignment="0" DataType="0" Field="titulo" DateFormat="11" Currency="32" BorderColor="0,0,0" BackgroundColor="235,235,235" FontItalic="0" VAlignment="1" ForegroundColor="0,0,0" CommaSeparator="44" Text="" FontWeight="65" FontSize="10" BorderWidth="1" Precision="2" FontFamily="Arial Narrow" />
+	<CalculatedField Width="80" X="230" Y="15" WordWrap="0" BlankZero="1" CalculationType="6" FunctionName="flcontinfo.pub_valorCE" BorderStyle="0" NegValueColor="0,0,0" Height="13" HAlignment="2" DataType="2" Field="funcion" DateFormat="11" Currency="32" BorderColor="0,0,0" BackgroundColor="235,235,235" FontItalic="0" VAlignment="1" ForegroundColor="0,0,0" CommaSeparator="44" Text="" FontWeight="65" FontSize="10" BorderWidth="1" Precision="0" FontFamily="Arial Narrow" />
+	<CalculatedField Width="40" X="310" Y="15" WordWrap="0" BlankZero="1" CalculationType="6" FunctionName="flcontinfo.pub_valorCE" BorderStyle="0" NegValueColor="0,0,0" Height="13" HAlignment="2" DataType="2" Field="porfuncion" DateFormat="11" Currency="32" BorderColor="0,0,0" BackgroundColor="235,235,235" FontItalic="0" VAlignment="1" ForegroundColor="0,0,0" CommaSeparator="44" Text="" FontWeight="65" FontSize="10" BorderWidth="1" Precision="2" FontFamily="Arial Narrow" />
+
+</DetailFooter>
+
+</KugarTemplate>

@@ -1,0 +1,12 @@
+<xupdate:modifications>
+<xupdate:insert-after select="/ACTIONS[ACTIONS,1]/action[pr_i_tareas]" >
+<action>
+<name>pr_i_partestrabajo</name>
+<table>pr_i_partestrabajo</table>
+<form>master_print</form>
+<formrecord>pr_i_partestrabajo</formrecord>
+<scriptformrecord>pr_i_partestrabajo</scriptformrecord>
+<scriptform>pr_i_masterpartestrabajo</scriptform>
+</action>
+</xupdate:insert-after>
+</xupdate:modifications>

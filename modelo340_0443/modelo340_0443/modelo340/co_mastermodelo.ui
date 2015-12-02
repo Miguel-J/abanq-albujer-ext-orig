@@ -1,0 +1,8 @@
+<xupdate:modifications>
+<xupdate:delete select="/UI[UI,1]/widget[QWidget,co_mastermodelo]/vbox[vbox,1]/widget[QFrame,barraBotones]/hbox[hbox,1]/widget[QPushButton,toolButtonAeat]/property[accel]" />
+<xupdate:update select="/UI[UI,1]/widget[QWidget,co_mastermodelo]/vbox[vbox,1]/widget[QFrame,barraBotones]/hbox[hbox,1]/widget[QPushButton,toolButtonAeat]/property[toolTip]/string[string,1]/text()[1]" >Generar Fichero</xupdate:update>
+<xupdate:delete select="/UI[UI,1]/includehints[includehints,1]/includehint[FLTableDB.h]" />
+<xupdate:append-first select="/UI[UI,1]/includehints[includehints,1]" >
+<includehint>fltabledb.h</includehint>
+</xupdate:append-first>
+</xupdate:modifications>

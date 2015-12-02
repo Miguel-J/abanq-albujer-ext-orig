@@ -1,0 +1,29 @@
+<flpatch:modifications name="pedidos_auto" >
+    <flpatch:patchScript path="facturacion/almacen/scripts/" name="flfactalma.qs" />
+    <flpatch:patchXml path="facturacion/almacen/tables/" name="articulos.mtd" />
+    <flpatch:patchXml path="facturacion/almacen/tables/" name="articulosprov.mtd" />
+    <flpatch:patchXml path="facturacion/facturacion/" name="flfacturac.xml" />
+    <flpatch:patchXml path="facturacion/facturacion/forms/" name="flfacturac.ui" />
+    <flpatch:addFile path="facturacion/facturacion/forms/" name="lineaspedidosaut.ui" />
+    <flpatch:addFile path="facturacion/facturacion/forms/" name="masterpedidosaut.ui" />
+    <flpatch:addFile path="facturacion/facturacion/forms/" name="pedidosaut.ui" />
+    <flpatch:addFile path="facturacion/facturacion/forms/" name="seleccionarticulos.ui" />
+    <flpatch:addFile path="facturacion/facturacion/queries/" name="qry_articulos_composed.qry" />
+    <flpatch:patchScript path="facturacion/facturacion/scripts/" name="flfacturac.qs" />
+    <flpatch:addFile path="facturacion/facturacion/scripts/" name="flpedidosaut.qs" />
+    <flpatch:addFile path="facturacion/facturacion/scripts/" name="lineaspedidosaut.qs" />
+    <flpatch:addFile path="facturacion/facturacion/scripts/" name="masterpedidosaut.qs" />
+    <flpatch:addFile path="facturacion/facturacion/scripts/" name="pedidosaut.qs" />
+    <flpatch:addFile path="facturacion/facturacion/scripts/" name="seleccionarticulos.qs" />
+    <flpatch:addFile path="facturacion/facturacion/tables/" name="lineaspedidosaut.mtd" />
+    <flpatch:patchXml path="facturacion/facturacion/tables/" name="lineaspedidosprov.mtd" />
+    <flpatch:addFile path="facturacion/facturacion/tables/" name="pedidosaut.mtd" />
+    <flpatch:patchXml path="facturacion/facturacion/tables/" name="pedidosprov.mtd" />
+    <flpatch:addFile path="facturacion/facturacion/tables/" name="qry_articulos_composed.mtd" />
+    <flpatch:addFile path="facturacion/facturacion/tables/" name="seleccionarticulos.mtd" />
+    <flpatch:patchXml path="facturacion/principal/tables/" name="proveedores.mtd" />
+    <flpatch:patchScript path="facturacion/facturacion/scripts/" name="masterpedidosprov.qs" />
+    <flpatch:patchScript path="facturacion/facturacion/scripts/" name="masterpedidoscli.qs" />
+    <flpatch:patchScript path="facturacion/facturacion/scripts/" name="pedidosprov.qs" />
+    <flpatch:patchXml path="facturacion/facturacion/forms/" name="pedidosprov.ui" />
+</flpatch:modifications>

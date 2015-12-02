@@ -1,0 +1,178 @@
+<!DOCTYPE TMD>
+<TMD>
+	<name>dtoscompletosprov</name>
+	<!--Descuentos compeltos para proveedores-->
+	<alias>QT_TRANSLATE_NOOP("MetaData","Descuentos completos para proveedores")</alias>
+
+	<field>
+		<name>coddescuento</name>
+		<!--Identificador interno-->
+		<alias>QT_TRANSLATE_NOOP("MetaData","Id.")</alias>
+		<null>false</null>
+		<pk>true</pk>
+		<type>string</type>
+		<length>4</length>
+		<counter>true</counter>
+	</field>
+
+	<field>
+		<name>codproveedor</name>
+		<!--Código del proveedor-->
+		<alias>QT_TRANSLATE_NOOP("MetaData","C.Proveedor")</alias>
+		<null>true</null>
+		<pk>false</pk>
+		<type>string</type>
+		<length>6</length>
+
+		<relation>
+			<table>proveedores</table>
+			<field>codproveedor</field>
+			<card>M1</card>
+			<delC>true</delC>
+		</relation>
+	</field>
+	
+	<field>
+		<name>nombre</name>
+		<alias>QT_TRANSLATE_NOOP("MetaData","Proveedor")</alias>
+		<null>false</null>
+		<pk>false</pk>
+		<type>string</type>
+		<length>100</length>
+		<editable>false</editable>
+	</field>
+	
+	<field>
+        <name>codfamilia</name>
+        <alias>QT_TRANSLATE_NOOP("MetaData","C.Familia")</alias>
+        <null>true</null>
+        <pk>false</pk>
+		<type>string</type>
+        <length>4</length>
+        <relation>
+            <table>familias</table>
+            <field>codfamilia</field>
+            <card>M1</card>
+			<delC>true</delC>
+        </relation>
+    </field>
+	
+	<field>
+        <name>familia</name>
+        <alias>QT_TRANSLATE_NOOP("MetaData","Familia")</alias>
+        <null>false</null>
+        <pk>false</pk>
+        <type>string</type>
+        <length>100</length>
+		<editable>false</editable>
+    </field>
+	
+	<field>
+        <name>codsubfamilia</name>
+        <alias>QT_TRANSLATE_NOOP("MetaData","C.Subfamilia")</alias>
+        <null>true</null>
+        <pk>false</pk>
+		<type>string</type>
+        <length>10</length>
+        <relation>
+            <table>subfamilias</table>
+            <field>codsubfamilia</field>
+            <card>M1</card>
+			<delC>true</delC>
+        </relation>
+    </field>
+    
+	<field>
+		<name>subfamilia</name>
+		<alias>QT_TRANSLATE_NOOP("MetaData","Subfamilia")</alias>
+		<null>false</null>
+		<pk>false</pk>
+		<type>string</type>
+		<length>100</length>
+		<editable>false</editable>
+	</field>
+
+	<field>
+		<name>referencia</name>
+		<!--Referencia del artículo-->
+		<alias>QT_TRANSLATE_NOOP("MetaData","Referencia")</alias>
+		<null>true</null>
+		<pk>false</pk>
+		<type>string</type>
+		<length>18</length>
+		<relation>
+			<table>articulos</table>
+			<field>referencia</field>
+			<card>M1</card>
+			<delC>true</delC>
+		</relation>
+	</field>
+	
+	<field>
+        <name>articulo</name>
+		<!-- Descripción del artículo-->
+		<alias>QT_TRANSLATE_NOOP("MetaData","Artículo")</alias>
+        <null>false</null>
+        <pk>false</pk>
+        <type>string</type>
+        <length>100</length>
+		<editable>false</editable>
+    </field>
+	
+	<field>
+		<name>dtopor</name>
+		<alias>QT_TRANSLATE_NOOP("MetaData","%Descuento")</alias>
+		<null>false</null>
+		<pk>false</pk>
+		<type>double</type>
+		<partI>3</partI>
+		<partD>2</partD>
+		<default>0</default>
+	</field>
+
+	<field>
+		<name>dtolineal</name>
+		<alias>QT_TRANSLATE_NOOP("MetaData","Dto. Lineal")</alias>
+		<null>false</null>
+		<pk>false</pk>
+		<type>double</type>
+		<partI>6</partI>
+		<partD>2</partD>
+		<default>0</default>
+	</field>
+
+	<field>
+		<name>desde</name>
+		<alias>QT_TRANSLATE_NOOP("MetaData","Desde")</alias>
+		<null>true</null>
+		<pk>false</pk>
+		<type>date</type>
+	</field>
+
+	<field>
+		<name>hasta</name>
+		<alias>QT_TRANSLATE_NOOP("MetaData","Hasta")</alias>
+		<null>true</null>
+		<pk>false</pk>
+		<type>date</type>
+	</field>
+
+	<field>
+		<name>sumar</name>
+		<alias>QT_TRANSLATE_NOOP("MetaData","Sumar a otros descuentos")</alias>
+		<null>true</null>
+		<pk>false</pk>
+		<type>bool</type>
+		<default>true</default>
+	</field>
+	
+	<field>
+		<name>activo</name>
+		<alias>QT_TRANSLATE_NOOP("MetaData","Activo")</alias>
+		<null>true</null>
+		<pk>false</pk>
+		<type>bool</type>
+		<default>true</default>
+	</field>
+	
+</TMD>

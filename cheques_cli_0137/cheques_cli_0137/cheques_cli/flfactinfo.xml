@@ -1,0 +1,14 @@
+<xupdate:modifications>
+<xupdate:insert-after select="/ACTIONS[ACTIONS,1]/action[i_resreciboscli]" >
+<action>
+<name>i_chequescli</name>
+<alias>QT_TRANSLATE_NOOP(&quot;MetaData&quot;,&quot;Resumen de cheques de clientes&quot;)</alias>
+<description>QT_TRANSLATE_NOOP(&quot;MetaData&quot;,&quot;Cada línea del informe contiene los datos de un cheque. Al final del informe se añade la línea de totales&quot;)</description>
+<table>i_chequescli</table>
+<form>i_master</form>
+<formrecord>i_chequescli</formrecord>
+<scriptform>i_masterchequescli</scriptform>
+<scriptformrecord>i_chequescli</scriptformrecord>
+</action>
+</xupdate:insert-after>
+</xupdate:modifications>

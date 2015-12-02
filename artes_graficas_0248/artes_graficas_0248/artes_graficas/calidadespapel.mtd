@@ -1,0 +1,63 @@
+<!DOCTYPE TMD>
+<TMD>
+	<name>calidadespapel</name>
+	<!-- Calidades de papel-->
+	<alias>QT_TRANSLATE_NOOP("MetaData","Calidades de papel")</alias>
+
+	<field>
+		<name>codcalidad</name>
+		<!-- Codigo de calidad-->
+		<alias>QT_TRANSLATE_NOOP("MetaData","Calidad")</alias>
+		<null>false</null>
+		<pk>true</pk>
+		<type>string</type>
+		<length>25</length>
+
+		<relation>
+			<table>gamajescalidad</table>
+			<field>codcalidad</field>
+			<card>1M</card>
+		</relation>
+		
+		<relation>
+			<table>articulos</table>
+			<field>codcalidad</field>
+			<card>1M</card>
+		</relation>
+		
+		<relation>
+			<table>paramiptico</table>
+			<field>codcalidad</field>
+			<card>1M</card>
+		</relation>
+		
+		<relation>
+			<table>paramlibro</table>
+			<field>codcalidad</field>
+			<card>1M</card>
+		</relation>
+
+		<relation>
+			<table>paramlibro</table>
+			<field>codcalidadtapa</field>
+			<card>1M</card>
+		</relation>
+		
+		<relation>
+			<table>factalma_general</table>
+			<field>codcalidad</field>
+			<card>1M</card>
+		</relation>
+	</field>
+
+	<field>
+		<name>descripcion</name>
+		<!-- Descripción-->
+		<alias>QT_TRANSLATE_NOOP("MetaData","Descripción")</alias>
+		<null>true</null>
+		<pk>false</pk>
+		<type>string</type>
+		<length>100</length>
+	</field>
+	
+</TMD>

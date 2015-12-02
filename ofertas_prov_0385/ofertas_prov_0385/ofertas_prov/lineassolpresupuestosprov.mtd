@@ -1,0 +1,220 @@
+ <!DOCTYPE TMD>
+<TMD>
+	<name>lineassolpresupuestosprov</name>
+	<!--Líneas de solicitud de presupuesto a proveedor-->
+	<alias>QT_TRANSLATE_NOOP("MetaData","Líneas de solicitud de oferta a proveedor")</alias>
+
+	<field>
+		<name>idlinea</name>
+		<!--Identificado interno de la tabla-->
+		<alias>QT_TRANSLATE_NOOP("MetaData","Identificador")</alias>
+		<null>false</null>
+		<pk>true</pk>
+		<type>serial</type>
+		<visiblegrid>false</visiblegrid>
+	</field>
+
+	<field>
+		<name>codsolicitud</name>
+		<!--Solicitud de presupuesto a la que pertenece la línea-->
+		<alias>QT_TRANSLATE_NOOP("MetaData","Solicitud")</alias>
+		<null>false</null>
+		<pk>false</pk>
+		<type>string</type>
+		<length>8</length>
+		<visiblegrid>false</visiblegrid>
+
+		<relation>
+			<table>solpresupuestosprov</table>
+			<field>codsolicitud</field>
+			<card>M1</card>
+			<delC>true</delC>
+		</relation>
+	</field>
+
+	<field>
+		<name>referencia</name>
+		<!--Referencia del artículo-->
+		<alias>QT_TRANSLATE_NOOP("MetaData","Referencia")</alias>
+		<null>true</null>
+		<pk>false</pk>
+		<type>string</type>
+		<length>18</length>
+
+		<relation>
+			<table>articulos</table>
+			<field>referencia</field>
+			<card>M1</card>
+		</relation>
+	</field>
+
+	<field>
+		<name>descripcion</name>
+		<!--Descripción del artículo-->
+		<alias>QT_TRANSLATE_NOOP("MetaData","Descripción")</alias>
+		<null>true</null>
+		<pk>false</pk>
+		<type>string</type>
+		<length>100</length>
+	</field>
+
+	<field>
+		<name>canpresupuesto</name>
+		<alias>QT_TRANSLATE_NOOP("MetaData","Can.Presupuesto")</alias>
+		<null>true</null>
+		<pk>false</pk>
+		<type>double</type>
+		<partI>6</partI>
+		<partD>2</partD>
+	</field>
+	
+	<field>
+		<name>cansolicitada</name>
+		<alias>QT_TRANSLATE_NOOP("MetaData","Can.Solicitada")</alias>
+		<null>true</null>
+		<pk>false</pk>
+		<type>double</type>
+		<partI>6</partI>
+		<partD>2</partD>
+	</field>
+	
+	<field>
+		<name>pvpunitario</name>
+		<alias>QT_TRANSLATE_NOOP("MetaData","P.V.P.")</alias>
+		<null>true</null>
+		<pk>false</pk>
+		<type>double</type>
+		<partI>8</partI>
+		<partD>2</partD>
+	</field>
+	
+	<field>
+		<name>coste</name>
+		<alias>QT_TRANSLATE_NOOP("MetaData","Coste")</alias>
+		<null>true</null>
+		<pk>false</pk>
+		<type>double</type>
+		<partI>8</partI>
+		<partD>2</partD>
+	</field>
+	
+	<field>
+		<name>pordtocoste</name>
+		<alias>QT_TRANSLATE_NOOP("MetaData","Descuento")</alias>
+		<null>true</null>
+		<pk>false</pk>
+		<type>double</type>
+		<partI>3</partI>
+		<partD>2</partD>
+	</field>
+	
+	<field>
+		<name>margen</name>
+		<alias>QT_TRANSLATE_NOOP("MetaData","Margen")</alias>
+		<null>true</null>
+		<pk>false</pk>
+		<type>double</type>
+		<partI>6</partI>
+		<partD>2</partD>
+		<editable>false</editable>
+	</field>
+	
+	<field>
+		<name>beneficio</name>
+		<alias>QT_TRANSLATE_NOOP("MetaData","Beneficio")</alias>
+		<null>true</null>
+		<pk>false</pk>
+		<type>double</type>
+		<partI>8</partI>
+		<partD>2</partD>
+		<editable>false</editable>
+	</field>
+	
+	<field>
+		<name>codoferta</name>
+		<alias>QT_TRANSLATE_NOOP("MetaData","Oferta")</alias>
+		<null>true</null>
+		<pk>false</pk>
+		<type>string</type>
+		<length>12</length>
+		<editable>false</editable>
+	</field>
+	
+	<field>
+		<name>codproveedor</name>
+		<!--Código de proveedor-->
+		<alias>QT_TRANSLATE_NOOP("MetaData","Prov.")</alias>
+		<null>true</null>
+		<pk>false</pk>
+		<type>string</type>
+		<length>6</length>
+
+		<relation>
+			<table>proveedores</table>
+			<field>codproveedor</field>
+			<card>M1</card>
+		</relation>
+	</field>
+
+	<field>
+		<name>nombre</name>
+		<!--Nombre de proveedor -->
+		<alias>QT_TRANSLATE_NOOP("MetaData","Nombre")</alias>
+		<null>true</null>
+		<pk>false</pk>
+		<type>string</type>
+		<length>200</length>
+	</field>
+
+	<field>
+		<name>codproveedorant</name>
+		<!--Código de proveedor anterior-->
+		<alias>QT_TRANSLATE_NOOP("MetaData","C.Prov. Ant.")</alias>
+		<null>true</null>
+		<pk>false</pk>
+		<type>string</type>
+		<length>6</length>
+
+		<relation>
+			<table>proveedores</table>
+			<field>codproveedor</field>
+			<card>M1</card>
+		</relation>
+	</field>
+
+	<field>
+		<name>nombreant</name>
+		<!--Nombre de proveedor anterior-->
+		<alias>QT_TRANSLATE_NOOP("MetaData","Prov. Ant.")</alias>
+		<null>true</null>
+		<pk>false</pk>
+		<type>string</type>
+		<length>200</length>
+	</field>
+
+	<field>
+		<name>fecha</name>
+		<alias>QT_TRANSLATE_NOOP("MetaData","Fecha")</alias>
+		<null>false</null>
+		<pk>false</pk>
+		<type>date</type>
+	</field>
+
+	<field>
+		<name>proveedores</name>
+		<alias>QT_TRANSLATE_NOOP("MetaData","Proveedores")</alias>
+		<null>true</null>
+		<pk>false</pk>
+		<type>uint</type>
+	</field>
+	
+	<field>
+		<name>confirmado</name>
+		<alias>QT_TRANSLATE_NOOP("MetaData","Confirmado")</alias>
+		<null>true</null>
+		<pk>false</pk>
+		<type>bool</type>
+		<default>false</default>
+	</field>
+
+</TMD>

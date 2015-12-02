@@ -1,0 +1,39 @@
+<xupdate:modifications>
+<xupdate:update select="/UI[UI,1]/widget[QWidget,formLineasPedidosCli]/property[geometry]/rect[rect,1]/width[width,1]/text()[1]" >658</xupdate:update>
+<xupdate:update select="/UI[UI,1]/widget[QWidget,formLineasPedidosCli]/vbox[vbox,1]/widget[QLayoutWidget,layout65]/hbox[hbox,1]/widget[QGroupBox,groupBox9]/vbox[vbox,1]/widget[FLFieldDB,fdbCantidad]/property[minimumSize]/size[size,1]/height[height,1]/text()[1]" >26</xupdate:update>
+<xupdate:update select="/UI[UI,1]/widget[QWidget,formLineasPedidosCli]/vbox[vbox,1]/widget[QLayoutWidget,layout65]/hbox[hbox,1]/widget[QGroupBox,groupBox9]/vbox[vbox,1]/widget[FLFieldDB,fdbCantidad]/property[minimumSize]/size[size,1]/width[width,1]/text()[1]" >121</xupdate:update>
+<xupdate:update select="/UI[UI,1]/widget[QWidget,formLineasPedidosCli]/vbox[vbox,1]/widget[QLayoutWidget,layout65]/hbox[hbox,1]/widget[QGroupBox,groupBox9]/vbox[vbox,1]/widget[FLFieldDB,fdbCerrada]/property[minimumSize]/size[size,1]/height[height,1]/text()[1]" >26</xupdate:update>
+<xupdate:update select="/UI[UI,1]/widget[QWidget,formLineasPedidosCli]/vbox[vbox,1]/widget[QLayoutWidget,layout65]/hbox[hbox,1]/widget[QGroupBox,groupBox9]/vbox[vbox,1]/widget[FLFieldDB,fdbCerrada]/property[minimumSize]/size[size,1]/width[width,1]/text()[1]" >114</xupdate:update>
+<xupdate:update select="/UI[UI,1]/widget[QWidget,formLineasPedidosCli]/vbox[vbox,1]/widget[QLayoutWidget,layout65]/hbox[hbox,1]/widget[QGroupBox,groupBox9]/vbox[vbox,1]/spacer[spacer28]/property[sizeHint]/size[size,1]/height[height,1]/text()[1]" >16</xupdate:update>
+<xupdate:insert-after select="/UI[UI,1]/widget[QWidget,formLineasPedidosCli]/vbox[vbox,1]/widget[QLayoutWidget,layout65]/hbox[hbox,1]/widget[QGroupBox,groupBox9]/vbox[vbox,1]/widget[FLFieldDB,fdbCerrada]" >
+<widget class="FLFieldDB" >
+<property name="name" >
+<cstring>fdbCodAlmacen</cstring>
+</property>
+<property name="sizePolicy" >
+<sizepolicy>
+<hsizetype>1</hsizetype>
+<vsizetype>0</vsizetype>
+<horstretch>0</horstretch>
+<verstretch>0</verstretch>
+</sizepolicy>
+</property>
+<property name="minimumSize" >
+<size>
+<width>144</width>
+<height>26</height>
+</size>
+</property>
+<property name="font" >
+<font>
+<bold>0</bold>
+<italic>0</italic>
+</font>
+</property>
+<property name="fieldName" >
+<string>codalmacen</string>
+</property>
+</widget>
+</xupdate:insert-after>
+<xupdate:delete select="/UI[UI,1]/includehints[includehints,1]" />
+</xupdate:modifications>

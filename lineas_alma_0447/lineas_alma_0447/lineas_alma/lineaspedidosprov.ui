@@ -1,0 +1,34 @@
+<xupdate:modifications>
+<xupdate:update select="/UI[UI,1]/widget[QWidget,lineaspedidosprov]/property[geometry]/rect[rect,1]/width[width,1]/text()[1]" >680</xupdate:update>
+<xupdate:insert-after select="/UI[UI,1]/widget[QWidget,lineaspedidosprov]/vbox[vbox,1]/widget[QLayoutWidget,layout26]/hbox[hbox,1]/widget[QGroupBox,groupBox9]/vbox[vbox,1]/widget[FLFieldDB,fdbCerrada]" >
+<widget class="FLFieldDB" >
+<property name="name" >
+<cstring>fdbCodAlmacen</cstring>
+</property>
+<property name="sizePolicy" >
+<sizepolicy>
+<hsizetype>1</hsizetype>
+<vsizetype>0</vsizetype>
+<horstretch>0</horstretch>
+<verstretch>0</verstretch>
+</sizepolicy>
+</property>
+<property name="minimumSize" >
+<size>
+<width>144</width>
+<height>26</height>
+</size>
+</property>
+<property name="font" >
+<font>
+<bold>0</bold>
+<italic>0</italic>
+</font>
+</property>
+<property name="fieldName" >
+<string>codalmacen</string>
+</property>
+</widget>
+</xupdate:insert-after>
+<xupdate:delete select="/UI[UI,1]/includehints[includehints,1]" />
+</xupdate:modifications>

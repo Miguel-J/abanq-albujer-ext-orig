@@ -1,0 +1,33 @@
+<xupdate:modifications>
+<xupdate:insert-after select="/TMD[TMD,1]/field[idtpv_comanda]/relation[tpv_vales,idtpv_comanda]" >
+<relation>
+<table>tpv_movpuntos</table>
+<field>idtpv_comanda</field>
+<card>1M</card>
+</relation>
+</xupdate:insert-after>
+<xupdate:insert-after select="/TMD[TMD,1]/field[idtpv_comanda]/relation[tpv_movpuntos,idtpv_comanda]" >
+<relation>
+<table>tpv_movpuntosnosinc</table>
+<field>idtpv_comanda</field>
+<card>1M</card>
+</relation>
+</xupdate:insert-after>
+<xupdate:update select="/TMD[TMD,1]/field[tipopago]/optionslist[optionslist,1]/text()[1]" >QT_TRANSLATE_NOOP(&quot;MetaData&quot;,&quot;Efectivo&quot;);QT_TRANSLATE_NOOP(&quot;MetaData&quot;,&quot;Tarjeta&quot;);QT_TRANSLATE_NOOP(&quot;MetaData&quot;,&quot;Vale&quot;);QT_TRANSLATE_NOOP(&quot;MetaData&quot;,&quot;Puntos&quot;)</xupdate:update>
+<xupdate:insert-after select="/TMD[TMD,1]/field[anulada]" >
+<field>
+<name>codtarjetapuntos</name>
+<alias>QT_TRANSLATE_NOOP(&quot;MetaData&quot;,&quot;T.Puntos&quot;)</alias>
+<null>true</null>
+<pk>false</pk>
+<type>string</type>
+<length>15</length>
+<visiblegrid>false</visiblegrid>
+<relation>
+<table>tpv_tarjetaspuntos</table>
+<field>codtarjetapuntos</field>
+<card>M1</card>
+</relation>
+</field>
+</xupdate:insert-after>
+</xupdate:modifications>

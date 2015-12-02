@@ -1,0 +1,59 @@
+<!DOCTYPE UI><UI version="3.3" stdsetdef="1">
+<class>formArticulosTallas</class>
+<widget class="QWidget">
+    <property name="name">
+        <cstring>formArticulosTallas</cstring>
+    </property>
+    <property name="geometry">
+        <rect>
+            <x>0</x>
+            <y>0</y>
+            <width>197</width>
+            <height>71</height>
+        </rect>
+    </property>
+    <property name="font">
+        <font>
+            <family>Helvetica [Urw]</family>
+        </font>
+    </property>
+    <property name="caption">
+        <string>Articulos por Tallas</string>
+    </property>
+    <vbox>
+        <property name="name">
+            <cstring>unnamed</cstring>
+        </property>
+        <widget class="QGroupBox">
+            <property name="name">
+                <cstring>groupBox15</cstring>
+            </property>
+            <property name="title">
+                <string></string>
+            </property>
+            <hbox>
+                <property name="name">
+                    <cstring>unnamed</cstring>
+                </property>
+                <widget class="FLFieldDB">
+                    <property name="name">
+                        <cstring>fdbCodColor</cstring>
+                    </property>
+                    <property name="sizePolicy">
+                        <sizepolicy>
+                            <hsizetype>1</hsizetype>
+                            <vsizetype>0</vsizetype>
+                            <horstretch>0</horstretch>
+                            <verstretch>0</verstretch>
+                        </sizepolicy>
+                    </property>
+                    <property name="fieldName">
+                        <string>talla</string>
+                    </property>
+                </widget>
+            </hbox>
+        </widget>
+    </vbox>
+</widget>
+<layoutdefaults spacing="6" margin="11"/>
+</UI>

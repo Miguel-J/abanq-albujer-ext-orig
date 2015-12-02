@@ -1,0 +1,87 @@
+<xupdate:modifications>
+<xupdate:update select="/UI[UI,1]/widget[QWidget,formLineasPedidosCli]/property[geometry]/rect[rect,1]/height[height,1]/text()[1]" >400</xupdate:update>
+<xupdate:update select="/UI[UI,1]/widget[QWidget,formLineasPedidosCli]/property[geometry]/rect[rect,1]/width[width,1]/text()[1]" >1011</xupdate:update>
+<xupdate:update select="/UI[UI,1]/widget[QWidget,formLineasPedidosCli]/vbox[vbox,1]/widget[QGroupBox,groupBox10]/hbox[hbox,1]/widget[FLFieldDB,fdbIva]/property[minimumSize]/size[size,1]/height[height,1]/text()[1]" >22</xupdate:update>
+<xupdate:update select="/UI[UI,1]/widget[QWidget,formLineasPedidosCli]/vbox[vbox,1]/widget[QGroupBox,groupBox10]/hbox[hbox,1]/widget[FLFieldDB,fdbIva]/property[minimumSize]/size[size,1]/width[width,1]/text()[1]" >26</xupdate:update>
+<xupdate:insert-after select="/UI[UI,1]/widget[QWidget,formLineasPedidosCli]/vbox[vbox,1]/widget[QGroupBox,groupBox7]/hbox[hbox,1]/widget[FLFieldDB,fdbReferencia]" >
+<widget class="FLFieldDB" >
+<property name="name" >
+<cstring>fdbTipoComplejo</cstring>
+</property>
+<property name="sizePolicy" >
+<sizepolicy>
+<hsizetype>1</hsizetype>
+<vsizetype>0</vsizetype>
+<horstretch>0</horstretch>
+<verstretch>0</verstretch>
+</sizepolicy>
+</property>
+<property name="minimumSize" >
+<size>
+<width>26</width>
+<height>22</height>
+</size>
+</property>
+<property name="maximumSize" >
+<size>
+<width>150</width>
+<height>32767</height>
+</size>
+</property>
+<property name="font" >
+<font>
+<bold>0</bold>
+<italic>0</italic>
+</font>
+</property>
+<property name="fieldName" >
+<string>tipocomplejo</string>
+</property>
+</widget>
+</xupdate:insert-after>
+<xupdate:insert-after select="/UI[UI,1]/widget[QWidget,formLineasPedidosCli]/vbox[vbox,1]/widget[QGroupBox,groupBox7]/hbox[hbox,1]/widget[FLFieldDB,fdbTipoComplejo]" >
+<widget class="QPushButton" >
+<property name="name" >
+<cstring>tbnParamComplejo</cstring>
+</property>
+<property name="sizePolicy" >
+<sizepolicy>
+<hsizetype>1</hsizetype>
+<vsizetype>1</vsizetype>
+<horstretch>0</horstretch>
+<verstretch>0</verstretch>
+</sizepolicy>
+</property>
+<property name="minimumSize" >
+<size>
+<width>32</width>
+<height>32</height>
+</size>
+</property>
+<property name="maximumSize" >
+<size>
+<width>32</width>
+<height>32</height>
+</size>
+</property>
+<property name="focusPolicy" >
+<enum>NoFocus</enum>
+</property>
+<property name="text" >
+<string>...</string>
+</property>
+<property name="accel" >
+<string/>
+</property>
+<property name="toolTip" stdset="0" >
+<string>Establecer parámetros de artículo complejo</string>
+</property>
+<property name="whatsThis" stdset="0" >
+<string/>
+</property>
+</widget>
+</xupdate:insert-after>
+<xupdate:insert-after select="/UI[UI,1]/includehints[includehints,1]/includehint[flfielddb.h]" >
+<includehint>flfielddb.h</includehint>
+</xupdate:insert-after>
+</xupdate:modifications>

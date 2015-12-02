@@ -1,0 +1,67 @@
+<!DOCTYPE QRY>
+<QRY>
+	<name>facturascli</name>
+
+	<tables>empresa,facturascli</tables>
+
+	<group>
+		<level>0</level>
+		<field>facturascli.idfactura</field>
+	</group>
+
+	<group>
+		<level>1</level>
+		<field>lineasfacturascli.referencia</field>
+	</group>
+	
+	<group>
+		<level>2</level>
+		<field>lineasfacturascli.pvpunitario</field>
+	</group>
+
+	<group>
+		<level>3</level>
+		<field>lineasfacturascli.dtopor</field>
+	</group>
+
+	
+
+	<select>
+		facturascli.idfactura, facturascli.codigo, facturascli.codserie,
+		facturascli.fecha, facturascli.total,
+		facturascli.totaliva, facturascli.totalrecargo,
+		facturascli.irpf, facturascli.totalirpf,
+		facturascli.neto, facturascli.coddivisa,
+		facturascli.codejercicio, facturascli.codpago,
+		facturascli.codalmacen, facturascli.codcliente,
+		facturascli.nombrecliente, facturascli.cifnif,
+		facturascli.tasaconv, facturascli.coddir,
+		facturascli.direccion, facturascli.codpostal,
+		facturascli.ciudad, facturascli.provincia,
+		facturascli.apartado, facturascli.codpais,
+		lineasfacturascli.referencia, lineasfacturascli.idfactura,
+		lineasfacturascli.descripcion, sum(lineasfacturascli.cantidad),
+		lineasfacturascli.pvpunitario, lineasfacturascli.dtopor, sum(lineasfacturascli.pvptotal),
+		lineasfacturascli.codimpuesto, lineasfacturascli.iva,
+		lineasfacturascli.color,
+		empresa.nombre, empresa.cifnif,
+		empresa.direccion, empresa.logo,
+		empresa.codpostal, empresa.ciudad,
+		empresa.provincia, empresa.apartado,
+		empresa.codpais, paises.nombre,
+		formaspago.descripcion
+	</select>
+
+	<from>
+		empresa,facturascli INNER JOIN lineasfacturascli ON facturascli.idfactura = lineasfacturascli.idfactura
+		LEFT OUTER JOIN paises ON facturascli.codpais = paises.codpais
+		LEFT OUTER JOIN formaspago ON facturascli.codpago = formaspago.codpago
+	</from>
+
+	<where>
+	</where>
+	
+	<order>
+		lineasfacturascli.referencia,lineasfacturascli.pvpunitario,lineasfacturascli.dtopor
+	</order>
+</QRY>

@@ -1,0 +1,75 @@
+<xupdate:modifications>
+<xupdate:update select="/UI[UI,1]/widget[QWidget,formPresupuestosCli]/vbox[vbox,1]/widget[QTabWidget,tbwPresupuesto]/widget[QWidget,cliente]/vbox[vbox,1]/widget[QGroupBox,groupBox30]/vbox[vbox,1]/widget[QLayoutWidget,layoutDir2]/hbox[hbox,1]/widget[FLFieldDB,fdbIdProvincia]/property[property,6]/enum[enum,1]/text()[1]" >StrongFocus</xupdate:update>
+<xupdate:insert-after select="/UI[UI,1]/widget[QWidget,formPresupuestosCli]/vbox[vbox,1]/widget[QTabWidget,tbwPresupuesto]/widget[QWidget,datos]/hbox[hbox,1]/widget[QFrame,frame4]/vbox[vbox,1]/widget[QLayoutWidget,layout18]" >
+<widget class="QLayoutWidget" >
+<property name="name" >
+<cstring>lytTarifa</cstring>
+</property>
+<hbox>
+<property name="name" >
+<cstring>unnamed</cstring>
+</property>
+<widget class="FLFieldDB" >
+<property name="name" >
+<cstring>fdbCodTarifa</cstring>
+</property>
+<property name="sizePolicy" >
+<sizepolicy>
+<hsizetype>1</hsizetype>
+<vsizetype>0</vsizetype>
+<horstretch>0</horstretch>
+<verstretch>0</verstretch>
+</sizepolicy>
+</property>
+<property name="minimumSize" >
+<size>
+<width>130</width>
+<height>25</height>
+</size>
+</property>
+<property name="fieldName" >
+<string>codtarifa</string>
+</property>
+</widget>
+<widget class="FLFieldDB" >
+<property name="name" >
+<cstring>fdbDesTarifa</cstring>
+</property>
+<property name="sizePolicy" >
+<sizepolicy>
+<hsizetype>1</hsizetype>
+<vsizetype>0</vsizetype>
+<horstretch>0</horstretch>
+<verstretch>0</verstretch>
+</sizepolicy>
+</property>
+<property name="minimumSize" >
+<size>
+<width>150</width>
+<height>25</height>
+</size>
+</property>
+<property name="fieldName" >
+<string>nombre</string>
+</property>
+<property name="tableName" >
+<string>tarifas</string>
+</property>
+<property name="foreignField" >
+<string>codtarifa</string>
+</property>
+<property name="fieldRelation" >
+<string>codtarifa</string>
+</property>
+<property name="showAlias" >
+<bool>false</bool>
+</property>
+</widget>
+</hbox>
+</widget>
+</xupdate:insert-after>
+<xupdate:delete select="/UI[UI,1]/includehints[includehints,1]/includehint[FLTableDB.h]" />
+<xupdate:append-first select="/UI[UI,1]/includehints[includehints,1]" >
+<includehint>fltabledb.h</includehint>
+</xupdate:append-first>
+</xupdate:modifications>

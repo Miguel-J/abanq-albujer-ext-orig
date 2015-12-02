@@ -1,0 +1,32 @@
+<!DOCTYPE TMD>
+<TMD>
+	<name>mt_basesdatos</name>
+	<!-- Listado de bases de datos -->
+	<alias>QT_TRANSLATE_NOOP("MetaData","Bases de datos")</alias>
+
+	<field>
+		<name>nombre</name>
+		<!-- Nombre de la base de datos, tal como existe en el servidor -->
+		<alias>QT_TRANSLATE_NOOP("MetaData","Nombre")</alias>
+		<null>false</null>
+		<pk>true</pk>
+		<type>string</type>
+		<length>100</length>
+		<relation>
+			<table>mt_backups</table>
+			<field>base_datos</field>
+			<card>1M</card>
+		</relation>
+	</field>
+
+	<field>
+		<name>descripcion</name>
+		<!-- Texto libre -->
+		<alias>QT_TRANSLATE_NOOP("MetaData","Descripción")</alias>
+		<null>true</null>
+		<pk>false</pk>
+		<type>string</type>
+		<length>255</length>
+	</field>
+
+</TMD>

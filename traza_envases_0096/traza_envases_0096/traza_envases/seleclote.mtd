@@ -1,0 +1,37 @@
+<xupdate:modifications>
+<xupdate:insert-after select="/TMD[TMD,1]/field[idusuario]" >
+<field>
+<name>codenvase</name>
+<!--Código del envase --><alias>QT_TRANSLATE_NOOP(&quot;MetaData&quot;,&quot;Envase&quot;)</alias>
+<null>true</null>
+<pk>false</pk>
+<type>string</type>
+<length>10</length>
+<editable>false</editable>
+<relation>
+<table>envases</table>
+<field>codenvase</field>
+<card>M1</card>
+</relation>
+</field>
+</xupdate:insert-after>
+<xupdate:insert-after select="/TMD[TMD,1]/field[descripcion]" >
+<field>
+<name>canenvaseslinea</name>
+<alias>QT_TRANSLATE_NOOP(&quot;MetaData&quot;,&quot;Cantidad Env. Linea&quot;)</alias>
+<null>true</null>
+<pk>false</pk>
+<type>uint</type>
+<editable>false</editable>
+</field>
+</xupdate:insert-after>
+<xupdate:insert-after select="/TMD[TMD,1]/field[canlote]" >
+<field>
+<name>canenvases</name>
+<alias>QT_TRANSLATE_NOOP(&quot;MetaData&quot;,&quot;Cantidad Envases&quot;)</alias>
+<null>true</null>
+<pk>false</pk>
+<type>uint</type>
+</field>
+</xupdate:insert-after>
+</xupdate:modifications>

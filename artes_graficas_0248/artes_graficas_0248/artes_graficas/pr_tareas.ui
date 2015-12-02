@@ -1,0 +1,314 @@
+<xupdate:modifications>
+<xupdate:insert-after select="/UI[UI,1]/widget[QWidget,tareas]/vbox[vbox,1]/widget[QTabWidget,tbwTarea]/widget[QWidget,datos]/vbox[vbox,1]/widget[QGroupBox,gbxRealizacion]" >
+<widget class="QGroupBox" >
+<property name="name" >
+<cstring>gbxAg</cstring>
+</property>
+<property name="font" >
+<font>
+<bold>0</bold>
+<italic>0</italic>
+</font>
+</property>
+<property name="title" >
+<string/>
+</property>
+<hbox>
+<property name="name" >
+<cstring>unnamed</cstring>
+</property>
+<widget class="FLFieldDB" >
+<property name="name" >
+<cstring>fdbIgnorarEstadistica</cstring>
+</property>
+<property name="sizePolicy" >
+<sizepolicy>
+<hsizetype>1</hsizetype>
+<vsizetype>0</vsizetype>
+<horstretch>0</horstretch>
+<verstretch>0</verstretch>
+</sizepolicy>
+</property>
+<property name="minimumSize" >
+<size>
+<width>24</width>
+<height>22</height>
+</size>
+</property>
+<property name="font" >
+<font/>
+</property>
+<property name="fieldName" >
+<string>ignorarestadistica</string>
+</property>
+<property name="tableName" >
+<string/>
+</property>
+<property name="foreignField" >
+<string/>
+</property>
+<property name="fieldRelation" >
+<string/>
+</property>
+</widget>
+<spacer>
+<property name="name" >
+<cstring>spacerAg</cstring>
+</property>
+<property name="orientation" >
+<enum>Horizontal</enum>
+</property>
+<property name="sizeType" >
+<enum>Expanding</enum>
+</property>
+<property name="sizeHint" >
+<size>
+<width>21</width>
+<height>20</height>
+</size>
+</property>
+</spacer>
+</hbox>
+</widget>
+</xupdate:insert-after>
+<xupdate:delete select="/UI[UI,1]/widget[QWidget,tareas]/vbox[vbox,1]/widget[QTabWidget,tbwTarea]/widget[QWidget,observaciones]/vbox[vbox,1]/widget[QGroupBox,gbxObservaciones]/vbox[vbox,1]" />
+<xupdate:append-first select="/UI[UI,1]/images[images,1]" >
+<image name="artes_graficasimage25895" >
+<data format="PNG" length="1857" >89504e470d0a1a0a0000000d4948445200000020000000200806000000737a7af40000070849444154789cad967f4c94f71dc75fe2037d68b17dce1dd983d178ace8e4c794631b1135e2ef6cb8e90a59bbe01a9a3659321ab336b2258d336ab0d9166b321bf9c3ecbaa629b69965cc30a48b0a2816b0d03b147747aa9463e7f5b820394f388fa7f0e8677f1c0c418b87eb3bb9bcf37d7e7c3feff7fbfbf97e9f9bc7ec48d2753ddba259bea7a56869866924141805831f0c7d70c5081b570dd3f8ea11ef3f1e54457dc29e6bffd59edd7b5c8e2ac778b43b2a8d4d8d223e919ada1a711f759ba52f965ec9ccc97c0d85a7bfd1e2ba555f51feebf266f18848401e8eb118559fa816c73ec765cdaaadfd468a6766646e3afca7c303129d2af2b53c01a7cb297bdfd83b62b3d976fd7fce753dfbd891635fca98880c4fcc3ef8080e4d70b7486355e38866d5d63d6efd79e5bbcbeb655824d017cbdded718b441fc163227dd7fa4444a4b5a5558a7f56dc043c31e7eaf65cfb73724d447c31f74e9733e6b22de6b6b5ad3536ee88b976763863ee27c72ea7888838aa1c62cbb095cd5940f9eef2937d9e9813678773aa68e06b7870c67383227d7d7d223e91a21f15fd0b50e22eaea56856c771875f44443cf2a0b3d02cce274448c74473f689d41fa9bfa9aaead2b805e8ba6e8f7647bf0a04022263226e977b6a198645dcddee59f97fcf79dc22225279b0f2ae6ed5b7c42dc096612bac6fa83745620eee6f34f1c49c4d36dc43c7d1a9e23228e2ae738bbe58ff65fc092cd6d7443dd1f15028b6a726bb7aae1cf0c5764fe59b95a2eb7a71dc02344dfb4ef589ead0b4fded7b4c0e88341e6f8ca8296a5edc0280e4c67d8dcd930e4283312d8140604e1c8d46454222c53f2ffd0cb0ce45001bb76cfcad0cc6d633a6224e9e4c6ce2e4ac7eaf5aec39f637e7527b3e403010f45bac96edf9ebf3bfc538f0148c8e8c92f84ce2ec6c99e0058978ae7a48bb6c21ec39a9740587ce99707b4e29d873eca5f575f5e3723fa28fe0c90f5320d6fdad276b443c51a9fc81bd4b8367e34e00203818f4846f8613b454ad70f9b2e5b18b893cc8e34c9df6f3c1eb1d60e0e3211a3e7a9d1730f0a626b3f3c5fdbaf9694361572078d6805b710900e47adff54b03ff19882a8ab27ae5aa95495c075707bcf371134a209dee202cbfdf573b0cf4dfa0f9d4ebecec7651db7b954d392520d7595f764857ae341476fa82e70c08c52300c0ecf7f5b7b55d6abbe4edebb124f72e5bba76ff01a5f9931efefab706c2463af61537498da452f561d5d8924fde4b68ffe7dbf38a82d76951611b70f2522d798a82f72993ed657fd4177cd1b4d5d5ebbf1081c1d992781854d56aff9d9aeb14722a851ca7d836ec1d72bce13855b0bae09066d576bc9ca1d5c89672a9d96093d0864ca9596793d06a9b54afb68954d588d4d5885c8b8ae3271bdd3a64c493c0b434cc248bc5b46aa5a83b20e922e1e0f5d6baba83c57ebfffac11353eef0a19676e3e796359c5a2d4ac264cb62525724631d996000d9e33649926def9069b76fd3e35f98b964257afff5c64c6724c1790a2af60d1fee74931f378fa95952c5436b3b0e2fb28cda0ee00bc632430ced3e9ab58f86a01cad0824e7fafe34602dfae28dcb52af18e972c259926651e3b93b6713a7891fcc5f910ee21ffa5437a5aa863ababb7bf256c4e2dc7bc69026c4515e4961fc6dc0434004560d68252046613289b80a6d8759a20927e8df3d9f980f972ae7eec1d7bfa4b6d86c11aa0c9844dc0e95183ed9976bcb96b48b797f2f73f94f4567cd45cd26fd0fd6002d665ebd97c600bb71321330b462e42f64e184986ec2c186987cced30920899cb61a82e4cff99f7b967deea0a462e4454e5d957b6eeca66d84b7a8642dbb0c9e6cc1dd0df8e65d11a087591f5d38a854bbe6cd9dae10f9f0b8f9943d3052cfae13ad2f2b6a05a20e201351f86db20690944dae0c9f510f5404a2a185eb85b708b7f1f7c17880046bb3f7c2112f5dab6a5a766bb2226f98a826bd84b5a92429baf9d25f70cbc63b7587337b23062de5cdaec8b9c9c2ee09e998c619f8fffe815820b9c180d61d6be90ceb00772f2a0efb41f77b08e40d56506b51e7cfbce31d4d3028c4dcc70a7dd173e1b51d0cb7e5c96cbb097b40c054fd4242f6307f83ab12c5e8327d04149f6cec5c73febfcc7f41e8084fb7e63646cfc05cf9df810d240b9053dc6394e2d2a06a213cb7717b807c88c79b43d1b6c7f7e6b635699d718251df0989005784c832c545ca63156f27ed7ba84192fde03cc2947c9e3e4a4810ae45820b14926eeddbd8f671607081f39dfff9b8a668f23dd5e0229c964e514810a5939c5a0259369e5f3feb0e19f29603a543581214003868094e2c974e2c1ed23e7fb5f7bf5edb78ea2aa8c0e3583666134dc0c2677d6fea5e7303030db410409aac6779fb7e1a9f5a32e0bf069450bfecef313cee3c178a72f7cb133702bb823b3e89926ffd5118c7067e1bb9d07ae0622b5c0dd993d30130ab06082051825b6fe0f8b7d36cc23f62f2985d8d7313c79e3bf4080fe27c020309b0000000049454e44ae426082</data>
+</image>
+</xupdate:append-first>
+<xupdate:insert-after select="/UI[UI,1]/widget[QWidget,tareas]/vbox[vbox,1]/widget[QTabWidget,tbwTarea]/widget[QWidget,observaciones]/vbox[vbox,1]/widget[QGroupBox,gbxObservaciones]/property[title]" >
+<hbox>
+<property name="name" >
+<cstring>unnamed</cstring>
+</property>
+<widget class="FLFieldDB" >
+<property name="name" >
+<cstring>fdbObservaciones</cstring>
+</property>
+<property name="sizePolicy" >
+<sizepolicy>
+<hsizetype>7</hsizetype>
+<vsizetype>7</vsizetype>
+<horstretch>0</horstretch>
+<verstretch>0</verstretch>
+</sizepolicy>
+</property>
+<property name="minimumSize" >
+<size>
+<width>26</width>
+<height>29</height>
+</size>
+</property>
+<property name="font" >
+<font>
+<bold>0</bold>
+<italic>0</italic>
+</font>
+</property>
+<property name="fieldName" >
+<string>observaciones</string>
+</property>
+</widget>
+<widget class="QLayoutWidget" >
+<property name="name" >
+<cstring>layoutDiagrama</cstring>
+</property>
+<vbox>
+<property name="name" >
+<cstring>unnamed</cstring>
+</property>
+<widget class="QGroupBox" >
+<property name="name" >
+<cstring>gbxPrecorte</cstring>
+</property>
+<property name="font" >
+<font>
+<bold>0</bold>
+<italic>0</italic>
+</font>
+</property>
+<property name="title" >
+<string>Precorte</string>
+</property>
+<vbox>
+<property name="name" >
+<cstring>unnamed</cstring>
+</property>
+<widget class="QLabel" >
+<property name="name" >
+<cstring>lblDiagPrecorte</cstring>
+</property>
+<property name="sizePolicy" >
+<sizepolicy>
+<hsizetype>5</hsizetype>
+<vsizetype>7</vsizetype>
+<horstretch>0</horstretch>
+<verstretch>0</verstretch>
+</sizepolicy>
+</property>
+<property name="minimumSize" >
+<size>
+<width>100</width>
+<height>100</height>
+</size>
+</property>
+<property name="maximumSize" >
+<size>
+<width>100</width>
+<height>100</height>
+</size>
+</property>
+<property name="frameShape" >
+<enum>NoFrame</enum>
+</property>
+<property name="text" >
+<string>(precorte)</string>
+</property>
+</widget>
+</vbox>
+</widget>
+<widget class="QGroupBox" >
+<property name="name" >
+<cstring>gbxDisrTrabajos</cstring>
+</property>
+<property name="font" >
+<font>
+<bold>0</bold>
+<italic>0</italic>
+</font>
+</property>
+<property name="title" >
+<string>Pliego impresión</string>
+</property>
+<vbox>
+<property name="name" >
+<cstring>unnamed</cstring>
+</property>
+<widget class="QLabel" >
+<property name="name" >
+<cstring>lblDiagDistPlancha</cstring>
+</property>
+<property name="sizePolicy" >
+<sizepolicy>
+<hsizetype>5</hsizetype>
+<vsizetype>7</vsizetype>
+<horstretch>0</horstretch>
+<verstretch>0</verstretch>
+</sizepolicy>
+</property>
+<property name="minimumSize" >
+<size>
+<width>100</width>
+<height>100</height>
+</size>
+</property>
+<property name="maximumSize" >
+<size>
+<width>100</width>
+<height>100</height>
+</size>
+</property>
+<property name="frameShape" >
+<enum>NoFrame</enum>
+</property>
+<property name="text" >
+<string>(distribución)</string>
+</property>
+</widget>
+</vbox>
+</widget>
+<widget class="QLayoutWidget" >
+<property name="name" >
+<cstring>layoutBT</cstring>
+</property>
+<hbox>
+<property name="name" >
+<cstring>unnamed</cstring>
+</property>
+<widget class="QToolButton" >
+<property name="name" >
+<cstring>tbnZoomPI</cstring>
+</property>
+<property name="minimumSize" >
+<size>
+<width>32</width>
+<height>32</height>
+</size>
+</property>
+<property name="maximumSize" >
+<size>
+<width>32</width>
+<height>32</height>
+</size>
+</property>
+<property name="text" >
+<string/>
+</property>
+<property name="iconSet" >
+<iconset>artes_graficasimage25895</iconset>
+</property>
+<property name="toolTip" stdset="0" >
+<string>Ampliar pliego de impresión</string>
+</property>
+</widget>
+<spacer>
+<property name="name" >
+<cstring>spacerBT</cstring>
+</property>
+<property name="orientation" >
+<enum>Horizontal</enum>
+</property>
+<property name="sizeType" >
+<enum>Minimum</enum>
+</property>
+<property name="sizeHint" >
+<size>
+<width>21</width>
+<height>20</height>
+</size>
+</property>
+</spacer>
+</hbox>
+</widget>
+<spacer>
+<property name="name" >
+<cstring>spacerDiagramas</cstring>
+</property>
+<property name="orientation" >
+<enum>Vertical</enum>
+</property>
+<property name="sizeType" >
+<enum>Expanding</enum>
+</property>
+<property name="sizeHint" >
+<size>
+<width>20</width>
+<height>50</height>
+</size>
+</property>
+</spacer>
+</vbox>
+</widget>
+</hbox>
+</xupdate:insert-after>
+<xupdate:insert-after select="/UI[UI,1]/widget[QWidget,tareas]/vbox[vbox,1]/widget[QTabWidget,tbwTarea]/widget[QWidget,observaciones]" >
+<widget class="QWidget" >
+<property name="name" >
+<cstring>resumen</cstring>
+</property>
+<attribute name="title" >
+<string>&amp;Resumen</string>
+</attribute>
+<vbox>
+<property name="name" >
+<cstring>unnamed</cstring>
+</property>
+<widget class="QLabel" >
+<property name="name" >
+<cstring>lblResumen</cstring>
+</property>
+</widget>
+</vbox>
+</widget>
+</xupdate:modifications>

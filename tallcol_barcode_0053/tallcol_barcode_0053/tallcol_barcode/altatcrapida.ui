@@ -1,0 +1,195 @@
+<!DOCTYPE UI><UI version="3.3" stdsetdef="1">
+<class>altatcrapida</class>
+<widget class="QWidget">
+    <property name="name">
+        <cstring>altatcrapida</cstring>
+    </property>
+    <property name="geometry">
+        <rect>
+            <x>0</x>
+            <y>0</y>
+            <width>595</width>
+            <height>706</height>
+        </rect>
+    </property>
+    <property name="font">
+        <font>
+            <family>Helvetica [Urw]</family>
+        </font>
+    </property>
+    <property name="caption">
+        <string>altatcrapida</string>
+    </property>
+    <vbox>
+        <property name="name">
+            <cstring>unnamed</cstring>
+        </property>
+        <property name="margin">
+            <number>0</number>
+        </property>
+        <property name="spacing">
+            <number>2</number>
+        </property>
+        <widget class="QGroupBox">
+            <property name="name">
+                <cstring>gbxAlta</cstring>
+            </property>
+            <property name="font">
+                <font>
+                    <bold>1</bold>
+                    <italic>1</italic>
+                </font>
+            </property>
+            <property name="title">
+                <string></string>
+            </property>
+            <hbox>
+                <property name="name">
+                    <cstring>unnamed</cstring>
+                </property>
+                <widget class="QGroupBox">
+                    <property name="name">
+                        <cstring>gbxTallas</cstring>
+                    </property>
+                    <property name="font">
+                        <font>
+                            <italic>0</italic>
+                        </font>
+                    </property>
+                    <property name="title">
+                        <string>&amp;Tallas</string>
+                    </property>
+                    <vbox>
+                        <property name="name">
+                            <cstring>unnamed</cstring>
+                        </property>
+                        <widget class="QGroupBox">
+                            <property name="name">
+                                <cstring>gbxGruposTalla</cstring>
+                            </property>
+                            <property name="maximumSize">
+                                <size>
+                                    <width>32767</width>
+                                    <height>250</height>
+                                </size>
+                            </property>
+                            <property name="font">
+                                <font>
+                                    <bold>0</bold>
+                                </font>
+                            </property>
+                            <property name="title">
+                                <string>&amp;Grupos</string>
+                            </property>
+                            <vbox>
+                                <property name="name">
+                                    <cstring>unnamed</cstring>
+                                </property>
+                                <widget class="QCheckBox">
+                                    <property name="name">
+                                        <cstring>chkFiltroGrupo</cstring>
+                                    </property>
+                                    <property name="text">
+                                        <string>Filtrar tallas por grupo</string>
+                                    </property>
+                                    <property name="checked">
+                                        <bool>true</bool>
+                                    </property>
+                                </widget>
+                                <widget class="FLTableDB">
+                                    <property name="name">
+                                        <cstring>tdbGruposTalla</cstring>
+                                    </property>
+                                    <property name="tableName">
+                                        <string>grupostalla</string>
+                                    </property>
+                                    <property name="findHidden">
+                                        <bool>true</bool>
+                                    </property>
+                                    <property name="filterHidden">
+                                        <bool>true</bool>
+                                    </property>
+                                </widget>
+                            </vbox>
+                        </widget>
+                        <widget class="FLTableDB">
+                            <property name="name">
+                                <cstring>tdbTallas</cstring>
+                            </property>
+                            <property name="font">
+                                <font>
+                                    <bold>0</bold>
+                                </font>
+                            </property>
+                            <property name="tableName">
+                                <string>tallas</string>
+                            </property>
+                            <property name="checkColumnEnabled">
+                                <bool>true</bool>
+                            </property>
+                            <property name="aliasCheckColumn">
+                                <string>Sel.</string>
+                            </property>
+                            <property name="findHidden">
+                                <bool>true</bool>
+                            </property>
+                            <property name="filterHidden">
+                                <bool>true</bool>
+                            </property>
+                        </widget>
+                    </vbox>
+                </widget>
+                <widget class="QGroupBox">
+                    <property name="name">
+                        <cstring>gbxColores</cstring>
+                    </property>
+                    <property name="font">
+                        <font>
+                            <italic>0</italic>
+                        </font>
+                    </property>
+                    <property name="title">
+                        <string>&amp;Colores</string>
+                    </property>
+                    <vbox>
+                        <property name="name">
+                            <cstring>unnamed</cstring>
+                        </property>
+                        <widget class="FLTableDB">
+                            <property name="name">
+                                <cstring>tdbColores</cstring>
+                            </property>
+                            <property name="font">
+                                <font>
+                                    <bold>0</bold>
+                                </font>
+                            </property>
+                            <property name="tableName">
+                                <string>colores</string>
+                            </property>
+                            <property name="checkColumnEnabled">
+                                <bool>true</bool>
+                            </property>
+                            <property name="aliasCheckColumn">
+                                <string>Sel.</string>
+                            </property>
+                            <property name="findHidden">
+                                <bool>true</bool>
+                            </property>
+                            <property name="filterHidden">
+                                <bool>true</bool>
+                            </property>
+                        </widget>
+                    </vbox>
+                </widget>
+            </hbox>
+        </widget>
+    </vbox>
+</widget>
+<layoutdefaults spacing="6" margin="11"/>
+<includehints>
+    <includehint>fltabledb.h</includehint>
+    <includehint>fltabledb.h</includehint>
+    <includehint>fltabledb.h</includehint>
+</includehints>
+</UI>

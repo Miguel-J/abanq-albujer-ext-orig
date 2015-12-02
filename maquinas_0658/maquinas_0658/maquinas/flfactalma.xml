@@ -1,0 +1,112 @@
+<xupdate:modifications>
+<xupdate:insert-after select="/ACTIONS[ACTIONS,1]/action[tarifas]" >
+<action>
+<name>cl_maquinas</name>
+<description>QT_TRANSLATE_NOOP(&quot;MetaData&quot;,&quot;Maquinas&quot;)
+		</description>
+<alias>QT_TRANSLATE_NOOP(&quot;MetaData&quot;,&quot;Máquinas&quot;)</alias>
+<table>cl_maquinas</table>
+<form>cl_mastermaquinas</form>
+<formrecord>cl_maquinas</formrecord>
+<scriptform>cl_mastermaquinas</scriptform>
+<scriptformrecord>cl_maquinas</scriptformrecord>
+</action>
+</xupdate:insert-after>
+<xupdate:insert-after select="/ACTIONS[ACTIONS,1]/action[cl_maquinas]" >
+<action>
+<name>cl_tiposmaquina</name>
+<description>QT_TRANSLATE_NOOP(&quot;MetaData&quot;,&quot;tipo de maquinas&quot;)
+		</description>
+<alias>QT_TRANSLATE_NOOP(&quot;MetaData&quot;,&quot;tipos de maquinas&quot;)</alias>
+<table>cl_tiposmaquina</table>
+<form>master</form>
+<formrecord>cl_tiposmaquina</formrecord>
+</action>
+</xupdate:insert-after>
+<xupdate:insert-after select="/ACTIONS[ACTIONS,1]/action[cl_tiposmaquina]" >
+<action>
+<name>cl_tiposaveriasrevision</name>
+<description>QT_TRANSLATE_NOOP(&quot;MetaData&quot;,&quot;tipos de averias y revisiones que puede sufrir una maquina&quot;)
+		</description>
+<alias>QT_TRANSLATE_NOOP(&quot;MetaData&quot;,&quot;tipos de Averias y Revisiones&quot;)</alias>
+<table>cl_tiposaveriasrevision</table>
+<form>master</form>
+<formrecord>cl_tiposaveriasrevision</formrecord>
+</action>
+</xupdate:insert-after>
+<xupdate:insert-after select="/ACTIONS[ACTIONS,1]/action[cl_tiposaveriasrevision]" >
+<action>
+<name>cl_tiposrevisionmaquina</name>
+<alias>Revisiones periodicas de la maquina</alias>
+<table>cl_tiposrevisionmaquina</table>
+<form>master</form>
+<formrecord>cl_tiposrevisionmaquina</formrecord>
+<scriptformrecord>cl_tiposrevisionmaquina</scriptformrecord>
+</action>
+</xupdate:insert-after>
+<xupdate:insert-after select="/ACTIONS[ACTIONS,1]/action[cl_tiposrevisionmaquina]" >
+<action>
+<name>cl_averiasrevisionmaquina</name>
+<alias>Averias y revisiones de la maquina</alias>
+<table>cl_averiasrevisionmaquina</table>
+<form>master_print</form>
+<formrecord>cl_averiasrevisionmaquina</formrecord>
+<scriptformrecord>cl_averiasrevisionmaquina</scriptformrecord>
+</action>
+</xupdate:insert-after>
+<xupdate:insert-after select="/ACTIONS[ACTIONS,1]/action[cl_averiasrevisionmaquina]" >
+<action>
+<name>cl_altaaveriasrevisionmaquina</name>
+<alias>Averias y revisiones de la maquina</alias>
+<table>cl_averiasrevisionmaquina</table>
+<form>cl_averiasrevisionmaquina</form>
+<formrecord>cl_averiasrevisionmaquina</formrecord>
+<scriptform>cl_averiasrevisionmaquina</scriptform>
+<scriptformrecord>cl_averiasrevisionmaquina</scriptformrecord>
+</action>
+</xupdate:insert-after>
+<xupdate:insert-after select="/ACTIONS[ACTIONS,1]/action[cl_altaaveriasrevisionmaquina]" >
+<action>
+<name>cl_empleadomaquina</name>
+<description>QT_TRANSLATE_NOOP(&quot;MetaData&quot;,&quot;empleado ocasional que maneja la maquina&quot;)
+		</description>
+<alias>QT_TRANSLATE_NOOP(&quot;MetaData&quot;,&quot;Conductor ocasional&quot;)</alias>
+<table>cl_empleadomaquina</table>
+<form>master</form>
+<formrecord>cl_empleadomaquina</formrecord>
+</action>
+</xupdate:insert-after>
+<xupdate:insert-after select="/ACTIONS[ACTIONS,1]/action[cl_empleadomaquina]" >
+<action>
+<name>cl_empresaseguros</name>
+<description>QT_TRANSLATE_NOOP(&quot;MetaData&quot;,&quot;empresa aseguradora de la maquinaria&quot;)
+		</description>
+<alias>QT_TRANSLATE_NOOP(&quot;MetaData&quot;,&quot;Aseguradora&quot;)</alias>
+<table>cl_empresaseguros</table>
+<form>master</form>
+<formrecord>cl_empresaseguros</formrecord>
+</action>
+</xupdate:insert-after>
+<xupdate:insert-after select="/ACTIONS[ACTIONS,1]/action[cl_empresaseguros]" >
+<action>
+<name>cl_causasbajaaveria</name>
+<description>QT_TRANSLATE_NOOP(&quot;MetaData&quot;,&quot;Causas de baja o avería&quot;)
+		</description>
+<alias>QT_TRANSLATE_NOOP(&quot;MetaData&quot;,&quot;Causas de baja o avería&quot;)</alias>
+<table>cl_causasbajaaveria</table>
+<form>master</form>
+<formrecord>cl_causasbajaaveria</formrecord>
+</action>
+</xupdate:insert-after>
+<xupdate:insert-after select="/ACTIONS[ACTIONS,1]/action[cl_causasbajaaveria]" >
+<action>
+<name>cl_empleadostipomaquina</name>
+<alias>QT_TRANSLATE_NOOP(&quot;MetaData&quot;,&quot;Empleados por tipo de máquina&quot;)</alias>
+<description>QT_TRANSLATE_NOOP(&quot;MetaData&quot;,&quot;Empleados por tipo de máquina&quot;)</description>
+<table>cl_empleadostipomaquina</table>
+<form>master</form>
+<formrecord>cl_empleadostipomaquina</formrecord>
+<scriptformrecord>cl_empleadostipomaquina</scriptformrecord>
+</action>
+</xupdate:insert-after>
+</xupdate:modifications>

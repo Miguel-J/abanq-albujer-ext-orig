@@ -1,0 +1,23 @@
+<xupdate:modifications>
+<xupdate:insert-after select="/ACTIONS[ACTIONS,1]/action[co_planpartidas]" >
+<action>
+<name>co_codcuentaexp1</name>
+<description>QT_TRANSLATE_NOOP(&quot;MetaData&quot;,&quot;Cada una de las subcuentas puede estar asociada a un código que identifica su clasificación dentro del informe de cuenta de explotación&quot;)</description>
+<alias>QT_TRANSLATE_NOOP(&quot;MetaData&quot;,&quot;Códigos de Cuenta de Explotación 1&quot;)</alias>
+<table>co_codcuentaexp1</table>
+<form>master_copy</form>
+<formrecord>co_codcuentaexp1</formrecord>
+</action>
+</xupdate:insert-after>
+<xupdate:insert-after select="/ACTIONS[ACTIONS,1]/action[co_codcuentaexp1]" >
+<action>
+<name>co_codcuentaexp2</name>
+<description>QT_TRANSLATE_NOOP(&quot;MetaData&quot;,&quot;Cada una de las subcuentas puede estar asociada a un código que identifica su clasificación dentro del informe de cuenta de explotación&quot;)</description>
+<alias>QT_TRANSLATE_NOOP(&quot;MetaData&quot;,&quot;Códigos de Cuenta de Explotación 2&quot;)</alias>
+<table>co_codcuentaexp2</table>
+<form>master_copy</form>
+<formrecord>co_codcuentaexp2</formrecord>
+<scriptformrecord>co_codcuentaexp2</scriptformrecord>
+</action>
+</xupdate:insert-after>
+</xupdate:modifications>

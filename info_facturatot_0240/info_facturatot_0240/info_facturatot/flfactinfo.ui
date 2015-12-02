@@ -1,0 +1,52 @@
+<xupdate:modifications>
+<xupdate:update select="/UI[UI,1]/widget[QMainWindow,FLWidgetApplication]/property[property,2]/rect[rect,1]/width[width,1]/text()[1]" >609</xupdate:update>
+<xupdate:insert-after select="/UI[UI,1]/actions[actions,1]/action[tesoreraRecibosAction]" >
+<action>
+<property name="name" >
+<cstring>i_totalfacturascli</cstring>
+</property>
+<property name="text" >
+<string>Totales</string>
+</property>
+<property name="menuText" >
+<string>Totales</string>
+</property>
+</action>
+</xupdate:insert-after>
+<xupdate:insert-after select="/UI[UI,1]/actions[actions,1]/action[i_totalfacturascli]" >
+<action>
+<property name="name" >
+<cstring>i_totalfacturasprov</cstring>
+</property>
+<property name="text" >
+<string>Totales</string>
+</property>
+<property name="menuText" >
+<string>Totales</string>
+</property>
+</action>
+</xupdate:insert-after>
+<xupdate:insert-after select="/UI[UI,1]/connections[connections,1]/connection[i_reciboscli,activated(),FLWidgetApplication,openDefaultForm()]" >
+<connection>
+<sender>i_totalfacturascli</sender>
+<signal>activated()</signal>
+<receiver>FLWidgetApplication</receiver>
+<slot>openDefaultForm()</slot>
+</connection>
+</xupdate:insert-after>
+<xupdate:insert-after select="/UI[UI,1]/connections[connections,1]/connection[i_totalfacturascli,activated(),FLWidgetApplication,openDefaultForm()]" >
+<connection>
+<sender>i_totalfacturasprov</sender>
+<signal>activated()</signal>
+<receiver>FLWidgetApplication</receiver>
+<slot>openDefaultForm()</slot>
+</connection>
+</xupdate:insert-after>
+<xupdate:insert-after select="/UI[UI,1]/menubar[menubar,1]/item[Compras]/item[item,3]/action[i_resfacturasprov]" >
+<action name="i_totalfacturasprov" />
+</xupdate:insert-after>
+<xupdate:insert-after select="/UI[UI,1]/menubar[menubar,1]/item[Ventas]/item[item,4]/action[i_resfacturascli]" >
+<action name="i_totalfacturascli" />
+</xupdate:insert-after>
+<xupdate:update select="/UI[UI,1]/menubar[menubar,1]/property[property,2]/rect[rect,1]/width[width,1]/text()[1]" >609</xupdate:update>
+</xupdate:modifications>

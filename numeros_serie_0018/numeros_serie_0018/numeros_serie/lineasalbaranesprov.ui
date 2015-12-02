@@ -1,0 +1,89 @@
+<xupdate:modifications>
+<xupdate:update select="/UI[UI,1]/widget[QWidget,lineaspedidosprov]/property[property,2]/rect[rect,1]/height[height,1]/text()[1]" >346</xupdate:update>
+<xupdate:insert-after select="/UI[UI,1]/widget[QWidget,lineaspedidosprov]/vbox[vbox,1]/widget[QGroupBox,groupBox7]" >
+<widget class="QGroupBox" >
+<property name="name" >
+<cstring>groupBox7_2</cstring>
+</property>
+<property name="font" >
+<font>
+<bold>1</bold>
+<italic>1</italic>
+</font>
+</property>
+<property name="title" >
+<string>Número de Serie</string>
+</property>
+<hbox>
+<property name="name" >
+<cstring>unnamed</cstring>
+</property>
+<widget class="FLFieldDB" >
+<property name="name" >
+<cstring>fdbNumSerie</cstring>
+</property>
+<property name="sizePolicy" >
+<sizepolicy>
+<hsizetype>1</hsizetype>
+<vsizetype>0</vsizetype>
+<horstretch>0</horstretch>
+<verstretch>0</verstretch>
+</sizepolicy>
+</property>
+<property name="minimumSize" >
+<size>
+<width>400</width>
+<height>25</height>
+</size>
+</property>
+<property name="font" >
+<font>
+<bold>0</bold>
+<italic>0</italic>
+</font>
+</property>
+<property name="fieldName" >
+<string>numserie</string>
+</property>
+</widget>
+<spacer>
+<property name="name" >
+<cstring>spcNumSerie</cstring>
+</property>
+<property name="orientation" >
+<enum>Horizontal</enum>
+</property>
+<property name="sizeType" >
+<enum>Expanding</enum>
+</property>
+<property name="sizeHint" >
+<size>
+<width>146</width>
+<height>20</height>
+</size>
+</property>
+</spacer>
+</hbox>
+</widget>
+</xupdate:insert-after>
+<xupdate:update select="/UI[UI,1]/tabstops[tabstops,1]/tabstop[tabstop,2]/text()[1]" >fdbNumSerie</xupdate:update>
+<xupdate:update select="/UI[UI,1]/tabstops[tabstops,1]/tabstop[tabstop,3]/text()[1]" >fdbCantidad</xupdate:update>
+<xupdate:insert-after select="/UI[UI,1]/tabstops[tabstops,1]/tabstop[tabstop,3]" >
+<tabstop>fdbDescripcion</tabstop>
+</xupdate:insert-after>
+<xupdate:insert-after select="/UI[UI,1]/tabstops[tabstops,1]/tabstop[tabstop,4]" >
+<tabstop>fdbPvpUnitario</tabstop>
+</xupdate:insert-after>
+<xupdate:insert-after select="/UI[UI,1]/tabstops[tabstops,1]/tabstop[tabstop,5]" >
+<tabstop>fdbPvpSinDto</tabstop>
+</xupdate:insert-after>
+<xupdate:insert-after select="/UI[UI,1]/tabstops[tabstops,1]/tabstop[tabstop,6]" >
+<tabstop>fdbDtoLineal</tabstop>
+</xupdate:insert-after>
+<xupdate:insert-after select="/UI[UI,1]/tabstops[tabstops,1]/tabstop[tabstop,7]" >
+<tabstop>fdbDtoPor</tabstop>
+</xupdate:insert-after>
+<xupdate:insert-after select="/UI[UI,1]/tabstops[tabstops,1]/tabstop[tabstop,8]" >
+<tabstop>fdbPvpTotal</tabstop>
+</xupdate:insert-after>
+</xupdate:modifications>

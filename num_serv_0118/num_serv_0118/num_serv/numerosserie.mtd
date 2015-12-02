@@ -1,0 +1,13 @@
+<xupdate:modifications>
+<xupdate:insert-after select="/TMD[TMD,1]/field[idfacturacompra]" >
+<field>
+<name>idservicioventa</name>
+<!--Identificador del servicio de venta--><alias>QT_TRANSLATE_NOOP(&quot;MetaData&quot;,&quot;Servicio&quot;)</alias>
+<null>true</null>
+<pk>false</pk>
+<type>int</type>
+<visiblegrid>false</visiblegrid>
+<editable>false</editable>
+</field>
+</xupdate:insert-after>
+</xupdate:modifications>

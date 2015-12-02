@@ -1,0 +1,59 @@
+<!DOCTYPE TMD>
+<TMD>
+	<name>tiposenvases</name>
+	<!-- Listado de tipos de envases-->
+	<alias>QT_TRANSLATE_NOOP("MetaData","Tipos de envases")</alias>
+
+	<field>
+		<name>codtipoenvase</name>
+		<alias>QT_TRANSLATE_NOOP("MetaData","Código")</alias>
+		<null>false</null>
+		<pk>true</pk>
+		<type>string</type>
+		<length>25</length>
+		<visiblegrid>false</visiblegrid>
+		
+		<relation>
+			<table>envases</table>
+			<field>codtipoenvase</field>
+			<card>1M</card>
+		</relation>
+	</field>
+	
+	<field>
+		<name>ancho</name>
+		<alias>QT_TRANSLATE_NOOP("MetaData","Ancho")</alias>
+		<null>true</null>
+		<pk>false</pk>
+		<type>int</type>
+		<length>8</length>
+	</field>
+	
+	<field>
+		<name>alto</name>
+		<alias>QT_TRANSLATE_NOOP("MetaData","Alto")</alias>
+		<null>true</null>
+		<pk>false</pk>
+		<type>int</type>
+		<length>8</length>
+	</field>
+	
+	<field>
+		<name>largo</name>
+		<alias>QT_TRANSLATE_NOOP("MetaData","Largo")</alias>
+		<null>true</null>
+		<pk>false</pk>
+		<type>int</type>
+		<length>8</length>
+	</field>
+	
+	<field>
+		<name>peso</name>
+		<alias>QT_TRANSLATE_NOOP("MetaData","Peso")</alias>
+		<null>true</null>
+		<pk>false</pk>
+		<type>int</type>
+		<length>8</length>
+	</field>
+	
+</TMD>

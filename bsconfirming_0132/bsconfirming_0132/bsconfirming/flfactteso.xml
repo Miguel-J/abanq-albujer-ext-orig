@@ -1,0 +1,12 @@
+<xupdate:modifications>
+<xupdate:insert-after select="/ACTIONS[ACTIONS,1]/action[remesasprov]" >
+<action>
+<name>vdiscobsc</name>
+<description>QT_TRANSLATE_NOOP(&quot;MetaData&quot;,&quot;El volcado BS Confirming a disco de una remesa de proveedor genera un fichero con el listado de recibos de la remesa en el formato de cuaderno BS Confirming&quot;)</description>
+<alias>QT_TRANSLATE_NOOP(&quot;MetaData&quot;,&quot;Volcado a disco de remesas BS Confirming&quot;)</alias>
+<table>remesas</table>
+<formrecord>vdiscobsc</formrecord>
+<scriptformrecord>vdiscobsc</scriptformrecord>
+</action>
+</xupdate:insert-after>
+</xupdate:modifications>

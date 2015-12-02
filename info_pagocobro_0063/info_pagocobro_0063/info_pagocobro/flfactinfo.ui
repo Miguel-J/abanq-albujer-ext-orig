@@ -1,0 +1,51 @@
+<xupdate:modifications>
+<xupdate:insert-after select="/UI[UI,1]/actions[actions,1]/action[tesoreraRecibosAction]" >
+<action>
+<property name="name" >
+<cstring>i_prevcobros</cstring>
+</property>
+<property name="text" >
+<string>&amp;Previsiones de cobro</string>
+</property>
+<property name="menuText" >
+<string>Previsiones de cobro</string>
+</property>
+</action>
+</xupdate:insert-after>
+<xupdate:insert-after select="/UI[UI,1]/actions[actions,1]/action[i_prevcobros]" >
+<action>
+<property name="name" >
+<cstring>i_prevpagos</cstring>
+</property>
+<property name="text" >
+<string>Previsiones de Pago</string>
+</property>
+<property name="menuText" >
+<string>Previsiones de Pago</string>
+</property>
+</action>
+</xupdate:insert-after>
+<xupdate:insert-after select="/UI[UI,1]/connections[connections,1]/connection[connection,18]" >
+<connection>
+<sender>i_prevcobros</sender>
+<signal>activated()</signal>
+<receiver>FLWidgetApplication</receiver>
+<slot>openDefaultForm()</slot>
+</connection>
+</xupdate:insert-after>
+<xupdate:insert-after select="/UI[UI,1]/connections[connections,1]/connection[connection,19]" >
+<connection>
+<sender>i_prevpagos</sender>
+<signal>activated()</signal>
+<receiver>FLWidgetApplication</receiver>
+<slot>openDefaultForm()</slot>
+</connection>
+</xupdate:insert-after>
+<xupdate:insert-after select="/UI[UI,1]/menubar[menubar,1]/item[item,1]/item[item,4]" >
+<action name="i_prevcobros" />
+</xupdate:insert-after>
+<xupdate:insert-after select="/UI[UI,1]/menubar[menubar,1]/item[item,2]/item[item,3]" >
+<action name="i_prevpagos" />
+</xupdate:insert-after>
+<xupdate:update select="/UI[UI,1]/menubar[menubar,1]/property[property,2]/rect[rect,1]/height[height,1]/text()[1]" >23</xupdate:update>
+</xupdate:modifications>

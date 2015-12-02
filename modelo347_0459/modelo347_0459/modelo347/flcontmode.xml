@@ -1,0 +1,98 @@
+<xupdate:modifications>
+<xupdate:update select="/ACTIONS[ACTIONS,1]/action[co_tiposvia]/alias[alias,1]/text()[1]" >QT_TRANSLATE_NOOP(&quot;MetaData&quot;,&quot;Tipos de ví­a urbana&quot;)</xupdate:update>
+<xupdate:update select="/ACTIONS[ACTIONS,1]/action[co_tiposvia]/description[description,1]/text()[1]" >QT_TRANSLATE_NOOP(&quot;MetaData&quot;,&quot;Esta tabla almacena los distintos tipos de ví­a urbana (Calle, avenida, etc.&quot;)</xupdate:update>
+<xupdate:insert-after select="/ACTIONS[ACTIONS,1]/action[co_datosfiscales]" >
+<action>
+<name>co_modelo347</name>
+<description>QT_TRANSLATE_NOOP(&quot;MetaData&quot;,&quot;Modelo 347&quot;)</description>
+<alias>QT_TRANSLATE_NOOP(&quot;MetaData&quot;,&quot;Modelo 347&quot;)</alias>
+<table>co_modelo347</table>
+<form>co_mastermodelo347</form>
+<scriptform>co_mastermodelo347</scriptform>
+<formrecord>co_modelo347</formrecord>
+<scriptformrecord>co_modelo347</scriptformrecord>
+</action>
+</xupdate:insert-after>
+<xupdate:insert-after select="/ACTIONS[ACTIONS,1]/action[co_modelo347]" >
+<action>
+<name>co_modelo347_tipo2d</name>
+<description>QT_TRANSLATE_NOOP(&quot;MetaData&quot;,&quot;Modelo 347 - Registro tipo 2 (Declarados)&quot;)</description>
+<alias>QT_TRANSLATE_NOOP(&quot;MetaData&quot;,&quot;Modelo 347 - Registro tipo 2 (Declarados)&quot;)</alias>
+<table>co_modelo347_tipo2d</table>
+<formrecord>co_modelo347_tipo2d</formrecord>
+<scriptformrecord>co_modelo347_tipo2d</scriptformrecord>
+</action>
+</xupdate:insert-after>
+<xupdate:insert-after select="/ACTIONS[ACTIONS,1]/action[co_modelo347_tipo2d]" >
+<action>
+<name>co_modelo347_tipo2i</name>
+<description>QT_TRANSLATE_NOOP(&quot;MetaData&quot;,&quot;Modelo 347 - Registro tipo 2 (Inmuebles)&quot;)</description>
+<alias>QT_TRANSLATE_NOOP(&quot;MetaData&quot;,&quot;Modelo 347 - Registro tipo 2 (Inmuebles)&quot;)</alias>
+<table>co_modelo347_tipo2i</table>
+<formrecord>co_modelo347_tipo2i</formrecord>
+<scriptformrecord>co_modelo347_tipo2i</scriptformrecord>
+</action>
+</xupdate:insert-after>
+<xupdate:insert-after select="/ACTIONS[ACTIONS,1]/action[co_modelo347_tipo2i]" >
+<action>
+<name>co_datos347</name>
+<description>QT_TRANSLATE_NOOP(&quot;MetaData&quot;,&quot;Datos 347. Esta acción permite obtener datos relacionados con el modelo 347 para uno todos los clientes/proveedores. Los datos son obtenidos directamente de la información de facturación&quot;)</description>
+<alias>QT_TRANSLATE_NOOP(&quot;MetaData&quot;,&quot;Datos 347&quot;)</alias>
+<table>co_datos347</table>
+<form>master_print</form>
+<scriptform>co_masterdatos347</scriptform>
+<formrecord>co_datos347</formrecord>
+<scriptformrecord>co_datos347</scriptformrecord>
+</action>
+</xupdate:insert-after>
+<xupdate:insert-after select="/ACTIONS[ACTIONS,1]/action[co_datos347]" >
+<action>
+<name>co_facturacioncli347</name>
+<alias>QT_TRANSLATE_NOOP(&quot;MetaData&quot;,&quot;Facturas de cliente incluidas en el modelo 347&quot;)</alias>
+<description>QT_TRANSLATE_NOOP(&quot;MetaData&quot;,&quot;Facturas de cliente incluidas en el modelo 347&quot;)</description>
+<table>facturascli</table>
+<form>co_masterfacturacion347</form>
+<scriptform>co_masterfacturacioncli347</scriptform>
+</action>
+</xupdate:insert-after>
+<xupdate:insert-after select="/ACTIONS[ACTIONS,1]/action[co_facturacioncli347]" >
+<action>
+<name>co_facturacionprov347</name>
+<alias>QT_TRANSLATE_NOOP(&quot;MetaData&quot;,&quot;Facturas de proveedor incluidas en el modelo 347&quot;)</alias>
+<description>QT_TRANSLATE_NOOP(&quot;MetaData&quot;,&quot;Facturas de proveedor incluidas en el modelo 347&quot;)</description>
+<table>facturasprov</table>
+<form>co_masterfacturacion347</form>
+<scriptform>co_masterfacturacionprov347</scriptform>
+</action>
+</xupdate:insert-after>
+<xupdate:insert-after select="/ACTIONS[ACTIONS,1]/action[co_facturacionprov347]" >
+<action>
+<name>co_cobrosterceros347</name>
+<alias>QT_TRANSLATE_NOOP(&quot;MetaData&quot;,&quot;Cobros por cuenta de terceros en el modelo 347&quot;)</alias>
+<description>QT_TRANSLATE_NOOP(&quot;MetaData&quot;,&quot;Cobros por cuenta de terceros en el modelo 347&quot;)</description>
+<table>cobrosterceros</table>
+<form>co_masterfacturacion347</form>
+<scriptform>co_mastercobrosterceros347</scriptform>
+</action>
+</xupdate:insert-after>
+<xupdate:insert-after select="/ACTIONS[ACTIONS,1]/action[co_cobrosterceros347]" >
+<action>
+<name>co_contabilidadcli347</name>
+<alias>QT_TRANSLATE_NOOP(&quot;MetaData&quot;,&quot;Partidas de cliente incluidas en el modelo 347&quot;)</alias>
+<description>QT_TRANSLATE_NOOP(&quot;MetaData&quot;,&quot;Partidas de cliente incluidas en el modelo 347&quot;)</description>
+<table>co_partidas</table>
+<form>co_mastercontabilidad347</form>
+<scriptform>co_mastercontabilidadcli347</scriptform>
+</action>
+</xupdate:insert-after>
+<xupdate:insert-after select="/ACTIONS[ACTIONS,1]/action[co_contabilidadcli347]" >
+<action>
+<name>co_contabilidadprov347</name>
+<alias>QT_TRANSLATE_NOOP(&quot;MetaData&quot;,&quot;Partidas de proveedor incluidas en el modelo 347&quot;)</alias>
+<description>QT_TRANSLATE_NOOP(&quot;MetaData&quot;,&quot;Partidas de proveedor incluidas en el modelo 347&quot;)</description>
+<table>co_partidas</table>
+<form>co_mastercontabilidad347</form>
+<scriptform>co_mastercontabilidadprov347</scriptform>
+</action>
+</xupdate:insert-after>
+</xupdate:modifications>

@@ -1,0 +1,64 @@
+<xupdate:modifications>
+<xupdate:append-first select="/UI[UI,1]/images[images,1]" >
+<image name="presup_ofertaimage58935" >
+<data format="PNG" length="1448" >89504e470d0a1a0a0000000d4948445200000020000000200806000000737a7af40000056f49444154789ce596318c24471586bfb57af02b542b554b7bd294b4c1b675489ef1493007097bd94a58e202908ecc0e1d5e7864209140486812700644f812a4092cbc09ba3b92bb0b106e27565fb0a24662b45d628bedc2d3a609aab767766ff73883b090e8e4d75fd555fdeafdff7bd5f0fffe6c01ecfd841fdf9ced7db70e7165b560b4ddb1dae2a3c368c187c8585b22e8428f5ff5d163b4c50787d1061f3c92c9df5df4401d7c88186d797af47029996c41be75975f7ef5d69b6f7c09583d17c05bf3d927a57efada2fbef621f78f7e4ac921936c46c923a4053130e19be4da538612d1400b56c04540200698c81e314cf98839310019f80035f0feeb7fa6fc9de3d6edaf6f6d06900110e19d6fdcc347876b1f3291193ff8caaf7854cf11697071c1f7f27b3c69e61c58a15955f891273635b7f37d5881bb56f2f02fef73d3ecf1d112ac0617a0d0501f413eb2ec7fdbf2e0833f75b7de7c6308e215482720364ccc0c30dc19df455160c4b0afbecf7e7e1bb7aa99a803ea26321dfd9009773950ef214c28466f21ab02af9f31f73fc36aa8fbccb8084aa05e3900f6bf35e5c1fc71774e823bf7679f8c6f98d7de316f13055c74e4223cf4730e766e135b90ed88341e94c1ad4aecc82234442230c1f394c3fad7980c2a0fb9243419944790b7e09680083373c0337fc8fc3b716b0be0dee19d13b387ce33a863042d102256cb9ac7c47d8c184938d6c2226ca018162162fa935b115c888347ac40154034cc7f7f9f476fa704f0f883c78fbaaeebba4fbbeea5f0f40a7cd9f55dd73d983ffedbda03592fc8089aa63987343ccf55cf2fe225eb2f45c045ffe5e1d32e268334ae21b6913363d64735a28578d4a7312674c131dd9dc20a9452d07c4e04ac98751558b10028ab1023a8b102817c2f079d50b40c7c7a7d4ac3c689aecac8559832b091fc36a5f6f00f878cf518fa12f2d163c43cc75d742f9cbf92078f359662560c1948263c5c9bf0f4afa75df769d71d1f1f5fcaaf1a3fe3a7c7a797f2e3e3e3ae3bedc7bbaefbcdfd0fbb2103be4de9701fa793556d459ee5d48b9a9845aa58914b8e5b38621ba9da0a2b96855f204678129e608dc5074fcc22ce3b8a7191e6b55086923ccbf1788a5971ce031990d20488119c77586d71c1914b4e1deb018b9d8298450a29a8438dddb3d4b1e6a6dc4ceb762d75a829f60aea5863c7fdfcee4d5c70d81d9baea2d1da034982792fc155f5fdefd6fb8bfb4077fe2e20d5f70bebfcf3d6fb089a930b7859159cf501f7479764080e2b4953322843893536f57d817259260f8405666c8831128954cb0a65549247278fa0c1793754c3f4c61414583127430056f7daf44d46a12817252633c42c2603f69e687c439e256eb5a55af6868d3592c9e0996a59a5f56d64f6fa0c1f3d565b1a6950285cd8ec033119a36e6bf22c87168a9d026985fc7a0e118aed22fd5968d6fca46f62010a5da47db6811328a48000e4a48e39526b04acdea882b3bb603a99d2344d6a97bd5b59f59baed69b0dfc65c77bed955203ba90647f65d3039b3d9b513ac9805cc08be317dfdfb8c838e9f73dd9b80bb45d9ffd8cb82397ea79c7e2968e62a7a0fab8c29ad4170a53502e4aac4ef52e99e0dba46d1d93f12a5fadbd433ec8ea82c31acb786f8cda56b8e0b7ce7b80e4016b92a6d6a4cd06ae2db4b07f633f69be5ba43b4493b8240fd8ddf4fee0957e7c9c8d51994af2240f6c0470e681eb53ea5093eb9c263658b134b141894ab8adce6b7c96e66b1bda3780ed35bfa68679b552e7bce0a2db1a3c502dabb4c19254054b50a8e7d1a55335ae495973407b3957adba745eb56a5d3d67014823ff704b474343b5acfe259e05fd9f7017dc6743f2cbc5b367feb7f155e717add5635c5860b5c105cf7f83cfe33c7bf7e7effe08fadff25e4dc517f774c029f0d917f8cdffd1e79f9cd2b15cf43054030000000049454e44ae426082</data>
+</image>
+</xupdate:append-first>
+<xupdate:insert-after select="/UI[UI,1]/actions[actions,1]/action[ventasnew_itemAction]" >
+<action>
+<property name="name" >
+<cstring>plantillasinforme</cstring>
+</property>
+<property name="iconSet" >
+<iconset>presup_ofertaimage58935</iconset>
+</property>
+<property name="text" >
+<string>Plantillas de informe</string>
+</property>
+<property name="menuText" >
+<string>Plantillas de informe</string>
+</property>
+</action>
+</xupdate:insert-after>
+<xupdate:insert-after select="/UI[UI,1]/connections[connections,1]/connection[albaranescli,activated(),FLWidgetApplication,openDefaultForm()]" >
+<connection>
+<sender>plantillasinforme</sender>
+<signal>activated()</signal>
+<receiver>FLWidgetApplication</receiver>
+<slot>openDefaultForm()</slot>
+</connection>
+</xupdate:insert-after>
+<xupdate:insert-after select="/UI[UI,1]/menubar[menubar,1]/item[Ventas_2]/action[facturascli]" >
+<separator/>
+</xupdate:insert-after>
+<xupdate:insert-after select="/UI[UI,1]/menubar[menubar,1]/item[Ventas_2]/separator[separator,1]" >
+<action name="plantillasinforme" />
+</xupdate:insert-after>
+<xupdate:update select="/UI[UI,1]/menubar[menubar,1]/property[geometry]/rect[rect,1]/height[height,1]/text()[1]" >24</xupdate:update>
+<xupdate:insert-after select="/UI[UI,1]/toolbars[toolbars,1]/toolbar[toolBar]/property[name]" >
+<property name="geometry" >
+<rect>
+<x>0</x>
+<y>0</y>
+<width>285</width>
+<height>29</height>
+</rect>
+</property>
+</xupdate:insert-after>
+<xupdate:insert-after select="/UI[UI,1]/toolbars[toolbars,1]/toolbar[toolBar]/property[geometry]" >
+<property name="acceptDrops" >
+<bool>true</bool>
+</property>
+</xupdate:insert-after>
+<xupdate:insert-after select="/UI[UI,1]/toolbars[toolbars,1]/toolbar[toolBar]/property[acceptDrops]" >
+<property name="frameShape" >
+<enum>ToolBarPanel</enum>
+</property>
+</xupdate:insert-after>
+<xupdate:insert-after select="/UI[UI,1]/toolbars[toolbars,1]/toolbar[toolBar]/separator[separator,2]" >
+<action name="plantillasinforme" />
+</xupdate:insert-after>
+<xupdate:insert-after select="/UI[UI,1]/toolbars[toolbars,1]/toolbar[toolBar]/action[plantillasinforme]" >
+<separator/>
+</xupdate:insert-after>
+</xupdate:modifications>

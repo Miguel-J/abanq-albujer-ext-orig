@@ -1,0 +1,121 @@
+<!DOCTYPE TMD>
+<TMD>
+	<name>tpv_viajesmultitransstock</name>
+	<alias>QT_TRANSLATE_NOOP("MetaData","Viajes por multitransferencia de stocks")</alias>
+
+	<field>
+		<name>idviajemultitrans</name>
+		<alias>QT_TRANSLATE_NOOP("MetaData","Identificador")</alias>
+		<null>false</null>
+		<pk>true</pk>
+		<type>string</type>
+		<length>10</length>
+		
+		<relation>
+			<table>tpv_lineasmultitransstock</table>
+			<field>idviajemultitrans</field>
+			<card>1M</card>
+		</relation>
+		
+		<relation>
+			<table>pedidoscli</table>
+			<field>idviajemultitrans</field>
+			<card>1M</card>
+		</relation>
+		
+		<relation>
+			<table>pedidosprov</table>
+			<field>idviajemultitrans</field>
+			<card>1M</card>
+		</relation>
+	</field>
+
+	<field>
+		<name>codmultitransstock</name>
+		<alias>QT_TRANSLATE_NOOP("MetaData","Multitransferencia stock")</alias>
+		<null>true</null>
+		<pk>false</pk>
+		<type>string</type>
+		<length>8</length>
+		<visiblegrid>false</visiblegrid>
+
+		<relation>
+			<table>tpv_multitransstock</table>
+			<field>codmultitransstock</field>
+			<card>M1</card>
+			<delC>true</delC>
+		</relation>
+	</field>
+
+	<field>
+		<name>codalmaorigen</name>
+		<alias>QT_TRANSLATE_NOOP("MetaData","Alm.Origen")</alias>
+		<null>true</null>
+		<pk>false</pk>
+		<type>string</type>
+		<length>4</length>
+		<editable>false</editable>
+
+		<relation>
+			<table>almacenes</table>
+			<field>codalmacen</field>
+			<card>M1</card>
+		</relation>
+	</field>
+	
+	<field>
+		<name>codalmadestino</name>
+		<alias>QT_TRANSLATE_NOOP("MetaData","Alm.Destino")</alias>
+		<null>false</null>
+		<pk>false</pk>
+		<type>string</type>
+		<length>4</length>
+		<editable>false</editable>
+
+		<relation>
+			<table>almacenes</table>
+			<field>codalmacen</field>
+			<card>M1</card>
+		</relation>
+	</field>
+	
+	<field>
+		<name>fecha</name>
+		<alias>QT_TRANSLATE_NOOP("MetaData","Fecha")</alias>
+		<null>true</null>
+		<pk>false</pk>
+		<type>date</type>
+		<editable>false</editable>
+	</field>
+	
+	<field>
+		<name>cantidad</name>
+		<alias>QT_TRANSLATE_NOOP("MetaData","Cantidad")</alias>
+		<null>false</null>
+		<pk>false</pk>
+		<type>double</type>
+		<partI>6</partI>
+		<partD>2</partD>
+		<default>0</default>
+	</field>
+	
+	<field>
+		<name>estado</name>
+		<alias>QT_TRANSLATE_NOOP("MetaData","Estado")</alias>
+		<null>false</null>
+		<pk>false</pk>
+		<type>string</type>
+		<length>20</length>
+		<default>PTE ENVIO</default>
+		<editable>false</editable>
+	</field>
+	
+	<field>
+		<name>ptesincroenvio</name>
+		<alias>QT_TRANSLATE_NOOP("MetaData","Pte.Sincro envío")</alias>
+		<null>true</null>
+		<pk>false</pk>
+		<type>bool</type>
+		<default>false</default>
+	</field>
+</TMD>

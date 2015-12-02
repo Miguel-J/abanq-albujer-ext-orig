@@ -1,0 +1,18 @@
+<xupdate:modifications>
+<xupdate:insert-after select="/TMD[TMD,1]/field[idtipotareapro]/relation[articuloscomp,idtipotareapro]" >
+<relation>
+<table>trabexternolibro</table>
+<field>idtipotareapro</field>
+<card>1M</card>
+</relation>
+</xupdate:insert-after>
+<xupdate:insert-after select="/TMD[TMD,1]/field[opcional]" >
+<field>
+<name>controlflujo</name>
+<!--Indicador de si la tarea es de Control de flujo--><alias>QT_TRANSLATE_NOOP(&quot;MetaData&quot;,&quot;Control de flujo&quot;)</alias>
+<null>true</null>
+<pk>false</pk>
+<type>bool</type>
+</field>
+</xupdate:insert-after>
+</xupdate:modifications>

@@ -1,0 +1,309 @@
+<xupdate:modifications>
+<xupdate:delete select="/UI[UI,1]/widget[QWidget,formClientes]/vbox[vbox,1]/widget[QFrame,frame7]/hbox[hbox,1]/widget[FLFieldDB,fdbNombre]" />
+<xupdate:delete select="/UI[UI,1]/widget[QWidget,formClientes]/vbox[vbox,1]/widget[QFrame,frame7]/hbox[hbox,1]/spacer[spacer13_3]" />
+<xupdate:insert-after select="/UI[UI,1]/widget[QWidget,formClientes]/vbox[vbox,1]/widget[QFrame,frame7]/hbox[hbox,1]/property[name]" >
+<property name="margin" >
+<number>4</number>
+</property>
+</xupdate:insert-after>
+<xupdate:insert-after select="/UI[UI,1]/widget[QWidget,formClientes]/vbox[vbox,1]/widget[QFrame,frame7]/hbox[hbox,1]/widget[FLFieldDB,fdbCodCliente]" >
+<widget class="FLFieldDB" >
+<property name="name" >
+<cstring>fdbPersonaFisica</cstring>
+</property>
+<property name="sizePolicy" >
+<sizepolicy>
+<hsizetype>1</hsizetype>
+<vsizetype>0</vsizetype>
+<horstretch>0</horstretch>
+<verstretch>0</verstretch>
+</sizepolicy>
+</property>
+<property name="minimumSize" >
+<size>
+<width>152</width>
+<height>26</height>
+</size>
+</property>
+<property name="maximumSize" >
+<size>
+<width>160</width>
+<height>32767</height>
+</size>
+</property>
+<property name="fieldName" >
+<string>personafisica</string>
+</property>
+</widget>
+</xupdate:insert-after>
+<xupdate:insert-after select="/UI[UI,1]/widget[QWidget,formClientes]/vbox[vbox,1]/widget[QFrame,frame7]/hbox[hbox,1]/widget[FLFieldDB,fdbPersonaFisica]" >
+<widget class="QGroupBox" >
+<property name="name" >
+<cstring>gbxNombre</cstring>
+</property>
+<property name="maximumSize" >
+<size>
+<width>32767</width>
+<height>50</height>
+</size>
+</property>
+<property name="title" >
+<string/>
+</property>
+<property name="alignment" >
+<set>AlignVCenter</set>
+</property>
+<hbox>
+<property name="name" >
+<cstring>unnamed</cstring>
+</property>
+<property name="margin" >
+<number>6</number>
+</property>
+<widget class="FLFieldDB" >
+<property name="name" >
+<cstring>fdbNombre</cstring>
+</property>
+<property name="sizePolicy" >
+<sizepolicy>
+<hsizetype>7</hsizetype>
+<vsizetype>0</vsizetype>
+<horstretch>0</horstretch>
+<verstretch>0</verstretch>
+</sizepolicy>
+</property>
+<property name="fieldName" >
+<string>nombre</string>
+</property>
+</widget>
+</hbox>
+</widget>
+</xupdate:insert-after>
+<xupdate:append-first select="/UI[UI,1]/images[images,1]" >
+<image name="persona_fisicaimage45668" >
+<data format="PNG" length="858" >89504e470d0a1a0a0000000d4948445200000020000000200806000000737a7af40000032149444154789cc59741881b5518c77f7547f80211bec11c66a0870d0a6e40300905d9140feecd559424a7ee624128822e0a85452d14f4d8e3221e3cf4241e44646b0fde6a5610a2203805974e61c55910991c16e6618379e0c8f3303488a099ee26dd3fe496f7de6ffedffffb78ef8c738e539573ee3f7f2794079cffbffd9d730b05b802dc3a2d807700070c4e03e07d11715a5557c681474ef299ff920fece2f1417db98ec5965ae4cde9f0c781cf4564adf174031181c3720be7e14000dcd4aaaeb59a2d56575701b0b69c0327057806f84a55cfb7ceb5e8757bac3fb78e393288270b077801f84655dbad668b7eb7cff6e56de28398c978b2f00cbc229e7caa81563b2b1dd6ba6b6cbdb9457a90127d1781807882cd67431cc78116705d6b5a6dafb4693ddf62ebb52d00766fec928e532a544a1d7e1c8067811b412da8759a1dd6bbeb5c7deb2a5460b837e4cee11dc26ac88449e90c3c48092e011f6a4d2bed736d7a177a6c5edc843f8bc307df0ec003939b0772a02cc0dbe2c98ed6f44ca7d9a1f76a8fcd8d4db807c3ef870c7f182208152aa8a74cf249e90c940178573cb9169c0d6837db6c5cdca0dfed93a51983bd01f1610c39d8dc22082637007373e065e09a5485f06c48bd5e27d490e1de90f820261da5f8e293e5192a4a428250d45e9052ad380be01670dd187329be1b63ad25fe2946434555093524b319bee793da14802ccf004acf81595df007f03ab0638e0cc9cf0999c9b0f72c152a185b4cbc8c0cf51472f0f1a7e528a3321970c065c01a63de8bee46c5aa4721a8058c18a155c55803395327163107ae0017ecd8fe1eefc7a4bfa698230316ecd8a2a2d8dce2e343ce42e600c067803563f345b41f2de115b50e6ac1b4e699cda65d5146c719c55f02db766c993a610c924b710fa0805a9403f7b54391898fa2dbd1120039684d8b1d17ecc07d7d0cf4adb5bf45b723922461743422d410f2f29b9cf442721378d15afb4bb41f911c2485fdd572f60373bb153780180fd75869b8e527971d45fb3ed477c113c08f800b82c0e13d7c0080c7804ff070e2c9a900002c5104d4015fcf0298d7bbe09ffa0b788322e04fcdfcf7021fa715e0a5590efc0d9ce9d48debbd42f10000000049454e44ae426082</data>
+</image>
+</xupdate:append-first>
+<xupdate:append-first select="/UI[UI,1]/images[images,1]" >
+<image name="persona_fisicaimage19026" >
+<data format="PNG" length="846" >89504e470d0a1a0a0000000d4948445200000020000000200806000000737a7af40000031549444154789cc597cf8be44414c73f2d917d81281570a1027398c8880605bdfa1778f2175e1505f10722e2492fe2d983e06951105410dc83e0c9f30a0a3de0c296320b3db08d096e43220c748183fb8492f6503d832bcc4c6a761c0b420824effb79df7aef2599ac562bfecf958db96932993c0cfc0afc7e5aa1a312bd6be4f32f039780c969018e5a630102f002f031235d3b6b80956402f01af03970cf790340062202f03cf03db075ae009209a63007978f01df02cdb901284a69ca0317001e5c433c7a2e00822022349bb7257dff1ae2f1ff1c4051008c356c6e6dfeb3173680ef80d74f0330baa5d65d405554e45b392525b3c50c5505b8406cd11cf8280560bc034121038fc75eb4186ba837ea7fa7f021f06c0a40b203263390415d4771c984d97c160163425f00025c1e1337d90145238c405555549b15cd230d521c76c7bdc057c00763e2a63b901b14a53215cb6c89290c224255544caf4ff1de1f3cf22eb126de068e7ce58e9f8421b6a2bfe5914c5055caa2242f726c65914a681ebacd0980b7804f8e4b74fc8b656dbfc9e334141114c51a8b0f9edad60c1b03cd030d6ec7b1dc5b32ec0da8eaabc06fc0fb7704a021eebd0f1e8b65a94b4a29d14c696c0305d45ae33a8706c5ed38d803e0678e29c8b41a08eb2e004a8963b9b6352282dc2db8ced1773dce39fa458faafe083c072c8e8a9b5403003ec422d3a054b68a0d17c0dd70b4bb2d57b6afd0ce5bfcbeff0178ea38f13480831ac80c1a146b2d520812845937a39ff76c5fdd66e80634e867c0d3c4bd3f29ecb8a5410fbbc01696bcc863e69da39db73817cf1af412f0e6d8b849df034a84c88b1c238676d11eee79dbb568d06f8077c6c684440708eb6db8cf30eb66b4bb2dd3ab53ba450781cbc48fd75b2900490e10c05eb4a857da9d96e9f6946131fc45e03de0c5547148752003bfefe96e765cbb7e8d613104e00de0d354e16400c904c984fe668fdb75a8d73f8157802f4f2b9e04a041f1fb9e7edee3bdff037809f8fa4ec421b106fa458ff77e1778e22cc421c101bfef21f01371b4fe7216e229001708dc009ee484d19abc56abd58907f00cf13fe0cc75fe061a776329ce5db8310000000049454e44ae426082</data>
+</image>
+</xupdate:append-first>
+<xupdate:insert-after select="/UI[UI,1]/widget[QWidget,formClientes]/vbox[vbox,1]/widget[QFrame,frame7]/hbox[hbox,1]/widget[QGroupBox,gbxNombre]" >
+<widget class="QGroupBox" >
+<property name="name" >
+<cstring>gbxNombreApellidos</cstring>
+</property>
+<property name="maximumSize" >
+<size>
+<width>32767</width>
+<height>50</height>
+</size>
+</property>
+<property name="title" >
+<string/>
+</property>
+<property name="alignment" >
+<set>AlignVCenter</set>
+</property>
+<hbox>
+<property name="name" >
+<cstring>unnamed</cstring>
+</property>
+<property name="margin" >
+<number>3</number>
+</property>
+<widget class="FLFieldDB" >
+<property name="name" >
+<cstring>fdbNombrePila</cstring>
+</property>
+<property name="sizePolicy" >
+<sizepolicy>
+<hsizetype>7</hsizetype>
+<vsizetype>0</vsizetype>
+<horstretch>0</horstretch>
+<verstretch>0</verstretch>
+</sizepolicy>
+</property>
+<property name="fieldName" >
+<string>nombrepila</string>
+</property>
+</widget>
+<widget class="QLayoutWidget" >
+<property name="name" >
+<cstring>layout27</cstring>
+</property>
+<vbox>
+<property name="name" >
+<cstring>unnamed</cstring>
+</property>
+<property name="margin" >
+<number>2</number>
+</property>
+<property name="spacing" >
+<number>1</number>
+</property>
+<widget class="QPushButton" >
+<property name="name" >
+<cstring>tbnInsertarNombre</cstring>
+</property>
+<property name="minimumSize" >
+<size>
+<width>32</width>
+<height>16</height>
+</size>
+</property>
+<property name="maximumSize" >
+<size>
+<width>32</width>
+<height>16</height>
+</size>
+</property>
+<property name="text" >
+<string/>
+</property>
+<property name="iconSet" >
+<iconset>persona_fisicaimage45668</iconset>
+</property>
+<property name="toolTip" stdset="0" >
+<string>Insertar nombre</string>
+</property>
+<property name="whatsThis" stdset="0" >
+<string/>
+</property>
+</widget>
+<widget class="QPushButton" >
+<property name="name" >
+<cstring>tbnEliminarNombre</cstring>
+</property>
+<property name="minimumSize" >
+<size>
+<width>32</width>
+<height>16</height>
+</size>
+</property>
+<property name="maximumSize" >
+<size>
+<width>32</width>
+<height>16</height>
+</size>
+</property>
+<property name="text" >
+<string/>
+</property>
+<property name="iconSet" >
+<iconset>persona_fisicaimage19026</iconset>
+</property>
+<property name="toolTip" stdset="0" >
+<string>Eliminar nombre</string>
+</property>
+<property name="whatsThis" stdset="0" >
+<string/>
+</property>
+</widget>
+</vbox>
+</widget>
+<widget class="FLFieldDB" >
+<property name="name" >
+<cstring>fdbApellidos</cstring>
+</property>
+<property name="sizePolicy" >
+<sizepolicy>
+<hsizetype>7</hsizetype>
+<vsizetype>0</vsizetype>
+<horstretch>0</horstretch>
+<verstretch>0</verstretch>
+</sizepolicy>
+</property>
+<property name="minimumSize" >
+<size>
+<width>350</width>
+<height>26</height>
+</size>
+</property>
+<property name="fieldName" >
+<string>apellidos</string>
+</property>
+</widget>
+</hbox>
+</widget>
+</xupdate:insert-after>
+<xupdate:insert-after select="/UI[UI,1]/widget[QWidget,formClientes]/vbox[vbox,1]/widget[QFrame,frame7]/property[name]" >
+<property name="maximumSize" >
+<size>
+<width>32767</width>
+<height>70</height>
+</size>
+</property>
+</xupdate:insert-after>
+<xupdate:insert-after select="/UI[UI,1]/widget[QWidget,formClientes]" >
+<customwidgets/>
+</xupdate:insert-after>
+<xupdate:insert-after select="/UI[UI,1]/connections[connections,1]" >
+<tabstops>
+<tabstop>fdbCodCliente</tabstop>
+<tabstop>fdbPersonaFisica</tabstop>
+<tabstop>fdbNombre</tabstop>
+<tabstop>fdbNombrePila</tabstop>
+<tabstop>fdbApellidos</tabstop>
+<tabstop>fdbNombreComercial</tabstop>
+<tabstop>fdbGruposClientes</tabstop>
+<tabstop>fdbDesGrupo</tabstop>
+<tabstop>fdbCifNif</tabstop>
+<tabstop>fdbTipoIdFiscal</tabstop>
+<tabstop>pbNuevoDomFacturacion</tabstop>
+<tabstop>toolButtonEdit</tabstop>
+<tabstop>toolButtonBuscarContacto</tabstop>
+<tabstop>fdbCodContacto</tabstop>
+<tabstop>fdbContacto</tabstop>
+<tabstop>fdbTelefono1</tabstop>
+<tabstop>fdbTelefono2</tabstop>
+<tabstop>fdbFax</tabstop>
+<tabstop>fdbEmail</tabstop>
+<tabstop>fdbWeb</tabstop>
+<tabstop>tbnInsertarNombre</tabstop>
+<tabstop>tbnEliminarNombre</tabstop>
+<tabstop>fdbObservaciones</tabstop>
+<tabstop>fdbDeBaja</tabstop>
+<tabstop>fdbFechaBaja</tabstop>
+<tabstop>fdbCodPago</tabstop>
+<tabstop>fdbDesPago</tabstop>
+<tabstop>fdbCodDivisa</tabstop>
+<tabstop>fdbDesDivisa</tabstop>
+<tabstop>fdbCodSerie</tabstop>
+<tabstop>fdbDesSerie</tabstop>
+<tabstop>fdbCodTipoRappel</tabstop>
+<tabstop>fdbDesRappel</tabstop>
+<tabstop>fdbCodAgente</tabstop>
+<tabstop>fdbApellidosAgente</tabstop>
+<tabstop>fdbCodCuentaRem</tabstop>
+<tabstop>fdbDesCtaRem</tabstop>
+<tabstop>fdbCodCuentaDom</tabstop>
+<tabstop>pbnBorrarCuentaDom</tabstop>
+<tabstop>fdbRegimenIva</tabstop>
+<tabstop>fdbRecargo</tabstop>
+<tabstop>fdbCopiasFactura</tabstop>
+<tabstop>fdbRiesgoMax</tabstop>
+<tabstop>fdlRiesgoAlcanzado</tabstop>
+<tabstop>tdbDirecciones</tabstop>
+<tabstop>tdbCuentas</tabstop>
+<tabstop>tdbContactos</tabstop>
+<tabstop>tdbDescuentos</tabstop>
+<tabstop>tdbPresupuestos</tabstop>
+<tabstop>tdbPedidos</tabstop>
+<tabstop>tdbAlbaranes</tabstop>
+<tabstop>tdbFacturas</tabstop>
+<tabstop>tdbRecibos</tabstop>
+<tabstop>lvwGDDocumentos</tabstop>
+<tabstop>fdbCodSubcuenta</tabstop>
+<tabstop>fdbIdSubcuenta</tabstop>
+<tabstop>fdbDesSubcuenta</tabstop>
+<tabstop>fdbEjercicioSubcuenta</tabstop>
+<tabstop>fdbDebeSubcuenta</tabstop>
+<tabstop>fdbHaberSubcuenta</tabstop>
+<tabstop>fdbSaldoSubcuenta</tabstop>
+<tabstop>tdbPartidas</tabstop>
+<tabstop>tdbSubcuentas</tabstop>
+</tabstops>
+</xupdate:insert-after>
+</xupdate:modifications>

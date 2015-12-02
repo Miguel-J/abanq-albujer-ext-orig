@@ -1,0 +1,10 @@
+<flpatch:modifications name="ag_trans_base" >
+    <flpatch:addFile path="facturacion/principal/forms/" name="agenciastrans.ui" />
+    <flpatch:patchXml path="facturacion/principal/forms/" name="flfactppal.ui" />
+    <flpatch:addFile path="facturacion/principal/forms/" name="sedesagencia.ui" />
+    <flpatch:addFile path="facturacion/principal/scripts/" name="sedesagencia.qs" />
+    <flpatch:addFile path="facturacion/principal/tables/" name="agenciastrans.mtd" />
+    <flpatch:addFile path="facturacion/principal/tables/" name="sedesagencia.mtd" />
+    <flpatch:patchXml path="facturacion/principal/" name="flfactppal.xml" />
+    <flpatch:addFile path="facturacion/principal/scripts/" name="agenciastrans.qs" />
+</flpatch:modifications>

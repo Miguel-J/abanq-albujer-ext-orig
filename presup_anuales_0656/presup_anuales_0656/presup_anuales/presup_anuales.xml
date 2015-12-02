@@ -1,0 +1,15 @@
+<flpatch:modifications name="presup_anuales" >
+    <flpatch:patchXml path="contabilidad/principal/" name="flcontppal.xml" />
+    <flpatch:addFile path="contabilidad/principal/forms/" name="co_presupuestosanuales.ui" />
+    <flpatch:patchXml path="contabilidad/principal/forms/" name="flcontppal.ui" />
+    <flpatch:patchScript path="contabilidad/principal/scripts/" name="co_asientos.qs" />
+    <flpatch:addFile path="contabilidad/principal/scripts/" name="co_presupuestosanuales.qs" />
+    <flpatch:patchScript path="contabilidad/principal/scripts/" name="flcontppal.qs" />
+    <flpatch:addFile path="contabilidad/principal/tables/" name="co_presupuestosanuales.mtd" />
+    <flpatch:patchXml path="facturacion/principal/forms/" name="ejercicios.ui" />
+    <flpatch:patchXml path="facturacion/principal/tables/" name="centroscoste.mtd" />
+    <flpatch:patchXml path="facturacion/principal/tables/" name="ejercicios.mtd" />
+    <flpatch:addFile path="contabilidad/principal/forms/" name="co_crearpresupuesto.ui" />
+    <flpatch:addFile path="contabilidad/principal/tables/" name="co_crearpresupuesto.mtd" />
+    <flpatch:addFile path="contabilidad/principal/scripts/" name="co_crearpresupuesto.qs" />
+</flpatch:modifications>

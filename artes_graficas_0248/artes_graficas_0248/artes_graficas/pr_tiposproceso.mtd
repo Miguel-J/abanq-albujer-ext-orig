@@ -1,0 +1,20 @@
+<xupdate:modifications>
+<xupdate:insert-after select="/TMD[TMD,1]/field[fabricacion]" >
+<field>
+<name>xml</name>
+<!--XML que contiene los parámetros y variantes--><alias>QT_TRANSLATE_NOOP(&quot;MetaData&quot;,&quot;Parámetros y variantes&quot;)</alias>
+<null>true</null>
+<pk>false</pk>
+<type>stringlist</type>
+</field>
+</xupdate:insert-after>
+<xupdate:insert-after select="/TMD[TMD,1]/field[xml]" >
+<field>
+<name>condviabilidad</name>
+<!--Condiciones de viabilidad--><alias>QT_TRANSLATE_NOOP(&quot;MetaData&quot;,&quot;Viabilidad&quot;)</alias>
+<null>true</null>
+<pk>false</pk>
+<type>stringlist</type>
+</field>
+</xupdate:insert-after>
+</xupdate:modifications>

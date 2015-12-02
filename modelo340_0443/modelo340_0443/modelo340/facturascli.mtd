@@ -1,0 +1,52 @@
+<xupdate:modifications>
+<xupdate:insert-after select="/TMD[TMD,1]/field[hora]" >
+<field>
+<name>claveoperacion340</name>
+<alias>QT_TRANSLATE_NOOP(&quot;MetaData&quot;,&quot;Clave operación 340&quot;)</alias>
+<null>true</null>
+<pk>false</pk>
+<type>string</type>
+<length>1</length>
+<relation>
+<table>co_claveoperacion</table>
+<field>codigo</field>
+<card>M1</card>
+</relation>
+</field>
+</xupdate:insert-after>
+<xupdate:insert-after select="/TMD[TMD,1]/field[claveoperacion340]" >
+<field>
+<name>codinmueble340</name>
+<alias>QT_TRANSLATE_NOOP(&quot;MetaData&quot;,&quot;Inmueble&quot;)</alias>
+<null>true</null>
+<pk>false</pk>
+<type>string</type>
+<length>25</length>
+<relation>
+<table>co_inmueble</table>
+<field>codinmueble</field>
+<card>M1</card>
+</relation>
+</field>
+</xupdate:insert-after>
+<xupdate:insert-after select="/TMD[TMD,1]/field[codinmueble340]" >
+<field>
+<name>desglose340</name>
+<alias>QT_TRANSLATE_NOOP(&quot;MetaData&quot;,&quot;Desglose IVA&quot;)</alias>
+<null>true</null>
+<pk>false</pk>
+<type>uint</type>
+<default>1</default>
+</field>
+</xupdate:insert-after>
+<xupdate:insert-after select="/TMD[TMD,1]/field[desglose340]" >
+<field>
+<name>manual340</name>
+<alias>QT_TRANSLATE_NOOP(&quot;MetaData&quot;,&quot;Manual&quot;)</alias>
+<null>false</null>
+<pk>false</pk>
+<type>bool</type>
+<default>false</default>
+</field>
+</xupdate:insert-after>
+</xupdate:modifications>

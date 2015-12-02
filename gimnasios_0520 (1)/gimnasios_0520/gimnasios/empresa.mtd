@@ -1,0 +1,20 @@
+<xupdate:modifications>
+<xupdate:insert-after select="/TMD[TMD,1]/field[stockpedidos]" >
+<field>
+<name>cansesionesaviso</name>
+<!--Sesiones límite para dar aviso--><alias>QT_TRANSLATE_NOOP(&quot;MetaData&quot;,&quot;Sesiones límite para dar aviso&quot;)</alias>
+<null>true</null>
+<pk>false</pk>
+<type>uint</type>
+</field>
+</xupdate:insert-after>
+<xupdate:insert-after select="/TMD[TMD,1]/field[cansesionesaviso]" >
+<field>
+<name>candiasaviso</name>
+<!--Días límite para dar aviso--><alias>QT_TRANSLATE_NOOP(&quot;MetaData&quot;,&quot;Días límite para dar aviso&quot;)</alias>
+<null>true</null>
+<pk>false</pk>
+<type>uint</type>
+</field>
+</xupdate:insert-after>
+</xupdate:modifications>

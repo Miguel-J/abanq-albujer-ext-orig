@@ -1,0 +1,14 @@
+<xupdate:modifications>
+<xupdate:insert-after select="/ACTIONS[ACTIONS,1]/action[i_resreciboscli]" >
+<action>
+<name>i_presupuestosprov</name>
+<alias>QT_TRANSLATE_NOOP(&quot;MetaData&quot;,&quot;Ofertas de proveedores&quot;)</alias>
+<description>QT_TRANSLATE_NOOP(&quot;MetaData&quot;,&quot;Informe que contiene una página por cada oferta de proveedor. Se muestran los datos de las líneas de la oferta&quot;)</description>
+<table>i_presupuestosprov</table>
+<form>i_master</form>
+<formrecord>i_presupuestosprov</formrecord>
+<scriptform>i_masterpresupuestosprov</scriptform>
+<scriptformrecord>i_presupuestosprov</scriptformrecord>
+</action>
+</xupdate:insert-after>
+</xupdate:modifications>

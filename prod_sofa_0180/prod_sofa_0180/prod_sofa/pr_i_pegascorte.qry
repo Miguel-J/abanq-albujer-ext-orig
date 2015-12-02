@@ -1,0 +1,28 @@
+<!DOCTYPE QRY>
+<QRY>
+	<name>pr_i_pegascorte</name>
+
+	<tables>pr_ordenesproduccion,lotesstock</tables>
+
+	<select>
+		pr_ordenesproduccion.codorden, ordenprod.codorden, ordenprod.codruta, procesoscorte.idobjeto,pr_tareas.idtarea,pr_tareas.descripcion,pr_tareas.idtipotarea, pr_tareas.idtipotareapro, modulos.codlote,ordenprod.codorden
+	</select>
+
+	<from>
+		pr_ordenesproduccion
+		INNER JOIN pr_procesos procesoscorte ON pr_ordenesproduccion.codorden = procesoscorte.codordenproduccion AND pr_ordenesproduccion.tipoorden = 'C' 
+		INNER JOIN movistock ON procesoscorte.idobjeto = movistock.codlote 
+		INNER JOIN lotesstock modulos ON movistock.codloteprod = modulos.codlote
+		INNER JOIN articulos ON modulos.referencia = articulos.referencia 
+		INNER JOIN pr_procesos procesosprod ON movistock.codloteprod = procesosprod.idobjeto 
+		INNER JOIN pr_tareas ON procesosprod.idproceso = pr_tareas.idproceso AND idtipotarea IN ('COSIDO','COSIDOM','COSIDOF')
+		LEFT OUTER JOIN pr_ordenesproduccion ordenprod ON ordenprod.codorden = procesosprod.codordenproduccion
+	</from>
+
+	<where>
+	</where>
+	
+	<order>
+		pr_ordenesproduccion.codorden, modulos.referencia, modulos.codlote,pr_tareas.idtipotarea
+	</order>
+</QRY>

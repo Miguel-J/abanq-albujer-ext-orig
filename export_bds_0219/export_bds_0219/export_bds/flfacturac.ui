@@ -1,0 +1,28 @@
+<xupdate:modifications>
+<xupdate:insert-after select="/UI[UI,1]/actions[actions,1]/action[ventasnew_itemAction]" >
+<action>
+<property name="name" >
+<cstring>registrosexportados</cstring>
+</property>
+<property name="text" >
+<string>Registros exportados</string>
+</property>
+<property name="menuText" >
+<string>Registros exportados</string>
+</property>
+</action>
+</xupdate:insert-after>
+<xupdate:insert-after select="/UI[UI,1]/connections[connections,1]/connection[albaranescli,activated(),FLWidgetApplication,openDefaultForm()]" >
+<connection>
+<sender>registrosexportados</sender>
+<signal>activated()</signal>
+<receiver>FLWidgetApplication</receiver>
+<slot>openDefaultForm()</slot>
+</connection>
+</xupdate:insert-after>
+<xupdate:insert-after select="/UI[UI,1]/menubar[menubar,1]/item[Compras]" >
+<item name="Exportaciones" text="Exportaciones" >
+<action name="registrosexportados" />
+</item>
+</xupdate:insert-after>
+</xupdate:modifications>

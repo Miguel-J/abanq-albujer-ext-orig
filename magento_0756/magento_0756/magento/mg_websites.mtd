@@ -1,0 +1,81 @@
+<!DOCTYPE TMD>
+<TMD>
+	<name>mg_websites</name>
+	<alias>QT_TRANSLATE_NOOP("MetaData","Web site")</alias>
+
+	<field>
+		<name>codwebsite</name>
+		<alias>QT_TRANSLATE_NOOP("MetaData","Código")</alias>
+		<null>false</null>
+		<pk>true</pk>
+		<type>string</type>
+		<length>30</length>
+		
+		<relation>
+			<table>mg_storeviews</table>
+			<field>codwebsite</field>
+			<card>1M</card>
+		</relation>
+		
+		<relation>
+			<table>mg_artwebsite</table>
+			<field>codwebsite</field>
+			<card>1M</card>
+		</relation>
+		
+		<relation>
+			<table>mg_importexport</table>
+			<field>codwebsite</field>
+			<card>1M</card>
+		</relation>
+	</field>
+	
+	<field>
+		<name>descripcion</name>
+		<alias>QT_TRANSLATE_NOOP("MetaData","Descripción")</alias>
+		<null>false</null>
+		<pk>false</pk>
+		<type>string</type>
+		<length>100</length>
+	</field>
+	
+	<field>
+		<name>codalmacen</name>
+		<alias>QT_TRANSLATE_NOOP("MetaData","Almacén")</alias>
+		<null>false</null>
+		<pk>false</pk>
+		<type>string</type>
+		<length>4</length>
+
+		<relation>
+			<table>almacenes</table>
+			<field>codalmacen</field>
+			<card>M1</card>
+		</relation>
+	</field>
+
+	<field>
+		<name>nombrealmacen</name>
+		<alias>QT_TRANSLATE_NOOP("MetaData","N. Almacén")</alias>
+		<null>true</null>
+		<pk>false</pk>
+		<type>string</type>
+		<length>100</length>
+	</field>
+
+	<field>
+		<name>codtarifa</name>
+		<alias>QT_TRANSLATE_NOOP("MetaData","Tarifa")</alias>
+		<null>true</null>
+		<pk>false</pk>
+		<type>string</type>
+		<length>6</length>
+
+		<relation>
+			<table>tarifas</table>
+			<field>codtarifa</field>
+			<card>M1</card>
+		</relation>
+	</field>
+	
+</TMD>

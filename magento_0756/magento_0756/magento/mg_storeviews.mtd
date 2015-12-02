@@ -1,0 +1,45 @@
+<!DOCTYPE TMD>
+<TMD>
+	<name>mg_storeviews</name>
+	<alias>QT_TRANSLATE_NOOP("MetaData","Storeview")</alias>
+
+	<field>
+		<name>codstoreview</name>
+		<alias>QT_TRANSLATE_NOOP("MetaData","Storeview")</alias>
+		<null>false</null>
+		<pk>true</pk>
+		<type>string</type>
+		<length>30</length>
+	</field>
+	
+	<field>
+		<name>codwebsite</name>
+		<alias>QT_TRANSLATE_NOOP("MetaData","Website")</alias>
+		<null>false</null>
+		<pk>false</pk>
+		<type>string</type>
+		<length>30</length>
+		<visiblegrid>false</visiblegrid>
+		
+		<relation>
+			<table>mg_websites</table>
+			<field>codwebsite</field>
+			<card>M1</card>
+		</relation>
+	</field>
+	
+	<field>
+		<name>codidioma</name>
+		<alias>QT_TRANSLATE_NOOP("MetaData","Idioma")</alias>
+		<null>false</null>
+		<pk>false</pk>
+		<type>string</type>
+		<length>3</length>
+		<relation>
+			<table>idiomas</table>
+			<field>codidioma</field>
+			<card>M1</card>
+		</relation>
+	</field>
+	
+</TMD>

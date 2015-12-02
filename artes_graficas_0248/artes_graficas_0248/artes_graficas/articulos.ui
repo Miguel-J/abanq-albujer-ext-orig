@@ -1,0 +1,673 @@
+<xupdate:modifications>
+<xupdate:insert-after select="/UI[UI,1]/widget[QWidget,formArticulos]/vbox[vbox,1]/widget[QTabWidget,tbwArticulo]/widget[QWidget,compra]/vbox[vbox,1]/widget[QGroupBox,groupBox8]/hbox[hbox,1]/widget[FLFieldDB,fdbCosteMedio]" >
+<widget class="FLFieldDB" >
+<property name="name" >
+<cstring>fdbCosteMedioET</cstring>
+</property>
+<property name="sizePolicy" >
+<sizepolicy>
+<hsizetype>1</hsizetype>
+<vsizetype>5</vsizetype>
+<horstretch>0</horstretch>
+<verstretch>0</verstretch>
+</sizepolicy>
+</property>
+<property name="minimumSize" >
+<size>
+<width>38</width>
+<height>24</height>
+</size>
+</property>
+<property name="focusPolicy" >
+<enum>StrongFocus</enum>
+</property>
+<property name="fieldName" >
+<string>costemedioet</string>
+</property>
+</widget>
+</xupdate:insert-after>
+<xupdate:append-first select="/UI[UI,1]/images[images,1]" >
+<image name="artes_graficasimage47019" >
+<data format="PNG" length="1995" >89504e470d0a1a0a0000000d4948445200000020000000200806000000737a7af40000079249444154789cbd57616c13e7197e0609bdd0402f5a982e2d54e716281e8c61cad89c0d5453d8c041234d140d82588b69d4c51d9aa22cabd2c08fcc8a3464fc83c9f911d5d9c6168394ba9ee65d2296caa7cecc661bb38bd29dc31276a1293219302702743621ddb31f97646d494628dd9e3f77befbee7b9ff7799ff7bdf3423c1c1603921dc2aafd28285985c91b7f0370f721f79c0f242b4467abb841bb2857c669ab23e51a8d28ad0a3ce84e9f9bff52a10405960a41f6d68a321c877655088971001290bf04ecb703edbf06064e97ec01c6239f15812580bc1952f90ba2bcadb26cd5a1272419281280e1cb5791bb5e8692253dc8df2ac7d8ed04366ea9807afac8b9fcc5b6ed008cf927f7711400e25721057cc226ffb0bb89743491fe6ed2d94a36b692d67da4d24d6a839c412848cafb92f49c2051603dfc69142886e83c2848f603d29a23cf9659c61658e41200c0d55160f4720a92b811d58e61bc5a63b967a3dc5de0ebfb7310e53c06cee7af8cbef3f87300fe3e5f228b2077fdd67a800c7493ae4e3210266df5a4ad9574b525c99bbc2fbc6152ae249d474948fe9fcd27f002001024e9a06d87b0dbbe0948e580e10b40f86c02d10620de0074bebe115832fb06c3b7720080b7868651bd1d0082904a01db0efb8b80f8edf9902872d4b9fa6990b56d645784741ebe4faa8679e84a6bd46f92fe1499bc46d67644e93d41b604c9904a8a1b3c7f05706fbd3ea1c026cbf2436b51045865a077089024e0ea54663399e6ccdfc18161a4f3c0f1f32994cb5f847a39051940db1b0908b7b721bf0268dc01e48b816d2f1c598be5ae9f03583c1781851084676d8e157bf76cd98aad32805bc09001583e2cc48a29eec121a07451213a2e00152b4b70c500f63f5386f63340e1076508ff0568dcb50245cb80179f024ac44eacb76cc4e422606ce51ef9b21ab983c9d1d8ec04262729aeb5be540a2c5abd763506ae8de1c6ed22a817afc252ba0465cb80f59f07625786f1bd2f97407804589207f6fa54dc18b540580afca00278f7720e879e2f443896c0aadfefc57b993036af7905858f0043d7bffb951b177d6781c991596510d658835a2acb642c6eba3948c653a4b339497de43fa58f8f985de26820a32ae9ef238d6be6bda44a7a7c0152276b9bba180dc6c9ac79cfdf4b0aeba27f0250325729d6d90ebafe690c927a5a2349b67466e9ed271d0d71d6fac8aa630aedf5a4cb976566848ceb2427c8daa61039683099d2e8accbb2b649310ddadd45f68b64bf833448d70983109ded7311008ac5efbb7d7e324d93f904e90992990ce93e4186c264409dca284c72c45c63e8a4639f97a1ce2c9514998c9171354a6649d76117a39d0126a726a6b38904acafcc4d62a5f557deee109936c8093233487aba0d1a06194a7146521a64559d9f9a4fa3a73d4acf49d2d39134cb94cad27950a3fb68178d2ce93fa990191b79d34b4e90d67dd15b80b8632e0a4fb99b021f282a497daaee7d642841664648f7d12e935c968cf692b69a00e37de63a254cba9bbce420e9f671e63a0dd2db2c33db2b333a481a0629acf324a7fdb0f01304c6ce2722efe71fdf5a55fcd8f0c2d55fb0a07839802c3034099c4fafc7a933c710eb5f8192a7811f569723723688adebd66372f155bca96e86aaabe8787d3522a93422bfb98edc9df7b06cc1099c550bf19d8965287c1a285ffaadb25fbed3b7001357de9e5d07517c4d8968547a1532434653a49e3655e90a922dedc999ce50bac9da3a0fa3dd06d96f7a20daab901364d5e110bbda0df33dd24712207787184d93e2d7b40c802717cc4a607cfcd86e77c51b65a5e5502ff4c05e0af45eca614c006cbb80b1f18d38f2e3e3c0500e90d210e52318b83b007c09c8178fc177da82573d9d78eba7d580651cc3a7af4215d3e86930d0f3a36d48bd0ba0a05702609ddb90c0a3c206db9964224325ac30ab932d274de7b39f74b46659551fa09e32958886494f9be9016fd09c0b9c9a215587bb180a9ae7199db4d690de769d00aafe1b010090b0c6da13efd4a944a2d4fac9c60eb315a269d27b920c85cdbed706b374d665d8d8363507223a6bebbcf41c0b30ab935983cceaa45c19a7d24eca3b1def0378e67e040060a9b0c1f6763296a1d24b4663644ba7994d2846da9b7436367ba8f5914c935a8c54222172826cf491da94427abff9ada0f491f683ae3b005e9a4ff0693c217ec39ed43a7586fa34d6fa484fd05442f9b3c1aa0683de8499b912cbd079c0cbc6b6d08c515b3a48b932c97890b4d7bbfe8502bcf620c1a76195b63b2e69aa4e4535e5f74ed5953749bbaad03e68637c42632032753d4bfadb49db01530947bd8b10040fee6dff7963b3b4d399d13a348662061dcda4abcd9c5881884eb1b98a2dbda612c94183d61ad2de90a5de4fda0fd47e0841680550f869834fe33979a7f39ad6ab51494c7d2d379b136fdaf54a8c74579aef103d455a6baa7228101a67cbfc01fe987c0c4e79b7f354cf0eef63797b114e0d59a0fe710cf6e52518bd91406aa81cd5bb7270e68751fde6cbe3e37f38d700e0170f93f56cf8a6b4d3f98f50679454497d8474b699bef087c9507792c21af91c802d9f75e08f62b3b0c19670d6bbd9753240664845d5e83a1a2564e977009efc5f069fc6a328958ebb2bfd13ce7a376d47038424750390fe1fc13f8aad10c59f007819c0d2f93ef46f14f1aae55cd04e8b0000000049454e44ae426082</data>
+</image>
+</xupdate:append-first>
+<xupdate:insert-after select="/UI[UI,1]/widget[QWidget,formArticulos]/vbox[vbox,1]/widget[QTabWidget,tbwArticulo]/widget[QWidget,contabilidad]" >
+<widget class="QWidget" >
+<property name="name" >
+<cstring>graficas</cstring>
+</property>
+<attribute name="title" >
+<string>&amp;Gráficas</string>
+</attribute>
+<vbox>
+<property name="name" >
+<cstring>unnamed</cstring>
+</property>
+<widget class="QGroupBox" >
+<property name="name" >
+<cstring>gbxPliego</cstring>
+</property>
+<property name="font" >
+<font>
+<bold>0</bold>
+</font>
+</property>
+<property name="title" >
+<string/>
+</property>
+<vbox>
+<property name="name" >
+<cstring>unnamed</cstring>
+</property>
+<widget class="QLayoutWidget" >
+<property name="name" >
+<cstring>layoutAG1</cstring>
+</property>
+<hbox>
+<property name="name" >
+<cstring>unnamed</cstring>
+</property>
+<widget class="FLFieldDB" >
+<property name="name" >
+<cstring>fdbAnchoPliego</cstring>
+</property>
+<property name="sizePolicy" >
+<sizepolicy>
+<hsizetype>1</hsizetype>
+<vsizetype>5</vsizetype>
+<horstretch>0</horstretch>
+<verstretch>0</verstretch>
+</sizepolicy>
+</property>
+<property name="minimumSize" >
+<size>
+<width>25</width>
+<height>22</height>
+</size>
+</property>
+<property name="focusPolicy" >
+<enum>StrongFocus</enum>
+</property>
+<property name="fieldName" >
+<string>anchopliego</string>
+</property>
+</widget>
+<widget class="FLFieldDB" >
+<property name="name" >
+<cstring>fdbAltoPliego</cstring>
+</property>
+<property name="sizePolicy" >
+<sizepolicy>
+<hsizetype>1</hsizetype>
+<vsizetype>5</vsizetype>
+<horstretch>0</horstretch>
+<verstretch>0</verstretch>
+</sizepolicy>
+</property>
+<property name="minimumSize" >
+<size>
+<width>25</width>
+<height>22</height>
+</size>
+</property>
+<property name="focusPolicy" >
+<enum>StrongFocus</enum>
+</property>
+<property name="fieldName" >
+<string>altopliego</string>
+</property>
+</widget>
+<widget class="FLFieldDB" >
+<property name="name" >
+<cstring>fdbDimPliego</cstring>
+</property>
+<property name="sizePolicy" >
+<sizepolicy>
+<hsizetype>1</hsizetype>
+<vsizetype>5</vsizetype>
+<horstretch>0</horstretch>
+<verstretch>0</verstretch>
+</sizepolicy>
+</property>
+<property name="minimumSize" >
+<size>
+<width>25</width>
+<height>22</height>
+</size>
+</property>
+<property name="focusPolicy" >
+<enum>StrongFocus</enum>
+</property>
+<property name="fieldName" >
+<string>dimpliego</string>
+</property>
+</widget>
+<spacer>
+<property name="name" >
+<cstring>spacerAG1</cstring>
+</property>
+<property name="orientation" >
+<enum>Horizontal</enum>
+</property>
+<property name="sizeType" >
+<enum>Expanding</enum>
+</property>
+<property name="sizeHint" >
+<size>
+<width>61</width>
+<height>20</height>
+</size>
+</property>
+</spacer>
+<widget class="FLFieldDB" >
+<property name="name" >
+<cstring>fdbTipoPlas</cstring>
+</property>
+<property name="sizePolicy" >
+<sizepolicy>
+<hsizetype>1</hsizetype>
+<vsizetype>5</vsizetype>
+<horstretch>0</horstretch>
+<verstretch>0</verstretch>
+</sizepolicy>
+</property>
+<property name="minimumSize" >
+<size>
+<width>25</width>
+<height>22</height>
+</size>
+</property>
+<property name="font" >
+<font/>
+</property>
+<property name="focusPolicy" >
+<enum>StrongFocus</enum>
+</property>
+<property name="fieldName" >
+<string>tipoplas</string>
+</property>
+</widget>
+</hbox>
+</widget>
+<widget class="QLayoutWidget" >
+<property name="name" >
+<cstring>layoutAG2</cstring>
+</property>
+<hbox>
+<property name="name" >
+<cstring>unnamed</cstring>
+</property>
+<widget class="FLFieldDB" >
+<property name="name" >
+<cstring>fdbCodMarcaPapel</cstring>
+</property>
+<property name="sizePolicy" >
+<sizepolicy>
+<hsizetype>1</hsizetype>
+<vsizetype>5</vsizetype>
+<horstretch>0</horstretch>
+<verstretch>0</verstretch>
+</sizepolicy>
+</property>
+<property name="minimumSize" >
+<size>
+<width>25</width>
+<height>22</height>
+</size>
+</property>
+<property name="font" >
+<font/>
+</property>
+<property name="focusPolicy" >
+<enum>StrongFocus</enum>
+</property>
+<property name="fieldName" >
+<string>codmarcapapel</string>
+</property>
+</widget>
+<widget class="FLFieldDB" >
+<property name="name" >
+<cstring>fdbGramaje</cstring>
+</property>
+<property name="sizePolicy" >
+<sizepolicy>
+<hsizetype>1</hsizetype>
+<vsizetype>5</vsizetype>
+<horstretch>0</horstretch>
+<verstretch>0</verstretch>
+</sizepolicy>
+</property>
+<property name="minimumSize" >
+<size>
+<width>25</width>
+<height>22</height>
+</size>
+</property>
+<property name="font" >
+<font/>
+</property>
+<property name="focusPolicy" >
+<enum>StrongFocus</enum>
+</property>
+<property name="fieldName" >
+<string>gramaje</string>
+</property>
+</widget>
+<widget class="FLFieldDB" >
+<property name="name" >
+<cstring>fdbCodCalidad</cstring>
+</property>
+<property name="sizePolicy" >
+<sizepolicy>
+<hsizetype>1</hsizetype>
+<vsizetype>5</vsizetype>
+<horstretch>0</horstretch>
+<verstretch>0</verstretch>
+</sizepolicy>
+</property>
+<property name="minimumSize" >
+<size>
+<width>25</width>
+<height>22</height>
+</size>
+</property>
+<property name="maximumSize" >
+<size>
+<width>200</width>
+<height>32767</height>
+</size>
+</property>
+<property name="font" >
+<font/>
+</property>
+<property name="focusPolicy" >
+<enum>StrongFocus</enum>
+</property>
+<property name="fieldName" >
+<string>codcalidad</string>
+</property>
+</widget>
+<widget class="FLFieldDB" >
+<property name="name" >
+<cstring>fdbCodFormato</cstring>
+</property>
+<property name="sizePolicy" >
+<sizepolicy>
+<hsizetype>1</hsizetype>
+<vsizetype>5</vsizetype>
+<horstretch>0</horstretch>
+<verstretch>0</verstretch>
+</sizepolicy>
+</property>
+<property name="minimumSize" >
+<size>
+<width>25</width>
+<height>22</height>
+</size>
+</property>
+<property name="maximumSize" >
+<size>
+<width>200</width>
+<height>32767</height>
+</size>
+</property>
+<property name="font" >
+<font/>
+</property>
+<property name="focusPolicy" >
+<enum>StrongFocus</enum>
+</property>
+<property name="fieldName" >
+<string>codformato</string>
+</property>
+</widget>
+<spacer>
+<property name="name" >
+<cstring>spacerFor</cstring>
+</property>
+<property name="orientation" >
+<enum>Horizontal</enum>
+</property>
+<property name="sizeType" >
+<enum>Expanding</enum>
+</property>
+<property name="sizeHint" >
+<size>
+<width>120</width>
+<height>20</height>
+</size>
+</property>
+</spacer>
+</hbox>
+</widget>
+<widget class="QLayoutWidget" >
+<property name="name" >
+<cstring>layoutAG_3</cstring>
+</property>
+<hbox>
+<property name="name" >
+<cstring>unnamed</cstring>
+</property>
+<widget class="FLFieldDB" >
+<property name="name" >
+<cstring>fdbUnidadesGr</cstring>
+</property>
+<property name="sizePolicy" >
+<sizepolicy>
+<hsizetype>1</hsizetype>
+<vsizetype>5</vsizetype>
+<horstretch>0</horstretch>
+<verstretch>0</verstretch>
+</sizepolicy>
+</property>
+<property name="minimumSize" >
+<size>
+<width>25</width>
+<height>22</height>
+</size>
+</property>
+<property name="focusPolicy" >
+<enum>StrongFocus</enum>
+</property>
+<property name="fieldName" >
+<string>unidadesgr</string>
+</property>
+</widget>
+<widget class="FLFieldDB" >
+<property name="name" >
+<cstring>fdbCmsGr</cstring>
+</property>
+<property name="sizePolicy" >
+<sizepolicy>
+<hsizetype>1</hsizetype>
+<vsizetype>5</vsizetype>
+<horstretch>0</horstretch>
+<verstretch>0</verstretch>
+</sizepolicy>
+</property>
+<property name="minimumSize" >
+<size>
+<width>25</width>
+<height>22</height>
+</size>
+</property>
+<property name="font" >
+<font/>
+</property>
+<property name="focusPolicy" >
+<enum>StrongFocus</enum>
+</property>
+<property name="fieldName" >
+<string>cmsgr</string>
+</property>
+</widget>
+<widget class="FLFieldDB" >
+<property name="name" >
+<cstring>fdbGrosorUnidad</cstring>
+</property>
+<property name="sizePolicy" >
+<sizepolicy>
+<hsizetype>1</hsizetype>
+<vsizetype>5</vsizetype>
+<horstretch>0</horstretch>
+<verstretch>0</verstretch>
+</sizepolicy>
+</property>
+<property name="minimumSize" >
+<size>
+<width>25</width>
+<height>22</height>
+</size>
+</property>
+<property name="font" >
+<font/>
+</property>
+<property name="focusPolicy" >
+<enum>StrongFocus</enum>
+</property>
+<property name="fieldName" >
+<string>grosorunidad</string>
+</property>
+</widget>
+<widget class="QLabel" >
+<property name="name" >
+<cstring>lblPeso</cstring>
+</property>
+<property name="text" >
+<string>Peso</string>
+</property>
+</widget>
+<widget class="QLabel" >
+<property name="name" >
+<cstring>lblPesoPliegos</cstring>
+</property>
+<property name="minimumSize" >
+<size>
+<width>100</width>
+<height>0</height>
+</size>
+</property>
+<property name="text" >
+<string/>
+</property>
+</widget>
+<spacer>
+<property name="name" >
+<cstring>spacerGrosor</cstring>
+</property>
+<property name="orientation" >
+<enum>Horizontal</enum>
+</property>
+<property name="sizeType" >
+<enum>Expanding</enum>
+</property>
+<property name="sizeHint" >
+<size>
+<width>129</width>
+<height>20</height>
+</size>
+</property>
+</spacer>
+</hbox>
+</widget>
+</vbox>
+</widget>
+<widget class="QGroupBox" >
+<property name="name" >
+<cstring>gbxTroquel</cstring>
+</property>
+<property name="font" >
+<font>
+<bold>0</bold>
+</font>
+</property>
+<property name="title" >
+<string>Troquel</string>
+</property>
+<hbox>
+<property name="name" >
+<cstring>unnamed</cstring>
+</property>
+<widget class="QLayoutWidget" >
+<property name="name" >
+<cstring>layoutTroquel</cstring>
+</property>
+<hbox>
+<property name="name" >
+<cstring>unnamed</cstring>
+</property>
+<widget class="FLFieldDB" >
+<property name="name" >
+<cstring>fdbTPrepTroquel</cstring>
+</property>
+<property name="sizePolicy" >
+<sizepolicy>
+<hsizetype>1</hsizetype>
+<vsizetype>5</vsizetype>
+<horstretch>0</horstretch>
+<verstretch>0</verstretch>
+</sizepolicy>
+</property>
+<property name="minimumSize" >
+<size>
+<width>25</width>
+<height>22</height>
+</size>
+</property>
+<property name="maximumSize" >
+<size>
+<width>250</width>
+<height>32767</height>
+</size>
+</property>
+<property name="font" >
+<font/>
+</property>
+<property name="focusPolicy" >
+<enum>StrongFocus</enum>
+</property>
+<property name="fieldName" >
+<string>tpreptroquel</string>
+</property>
+</widget>
+<spacer>
+<property name="name" >
+<cstring>spacerTroquel</cstring>
+</property>
+<property name="orientation" >
+<enum>Horizontal</enum>
+</property>
+<property name="sizeType" >
+<enum>Expanding</enum>
+</property>
+<property name="sizeHint" >
+<size>
+<width>61</width>
+<height>20</height>
+</size>
+</property>
+</spacer>
+</hbox>
+</widget>
+</hbox>
+</widget>
+<widget class="QGroupBox" >
+<property name="name" >
+<cstring>gbxPapel</cstring>
+</property>
+<property name="font" >
+<font>
+<bold>0</bold>
+</font>
+</property>
+<property name="title" >
+<string>Papel</string>
+</property>
+<hbox>
+<property name="name" >
+<cstring>unnamed</cstring>
+</property>
+<spacer>
+<property name="name" >
+<cstring>spacerTroquel_2</cstring>
+</property>
+<property name="orientation" >
+<enum>Horizontal</enum>
+</property>
+<property name="sizeType" >
+<enum>Expanding</enum>
+</property>
+<property name="sizeHint" >
+<size>
+<width>540</width>
+<height>20</height>
+</size>
+</property>
+</spacer>
+</hbox>
+</widget>
+<widget class="QGroupBox" >
+<property name="name" >
+<cstring>gbxParametros</cstring>
+</property>
+<property name="font" >
+<font>
+<bold>0</bold>
+</font>
+</property>
+<property name="title" >
+<string>Parámetros</string>
+</property>
+<hbox>
+<property name="name" >
+<cstring>unnamed</cstring>
+</property>
+<widget class="FLFieldDB" >
+<property name="name" >
+<cstring>fdbXmlParametros</cstring>
+</property>
+<property name="sizePolicy" >
+<sizepolicy>
+<hsizetype>1</hsizetype>
+<vsizetype>7</vsizetype>
+<horstretch>0</horstretch>
+<verstretch>0</verstretch>
+</sizepolicy>
+</property>
+<property name="font" >
+<font/>
+</property>
+<property name="fieldName" >
+<string>xmlparametros</string>
+</property>
+</widget>
+<widget class="QLayoutWidget" >
+<property name="name" >
+<cstring>layoutCalcular</cstring>
+</property>
+<vbox>
+<property name="name" >
+<cstring>unnamed</cstring>
+</property>
+<widget class="QToolButton" >
+<property name="name" >
+<cstring>tbnCalcular</cstring>
+</property>
+<property name="minimumSize" >
+<size>
+<width>32</width>
+<height>32</height>
+</size>
+</property>
+<property name="text" >
+<string/>
+</property>
+<property name="iconSet" >
+<iconset>artes_graficasimage47019</iconset>
+</property>
+</widget>
+<spacer>
+<property name="name" >
+<cstring>spacer14</cstring>
+</property>
+<property name="orientation" >
+<enum>Vertical</enum>
+</property>
+<property name="sizeType" >
+<enum>Expanding</enum>
+</property>
+<property name="sizeHint" >
+<size>
+<width>20</width>
+<height>81</height>
+</size>
+</property>
+</spacer>
+</vbox>
+</widget>
+</hbox>
+</widget>
+</vbox>
+</widget>
+</xupdate:insert-after>
+</xupdate:modifications>

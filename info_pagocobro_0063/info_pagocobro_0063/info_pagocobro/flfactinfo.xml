@@ -1,0 +1,24 @@
+<xupdate:modifications>
+<xupdate:insert-after select="/ACTIONS[ACTIONS,1]/action[i_resreciboscli]" >
+<action>
+<name>i_prevcobros</name>
+<alias>QT_TRANSLATE_NOOP(&quot;MetaData&quot;,&quot;Previsiones de cobro de clientes&quot;)</alias>
+<description>QT_TRANSLATE_NOOP(&quot;MetaData&quot;,&quot;Previsiones de cobro de clientes&quot;)</description>
+<table>i_prevcobros</table>
+<form>i_master</form>
+<formrecord>i_prevcobros</formrecord>
+<scriptform>i_masterprevcobros</scriptform>
+</action>
+</xupdate:insert-after>
+<xupdate:insert-after select="/ACTIONS[ACTIONS,1]/action[i_prevcobros]" >
+<action>
+<name>i_prevpagos</name>
+<alias>QT_TRANSLATE_NOOP(&quot;MetaData&quot;,&quot;Previsiones de pago de proveedores&quot;)</alias>
+<description>QT_TRANSLATE_NOOP(&quot;MetaData&quot;,&quot;Previsiones de pago de proveedores&quot;)</description>
+<table>i_prevpagos</table>
+<form>i_master</form>
+<formrecord>i_prevpagos</formrecord>
+<scriptform>i_masterprevpagos</scriptform>
+</action>
+</xupdate:insert-after>
+</xupdate:modifications>

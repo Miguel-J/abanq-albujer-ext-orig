@@ -1,0 +1,135 @@
+<xupdate:modifications>
+<xupdate:update select="/UI[UI,1]/widget[QWidget,formPagosDevolCli]/property[property,2]/rect[rect,1]/height[height,1]/text()[1]" >454</xupdate:update>
+<xupdate:update select="/UI[UI,1]/widget[QWidget,formPagosDevolCli]/vbox[vbox,1]/widget[QTabWidget,tbwPagDevCli]/widget[QWidget,datos]/vbox[vbox,1]/spacer[spacerDatos]/property[property,4]/size[size,1]/height[height,1]/text()[1]" >60</xupdate:update>
+<xupdate:insert-after select="/UI[UI,1]/widget[QWidget,formPagosDevolCli]/vbox[vbox,1]/widget[QTabWidget,tbwPagDevCli]/widget[QWidget,datos]/vbox[vbox,1]/widget[QFrame,frmCtaBanco]" >
+<widget class="QGroupBox" >
+<property name="name" >
+<cstring>gbxGasto</cstring>
+</property>
+<property name="title" >
+<string>Gastos</string>
+</property>
+<hbox>
+<property name="name" >
+<cstring>unnamed</cstring>
+</property>
+<widget class="FLFieldDB" >
+<property name="name" >
+<cstring>fdbGastoAdicional</cstring>
+</property>
+<property name="sizePolicy" >
+<sizepolicy>
+<hsizetype>1</hsizetype>
+<vsizetype>0</vsizetype>
+<horstretch>0</horstretch>
+<verstretch>0</verstretch>
+</sizepolicy>
+</property>
+<property name="font" >
+<font>
+<bold>0</bold>
+<italic>0</italic>
+</font>
+</property>
+<property name="fieldName" >
+<string>gasto</string>
+</property>
+<property name="foreignField" >
+<string/>
+</property>
+<property name="fieldRelation" >
+<string/>
+</property>
+</widget>
+<spacer>
+<property name="name" >
+<cstring>spcGasto</cstring>
+</property>
+<property name="orientation" >
+<enum>Horizontal</enum>
+</property>
+<property name="sizeType" >
+<enum>Fixed</enum>
+</property>
+<property name="sizeHint" >
+<size>
+<width>20</width>
+<height>20</height>
+</size>
+</property>
+</spacer>
+<widget class="FLFieldDB" >
+<property name="name" >
+<cstring>fdbCodSubcuentaGasto</cstring>
+</property>
+<property name="sizePolicy" >
+<sizepolicy>
+<hsizetype>1</hsizetype>
+<vsizetype>0</vsizetype>
+<horstretch>0</horstretch>
+<verstretch>0</verstretch>
+</sizepolicy>
+</property>
+<property name="minimumSize" >
+<size>
+<width>220</width>
+<height>25</height>
+</size>
+</property>
+<property name="font" >
+<font>
+<bold>0</bold>
+<italic>0</italic>
+</font>
+</property>
+<property name="fieldName" >
+<string>codsubcuentagasto</string>
+</property>
+<property name="foreignField" >
+<string>codsubcuenta</string>
+</property>
+<property name="fieldRelation" >
+<string>idsubcuentagasto</string>
+</property>
+</widget>
+<widget class="FLFieldDB" >
+<property name="name" >
+<cstring>fdbIdSubcuentaGasto</cstring>
+</property>
+<property name="sizePolicy" >
+<sizepolicy>
+<hsizetype>1</hsizetype>
+<vsizetype>0</vsizetype>
+<horstretch>0</horstretch>
+<verstretch>0</verstretch>
+</sizepolicy>
+</property>
+<property name="minimumSize" >
+<size>
+<width>79</width>
+<height>25</height>
+</size>
+</property>
+<property name="maximumSize" >
+<size>
+<width>79</width>
+<height>32767</height>
+</size>
+</property>
+<property name="font" >
+<font>
+<bold>0</bold>
+<italic>0</italic>
+</font>
+</property>
+<property name="fieldName" >
+<string>idsubcuentagasto</string>
+</property>
+<property name="foreignField" >
+<string/>
+</property>
+</widget>
+</hbox>
+</widget>
+</xupdate:insert-after>
+</xupdate:modifications>

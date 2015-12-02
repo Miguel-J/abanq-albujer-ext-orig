@@ -1,0 +1,111 @@
+<xupdate:modifications>
+<xupdate:update select="/UI[UI,1]/widget[QWidget,agenciastrans]/vbox[vbox,1]/widget[QGroupBox,gbxAgencia]/vbox[vbox,1]/widget[QLayoutWidget,layoutAG1]/hbox[hbox,1]/widget[FLFieldDB,fdbDescripcion]/property[minimumSize]/size[size,1]/height[height,1]/text()[1]" >31</xupdate:update>
+<xupdate:update select="/UI[UI,1]/widget[QWidget,agenciastrans]/vbox[vbox,1]/widget[QGroupBox,gbxAgencia]/vbox[vbox,1]/widget[QLayoutWidget,layoutAG1]/hbox[hbox,1]/widget[FLFieldDB,fdbDescripcion]/property[minimumSize]/size[size,1]/width[width,1]/text()[1]" >145</xupdate:update>
+<xupdate:insert-after select="/UI[UI,1]/widget[QWidget,agenciastrans]/vbox[vbox,1]/widget[QTabWidget,tbwAgencia]/widget[QWidget,tabSedes]" >
+<widget class="QWidget" >
+<property name="name" >
+<cstring>consultaweb</cstring>
+</property>
+<attribute name="title" >
+<string>Consulta &amp;web</string>
+</attribute>
+<vbox>
+<property name="name" >
+<cstring>unnamed</cstring>
+</property>
+<widget class="QGroupBox" >
+<property name="name" >
+<cstring>gbxConsultaWeb</cstring>
+</property>
+<property name="font" >
+<font>
+<bold>0</bold>
+<italic>0</italic>
+</font>
+</property>
+<property name="title" >
+<string/>
+</property>
+<vbox>
+<property name="name" >
+<cstring>unnamed</cstring>
+</property>
+<widget class="QLabel" >
+<property name="name" >
+<cstring>lblInstruccionesURL</cstring>
+</property>
+<property name="paletteForegroundColor" >
+<color>
+<red>0</red>
+<green>0</green>
+<blue>127</blue>
+</color>
+</property>
+<property name="text" >
+<string>Introduzca la U.R.L. que escribiría en la barra de direcciones de su navegador, con las siguientes sustituciones:
+[NE] = Número de expedición
+[CP] = Código postal
+Ejemplo:
+https://www.miagencia.com/action?accion=BUSCARP&amp;exp=[NE]&amp;codpostal=[CP]</string>
+</property>
+<property name="alignment" >
+<set>WordBreak|AlignVCenter</set>
+</property>
+</widget>
+<widget class="FLFieldDB" >
+<property name="name" >
+<cstring>fdbUrlConsulta</cstring>
+</property>
+<property name="sizePolicy" >
+<sizepolicy>
+<hsizetype>5</hsizetype>
+<vsizetype>7</vsizetype>
+<horstretch>0</horstretch>
+<verstretch>0</verstretch>
+</sizepolicy>
+</property>
+<property name="minimumSize" >
+<size>
+<width>141</width>
+<height>31</height>
+</size>
+</property>
+<property name="maximumSize" >
+<size>
+<width>32767</width>
+<height>60</height>
+</size>
+</property>
+<property name="font" >
+<font/>
+</property>
+<property name="fieldName" >
+<string>urlconsulta</string>
+</property>
+</widget>
+<spacer>
+<property name="name" >
+<cstring>scpConsultaWeb</cstring>
+</property>
+<property name="orientation" >
+<enum>Vertical</enum>
+</property>
+<property name="sizeType" >
+<enum>Expanding</enum>
+</property>
+<property name="sizeHint" >
+<size>
+<width>20</width>
+<height>21</height>
+</size>
+</property>
+</spacer>
+</vbox>
+</widget>
+</vbox>
+</widget>
+</xupdate:insert-after>
+<xupdate:insert-after select="/UI[UI,1]/includehints[includehints,1]/includehint[fltabledb.h]" >
+<includehint>flfielddb.h</includehint>
+</xupdate:insert-after>
+</xupdate:modifications>

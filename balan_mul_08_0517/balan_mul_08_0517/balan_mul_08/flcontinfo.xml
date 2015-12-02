@@ -1,0 +1,24 @@
+<xupdate:modifications>
+<xupdate:insert-after select="/ACTIONS[ACTIONS,1]/action[co_ejerciciosempresas_pyg]" >
+<action>
+<name>co_ejerciciosempresas_08</name>
+<description>QT_TRANSLATE_NOOP(&quot;MetaData&quot;,&quot;Ejercicios por empresa para el balance de pérdidas y ganancias&quot;)</description>
+<alias>QT_TRANSLATE_NOOP(&quot;MetaData&quot;,&quot;Ejercicios por empresa PyG&quot;)</alias>
+<table>co_ejerciciosempresas_08</table>
+<form>master</form>
+<formrecord>co_ejerciciosempresas_bal</formrecord>
+<scriptformrecord>co_ejerciciosempresas_bal</scriptformrecord>
+</action>
+</xupdate:insert-after>
+<xupdate:insert-after select="/ACTIONS[ACTIONS,1]/action[co_ejerciciosempresas_08]" >
+<action>
+<name>co_ejerciciosempresas_08_ant</name>
+<description>QT_TRANSLATE_NOOP(&quot;MetaData&quot;,&quot;Ejercicios por empresa para el balance de pérdidas y ganancias&quot;)</description>
+<alias>QT_TRANSLATE_NOOP(&quot;MetaData&quot;,&quot;Ejercicios por empresa PyG&quot;)</alias>
+<table>co_ejerciciosempresas_08_ant</table>
+<form>master</form>
+<formrecord>co_ejerciciosempresas_bal</formrecord>
+<scriptformrecord>co_ejerciciosempresas_bal</scriptformrecord>
+</action>
+</xupdate:insert-after>
+</xupdate:modifications>

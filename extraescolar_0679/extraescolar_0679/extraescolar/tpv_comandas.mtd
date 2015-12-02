@@ -1,0 +1,32 @@
+<xupdate:modifications>
+<xupdate:insert-after select="/TMD[TMD,1]/field[codalmacen]" >
+<field>
+<name>codalumno</name>
+<alias>QT_TRANSLATE_NOOP(&quot;MetaData&quot;,&quot;Alumno&quot;)</alias>
+<null>true</null>
+<pk>false</pk>
+<type>string</type>
+<length>10</length>
+<relation>
+<table>fo_alumnos</table>
+<field>codalumno</field>
+<card>M1</card>
+</relation>
+</field>
+</xupdate:insert-after>
+<xupdate:insert-after select="/TMD[TMD,1]/field[codalumno]" >
+<field>
+<name>codcentroesc</name>
+<alias>QT_TRANSLATE_NOOP(&quot;MetaData&quot;,&quot;C.Escolar&quot;)</alias>
+<null>false</null>
+<pk>false</pk>
+<type>string</type>
+<length>25</length>
+<relation>
+<table>fo_centros</table>
+<field>codcentro</field>
+<card>M1</card>
+</relation>
+</field>
+</xupdate:insert-after>
+</xupdate:modifications>

@@ -1,0 +1,96 @@
+<xupdate:modifications>
+<xupdate:insert-after select="/ACTIONS[ACTIONS,1]/action[co_datosfiscales]" >
+<action>
+<name>co_modelo340</name>
+<description>El modelo 340 recoge la información relativa a las operaciones de IVA de la empresa.</description>
+<alias>QT_TRANSLATE_NOOP(&quot;MetaData&quot;,&quot;Modelo 340&quot;)</alias>
+<table>co_modelo340</table>
+<form>co_mastermodelo</form>
+<scriptform>co_mastermodelo340</scriptform>
+<formrecord>co_modelo340</formrecord>
+<scriptformrecord>co_modelo340</scriptformrecord>
+</action>
+</xupdate:insert-after>
+<xupdate:insert-after select="/ACTIONS[ACTIONS,1]/action[co_modelo340]" >
+<action>
+<name>co_facturasemi340</name>
+<description>Facturas emitidas incluidas en el modelo 340.</description>
+<alias>QT_TRANSLATE_NOOP(&quot;MetaData&quot;,&quot;Facturas emitidas&quot;)</alias>
+<table>co_facturasemi340</table>
+<form>co_mastermodelo</form>
+<formrecord>co_facturasemi340</formrecord>
+<scriptformrecord>co_facturasemi340</scriptformrecord>
+</action>
+</xupdate:insert-after>
+<xupdate:insert-after select="/ACTIONS[ACTIONS,1]/action[co_facturasemi340]" >
+<action>
+<name>co_facturasrec340</name>
+<description>Facturas recibidas incluidas en el modelo 340.</description>
+<alias>QT_TRANSLATE_NOOP(&quot;MetaData&quot;,&quot;Facturas recibidas&quot;)</alias>
+<table>co_facturasrec340</table>
+<form>co_mastermodelo</form>
+<formrecord>co_facturasrec340</formrecord>
+<scriptformrecord>co_facturasrec340</scriptformrecord>
+</action>
+</xupdate:insert-after>
+<xupdate:insert-after select="/ACTIONS[ACTIONS,1]/action[co_facturasrec340]" >
+<action>
+<name>co_bienesinv340</name>
+<description>Bienes de inversión incluidos en el modelo 340.</description>
+<alias>QT_TRANSLATE_NOOP(&quot;MetaData&quot;,&quot;Bienes inversión&quot;)</alias>
+<table>co_bienesinv340</table>
+<form>co_mastermodelo</form>
+<formrecord>co_bienesinv340</formrecord>
+</action>
+</xupdate:insert-after>
+<xupdate:insert-after select="/ACTIONS[ACTIONS,1]/action[co_bienesinv340]" >
+<action>
+<name>co_opintracomunitarias340</name>
+<description>Operaciones intracomunitarias incluidas en el modelo 340.</description>
+<alias>QT_TRANSLATE_NOOP(&quot;MetaData&quot;,&quot;Operaciones intracomunitarias&quot;)</alias>
+<table>co_opintracomunitarias340</table>
+<form>co_mastermodelo</form>
+<formrecord>co_opintracomunitarias340</formrecord>
+</action>
+</xupdate:insert-after>
+<xupdate:insert-after select="/ACTIONS[ACTIONS,1]/action[co_opintracomunitarias340]" >
+<action>
+<name>co_identifpaisresidencia</name>
+<description>Clave de identificación en el país de residencia</description>
+<alias>QT_TRANSLATE_NOOP(&quot;MetaData&quot;,&quot;Indentificación en el pais de residencia&quot;)</alias>
+<table>co_identifpaisresidencia</table>
+<form>master</form>
+<formrecord>co_identifpaisresidencia</formrecord>
+</action>
+</xupdate:insert-after>
+<xupdate:insert-after select="/ACTIONS[ACTIONS,1]/action[co_identifpaisresidencia]" >
+<action>
+<name>co_tipolibro</name>
+<description>Clave tipo de libro</description>
+<alias>QT_TRANSLATE_NOOP(&quot;MetaData&quot;,&quot;Tipo de libro&quot;)</alias>
+<table>co_tipolibro</table>
+<form>master</form>
+<formrecord>co_tipolibro</formrecord>
+</action>
+</xupdate:insert-after>
+<xupdate:insert-after select="/ACTIONS[ACTIONS,1]/action[co_tipolibro]" >
+<action>
+<name>co_claveoperacion</name>
+<description>Clave operación</description>
+<alias>QT_TRANSLATE_NOOP(&quot;MetaData&quot;,&quot;Clave operación&quot;)</alias>
+<table>co_claveoperacion</table>
+<form>master</form>
+<formrecord>co_claveoperacion</formrecord>
+</action>
+</xupdate:insert-after>
+<xupdate:insert-after select="/ACTIONS[ACTIONS,1]/action[co_claveoperacion]" >
+<action>
+<name>co_situinmueble340</name>
+<description>Situación de inmueble</description>
+<alias>QT_TRANSLATE_NOOP(&quot;MetaData&quot;,&quot;Situación de inmueble&quot;)</alias>
+<table>co_situinmueble340</table>
+<form>master</form>
+<formrecord>co_situinmueble340</formrecord>
+</action>
+</xupdate:insert-after>
+</xupdate:modifications>

@@ -1,0 +1,69 @@
+<!DOCTYPE TMD>
+<TMD>
+	<name>mt_comandos</name>
+	<!-- Listado de comandos de base de datos -->
+	<alias>QT_TRANSLATE_NOOP("MetaData","Comandos")</alias>
+
+	<field>
+		<name>codigo</name>
+		<!-- Código del conjunto de comandos -->
+		<alias>QT_TRANSLATE_NOOP("MetaData","Código")</alias>
+		<null>false</null>
+		<pk>true</pk>
+		<type>string</type>
+		<length>6</length>
+	</field>
+	
+	<field>
+		<name>so</name>
+		<!-- Define el tipo de sistema opertativo para el que se definen los comandos -->
+		<alias>QT_TRANSLATE_NOOP("MetaData","Sistema operativo")</alias>
+		<null>false</null>
+		<pk>false</pk>
+		<unique>true</unique>
+		<type>string</type>
+		<length>100</length>
+		<optionslist>Linux,Windows,Mac OSX</optionslist>
+	</field>
+	
+	<field>
+		<name>comandobackup</name>
+		<!-- Comando para crear un backup a fichero desde base de datos -->
+		<alias>QT_TRANSLATE_NOOP("MetaData","Comando de backup")</alias>
+		<null>false</null>
+		<pk>false</pk>
+		<type>string</type>
+		<length>500</length>
+	</field>
+	
+	<field>
+		<name>comandorestore</name>
+		<!-- Comando para restaurar un backup desde fichero a base de datos -->
+		<alias>QT_TRANSLATE_NOOP("MetaData","Comando de restauracion")</alias>
+		<null>false</null>
+		<pk>false</pk>
+		<type>string</type>
+		<length>500</length>
+	</field>
+	
+	<field>
+		<name>comandocreate</name>
+		<!-- Comando para crear una nueva base de datos vacía -->
+		<alias>QT_TRANSLATE_NOOP("MetaData","Comando de creación de base de datos")</alias>
+		<null>false</null>
+		<pk>false</pk>
+		<type>string</type>
+		<length>500</length>
+	</field>
+	
+	<field>
+		<name>comandodel</name>
+		<!-- Comando para eliminar una base de datos -->
+		<alias>QT_TRANSLATE_NOOP("MetaData","Comando de eliminación de base de datos")</alias>
+		<null>false</null>
+		<pk>false</pk>
+		<type>string</type>
+		<length>500</length>
+	</field>
+	
+</TMD>

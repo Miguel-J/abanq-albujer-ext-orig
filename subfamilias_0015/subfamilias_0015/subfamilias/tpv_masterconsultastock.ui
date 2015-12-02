@@ -1,0 +1,52 @@
+<xupdate:modifications>
+<xupdate:update select="/UI[UI,1]/widget[QWidget,tpv_masterconsultastock]/property[geometry]/rect[rect,1]/height[height,1]/text()[1]" >547</xupdate:update>
+<xupdate:insert-after select="/UI[UI,1]/widget[QWidget,tpv_masterconsultastock]/vbox[vbox,1]/widget[QGroupBox,gbxArticulo]/vbox[vbox,1]/widget[QLayoutWidget,lyoutFamilia]" >
+<widget class="QLayoutWidget" >
+<property name="name" >
+<cstring>lyoutSubfamilia</cstring>
+</property>
+<hbox>
+<property name="name" >
+<cstring>unnamed</cstring>
+</property>
+<widget class="FLFieldDB" >
+<property name="name" >
+<cstring>fdbCodSubfamilia</cstring>
+</property>
+<property name="fieldName" >
+<string>codsubfamilia</string>
+</property>
+</widget>
+<widget class="FLFieldDB" >
+<property name="name" >
+<cstring>fdbDescSubFamilia</cstring>
+</property>
+<property name="minimumSize" >
+<size>
+<width>9</width>
+<height>23</height>
+</size>
+</property>
+<property name="fieldName" >
+<string>descsubfamilia</string>
+</property>
+<property name="foreignField" >
+<string>descripcion</string>
+</property>
+<property name="fieldRelation" >
+<string>codsubfamilia</string>
+</property>
+<property name="showAlias" >
+<bool>false</bool>
+</property>
+</widget>
+</hbox>
+</widget>
+</xupdate:insert-after>
+<xupdate:insert-after select="/UI[UI,1]/includehints[includehints,1]/includehint[flfielddb.h]" >
+<includehint>flfielddb.h</includehint>
+</xupdate:insert-after>
+<xupdate:insert-after select="/UI[UI,1]/includehints[includehints,1]/includehint[flfielddb.h]" >
+<includehint>flfielddb.h</includehint>
+</xupdate:insert-after>
+</xupdate:modifications>

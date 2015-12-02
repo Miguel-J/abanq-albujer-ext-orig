@@ -1,0 +1,17 @@
+<flpatch:modifications name="presup_oferta" >
+    <flpatch:patchXml path="facturacion/facturacion/" name="flfacturac.xml" />
+    <flpatch:patchXml path="facturacion/facturacion/forms/" name="flfacturac.ui" />
+    <flpatch:addFile path="facturacion/facturacion/forms/" name="paraminforme.ui" />
+    <flpatch:addFile path="facturacion/facturacion/forms/" name="parampresupuesto.ui" />
+    <flpatch:patchXml path="facturacion/facturacion/forms/" name="presupuestoscli.ui" />
+    <flpatch:addFile path="facturacion/facturacion/tables/" name="paraminforme.mtd" />
+    <flpatch:addFile path="facturacion/facturacion/tables/" name="parampresupuesto.mtd" />
+    <flpatch:patchXml path="facturacion/facturacion/tables/" name="presupuestoscli.mtd" />
+    <flpatch:addFile path="facturacion/facturacion/tables/" name="plantillasinforme.mtd" />
+    <flpatch:addFile path="facturacion/facturacion/forms/" name="plantillasinforme.ui" />
+    <flpatch:patchScript path="facturacion/facturacion/scripts/" name="masterpresupuestoscli.qs" />
+    <flpatch:patchXml path="facturacion/facturacion/forms/" name="masterpresupuestoscli.ui" />
+    <flpatch:addFile path="facturacion/facturacion/scripts/" name="parampresupuesto.qs" />
+    <flpatch:patchScript path="facturacion/facturacion/scripts/" name="presupuestoscli.qs" />
+    <flpatch:addFile path="facturacion/facturacion/scripts/" name="plantillasinforme.qs" />
+</flpatch:modifications>

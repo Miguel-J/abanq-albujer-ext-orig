@@ -1,0 +1,32 @@
+<!DOCTYPE TMD>
+<TMD>
+	<name>sincrocatalogo</name>
+		<!-- Sincronizaciones de catálogo	-->
+	<alias>QT_TRANSLATE_NOOP("MetaData","Sincronizaciones de catálogo")</alias>
+
+	<field>
+		<name>codsincro</name>
+		<alias>QT_TRANSLATE_NOOP("MetaData","Código")</alias>
+		<null>false</null>
+		<pk>true</pk>
+		<type>string</type>
+		<length>4</length>
+		<counter>true</counter>
+	</field>
+
+	<field>
+		<name>fecha</name>
+		<alias>QT_TRANSLATE_NOOP("MetaData","Fecha")</alias>
+		<null>false</null>
+		<pk>false</pk>
+		<type>date</type>
+	</field>
+
+	<field>
+		<name>observaciones</name>
+		<alias>QT_TRANSLATE_NOOP("MetaData","Observaciones")</alias>
+		<null>true</null>
+		<pk>false</pk>
+		<type>stringlist</type>
+	</field>
+</TMD>

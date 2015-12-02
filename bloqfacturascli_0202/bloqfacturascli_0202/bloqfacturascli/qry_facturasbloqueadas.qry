@@ -1,0 +1,22 @@
+<!DOCTYPE QRY>
+<QRY>
+	<name>qry_facturasbloqueadas</name>
+
+	<tables>facturascli,facturasbloqueadas</tables>
+
+	<group>
+		<level>0</level>
+		<field>facturascli.codigo</field>
+	</group>
+	
+	<select>
+	facturascli.*, facturasbloqueadas.idgrupo
+	</select>
+
+	<from>
+		facturascli INNER JOIN facturasbloqueadas ON facturascli.codigo = facturasbloqueadas.codfactura
+	</from>
+
+	<where>
+	</where>
+</QRY>

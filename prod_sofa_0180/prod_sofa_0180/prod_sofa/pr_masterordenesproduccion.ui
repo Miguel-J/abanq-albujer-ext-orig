@@ -1,0 +1,34 @@
+<xupdate:modifications>
+<xupdate:update select="/UI[UI,1]/widget[QWidget,masterordenesproduccion]/property[property,2]/rect[rect,1]/height[height,1]/text()[1]" >463</xupdate:update>
+<xupdate:insert-after select="/UI[UI,1]/widget[QWidget,masterordenesproduccion]/vbox[vbox,1]/property[property,3]" >
+<widget class="QLabel" >
+<property name="name" >
+<cstring>textLabel1</cstring>
+</property>
+<property name="minimumSize" >
+<size>
+<width>0</width>
+<height>35</height>
+</size>
+</property>
+<property name="font" >
+<font>
+<pointsize>12</pointsize>
+<bold>1</bold>
+</font>
+</property>
+<property name="frameShadow" >
+<enum>Plain</enum>
+</property>
+<property name="text" >
+<string>Órdenes de Producción</string>
+</property>
+<property name="textFormat" >
+<enum>AutoText</enum>
+</property>
+<property name="alignment" >
+<set>WordBreak|AlignCenter</set>
+</property>
+</widget>
+</xupdate:insert-after>
+</xupdate:modifications>

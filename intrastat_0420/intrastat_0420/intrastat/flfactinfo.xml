@@ -1,0 +1,136 @@
+<xupdate:modifications>
+<xupdate:insert-after select="/ACTIONS[ACTIONS,1]/action[i_resreciboscli]" >
+<action>
+<name>intrastat</name>
+<alias>QT_TRANSLATE_NOOP(&quot;MetaData&quot;,&quot;Declaración de Intrastat&quot;)</alias>
+<description>QT_TRANSLATE_NOOP(&quot;MetaData&quot;,&quot;Declaración de Intrastat&quot;)</description>
+<table>intrastat</table>
+<form>masterintrastat</form>
+<scriptform>masterintrastat</scriptform>
+<formrecord>intrastat</formrecord>
+<scriptformrecord>intrastat</scriptformrecord>
+</action>
+</xupdate:insert-after>
+<xupdate:insert-after select="/ACTIONS[ACTIONS,1]/action[intrastat]" >
+<action>
+<name>lineasintrastatcli</name>
+<alias>QT_TRANSLATE_NOOP(&quot;MetaData&quot;,&quot;Lineas intrastat de clientes&quot;)</alias>
+<description>QT_TRANSLATE_NOOP(&quot;MetaData&quot;,&quot;Líneas de la declaración de intrastat de clientes&quot;)</description>
+<table>lineasintrastatcli</table>
+<form>master</form>
+<formrecord>lineasintrastatcli</formrecord>
+</action>
+</xupdate:insert-after>
+<xupdate:insert-after select="/ACTIONS[ACTIONS,1]/action[lineasintrastatcli]" >
+<action>
+<name>lineasintrastatprov</name>
+<alias>QT_TRANSLATE_NOOP(&quot;MetaData&quot;,&quot;Lineas intrastat de proveedores&quot;)</alias>
+<description>QT_TRANSLATE_NOOP(&quot;MetaData&quot;,&quot;Líneas de la declaración de intrastat de proveedores&quot;)</description>
+<table>lineasintrastatprov</table>
+<form>master</form>
+<formrecord>lineasintrastatprov</formrecord>
+</action>
+</xupdate:insert-after>
+<xupdate:insert-after select="/ACTIONS[ACTIONS,1]/action[lineasintrastatprov]" >
+<action>
+<name>condicionesentrega</name>
+<alias>QT_TRANSLATE_NOOP(&quot;MetaData&quot;,&quot;Condiciones entrega&quot;)</alias>
+<description>QT_TRANSLATE_NOOP(&quot;MetaData&quot;,&quot;Condiciones entrega&quot;)</description>
+<table>condicionesentrega</table>
+<form>master</form>
+<formrecord>condicionesentrega</formrecord>
+</action>
+</xupdate:insert-after>
+<xupdate:insert-after select="/ACTIONS[ACTIONS,1]/action[condicionesentrega]" >
+<action>
+<name>naturalezatransacciona</name>
+<alias>QT_TRANSLATE_NOOP(&quot;MetaData&quot;,&quot;Naturaleza de la transacción A&quot;)</alias>
+<description>QT_TRANSLATE_NOOP(&quot;MetaData&quot;,&quot;Naturaleza de la transacción. tabla A&quot;)</description>
+<table>naturalezatransacciona</table>
+<form>master</form>
+<formrecord>naturalezatransacciona</formrecord>
+</action>
+</xupdate:insert-after>
+<xupdate:insert-after select="/ACTIONS[ACTIONS,1]/action[naturalezatransacciona]" >
+<action>
+<name>naturalezatransaccionb</name>
+<alias>QT_TRANSLATE_NOOP(&quot;MetaData&quot;,&quot;Naturaleza de la transacción B&quot;)</alias>
+<description>QT_TRANSLATE_NOOP(&quot;MetaData&quot;,&quot;Naturaleza de la transacción. tabla B&quot;)</description>
+<table>naturalezatransaccionb</table>
+<form>master</form>
+<formrecord>naturalezatransaccionb</formrecord>
+</action>
+</xupdate:insert-after>
+<xupdate:insert-after select="/ACTIONS[ACTIONS,1]/action[naturalezatransaccionb]" >
+<action>
+<name>naturalezatransaccion</name>
+<alias>QT_TRANSLATE_NOOP(&quot;MetaData&quot;,&quot;Naturaleza de la transacción&quot;)</alias>
+<description>QT_TRANSLATE_NOOP(&quot;MetaData&quot;,&quot;Naturaleza de la transacción&quot;)</description>
+<table>naturalezatransaccion</table>
+<form>master</form>
+<formrecord>naturalezatransaccion</formrecord>
+<scriptformrecord>naturalezatransaccion</scriptformrecord>
+</action>
+</xupdate:insert-after>
+<xupdate:insert-after select="/ACTIONS[ACTIONS,1]/action[naturalezatransaccion]" >
+<action>
+<name>modotransporte</name>
+<alias>QT_TRANSLATE_NOOP(&quot;MetaData&quot;,&quot;Modos de transporte probable&quot;)</alias>
+<description>QT_TRANSLATE_NOOP(&quot;MetaData&quot;,&quot;Modos de transporte probable&quot;)</description>
+<table>modotransporte</table>
+<form>master</form>
+<formrecord>modotransporte</formrecord>
+</action>
+</xupdate:insert-after>
+<xupdate:insert-after select="/ACTIONS[ACTIONS,1]/action[modotransporte]" >
+<action>
+<name>puertosaeropuertos</name>
+<alias>QT_TRANSLATE_NOOP(&quot;MetaData&quot;,&quot;Puertos/Aeropuertos&quot;)</alias>
+<description>QT_TRANSLATE_NOOP(&quot;MetaData&quot;,&quot;Puerto/Aeropuerto de carga o descarga de la mercancia&quot;)</description>
+<table>puertosaeropuertos</table>
+<form>master</form>
+<formrecord>puertosaeropuertos</formrecord>
+</action>
+</xupdate:insert-after>
+<xupdate:insert-after select="/ACTIONS[ACTIONS,1]/action[puertosaeropuertos]" >
+<action>
+<name>regimenesestadisticos</name>
+<alias>QT_TRANSLATE_NOOP(&quot;MetaData&quot;,&quot;Regimenes estadisticos&quot;)</alias>
+<description>QT_TRANSLATE_NOOP(&quot;MetaData&quot;,&quot;Regimenes estadisticos&quot;)</description>
+<table>regimenesestadisticos</table>
+<form>master</form>
+<formrecord>regimenesestadisticos</formrecord>
+<scriptformrecord>regimenesestadisticos</scriptformrecord>
+</action>
+</xupdate:insert-after>
+<xupdate:insert-after select="/ACTIONS[ACTIONS,1]/action[regimenesestadisticos]" >
+<action>
+<name>codigomercancias</name>
+<alias>QT_TRANSLATE_NOOP(&quot;MetaData&quot;,&quot;Códigos de mercancías&quot;)</alias>
+<description>QT_TRANSLATE_NOOP(&quot;MetaData&quot;,&quot;Códigos de mercancías&quot;)</description>
+<table>codigomercancias</table>
+<form>mastercodigomercancias</form>
+<formrecord>codigomercancias</formrecord>
+<scriptform>mastercodigomercancias</scriptform>
+<scriptformrecord>codigomercancias</scriptformrecord>
+</action>
+</xupdate:insert-after>
+<xupdate:insert-after select="/ACTIONS[ACTIONS,1]/action[codigomercancias]" >
+<action>
+<name>i_seleccionalbaranescli</name>
+<alias>QT_TRANSLATE_NOOP(&quot;MetaData&quot;,&quot;Selección albaranes de cliente&quot;)</alias>
+<description>QT_TRANSLATE_NOOP(&quot;MetaData&quot;,&quot;Selecciona un conjunto de albaranes de clientes para incluirlos en la declaración intrastat&quot;)</description>
+<table>albaranescli</table>
+<form>i_seleccionalbaranescli</form>
+</action>
+</xupdate:insert-after>
+<xupdate:insert-after select="/ACTIONS[ACTIONS,1]/action[i_seleccionalbaranescli]" >
+<action>
+<name>i_seleccionalbaranesprov</name>
+<alias>QT_TRANSLATE_NOOP(&quot;MetaData&quot;,&quot;Selección albaranes de proveedor&quot;)</alias>
+<description>QT_TRANSLATE_NOOP(&quot;MetaData&quot;,&quot;Selecciona un conjunto de albaranes de proveedor para incluirlos en la declaración intrastat&quot;)</description>
+<table>albaranesprov</table>
+<form>i_seleccionalbaranesprov</form>
+</action>
+</xupdate:insert-after>
+</xupdate:modifications>

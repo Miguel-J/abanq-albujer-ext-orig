@@ -1,0 +1,9 @@
+<flpatch:modifications name="mas_formaspago" >
+    <flpatch:patchScript path="facturacion/principal/scripts/" name="formaspago.qs" />
+    <flpatch:patchScript path="facturacion/principal/scripts/" name="plazos.qs" />
+    <flpatch:patchXml path="facturacion/principal/tables/" name="formaspago.mtd" />
+    <flpatch:patchXml path="facturacion/principal/tables/" name="plazos.mtd" />
+    <flpatch:patchScript path="facturacion/tesoreria/scripts/" name="flfactteso.qs" />
+    <flpatch:patchXml path="facturacion/principal/forms/" name="plazos.ui" />
+    <flpatch:patchXml path="facturacion/principal/forms/" name="formaspago.ui" />
+</flpatch:modifications>

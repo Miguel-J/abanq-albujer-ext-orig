@@ -1,0 +1,11 @@
+<xupdate:modifications>
+<xupdate:insert-after select="/TMD[TMD,1]/field[codimpuesto]" >
+<field>
+<name>ivaincluido</name>
+<!-- I.V.A. incluido--><alias>QT_TRANSLATE_NOOP(&quot;MetaData&quot;,&quot;I.V.A. incluido&quot;)</alias>
+<pk>false</pk>
+<type>bool</type>
+<default>false</default>
+</field>
+</xupdate:insert-after>
+</xupdate:modifications>

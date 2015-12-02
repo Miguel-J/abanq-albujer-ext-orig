@@ -1,0 +1,69 @@
+<!DOCTYPE TMD>
+<TMD>
+	<name>zonas</name>
+	<!-- Listado de zonas -->
+	<alias>QT_TRANSLATE_NOOP("MetaData","Zonas")</alias>
+
+	<field>
+		<name>codzona</name>
+		<alias>QT_TRANSLATE_NOOP("MetaData","Código")</alias>
+		<null>false</null>
+		<pk>true</pk>
+		<type>string</type>
+		<length>8</length>
+		
+		<relation>
+			<table>estanterias</table>
+			<field>codzona</field>
+			<card>1M</card>
+		</relation>
+		<relation>
+			<table>ubicaciones</table>
+			<field>codzona</field>
+			<card>1M</card>
+		</relation>
+		<relation>
+			<table>zonasusuario</table>
+			<field>codzona</field>
+			<card>1M</card>
+		</relation>
+
+	</field>
+	
+	<field>
+		<name>descripcion</name>
+		<alias>QT_TRANSLATE_NOOP("MetaData","Descripción")</alias>
+		<null>false</null>
+		<pk>false</pk>
+		<type>string</type>
+		<length>200</length>
+	</field>
+	
+	<field>
+        <name>codalmacen</name>
+		<!-- Código del almacén -->
+		<alias>QT_TRANSLATE_NOOP("MetaData","Almacén")</alias>
+        <null>false</null>
+        <pk>false</pk>
+        <type>string</type>
+        <length>4</length>
+        <relation>
+            <table>almacenes</table>
+            <field>codalmacen</field>
+            <card>M1</card>
+        </relation>
+    </field>
+	
+	<field>
+		<name>tipo</name>
+		<alias>QT_TRANSLATE_NOOP("MetaData","Tipo")</alias>
+		<null>true</null>
+		<pk>false</pk>
+		<type>string</type>
+		<length>20</length>
+		<optionslist>PICKING,MASIVO,CESTAS,CONSOLIDACIÓN</optionslist>
+		<default>PICKING</default>
+	</field>
+
+
+</TMD>

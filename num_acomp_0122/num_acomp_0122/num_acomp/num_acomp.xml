@@ -1,0 +1,27 @@
+<flpatch:modifications name="num_acomp" >
+    <flpatch:patchXml path="facturacion/facturacion/" name="flfacturac.xml" />
+    <flpatch:patchXml path="facturacion/facturacion/forms/" name="lineasalbaranescli.ui" />
+    <flpatch:addFile path="facturacion/facturacion/forms/" name="lineasalbaranesclins.ui" />
+    <flpatch:addFile path="facturacion/facturacion/tables/" name="lineasalbaranesclins.mtd" />
+    <flpatch:patchScript path="facturacion/facturacion/scripts/" name="lineasalbaranescli.qs" />
+    <flpatch:patchXml path="facturacion/facturacion/tables/" name="lineasalbaranescli.mtd" />
+    <flpatch:patchScript path="facturacion/facturacion/scripts/" name="flfacturac.qs" />
+    <flpatch:addFile path="facturacion/facturacion/scripts/" name="lineasalbaranesclins.qs" />
+    <flpatch:addFile path="facturacion/facturacion/scripts/" name="lineasfacturasclins.qs" />
+    <flpatch:patchScript path="facturacion/facturacion/scripts/" name="lineasfacturascli.qs" />
+    <flpatch:addFile path="facturacion/facturacion/tables/" name="lineasfacturasclins.mtd" />
+    <flpatch:patchXml path="facturacion/facturacion/forms/" name="lineasfacturascli.ui" />
+    <flpatch:addFile path="facturacion/facturacion/forms/" name="lineasfacturasclins.ui" />
+    <flpatch:patchScript path="facturacion/facturacion/scripts/" name="masteralbaranescli.qs" />
+    <flpatch:replaceFile path="facturacion/informes/queries/" name="i_albaranesclicomp.qry" />
+    <flpatch:addFile path="facturacion/informes/reports/" name="i_albaranesclicomp_ns.kut" />
+    <flpatch:addFile path="facturacion/informes/queries/" name="i_albaranesclicomp_ns.qry" />
+    <flpatch:patchScript path="facturacion/informes/scripts/" name="flfactinfo.qs" />
+    <flpatch:patchXml path="facturacion/informes/tables/" name="i_articuloscomp_buffer.mtd" />
+    <flpatch:addFile path="facturacion/informes/queries/" name="i_albaranescli_ns.qry" />
+    <flpatch:patchScript path="facturacion/facturacion/scripts/" name="masterfacturascli.qs" />
+    <flpatch:addFile path="facturacion/informes/queries/" name="i_facturasclicomp_ns.qry" />
+    <flpatch:addFile path="facturacion/informes/reports/" name="i_facturasclicomp_ns.kut" />
+    <flpatch:replaceFile path="facturacion/informes/reports/" name="i_facturasclicomp.kut" />
+    <flpatch:patchXml path="facturacion/facturacion/tables/" name="lineasfacturascli.mtd" />
+</flpatch:modifications>

@@ -1,0 +1,82 @@
+<!DOCTYPE UI><UI version="3.3" stdsetdef="1">
+<class>menumat</class>
+<widget class="QWidget">
+    <property name="name">
+        <cstring>menumat</cstring>
+    </property>
+    <property name="geometry">
+        <rect>
+            <x>0</x>
+            <y>0</y>
+            <width>300</width>
+            <height>221</height>
+        </rect>
+    </property>
+    <property name="caption">
+        <string>menumat</string>
+    </property>
+    <vbox>
+        <property name="name">
+            <cstring>unnamed</cstring>
+        </property>
+        <widget class="QGroupBox">
+            <property name="name">
+                <cstring>groupBox36</cstring>
+            </property>
+            <property name="title">
+                <string></string>
+            </property>
+            <vbox>
+                <property name="name">
+                    <cstring>unnamed</cstring>
+                </property>
+                <widget class="QPushButton">
+                    <property name="name">
+                        <cstring>pbnEntrada</cstring>
+                    </property>
+                    <property name="text">
+                        <string>&amp;Entradas de Material</string>
+                    </property>
+                    <property name="accel">
+                        <string>Alt+E</string>
+                    </property>
+                </widget>
+                <widget class="QPushButton">
+                    <property name="name">
+                        <cstring>pbnSalida</cstring>
+                    </property>
+                    <property name="text">
+                        <string>&amp;Salidas de Material</string>
+                    </property>
+                    <property name="accel">
+                        <string>Alt+S</string>
+                    </property>
+                </widget>
+                <widget class="QPushButton">
+                    <property name="name">
+                        <cstring>pbnTransferencia</cstring>
+                    </property>
+                    <property name="text">
+                        <string>&amp;Transferencias</string>
+                    </property>
+                    <property name="accel">
+                        <string>Alt+T</string>
+                    </property>
+                </widget>
+                <widget class="QPushButton">
+                    <property name="name">
+                        <cstring>pbnRegularizaciones</cstring>
+                    </property>
+                    <property name="text">
+                        <string>&amp;Regularizaciones</string>
+                    </property>
+                    <property name="accel">
+                        <string>Alt+R</string>
+                    </property>
+                </widget>
+            </vbox>
+        </widget>
+    </vbox>
+</widget>
+<layoutdefaults spacing="6" margin="11"/>
+</UI>

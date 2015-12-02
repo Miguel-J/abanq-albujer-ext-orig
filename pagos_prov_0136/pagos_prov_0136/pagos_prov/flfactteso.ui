@@ -1,0 +1,53 @@
+<xupdate:modifications>
+<xupdate:update select="/UI[UI,1]/widget[QMainWindow,FLWidgetApplication]/property[property,2]/rect[rect,1]/height[height,1]/text()[1]" >559</xupdate:update>
+<xupdate:update select="/UI[UI,1]/actions[actions,1]/action[recibosprov]/property[property,3]/string[string,1]/text()[1]" >Recibos a Proveedores</xupdate:update>
+<xupdate:insert-after select="/UI[UI,1]/actions[actions,1]/action[recibosprov]/property[property,4]" >
+<property name="whatsThis" >
+<string>Recibos a proveedores</string>
+</property>
+</xupdate:insert-after>
+<xupdate:insert-after select="/UI[UI,1]/actions[actions,1]/action[recibosprov]/property[property,5]" >
+<property name="accel" >
+<string>Ctrl+P</string>
+</property>
+</xupdate:insert-after>
+<xupdate:append-first select="/UI[UI,1]/images[images,1]" >
+<image name="pagos_provimage3" >
+<data format="PNG" length="1911" >89504e470d0a1a0a0000000d4948445200000020000000200806000000737a7af40000073e49444154789cbd975f6c1cd515c67fb6efc29db0367792dd6a26d8690792b4eb9410a709d41669b18b8a489a22119596a80855bc15b55215c40baae8431faa4aed0b8ad48210a51541222da58d94a64d315248bd948027d461d760c71362273b9095674a569ed37870fa3076c83fffa94a7b5e668ee6cef9ce39f7bbf77eb7c9e40d920a282005adf4ffd56fa199cc66b2473a93feb7be552a389f5d6f8a5f8e26e5fd06922c345e7d0295b4958c735397e36d2815ec4da50eafcb2b386b5d65adf8f66f76dfd75f0ff62ef4bf623621496536c5057d5d32c62b15dc9b4bc66ceeeaf036b8c6fe9c5770da4581d636c26c7011ba0aceedfd61b077a1f86a81ca9467ccaaae82bbce2b98ae2ed7fd8267cc3a57dbab50e474c164c15290143416d288b2672a680dddc6be4d2bdd22a97c345f27d5e5996dddd475cf56cffda697d7eb3dc7bd11b04825fbae7416246fc07141408efa9037481acf261367152a8de77a9d46f874a8189bafb35770a0e4da3bb6dedd73bffdf95ed016d1ef9f0365206f03a08b0e680b1a09d208218ea01181b6c11874bb87765dacd51e6ec1b47ac1e0faf08df2d89239d03f34f8d6aeef3dfc00790b1c0f3c0f12c0363052256e44d0c8c6ea828bbeb30fbda684d5ee665dc971896decded85d7ea3fcd29239104cc447e22098b68cc925c311547da41ea13fe341dec6ac2961151c68f7b24ee4208a12e25420ac210d41e7356e870b40ef96de2fee7e6277138af34be280ebb04c249268b49ad30517bd7d27767b064e0e9204b02018092005e318e27a0c0a1ce32079c1b6ed8f3bb061e33aadf54a113975350e34e97c46acad9bbc3b766eeffe6e5f77cfd7f4ea3ecb723d9269904642ad1e8224a0c0c2c269772e04b06c8bc5aca7bbe7eeeab1ea81ab72e0de4dceb687eedfb1abababab57e75d4422a41161e1114fd49054700b0652836dec2be67829d6b3b9a7db3fea1fb81a079adda27b6777776fafce1b9028cbac51cba6a3ddc529384843a84dd4a84dd4fe7374a07b4bf76da8ec5d2b8dd1ac4065a534efdee7ffb2ffe0fe31995de7920a3a05928444128230402b8ddbeee27a2ec9d984a816110441c683e9c513d8b861e32da4b401ec7c60e7770607de7cebb1ed5b9f0796b528adea43c3d5730fded5b34de97c936a56a4a960b57590bbbe15952a62899129a176b246fc614c63aa41ae39875370c85db7f89cd86df675fe11bffaf88f1e7ff491471ff9619aa66de9bb839d874ed4f63569ad01da76dddfbde7b11fecda2673bb5ea184ed7552a956b0f3365a6bb4d658b34b6f5e9b0652882442a309e310933768adcf5bda6a1a1cad101f7c91813fed1ffad9b1dab7e6f6810f9fde5bfec9bd77947b4a9bfb6c244224db523b4b9d8b56982409120bb1c4248de4e30f0a2c65a1b546449afca33e913fc089c3e5f0c5507e21f570e4821e9019c64f4c046d5fffcaad5bd435791a5342eb0d6baf008ba2088985300c89276374b30660fc83718aa648b1506465c74af26d4556168a68ad09c398c1d70e11970f32f2f723e32f8cd5760f0d579f01a65a94563093b173e474fc4ea9a07a4beb6e7601ac7c075c9b2318098827638293014dd28420986506b3dc605d6f91bb3647b158c4ba2e7b4fce4630e6539794606c9cea9f7f4deb689557aaa36fbe301cfcb43a3af2ac56fa9fe94c4a8b6aced6c7ac5239fb7aa53ab9a3f7d67b745eb7b0ac48ee9a56e238dbe9bc768fe20d456cdbc66acdc02e9fffe45c02d7b4121cfb07fedf0e21effa747ccac5fbc683bcf8fae0afca875ffd39f0af3965d492d7f90c5c013390a67aecec99e0c6adbd5fba459a15d60a177b858d6ddb57025e0e9e262050ad0c514f3fc2bec1a367db7daceae9a1d5b6094f4d9c3ad47fe8b717e35d4d13a6fe58fdf8e6557afb9a75b7b6e56cf70a2066209a8c083f08a94dd44827cfa0a6ce104b13d54a95742665cdda3574aeeb24677d9cb4524a3ff9d493cf00e7e6f02ee1c04599bd3f323ace3d5b3aef6af536922409f5b04efd741d99121a530d9452c839a1b8bc885a5e647cb0cc89b1110a2b3d4aeb4b971c4873e6165c7bcff37bfe18c7f1a939bce6f9948a3f113ffbf4534ff79344582a9359a660308ec1ed70d1798de7788808c1b12a8180b7a187ceae4e2cebea0754548fce3b8e73d3c5784d0bdd0b4c2a5f7df92f2fefeddcd2d77671a0e46c92698730200e63745e535a5dbaf4649c86ca6865aaea574ff7bfd67fdcf7fd4a75b87a14e1af92cae979f5c0c57e8c7e65cfbefe833fded2b7e34215672244845a588314bcd51e6e874b1445f8657fd22ffbef0d1c1d18f68ff86f0713418594e34008c4c0b90b09cea7092ff3a7fd217f00d80110ec7b8ec478c40aa2309a0ea3b0b6ffe0feb172b95ca90c578e8561f80e8af74839a3956e9032b3d8bd62d17b4165b83214d56ae7e58dfea6e8483f7eaad3fd43270ef41f1ed82b226f03a7810890f93ab990bf200766fd159e631e7e68b3f7fd20b54effeed5c127c238fe038a0f3e89bbe1dc69b898b591d7b7d39093c0dbc0f9a5fcb4146bbe58a900cce37fa885fdc0315406bec8f825fb4bedc0ffccfe0dbfeb1eec2197d3710000000049454e44ae426082</data>
+</image>
+</xupdate:append-first>
+<xupdate:insert-after select="/UI[UI,1]/actions[actions,1]/action[remesas]" >
+<action>
+<property name="name" >
+<cstring>pagosprov</cstring>
+</property>
+<property name="iconSet" >
+<iconset>pagos_provimage3</iconset>
+</property>
+<property name="text" >
+<string>Pago Múltiple de proveedores</string>
+</property>
+<property name="menuText" >
+<string>&amp;Pago Múltiple de proveedores</string>
+</property>
+<property name="whatsThis" >
+<string>Pago múltiple de proveedores</string>
+</property>
+</action>
+</xupdate:insert-after>
+<xupdate:insert-after select="/UI[UI,1]/connections[connections,1]/connection[remesas,activated(),FLWidgetApplication,openDefaultForm()]" >
+<connection>
+<sender>pagosprov</sender>
+<signal>activated()</signal>
+<receiver>FLWidgetApplication</receiver>
+<slot>execDefaultScript()</slot>
+</connection>
+</xupdate:insert-after>
+<xupdate:insert-after select="/UI[UI,1]/menubar[menubar,1]/item[item,1]/action[remesas]" >
+<action name="pagosprov" />
+</xupdate:insert-after>
+<xupdate:update select="/UI[UI,1]/menubar[menubar,1]/property[property,2]/rect[rect,1]/height[height,1]/text()[1]" >25</xupdate:update>
+<xupdate:insert-after select="/UI[UI,1]/toolbars[toolbars,1]/toolbar[toolBar]/action[remesas]" >
+<action name="pagosprov" />
+</xupdate:insert-after>
+</xupdate:modifications>

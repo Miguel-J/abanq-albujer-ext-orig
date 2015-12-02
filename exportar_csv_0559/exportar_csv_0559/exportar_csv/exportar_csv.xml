@@ -1,0 +1,8 @@
+<flpatch:modifications name="exportar_csv" >
+    <flpatch:patchXml path="facturacion/principal/" name="flfactppal.xml" />
+    <flpatch:addFile path="facturacion/principal/forms/" name="masterclientes.ui" />
+    <flpatch:patchScript path="facturacion/principal/scripts/" name="masterclientes.qs" />
+    <flpatch:patchScript path="facturacion/principal/scripts/" name="flfactppal.qs" />
+    <flpatch:patchScript path="facturacion/principal/scripts/" name="masterproveedores.qs" />
+    <flpatch:addFile path="facturacion/principal/forms/" name="masterproveedores.ui" />
+</flpatch:modifications>

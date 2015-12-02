@@ -1,0 +1,16 @@
+<flpatch:modifications name="validar_cif" >
+    <flpatch:patchXml path="facturacion/principal/tables/" name="paises.mtd" />
+    <flpatch:patchXml path="facturacion/principal/forms/" name="paises.ui" />
+    <flpatch:patchScript path="facturacion/principal/scripts/" name="paises.qs" />
+    <flpatch:patchScript path="facturacion/principal/scripts/" name="flfactppal.qs" />
+    <flpatch:patchScript path="facturacion/facturacion/scripts/" name="presupuestoscli.qs" />
+    <flpatch:patchScript path="facturacion/facturacion/scripts/" name="facturascli.qs" />
+    <flpatch:patchScript path="facturacion/facturacion/scripts/" name="albaranesprov.qs" />
+    <flpatch:patchScript path="facturacion/facturacion/scripts/" name="albaranescli.qs" />
+    <flpatch:patchScript path="facturacion/facturacion/scripts/" name="pedidoscli.qs" />
+    <flpatch:patchScript path="facturacion/facturacion/scripts/" name="facturasprov.qs" />
+    <flpatch:patchScript path="facturacion/facturacion/scripts/" name="pedidosprov.qs" />
+    <flpatch:patchScript path="facturacion/principal/scripts/" name="clientes.qs" />
+    <flpatch:patchScript path="facturacion/principal/scripts/" name="proveedores.qs" />
+    <flpatch:patchScript path="facturacion/tpv/scripts/" name="tpv_comandas.qs" />
+</flpatch:modifications>

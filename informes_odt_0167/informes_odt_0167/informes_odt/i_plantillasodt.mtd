@@ -1,0 +1,62 @@
+<!DOCTYPE TMD>
+<TMD>
+	<name>i_plantillasodt</name>
+	<alias>QT_TRANSLATE_NOOP("MetaData","Plantillas de informe")</alias>
+
+	<field>
+		<name>codigo</name>
+		<alias>QT_TRANSLATE_NOOP("MetaData","Código")</alias>
+		<null>false</null>
+		<pk>true</pk>
+		<type>string</type>
+		<length>6</length>
+		<counter>true</counter>
+	</field>
+
+	<field>
+		<name>descripcion</name>
+		<alias>QT_TRANSLATE_NOOP("MetaData","Descripción")</alias>
+		<null>true</null>
+		<pk>false</pk>
+		<type>stringlist</type>
+	</field>
+	
+	<field>
+		<name>informe</name>
+		<alias>QT_TRANSLATE_NOOP("MetaData","Informe")</alias>
+		<null>false</null>
+		<pk>false</pk>
+		<type>string</type>
+		<length>100</length>
+		<unique>true</unique>
+	</field>
+	
+	<field>
+		<name>prioridad</name>
+		<alias>QT_TRANSLATE_NOOP("MetaData","Uso")</alias>
+		<null>false</null>
+		<pk>false</pk>
+		<type>string</type>
+		<length>100</length>
+		<optionslist>QT_TRANSLATE_NOOP("MetaData","Siempre");QT_TRANSLATE_NOOP("MetaData","Preguntar");QT_TRANSLATE_NOOP("MetaData","Inactiva")</optionslist>
+		<default>QT_TRANSLATE_NOOP("MetaData","Siempre")</default>
+	</field>
+
+	<field>
+		<name>fichero</name>
+		<alias>QT_TRANSLATE_NOOP("MetaData","Fichero odt")</alias>
+		<null>false</null>
+		<pk>false</pk>
+		<type>string</type>
+		<length>100</length>
+	</field>
+
+	<field>
+		<name>agrupacion</name>
+		<alias>QT_TRANSLATE_NOOP("MetaData","Agrupación")</alias>
+		<null>true</null>
+		<pk>false</pk>
+		<type>string</type>
+		<length>400</length>
+	</field>
+</TMD>

@@ -1,0 +1,18 @@
+<flpatch:modifications name="asociar_presup" >
+    <flpatch:addFile path="facturacion/facturacion/scripts/" name="agruparpresupuestoscli.qs" />
+    <flpatch:patchScript path="facturacion/facturacion/scripts/" name="masterpedidoscli.qs" />
+    <flpatch:addFile path="facturacion/facturacion/tables/" name="agruparpresupuestoscli.mtd" />
+    <flpatch:patchXml path="facturacion/facturacion/forms/" name="masterpedidoscli.ui" />
+    <flpatch:addFile path="facturacion/facturacion/forms/" name="agruparpresupuestoscli.ui" />
+    <flpatch:patchScript path="facturacion/facturacion/scripts/" name="masterpresupuestoscli.qs" />
+    <flpatch:patchXml path="facturacion/facturacion/" name="flfacturac.xml" />
+    <flpatch:patchXml path="facturacion/facturacion/tables/" name="presupuestoscli.mtd" />
+    <flpatch:patchXml path="facturacion/facturacion/tables/" name="pedidoscli.mtd" />
+    <flpatch:patchXml path="facturacion/facturacion/forms/" name="pedidoscli.ui" />
+    <flpatch:patchScript path="facturacion/facturacion/scripts/" name="pedidoscli.qs" />
+    <flpatch:replaceFile path="facturacion/informes/queries/" name="i_pedidoscli.qry" />
+    <flpatch:patchXml path="facturacion/facturacion/tables/" name="lineaspedidoscli.mtd" />
+    <flpatch:replaceFile path="facturacion/informes/reports/" name="i_pedidoscli.kut" />
+    <flpatch:patchScript path="facturacion/facturacion/scripts/" name="trazadoc.qs" />
+    <flpatch:patchScript path="facturacion/facturacion/scripts/" name="flfacturac.qs" />
+</flpatch:modifications>

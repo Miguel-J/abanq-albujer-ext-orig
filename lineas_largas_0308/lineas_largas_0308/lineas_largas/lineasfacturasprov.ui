@@ -1,0 +1,130 @@
+<xupdate:modifications>
+<xupdate:update select="/UI[UI,1]/widget[QWidget,lineaspedidosprov]/property[property,2]/rect[rect,1]/height[height,1]/text()[1]" >411</xupdate:update>
+<xupdate:update select="/UI[UI,1]/widget[QWidget,lineaspedidosprov]/property[property,2]/rect[rect,1]/width[width,1]/text()[1]" >614</xupdate:update>
+<xupdate:delete select="/UI[UI,1]/widget[QWidget,lineaspedidosprov]/vbox[vbox,1]/widget[QGroupBox,groupBox7]/vbox[vbox,1]/widget[QLayoutWidget,layoutRef]" />
+<xupdate:insert-after select="/UI[UI,1]/widget[QWidget,lineaspedidosprov]/vbox[vbox,1]/widget[QGroupBox,groupBox7]/vbox[vbox,1]/widget[QLayoutWidget,layout26]" >
+<widget class="QLayoutWidget" >
+<property name="name" >
+<cstring>lytLineasLargas2</cstring>
+</property>
+<hbox>
+<property name="name" >
+<cstring>unnamed</cstring>
+</property>
+<widget class="QLayoutWidget" >
+<property name="name" >
+<cstring>lytLineasLargas</cstring>
+</property>
+<property name="font" >
+<font>
+<bold>0</bold>
+<italic>0</italic>
+</font>
+</property>
+<vbox>
+<property name="name" >
+<cstring>unnamed</cstring>
+</property>
+<widget class="FLFieldDB" >
+<property name="name" >
+<cstring>fdbReferencia</cstring>
+</property>
+<property name="sizePolicy" >
+<sizepolicy>
+<hsizetype>1</hsizetype>
+<vsizetype>0</vsizetype>
+<horstretch>0</horstretch>
+<verstretch>0</verstretch>
+</sizepolicy>
+</property>
+<property name="minimumSize" >
+<size>
+<width>180</width>
+<height>25</height>
+</size>
+</property>
+<property name="fieldName" >
+<string>referencia</string>
+</property>
+</widget>
+<spacer>
+<property name="name" >
+<cstring>spcLineasLargas</cstring>
+</property>
+<property name="orientation" >
+<enum>Vertical</enum>
+</property>
+<property name="sizeType" >
+<enum>Expanding</enum>
+</property>
+<property name="sizeHint" >
+<size>
+<width>20</width>
+<height>31</height>
+</size>
+</property>
+</spacer>
+</vbox>
+</widget>
+<widget class="FLFieldDB" >
+<property name="name" >
+<cstring>fdbDescripcion</cstring>
+</property>
+<property name="sizePolicy" >
+<sizepolicy>
+<hsizetype>7</hsizetype>
+<vsizetype>0</vsizetype>
+<horstretch>0</horstretch>
+<verstretch>0</verstretch>
+</sizepolicy>
+</property>
+<property name="minimumSize" >
+<size>
+<width>400</width>
+<height>60</height>
+</size>
+</property>
+<property name="font" >
+<font>
+<bold>0</bold>
+<italic>0</italic>
+</font>
+</property>
+<property name="fieldName" >
+<string>descripcion</string>
+</property>
+<property name="foreignField" >
+<string>descripcion</string>
+</property>
+<property name="fieldRelation" >
+<string>referencia</string>
+</property>
+</widget>
+</hbox>
+</widget>
+</xupdate:insert-after>
+<xupdate:insert-after select="/UI[UI,1]/tabstops[tabstops,1]/tabstop[tabstop,3]" >
+<tabstop>chkFiltrarArtProv</tabstop>
+</xupdate:insert-after>
+<xupdate:insert-after select="/UI[UI,1]/tabstops[tabstops,1]/tabstop[tabstop,4]" >
+<tabstop>fdbPvpUnitario</tabstop>
+</xupdate:insert-after>
+<xupdate:insert-after select="/UI[UI,1]/tabstops[tabstops,1]/tabstop[tabstop,5]" >
+<tabstop>fdbPvpSinDto</tabstop>
+</xupdate:insert-after>
+<xupdate:insert-after select="/UI[UI,1]/tabstops[tabstops,1]/tabstop[tabstop,6]" >
+<tabstop>fdbDtoLineal</tabstop>
+</xupdate:insert-after>
+<xupdate:insert-after select="/UI[UI,1]/tabstops[tabstops,1]/tabstop[tabstop,7]" >
+<tabstop>fdbDtoPor</tabstop>
+</xupdate:insert-after>
+<xupdate:insert-after select="/UI[UI,1]/tabstops[tabstops,1]/tabstop[tabstop,8]" >
+<tabstop>fdbPvpTotal</tabstop>
+</xupdate:insert-after>
+<xupdate:insert-after select="/UI[UI,1]/tabstops[tabstops,1]/tabstop[tabstop,9]" >
+<tabstop>fdbCodSubcuenta</tabstop>
+</xupdate:insert-after>
+<xupdate:insert-after select="/UI[UI,1]/tabstops[tabstops,1]/tabstop[tabstop,10]" >
+<tabstop>fdbDesSubcuenta</tabstop>
+</xupdate:insert-after>
+</xupdate:modifications>

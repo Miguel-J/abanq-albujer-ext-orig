@@ -1,0 +1,51 @@
+<xupdate:modifications>
+<xupdate:insert-after select="/TMD[TMD,1]/field[codalmacen]/relation[tpv_puntosventa,codalmacen]" >
+<relation>
+<table>lineasalbaranescli</table>
+<field>codalmacen</field>
+<card>1M</card>
+</relation>
+</xupdate:insert-after>
+<xupdate:insert-after select="/TMD[TMD,1]/field[codalmacen]/relation[lineasalbaranescli,codalmacen]" >
+<relation>
+<table>lineasalbaranesprov</table>
+<field>codalmacen</field>
+<card>1M</card>
+</relation>
+</xupdate:insert-after>
+<xupdate:insert-after select="/TMD[TMD,1]/field[codalmacen]/relation[lineasalbaranesprov,codalmacen]" >
+<relation>
+<table>lineasfacturascli</table>
+<field>codalmacen</field>
+<card>1M</card>
+</relation>
+</xupdate:insert-after>
+<xupdate:insert-after select="/TMD[TMD,1]/field[codalmacen]/relation[lineasfacturascli,codalmacen]" >
+<relation>
+<table>lineasfacturasprov</table>
+<field>codalmacen</field>
+<card>1M</card>
+</relation>
+</xupdate:insert-after>
+<xupdate:insert-after select="/TMD[TMD,1]/field[codalmacen]/relation[lineasfacturasprov,codalmacen]" >
+<relation>
+<table>lineaspedidoscli</table>
+<field>codalmacen</field>
+<card>1M</card>
+</relation>
+</xupdate:insert-after>
+<xupdate:insert-after select="/TMD[TMD,1]/field[codalmacen]/relation[lineaspedidoscli,codalmacen]" >
+<relation>
+<table>lineaspedidosprov</table>
+<field>codalmacen</field>
+<card>1M</card>
+</relation>
+</xupdate:insert-after>
+<xupdate:insert-after select="/TMD[TMD,1]/field[codalmacen]/relation[lineaspedidosprov,codalmacen]" >
+<relation>
+<table>lineaspresupuestoscli</table>
+<field>codalmacen</field>
+<card>1M</card>
+</relation>
+</xupdate:insert-after>
+</xupdate:modifications>

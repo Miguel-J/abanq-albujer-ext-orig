@@ -1,0 +1,18 @@
+<xupdate:modifications>
+<xupdate:insert-after select="/TMD[TMD,1]/field[irultrarrapida]" >
+<field>
+<name>pagopunto</name>
+<!-- Forma de pago que se establecera para las comandas con tipo de pago Vale --><alias>QT_TRANSLATE_NOOP(&quot;MetaData&quot;,&quot;Forma de pago con puntos&quot;)</alias>
+<null>true</null>
+<pk>false</pk>
+<type>string</type>
+<length>10</length>
+<editable>true</editable>
+<relation>
+<table>formaspago</table>
+<field>codpago</field>
+<card>M1</card>
+</relation>
+</field>
+</xupdate:insert-after>
+</xupdate:modifications>

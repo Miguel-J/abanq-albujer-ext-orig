@@ -1,0 +1,32 @@
+<flpatch:modifications name="sga_barcode" >
+    <flpatch:patchXml path="facturacion/almacen/forms/" name="ubicacionesarticulo.ui" />
+    <flpatch:patchXml path="facturacion/almacen/tables/" name="atributosarticulos.mtd" />
+    <flpatch:patchXml path="facturacion/almacen/tables/" name="colores.mtd" />
+    <flpatch:patchXml path="facturacion/almacen/tables/" name="tallas.mtd" />
+    <flpatch:patchXml path="facturacion/almacen/tables/" name="ubicacionesarticulo.mtd" />
+    <flpatch:addFile path="facturacion/almacen/scripts/" name="ubicacionesarticulo.qs" />
+    <flpatch:patchXml path="facturacion/almacen/" name="flfactalma.xml" />
+    <flpatch:patchScript path="facturacion/almacen/scripts/" name="flfactalma.qs" />
+    <flpatch:patchScript path="facturacion/almacen/scripts/" name="entradasmatpda.qs" />
+    <flpatch:addFile path="facturacion/almacen/tables/" name="envasesbarcode.mtd" />
+    <flpatch:patchXml path="facturacion/almacen/tables/" name="articulos.mtd" />
+    <flpatch:addFile path="facturacion/almacen/forms/" name="envasesbarcode.ui" />
+    <flpatch:patchXml path="facturacion/almacen/forms/" name="entradasmatpda.ui" />
+    <flpatch:patchXml path="facturacion/almacen/tables/" name="movimat.mtd" />
+    <flpatch:patchXml path="facturacion/almacen/forms/" name="flfactalma.ui" />
+    <flpatch:patchScript path="facturacion/almacen/scripts/" name="regularizacionesmatpda.qs" />
+    <flpatch:patchXml path="facturacion/almacen/forms/" name="regularizacionesmatpda.ui" />
+    <flpatch:patchXml path="facturacion/almacen/forms/" name="movimat.ui" />
+    <flpatch:patchScript path="facturacion/almacen/scripts/" name="crearubicacion.qs" />
+    <flpatch:patchXml path="facturacion/almacen/forms/" name="salidasmatpda.ui" />
+    <flpatch:patchScript path="facturacion/almacen/scripts/" name="salidasmatpda.qs" />
+    <flpatch:patchScript path="facturacion/almacen/scripts/" name="transferenciasmatpda.qs" />
+    <flpatch:patchXml path="facturacion/almacen/forms/" name="transferenciasmatpda.ui" />
+    <flpatch:patchScript path="facturacion/almacen/scripts/" name="masterpedidospicking.qs" />
+    <flpatch:patchXml path="facturacion/almacen/tables/" name="lineaspedidospicking.mtd" />
+    <flpatch:patchXml path="facturacion/almacen/forms/" name="lineaspedidospicking.ui" />
+    <flpatch:patchXml path="facturacion/almacen/tables/" name="lineasreposicion.mtd" />
+    <flpatch:patchXml path="facturacion/almacen/forms/" name="lineasreposicion.ui" />
+    <flpatch:patchScript path="facturacion/almacen/scripts/" name="masterreposicion.qs" />
+    <flpatch:patchScript path="facturacion/almacen/scripts/" name="masterconsolidacion.qs" />
+</flpatch:modifications>

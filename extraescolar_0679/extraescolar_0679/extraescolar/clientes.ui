@@ -1,0 +1,239 @@
+<xupdate:modifications>
+<xupdate:update select="/UI[UI,1]/widget[QWidget,formClientes]/property[geometry]/rect[rect,1]/height[height,1]/text()[1]" >549</xupdate:update>
+<xupdate:update select="/UI[UI,1]/widget[QWidget,formClientes]/property[geometry]/rect[rect,1]/width[width,1]/text()[1]" >831</xupdate:update>
+<xupdate:update select="/UI[UI,1]/widget[QWidget,formClientes]/vbox[vbox,1]/widget[QTabWidget,tbwCliente]/widget[QWidget,documentos]/vbox[vbox,1]/widget[QTabWidget,tbwDocumentos]/widget[QWidget,contratos]/vbox[vbox,1]/widget[QFrame,barraBotonesCon]/hbox[hbox,1]/widget[QToolButton,toolButtonEditCon]/property[iconSet]/iconset[iconset,1]/text()[1]" >image26770</xupdate:update>
+<xupdate:update select="/UI[UI,1]/widget[QWidget,formClientes]/vbox[vbox,1]/widget[QTabWidget,tbwCliente]/widget[QWidget,documentos]/vbox[vbox,1]/widget[QTabWidget,tbwDocumentos]/widget[QWidget,contratos]/vbox[vbox,1]/widget[QFrame,barraBotonesCon]/hbox[hbox,1]/widget[QToolButton,toolButtonZoomCon]/property[iconSet]/iconset[iconset,1]/text()[1]" >image41573</xupdate:update>
+<xupdate:update select="/UI[UI,1]/widget[QWidget,formClientes]/vbox[vbox,1]/widget[QTabWidget,tbwCliente]/widget[QWidget,formacion]/vbox[vbox,1]/widget[QGroupBox,gbxAlumnos]/vbox[vbox,1]/widget[QFrame,barraBotonesAl]/hbox[hbox,1]/widget[QToolButton,tbnAltaAlumno]/property[iconSet]/iconset[iconset,1]/text()[1]" >image30764</xupdate:update>
+<xupdate:update select="/UI[UI,1]/widget[QWidget,formClientes]/vbox[vbox,1]/widget[QTabWidget,tbwCliente]/widget[QWidget,formacion]/vbox[vbox,1]/widget[QGroupBox,gbxAlumnos]/vbox[vbox,1]/widget[QFrame,barraBotonesAl]/hbox[hbox,1]/widget[QToolButton,tbnAsociarAlumno]/property[iconSet]/iconset[iconset,1]/text()[1]" >image40683</xupdate:update>
+<xupdate:update select="/UI[UI,1]/widget[QWidget,formClientes]/vbox[vbox,1]/widget[QTabWidget,tbwCliente]/widget[QWidget,formacion]/vbox[vbox,1]/widget[QGroupBox,gbxAlumnos]/vbox[vbox,1]/widget[QFrame,barraBotonesAl]/hbox[hbox,1]/widget[QToolButton,tbnQuitarAlumno]/property[iconSet]/iconset[iconset,1]/text()[1]" >image32911</xupdate:update>
+<xupdate:update select="/UI[UI,1]/widget[QWidget,formClientes]/vbox[vbox,1]/widget[QTabWidget,tbwCliente]/widget[QWidget,formacion]/vbox[vbox,1]/widget[QGroupBox,gbxAlumnos]/vbox[vbox,1]/widget[QFrame,barraBotonesAl]/hbox[hbox,1]/widget[QToolButton,toolButtonDeleteDirAl]/property[iconSet]/iconset[iconset,1]/text()[1]" >image48307</xupdate:update>
+<xupdate:update select="/UI[UI,1]/widget[QWidget,formClientes]/vbox[vbox,1]/widget[QTabWidget,tbwCliente]/widget[QWidget,formacion]/vbox[vbox,1]/widget[QGroupBox,gbxAlumnos]/vbox[vbox,1]/widget[QFrame,barraBotonesAl]/hbox[hbox,1]/widget[QToolButton,toolButtonEditAl]/property[iconSet]/iconset[iconset,1]/text()[1]" >image26770</xupdate:update>
+<xupdate:update select="/UI[UI,1]/widget[QWidget,formClientes]/vbox[vbox,1]/widget[QTabWidget,tbwCliente]/widget[QWidget,formacion]/vbox[vbox,1]/widget[QGroupBox,gbxAlumnos]/vbox[vbox,1]/widget[QFrame,barraBotonesAl]/hbox[hbox,1]/widget[QToolButton,toolButtonInsertAl]/property[iconSet]/iconset[iconset,1]/text()[1]" >image59006</xupdate:update>
+<xupdate:update select="/UI[UI,1]/widget[QWidget,formClientes]/vbox[vbox,1]/widget[QTabWidget,tbwCliente]/widget[QWidget,formacion]/vbox[vbox,1]/widget[QGroupBox,gbxAlumnos]/vbox[vbox,1]/widget[QFrame,barraBotonesAl]/hbox[hbox,1]/widget[QToolButton,toolButtonZoomDirAl]/property[iconSet]/iconset[iconset,1]/text()[1]" >image41573</xupdate:update>
+<xupdate:insert-after select="/UI[UI,1]/widget[QWidget,formClientes]/vbox[vbox,1]/widget[QTabWidget,tbwCliente]/widget[QWidget,formacion]/vbox[vbox,1]/widget[QGroupBox,gbxAlumnos]" >
+<widget class="QGroupBox" >
+<property name="name" >
+<cstring>gbxSaldo</cstring>
+</property>
+<property name="font" >
+<font>
+<italic>1</italic>
+</font>
+</property>
+<property name="title" >
+<string>Saldo Tiquets</string>
+</property>
+<vbox>
+<property name="name" >
+<cstring>unnamed</cstring>
+</property>
+<widget class="FLTableDB" >
+<property name="name" >
+<cstring>tdbSaldo</cstring>
+</property>
+<property name="font" >
+<font>
+<bold>0</bold>
+<italic>0</italic>
+</font>
+</property>
+<property name="tableName" >
+<string>fo_saldotiquetactcli</string>
+</property>
+<property name="foreignField" >
+<string>codcliente</string>
+</property>
+<property name="fieldRelation" >
+<string>codcliente</string>
+</property>
+</widget>
+</vbox>
+</widget>
+</xupdate:insert-after>
+<xupdate:insert-after select="/UI[UI,1]/widget[QWidget,formClientes]/vbox[vbox,1]/widget[QTabWidget,tbwCliente]/widget[QWidget,general]/vbox[vbox,1]/widget[QGroupBox,gbxBaja]" >
+<widget class="QGroupBox" >
+<property name="name" >
+<cstring>gbxFormacion</cstring>
+</property>
+<property name="font" >
+<font>
+<italic>1</italic>
+</font>
+</property>
+<property name="title" >
+<string>&amp;Formación</string>
+</property>
+<vbox>
+<property name="name" >
+<cstring>unnamed</cstring>
+</property>
+<widget class="QLayoutWidget" >
+<property name="name" >
+<cstring>layoutBaja_2</cstring>
+</property>
+<hbox>
+<property name="name" >
+<cstring>unnamed</cstring>
+</property>
+<widget class="FLFieldDB" >
+<property name="name" >
+<cstring>fdbCodCentroEsc</cstring>
+</property>
+<property name="sizePolicy" >
+<sizepolicy>
+<hsizetype>1</hsizetype>
+<vsizetype>0</vsizetype>
+<horstretch>0</horstretch>
+<verstretch>0</verstretch>
+</sizepolicy>
+</property>
+<property name="minimumSize" >
+<size>
+<width>38</width>
+<height>24</height>
+</size>
+</property>
+<property name="maximumSize" >
+<size>
+<width>150</width>
+<height>32767</height>
+</size>
+</property>
+<property name="font" >
+<font>
+<bold>0</bold>
+<italic>0</italic>
+</font>
+</property>
+<property name="fieldName" >
+<string>codcentroesc</string>
+</property>
+<property name="tableName" >
+<string/>
+</property>
+</widget>
+<widget class="FLFieldDB" >
+<property name="name" >
+<cstring>fdbNomCentro</cstring>
+</property>
+<property name="sizePolicy" >
+<sizepolicy>
+<hsizetype>1</hsizetype>
+<vsizetype>0</vsizetype>
+<horstretch>0</horstretch>
+<verstretch>0</verstretch>
+</sizepolicy>
+</property>
+<property name="minimumSize" >
+<size>
+<width>9</width>
+<height>23</height>
+</size>
+</property>
+<property name="font" >
+<font>
+<bold>0</bold>
+<italic>0</italic>
+</font>
+</property>
+<property name="fieldName" >
+<string>nombre</string>
+</property>
+<property name="tableName" >
+<string>fo_centros</string>
+</property>
+<property name="foreignField" >
+<string>codcentroesc</string>
+</property>
+<property name="fieldRelation" >
+<string>codcentro</string>
+</property>
+<property name="showAlias" >
+<bool>false</bool>
+</property>
+</widget>
+</hbox>
+</widget>
+<widget class="QLayoutWidget" >
+<property name="name" >
+<cstring>layout53</cstring>
+</property>
+<hbox>
+<property name="name" >
+<cstring>unnamed</cstring>
+</property>
+<widget class="FLFieldDB" >
+<property name="name" >
+<cstring>fdbBecador</cstring>
+</property>
+<property name="sizePolicy" >
+<sizepolicy>
+<hsizetype>1</hsizetype>
+<vsizetype>0</vsizetype>
+<horstretch>0</horstretch>
+<verstretch>0</verstretch>
+</sizepolicy>
+</property>
+<property name="minimumSize" >
+<size>
+<width>26</width>
+<height>22</height>
+</size>
+</property>
+<property name="maximumSize" >
+<size>
+<width>150</width>
+<height>32767</height>
+</size>
+</property>
+<property name="font" >
+<font>
+<bold>0</bold>
+<italic>0</italic>
+</font>
+</property>
+<property name="fieldName" >
+<string>becador</string>
+</property>
+<property name="tableName" >
+<string/>
+</property>
+</widget>
+<spacer>
+<property name="name" >
+<cstring>spacer61</cstring>
+</property>
+<property name="orientation" >
+<enum>Horizontal</enum>
+</property>
+<property name="sizeType" >
+<enum>Expanding</enum>
+</property>
+<property name="sizeHint" >
+<size>
+<width>231</width>
+<height>20</height>
+</size>
+</property>
+</spacer>
+</hbox>
+</widget>
+</vbox>
+</widget>
+</xupdate:insert-after>
+<xupdate:insert-after select="/UI[UI,1]/includehints[includehints,1]/includehint[flfielddb.h]" >
+<includehint>flfielddb.h</includehint>
+</xupdate:insert-after>
+<xupdate:insert-after select="/UI[UI,1]/includehints[includehints,1]/includehint[flfielddb.h]" >
+<includehint>flfielddb.h</includehint>
+</xupdate:insert-after>
+<xupdate:insert-after select="/UI[UI,1]/includehints[includehints,1]/includehint[flfielddb.h]" >
+<includehint>flfielddb.h</includehint>
+</xupdate:insert-after>
+<xupdate:insert-after select="/UI[UI,1]/includehints[includehints,1]/includehint[flfielddb.h]" >
+<includehint>fltabledb.h</includehint>
+</xupdate:insert-after>
+<xupdate:insert-after select="/UI[UI,1]/includehints[includehints,1]/includehint[fltabledb.h]" >
+<includehint>fltabledb.h</includehint>
+</xupdate:insert-after>
+</xupdate:modifications>

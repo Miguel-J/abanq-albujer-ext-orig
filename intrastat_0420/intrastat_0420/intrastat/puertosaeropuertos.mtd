@@ -1,0 +1,47 @@
+<!DOCTYPE TMD>
+<TMD>
+	<name>puertosaeropuertos</name>
+	<!--Listado de puertos/aeropuertos de carga/descarga de la mercancía-->
+	<alias>QT_TRANSLATE_NOOP("MetaData","Puertos/Aeropuertos")</alias>
+
+	<field>
+		<name>codpuerto</name>
+		<!--Código del puerto/aeropuerto-->
+		<alias>QT_TRANSLATE_NOOP("MetaData","Código")</alias>
+		<null>false</null>
+		<pk>true</pk>
+		<type>string</type>
+		<length>4</length>
+		
+		<relation>
+			<table>lineasintrastatcli</table>
+			<field>codpuerto</field>
+			<card>1M</card>
+		</relation>
+		<relation>
+			<table>lineasintrastatprov</table>
+			<field>codpuerto</field>
+			<card>1M</card>
+		</relation>
+	</field>
+
+	<field>
+		<name>provincia</name>
+		<!--Provincia de ubicación del puerto/aeropuerto-->
+		<alias>QT_TRANSLATE_NOOP("MetaData","Provincia")</alias>
+		<null>true</null>		
+		<pk>false</pk>
+		<type>string</type>
+		<length>50</length>
+	</field>
+	
+	<field>
+		<name>recinto</name>
+		<alias>QT_TRANSLATE_NOOP("MetaData","Recinto")</alias>
+		<null>true</null>
+		<pk>false</pk>
+		<type>string</type>
+		<length>100</length>
+	</field>
+
+</TMD>

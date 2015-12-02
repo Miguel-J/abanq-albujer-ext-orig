@@ -1,0 +1,105 @@
+<xupdate:modifications>
+<xupdate:insert-after select="/TMD[TMD,1]/field[numero]" >
+<field>
+<name>enpreparacion</name>
+<!--Pedido en preparación o no--><alias>QT_TRANSLATE_NOOP(&quot;MetaData&quot;,&quot;En Preparación&quot;)</alias>
+<null>true</null>
+<pk>false</pk>
+<type>bool</type>
+<default>false</default>
+</field>
+</xupdate:insert-after>
+<xupdate:insert-after select="/TMD[TMD,1]/field[enpreparacion]" >
+<field>
+<name>prioridad</name>
+<!--Pedido con prioridad: 0 el más prioritario--><alias>QT_TRANSLATE_NOOP(&quot;MetaData&quot;,&quot;Prioridad&quot;)</alias>
+<null>true</null>
+<pk>false</pk>
+<type>string</type>
+<length>1</length>
+<optionslist>0,1,2,3,4,5,6,7,8,9</optionslist>
+<default>0</default>
+</field>
+</xupdate:insert-after>
+<xupdate:insert-after select="/TMD[TMD,1]/field[prioridad]" >
+<field>
+<name>entregasparciales</name>
+<!--Pedido que permite entregas parciales--><alias>QT_TRANSLATE_NOOP(&quot;MetaData&quot;,&quot;Entregas Parciales&quot;)</alias>
+<null>true</null>
+<pk>false</pk>
+<type>bool</type>
+<default>false</default>
+</field>
+</xupdate:insert-after>
+<xupdate:insert-after select="/TMD[TMD,1]/field[entregasparciales]" >
+<field>
+<name>idusuario</name>
+<!--Usuario responsable del pedido--><alias>QT_TRANSLATE_NOOP(&quot;MetaData&quot;,&quot;Responsable&quot;)</alias>
+<null>true</null>
+<pk>false</pk>
+<type>string</type>
+<length>30</length>
+<relation>
+<table>usuarios</table>
+<field>idusuario</field>
+<card>M1</card>
+</relation>
+</field>
+</xupdate:insert-after>
+<xupdate:insert-after select="/TMD[TMD,1]/field[idusuario]" >
+<field>
+<name>estadopicking</name>
+<!--Estado de preparación del pedido--><alias>QT_TRANSLATE_NOOP(&quot;MetaData&quot;,&quot;Estado picking&quot;)</alias>
+<null>true</null>
+<pk>false</pk>
+<type>string</type>
+<length>20</length>
+</field>
+</xupdate:insert-after>
+<xupdate:insert-after select="/TMD[TMD,1]/field[estadopicking]" >
+<field>
+<name>codpedidopicking</name>
+<!--Pedido picking al que pertenece--><alias>QT_TRANSLATE_NOOP(&quot;MetaData&quot;,&quot;Pedido picking&quot;)</alias>
+<null>true</null>
+<pk>false</pk>
+<type>string</type>
+<length>8</length>
+<editable>false</editable>
+<relation>
+<table>pedidospicking</table>
+<field>codpedidopicking</field>
+<card>M1</card>
+</relation>
+</field>
+</xupdate:insert-after>
+<xupdate:insert-after select="/TMD[TMD,1]/field[codpedidopicking]" >
+<field>
+<name>codcesta</name>
+<alias>QT_TRANSLATE_NOOP(&quot;MetaData&quot;,&quot;Cesta&quot;)</alias>
+<null>true</null>
+<pk>false</pk>
+<type>string</type>
+<length>20</length>
+<relation>
+<table>ubicaciones</table>
+<field>codubicacion</field>
+<card>M1</card>
+</relation>
+</field>
+</xupdate:insert-after>
+<xupdate:insert-after select="/TMD[TMD,1]/field[codcesta]" >
+<field>
+<name>codubiconso</name>
+<alias>QT_TRANSLATE_NOOP(&quot;MetaData&quot;,&quot;U.Consolidación&quot;)</alias>
+<null>true</null>
+<pk>false</pk>
+<type>string</type>
+<length>20</length>
+<relation>
+<table>ubicaciones</table>
+<field>codubicacion</field>
+<card>M1</card>
+</relation>
+</field>
+</xupdate:insert-after>
+</xupdate:modifications>

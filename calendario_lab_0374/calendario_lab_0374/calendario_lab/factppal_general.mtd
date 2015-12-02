@@ -1,0 +1,47 @@
+<xupdate:modifications>
+<xupdate:insert-after select="/TMD[TMD,1]/field[id]" >
+<field>
+<name>codhorariodl</name>
+<!--Identificador--><alias>QT_TRANSLATE_NOOP(&quot;MetaData&quot;,&quot;Codigo Dia Laboral&quot;)</alias>
+<null>true</null>
+<pk>false</pk>
+<type>string</type>
+<length>25</length>
+<relation>
+<table>horarioslab</table>
+<field>codhorario</field>
+<card>M1</card>
+</relation>
+</field>
+</xupdate:insert-after>
+<xupdate:insert-after select="/TMD[TMD,1]/field[codhorariodl]" >
+<field>
+<name>codhorariosab</name>
+<!--Identificador--><alias>QT_TRANSLATE_NOOP(&quot;MetaData&quot;,&quot;Codigo Sabado&quot;)</alias>
+<null>true</null>
+<pk>false</pk>
+<type>string</type>
+<length>25</length>
+<relation>
+<table>horarioslab</table>
+<field>codhorario</field>
+<card>M1</card>
+</relation>
+</field>
+</xupdate:insert-after>
+<xupdate:insert-after select="/TMD[TMD,1]/field[codhorariosab]" >
+<field>
+<name>codhorariodom</name>
+<!--Identificador--><alias>QT_TRANSLATE_NOOP(&quot;MetaData&quot;,&quot;Codigo Domingo&quot;)</alias>
+<null>true</null>
+<pk>false</pk>
+<type>string</type>
+<length>25</length>
+<relation>
+<table>horarioslab</table>
+<field>codhorario</field>
+<card>M1</card>
+</relation>
+</field>
+</xupdate:insert-after>
+</xupdate:modifications>

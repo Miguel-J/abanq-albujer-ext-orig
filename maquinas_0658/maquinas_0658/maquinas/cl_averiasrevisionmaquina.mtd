@@ -1,0 +1,121 @@
+<!DOCTYPE TMD>
+<TMD>
+	<name>cl_averiasrevisionmaquina</name>
+	<!--Averias y Revisiones de una Máquina-->
+	<alias>QT_TRANSLATE_NOOP("MetaData","Averias y Revisiones")</alias>
+
+	<field>
+		<name>codaveria</name>
+		<!--Identificador interno-->
+		<alias>QT_TRANSLATE_NOOP("MetaData","Código")</alias>
+		<null>false</null>
+		<pk>true</pk>
+		<type>string</type>
+		<length>6</length>
+        <counter>true</counter>
+		
+		<relation>
+			<table>albaranesprov</table>
+			<field>codaveria</field>
+			<card>1M</card>
+		</relation>
+	</field>
+		
+	<field>
+		<name>descripcion</name>
+		<!--Identificador interno-->
+		<alias>QT_TRANSLATE_NOOP("MetaData","Descripción")</alias>
+		<null>true</null>
+		<pk>false</pk>
+		<type>string</type>
+		<length>200</length>
+	</field>
+	
+	<field>
+		<name>codtipo</name>
+		<!--Codigo del tipo de Averia o Revision-->
+		<alias>QT_TRANSLATE_NOOP("MetaData","Tipo")</alias>
+		<null>true</null>
+		<pk>false</pk>
+		<type>string</type>
+		<length>25</length>
+		<relation>
+			<table>cl_tiposaveriasrevision</table>
+			<field>codtipo</field>
+			<card>M1</card>
+		</relation>
+	</field>
+	
+	<field>
+		<name>fecha</name>
+		<!--Fecha-->
+		<alias>QT_TRANSLATE_NOOP("MetaData","Fecha")</alias>
+		<null>true</null>
+		<pk>false</pk>
+		<type>date</type>
+	</field>
+	
+	<field>
+		<name>importetotal</name>
+		<alias>QT_TRANSLATE_NOOP("MetaData","Importe Total")</alias>
+		<null>true</null>
+		<pk>false</pk>
+		<type>double</type>
+		<partI>8</partI>
+		<partD>2</partD>
+	</field>
+	
+	<field>
+		<name>baja</name>
+		<alias>QT_TRANSLATE_NOOP("MetaData","Baja")</alias>
+		<null>true</null>
+		<pk>false</pk>
+		<type>bool</type>
+    </field>
+	
+	<field>
+		<name>causa</name>
+		<alias>QT_TRANSLATE_NOOP("MetaData","Causa de baja/avería")</alias>
+		<null>true</null>
+		<pk>false</pk>
+		<type>string</type>
+		<length>6</length>
+		<relation>
+			<table>cl_causasbajaaveria</table>
+			<field>codigo</field>
+			<card>M1</card>
+		</relation>
+	</field>
+	
+	<field>
+		<name>fechainiciobaja</name>
+		<!--Fecha-->
+		<alias>QT_TRANSLATE_NOOP("MetaData","F. inicio")</alias>
+		<null>true</null>
+		<pk>false</pk>
+		<type>date</type>
+	</field>
+	<field>
+		<name>fechafinbaja</name>
+		<!--Fecha-->
+		<alias>QT_TRANSLATE_NOOP("MetaData","F. fin")</alias>
+		<null>true</null>
+		<pk>false</pk>
+		<type>date</type>
+	</field>	
+	
+	<field>
+		<name>codmaquina</name>
+		<!--Codigo de la Máquina-->
+		<alias>QT_TRANSLATE_NOOP("MetaData","Máquina")</alias>
+		<null>false</null>
+		<pk>false</pk>
+		<type>string</type>
+		<length>25</length>
+		<relation>
+			<table>cl_maquinas</table>
+			<field>codmaquina</field>
+			<card>M1</card>
+		</relation>
+	</field>
+</TMD>

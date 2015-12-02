@@ -1,0 +1,22 @@
+<xupdate:modifications>
+<xupdate:insert-after select="/ACTIONS[ACTIONS,1]/action[busfactprov]" >
+<action>
+<name>lineastallacol</name>
+<description>QT_TRANSLATE_NOOP(&quot;MetaData&quot;,&quot;Inserción de tallas y colores por prenda&quot;)</description>
+<alias>QT_TRANSLATE_NOOP(&quot;MetaData&quot;,&quot;Esta acción permite insertar de manera cómoda las líneas de pedido, albarán o factura de proveedores cuando se trata de recibir distintas tallas y colores de un mismo artículo&quot;)</alias>
+<table>lineastallacol</table>
+<form>lineastallacol</form>
+<scriptform>masterlineastallacol</scriptform>
+</action>
+</xupdate:insert-after>
+<xupdate:insert-after select="/ACTIONS[ACTIONS,1]/action[lineastallacol]" >
+<action>
+<name>lineastallacolcli</name>
+<description>QT_TRANSLATE_NOOP(&quot;MetaData&quot;,&quot;Inserción de tallas y colores por prenda&quot;)</description>
+<alias>QT_TRANSLATE_NOOP(&quot;MetaData&quot;,&quot;Esta acción permite insertar de manera cómoda las líneas de pedido, albarán o factura de clientes cuando se trata de recibir distintas tallas y colores de un mismo artículo&quot;)</alias>
+<table>lineastallacolcli</table>
+<form>lineastallacolcli</form>
+<scriptform>masterlineastallacolcli</scriptform>
+</action>
+</xupdate:insert-after>
+</xupdate:modifications>

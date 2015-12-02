@@ -1,0 +1,14 @@
+<xupdate:modifications>
+<xupdate:insert-after select="/ACTIONS[ACTIONS,1]/action[customviewer]" >
+<action>
+<name>i_ventasmfam</name>
+<alias>QT_TRANSLATE_NOOP(&quot;MetaData&quot;,&quot;Listado de ventas de familia por mes&quot;)</alias>
+<description>QT_TRANSLATE_NOOP(&quot;MetaData&quot;,&quot;&quot;)</description>
+<table>i_ventasmfam</table>
+<form>i_master</form>
+<formrecord>i_ventasmfam</formrecord>
+<scriptform>i_masterventasmfam</scriptform>
+<scriptformrecord>i_ventasmfam</scriptformrecord>
+</action>
+</xupdate:insert-after>
+</xupdate:modifications>

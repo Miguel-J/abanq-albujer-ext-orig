@@ -1,0 +1,16 @@
+<xupdate:modifications>
+<xupdate:insert-after select="/TMD[TMD,1]/field[codagencia]/relation[zonastrans,codagencia]" >
+<relation>
+<table>trabexternolibro</table>
+<field>codagencia</field>
+<card>1M</card>
+</relation>
+</xupdate:insert-after>
+<xupdate:insert-after select="/TMD[TMD,1]/field[codagencia]/relation[trabexternolibro,codagencia]" >
+<relation>
+<table>enviostrabajo</table>
+<field>codagencia</field>
+<card>1M</card>
+</relation>
+</xupdate:insert-after>
+</xupdate:modifications>

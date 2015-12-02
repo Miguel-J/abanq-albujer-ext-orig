@@ -1,0 +1,29 @@
+<xupdate:modifications>
+<xupdate:update select="/UI[UI,1]/actions[actions,1]/action[pr_terminal]/property[menuText]/string[string,1]/text()[1]" >&amp;Terminal completo</xupdate:update>
+<xupdate:update select="/UI[UI,1]/actions[actions,1]/action[pr_terminal]/property[text]/string[string,1]/text()[1]" >Terminal completo</xupdate:update>
+<xupdate:insert-after select="/UI[UI,1]/actions[actions,1]/action[pr_secuenciastareas]" >
+<action>
+<property name="name" >
+<cstring>pr_tareasporcentroag</cstring>
+</property>
+<property name="text" >
+<string>Ordenar tareas</string>
+</property>
+<property name="menuText" >
+<string>&amp;Ordenar tareas</string>
+</property>
+</action>
+</xupdate:insert-after>
+<xupdate:insert-after select="/UI[UI,1]/connections[connections,1]/connection[pr_secuenciastareas,activated(),FLWidgetApplication,openDefaultForm()]" >
+<connection>
+<sender>pr_tareasporcentroag</sender>
+<signal>activated()</signal>
+<receiver>FLWidgetApplication</receiver>
+<slot>openDefaultForm()</slot>
+</connection>
+</xupdate:insert-after>
+<xupdate:insert-after select="/UI[UI,1]/menubar[menubar,1]/item[Produccin]/action[pr_tareastrabajador]" >
+<action name="pr_tareasporcentroag" />
+</xupdate:insert-after>
+<xupdate:update select="/UI[UI,1]/toolbars[toolbars,1]/toolbar[toolBar]/property[geometry]/rect[rect,1]/width[width,1]/text()[1]" >226</xupdate:update>
+</xupdate:modifications>

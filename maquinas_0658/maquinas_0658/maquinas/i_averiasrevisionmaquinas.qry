@@ -1,0 +1,48 @@
+<!DOCTYPE QRY>
+<QRY>
+	<name>i_averiasrevisionmaquinas</name>
+
+	<tables>empresa,cl_maquinas,cl_averiasrevisionmaquina</tables>
+
+	<group>
+		<level>0</level>
+		<field>empresa.cifnif</field>
+	</group>
+
+	<group>
+		<level>1</level>
+		<field>cl_maquinas.codmaquina</field>
+	</group>
+	
+	<group>
+		<level>2</level>
+		<field>cl_averiasrevisionmaquina.codaveria</field>
+	</group>
+
+	<select>
+		empresa.nombre, empresa.cifnif, empresa.direccion, empresa.codpostal,
+		empresa.ciudad,empresa.provincia, empresa.apartado, empresa.codpais,
+		cl_maquinas.codmaquina,cl_maquinas.descripcion,
+		cl_maquinas.matricula,
+		cl_averiasrevisionmaquina.fecha, cl_averiasrevisionmaquina.codaveria, cl_averiasrevisionmaquina.codtipo,cl_averiasrevisionmaquina.importetotal,
+		cl_averiasrevisionmaquina.descripcion, cl_tiposaveriasrevision.descripcion,
+		albaranesprov.codigo,albaranesprov.fecha,lineasalbaranesprov.pvptotal,
+		lineasalbaranesprov.descripcion,lineasalbaranesprov.cantidad,
+		lineasalbaranesprov.idlinea
+	</select>
+
+	<from>
+		empresa,cl_maquinas
+		INNER JOIN cl_averiasrevisionmaquina ON cl_maquinas.codmaquina = cl_averiasrevisionmaquina.codmaquina
+		LEFT OUTER JOIN cl_tiposaveriasrevision ON cl_averiasrevisionmaquina.codtipo = cl_tiposaveriasrevision.codtipo
+		LEFT OUTER JOIN albaranesprov ON cl_averiasrevisionmaquina.codaveria = albaranesprov.codaveria
+		LEFT OUTER JOIN lineasalbaranesprov ON lineasalbaranesprov.idalbaran = albaranesprov.idalbaran
+	</from>
+
+	<where>
+	</where>
+	
+	<order>
+		cl_maquinas.codmaquina,cl_averiasrevisionmaquina.fecha
+	</order>
+</QRY>

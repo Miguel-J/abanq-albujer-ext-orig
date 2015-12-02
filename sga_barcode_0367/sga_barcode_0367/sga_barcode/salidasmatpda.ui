@@ -1,0 +1,87 @@
+<xupdate:modifications>
+<xupdate:update select="/UI[UI,1]/widget[QWidget,salidasmatpda]/property[property,2]/rect[rect,1]/height[height,1]/text()[1]" >274</xupdate:update>
+<xupdate:update select="/UI[UI,1]/widget[QWidget,salidasmatpda]/property[property,2]/rect[rect,1]/width[width,1]/text()[1]" >662</xupdate:update>
+<xupdate:delete select="/UI[UI,1]/widget[QWidget,salidasmatpda]/vbox[vbox,1]/widget[QFrame,frame4]/vbox[vbox,1]/widget[QLayoutWidget,layoutAtrib]" />
+<xupdate:insert-after select="/UI[UI,1]/widget[QWidget,salidasmatpda]/vbox[vbox,1]/widget[QFrame,frame4]/vbox[vbox,1]/widget[QLayoutWidget,layout13]" >
+<widget class="QLayoutWidget" >
+<property name="name" >
+<cstring>layout75</cstring>
+</property>
+<hbox>
+<property name="name" >
+<cstring>unnamed</cstring>
+</property>
+<widget class="QLabel" >
+<property name="name" >
+<cstring>textLabel1</cstring>
+</property>
+<property name="text" >
+<string>Referencia</string>
+</property>
+</widget>
+<widget class="QLineEdit" >
+<property name="name" >
+<cstring>ledReferencia</cstring>
+</property>
+<property name="enabled" >
+<bool>false</bool>
+</property>
+<property name="text" >
+<string/>
+</property>
+</widget>
+<widget class="QLineEdit" >
+<property name="name" >
+<cstring>ledDesArticulo</cstring>
+</property>
+<property name="enabled" >
+<bool>false</bool>
+</property>
+<property name="minimumSize" >
+<size>
+<width>300</width>
+<height>0</height>
+</size>
+</property>
+<property name="text" >
+<string/>
+</property>
+</widget>
+</hbox>
+</widget>
+</xupdate:insert-after>
+<xupdate:insert-after select="/UI[UI,1]/widget[QWidget,salidasmatpda]/vbox[vbox,1]/widget[QFrame,frame4]/vbox[vbox,1]/widget[QLayoutWidget,layout75]" >
+<widget class="QLayoutWidget" >
+<property name="name" >
+<cstring>layout25</cstring>
+</property>
+<hbox>
+<property name="name" >
+<cstring>unnamed</cstring>
+</property>
+<widget class="QLineEdit" >
+<property name="name" >
+<cstring>ledTalla</cstring>
+</property>
+<property name="enabled" >
+<bool>false</bool>
+</property>
+<property name="text" >
+<string/>
+</property>
+</widget>
+<widget class="QLineEdit" >
+<property name="name" >
+<cstring>ledColor</cstring>
+</property>
+<property name="enabled" >
+<bool>false</bool>
+</property>
+<property name="text" >
+<string/>
+</property>
+</widget>
+</hbox>
+</widget>
+</xupdate:insert-after>
+</xupdate:modifications>

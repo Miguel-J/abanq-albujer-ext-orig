@@ -1,0 +1,25 @@
+<xupdate:modifications>
+<xupdate:insert-after select="/ACTIONS[ACTIONS,1]/action[seleccionlineasrec]" >
+<action>
+<name>pedidosmarcocli</name>
+<description>QT_TRANSLATE_NOOP(&quot;MetaData&quot;,&quot;Pedidos marco&quot;)</description>
+<alias>QT_TRANSLATE_NOOP(&quot;MetaData&quot;,&quot;Pedidos marco&quot;)</alias>
+<scriptform>masterpedidosmarco</scriptform>
+<scriptformrecord>pedidosmarcocli</scriptformrecord>
+<table>pedidosmarcocli</table>
+<form>master</form>
+<formrecord>pedidosmarcocli</formrecord>
+</action>
+</xupdate:insert-after>
+<xupdate:insert-after select="/ACTIONS[ACTIONS,1]/action[pedidosmarcocli]" >
+<action>
+<name>lineaspedidomarcocli</name>
+<description>QT_TRANSLATE_NOOP(&quot;MetaData&quot;,&quot;Líneas de pedido marco&quot;)</description>
+<alias>QT_TRANSLATE_NOOP(&quot;MetaData&quot;,&quot;Líneas de pedido marco&quot;)</alias>
+<table>lineaspedidomarcocli</table>
+<form>master</form>
+<formrecord>lineaspedidomarcocli</formrecord>
+<scriptformrecord>lineaspedidomarcocli</scriptformrecord>
+</action>
+</xupdate:insert-after>
+</xupdate:modifications>

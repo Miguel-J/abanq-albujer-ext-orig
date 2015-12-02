@@ -1,0 +1,34 @@
+<xupdate:modifications>
+<xupdate:insert-after select="/ACTIONS[ACTIONS,1]/action[trazadoc]" >
+<action>
+<name>paraminforme</name>
+<description>QT_TRANSLATE_NOOP(&quot;MetaData&quot;,&quot;Parámetros de informes&quot;)</description>
+<alias>QT_TRANSLATE_NOOP(&quot;MetaData&quot;,&quot;Parámetros de informes&quot;)</alias>
+<table>paraminforme</table>
+<form>master</form>
+<formrecord>paraminforme</formrecord>
+</action>
+</xupdate:insert-after>
+<xupdate:insert-after select="/ACTIONS[ACTIONS,1]/action[paraminforme]" >
+<action>
+<name>parampresupuesto</name>
+<description>QT_TRANSLATE_NOOP(&quot;MetaData&quot;,&quot;Parámetros de presupuestos&quot;)</description>
+<alias>QT_TRANSLATE_NOOP(&quot;MetaData&quot;,&quot;Parámetros de presupuestos&quot;)</alias>
+<table>parampresupuesto</table>
+<form>master</form>
+<formrecord>parampresupuesto</formrecord>
+<scriptformrecord>parampresupuesto</scriptformrecord>
+</action>
+</xupdate:insert-after>
+<xupdate:insert-after select="/ACTIONS[ACTIONS,1]/action[parampresupuesto]" >
+<action>
+<name>plantillasinforme</name>
+<description>QT_TRANSLATE_NOOP(&quot;MetaData&quot;,&quot;Plantillas de informes&quot;)</description>
+<alias>QT_TRANSLATE_NOOP(&quot;MetaData&quot;,&quot;Plantillas de informes&quot;)</alias>
+<table>plantillasinforme</table>
+<form>master</form>
+<formrecord>plantillasinforme</formrecord>
+<scriptformrecord>plantillasinforme</scriptformrecord>
+</action>
+</xupdate:insert-after>
+</xupdate:modifications>

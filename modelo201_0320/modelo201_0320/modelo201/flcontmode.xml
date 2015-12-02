@@ -1,0 +1,94 @@
+<xupdate:modifications>
+<xupdate:insert-after select="/ACTIONS[ACTIONS,1]/action[co_calculoscasilla]" >
+<action>
+<name>co_modelo201</name>
+<description>QT_TRANSLATE_NOOP(&quot;MetaData&quot;,&quot;Modelo 201&quot;)</description>
+<alias>QT_TRANSLATE_NOOP(&quot;MetaData&quot;,&quot;Modelo 201&quot;)</alias>
+<table>co_modelo201</table>
+<form>co_mastermodelo</form>
+<formrecord>co_modelo201</formrecord>
+<scriptformrecord>co_modelo201</scriptformrecord>
+<scriptform>co_mastermodelo201</scriptform>
+</action>
+</xupdate:insert-after>
+<xupdate:insert-after select="/ACTIONS[ACTIONS,1]/action[co_modelo201]" >
+<action>
+<name>co_administradores</name>
+<description>QT_TRANSLATE_NOOP(&quot;MetaData&quot;,&quot;Administradores&quot;)</description>
+<alias>QT_TRANSLATE_NOOP(&quot;MetaData&quot;,&quot;Administradores&quot;)</alias>
+<table>co_administradores</table>
+<form>master</form>
+<formrecord>co_administradores</formrecord>
+</action>
+</xupdate:insert-after>
+<xupdate:insert-after select="/ACTIONS[ACTIONS,1]/action[co_administradores]" >
+<action>
+<name>co_participotrasentid</name>
+<description>QT_TRANSLATE_NOOP(&quot;MetaData&quot;,&quot;Participaciones en otras entidades&quot;)</description>
+<alias>QT_TRANSLATE_NOOP(&quot;MetaData&quot;,&quot;Participaciones en otras entidades&quot;)</alias>
+<table>co_participotrasentid</table>
+<form>master</form>
+<formrecord>co_participotrasentid</formrecord>
+</action>
+</xupdate:insert-after>
+<xupdate:insert-after select="/ACTIONS[ACTIONS,1]/action[co_participotrasentid]" >
+<action>
+<name>co_participdeclarante</name>
+<description>QT_TRANSLATE_NOOP(&quot;MetaData&quot;,&quot;Participaciones de personas o entidades en la declarante&quot;)</description>
+<alias>QT_TRANSLATE_NOOP(&quot;MetaData&quot;,&quot;Participaciones en la declarante&quot;)</alias>
+<table>co_participdeclarante</table>
+<form>master</form>
+<formrecord>co_participdeclarante</formrecord>
+</action>
+</xupdate:insert-after>
+<xupdate:insert-after select="/ACTIONS[ACTIONS,1]/action[co_participdeclarante]" >
+<action>
+<name>co_operaciones</name>
+<description>QT_TRANSLATE_NOOP(&quot;MetaData&quot;,&quot;Operaciones relacionadas con países o territorios calificados reglamentariamente como paraísos fiscales&quot;)</description>
+<alias>QT_TRANSLATE_NOOP(&quot;MetaData&quot;,&quot;Operaciones con países calificados paraísos fiscales&quot;)</alias>
+<table>co_operaciones</table>
+<form>master</form>
+<formrecord>co_operaciones</formrecord>
+</action>
+</xupdate:insert-after>
+<xupdate:insert-after select="/ACTIONS[ACTIONS,1]/action[co_operaciones]" >
+<action>
+<name>co_tenencia</name>
+<description>QT_TRANSLATE_NOOP(&quot;MetaData&quot;,&quot;Tenencia de valores relacionados con países y territorios calificados reglamentariamente como paraísos fiscales&quot;)</description>
+<alias>QT_TRANSLATE_NOOP(&quot;MetaData&quot;,&quot;Tenencia de valores&quot;)</alias>
+<table>co_tenencia</table>
+<form>master</form>
+<formrecord>co_tenencia</formrecord>
+</action>
+</xupdate:insert-after>
+<xupdate:insert-after select="/ACTIONS[ACTIONS,1]/action[co_tenencia]" >
+<action>
+<name>co_socios</name>
+<description>QT_TRANSLATE_NOOP(&quot;MetaData&quot;,&quot;Relación de socios existentes a la fecha de cierre del periodo impositivo que deban soportar las imputaciones&quot;)</description>
+<alias>QT_TRANSLATE_NOOP(&quot;MetaData&quot;,&quot;Socios&quot;)</alias>
+<table>co_socios</table>
+<form>master</form>
+<formrecord>co_socios</formrecord>
+</action>
+</xupdate:insert-after>
+<xupdate:insert-after select="/ACTIONS[ACTIONS,1]/action[co_socios]" >
+<action>
+<name>co_imposicioninterna</name>
+<description>QT_TRANSLATE_NOOP(&quot;MetaData&quot;,&quot;Deducción para evitar la doble imposición interna&quot;)</description>
+<alias>QT_TRANSLATE_NOOP(&quot;MetaData&quot;,&quot;Imposición interna&quot;)</alias>
+<table>co_imposicioninterna</table>
+<form>master</form>
+<formrecord>co_imposicioninterna</formrecord>
+</action>
+</xupdate:insert-after>
+<xupdate:insert-after select="/ACTIONS[ACTIONS,1]/action[co_imposicioninterna]" >
+<action>
+<name>co_imposicioninternacional</name>
+<description>QT_TRANSLATE_NOOP(&quot;MetaData&quot;,&quot;Deducción para evitar la doble imposición internacional&quot;)</description>
+<alias>QT_TRANSLATE_NOOP(&quot;MetaData&quot;,&quot;Imposición internacional&quot;)</alias>
+<table>co_imposicioninternacional</table>
+<form>master</form>
+<formrecord>co_imposicioninternacional</formrecord>
+</action>
+</xupdate:insert-after>
+</xupdate:modifications>

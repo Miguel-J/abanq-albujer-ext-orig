@@ -1,0 +1,24 @@
+<xupdate:modifications>
+<xupdate:insert-after select="/TMD[TMD,1]/field[codcontacto]" >
+<field>
+<name>vacdesde</name>
+<!-- Día y mes en el que el cliente toma vacaciones --><alias>QT_TRANSLATE_NOOP(&quot;MetaData&quot;,&quot;V. Desde&quot;)</alias>
+<null>true</null>
+<pk>false</pk>
+<type>string</type>
+<length>5</length>
+<regexp>^\d{2}-\d{2}$</regexp>
+</field>
+</xupdate:insert-after>
+<xupdate:insert-after select="/TMD[TMD,1]/field[vacdesde]" >
+<field>
+<name>vachasta</name>
+<!-- Día y mes en el que el cliente finaliza las vacaciones --><alias>QT_TRANSLATE_NOOP(&quot;MetaData&quot;,&quot;V. Hasta&quot;)</alias>
+<null>true</null>
+<pk>false</pk>
+<type>string</type>
+<length>5</length>
+<regexp>^\d{2}-\d{2}$</regexp>
+</field>
+</xupdate:insert-after>
+</xupdate:modifications>

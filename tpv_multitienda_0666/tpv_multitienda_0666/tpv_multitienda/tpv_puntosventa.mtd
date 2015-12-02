@@ -1,0 +1,17 @@
+<xupdate:modifications>
+<xupdate:insert-after select="/TMD[TMD,1]/field[codalmacen]" >
+<field>
+<name>codtienda</name>
+<!-- Código de tienda--><alias>QT_TRANSLATE_NOOP(&quot;MetaData&quot;,&quot;Tienda&quot;)</alias>
+<null>false</null>
+<pk>false</pk>
+<type>string</type>
+<length>10</length>
+<relation>
+<table>tpv_tiendas</table>
+<field>codtienda</field>
+<card>M1</card>
+</relation>
+</field>
+</xupdate:insert-after>
+</xupdate:modifications>

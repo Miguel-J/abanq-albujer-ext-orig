@@ -1,0 +1,34 @@
+<!DOCTYPE QRY>
+<QRY>
+	<name>i_revisionespendientes</name>
+
+	<tables>cl_maquinas</tables>
+
+	<group>
+		<level>0</level>
+		<field>empresa.cifnif</field>
+	</group>
+
+	<select>
+		empresa.nombre, empresa.cifnif,
+		empresa.direccion,
+		empresa.codpostal, empresa.ciudad,
+		empresa.provincia, empresa.apartado,
+		empresa.codpais,
+		cl_maquinas.codmaquina, cl_maquinas.descripcion, cl_tiposrevisionmaquina.codtipo, cl_tiposaveriasrevision.descripcion,
+		cl_tiposrevisionmaquina.fechaproxima, cl_tiposaveriasrevision.diasinteraviso
+	</select>
+
+	<from>
+		empresa,
+		cl_maquinas
+		INNER JOIN cl_tiposrevisionmaquina ON cl_maquinas.codmaquina = cl_tiposrevisionmaquina.codmaquina 
+		INNER JOIN cl_tiposaveriasrevision ON cl_tiposrevisionmaquina.codtipo = cl_tiposaveriasrevision.codtipo
+	</from>
+
+	<where>
+	</where>
+	
+	<order>
+	</order>
+</QRY>

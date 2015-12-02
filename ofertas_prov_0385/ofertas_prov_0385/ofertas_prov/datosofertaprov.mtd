@@ -1,0 +1,135 @@
+<!DOCTYPE TMD>
+<TMD>
+    <name>datosofertaprov</name>
+    <!-- Tabla auxiliar para la inserción de datos en una oferta de proveedor-->    
+	<alias>QT_TRANSLATE_NOOP(&quot;MetaData&quot;,&quot;Introducir datos&quot;)</alias>
+    
+	<field>
+        <name>id</name>
+		<!-- Identificador interno -->        <alias>QT_TRANSLATE_NOOP(&quot;MetaData&quot;,&quot;Identificador&quot;)</alias>
+        <null>false</null>
+        <pk>true</pk>
+        <type>serial</type>
+        <visiblegrid>false</visiblegrid>
+    </field>
+	
+	<field>
+		<name>usuario</name>
+		<!-- Usuario-->
+		<alias>QT_TRANSLATE_NOOP("MetaData","Usuario")</alias>
+		<null>false</null>
+		<pk>false</pk>
+		<type>string</type>
+		<length>25</length>
+		<visiblegrid>false</visiblegrid>
+	</field>
+	
+    <field>
+        <name>referencia</name>
+<!-- Código de referencia del artículo -->        <alias>QT_TRANSLATE_NOOP(&quot;MetaData&quot;,&quot;Artículo&quot;)</alias>
+        <null>true</null>
+        <pk>false</pk>
+        <type>string</type>
+        <length>18</length>
+
+		<relation>
+            <table>articulos</table>
+            <field>referencia</field>
+            <card>M1</card>
+            <delC>true</delC>
+        </relation>
+    </field>
+	
+	<field>
+		<name>descripcion</name>
+		<!--Descripción del artículo-->        <alias>QT_TRANSLATE_NOOP(&quot;MetaData&quot;,&quot;Descripción&quot;)</alias>
+		<null>true</null>
+		<pk>false</pk>
+		<type>string</type>
+		<length>100</length>
+	</field>
+	
+	<field>
+		<name>pvpunitario</name>
+		<alias>QT_TRANSLATE_NOOP(&quot;MetaData&quot;,&quot;Precio Unidad&quot;)</alias>
+		<null>true</null>
+		<pk>false</pk>
+		<type>double</type>
+		<partI>6</partI>
+		<partD>2</partD>
+	</field>
+	
+	<field>
+		<name>cantidad</name>
+		<alias>QT_TRANSLATE_NOOP(&quot;MetaData&quot;,&quot;Cantidad&quot;)</alias>
+		<null>true</null>
+		<pk>false</pk>
+		<type>double</type>
+		<partI>6</partI>
+		<partD>2</partD>
+		<default>0</default>
+		<editable>false</editable>
+	</field>
+	
+	<field>
+		<name>dto</name>
+		<alias>QT_TRANSLATE_NOOP(&quot;MetaData&quot;,&quot;Dto. &quot;)</alias>
+		<null>true</null>
+		<pk>false</pk>
+		<type>double</type>
+		<partI>6</partI>
+		<partD>2</partD>
+		<default>0</default>
+	</field>
+	
+	<field>
+        <name>idpresupuestoprov</name>
+		<!--Identificador del presupuesto de proveedor-->
+		<alias>QT_TRANSLATE_NOOP("MetaData","Idpresupuesto")</alias>
+        <null>true</null>
+        <pk>false</pk>
+        <type>uint</type>
+		<editable>false</editable>
+		<visiblegrid>false</visiblegrid>
+      <relation>
+            <table>presupuestosprov</table>
+            <field>idpresupuesto</field>
+            <card>M1</card>
+        </relation>
+    </field>
+    
+	<field>
+        <name>codpresupuestoprov</name>
+		<!--Código asociado al presupuesto de proveedor-->        <alias>QT_TRANSLATE_NOOP("MetaData","Oferta")</alias>
+        <null>true</null>
+        <pk>false</pk>
+        <type>string</type>
+        <length>12</length>
+    </field>
+	
+	<field>
+        <name>codproveedor</name>
+		<!--Código del proveedor-->        <alias>QT_TRANSLATE_NOOP("MetaData","Cod.Proveedor")</alias>
+        <null>true</null>
+        <pk>false</pk>
+        <type>string</type>
+        <length>6</length>
+    </field>
+	
+	<field>
+		<name>datos</name>
+		<alias>QT_TRANSLATE_NOOP("MetaData","Datos")</alias>
+		<null>true</null>
+		<pk>false</pk>
+		<type>stringlist</type>
+	</field>
+	
+	<field>
+		<name>actualizarprov</name>
+		<alias>QT_TRANSLATE_NOOP("MetaData","Actualizar datos del proveedor")</alias>
+		<null>true</null>
+		<pk>false</pk>
+		<type>bool</type>
+	</field>
+	
+</TMD>

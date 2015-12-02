@@ -1,0 +1,12 @@
+<xupdate:modifications>
+<xupdate:insert-after select="/ACTIONS[ACTIONS,1]/action[seleccionreciboscli]" >
+<action>
+<name>pagosmultirec</name>
+<description>QT_TRANSLATE_NOOP(&quot;MetaData&quot;,&quot;Esta acción proporciona un formulario para seleccionar múltiples recibos y pagarlos en un solo pago&quot;)</description>
+<alias>QT_TRANSLATE_NOOP(&quot;MetaData&quot;,&quot;Selección de recibos a pagar&quot;)</alias>
+<table>pagosmultirec</table>
+<form>pagosmultirec</form>
+<scriptform>pagosmultirec</scriptform>
+</action>
+</xupdate:insert-after>
+</xupdate:modifications>

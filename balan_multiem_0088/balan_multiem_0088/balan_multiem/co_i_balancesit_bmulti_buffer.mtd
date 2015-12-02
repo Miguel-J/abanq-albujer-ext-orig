@@ -1,0 +1,98 @@
+<!DOCTYPE TMD>
+<TMD>
+	<name>co_i_balancesit_bmulti_buffer</name>
+	<alias>QT_TRANSLATE_NOOP("MetaData","Balance de Situación")</alias>
+
+	<field>
+		<name>id</name>
+		<alias>QT_TRANSLATE_NOOP("MetaData","ID")</alias>
+		<null>false</null>
+		<pk>true</pk>
+		<type>serial</type>
+	</field>
+
+	<field>
+		<name>codejercicio</name>
+		<alias>QT_TRANSLATE_NOOP("MetaData","Ejercicio actual")</alias>
+		<pk>false</pk>
+		<null>false</null>
+		<type>string</type>
+		<length>4</length>
+	</field>
+	
+	<field>
+		<name>nombrebd</name>
+		<alias>QT_TRANSLATE_NOOP(&quot;MetaData&quot;,&quot;Empresa (Base de datos)&quot;)</alias>
+		<null>true</null>
+		<pk>false</pk>
+		<type>string</type>
+		<length>100</length>
+	</field>
+	
+	<field>
+		<name>codcuenta</name>
+		<alias>QT_TRANSLATE_NOOP("MetaData","Cuenta")</alias>
+		<pk>false</pk>
+		<type>string</type>
+		<length>6</length>
+	</field>
+	
+	<field>
+		<name>codsubcuenta</name>
+		<alias>QT_TRANSLATE_NOOP("MetaData","Subcuenta")</alias>
+		<pk>false</pk>
+		<type>string</type>
+		<length>15</length>
+	</field>
+
+	<field>
+		<name>desccuenta</name>
+		<alias>QT_TRANSLATE_NOOP("MetaData","Descripción")</alias>
+		<null>true</null>
+		<pk>false</pk>
+		<type>string</type>
+		<length>255</length>
+	</field>
+
+	<field>
+		<name>descsubcuenta</name>
+		<alias>QT_TRANSLATE_NOOP("MetaData","Descripción")</alias>
+		<null>true</null>
+		<pk>false</pk>
+		<type>string</type>
+		<length>255</length>
+	</field>
+
+	<field>
+		<name>debe</name>
+		<alias>QT_TRANSLATE_NOOP("MetaData","Debe")</alias>
+		<null>false</null>
+		<pk>false</pk>
+		<type>double</type>
+		<partI>12</partI>
+		<partD>2</partD>
+		<default>0</default>
+	</field>
+	
+	<field>
+		<name>haber</name>
+		<alias>QT_TRANSLATE_NOOP("MetaData","Haber")</alias>
+		<null>false</null>
+		<pk>false</pk>
+		<type>double</type>
+		<partI>12</partI>
+		<partD>2</partD>
+		<default>0</default>
+	</field>
+	
+	<field>
+		<name>saldo</name>
+		<alias>QT_TRANSLATE_NOOP("MetaData","Saldo")</alias>
+		<null>false</null>
+		<pk>false</pk>
+		<type>double</type>
+		<partI>12</partI>
+		<partD>2</partD>
+		<default>0</default>
+	</field>
+</TMD>

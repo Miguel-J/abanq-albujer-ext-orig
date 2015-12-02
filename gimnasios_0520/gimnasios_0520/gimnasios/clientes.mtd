@@ -1,0 +1,47 @@
+<xupdate:modifications>
+<xupdate:insert-after select="/TMD[TMD,1]/field[codcliente]/relation[cl_comunicaciones,codcliente]" >
+<relation>
+<table>bonosgym</table>
+<field>codcliente</field>
+<card>1M</card>
+</relation>
+</xupdate:insert-after>
+<xupdate:insert-after select="/TMD[TMD,1]/field[codcliente]/relation[bonosgym,codcliente]" >
+<relation>
+<table>bonosgym</table>
+<field>codclientefact</field>
+<card>1M</card>
+</relation>
+</xupdate:insert-after>
+<xupdate:insert-after select="/TMD[TMD,1]/field[tipoidfiscal]" >
+<field>
+<name>origencliente</name>
+<!--Origen--><alias>QT_TRANSLATE_NOOP(&quot;MetaData&quot;,&quot;Origen&quot;)</alias>
+<null>true</null>
+<pk>false</pk>
+<type>string</type>
+<length>20</length>
+<optionslist> ,Internet,TV-Radio,Publicidad,Otro cliente</optionslist>
+</field>
+</xupdate:insert-after>
+<xupdate:insert-after select="/TMD[TMD,1]/field[origencliente]" >
+<field>
+<name>codclienteorigen</name>
+<!--Viene por--><alias>QT_TRANSLATE_NOOP(&quot;MetaData&quot;,&quot;Traído por&quot;)</alias>
+<null>true</null>
+<pk>false</pk>
+<type>string</type>
+<length>6</length>
+</field>
+</xupdate:insert-after>
+<xupdate:insert-after select="/TMD[TMD,1]/field[codclienteorigen]" >
+<field>
+<name>cansesionesdisp</name>
+<!--Sesiones pendientes--><alias>QT_TRANSLATE_NOOP(&quot;MetaData&quot;,&quot;Sesiones Disp.&quot;)</alias>
+<null>true</null>
+<pk>false</pk>
+<type>int</type>
+<editable>false</editable>
+</field>
+</xupdate:insert-after>
+</xupdate:modifications>
